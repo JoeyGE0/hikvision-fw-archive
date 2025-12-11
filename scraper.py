@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
 Hikvision firmware scraper - built specifically for how Hikvision's site actually works.
-Not a copy of Reolink - this is Hikvision-specific.
 """
 import json
 import logging

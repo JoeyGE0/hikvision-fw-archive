@@ -15,7 +15,7 @@ Current status of the Hikvision Firmware Archive project.
 - ✅ README generation script (`release.py`)
 - ✅ GitHub Actions workflow for automated updates
 - ✅ Hikvision-specific documentation:
-  - `readme_header.md` - Custom header (not Reolink copy)
+  - `readme_header.md` - Custom header
   - `CONTRIBUTING.md` - Contribution guidelines
   - `QUICKSTART.md` - Setup and usage guide
 - ✅ Manual firmware addition tool
