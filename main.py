@@ -121,12 +121,12 @@ class HikvisionScraper:
                         else:
                             break
                     
-                    # Find all firmware model titles - limit to first 100 to avoid timeout
+                    # Find all firmware model titles
                     firmware_titles = page.query_selector_all('div.main-title')
-                    logger.info(f"Found {len(firmware_titles)} firmware models (processing first 100)")
+                    logger.info(f"Found {len(firmware_titles)} firmware models")
                     
-                    # Process only first 100 to avoid timeout
-                    for i, title_element in enumerate(firmware_titles[:100]):
+                    # Process all firmware items
+                    for i, title_element in enumerate(firmware_titles):
                         try:
                             model_text = title_element.inner_text().strip()
                             model = self.extract_model(model_text)
