@@ -12,17 +12,20 @@ Get started with the Hikvision Firmware Archive in minutes.
 ### Setup Steps
 
 1. **Clone the repository**:
+
    ```bash
    git clone https://github.com/JoeyGE0/hikvision-fw-archive.git
    cd hikvision-fw-archive
    ```
 
 2. **Install dependencies**:
+
    ```bash
    pip install -r requirements.txt
    ```
 
    This installs:
+
    - `requests` - HTTP library for web scraping
    - `beautifulsoup4` - HTML parsing
    - `lxml` - Fast XML/HTML parser
@@ -44,6 +47,7 @@ python main.py scrape
 ```
 
 This will:
+
 - Fetch firmware data from Hikvision's download center
 - Extract model numbers, versions, and download links
 - Update `devices.json` and `firmwares_live.json`
@@ -82,6 +86,7 @@ This creates `README.md` with an organized list of all firmwares.
 ### Model Numbers
 
 Hikvision uses consistent naming:
+
 - **DS-2CD** - IP Cameras (fixed dome/bullet)
 - **DS-2DE** - PTZ Cameras
 - **DS-76XX** - NVRs (various series)
@@ -90,6 +95,7 @@ Hikvision uses consistent naming:
 ### Hardware Versions
 
 Critical for compatibility! Examples:
+
 - `IPC_G0` - Generic IP Camera hardware
 - `IPC_BXX` - Specific camera hardware version
 - `NVR_XXX` - NVR hardware version
@@ -99,6 +105,7 @@ Find your hardware version in the device web interface under "Device Information
 ### Firmware Versions
 
 Format: `X.Y.Z` (e.g., `5.7.0`)
+
 - Major version (5) - Major feature updates
 - Minor version (7) - Feature additions
 - Patch version (0) - Bug fixes
@@ -106,6 +113,7 @@ Format: `X.Y.Z` (e.g., `5.7.0`)
 ### Filename Patterns
 
 Hikvision firmware files often follow patterns:
+
 - `digicap.dav` - Generic name (model in metadata)
 - `DS-2CD2XXX_5.7.0_220123.dav` - Model_Version_Date
 - `IPC_XXX_5.7.0_220123.dav` - Hardware_Version_Date
@@ -115,6 +123,7 @@ Hikvision firmware files often follow patterns:
 The scraper searches for firmwares by model prefixes. You can modify `scrape_firmwares()` in `main.py` to:
 
 1. **Add more model prefixes**:
+
    ```python
    common_prefixes = [
        'DS-2CD',  # IP Cameras
@@ -143,6 +152,7 @@ The scraper searches for firmwares by model prefixes. You can modify `scrape_fir
 ### Invalid JSON Errors
 
 If JSON files become corrupted:
+
 1. Check file syntax with a JSON validator
 2. Restore from git history: `git checkout devices.json`
 3. Re-run scraper to regenerate data
@@ -150,6 +160,7 @@ If JSON files become corrupted:
 ### Missing Dependencies
 
 If you get import errors:
+
 ```bash
 pip install --upgrade -r requirements.txt
 ```
@@ -157,6 +168,7 @@ pip install --upgrade -r requirements.txt
 ### Firmware Detection Issues
 
 The scraper tries to auto-detect model/version from filenames. If it fails:
+
 - Manually add firmwares with `--model` and `--version` flags
 - Improve detection patterns in `extract_model_from_filename()` and `extract_version_from_filename()`
 

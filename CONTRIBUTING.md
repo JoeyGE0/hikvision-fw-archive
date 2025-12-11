@@ -90,6 +90,7 @@ Maps device models and hardware versions to unique IDs:
 ```
 
 **Rules**:
+
 - Use IDs starting from 100000
 - Each unique model+hardware combination gets a new ID
 - Don't modify existing IDs (breaks firmware references)
@@ -101,6 +102,7 @@ Firmwares scraped from Hikvision's website. **Don't edit this manually** - it's 
 ### `firmwares_manual.json`
 
 Manually added firmwares. This is where you add:
+
 - Beta firmwares
 - Archived links
 - Firmwares from support emails
@@ -109,6 +111,7 @@ Manually added firmwares. This is where you add:
 ### `firmware_info.json`
 
 Additional metadata about firmware files:
+
 - File size
 - Checksums
 - Beta/unstable flags
@@ -125,17 +128,20 @@ The header section of the README. Edit this to change the documentation.
 ## Development Setup
 
 1. **Clone the repository**:
+
    ```bash
    git clone https://github.com/JoeyGE0/hikvision-fw-archive.git
    cd hikvision-fw-archive
    ```
 
 2. **Install dependencies**:
+
    ```bash
    pip install -r requirements.txt
    ```
 
 3. **Test the scraper**:
+
    ```bash
    python main.py scrape
    ```

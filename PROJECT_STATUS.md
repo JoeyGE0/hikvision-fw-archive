@@ -28,16 +28,19 @@ Current status of the Hikvision Firmware Archive project.
 The scraper is functional but can be enhanced:
 
 1. **Better Model Detection**:
+
    - Currently handles common patterns (DS-2CD, IPC_XXX, etc.)
    - Could improve detection for edge cases
    - Handle regional model variations
 
 2. **Hardware Version Detection**:
+
    - Currently infers from model prefix or extracts from text
    - Could be more accurate with better pattern matching
    - Some devices have non-standard hardware version formats
 
 3. **Website Structure Changes**:
+
    - Hikvision may change their site layout
    - Scraper needs to adapt to new HTML structures
    - May need to handle JavaScript-rendered content (currently uses static HTML)
@@ -61,26 +64,31 @@ The scraper is functional but can be enhanced:
 ### Optional Features
 
 1. **Wayback Machine Integration**:
+
    - Scrape historical firmware versions from archived pages
    - Recover deleted firmware links
 
 2. **Firmware File Analysis**:
+
    - Download and analyze firmware files
    - Extract metadata (model, version, build date)
    - Generate checksums
    - Detect beta/unstable flags
 
 3. **Regional Support**:
+
    - Support multiple regional Hikvision sites
    - Handle region-specific firmwares
    - Language-specific documentation
 
 4. **API/Web Interface**:
+
    - REST API for programmatic access
    - Web interface for browsing firmwares
    - Search functionality
 
 5. **Notifications**:
+
    - Email notifications for new firmwares
    - RSS feed
    - GitHub releases (already implemented)
@@ -93,21 +101,25 @@ The scraper is functional but can be enhanced:
 ## 📝 Known Limitations
 
 1. **JavaScript-Heavy Site**:
+
    - Hikvision's site uses JavaScript for dynamic content
    - Current scraper only handles static HTML
    - May miss some firmwares loaded via AJAX
 
 2. **Rate Limiting**:
+
    - Scraper includes delays but may still hit rate limits
    - Hikvision may block aggressive scraping
    - May need to use proxies or slower scraping
 
 3. **Link Expiration**:
+
    - Download links may expire or change
    - No automatic validation of link validity
    - Manual checking required
 
 4. **Hardware Version Ambiguity**:
+
    - Some devices show abbreviated hardware versions
    - Matching can be tricky
    - May require manual verification
@@ -131,21 +143,25 @@ The scraper is functional but can be enhanced:
 ## 🎯 Next Steps
 
 1. **Test the Scraper**:
+
    - Run `python main.py scrape` locally
    - Verify it finds firmwares
    - Check data quality
 
 2. **Initial Data Collection**:
+
    - Run scraper multiple times
    - Manually add known firmwares
    - Build initial database
 
 3. **GitHub Actions Setup**:
+
    - Ensure workflow has proper permissions
    - Test automated runs
    - Monitor for errors
 
 4. **Community Engagement**:
+
    - Share the archive
    - Collect feedback
    - Gather missing firmware reports

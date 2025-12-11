@@ -37,6 +37,7 @@ This archive is automatically updated twice daily (4:20 AM and PM UTC) by scrapi
 5. Creates GitHub releases when new firmwares are discovered
 
 All data is stored in JSON format:
+
 - `devices.json` - Device model and hardware version mappings
 - `firmwares_live.json` - Firmwares scraped from Hikvision's website
 - `firmwares_manual.json` - Manually added firmwares (betas, archived links, etc.)
@@ -54,6 +55,7 @@ All data is stored in JSON format:
 ### Device Model Format
 
 Hikvision uses a consistent naming scheme:
+
 - **DS-2CD** - IP Cameras (fixed)
 - **DS-2DE** - PTZ Cameras
 - **DS-76XX** - NVRs (various series)
@@ -63,6 +65,7 @@ Hikvision uses a consistent naming scheme:
 ### Hardware Versions
 
 Hardware versions are critical for compatibility:
+
 - Usually shown in device web interface under "Device Information"
 - Format varies: `IPC_G0`, `IPC_XXX`, `NVR_XXX`, etc.
 - Some devices show abbreviated versions (last few characters may be missing)
@@ -121,6 +124,7 @@ python main.py add "https://example.com/firmware.dav" \
 ### Improving the Scraper
 
 The scraper in `main.py` can always be improved:
+
 - Better model/version detection
 - Support for more product categories
 - Handling edge cases and different page layouts

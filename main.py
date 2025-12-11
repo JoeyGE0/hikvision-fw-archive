@@ -14,6 +14,14 @@ import requests
 from bs4 import BeautifulSoup
 from dateutil import parser as date_parser
 
+# Playwright for JavaScript rendering (optional but recommended)
+try:
+    from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
+    PLAYWRIGHT_AVAILABLE = True
+except ImportError:
+    PLAYWRIGHT_AVAILABLE = False
+    logger.warning("Playwright not available - JavaScript-rendered content will not be accessible")
+
 from common import (
     create_device_id,
     format_date,
@@ -50,7 +58,7 @@ HEADERS = {
 class HikvisionFirmwareScraper:
     """Scraper for Hikvision firmware download center."""
     
-    def __init__(self):
+    def __init__(self, use_playwright: bool = True):
         self.session = requests.Session()
         self.session.headers.update(HEADERS)
         self.devices = load_json('devices.json')
@@ -58,6 +66,11 @@ class HikvisionFirmwareScraper:
         self.firmwares_manual = load_json('firmwares_manual.json')
         self.firmware_info = load_json('firmware_info.json')
         self.scraped_count = 0
+        self.use_playwright = use_playwright and PLAYWRIGHT_AVAILABLE
+        if self.use_playwright:
+            logger.info("Using Playwright for JavaScript rendering")
+        else:
+            logger.warning("Playwright not available - limited scraping capability")
         
     def fetch_page(self, url: str, retries: int = 3) -> Optional[BeautifulSoup]:
         """Fetch and parse a webpage with retry logic."""
@@ -296,53 +309,174 @@ class HikvisionFirmwareScraper:
         
         return firmwares
     
+    def scrape_with_playwright(self) -> List[Dict]:
+        """Scrape using Playwright to handle JavaScript rendering."""
+        if not self.use_playwright:
+            return []
+        
+        firmwares = []
+        logger.info("Starting Playwright-based scraping...")
+        
+        with sync_playwright() as p:
+            # Launch browser (headless for GitHub Actions)
+            browser = p.chromium.launch(headless=True)
+            context = browser.new_context(
+                user_agent=HEADERS['User-Agent'],
+                viewport={'width': 1920, 'height': 1080}
+            )
+            page = context.new_page()
+            
+            try:
+                # Navigate to firmware page
+                logger.info(f"Loading {HIKVISION_DOWNLOAD_URL}...")
+                page.goto(HIKVISION_DOWNLOAD_URL, wait_until='networkidle', timeout=60000)
+                time.sleep(3)  # Wait for JS to load
+                
+                # Get page content after JS rendering
+                html = page.content()
+                soup = BeautifulSoup(html, 'html.parser')
+                
+                # Look for firmware download links in rendered content
+                download_links = soup.find_all('a', href=True)
+                logger.info(f"Found {len(download_links)} links on page")
+                
+                for link in download_links:
+                    href = link.get('href', '')
+                    if any(ext in href.lower() for ext in ['.dav', '.zip', '.pak', '.bin']):
+                        # Make absolute URL
+                        if href.startswith('/'):
+                            href = urljoin(HIKVISION_BASE_URL, href)
+                        elif not href.startswith('http'):
+                            href = urljoin(HIKVISION_DOWNLOAD_URL, href)
+                        
+                        # Extract firmware info
+                        text = link.get_text(strip=True)
+                        parent_text = ''
+                        if link.find_parent():
+                            parent_text = link.find_parent().get_text(strip=True)
+                        
+                        model = self.extract_model_from_filename(href) or self.extract_model_from_filename(text)
+                        version = self.extract_version_from_filename(href) or self.extract_version_from_filename(text)
+                        
+                        if model and version:
+                            hardware_version = self.extract_hardware_version(text + ' ' + parent_text, model)
+                            
+                            firmware_data = {
+                                'model': normalize_model_name(model),
+                                'hardware_version': hardware_version,
+                                'version': version,
+                                'download_url': href,
+                                'date': '',
+                                'changes': '',
+                                'notes': '',
+                                'source': 'live'
+                            }
+                            firmwares.append(firmware_data)
+                            logger.debug(f"Found firmware: {model} {hardware_version} v{version}")
+                
+                # Try searching for common models
+                logger.info("Searching for common camera models...")
+                common_models = [
+                    'DS-2CD2',   # IP Camera series
+                    'DS-2DE',    # PTZ Cameras
+                    'DS-76',     # NVRs
+                    'DS-77',     # NVRs
+                ]
+                
+                for model_query in common_models:
+                    try:
+                        logger.info(f"Searching for {model_query}...")
+                        search_url = f"https://www.hikvision.com/en/search/?keyword={model_query}"
+                        page.goto(search_url, wait_until='networkidle', timeout=60000)
+                        time.sleep(3)  # Wait for results to load
+                        
+                        # Get search results
+                        search_html = page.content()
+                        search_soup = BeautifulSoup(search_html, 'html.parser')
+                        
+                        # Find firmware links in search results
+                        result_links = search_soup.find_all('a', href=True)
+                        for link in result_links:
+                            href = link.get('href', '')
+                            if any(ext in href.lower() for ext in ['.dav', '.zip', '.pak', '.bin', 'firmware']):
+                                if href.startswith('/'):
+                                    href = urljoin(HIKVISION_BASE_URL, href)
+                                
+                                # Navigate to firmware page if it's a product page
+                                if 'firmware' in href.lower() and '.dav' not in href.lower():
+                                    try:
+                                        page.goto(href, wait_until='networkidle', timeout=30000)
+                                        time.sleep(2)
+                                        fw_page_html = page.content()
+                                        fw_soup = BeautifulSoup(fw_page_html, 'html.parser')
+                                        page_firmwares = self.parse_firmware_page_from_soup(fw_soup, href)
+                                        firmwares.extend(page_firmwares)
+                                    except Exception as e:
+                                        logger.debug(f"Could not load {href}: {e}")
+                        
+                        time.sleep(2)  # Be respectful
+                    except Exception as e:
+                        logger.warning(f"Search failed for {model_query}: {e}")
+                
+            finally:
+                browser.close()
+        
+        return firmwares
+    
+    def parse_firmware_page_from_soup(self, soup: BeautifulSoup, base_url: str) -> List[Dict]:
+        """Parse firmware information from a BeautifulSoup object."""
+        firmwares = []
+        download_links = soup.find_all('a', href=True)
+        
+        for link in download_links:
+            href = link.get('href', '')
+            if any(ext in href.lower() for ext in ['.dav', '.zip', '.pak', '.bin']):
+                if href.startswith('/'):
+                    href = urljoin(HIKVISION_BASE_URL, href)
+                elif not href.startswith('http'):
+                    href = urljoin(base_url, href)
+                
+                text = link.get_text(strip=True)
+                context = soup.get_text()
+                
+                model = self.extract_model_from_filename(href) or self.extract_model_from_filename(text)
+                version = self.extract_version_from_filename(href) or self.extract_version_from_filename(text)
+                
+                if model and version:
+                    hardware_version = self.extract_hardware_version(context, model)
+                    firmware_data = {
+                        'model': normalize_model_name(model),
+                        'hardware_version': hardware_version,
+                        'version': version,
+                        'download_url': href,
+                        'date': '',
+                        'changes': '',
+                        'notes': '',
+                        'source': 'live'
+                    }
+                    firmwares.append(firmware_data)
+        
+        return firmwares
+    
     def scrape_firmwares(self) -> List[Dict]:
         """Scrape firmware information from Hikvision download center.
         
-        NOTE: Hikvision's website is JavaScript-heavy and uses dynamic content loading.
-        This scraper attempts to extract what it can from static HTML, but many firmwares
-        may only be accessible via JavaScript-rendered search results.
-        
-        For comprehensive scraping, consider using Selenium/Playwright for JS rendering.
+        Uses Playwright if available to handle JavaScript rendering.
+        Falls back to static HTML scraping if Playwright is not available.
         """
         logger.info("Starting Hikvision firmware scrape...")
-        logger.warning("Hikvision's site uses JavaScript - some content may not be accessible via static HTML scraping")
         firmwares = []
         
-        # Fetch main download page
-        soup = self.fetch_page(HIKVISION_DOWNLOAD_URL)
-        if not soup:
-            logger.error("Failed to fetch download center page")
-            return firmwares
-        
-        # Hikvision's firmware page uses a search-based interface
-        # The page structure: https://www.hikvision.com/en/support/download/firmware/
-        # - Has a search box (input type="search")
-        # - Search form submits to /en/search/ with keyword parameter
-        # - Results are likely loaded via JavaScript/AJAX
-        
-        # Approach 1: Try to find any static firmware links on the main page
-        logger.info("Scanning main page for static firmware links...")
-        main_page_firmwares = self.parse_firmware_page(HIKVISION_DOWNLOAD_URL)
-        firmwares.extend(main_page_firmwares)
-        
-        # Approach 2: Try searching for common model prefixes via search page
-        # Note: This may not work if results are JS-rendered
-        common_prefixes = [
-            'DS-2CD2043',  # Example specific model
-            'DS-2CD2',     # IP Camera series
-            'DS-2DE',      # PTZ Cameras
-        ]
-        
-        logger.info(f"Attempting search-based discovery (may be limited by JS rendering)...")
-        for model_query in common_prefixes:
-            logger.info(f"Searching for {model_query}...")
-            try:
-                prefix_firmwares = self.search_firmwares_by_model(model_query)
-                firmwares.extend(prefix_firmwares)
-                time.sleep(2)  # Be respectful of their servers
-            except Exception as e:
-                logger.warning(f"Search failed for {model_query}: {e}")
+        # Use Playwright if available (handles JavaScript)
+        if self.use_playwright:
+            logger.info("Using Playwright for JavaScript rendering...")
+            firmwares.extend(self.scrape_with_playwright())
+        else:
+            # Fallback to static HTML scraping
+            logger.warning("Playwright not available - using static HTML scraping (limited)")
+            soup = self.fetch_page(HIKVISION_DOWNLOAD_URL)
+            if soup:
+                firmwares.extend(self.parse_firmware_page_from_soup(soup, HIKVISION_DOWNLOAD_URL))
         
         # Deduplicate by model+hardware+version
         seen = set()
@@ -352,14 +486,6 @@ class HikvisionFirmwareScraper:
             if key and key not in seen:
                 seen.add(key)
                 unique_firmwares.append(fw)
-        
-        if len(unique_firmwares) == 0:
-            logger.warning("No firmwares found via static HTML scraping.")
-            logger.info("This is expected - Hikvision's site requires JavaScript rendering.")
-            logger.info("Consider:")
-            logger.info("  1. Using Selenium/Playwright for JS rendering")
-            logger.info("  2. Manually adding firmwares via 'python main.py add'")
-            logger.info("  3. Monitoring Hikvision's site for API endpoints")
         
         logger.info(f"Found {len(unique_firmwares)} unique firmwares")
         return unique_firmwares
