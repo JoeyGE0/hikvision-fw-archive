@@ -1,121 +1,174 @@
 # Quick Start Guide
 
-## Setup
+Get started with the Hikvision Firmware Archive in minutes.
 
-1. **Clone the repository:**
+## Installation
 
+### Prerequisites
+
+- Python 3.11 or higher
+- pip (Python package manager)
+
+### Setup Steps
+
+1. **Clone the repository**:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/hikvision-fw-archive.git
+   git clone https://github.com/JoeyGE0/hikvision-fw-archive.git
    cd hikvision-fw-archive
    ```
 
-2. **Install dependencies:**
-
+2. **Install dependencies**:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Make scripts executable (optional):**
+   This installs:
+   - `requests` - HTTP library for web scraping
+   - `beautifulsoup4` - HTML parsing
+   - `lxml` - Fast XML/HTML parser
+   - `python-dateutil` - Date parsing utilities
+
+3. **Verify installation**:
    ```bash
-   chmod +x main.py release.py
+   python main.py --help
    ```
 
 ## Basic Usage
 
 ### Scraping Firmwares
 
-**Note:** The scraper needs to be customized for Hikvision's actual website structure. Currently it's a skeleton that you'll need to adapt.
+Run the scraper to fetch firmwares from Hikvision's website:
 
 ```bash
 python main.py scrape
 ```
 
 This will:
-
 - Fetch firmware data from Hikvision's download center
+- Extract model numbers, versions, and download links
 - Update `devices.json` and `firmwares_live.json`
-- Save the data
+- Save all data to JSON files
+
+**Note**: The scraper may take several minutes depending on how many products it finds.
 
 ### Manually Adding a Firmware
 
+If you have a firmware download link, add it manually:
+
 ```bash
-python main.py add "https://example.com/firmware.zip" \
+python main.py add "https://www.hikvision.com/download/firmware.dav" \
   --model "DS-2CD2XXX" \
-  --hw-version "IPC_XXX" \
+  --hw-version "IPC_G0" \
   --version "5.7.0" \
-  --date "2023-01-01" \
+  --date "2023-01-15" \
   --changes "Bug fixes and improvements" \
   --notes "Official release"
 ```
 
-### Generating README
+The tool will try to auto-detect model and version from the filename if you don't provide them.
+
+### Generating the README
+
+Generate the README file from JSON data:
 
 ```bash
 python release.py
 ```
 
-This generates the `README.md` file from the JSON data files.
+This creates `README.md` with an organized list of all firmwares.
+
+## Understanding Hikvision Firmware
+
+### Model Numbers
+
+Hikvision uses consistent naming:
+- **DS-2CD** - IP Cameras (fixed dome/bullet)
+- **DS-2DE** - PTZ Cameras
+- **DS-76XX** - NVRs (various series)
+- **DS-77XX** - NVRs (various series)
+
+### Hardware Versions
+
+Critical for compatibility! Examples:
+- `IPC_G0` - Generic IP Camera hardware
+- `IPC_BXX` - Specific camera hardware version
+- `NVR_XXX` - NVR hardware version
+
+Find your hardware version in the device web interface under "Device Information" or "System Information".
+
+### Firmware Versions
+
+Format: `X.Y.Z` (e.g., `5.7.0`)
+- Major version (5) - Major feature updates
+- Minor version (7) - Feature additions
+- Patch version (0) - Bug fixes
+
+### Filename Patterns
+
+Hikvision firmware files often follow patterns:
+- `digicap.dav` - Generic name (model in metadata)
+- `DS-2CD2XXX_5.7.0_220123.dav` - Model_Version_Date
+- `IPC_XXX_5.7.0_220123.dav` - Hardware_Version_Date
 
 ## Customizing the Scraper
 
-The scraper in `main.py` needs to be adapted to Hikvision's website. Here's what you need to do:
+The scraper searches for firmwares by model prefixes. You can modify `scrape_firmwares()` in `main.py` to:
 
-1. **Inspect Hikvision's download center:**
+1. **Add more model prefixes**:
+   ```python
+   common_prefixes = [
+       'DS-2CD',  # IP Cameras
+       'DS-2DE',  # PTZ Cameras
+       'DS-76',   # NVRs
+       'YOUR-PREFIX',  # Add your own
+   ]
+   ```
 
-   - Visit https://www.hikvision.com/en/support/download/firmware/
-   - Use browser dev tools to inspect the HTML structure
-   - Note how firmware information is displayed
+2. **Adjust search patterns**: Modify `extract_model_from_filename()` and `extract_version_from_filename()` to handle different filename formats.
 
-2. **Update `extract_firmware_info()` method:**
+3. **Add rate limiting**: The scraper already includes delays, but you can adjust them:
+   ```python
+   time.sleep(2)  # Increase delay between requests
+   ```
 
-   - This method should extract firmware data from HTML elements
-   - You'll need to find the correct CSS selectors or XPath expressions
+## Troubleshooting
 
-3. **Update `scrape_firmwares()` method:**
-   - Implement navigation through product categories
-   - Handle pagination if needed
-   - Extract firmware links and metadata
+### Scraper Finds No Firmwares
 
-## Example: Adding Firmware Data Structure
+- **Check internet connection**: The scraper needs to access Hikvision's website
+- **Verify website structure**: Hikvision may have changed their site layout
+- **Check logs**: Look for error messages in the output
+- **Try manual addition**: Use `python main.py add` for specific firmwares
 
-The JSON structure for firmwares looks like this:
+### Invalid JSON Errors
 
-```json
-{
-  "DS-2CD2XXX_IPC_XXX_5.7.0": {
-    "device_id": 100001,
-    "model": "DS-2CD2XXX",
-    "hardware_version": "IPC_XXX",
-    "version": "5.7.0",
-    "date": "2023-01-01",
-    "download_url": "https://example.com/firmware.zip",
-    "changes": "Bug fixes and improvements",
-    "notes": "Official release",
-    "is_beta": false,
-    "source": "live"
-  }
-}
-```
+If JSON files become corrupted:
+1. Check file syntax with a JSON validator
+2. Restore from git history: `git checkout devices.json`
+3. Re-run scraper to regenerate data
 
-## Testing
+### Missing Dependencies
 
-Test the scraper locally before setting up automation:
-
+If you get import errors:
 ```bash
-# Test scraping (will fail until you customize it)
-python main.py scrape
-
-# Test manual add
-python main.py add "https://example.com/test.zip" --model "TEST" --hw-version "TEST" --version "1.0.0"
-
-# Generate README to see results
-python release.py
+pip install --upgrade -r requirements.txt
 ```
+
+### Firmware Detection Issues
+
+The scraper tries to auto-detect model/version from filenames. If it fails:
+- Manually add firmwares with `--model` and `--version` flags
+- Improve detection patterns in `extract_model_from_filename()` and `extract_version_from_filename()`
 
 ## Next Steps
 
-1. Customize the scraper for Hikvision's website structure
-2. Test locally
-3. Push to GitHub
-4. GitHub Actions will run automatically twice daily
-5. Monitor and improve based on results
+- **Contribute**: See [CONTRIBUTING.md](CONTRIBUTING.md) for how to help
+- **Report Issues**: Open an issue if you find problems
+- **Improve Scraper**: Help make the scraper more robust
+- **Add Firmwares**: Share firmware links you find
+
+## Resources
+
+- [Hikvision Official Download Center](https://www.hikvision.com/en/support/download/firmware/)
+- [Hikvision Support](https://www.hikvision.com/en/support/)
+- [SADP Tool](https://www.hikvision.com/en/support/download/tools/) - Device discovery and firmware upload tool

@@ -1,6 +1,7 @@
 """Common utilities for Hikvision firmware archive."""
 import json
 import os
+import re
 from datetime import datetime
 from typing import Any, Dict, List, Optional
 
@@ -37,13 +38,21 @@ def merge_dicts(base: Dict[str, Any], new: Dict[str, Any]) -> Dict[str, Any]:
 
 
 def parse_version(version_str: str) -> tuple:
-    """Parse version string into tuple for comparison.
+    """Parse Hikvision version string into tuple for comparison.
     
-    Example: "V5.7.0" -> (5, 7, 0)
+    Handles various Hikvision version formats:
+    - "V5.7.0" -> (5, 7, 0)
+    - "5.7.0" -> (5, 7, 0)
+    - "5.7.0 build 220123" -> (5, 7, 0)
+    - "V5.7.0_220123" -> (5, 7, 0)
     """
     try:
-        # Remove 'V' prefix and split by dots
+        # Remove 'V' prefix, build info, and date suffixes
         version_str = version_str.upper().replace('V', '').strip()
+        # Remove build date suffixes (e.g., "_220123" or " build 220123")
+        version_str = re.sub(r'[\s_]build[\s_]\d+', '', version_str)
+        version_str = re.sub(r'_\d{6,8}$', '', version_str)
+        # Split by dots
         parts = version_str.split('.')
         return tuple(int(part) for part in parts)
     except (ValueError, AttributeError):
@@ -51,10 +60,34 @@ def parse_version(version_str: str) -> tuple:
 
 
 def format_date(date_str: str) -> str:
-    """Format date string to YYYY-MM-DD format."""
+    """Format date string to YYYY-MM-DD format.
+    
+    Handles Hikvision date formats:
+    - YYYY-MM-DD (standard)
+    - YYMMDD (common in filenames, e.g., 220123 -> 2022-01-23)
+    - YYYYMMDD (e.g., 20220123 -> 2022-01-23)
+    - Various slash formats
+    """
+    if not date_str:
+        return ''
+    
     try:
+        # Handle YYMMDD format (common in Hikvision filenames)
+        if len(date_str) == 6 and date_str.isdigit():
+            year = '20' + date_str[:2]
+            month = date_str[2:4]
+            day = date_str[4:6]
+            return f"{year}-{month}-{day}"
+        
+        # Handle YYYYMMDD format
+        if len(date_str) == 8 and date_str.isdigit():
+            year = date_str[:4]
+            month = date_str[4:6]
+            day = date_str[6:8]
+            return f"{year}-{month}-{day}"
+        
         # Try various date formats
-        for fmt in ['%Y-%m-%d', '%Y/%m/%d', '%d/%m/%Y', '%m/%d/%Y', '%Y%m%d']:
+        for fmt in ['%Y-%m-%d', '%Y/%m/%d', '%d/%m/%Y', '%m/%d/%Y', '%Y%m%d', '%d-%m-%Y']:
             try:
                 dt = datetime.strptime(date_str, fmt)
                 return dt.strftime('%Y-%m-%d')

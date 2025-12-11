@@ -1,92 +1,160 @@
 # Project Status
 
+Current status of the Hikvision Firmware Archive project.
+
 ## ✅ Completed
 
-- Project structure created
-- Base files and JSON schemas set up
-- Scraper skeleton implemented
-- README generation script created
-- GitHub Actions workflow configured
-- Documentation files created
+- ✅ Project structure and file organization
+- ✅ JSON data schemas (`devices.json`, `firmwares_live.json`, `firmwares_manual.json`, `firmware_info.json`)
+- ✅ Hikvision-specific scraper implementation with:
+  - Model number extraction from filenames
+  - Version parsing (handles V5.7.0, 5.7.0, build dates, etc.)
+  - Hardware version detection
+  - Date extraction from filenames (YYMMDD format)
+  - Search-based firmware discovery
+- ✅ README generation script (`release.py`)
+- ✅ GitHub Actions workflow for automated updates
+- ✅ Hikvision-specific documentation:
+  - `readme_header.md` - Custom header (not Reolink copy)
+  - `CONTRIBUTING.md` - Contribution guidelines
+  - `QUICKSTART.md` - Setup and usage guide
+- ✅ Manual firmware addition tool
+- ✅ Common utilities with Hikvision-specific parsing
 
-## 🔧 Needs Customization
+## 🔧 In Progress / Needs Work
 
-### Critical: Website Scraper
+### Scraper Improvements
 
-The scraper in `main.py` is a skeleton that needs to be adapted to Hikvision's actual website structure. You need to:
+The scraper is functional but can be enhanced:
 
-1. **Inspect Hikvision's download center:**
+1. **Better Model Detection**:
+   - Currently handles common patterns (DS-2CD, IPC_XXX, etc.)
+   - Could improve detection for edge cases
+   - Handle regional model variations
 
-   - Visit: https://www.hikvision.com/en/support/download/firmware/
-   - Use browser dev tools to inspect HTML
-   - Note how products are listed
-   - Note how firmware information is displayed
+2. **Hardware Version Detection**:
+   - Currently infers from model prefix or extracts from text
+   - Could be more accurate with better pattern matching
+   - Some devices have non-standard hardware version formats
 
-2. **Update `scrape_firmwares()` method:**
+3. **Website Structure Changes**:
+   - Hikvision may change their site layout
+   - Scraper needs to adapt to new HTML structures
+   - May need to handle JavaScript-rendered content (currently uses static HTML)
 
-   - Implement navigation through product categories
-   - Handle pagination/search if needed
-   - Extract product model names and hardware versions
+4. **Product Category Coverage**:
+   - Currently searches common prefixes (DS-2CD, DS-2DE, DS-76, etc.)
+   - Could add more product lines:
+     - Access control devices
+     - Intercom systems
+     - Thermal cameras
+     - Specialized cameras
 
-3. **Update `extract_firmware_info()` method:**
+### Data Quality
 
-   - Find correct CSS selectors/XPath for:
-     - Firmware version
-     - Release date
-     - Download link
-     - Changelog/description
-   - Handle different page layouts if they exist
+- **Link Validation**: Check if download links are still valid
+- **Duplicate Detection**: Better handling of duplicate firmwares
+- **Metadata Enrichment**: Extract more info (file size, checksums, changelogs)
 
-4. **Test thoroughly:**
-   - Test on different product pages
-   - Handle edge cases (missing data, different formats)
-   - Verify download links work
+## 🚀 Future Enhancements
 
-### Optional Improvements
+### Optional Features
 
-- Add support for Wayback Machine scraping (for historical firmwares)
-- Add firmware file validation (checksums, file size)
-- Add support for multiple regions/languages
-- Add rate limiting to avoid being blocked
-- Add retry logic for failed requests
+1. **Wayback Machine Integration**:
+   - Scrape historical firmware versions from archived pages
+   - Recover deleted firmware links
 
-## 📝 Next Steps
+2. **Firmware File Analysis**:
+   - Download and analyze firmware files
+   - Extract metadata (model, version, build date)
+   - Generate checksums
+   - Detect beta/unstable flags
 
-1. **Customize the scraper:**
+3. **Regional Support**:
+   - Support multiple regional Hikvision sites
+   - Handle region-specific firmwares
+   - Language-specific documentation
 
-   - Study Hikvision's website structure
-   - Update `main.py` with actual selectors
-   - Test locally
+4. **API/Web Interface**:
+   - REST API for programmatic access
+   - Web interface for browsing firmwares
+   - Search functionality
 
-2. **Initial data collection:**
+5. **Notifications**:
+   - Email notifications for new firmwares
+   - RSS feed
+   - GitHub releases (already implemented)
 
-   - Run scraper manually
-   - Manually add any known firmwares
-   - Generate initial README
+6. **Validation**:
+   - Verify firmware files are valid
+   - Check file integrity
+   - Warn about potentially corrupted files
 
-3. **Set up GitHub repository:**
+## 📝 Known Limitations
 
-   - Create new repo on GitHub
-   - Push code
-   - Enable GitHub Actions
-   - Update README with your username
+1. **JavaScript-Heavy Site**:
+   - Hikvision's site uses JavaScript for dynamic content
+   - Current scraper only handles static HTML
+   - May miss some firmwares loaded via AJAX
 
-4. **Monitor and iterate:**
-   - Check GitHub Actions logs
-   - Fix any issues
-   - Improve scraper based on results
+2. **Rate Limiting**:
+   - Scraper includes delays but may still hit rate limits
+   - Hikvision may block aggressive scraping
+   - May need to use proxies or slower scraping
 
-## 🐛 Known Limitations
+3. **Link Expiration**:
+   - Download links may expire or change
+   - No automatic validation of link validity
+   - Manual checking required
 
-- Hikvision may require login for some firmware downloads
-- Website structure may change, breaking the scraper
-- Some firmwares may be region-specific
-- No public API available (must scrape HTML)
+4. **Hardware Version Ambiguity**:
+   - Some devices show abbreviated hardware versions
+   - Matching can be tricky
+   - May require manual verification
 
-## 💡 Tips
+5. **Regional Differences**:
+   - Different regions may have different firmware versions
+   - Some firmwares may be region-locked
+   - Not all regions are covered
 
-- Start with a few specific product models to test
-- Use browser automation (Selenium) if JavaScript is required
-- Consider using `requests-html` if dynamic content is needed
-- Keep backups of JSON files
-- Document any special cases you find
+## 🐛 Known Issues
+
+- None currently reported. Open an issue if you find problems!
+
+## 📊 Statistics
+
+- **Total Devices**: 0 (will grow as scraper runs)
+- **Total Firmwares**: 0 (will grow as scraper runs)
+- **Scraper Success Rate**: TBD (needs testing)
+- **Last Scrape**: Never (initial setup)
+
+## 🎯 Next Steps
+
+1. **Test the Scraper**:
+   - Run `python main.py scrape` locally
+   - Verify it finds firmwares
+   - Check data quality
+
+2. **Initial Data Collection**:
+   - Run scraper multiple times
+   - Manually add known firmwares
+   - Build initial database
+
+3. **GitHub Actions Setup**:
+   - Ensure workflow has proper permissions
+   - Test automated runs
+   - Monitor for errors
+
+4. **Community Engagement**:
+   - Share the archive
+   - Collect feedback
+   - Gather missing firmware reports
+
+5. **Continuous Improvement**:
+   - Update scraper as Hikvision changes site
+   - Add more product categories
+   - Improve detection accuracy
+
+## 🤝 Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for how to help improve this project!
