@@ -240,32 +240,73 @@ class HikvisionFirmwareScraper:
         
         return firmwares
     
-    def search_firmwares_by_model(self, model_prefix: str) -> List[Dict]:
-        """Search for firmwares by model prefix/pattern."""
+    def search_firmwares_by_model(self, model_query: str) -> List[Dict]:
+        """Search for firmwares by model name/query.
+        
+        Hikvision's search is at /en/search/ with keyword parameter.
+        However, results are likely loaded via JavaScript, so this may not work
+        with static HTML parsing alone.
+        """
         firmwares = []
         
-        # Hikvision's site uses search - try common model prefixes
-        search_url = f"{HIKVISION_DOWNLOAD_URL}?keyword={model_prefix}"
-        soup = self.fetch_page(search_url)
+        # Hikvision search endpoint
+        search_url = "https://www.hikvision.com/en/search/"
+        params = {'keyword': model_query}
         
-        if not soup:
+        try:
+            response = self.session.get(search_url, params=params, timeout=30)
+            response.raise_for_status()
+            soup = BeautifulSoup(response.content, 'html.parser')
+        except Exception as e:
+            logger.error(f"Search failed for {model_query}: {e}")
             return firmwares
         
-        # Find all firmware download links on search results page
-        download_links = soup.find_all('a', href=True)
+        # The search results page may have:
+        # - Links to product pages (not direct firmware downloads)
+        # - JavaScript-rendered results (not accessible via static HTML)
+        # - Product cards/items that need further navigation
         
-        for link in download_links:
-            href = link.get('href', '')
-            if any(ext in href.lower() for ext in ['.dav', '.zip', '.pak', '.bin']):
-                # Parse individual firmware pages
-                page_firmwares = self.parse_firmware_page(href)
-                firmwares.extend(page_firmwares)
+        # Look for product/firmware result containers
+        # Common patterns: result-item, product-item, download-item, etc.
+        result_selectors = [
+            {'class': lambda x: x and 'result' in str(x).lower()},
+            {'class': lambda x: x and 'product' in str(x).lower()},
+            {'class': lambda x: x and 'item' in str(x).lower()},
+            {'class': lambda x: x and 'firmware' in str(x).lower()},
+        ]
+        
+        found_links = set()
+        for selector in result_selectors:
+            results = soup.find_all(['div', 'article', 'li', 'a'], selector)
+            for result in results:
+                # Look for download links within results
+                links = result.find_all('a', href=True) if result.name != 'a' else [result]
+                for link in links:
+                    href = link.get('href', '')
+                    if href and href not in found_links:
+                        found_links.add(href)
+                        # Check if it's a firmware download link
+                        if any(ext in href.lower() for ext in ['.dav', '.zip', '.pak', '.bin']):
+                            page_firmwares = self.parse_firmware_page(href)
+                            firmwares.extend(page_firmwares)
+                        # Or if it's a product page that might contain firmware links
+                        elif 'firmware' in href.lower() or 'download' in href.lower():
+                            page_firmwares = self.parse_firmware_page(href)
+                            firmwares.extend(page_firmwares)
         
         return firmwares
     
     def scrape_firmwares(self) -> List[Dict]:
-        """Scrape firmware information from Hikvision download center."""
+        """Scrape firmware information from Hikvision download center.
+        
+        NOTE: Hikvision's website is JavaScript-heavy and uses dynamic content loading.
+        This scraper attempts to extract what it can from static HTML, but many firmwares
+        may only be accessible via JavaScript-rendered search results.
+        
+        For comprehensive scraping, consider using Selenium/Playwright for JS rendering.
+        """
         logger.info("Starting Hikvision firmware scrape...")
+        logger.warning("Hikvision's site uses JavaScript - some content may not be accessible via static HTML scraping")
         firmwares = []
         
         # Fetch main download page
@@ -274,29 +315,34 @@ class HikvisionFirmwareScraper:
             logger.error("Failed to fetch download center page")
             return firmwares
         
-        # Hikvision's site structure varies - try multiple approaches
+        # Hikvision's firmware page uses a search-based interface
+        # The page structure: https://www.hikvision.com/en/support/download/firmware/
+        # - Has a search box (input type="search")
+        # - Search form submits to /en/search/ with keyword parameter
+        # - Results are likely loaded via JavaScript/AJAX
         
-        # Approach 1: Find all download links on main page
-        logger.info("Scanning main page for firmware links...")
+        # Approach 1: Try to find any static firmware links on the main page
+        logger.info("Scanning main page for static firmware links...")
         main_page_firmwares = self.parse_firmware_page(HIKVISION_DOWNLOAD_URL)
         firmwares.extend(main_page_firmwares)
         
-        # Approach 2: Search common model prefixes
+        # Approach 2: Try searching for common model prefixes via search page
+        # Note: This may not work if results are JS-rendered
         common_prefixes = [
-            'DS-2CD',  # IP Cameras
-            'DS-2DE',  # PTZ Cameras
-            'DS-76',   # NVRs
-            'DS-77',   # NVRs
-            'DS-86',   # NVRs
-            'DS-96',   # NVRs
+            'DS-2CD2043',  # Example specific model
+            'DS-2CD2',     # IP Camera series
+            'DS-2DE',      # PTZ Cameras
         ]
         
-        logger.info(f"Searching for firmwares by model prefixes...")
-        for prefix in common_prefixes:
-            logger.info(f"Searching for {prefix}...")
-            prefix_firmwares = self.search_firmwares_by_model(prefix)
-            firmwares.extend(prefix_firmwares)
-            time.sleep(1)  # Be nice to their servers
+        logger.info(f"Attempting search-based discovery (may be limited by JS rendering)...")
+        for model_query in common_prefixes:
+            logger.info(f"Searching for {model_query}...")
+            try:
+                prefix_firmwares = self.search_firmwares_by_model(model_query)
+                firmwares.extend(prefix_firmwares)
+                time.sleep(2)  # Be respectful of their servers
+            except Exception as e:
+                logger.warning(f"Search failed for {model_query}: {e}")
         
         # Deduplicate by model+hardware+version
         seen = set()
@@ -306,6 +352,14 @@ class HikvisionFirmwareScraper:
             if key and key not in seen:
                 seen.add(key)
                 unique_firmwares.append(fw)
+        
+        if len(unique_firmwares) == 0:
+            logger.warning("No firmwares found via static HTML scraping.")
+            logger.info("This is expected - Hikvision's site requires JavaScript rendering.")
+            logger.info("Consider:")
+            logger.info("  1. Using Selenium/Playwright for JS rendering")
+            logger.info("  2. Manually adding firmwares via 'python main.py add'")
+            logger.info("  3. Monitoring Hikvision's site for API endpoints")
         
         logger.info(f"Found {len(unique_firmwares)} unique firmwares")
         return unique_firmwares
