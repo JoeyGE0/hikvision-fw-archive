@@ -1,54 +1,145 @@
 # Hikvision Firmware Archive
 
-A community-maintained archive of Hikvision camera and NVR firmware files.
+An unofficial archive of Hikvision camera and NVR firmware files, maintained for historical reference and firmware rollback purposes.
+
+- [About](#about)
+- [Why This Exists](#why-this-exists)
+- [How It Works](#how-it-works)
+- [Using This Archive](#using-this-archive)
+- [Important Warnings](#important-warnings)
+- [Contributing](#contributing)
+- [Firmware List](#firmware-list)
+
+## About
+
+This repository contains an automated collection of Hikvision firmware download links scraped from their official download center. Hikvision only displays the latest firmware for each device on their website, making it difficult to access older versions for rollback or troubleshooting purposes.
 
 ## Why This Exists
 
-Hikvision only shows the latest firmware version on their download center. Once a new version is released, older versions disappear. This makes it impossible to:
+Hikvision's download center has a few limitations:
 
-- Rollback to a previous firmware if a new one causes issues
-- See firmware version history for your device
-- Access beta or archived firmware versions
-- Compare firmware versions
+- **Only latest firmware shown**: Once a new firmware is released, older versions disappear from the official site
+- **No version history**: There's no way to see what firmware versions existed for your device
+- **Rollback difficulty**: If a new firmware causes issues, you can't easily downgrade without having saved the previous version
+- **Hardware version confusion**: Matching firmware to your exact hardware version can be tricky
+- **Scattered sources**: Firmware links are spread across different regional sites and support pages
 
-This archive maintains a searchable database of firmware versions with direct download links.
+This archive solves these problems by maintaining a searchable database of firmware versions with direct download links.
 
 ## How It Works
 
-This repository is automatically updated by scraping Hikvision's download center. The scraper:
+This archive is automatically updated twice daily (4:20 AM and PM UTC) by scraping Hikvision's download center. The scraper:
 
 1. Searches for firmware files across Hikvision's product categories
 2. Extracts model numbers, hardware versions, firmware versions, and release dates
-3. Stores download links and metadata
+3. Stores download links and metadata in JSON files
 4. Generates this README with an organized firmware list
 5. Creates GitHub releases when new firmwares are discovered
 
-## Finding Firmware
+All data is stored in JSON format:
 
-1. **Search for your device model** (e.g., `DS-2CD2043`)
-2. **Match your hardware version** - Critical! Wrong firmware can damage your device
-3. **Check version and date** - Newer versions listed first
-4. **Click download link** - Most links go directly to Hikvision's servers
+- `devices.json` - Device model and hardware version mappings
+- `firmwares_live.json` - Firmwares scraped from Hikvision's website
+- `firmwares_manual.json` - Manually added firmwares (betas, archived links, etc.)
+- `firmware_info.json` - Additional metadata about firmware files
+
+## Using This Archive
+
+### Finding Firmware
+
+1. **Search for your device model** (e.g., `DS-2CD2XXX`)
+2. **Match your hardware version** - This is critical! Installing wrong firmware can brick your device
+3. **Check the version and date** - Newer versions are listed first
+4. **Click the download link** - Most links go directly to Hikvision's servers
+
+### Device Model Format
+
+Hikvision uses a consistent naming scheme:
+
+- **DS-2CD** - IP Cameras (fixed)
+- **DS-2DE** - PTZ Cameras
+- **DS-76XX** - NVRs (various series)
+- **DS-77XX** - NVRs (various series)
+- **DS-86XX** - NVRs (various series)
+
+### Hardware Versions
+
+Hardware versions are critical for compatibility:
+
+- Usually shown in device web interface under "Device Information"
+- Format varies: `IPC_G0`, `IPC_XXX`, `NVR_XXX`, etc.
+- Some devices show abbreviated versions (last few characters may be missing)
+- **Always verify hardware version matches before flashing**
 
 ## Important Warnings
 
-⚠️ **Before flashing firmware:**
+⚠️ **Read this before flashing firmware:**
 
-- **Hardware version must match** - Check your device's web interface
-- **Beta firmwares are marked** - Use at your own risk
-- **Backup your configuration** - Always backup before updating
-- **Stable power required** - Use UPS if possible during update
-- **No warranty** - This is unofficial, use at your own risk
+1. **Hardware version must match** - Wrong firmware can permanently damage your device
+2. **Beta firmwares are marked** - Use at your own risk, may be unstable
+3. **Backup first** - Always backup your device configuration before updating
+4. **Power stability** - Ensure stable power during firmware update (use UPS if possible)
+5. **No warranty** - This is an unofficial archive, use at your own risk
+6. **Regional differences** - Some firmwares may be region-specific
+7. **Link validity** - Download links may expire or change without notice
+
+### Firmware Installation Tips
+
+- Use Hikvision's official tools (SADP, iVMS-4200) when possible
+- Some devices require firmware files to be renamed (check device documentation)
+- If firmware upload fails, try:
+  - Renaming the file
+  - Using TFTP recovery method
+  - Contacting Hikvision support
 
 ## Contributing
 
-Found a missing firmware? Have a download link? 
+Contributions are welcome! Here's how you can help:
 
-- Open an issue with the model, hardware version, firmware version, and download link
-- Or submit a PR adding it to `firmwares_manual.json`
+### Reporting Missing Firmwares
+
+If you know of a firmware that's not in this archive:
+
+1. Check `missing.txt` - Add the model and version if not already listed
+2. Open an issue with:
+   - Device model and hardware version
+   - Firmware version
+   - Download link (if you have it)
+   - Source (official site, support email, etc.)
+
+### Adding Firmwares Manually
+
+You can manually add firmwares using the command-line tool:
+
+```bash
+python main.py add "https://example.com/firmware.dav" \
+  --model "DS-2CD2XXX" \
+  --hw-version "IPC_G0" \
+  --version "5.7.0" \
+  --date "2023-01-15" \
+  --changes "Bug fixes and stability improvements" \
+  --notes "Official release from Hikvision support"
+```
+
+### Improving the Scraper
+
+The scraper in `main.py` can always be improved:
+
+- Better model/version detection
+- Support for more product categories
+- Handling edge cases and different page layouts
+- Rate limiting and error handling improvements
+
+### Editing Documentation
+
+- **Don't edit `README.md` directly** - It's auto-generated
+- Edit `readme_header.md` for changes to the header section
+- The firmware list is generated automatically from JSON files
 
 ## Firmware List
 
-Total: 0
+Below is the complete list of archived firmwares, organized by device model and hardware version.
 
-_Firmware list will appear here once scraping begins_
+**Total: 0**
+
+
