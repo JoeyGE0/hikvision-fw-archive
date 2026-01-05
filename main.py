@@ -433,6 +433,7 @@ def main():
     parser.add_argument('--date', help='Release date')
     parser.add_argument('--changes', help='Changelog')
     parser.add_argument('--notes', help='Additional notes')
+    parser.add_argument('-g', '--github', action='store_true', help='GitHub Actions mode (outputs JSON)')
     
     args = parser.parse_args()
     
@@ -440,6 +441,15 @@ def main():
     
     if args.command == 'scrape':
         scraper.scrape()
+        
+        # Generate README after scraping
+        from release import main as release_main
+        release_main()
+        
+        # GitHub Actions mode: output JSON with new firmwares count
+        if args.github:
+            import json
+            print(json.dumps(scraper.scraped_count))
     elif args.command == 'add':
         if not args.url:
             logger.error("URL required for add command")
