@@ -142,5 +142,29 @@
     "notes": "",
     "is_beta": false,
     "source": "live"
+  },
+  "AE-DC2015-B1_UNKNOWN_1.1.5": {
+    "device_id": 100004,
+    "model": "AE-DC2015-B1",
+    "hardware_version": "UNKNOWN",
+    "version": "1.1.5",
+    "date": "2020-22-09",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202209/Firmware__V1.1.5_220421_S3000442625.zip",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-DC2018-D1_UNKNOWN_3.0.3": {
+    "device_id": 100005,
+    "model": "AE-DC2018-D1",
+    "hardware_version": "UNKNOWN",
+    "version": "3.0.3",
+    "date": "2025-10-29",
+    "download_url": "https://www.hikvision.com/en/policies/materials-license-agreement/",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
   }
 }
