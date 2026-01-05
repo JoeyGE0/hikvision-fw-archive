@@ -46,5 +46,17 @@
     "notes": "",
     "is_beta": false,
     "source": "live"
+  },
+  "DS-K3B411BX_UNKNOWN_2.4.0": {
+    "device_id": 100001,
+    "model": "DS-K3B411BX",
+    "hardware_version": "UNKNOWN",
+    "version": "2.4.0",
+    "date": "2020-25-02",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202502/Firmware__V2.4.0_250106_S3000625394.zip",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
   }
 }
