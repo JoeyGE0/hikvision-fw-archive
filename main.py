@@ -230,48 +230,103 @@ class HikvisionScraper:
                                                     href = link.get_attribute('href') or ''
                                                     link_text = link.inner_text().strip()
                                                     
-                                                    # Only process actual firmware file links
+                                                    # Check if this is a firmware link (either direct file link or license agreement link)
+                                                    is_firmware_link = False
+                                                    actual_download_url = href
+                                                    
+                                                    # Direct firmware file link
                                                     if any(ext in href.lower() for ext in ['.dav', '.zip', '.pak', '.bin']):
-                                                        firmware_links_found += 1
-                                                        logger.info(f"    Found firmware link #{firmware_links_found}: {link_text[:50]}... | {href[:80]}...")
-                                                        if href.startswith('/'):
-                                                            href = urljoin(BASE_URL, href)
-                                                        elif not href.startswith('http'):
-                                                            href = urljoin(FIRMWARE_URL, href)
+                                                        is_firmware_link = True
+                                                    # License agreement link (needs to be clicked to get actual URL)
+                                                    elif href == '#download-agreement' or 'download-agreement' in href.lower():
+                                                        is_firmware_link = True
+                                                        logger.info(f"    Found license agreement link: {link_text[:50]}...")
                                                         
-                                                        version = self.extract_version(link_text + ' ' + href)
-                                                        if not version:
-                                                            logger.warning(f"    ⚠ Could not extract version from: {link_text[:50]}... | {href[:80]}...")
+                                                        # Click to open modal
+                                                        try:
+                                                            link.click()
+                                                            time.sleep(1)  # Wait for modal to appear
+                                                            
+                                                            # Find the "Agree" link in the modal
+                                                            agree_link = page.query_selector('dialog a[href*=".zip"], dialog a[href*=".dav"], dialog a[href*=".pak"], dialog a[href*=".bin"]')
+                                                            if not agree_link:
+                                                                # Try finding by text content
+                                                                all_modal_links = page.query_selector_all('dialog a[href]')
+                                                                for modal_link in all_modal_links:
+                                                                    modal_href = modal_link.get_attribute('href') or ''
+                                                                    modal_text = modal_link.inner_text().strip().lower()
+                                                                    if (any(ext in modal_href.lower() for ext in ['.dav', '.zip', '.pak', '.bin']) or
+                                                                        'agree' in modal_text):
+                                                                        agree_link = modal_link
+                                                                        break
+                                                            
+                                                            if agree_link:
+                                                                actual_download_url = agree_link.get_attribute('href') or ''
+                                                                logger.info(f"    ✓ Found actual download URL in modal: {actual_download_url[:80]}...")
+                                                            else:
+                                                                logger.warning(f"    ⚠ Could not find download URL in modal")
+                                                                # Close modal and continue
+                                                                close_btn = page.query_selector('dialog button, dialog [aria-label*="close" i]')
+                                                                if close_btn:
+                                                                    close_btn.click()
+                                                                    time.sleep(0.5)
+                                                                continue
+                                                        except Exception as modal_err:
+                                                            logger.warning(f"    ⚠ Error handling modal: {modal_err}")
+                                                            # Try to close modal if open
+                                                            try:
+                                                                close_btn = page.query_selector('dialog button, dialog [aria-label*="close" i]')
+                                                                if close_btn:
+                                                                    close_btn.click()
+                                                            except:
+                                                                pass
                                                             continue
-                                                        logger.info(f"    ✓ Extracted version: {version}")
-                                                        
-                                                        context_text = collapse_content.inner_text()
-                                                        hw_version = self.extract_hardware_version(context_text, model)
-                                                        
-                                                        # Extract date
-                                                        date_match = re.search(r'(\d{6}|\d{8})', href + link_text)
-                                                        date_str = ''
-                                                        if date_match:
-                                                            date_code = date_match.group(1)
-                                                            if len(date_code) == 6:
-                                                                date_str = f"20{date_code[:2]}-{date_code[2:4]}-{date_code[4:6]}"
-                                                        
-                                                        firmwares.append({
-                                                            'model': normalize_model_name(model),
-                                                            'hardware_version': hw_version,
-                                                            'version': version,
-                                                            'download_url': href,
-                                                            'date': date_str,
-                                                            'changes': '',
-                                                            'notes': '',
-                                                            'source': 'live'
-                                                        })
-                                                        
-                                                        # TEST MODE: Stop after finding 1 firmware file
-                                                        if TEST_MODE and len(firmwares) >= MAX_FIRMWARES_IN_TEST_MODE:
-                                                            logger.info(f"  🧪 TEST MODE: Found {len(firmwares)} firmware(s), stopping...")
-                                                            test_mode_limit_reached = True
-                                                            break
+                                                    
+                                                    if not is_firmware_link:
+                                                        continue
+                                                    
+                                                    firmware_links_found += 1
+                                                    logger.info(f"    Found firmware link #{firmware_links_found}: {link_text[:50]}... | {actual_download_url[:80]}...")
+                                                    
+                                                    # Normalize URL
+                                                    if actual_download_url.startswith('/'):
+                                                        actual_download_url = urljoin(BASE_URL, actual_download_url)
+                                                    elif not actual_download_url.startswith('http'):
+                                                        actual_download_url = urljoin(FIRMWARE_URL, actual_download_url)
+                                                    
+                                                    version = self.extract_version(link_text + ' ' + actual_download_url)
+                                                    if not version:
+                                                        logger.warning(f"    ⚠ Could not extract version from: {link_text[:50]}... | {actual_download_url[:80]}...")
+                                                        continue
+                                                    logger.info(f"    ✓ Extracted version: {version}")
+                                                    
+                                                    context_text = collapse_content.inner_text()
+                                                    hw_version = self.extract_hardware_version(context_text, model)
+                                                    
+                                                    # Extract date
+                                                    date_match = re.search(r'(\d{6}|\d{8})', actual_download_url + link_text)
+                                                    date_str = ''
+                                                    if date_match:
+                                                        date_code = date_match.group(1)
+                                                        if len(date_code) == 6:
+                                                            date_str = f"20{date_code[:2]}-{date_code[2:4]}-{date_code[4:6]}"
+                                                    
+                                                    firmwares.append({
+                                                        'model': normalize_model_name(model),
+                                                        'hardware_version': hw_version,
+                                                        'version': version,
+                                                        'download_url': actual_download_url,
+                                                        'date': date_str,
+                                                        'changes': '',
+                                                        'notes': '',
+                                                        'source': 'live'
+                                                    })
+                                                    
+                                                    # TEST MODE: Stop after finding 1 firmware file
+                                                    if TEST_MODE and len(firmwares) >= MAX_FIRMWARES_IN_TEST_MODE:
+                                                        logger.info(f"  🧪 TEST MODE: Found {len(firmwares)} firmware(s), stopping...")
+                                                        test_mode_limit_reached = True
+                                                        break
                                                 except Exception as link_err:
                                                     logger.debug(f"    Link processing error: {link_err}")
                                                     continue
