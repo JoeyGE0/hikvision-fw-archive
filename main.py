@@ -421,7 +421,14 @@ class HikvisionScraper:
                                                                         download.save_as(filepath)
                                                                         local_file_path = str(filepath)  # Store for firmware dict
                                                                         new_downloads_count += 1  # Increment counter for new download
-                                                                        logger.info(f"    ✓ File downloaded to: {filepath} (NEW firmware #{new_downloads_count})")
+                                                                        
+                                                                        # Verify file was actually saved
+                                                                        if filepath.exists():
+                                                                            file_size = filepath.stat().st_size
+                                                                            logger.info(f"    ✓ File downloaded to: {filepath} ({file_size:,} bytes) (NEW firmware #{new_downloads_count})")
+                                                                        else:
+                                                                            logger.error(f"    ✗ File download failed: {filepath} does not exist!")
+                                                                            local_file_path = ''  # Clear path if file doesn't exist
                                                                     except Exception as download_err:
                                                                         logger.warning(f"    ⚠ Download failed: {download_err}")
                                                                         import traceback
