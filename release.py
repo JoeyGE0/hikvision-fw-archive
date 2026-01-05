@@ -22,6 +22,16 @@ def generate_readme() -> str:
     firmwares_live = load_json('firmwares_live.json')
     firmwares_manual = load_json('firmwares_manual.json')
     firmware_info = load_json('firmware_info.json')
+    status = load_json('status.json')
+    if not status:
+        status = {
+            'status': 'unknown',
+            'last_run': 'Never',
+            'firmwares_found': 0,
+            'new_firmwares': 0,
+            'test_mode': False,
+            'errors': []
+        }
     
     # Merge manual firmwares into live firmwares
     all_firmwares = {**firmwares_live, **firmwares_manual}
@@ -35,6 +45,46 @@ def generate_readme() -> str:
     
     # Load readme header
     readme_header = Path('readme_header.md').read_text(encoding='utf-8')
+    
+    # Generate status section
+    status_text = status.get('status', 'unknown')
+    last_run = status.get('last_run', 'Never')
+    firmwares_found = status.get('firmwares_found', 0)
+    new_firmwares = status.get('new_firmwares', 0)
+    test_mode = status.get('test_mode', False)
+    errors = status.get('errors', [])
+    
+    # Format status with emoji
+    status_emoji = {
+        'success': '✅',
+        'error': '❌',
+        'no_new_firmwares': '⚠️',
+        'unknown': '❓'
+    }.get(status_text, '❓')
+    
+    # Format last run time
+    if last_run and last_run != 'Never':
+        try:
+            from datetime import datetime
+            dt = datetime.fromisoformat(last_run.replace('Z', '+00:00'))
+            last_run = dt.strftime('%Y-%m-%d %H:%M:%S UTC')
+        except:
+            pass
+    
+    # Format errors
+    errors_text = ''
+    if errors:
+        errors_text = '\n\n**Recent Errors:**\n'
+        for error in errors[-5:]:  # Show last 5 errors
+            errors_text += f"- ⚠️ {error}\n"
+    
+    # Replace status placeholders
+    readme_header = readme_header.replace('{{STATUS}}', f'{status_emoji} {status_text.upper()}')
+    readme_header = readme_header.replace('{{LAST_RUN}}', last_run)
+    readme_header = readme_header.replace('{{FIRMWARES_FOUND}}', str(firmwares_found))
+    readme_header = readme_header.replace('{{NEW_FIRMWARES}}', str(new_firmwares))
+    readme_header = readme_header.replace('{{TEST_MODE}}', '🧪 Enabled' if test_mode else 'Disabled')
+    readme_header = readme_header.replace('{{ERRORS}}', errors_text)
     
     # Generate firmware list
     firmware_sections = []

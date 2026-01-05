@@ -32,6 +32,10 @@ logger = logging.getLogger(__name__)
 BASE_URL = "https://www.hikvision.com"
 FIRMWARE_URL = f"{BASE_URL}/en/support/download/firmware/"
 
+# TEST MODE: Set to True to only scrape 1 firmware file (prevents IP banning/rate limiting)
+TEST_MODE = True
+MAX_FIRMWARES_IN_TEST_MODE = 1
+
 
 class HikvisionScraper:
     """Scraper that actually works with Hikvision's site structure."""
@@ -42,6 +46,15 @@ class HikvisionScraper:
         self.firmwares_manual = load_json('firmwares_manual.json')
         self.firmware_info = load_json('firmware_info.json')
         self.scraped_count = 0
+        self.errors = []
+        self.status = {
+            'last_run': None,
+            'status': 'unknown',
+            'firmwares_found': 0,
+            'new_firmwares': 0,
+            'errors': [],
+            'test_mode': TEST_MODE
+        }
         
     def extract_model(self, text: str) -> Optional[str]:
         """Extract model from text."""
@@ -94,13 +107,14 @@ class HikvisionScraper:
                     return []
                 
                 # Search for common model prefixes
+                # TEST MODE: Only search first term to limit requests
                 search_terms = [
                     'DS-2CD',  # IP Cameras
-                    'DS-2DE',  # PTZ Cameras
-                    'DS-76',   # NVRs
-                    'DS-77',   # NVRs
-                    'DS-2TD',  # Thermal cameras
-                    'AE-',     # Access control
+                    # 'DS-2DE',  # PTZ Cameras - COMMENTED OUT FOR TEST MODE
+                    # 'DS-76',   # NVRs - COMMENTED OUT FOR TEST MODE
+                    # 'DS-77',   # NVRs - COMMENTED OUT FOR TEST MODE
+                    # 'DS-2TD',  # Thermal cameras - COMMENTED OUT FOR TEST MODE
+                    # 'AE-',     # Access control - COMMENTED OUT FOR TEST MODE
                 ]
                 
                 total_search_terms = len(search_terms)
@@ -141,11 +155,16 @@ class HikvisionScraper:
                             logger.warning(f"  ⚠ No models found for {search_term}, skipping...")
                             continue
                         
-                        # Limit processing to prevent crashes on huge batches
-                        MAX_MODELS_PER_SEARCH = 500
-                        if len(firmware_titles) > MAX_MODELS_PER_SEARCH:
-                            logger.warning(f"  ⚠ Found {len(firmware_titles)} models, limiting to first {MAX_MODELS_PER_SEARCH} to prevent crashes")
-                            firmware_titles = firmware_titles[:MAX_MODELS_PER_SEARCH]
+                        # TEST MODE: Limit to just 1 model to scrape only 1 firmware file
+                        if TEST_MODE:
+                            logger.info(f"  🧪 TEST MODE: Limiting to 1 model only")
+                            firmware_titles = firmware_titles[:1]
+                        else:
+                            # Limit processing to prevent crashes on huge batches
+                            MAX_MODELS_PER_SEARCH = 500
+                            if len(firmware_titles) > MAX_MODELS_PER_SEARCH:
+                                logger.warning(f"  ⚠ Found {len(firmware_titles)} models, limiting to first {MAX_MODELS_PER_SEARCH} to prevent crashes")
+                                firmware_titles = firmware_titles[:MAX_MODELS_PER_SEARCH]
                         
                         # Process all firmware items
                         fw_count_before = len(firmwares)
@@ -153,7 +172,12 @@ class HikvisionScraper:
                         batch_size = 100
                         total_batches = (len(firmware_titles) + batch_size - 1) // batch_size
                         
+                        # Flag to break out of nested loops in test mode
+                        test_mode_limit_reached = False
+                        
                         for batch_num in range(total_batches):
+                            if test_mode_limit_reached:
+                                break
                             start_idx = batch_num * batch_size
                             end_idx = min(start_idx + batch_size, len(firmware_titles))
                             batch = firmware_titles[start_idx:end_idx]
@@ -161,6 +185,8 @@ class HikvisionScraper:
                             logger.info(f"  → Processing batch {batch_num + 1}/{total_batches} (items {start_idx + 1}-{end_idx})...")
                             
                             for i, title_element in enumerate(batch, start_idx + 1):
+                                if test_mode_limit_reached:
+                                    break
                                 try:
                                     model_text = title_element.inner_text().strip()
                                     model = self.extract_model(model_text)
@@ -187,6 +213,8 @@ class HikvisionScraper:
                                             links = collapse_content.query_selector_all('a[href]')
                                             
                                             for link in links:
+                                                if test_mode_limit_reached:
+                                                    break
                                                 try:
                                                     href = link.get_attribute('href') or ''
                                                     link_text = link.inner_text().strip()
@@ -223,6 +251,27 @@ class HikvisionScraper:
                                                             'notes': '',
                                                             'source': 'live'
                                                         })
+                                                        
+                                                        # TEST MODE: Stop after finding 1 firmware file
+                                                        if TEST_MODE and len(firmwares) >= MAX_FIRMWARES_IN_TEST_MODE:
+                                                            logger.info(f"  🧪 TEST MODE: Found {len(firmwares)} firmware(s), stopping...")
+                                                            test_mode_limit_reached = True
+                                                            break
+                                                except Exception as link_err:
+                                                    logger.debug(f"    Link processing error: {link_err}")
+                                                    continue
+                                
+                                except Exception as e:
+                                    logger.debug(f"  Error on item {i}: {e}")
+                                    continue
+                            
+                            # Small delay between batches
+                            if batch_num < total_batches - 1 and not test_mode_limit_reached:
+                                time.sleep(1)
+                        
+                        if test_mode_limit_reached:
+                            logger.info(f"  🧪 TEST MODE: Stopped early after finding {MAX_FIRMWARES_IN_TEST_MODE} firmware(s)")
+                            break
                                                 except Exception as link_err:
                                                     logger.debug(f"    Link processing error: {link_err}")
                                                     continue
@@ -242,7 +291,9 @@ class HikvisionScraper:
                         time.sleep(2)  # Be respectful
                     
                     except Exception as e:
-                        logger.warning(f"Search failed for {search_term}: {e}")
+                        error_msg = f"Search failed for {search_term}: {str(e)}"
+                        logger.warning(error_msg)
+                        self.errors.append(error_msg)
                         continue
                 
                 browser.close()
@@ -251,7 +302,9 @@ class HikvisionScraper:
             if browser:
                 browser.close()
         except Exception as e:
-            logger.error(f"Playwright error: {e}")
+            error_msg = f"Playwright error: {str(e)}"
+            logger.error(error_msg)
+            self.errors.append(error_msg)
             logger.info(f"Collected {len(firmwares)} firmwares before error")
             if browser:
                 try:
@@ -316,33 +369,58 @@ class HikvisionScraper:
         save_json('firmwares_live.json', self.firmwares_live)
         logger.info("Data saved")
     
+    def save_status(self):
+        """Save status and errors to status.json."""
+        from datetime import datetime
+        self.status['last_run'] = datetime.now().isoformat()
+        self.status['firmwares_found'] = len(self.firmwares_live)
+        self.status['new_firmwares'] = self.scraped_count
+        self.status['errors'] = self.errors[-10:]  # Keep last 10 errors
+        if self.errors:
+            self.status['status'] = 'error'
+        elif self.scraped_count > 0:
+            self.status['status'] = 'success'
+        else:
+            self.status['status'] = 'no_new_firmwares'
+        save_json('status.json', self.status)
+    
     def scrape(self):
         """Main scrape method."""
         logger.info("=" * 60)
+        if TEST_MODE:
+            logger.info("🧪 TEST MODE ENABLED - Only scraping 1 firmware file")
         logger.info("Starting Hikvision firmware scrape...")
         logger.info("=" * 60)
         
         start_time = time.time()
-        firmwares = self.scrape_with_playwright()
         
-        logger.info(f"→ Processing {len(firmwares)} firmwares into database...")
-        processed = 0
-        for idx, fw in enumerate(firmwares, 1):
-            if idx % 100 == 0 or idx == len(firmwares):
-                logger.info(f"  Processing firmware {idx}/{len(firmwares)}...")
-            self.process_firmware(fw)
-            processed += 1
-        
-        logger.info(f"→ Saving data to JSON files...")
-        self.save()
-        
-        elapsed = time.time() - start_time
-        logger.info("=" * 60)
-        logger.info(f"✓ Scraping complete!")
-        logger.info(f"  • Total firmwares found: {len(firmwares)}")
-        logger.info(f"  • New firmwares added: {self.scraped_count}")
-        logger.info(f"  • Time taken: {elapsed:.1f} seconds")
-        logger.info("=" * 60)
+        try:
+            firmwares = self.scrape_with_playwright()
+            
+            logger.info(f"→ Processing {len(firmwares)} firmwares into database...")
+            processed = 0
+            for idx, fw in enumerate(firmwares, 1):
+                if idx % 100 == 0 or idx == len(firmwares):
+                    logger.info(f"  Processing firmware {idx}/{len(firmwares)}...")
+                self.process_firmware(fw)
+                processed += 1
+            
+            logger.info(f"→ Saving data to JSON files...")
+            self.save()
+            
+            elapsed = time.time() - start_time
+            logger.info("=" * 60)
+            logger.info(f"✓ Scraping complete!")
+            logger.info(f"  • Total firmwares found: {len(firmwares)}")
+            logger.info(f"  • New firmwares added: {self.scraped_count}")
+            logger.info(f"  • Time taken: {elapsed:.1f} seconds")
+            logger.info("=" * 60)
+        except Exception as e:
+            error_msg = f"Scraping failed: {str(e)}"
+            logger.error(error_msg)
+            self.errors.append(error_msg)
+        finally:
+            self.save_status()
 
 
 def main():

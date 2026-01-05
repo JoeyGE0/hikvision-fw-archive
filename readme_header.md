@@ -136,6 +136,18 @@ The scraper in `main.py` can always be improved:
 - Edit `readme_header.md` for changes to the header section
 - The firmware list is generated automatically from JSON files
 
+## Status
+
+**Status:** {{STATUS}}  
+**Last Run:** {{LAST_RUN}}  
+**Firmwares Found:** {{FIRMWARES_FOUND}}  
+**New Firmwares:** {{NEW_FIRMWARES}}  
+**Test Mode:** {{TEST_MODE}}
+
+{{ERRORS}}
+
+---
+
 ## Firmware List
 
 Below is the complete list of archived firmwares, organized by device model and hardware version.
