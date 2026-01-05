@@ -284,6 +284,7 @@ class HikvisionScraper:
                                                         # Check if this is a firmware link (either direct file link or license agreement link)
                                                         is_firmware_link = False
                                                         actual_download_url = href
+                                                        local_file_path = ''  # Will be set if download succeeds
                                                         
                                                         # Direct firmware file link
                                                         if any(ext in href.lower() for ext in ['.dav', '.zip', '.pak', '.bin']):
@@ -346,7 +347,45 @@ class HikvisionScraper:
                                                                 
                                                                 if agree_link:
                                                                     actual_download_url = agree_link.get_attribute('href') or ''
-                                                                    logger.info(f"    ✓ Found actual download URL in modal: {actual_download_url[:80]}...")
+                                                                    logger.info(f"    ✓ Found download link, clicking to download...")
+                                                                    
+                                                                    # Click the link to trigger download (with browser context)
+                                                                    try:
+                                                                        # Wait for download and click simultaneously
+                                                                        with page.expect_download(timeout=30000) as download_info:
+                                                                            # Use JavaScript click to ensure it works
+                                                                            page.evaluate('(element) => { element.click(); }', agree_link)
+                                                                        
+                                                                        download = download_info.value
+                                                                        
+                                                                        # Generate filename
+                                                                        suggested_filename = download.suggested_filename
+                                                                        if suggested_filename:
+                                                                            filename = suggested_filename
+                                                                        else:
+                                                                            # Try to get filename from URL
+                                                                            filename = actual_download_url.split('/')[-1].split('?')[0]
+                                                                            if not filename or '.' not in filename:
+                                                                                # Fallback: use model and extract version from link text
+                                                                                version_match = re.search(r'[Vv]?(\d+\.\d+\.\d+(?:\.\d+)?)', link_text)
+                                                                                version_str = version_match.group(1) if version_match else 'unknown'
+                                                                                ext = '.zip' if '.zip' in actual_download_url.lower() else '.dav' if '.dav' in actual_download_url.lower() else '.bin'
+                                                                                filename = f"{model}_v{version_str}{ext}"
+                                                                        
+                                                                        # Save to firmwares directory
+                                                                        firmware_dir = Path('firmwares')
+                                                                        firmware_dir.mkdir(exist_ok=True)
+                                                                        filepath = firmware_dir / filename
+                                                                        
+                                                                        download.save_as(filepath)
+                                                                        local_file_path = str(filepath)  # Store for firmware dict
+                                                                        logger.info(f"    ✓ File downloaded to: {filepath}")
+                                                                    except Exception as download_err:
+                                                                        logger.warning(f"    ⚠ Download failed: {download_err}")
+                                                                        import traceback
+                                                                        logger.debug(f"    Traceback: {traceback.format_exc()}")
+                                                                    
+                                                                    logger.info(f"    ✓ Download URL: {actual_download_url[:80]}...")
                                                                 else:
                                                                     logger.warning(f"    ⚠ Could not find download URL in modal after all strategies")
                                                                     # Close modal and continue
@@ -403,6 +442,7 @@ class HikvisionScraper:
                                                             'hardware_version': hw_version,
                                                             'version': version,
                                                             'download_url': actual_download_url,
+                                                            'local_file_path': local_file_path,  # Path to downloaded file (if download succeeded)
                                                             'date': date_str,
                                                             'changes': '',
                                                             'notes': '',
