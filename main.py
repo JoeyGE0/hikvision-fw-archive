@@ -3,6 +3,7 @@
 import argparse
 import json
 import logging
+import os
 import re
 import time
 from pathlib import Path
@@ -28,6 +29,13 @@ from common import (
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
+
+# For GitHub Actions, also log to stderr so it shows in workflow logs
+import sys
+if 'GITHUB_ACTIONS' in os.environ:
+    handler = logging.StreamHandler(sys.stderr)
+    handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+    logger.addHandler(handler)
 
 BASE_URL = "https://www.hikvision.com"
 FIRMWARE_URL = f"{BASE_URL}/en/support/download/firmware/"
@@ -212,7 +220,9 @@ class HikvisionScraper:
                                         if collapse_content and collapse_content.is_visible():
                                             # Get all links in expanded content
                                             links = collapse_content.query_selector_all('a[href]')
+                                            logger.info(f"    Found {len(links)} links in expanded content for {model}")
                                             
+                                            firmware_links_found = 0
                                             for link in links:
                                                 if test_mode_limit_reached:
                                                     break
@@ -222,6 +232,8 @@ class HikvisionScraper:
                                                     
                                                     # Only process actual firmware file links
                                                     if any(ext in href.lower() for ext in ['.dav', '.zip', '.pak', '.bin']):
+                                                        firmware_links_found += 1
+                                                        logger.info(f"    Found firmware link #{firmware_links_found}: {link_text[:50]}... | {href[:80]}...")
                                                         if href.startswith('/'):
                                                             href = urljoin(BASE_URL, href)
                                                         elif not href.startswith('http'):
@@ -229,8 +241,9 @@ class HikvisionScraper:
                                                         
                                                         version = self.extract_version(link_text + ' ' + href)
                                                         if not version:
-                                                            logger.debug(f"    Could not extract version from: {link_text} | {href}")
+                                                            logger.warning(f"    ⚠ Could not extract version from: {link_text[:50]}... | {href[:80]}...")
                                                             continue
+                                                        logger.info(f"    ✓ Extracted version: {version}")
                                                         
                                                         context_text = collapse_content.inner_text()
                                                         hw_version = self.extract_hardware_version(context_text, model)
@@ -355,8 +368,11 @@ class HikvisionScraper:
                 'source': fw_data.get('source', 'live')
             }
             self.scraped_count += 1
+            logger.info(f"  ✓ Added NEW firmware: {model} {hw_version} v{version}")
             if self.scraped_count % 50 == 0:
                 logger.info(f"  Added {self.scraped_count} new firmwares so far...")
+        else:
+            logger.debug(f"  ⊘ Skipped existing firmware: {model} {hw_version} v{version}")
     
     def save(self):
         """Save all data."""
@@ -397,6 +413,7 @@ class HikvisionScraper:
             for idx, fw in enumerate(firmwares, 1):
                 if idx % 100 == 0 or idx == len(firmwares):
                     logger.info(f"  Processing firmware {idx}/{len(firmwares)}...")
+                logger.debug(f"  Processing firmware: {fw.get('model', 'NO MODEL')} v{fw.get('version', 'NO VERSION')}")
                 self.process_firmware(fw)
                 processed += 1
             
