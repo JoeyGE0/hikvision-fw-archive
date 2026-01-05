@@ -58,5 +58,41 @@
     "notes": "",
     "is_beta": false,
     "source": "live"
+  },
+  "IDS-E08HQHI-B_UNKNOWN_4.75.013": {
+    "device_id": 100002,
+    "model": "IDS-E08HQHI-B",
+    "hardware_version": "UNKNOWN",
+    "version": "4.75.013",
+    "date": "2020-24-10",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202410/Firmware_Asia_V4.75.013_240919_S3000600889.zip",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-AC1130-A_UNKNOWN_3.6.1": {
+    "device_id": 100003,
+    "model": "AE-AC1130-A",
+    "hardware_version": "UNKNOWN",
+    "version": "3.6.1",
+    "date": "2020-22-09",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202209/Firmware__V3.6.1_220714_S3000446766.zip",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-DC2015-B1_UNKNOWN_1.1.2": {
+    "device_id": 100004,
+    "model": "AE-DC2015-B1",
+    "hardware_version": "UNKNOWN",
+    "version": "1.1.2",
+    "date": "2020-22-09",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202209/Firmware__V1.1.2_200828_S3000334190.zip",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
   }
 }

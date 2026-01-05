@@ -139,9 +139,9 @@ The scraper in `main.py` can always be improved:
 ## Status
 
 **Status:** ✅ SUCCESS  
-**Last Run:** 2026-01-05 10:18:57 UTC  
-**Firmwares Found:** 5  
-**New Firmwares:** 1  
+**Last Run:** 2026-01-05 10:27:54 UTC  
+**Firmwares Found:** 8  
+**New Firmwares:** 3  
 **Test Mode:** Disabled
 
 
