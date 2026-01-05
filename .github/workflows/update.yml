@@ -40,7 +40,17 @@ jobs:
       - name: Create local changes
         id: changes
         run: |
-          OUTPUT=$(python main.py scrape -g 2>&1 | tail -1)
+          # Run scraper and capture output
+          SCRAPER_OUTPUT=$(python main.py scrape -g 2>&1)
+
+          # Extract the JSON count from the last line
+          OUTPUT=$(echo "$SCRAPER_OUTPUT" | tail -1)
+
+          # Show download summary from logs
+          echo "=== Download Summary ==="
+          echo "$SCRAPER_OUTPUT" | grep -E "(File downloaded|Download limit|Download Summary|NEW firmware)" || echo "No download messages found"
+          echo "========================"
+
           # Default to 0 if output is empty or not a number
           if [ -z "$OUTPUT" ] || ! [[ "$OUTPUT" =~ ^[0-9]+$ ]]; then
             OUTPUT=0
@@ -48,12 +58,22 @@ jobs:
           echo "firmwares=$OUTPUT" >> $GITHUB_OUTPUT
           echo "Output: $OUTPUT"
 
+          # Check if firmware files were created
+          echo ""
+          echo "=== Firmware Files Check ==="
+          if [ -d "firmwares" ]; then
+            ls -lh firmwares/*.zip firmwares/*.dav firmwares/*.bin firmwares/*.pak 2>/dev/null || echo "No firmware files found in firmwares/ directory"
+          else
+            echo "firmwares/ directory does not exist"
+          fi
+          echo "============================"
+
       - name: Commit files
         continue-on-error: true
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          
+
           # Check if firmware files exist and add them
           if [ -d "firmwares" ]; then
             echo "Checking for firmware files..."
@@ -70,7 +90,7 @@ jobs:
           else
             echo "firmwares/ directory does not exist"
           fi
-          
+
           # Commit all changes (including JSON files and firmware files if added)
           git commit -a -m "Auto update" || exit 0
 
@@ -137,8 +157,23 @@ jobs:
             New firmwares may have been added. Check the README for details.
           commit: main
           makeLatest: true
-          files: |
-            firmwares/*.zip
-            firmwares/*.dav
-            firmwares/*.bin
-            firmwares/*.pak
+
+      - name: Upload firmware files to release
+        if: github.ref == 'refs/heads/main'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Upload firmware files to the release using GitHub CLI
+          if [ -d "firmwares" ]; then
+            echo "Uploading firmware files to release ${{ env.UNIX_TS }}..."
+            uploaded=0
+            for file in firmwares/*.zip firmwares/*.dav firmwares/*.bin firmwares/*.pak; do
+              if [ -f "$file" ]; then
+                echo "Uploading $(basename "$file")..."
+                gh release upload ${{ env.UNIX_TS }} "$file" --repo ${{ github.repository }} && uploaded=$((uploaded + 1)) || echo "Failed to upload $file"
+              fi
+            done
+            echo "Uploaded $uploaded firmware file(s)"
+          else
+            echo "No firmwares directory found - files should be committed in auto-update job"
+          fi
