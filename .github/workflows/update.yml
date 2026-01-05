@@ -53,8 +53,25 @@ jobs:
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          # Add firmware files explicitly
-          git add firmwares/*.zip firmwares/*.dav firmwares/*.bin firmwares/*.pak 2>/dev/null || true
+          
+          # Check if firmware files exist and add them
+          if [ -d "firmwares" ]; then
+            echo "Checking for firmware files..."
+            ls -la firmwares/ || echo "firmwares directory is empty"
+            
+            # Add firmware files if they exist
+            if ls firmwares/*.zip firmwares/*.dav firmwares/*.bin firmwares/*.pak 1> /dev/null 2>&1; then
+              echo "Found firmware files, adding to git..."
+              git add firmwares/*.zip firmwares/*.dav firmwares/*.bin firmwares/*.pak
+              git status --short | grep firmwares || echo "No firmware files staged"
+            else
+              echo "No firmware files found to commit"
+            fi
+          else
+            echo "firmwares/ directory does not exist"
+          fi
+          
+          # Commit all changes (including JSON files and firmware files if added)
           git commit -a -m "Auto update" || exit 0
 
       - name: Push changes
