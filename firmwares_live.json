@@ -1,1 +1,14 @@
-{}
+{
+  "DS-2TD5537T-7_UNKNOWN_5.5.49": {
+    "device_id": 100000,
+    "model": "DS-2TD5537T-7",
+    "hardware_version": "UNKNOWN",
+    "version": "5.5.49",
+    "date": "2020-22-11",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202211/Firmware__V5.5.49_220822_S3000450133.zip",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  }
+}
