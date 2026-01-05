@@ -41,7 +41,12 @@ BASE_URL = "https://www.hikvision.com"
 FIRMWARE_URL = f"{BASE_URL}/en/support/download/firmware/"
 
 # TEST MODE: Set to True to only scrape 1 firmware file (prevents IP banning/rate limiting)
-TEST_MODE = True
+# Maximum number of firmware files to download (0 = unlimited)
+# Set this to limit downloads and avoid hitting rate limits
+MAX_FIRMWARES_TO_DOWNLOAD = 5  # Change this to set your desired limit
+
+# Legacy TEST_MODE (deprecated - use MAX_FIRMWARES_TO_DOWNLOAD instead)
+TEST_MODE = False
 MAX_FIRMWARES_IN_TEST_MODE = 1
 
 
@@ -95,6 +100,9 @@ class HikvisionScraper:
             return []
         
         firmwares = []
+        new_downloads_count = 0  # Track how many NEW firmwares we've downloaded
+        skipped_existing_count = 0  # Track how many existing firmwares we skipped
+        total_found_count = 0  # Track total firmwares found on website
         browser = None
         
         try:
@@ -115,14 +123,13 @@ class HikvisionScraper:
                     return []
                 
                 # Search for common model prefixes
-                # TEST MODE: Only search first term to limit requests
                 search_terms = [
                     'DS-2CD',  # IP Cameras
-                    # 'DS-2DE',  # PTZ Cameras - COMMENTED OUT FOR TEST MODE
-                    # 'DS-76',   # NVRs - COMMENTED OUT FOR TEST MODE
-                    # 'DS-77',   # NVRs - COMMENTED OUT FOR TEST MODE
-                    # 'DS-2TD',  # Thermal cameras - COMMENTED OUT FOR TEST MODE
-                    # 'AE-',     # Access control - COMMENTED OUT FOR TEST MODE
+                    'DS-2DE',  # PTZ Cameras
+                    'DS-76',   # NVRs
+                    'DS-77',   # NVRs
+                    'DS-2TD',  # Thermal cameras
+                    'AE-',     # Access control
                 ]
                 
                 total_search_terms = len(search_terms)
@@ -163,11 +170,7 @@ class HikvisionScraper:
                             logger.warning(f"  ⚠ No models found for {search_term}, skipping...")
                             continue
                         
-                        # TEST MODE: Limit to just 1 model to scrape only 1 firmware file
-                        if TEST_MODE:
-                            logger.info(f"  🧪 TEST MODE: Limiting to 1 model only")
-                            firmware_titles = firmware_titles[:1]
-                        else:
+                        # Process all models (download limit will stop when reached)
                             # Limit processing to prevent crashes on huge batches
                             MAX_MODELS_PER_SEARCH = 500
                             if len(firmware_titles) > MAX_MODELS_PER_SEARCH:
@@ -286,6 +289,44 @@ class HikvisionScraper:
                                                         actual_download_url = href
                                                         local_file_path = ''  # Will be set if download succeeds
                                                         
+                                                        # Extract version and model early to check if firmware exists
+                                                        version = self.extract_version(link_text + ' ' + href)
+                                                        context_text = collapse_content.inner_text()
+                                                        hw_version = self.extract_hardware_version(context_text, model)
+                                                        normalized_model = normalize_model_name(model)
+                                                        
+                                                        # Increment total found counter (count all firmwares we find)
+                                                        total_found_count += 1
+                                                        
+                                                        # Check if firmware already exists (before downloading)
+                                                        if version:
+                                                            firmware_key = f"{normalized_model}_{hw_version}_{version}"
+                                                            firmware_exists = firmware_key in self.firmwares_live
+                                                            
+                                                            if firmware_exists:
+                                                                skipped_existing_count += 1
+                                                                logger.info(f"    ⊘ Skipping existing firmware: {normalized_model} {hw_version} v{version} ({skipped_existing_count} skipped)")
+                                                                # Add to list but skip download
+                                                                firmwares.append({
+                                                                    'model': normalized_model,
+                                                                    'hardware_version': hw_version,
+                                                                    'version': version,
+                                                                    'download_url': href,
+                                                                    'local_file_path': '',
+                                                                    'date': '',
+                                                                    'changes': '',
+                                                                    'notes': '',
+                                                                    'source': 'live',
+                                                                    'already_exists': True
+                                                                })
+                                                                continue  # Skip download for existing firmware
+                                                        
+                                                        # Check download limit for NEW firmwares
+                                                        if MAX_FIRMWARES_TO_DOWNLOAD > 0 and new_downloads_count >= MAX_FIRMWARES_TO_DOWNLOAD:
+                                                            logger.info(f"  ⏹️  Download limit reached: Downloaded {new_downloads_count} NEW firmware(s) (limit: {MAX_FIRMWARES_TO_DOWNLOAD}), stopping...")
+                                                            test_mode_limit_reached = True
+                                                            break
+                                                        
                                                         # Direct firmware file link
                                                         if any(ext in href.lower() for ext in ['.dav', '.zip', '.pak', '.bin']):
                                                             is_firmware_link = True
@@ -379,7 +420,8 @@ class HikvisionScraper:
                                                                         
                                                                         download.save_as(filepath)
                                                                         local_file_path = str(filepath)  # Store for firmware dict
-                                                                        logger.info(f"    ✓ File downloaded to: {filepath}")
+                                                                        new_downloads_count += 1  # Increment counter for new download
+                                                                        logger.info(f"    ✓ File downloaded to: {filepath} (NEW firmware #{new_downloads_count})")
                                                                     except Exception as download_err:
                                                                         logger.warning(f"    ⚠ Download failed: {download_err}")
                                                                         import traceback
@@ -420,14 +462,10 @@ class HikvisionScraper:
                                                         elif not actual_download_url.startswith('http'):
                                                             actual_download_url = urljoin(FIRMWARE_URL, actual_download_url)
                                                         
-                                                        version = self.extract_version(link_text + ' ' + actual_download_url)
+                                                        # Version/model already extracted earlier, reuse them
                                                         if not version:
                                                             logger.warning(f"    ⚠ Could not extract version from: {link_text[:50]}... | {actual_download_url[:80]}...")
                                                             continue
-                                                        logger.info(f"    ✓ Extracted version: {version}")
-                                                        
-                                                        context_text = collapse_content.inner_text()
-                                                        hw_version = self.extract_hardware_version(context_text, model)
                                                         
                                                         # Extract date
                                                         date_match = re.search(r'(\d{6}|\d{8})', actual_download_url + link_text)
@@ -437,8 +475,9 @@ class HikvisionScraper:
                                                             if len(date_code) == 6:
                                                                 date_str = f"20{date_code[:2]}-{date_code[2:4]}-{date_code[4:6]}"
                                                         
+                                                        # Add firmware to list (download happened in modal handling above)
                                                         firmwares.append({
-                                                            'model': normalize_model_name(model),
+                                                            'model': normalized_model,
                                                             'hardware_version': hw_version,
                                                             'version': version,
                                                             'download_url': actual_download_url,
@@ -448,12 +487,6 @@ class HikvisionScraper:
                                                             'notes': '',
                                                             'source': 'live'
                                                         })
-                                                        
-                                                        # TEST MODE: Stop after finding 1 firmware file
-                                                        if TEST_MODE and len(firmwares) >= MAX_FIRMWARES_IN_TEST_MODE:
-                                                            logger.info(f"  🧪 TEST MODE: Found {len(firmwares)} firmware(s), stopping...")
-                                                            test_mode_limit_reached = True
-                                                            break
                                                     except Exception as link_err:
                                                         logger.debug(f"    Link processing error: {link_err}")
                                                         continue
@@ -476,7 +509,7 @@ class HikvisionScraper:
                                 time.sleep(1)
                         
                         if test_mode_limit_reached:
-                            logger.info(f"  🧪 TEST MODE: Stopped early after finding {MAX_FIRMWARES_IN_TEST_MODE} firmware(s)")
+                            logger.info(f"  ⏹️  Stopped early after reaching download limit of {MAX_FIRMWARES_TO_DOWNLOAD} firmware(s)")
                             break
                             
                             # Small delay between batches
@@ -525,6 +558,21 @@ class HikvisionScraper:
                 duplicates += 1
         
         logger.info(f"✓ Deduplication complete: {len(unique_firmwares)} unique firmwares ({duplicates} duplicates removed)")
+        
+        # Calculate summary statistics
+        skipped = sum(1 for fw in unique_firmwares if fw.get('already_exists'))
+        
+        logger.info("=" * 60)
+        logger.info("📊 Download Summary:")
+        logger.info(f"  • Total firmwares found this run: {total_found_count}")
+        logger.info(f"  • Already existing (skipped): {skipped}")
+        logger.info(f"  • New downloads this run: {new_downloads_count}")
+        if MAX_FIRMWARES_TO_DOWNLOAD > 0 and new_downloads_count >= MAX_FIRMWARES_TO_DOWNLOAD:
+            logger.info(f"  ⏹️  Download limit reached ({MAX_FIRMWARES_TO_DOWNLOAD}) - more firmwares may be available on next run")
+        elif skipped > 0 and new_downloads_count == 0:
+            logger.info(f"  ✓ All found firmwares already exist - you're caught up!")
+        logger.info("=" * 60)
+        
         return unique_firmwares
     
     def process_firmware(self, fw_data: Dict):
@@ -590,7 +638,11 @@ class HikvisionScraper:
         """Main scrape method."""
         logger.info("=" * 60)
         if TEST_MODE:
-            logger.info("🧪 TEST MODE ENABLED - Only scraping 1 firmware file")
+            logger.info("🧪 TEST MODE ENABLED")
+        if MAX_FIRMWARES_TO_DOWNLOAD > 0:
+            logger.info(f"📥 Download limit: {MAX_FIRMWARES_TO_DOWNLOAD} firmware file(s)")
+        else:
+            logger.info("📥 Download limit: Unlimited")
         logger.info("Starting Hikvision firmware scrape...")
         logger.info("=" * 60)
         
@@ -605,8 +657,17 @@ class HikvisionScraper:
                 if idx % 100 == 0 or idx == len(firmwares):
                     logger.info(f"  Processing firmware {idx}/{len(firmwares)}...")
                 logger.debug(f"  Processing firmware: {fw.get('model', 'NO MODEL')} v{fw.get('version', 'NO VERSION')}")
-                self.process_firmware(fw)
-                processed += 1
+                try:
+                    self.process_firmware(fw)
+                    processed += 1
+                    # Periodic save every 50 firmwares to avoid losing progress on crash
+                    if processed % 50 == 0:
+                        logger.debug(f"  Periodic save: {processed} firmwares processed so far...")
+                        self.save()
+                except Exception as process_err:
+                    logger.warning(f"  ⚠ Failed to process firmware {idx}: {process_err}")
+                    self.errors.append(f"Failed to process firmware {idx}: {str(process_err)}")
+                    continue  # Continue with next firmware
             
             logger.info(f"→ Saving data to JSON files...")
             self.save()
@@ -622,7 +683,15 @@ class HikvisionScraper:
             error_msg = f"Scraping failed: {str(e)}"
             logger.error(error_msg)
             self.errors.append(error_msg)
+            # Save any successfully processed firmwares before exiting
+            if self.scraped_count > 0:
+                logger.info(f"→ Saving {self.scraped_count} successfully processed firmwares before exit...")
+                try:
+                    self.save()
+                except Exception as save_err:
+                    logger.error(f"Failed to save data: {save_err}")
         finally:
+            # Always save status, even on error
             self.save_status()
 
 
