@@ -10,6 +10,8 @@ jobs:
   auto-update:
     name: Auto update
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     outputs:
       new-firmwares: ${{ steps.changes.outputs.firmwares }}
 
@@ -17,7 +19,6 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          persist-credentials: false
           fetch-depth: 0
 
       - name: Set up Python
@@ -58,7 +59,8 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+          branch: main
+          force: false
 
   release:
     runs-on: ubuntu-latest
