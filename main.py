@@ -213,153 +213,166 @@ class HikvisionScraper:
                                     
                                     # Find the collapse content
                                     target_id = title_element.get_attribute('data-target') or ''
+                                    logger.info(f"    Processing model {i}: {model} (data-target: {target_id})")
                                     if target_id:
                                         target_id = target_id.replace('#', '')
                                         collapse_content = page.query_selector(f'#{target_id}')
                                         
-                                        if collapse_content and collapse_content.is_visible():
-                                            # Get all links in expanded content
-                                            links = collapse_content.query_selector_all('a[href]')
-                                            logger.info(f"    Found {len(links)} links in expanded content for {model}")
-                                            
-                                            firmware_links_found = 0
-                                            for link_idx, link in enumerate(links, 1):
-                                                if test_mode_limit_reached:
-                                                    break
-                                                try:
-                                                    href = link.get_attribute('href') or ''
-                                                    link_text = link.inner_text().strip()
-                                                    
-                                                    # Log all links for debugging (limit to first few)
-                                                    if link_idx <= 5:
-                                                        logger.debug(f"      Link {link_idx}: {link_text[:40]}... | href={href[:60]}...")
-                                                    
-                                                    # Check if this is a firmware link (either direct file link or license agreement link)
-                                                    is_firmware_link = False
-                                                    actual_download_url = href
-                                                    
-                                                    # Direct firmware file link
-                                                    if any(ext in href.lower() for ext in ['.dav', '.zip', '.pak', '.bin']):
-                                                        is_firmware_link = True
-                                                    # License agreement link (needs to be clicked to get actual URL)
-                                                    elif href == '#download-agreement' or 'download-agreement' in href.lower():
-                                                        is_firmware_link = True
-                                                        logger.info(f"    Found license agreement link: {link_text[:50]}...")
-                                                        
-                                                        # Click to open modal
-                                                        try:
-                                                            link.click()
-                                                            # Wait for modal/dialog to appear with multiple strategies
-                                                            page.wait_for_selector('dialog, [role="dialog"], .modal, #download-agreement', timeout=5000)
-                                                            time.sleep(1)  # Additional wait for content to load
-                                                            
-                                                            # Try multiple selectors to find the download link
-                                                            agree_link = None
-                                                            
-                                                            # Strategy 1: Look for links with file extensions in dialog
-                                                            agree_link = page.query_selector('dialog a[href*=".zip"], dialog a[href*=".dav"], dialog a[href*=".pak"], dialog a[href*=".bin"]')
-                                                            
-                                                            # Strategy 2: Look in any modal-like element
-                                                            if not agree_link:
-                                                                agree_link = page.query_selector('[role="dialog"] a[href*=".zip"], [role="dialog"] a[href*=".dav"], [role="dialog"] a[href*=".pak"], [role="dialog"] a[href*=".bin"]')
-                                                            
-                                                            # Strategy 3: Find all links in dialog and check for file extensions or "Agree" text
-                                                            if not agree_link:
-                                                                all_modal_links = page.query_selector_all('dialog a[href], [role="dialog"] a[href]')
-                                                                logger.info(f"    Checking {len(all_modal_links)} links in modal...")
-                                                                for modal_link in all_modal_links:
-                                                                    modal_href = modal_link.get_attribute('href') or ''
-                                                                    modal_text = modal_link.inner_text().strip().lower()
-                                                                    logger.debug(f"      Modal link: {modal_text[:30]}... | {modal_href[:60]}...")
-                                                                    if (any(ext in modal_href.lower() for ext in ['.dav', '.zip', '.pak', '.bin']) or
-                                                                        ('agree' in modal_text and any(ext in modal_href.lower() for ext in ['assets.hikvision.com', 'hikvision.com']))):
-                                                                        agree_link = modal_link
-                                                                        logger.info(f"    ✓ Found download link via text search")
-                                                                        break
-                                                            
-                                                            # Strategy 4: Look for any link containing assets.hikvision.com (their CDN)
-                                                            if not agree_link:
-                                                                all_links = page.query_selector_all('a[href*="assets.hikvision.com"]')
-                                                                for test_link in all_links:
-                                                                    test_href = test_link.get_attribute('href') or ''
-                                                                    if any(ext in test_href.lower() for ext in ['.dav', '.zip', '.pak', '.bin']):
-                                                                        agree_link = test_link
-                                                                        logger.info(f"    ✓ Found download link via CDN search")
-                                                                        break
-                                                            
-                                                            if agree_link:
-                                                                actual_download_url = agree_link.get_attribute('href') or ''
-                                                                logger.info(f"    ✓ Found actual download URL in modal: {actual_download_url[:80]}...")
-                                                            else:
-                                                                logger.warning(f"    ⚠ Could not find download URL in modal after all strategies")
-                                                                # Close modal and continue
-                                                                close_btn = page.query_selector('dialog button, [role="dialog"] button, dialog [aria-label*="close" i], [role="dialog"] [aria-label*="close" i]')
-                                                                if close_btn:
-                                                                    close_btn.click()
-                                                                    time.sleep(0.5)
-                                                                continue
-                                                        except Exception as modal_err:
-                                                            logger.warning(f"    ⚠ Error handling modal: {modal_err}")
-                                                            import traceback
-                                                            logger.debug(f"    Traceback: {traceback.format_exc()}")
-                                                            # Try to close modal if open
-                                                            try:
-                                                                close_btn = page.query_selector('dialog button, [role="dialog"] button, dialog [aria-label*="close" i], [role="dialog"] [aria-label*="close" i]')
-                                                                if close_btn:
-                                                                    close_btn.click()
-                                                                    time.sleep(0.5)
-                                                            except:
-                                                                pass
-                                                            continue
-                                                    
-                                                    if not is_firmware_link:
-                                                        continue
-                                                    
-                                                    firmware_links_found += 1
-                                                    logger.info(f"    Found firmware link #{firmware_links_found}: {link_text[:50]}... | {actual_download_url[:80]}...")
-                                                    
-                                                    # Normalize URL
-                                                    if actual_download_url.startswith('/'):
-                                                        actual_download_url = urljoin(BASE_URL, actual_download_url)
-                                                    elif not actual_download_url.startswith('http'):
-                                                        actual_download_url = urljoin(FIRMWARE_URL, actual_download_url)
-                                                    
-                                                    version = self.extract_version(link_text + ' ' + actual_download_url)
-                                                    if not version:
-                                                        logger.warning(f"    ⚠ Could not extract version from: {link_text[:50]}... | {actual_download_url[:80]}...")
-                                                        continue
-                                                    logger.info(f"    ✓ Extracted version: {version}")
-                                                    
-                                                    context_text = collapse_content.inner_text()
-                                                    hw_version = self.extract_hardware_version(context_text, model)
-                                                    
-                                                    # Extract date
-                                                    date_match = re.search(r'(\d{6}|\d{8})', actual_download_url + link_text)
-                                                    date_str = ''
-                                                    if date_match:
-                                                        date_code = date_match.group(1)
-                                                        if len(date_code) == 6:
-                                                            date_str = f"20{date_code[:2]}-{date_code[2:4]}-{date_code[4:6]}"
-                                                    
-                                                    firmwares.append({
-                                                        'model': normalize_model_name(model),
-                                                        'hardware_version': hw_version,
-                                                        'version': version,
-                                                        'download_url': actual_download_url,
-                                                        'date': date_str,
-                                                        'changes': '',
-                                                        'notes': '',
-                                                        'source': 'live'
-                                                    })
-                                                    
-                                                    # TEST MODE: Stop after finding 1 firmware file
-                                                    if TEST_MODE and len(firmwares) >= MAX_FIRMWARES_IN_TEST_MODE:
-                                                        logger.info(f"  🧪 TEST MODE: Found {len(firmwares)} firmware(s), stopping...")
-                                                        test_mode_limit_reached = True
+                                        if collapse_content:
+                                            is_visible = collapse_content.is_visible()
+                                            logger.info(f"    Collapse content found for {model}, visible: {is_visible}")
+                                            if is_visible:
+                                                # Get all links in expanded content
+                                                links = collapse_content.query_selector_all('a[href]')
+                                                logger.info(f"    Found {len(links)} links in expanded content for {model}")
+                                                
+                                                firmware_links_found = 0
+                                                for link_idx, link in enumerate(links, 1):
+                                                    if test_mode_limit_reached:
                                                         break
-                                                except Exception as link_err:
-                                                    logger.debug(f"    Link processing error: {link_err}")
-                                                    continue
+                                                    try:
+                                                        href = link.get_attribute('href') or ''
+                                                        link_text = link.inner_text().strip()
+                                                        
+                                                        # Log all links for debugging (limit to first few)
+                                                        if link_idx <= 5:
+                                                            logger.debug(f"      Link {link_idx}: {link_text[:40]}... | href={href[:60]}...")
+                                                        
+                                                        # Check if this is a firmware link (either direct file link or license agreement link)
+                                                        is_firmware_link = False
+                                                        actual_download_url = href
+                                                        
+                                                        # Direct firmware file link
+                                                        if any(ext in href.lower() for ext in ['.dav', '.zip', '.pak', '.bin']):
+                                                            is_firmware_link = True
+                                                        # License agreement link (needs to be clicked to get actual URL)
+                                                        elif href == '#download-agreement' or 'download-agreement' in href.lower():
+                                                            is_firmware_link = True
+                                                            logger.info(f"    Found license agreement link: {link_text[:50]}...")
+                                                            
+                                                            # Click to open modal
+                                                            try:
+                                                                link.click()
+                                                                # Wait for modal/dialog to appear with multiple strategies
+                                                                page.wait_for_selector('dialog, [role="dialog"], .modal, #download-agreement', timeout=5000)
+                                                                time.sleep(1)  # Additional wait for content to load
+                                                                
+                                                                # Try multiple selectors to find the download link
+                                                                agree_link = None
+                                                                
+                                                                # Strategy 1: Look for links with file extensions in dialog
+                                                                agree_link = page.query_selector('dialog a[href*=".zip"], dialog a[href*=".dav"], dialog a[href*=".pak"], dialog a[href*=".bin"]')
+                                                                
+                                                                # Strategy 2: Look in any modal-like element
+                                                                if not agree_link:
+                                                                    agree_link = page.query_selector('[role="dialog"] a[href*=".zip"], [role="dialog"] a[href*=".dav"], [role="dialog"] a[href*=".pak"], [role="dialog"] a[href*=".bin"]')
+                                                                
+                                                                # Strategy 3: Find all links in dialog and check for file extensions or "Agree" text
+                                                                if not agree_link:
+                                                                    all_modal_links = page.query_selector_all('dialog a[href], [role="dialog"] a[href]')
+                                                                    logger.info(f"    Checking {len(all_modal_links)} links in modal...")
+                                                                    for modal_link in all_modal_links:
+                                                                        modal_href = modal_link.get_attribute('href') or ''
+                                                                        modal_text = modal_link.inner_text().strip().lower()
+                                                                        logger.debug(f"      Modal link: {modal_text[:30]}... | {modal_href[:60]}...")
+                                                                        if (any(ext in modal_href.lower() for ext in ['.dav', '.zip', '.pak', '.bin']) or
+                                                                            ('agree' in modal_text and any(ext in modal_href.lower() for ext in ['assets.hikvision.com', 'hikvision.com']))):
+                                                                            agree_link = modal_link
+                                                                            logger.info(f"    ✓ Found download link via text search")
+                                                                            break
+                                                                
+                                                                # Strategy 4: Look for any link containing assets.hikvision.com (their CDN)
+                                                                if not agree_link:
+                                                                    all_links = page.query_selector_all('a[href*="assets.hikvision.com"]')
+                                                                    for test_link in all_links:
+                                                                        test_href = test_link.get_attribute('href') or ''
+                                                                        if any(ext in test_href.lower() for ext in ['.dav', '.zip', '.pak', '.bin']):
+                                                                            agree_link = test_link
+                                                                            logger.info(f"    ✓ Found download link via CDN search")
+                                                                            break
+                                                                
+                                                                if agree_link:
+                                                                    actual_download_url = agree_link.get_attribute('href') or ''
+                                                                    logger.info(f"    ✓ Found actual download URL in modal: {actual_download_url[:80]}...")
+                                                                else:
+                                                                    logger.warning(f"    ⚠ Could not find download URL in modal after all strategies")
+                                                                    # Close modal and continue
+                                                                    close_btn = page.query_selector('dialog button, [role="dialog"] button, dialog [aria-label*="close" i], [role="dialog"] [aria-label*="close" i]')
+                                                                    if close_btn:
+                                                                        close_btn.click()
+                                                                        time.sleep(0.5)
+                                                                    continue
+                                                            except Exception as modal_err:
+                                                                logger.warning(f"    ⚠ Error handling modal: {modal_err}")
+                                                                import traceback
+                                                                logger.debug(f"    Traceback: {traceback.format_exc()}")
+                                                                # Try to close modal if open
+                                                                try:
+                                                                    close_btn = page.query_selector('dialog button, [role="dialog"] button, dialog [aria-label*="close" i], [role="dialog"] [aria-label*="close" i]')
+                                                                    if close_btn:
+                                                                        close_btn.click()
+                                                                        time.sleep(0.5)
+                                                                except:
+                                                                    pass
+                                                                continue
+                                                        
+                                                        if not is_firmware_link:
+                                                            continue
+                                                        
+                                                        firmware_links_found += 1
+                                                        logger.info(f"    Found firmware link #{firmware_links_found}: {link_text[:50]}... | {actual_download_url[:80]}...")
+                                                        
+                                                        # Normalize URL
+                                                        if actual_download_url.startswith('/'):
+                                                            actual_download_url = urljoin(BASE_URL, actual_download_url)
+                                                        elif not actual_download_url.startswith('http'):
+                                                            actual_download_url = urljoin(FIRMWARE_URL, actual_download_url)
+                                                        
+                                                        version = self.extract_version(link_text + ' ' + actual_download_url)
+                                                        if not version:
+                                                            logger.warning(f"    ⚠ Could not extract version from: {link_text[:50]}... | {actual_download_url[:80]}...")
+                                                            continue
+                                                        logger.info(f"    ✓ Extracted version: {version}")
+                                                        
+                                                        context_text = collapse_content.inner_text()
+                                                        hw_version = self.extract_hardware_version(context_text, model)
+                                                        
+                                                        # Extract date
+                                                        date_match = re.search(r'(\d{6}|\d{8})', actual_download_url + link_text)
+                                                        date_str = ''
+                                                        if date_match:
+                                                            date_code = date_match.group(1)
+                                                            if len(date_code) == 6:
+                                                                date_str = f"20{date_code[:2]}-{date_code[2:4]}-{date_code[4:6]}"
+                                                        
+                                                        firmwares.append({
+                                                            'model': normalize_model_name(model),
+                                                            'hardware_version': hw_version,
+                                                            'version': version,
+                                                            'download_url': actual_download_url,
+                                                            'date': date_str,
+                                                            'changes': '',
+                                                            'notes': '',
+                                                            'source': 'live'
+                                                        })
+                                                        
+                                                        # TEST MODE: Stop after finding 1 firmware file
+                                                        if TEST_MODE and len(firmwares) >= MAX_FIRMWARES_IN_TEST_MODE:
+                                                            logger.info(f"  🧪 TEST MODE: Found {len(firmwares)} firmware(s), stopping...")
+                                                            test_mode_limit_reached = True
+                                                            break
+                                                    except Exception as link_err:
+                                                        logger.debug(f"    Link processing error: {link_err}")
+                                                        continue
+                                            else:
+                                                logger.warning(f"    Collapse content exists but not visible for {model}")
+                                                continue
+                                        else:
+                                            logger.warning(f"    Could not find collapse content with ID: {target_id}")
+                                            continue
+                                    else:
+                                        logger.warning(f"    No data-target attribute found for {model}")
+                                        continue
                                 
                                 except Exception as e:
                                     logger.debug(f"  Error on item {i}: {e}")
