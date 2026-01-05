@@ -166,5 +166,17 @@
     "notes": "",
     "is_beta": false,
     "source": "live"
+  },
+  "AE-DC2018-D1_UNKNOWN_2.0.3": {
+    "device_id": 100005,
+    "model": "AE-DC2018-D1",
+    "hardware_version": "UNKNOWN",
+    "version": "2.0.3",
+    "date": "2024-05-10",
+    "download_url": "https://www.hikvision.com/en/policies/materials-license-agreement/",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
   }
 }
