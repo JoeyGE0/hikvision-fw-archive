@@ -192,6 +192,7 @@ class HikvisionScraper:
                                     model = self.extract_model(model_text)
                                     
                                     if not model:
+                                        logger.debug(f"    Could not extract model from: {model_text}")
                                         continue
                                     
                                     # Click to expand
@@ -228,6 +229,7 @@ class HikvisionScraper:
                                                         
                                                         version = self.extract_version(link_text + ' ' + href)
                                                         if not version:
+                                                            logger.debug(f"    Could not extract version from: {link_text} | {href}")
                                                             continue
                                                         
                                                         context_text = collapse_content.inner_text()
@@ -272,13 +274,6 @@ class HikvisionScraper:
                         if test_mode_limit_reached:
                             logger.info(f"  🧪 TEST MODE: Stopped early after finding {MAX_FIRMWARES_IN_TEST_MODE} firmware(s)")
                             break
-                                                except Exception as link_err:
-                                                    logger.debug(f"    Link processing error: {link_err}")
-                                                    continue
-                                
-                                except Exception as e:
-                                    logger.debug(f"  Error on item {i}: {e}")
-                                    continue
                             
                             # Small delay between batches
                             if batch_num < total_batches - 1:
