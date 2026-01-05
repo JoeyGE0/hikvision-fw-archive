@@ -223,12 +223,16 @@ class HikvisionScraper:
                                             logger.info(f"    Found {len(links)} links in expanded content for {model}")
                                             
                                             firmware_links_found = 0
-                                            for link in links:
+                                            for link_idx, link in enumerate(links, 1):
                                                 if test_mode_limit_reached:
                                                     break
                                                 try:
                                                     href = link.get_attribute('href') or ''
                                                     link_text = link.inner_text().strip()
+                                                    
+                                                    # Log all links for debugging (limit to first few)
+                                                    if link_idx <= 5:
+                                                        logger.debug(f"      Link {link_idx}: {link_text[:40]}... | href={href[:60]}...")
                                                     
                                                     # Check if this is a firmware link (either direct file link or license agreement link)
                                                     is_firmware_link = False
@@ -245,39 +249,65 @@ class HikvisionScraper:
                                                         # Click to open modal
                                                         try:
                                                             link.click()
-                                                            time.sleep(1)  # Wait for modal to appear
+                                                            # Wait for modal/dialog to appear with multiple strategies
+                                                            page.wait_for_selector('dialog, [role="dialog"], .modal, #download-agreement', timeout=5000)
+                                                            time.sleep(1)  # Additional wait for content to load
                                                             
-                                                            # Find the "Agree" link in the modal
+                                                            # Try multiple selectors to find the download link
+                                                            agree_link = None
+                                                            
+                                                            # Strategy 1: Look for links with file extensions in dialog
                                                             agree_link = page.query_selector('dialog a[href*=".zip"], dialog a[href*=".dav"], dialog a[href*=".pak"], dialog a[href*=".bin"]')
+                                                            
+                                                            # Strategy 2: Look in any modal-like element
                                                             if not agree_link:
-                                                                # Try finding by text content
-                                                                all_modal_links = page.query_selector_all('dialog a[href]')
+                                                                agree_link = page.query_selector('[role="dialog"] a[href*=".zip"], [role="dialog"] a[href*=".dav"], [role="dialog"] a[href*=".pak"], [role="dialog"] a[href*=".bin"]')
+                                                            
+                                                            # Strategy 3: Find all links in dialog and check for file extensions or "Agree" text
+                                                            if not agree_link:
+                                                                all_modal_links = page.query_selector_all('dialog a[href], [role="dialog"] a[href]')
+                                                                logger.info(f"    Checking {len(all_modal_links)} links in modal...")
                                                                 for modal_link in all_modal_links:
                                                                     modal_href = modal_link.get_attribute('href') or ''
                                                                     modal_text = modal_link.inner_text().strip().lower()
+                                                                    logger.debug(f"      Modal link: {modal_text[:30]}... | {modal_href[:60]}...")
                                                                     if (any(ext in modal_href.lower() for ext in ['.dav', '.zip', '.pak', '.bin']) or
-                                                                        'agree' in modal_text):
+                                                                        ('agree' in modal_text and any(ext in modal_href.lower() for ext in ['assets.hikvision.com', 'hikvision.com']))):
                                                                         agree_link = modal_link
+                                                                        logger.info(f"    ✓ Found download link via text search")
+                                                                        break
+                                                            
+                                                            # Strategy 4: Look for any link containing assets.hikvision.com (their CDN)
+                                                            if not agree_link:
+                                                                all_links = page.query_selector_all('a[href*="assets.hikvision.com"]')
+                                                                for test_link in all_links:
+                                                                    test_href = test_link.get_attribute('href') or ''
+                                                                    if any(ext in test_href.lower() for ext in ['.dav', '.zip', '.pak', '.bin']):
+                                                                        agree_link = test_link
+                                                                        logger.info(f"    ✓ Found download link via CDN search")
                                                                         break
                                                             
                                                             if agree_link:
                                                                 actual_download_url = agree_link.get_attribute('href') or ''
                                                                 logger.info(f"    ✓ Found actual download URL in modal: {actual_download_url[:80]}...")
                                                             else:
-                                                                logger.warning(f"    ⚠ Could not find download URL in modal")
+                                                                logger.warning(f"    ⚠ Could not find download URL in modal after all strategies")
                                                                 # Close modal and continue
-                                                                close_btn = page.query_selector('dialog button, dialog [aria-label*="close" i]')
+                                                                close_btn = page.query_selector('dialog button, [role="dialog"] button, dialog [aria-label*="close" i], [role="dialog"] [aria-label*="close" i]')
                                                                 if close_btn:
                                                                     close_btn.click()
                                                                     time.sleep(0.5)
                                                                 continue
                                                         except Exception as modal_err:
                                                             logger.warning(f"    ⚠ Error handling modal: {modal_err}")
+                                                            import traceback
+                                                            logger.debug(f"    Traceback: {traceback.format_exc()}")
                                                             # Try to close modal if open
                                                             try:
-                                                                close_btn = page.query_selector('dialog button, dialog [aria-label*="close" i]')
+                                                                close_btn = page.query_selector('dialog button, [role="dialog"] button, dialog [aria-label*="close" i], [role="dialog"] [aria-label*="close" i]')
                                                                 if close_btn:
                                                                     close_btn.click()
+                                                                    time.sleep(0.5)
                                                             except:
                                                                 pass
                                                             continue
