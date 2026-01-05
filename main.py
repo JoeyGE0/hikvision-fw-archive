@@ -196,31 +196,74 @@ class HikvisionScraper:
                                 if test_mode_limit_reached:
                                     break
                                 try:
+                                    logger.info(f"    Processing item {i}...")
                                     model_text = title_element.inner_text().strip()
+                                    logger.info(f"    Model text extracted: {model_text[:50]}...")
                                     model = self.extract_model(model_text)
+                                    logger.info(f"    Extracted model: {model}")
                                     
                                     if not model:
-                                        logger.debug(f"    Could not extract model from: {model_text}")
+                                        logger.warning(f"    Could not extract model from: {model_text}")
                                         continue
                                     
-                                    # Click to expand
+                                    # Get target_id before clicking
+                                    target_id = title_element.get_attribute('data-target') or ''
+                                    logger.info(f"    Processing model {i}: {model} (data-target: {target_id})")
+                                    
+                                    # Click to expand - scroll into view first, then click
+                                    logger.info(f"    Attempting to click title element for {model}...")
                                     try:
-                                        title_element.click()
-                                        time.sleep(0.3)  # Shorter wait
+                                        # Scroll element into view using JavaScript
+                                        page.evaluate('(element) => element.scrollIntoView({ behavior: "smooth", block: "center" })', title_element)
+                                        time.sleep(0.3)  # Brief wait after scrolling
+                                        
+                                        # Try clicking - Playwright handles visibility automatically, but use JS click as fallback
+                                        try:
+                                            # First try normal click with shorter timeout
+                                            title_element.click(timeout=10000)
+                                            logger.info(f"    Normal click successful")
+                                        except Exception as normal_click_err:
+                                            # Fallback: use JavaScript click
+                                            logger.info(f"    Normal click failed ({normal_click_err}), trying JavaScript click...")
+                                            page.evaluate('(element) => { element.click(); }', title_element)
+                                            logger.info(f"    JavaScript click executed")
+                                        
+                                        logger.info(f"    Click successful, waiting for content to expand...")
+                                        # Wait for collapse content to become visible
+                                        if target_id:
+                                            target_id_clean = target_id.replace('#', '')
+                                            # Wait for the collapse element to appear and become visible
+                                            try:
+                                                # Try waiting for common Bootstrap collapse classes or visible state
+                                                page.wait_for_selector(f'#{target_id_clean}.show, #{target_id_clean}.in, #{target_id_clean}.collapse.show', timeout=5000)
+                                                logger.info(f"    Collapse content became visible (found .show class)")
+                                            except:
+                                                # If selector wait fails, wait a bit and check visibility manually
+                                                logger.info(f"    Waiting for collapse animation...")
+                                                time.sleep(2.5)
+                                        else:
+                                            time.sleep(1.5)
                                     except Exception as click_err:
-                                        logger.debug(f"    Click failed for item {i}: {click_err}")
+                                        logger.warning(f"    Click failed for item {i}: {click_err}")
+                                        import traceback
+                                        logger.debug(f"    Traceback: {traceback.format_exc()}")
                                         continue
                                     
                                     # Find the collapse content
-                                    target_id = title_element.get_attribute('data-target') or ''
-                                    logger.info(f"    Processing model {i}: {model} (data-target: {target_id})")
                                     if target_id:
                                         target_id = target_id.replace('#', '')
                                         collapse_content = page.query_selector(f'#{target_id}')
                                         
                                         if collapse_content:
-                                            is_visible = collapse_content.is_visible()
-                                            logger.info(f"    Collapse content found for {model}, visible: {is_visible}")
+                                            # Check visibility multiple ways - Bootstrap uses .show class
+                                            has_show_class = page.evaluate('(element) => element.classList.contains("show")', collapse_content)
+                                            offset_height = page.evaluate('(element) => element.offsetHeight', collapse_content)
+                                            is_visible_playwright = collapse_content.is_visible()
+                                            
+                                            # Consider visible if it has .show class OR has height OR Playwright says it's visible
+                                            is_visible = has_show_class or offset_height > 0 or is_visible_playwright
+                                            
+                                            logger.info(f"    Collapse content found for {model}, .show class: {has_show_class}, height: {offset_height}, Playwright visible: {is_visible_playwright}, final visible: {is_visible}")
                                             if is_visible:
                                                 # Get all links in expanded content
                                                 links = collapse_content.query_selector_all('a[href]')
@@ -252,9 +295,19 @@ class HikvisionScraper:
                                                             
                                                             # Click to open modal
                                                             try:
-                                                                link.click()
+                                                                # Use JavaScript click to avoid timeout issues
+                                                                logger.info(f"    Clicking license agreement link with JavaScript...")
+                                                                page.evaluate('(element) => { element.click(); }', link)
+                                                                time.sleep(1)  # Wait for modal to appear
+                                                                
                                                                 # Wait for modal/dialog to appear with multiple strategies
-                                                                page.wait_for_selector('dialog, [role="dialog"], .modal, #download-agreement', timeout=5000)
+                                                                try:
+                                                                    page.wait_for_selector('dialog, [role="dialog"]', timeout=5000, state='visible')
+                                                                    logger.info(f"    Modal appeared")
+                                                                except:
+                                                                    logger.info(f"    Modal selector wait timed out, continuing anyway...")
+                                                                    time.sleep(1)  # Additional wait
+                                                                
                                                                 time.sleep(1)  # Additional wait for content to load
                                                                 
                                                                 # Try multiple selectors to find the download link
