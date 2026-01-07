@@ -22,5 +22,9 @@
   "100005": {
     "model": "AE-DC2018-D1",
     "hardware_version": "UNKNOWN"
+  },
+  "100006": {
+    "model": "AE-DC2018-K2",
+    "hardware_version": "UNKNOWN"
   }
 }

@@ -202,5 +202,17 @@
     "notes": "",
     "is_beta": false,
     "source": "live"
+  },
+  "AE-DC2018-K2_UNKNOWN_3.0.3": {
+    "device_id": 100006,
+    "model": "AE-DC2018-K2",
+    "hardware_version": "UNKNOWN",
+    "version": "3.0.3",
+    "date": "2025-11-12",
+    "download_url": "https://www.hikvision.com/en/policies/materials-license-agreement/",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
   }
 }
