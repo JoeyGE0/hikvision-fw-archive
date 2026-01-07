@@ -26,5 +26,17 @@
   "100006": {
     "model": "AE-DC2018-K2",
     "hardware_version": "UNKNOWN"
+  },
+  "100007": {
+    "model": "AE-DC2022-V200",
+    "hardware_version": "UNKNOWN"
+  },
+  "100008": {
+    "model": "AE-DC2032-V300",
+    "hardware_version": "UNKNOWN"
+  },
+  "100009": {
+    "model": "AE-DC2928-N6",
+    "hardware_version": "UNKNOWN"
   }
 }
