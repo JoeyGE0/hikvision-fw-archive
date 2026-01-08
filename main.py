@@ -45,7 +45,7 @@ FIRMWARE_URL = f"{BASE_URL}/en/support/download/firmware/"
 # TEST MODE: Set to True to only scrape 1 firmware file (prevents IP banning/rate limiting)
 # Maximum number of firmware files to download (0 = unlimited)
 # Set this to limit downloads and avoid hitting rate limits
-MAX_FIRMWARES_TO_DOWNLOAD = 1  # Change this to set your desired limit (0 = unlimited)
+MAX_FIRMWARES_TO_DOWNLOAD = 10  # Downloads 10 new firmwares per run (20 per day)
 
 # Legacy TEST_MODE (deprecated - use MAX_FIRMWARES_TO_DOWNLOAD instead)
 TEST_MODE = False
