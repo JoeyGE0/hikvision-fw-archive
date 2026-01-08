@@ -42,5 +42,13 @@
   "100010": {
     "model": "AE-DC4018-D1PRO",
     "hardware_version": "UNKNOWN"
+  },
+  "100011": {
+    "model": "AE-DC4328-K5",
+    "hardware_version": "UNKNOWN"
+  },
+  "100012": {
+    "model": "AE-DC5013-F6",
+    "hardware_version": "UNKNOWN"
   }
 }
