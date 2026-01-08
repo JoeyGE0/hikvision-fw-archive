@@ -137,16 +137,22 @@ jobs:
           echo "UNIX_TS=$(date +%s)" >> $GITHUB_ENV
 
       - name: Check firmware files
+        id: check_files
         run: |
           if [ -d "firmwares" ] && [ "$(ls -A firmwares/*.zip firmwares/*.dav firmwares/*.bin firmwares/*.pak 2>/dev/null | wc -l)" -gt 0 ]; then
             echo "Firmware files found:"
             ls -lh firmwares/*.zip firmwares/*.dav firmwares/*.bin firmwares/*.pak 2>/dev/null || true
+            echo "has_files=true" >> $GITHUB_OUTPUT
+            FILE_COUNT=$(ls -1 firmwares/*.zip firmwares/*.dav firmwares/*.bin firmwares/*.pak 2>/dev/null | wc -l)
+            echo "file_count=$FILE_COUNT" >> $GITHUB_OUTPUT
           else
-            echo "No firmware files found - they should be downloaded during scraping and committed"
+            echo "No firmware files found - skipping release"
+            echo "has_files=false" >> $GITHUB_OUTPUT
+            echo "file_count=0" >> $GITHUB_OUTPUT
           fi
 
       - name: Create release
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/main' && steps.check_files.outputs.has_files == 'true'
         uses: ncipollo/release-action@v1
         with:
           tag: ${{ env.UNIX_TS }}
