@@ -139,7 +139,7 @@ The scraper in `main.py` can always be improved:
 ## Status
 
 **Status:** ✅ SUCCESS  
-**Last Run:** 2026-01-08 07:55:49 UTC  
+**Last Run:** 2026-01-08 08:39:43 UTC  
 **Firmwares Found:** 8  
 **New Firmwares:** 1  
 **Test Mode:** Disabled
@@ -203,7 +203,7 @@ Firmwares for this hardware version: 1
 | 2.0.2 | [AE-DC4018-D1PRO](https://www.hikvision.com/en/policies/materials-license-agreement/) | 2025-10-29 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
 
 
-## DS-2TD5537T-7
+## DS-K3B411BX
 
 ### UNKNOWN
 
@@ -211,4 +211,4 @@ Firmwares for this hardware version: 1
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 5.5.49 | [DS-2TD5537T-7](https://assets.hikvision.com/prd/public/all/files/202211/Firmware__V5.5.49_220822_S3000450133.zip) | 2020-22-11 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202211/Firmware__V5.5.49_220822_S3000450133.zip) |  |
+| 2.0.5 | Applied to: [DS-K3B411BX-L/M-Dp65](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V2.0.5_250922_S3000677823.zip) | 2020-25-10 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V2.0.5_250922_S3000677823.zip) |  |
