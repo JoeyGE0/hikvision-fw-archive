@@ -152,63 +152,15 @@ The scraper in `main.py` can always be improved:
 
 Below is the complete list of archived firmwares, organized by device model and hardware version.
 
-**Total: 8**
+**Total: 1**
 
 
 
-## AE-DC2018-D1
-
-### UNKNOWN
-
-Firmwares for this hardware version: 4
-
-| Version | Supported Models | Date | Download | Notes |
-| ------- | ---------------- | ---- | -------- | ----- |
-| 3.0.3 | [AE-DC2018-D1](https://www.hikvision.com/en/policies/materials-license-agreement/) | 2025-10-29 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
-| 1.1.0 | [AE-DC2018-D1](https://www.hikvision.com/en/policies/materials-license-agreement/) | 2024-11-05 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
-| 3.0.2 | [AE-DC2018-D1](https://www.hikvision.com/en/policies/materials-license-agreement/) | 2024-06-24 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
-| 2.0.3 | [AE-DC2018-D1](https://www.hikvision.com/en/policies/materials-license-agreement/) | 2024-05-10 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
-
-
-## AE-DC2018-K2
-
-### UNKNOWN
-
-Firmwares for this hardware version: 1
-
-| Version | Supported Models | Date | Download | Notes |
-| ------- | ---------------- | ---- | -------- | ----- |
-| 3.0.3 | [AE-DC2018-K2](https://www.hikvision.com/en/policies/materials-license-agreement/) | 2025-11-12 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
-
-
-## AE-DC2928-N6
-
-### UNKNOWN
-
-Firmwares for this hardware version: 1
-
-| Version | Supported Models | Date | Download | Notes |
-| ------- | ---------------- | ---- | -------- | ----- |
-| 4.0.1 | [AE-DC2928-N6](https://www.hikvision.com/en/policies/materials-license-agreement/) | 2024-12-13 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
-
-
-## AE-DC4018-D1PRO
-
-### UNKNOWN
-
-Firmwares for this hardware version: 1
-
-| Version | Supported Models | Date | Download | Notes |
-| ------- | ---------------- | ---- | -------- | ----- |
-| 2.0.2 | [AE-DC4018-D1PRO](https://www.hikvision.com/en/policies/materials-license-agreement/) | 2025-10-29 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
-
-
-## DS-K3B411BX
-
-### UNKNOWN
-
-Firmwares for this hardware version: 1
+<details>
+<summary><h2>DS-K3B411BX - UNKNOWN (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 2.0.5 | Applied to: [DS-K3B411BX-L/M-Dp65](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V2.0.5_250922_S3000677823.zip) | 2020-25-10 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V2.0.5_250922_S3000677823.zip) |  |
+
+</details>

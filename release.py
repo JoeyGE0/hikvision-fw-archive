@@ -129,11 +129,12 @@ def generate_readme() -> str:
             reverse=True
         )
         
-        # Create section header
-        section = f"\n## {model}"
+        # Create collapsible section using HTML details/summary for better organization
+        # This allows thousands of firmwares to be organized in dropdowns
+        section = f"\n<details>\n<summary><h2>{model}"
         if hardware_version:
-            section += f"\n\n### {hardware_version}"
-        section += f"\n\nFirmwares for this hardware version: {len(firmwares)}\n\n"
+            section += f" - {hardware_version}"
+        section += f" ({len(firmwares)} firmwares)</h2></summary>\n\n"
         
         # Create table with supported models column
         section += "| Version | Supported Models | Date | Download | Notes |\n"
@@ -224,6 +225,9 @@ def generate_readme() -> str:
             section += f"| {version_link} | {models_text} | {date} | {download_link} | {notes} |\n"
             total_count += 1
         
+        # Close the details tag
+        section += "\n</details>\n"
+        
         firmware_sections.append(section)
     
     # Combine header and firmware list
@@ -231,6 +235,75 @@ def generate_readme() -> str:
     readme_content += '\n\n' + '\n'.join(firmware_sections)
     
     return readme_content
+
+
+def generate_release_body(firmware_files: List[str]) -> str:
+    """Generate release body with device info and download links.
+    
+    Args:
+        firmware_files: List of firmware filenames in this release
+        
+    Returns:
+        Markdown formatted release body
+    """
+    firmwares_live = load_json('firmwares_live.json')
+    firmwares_manual = load_json('firmwares_manual.json')
+    all_firmwares = {**firmwares_live, **firmwares_manual}
+    
+    # Find firmwares that match the uploaded files
+    release_firmwares = []
+    for filename in firmware_files:
+        for key, fw in all_firmwares.items():
+            if fw.get('filename') == filename:
+                release_firmwares.append(fw)
+                break
+    
+    if not release_firmwares:
+        return "Automated firmware archive update.\n\nNew firmwares may have been added. Check the README for details."
+    
+    # Build release body
+    body = "## Firmware Updates\n\n"
+    body += "This release includes the following firmware files:\n\n"
+    
+    github_repo = "JoeyGE0/hikvision-fw-archive"
+    license_url = "https://www.hikvision.com/en/policies/materials-license-agreement/"
+    
+    for fw in release_firmwares:
+        model = fw.get('model', 'Unknown')
+        version = fw.get('version', '')
+        date = fw.get('date', '')
+        filename = fw.get('filename', '')
+        applied_to = fw.get('applied_to', '')
+        supported_models = fw.get('supported_models', [])
+        
+        # Format device info
+        if applied_to:
+            device_info = applied_to
+        elif supported_models:
+            device_info = ', '.join(supported_models[:5])
+            if len(supported_models) > 5:
+                device_info += f', and {len(supported_models) - 5} more'
+        else:
+            device_info = model
+        
+        # Create download link
+        if filename:
+            download_url = f"https://github.com/{github_repo}/releases/latest/download/{filename}"
+            download_link = f"[📥 Download {filename}]({download_url})"
+        else:
+            download_link = "Link not available"
+        
+        body += f"### {model} - v{version}\n\n"
+        body += f"- **Supported Devices:** {device_info}\n"
+        if date:
+            body += f"- **Release Date:** {date}\n"
+        body += f"- **Download:** {download_link}\n\n"
+    
+    body += f"---\n\n"
+    body += f"⚠️ **Important:** By downloading and using these firmware files, you agree to be bound by the [Hikvision Materials License Agreement]({license_url}).\n\n"
+    body += "Please read the agreement before downloading or using any firmware files."
+    
+    return body
 
 
 def main():
