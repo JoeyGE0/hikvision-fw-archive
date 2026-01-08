@@ -14,5 +14,10 @@ build/
 *.log
 .vscode/
 .idea/
-# Firmware files are committed to enable releases
-# firmwares/
+# Firmware files are too large for GitHub (>100MB limit)
+# They are uploaded to releases instead, not committed to repo
+firmwares/
+*.zip
+*.dav
+*.bin
+*.pak

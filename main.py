@@ -18,6 +18,8 @@ except ImportError:
 
 from common import (
     create_device_id,
+    extract_applied_to,
+    extract_models,
     format_date,
     get_device_id,
     is_beta_firmware,
@@ -288,12 +290,22 @@ class HikvisionScraper:
                                                         is_firmware_link = False
                                                         actual_download_url = href
                                                         local_file_path = ''  # Will be set if download succeeds
+                                                        stored_filename = ''  # Will be set if download succeeds
                                                         
                                                         # Extract version and model (we'll check existence AFTER getting real URL)
                                                         version = self.extract_version(link_text + ' ' + href)
                                                         context_text = collapse_content.inner_text()
                                                         hw_version = self.extract_hardware_version(context_text, model)
                                                         normalized_model = normalize_model_name(model)
+                                                        
+                                                        # Extract "Applied to:" section (e.g., "Applied to: DS-1200KI camera")
+                                                        applied_to_text = extract_applied_to(context_text)
+                                                        
+                                                        # Extract all supported models from context (might include variants)
+                                                        supported_models = extract_models(context_text + ' ' + link_text)
+                                                        # Ensure the primary model is included
+                                                        if normalized_model not in supported_models:
+                                                            supported_models.insert(0, normalized_model)
                                                         
                                                         # Increment total found counter (count all firmwares we find)
                                                         total_found_count += 1
@@ -315,6 +327,9 @@ class HikvisionScraper:
                                                                         'version': version,
                                                                         'download_url': href,
                                                                         'local_file_path': '',
+                                                                        'filename': '',
+                                                                        'supported_models': supported_models,
+                                                                        'applied_to': applied_to_text,
                                                                         'date': '',
                                                                         'changes': '',
                                                                         'notes': '',
@@ -385,6 +400,9 @@ class HikvisionScraper:
                                                                                 'version': version,
                                                                                 'download_url': actual_download_url,
                                                                                 'local_file_path': '',
+                                                                                'filename': '',
+                                                                                'supported_models': supported_models,
+                                                                                'applied_to': applied_to_text,
                                                                                 'date': '',
                                                                                 'changes': '',
                                                                                 'notes': '',
@@ -435,6 +453,7 @@ class HikvisionScraper:
                                                                         
                                                                         download.save_as(filepath)
                                                                         local_file_path = str(filepath)  # Store for firmware dict
+                                                                        stored_filename = filename  # Store filename for GitHub release linking
                                                                         new_downloads_count += 1  # Increment counter for new download
                                                                         
                                                                         # Verify file was actually saved
@@ -444,10 +463,12 @@ class HikvisionScraper:
                                                                         else:
                                                                             logger.error(f"    ✗ File download failed: {filepath} does not exist!")
                                                                             local_file_path = ''  # Clear path if file doesn't exist
+                                                                            stored_filename = ''  # Clear filename if file doesn't exist
                                                                     except Exception as download_err:
                                                                         logger.warning(f"    ⚠ Download failed: {download_err}")
                                                                         import traceback
                                                                         logger.debug(f"    Traceback: {traceback.format_exc()}")
+                                                                        stored_filename = ''  # Clear filename on error
                                                                     
                                                                     logger.info(f"    ✓ Download URL: {actual_download_url[:80]}...")
                                                                 else:
@@ -504,6 +525,9 @@ class HikvisionScraper:
                                                             'version': version,
                                                             'download_url': actual_download_url,
                                                             'local_file_path': local_file_path,  # Path to downloaded file (if download succeeded)
+                                                            'filename': stored_filename,  # Filename for GitHub release linking
+                                                            'supported_models': supported_models,  # List of models this firmware supports
+                                                            'applied_to': applied_to_text,  # "Applied to:" text from page
                                                             'date': date_str,
                                                             'changes': '',
                                                             'notes': '',
@@ -627,6 +651,12 @@ class HikvisionScraper:
         key = f"{model}_{hw_version}_{version}"
         
         if key not in self.firmwares_live:
+            # Extract filename from local_file_path if available
+            filename = fw_data.get('filename', '')
+            if not filename and local_file_path:
+                from pathlib import Path
+                filename = Path(local_file_path).name
+            
             self.firmwares_live[key] = {
                 'device_id': device_id,
                 'model': model,
@@ -634,6 +664,9 @@ class HikvisionScraper:
                 'version': version,
                 'date': format_date(fw_data.get('date', '')),
                 'download_url': fw_data.get('download_url', ''),
+                'filename': filename,  # Filename for GitHub release linking
+                'supported_models': fw_data.get('supported_models', [model]),  # List of models this firmware supports
+                'applied_to': fw_data.get('applied_to', ''),  # "Applied to:" text from page
                 'changes': fw_data.get('changes', ''),
                 'notes': fw_data.get('notes', ''),
                 'is_beta': is_beta_firmware(version, fw_data.get('notes', '')),

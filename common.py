@@ -139,3 +139,62 @@ def is_beta_firmware(version: str, notes: str = '') -> bool:
     beta_indicators = ['beta', 'test', 'alpha', 'rc', 'preview']
     return any(indicator in version_lower or indicator in notes_lower 
                for indicator in beta_indicators)
+
+
+def extract_applied_to(text: str) -> str:
+    """Extract the 'Applied to:' section from text.
+    
+    Looks for patterns like:
+    - "Applied to: DS-1200KI camera"
+    - "Applied to:\nDS-2CD2047G2-LU/SL(2.8mm)(C)"
+    
+    Returns the full "Applied to:" text including model names.
+    """
+    if not text:
+        return ''
+    
+    # Look for "Applied to:" followed by model info
+    # Match "Applied to:" and everything after it until next section or end
+    pattern = r'Applied to:\s*([^\n]+(?:\n[^\n]+)*?)(?=\n\n|\n[A-Z]|$)'
+    match = re.search(pattern, text, re.IGNORECASE | re.MULTILINE)
+    
+    if match:
+        applied_to_text = match.group(0).strip()
+        # Clean up extra whitespace
+        applied_to_text = ' '.join(applied_to_text.split())
+        return applied_to_text
+    
+    return ''
+
+
+def extract_models(text: str) -> List[str]:
+    """Extract all Hikvision model numbers from text.
+    
+    Looks for patterns like:
+    - DS-2CD2047G2-LU/SL(2.8mm)(C)
+    - DS-2CD, DS-2DE, DS-76, DS-77, AE-, IDS-
+    - Model variants separated by /, |, or commas
+    
+    Returns list of normalized model names.
+    """
+    if not text:
+        return []
+    
+    # Pattern to match Hikvision model numbers
+    # Matches: DS-2CD..., DS-2DE..., DS-76..., DS-77..., AE-..., IDS-...
+    model_pattern = r'(DS-[0-9A-Z-]+|AE-[0-9A-Z-]+|IDS-[0-9A-Z-]+)'
+    
+    matches = re.findall(model_pattern, text, re.IGNORECASE)
+    
+    # Normalize and deduplicate
+    models = []
+    seen = set()
+    for match in matches:
+        normalized = normalize_model_name(match.upper())
+        # Remove variant suffixes like (2.8mm), (C), etc. for base model
+        base_model = re.sub(r'\([^)]+\)', '', normalized).strip()
+        if base_model and base_model not in seen:
+            models.append(base_model)
+            seen.add(base_model)
+    
+    return models

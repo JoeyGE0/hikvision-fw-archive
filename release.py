@@ -38,10 +38,24 @@ def generate_readme() -> str:
     
     # Group firmwares by device
     device_firmwares = defaultdict(list)
+    device_info_map = {}  # Map device_id to device info (from devices.json or firmware data)
+    
     for firmware_key, firmware_data in all_firmwares.items():
         device_id = firmware_data.get('device_id')
         if device_id:
             device_firmwares[device_id].append(firmware_data)
+            # Store device info from firmware if not in devices.json
+            if device_id not in device_info_map:
+                device_info_map[device_id] = {
+                    'model': firmware_data.get('model', 'Unknown'),
+                    'hardware_version': firmware_data.get('hardware_version', '')
+                }
+    
+    # Also add devices from devices.json
+    for device_id, device_info in devices.items():
+        device_id_int = int(device_id) if device_id.isdigit() else None
+        if device_id_int and device_id_int not in device_info_map:
+            device_info_map[device_id_int] = device_info
     
     # Load readme header
     readme_header = Path('readme_header.md').read_text(encoding='utf-8')
@@ -90,18 +104,19 @@ def generate_readme() -> str:
     firmware_sections = []
     total_count = 0
     
-    # Sort devices by model name
-    sorted_devices = sorted(
-        devices.items(),
-        key=lambda x: (x[1].get('model', ''), x[1].get('hardware_version', ''))
+    # Sort device IDs by model name
+    sorted_device_ids = sorted(
+        device_firmwares.keys(),
+        key=lambda did: (
+            device_info_map.get(did, {}).get('model', ''),
+            device_info_map.get(did, {}).get('hardware_version', '')
+        )
     )
     
-    for device_id, device_info in sorted_devices:
+    for device_id in sorted_device_ids:
+        device_info = device_info_map.get(device_id, {})
         model = device_info.get('model', 'Unknown')
         hardware_version = device_info.get('hardware_version', '')
-        
-        if device_id not in device_firmwares:
-            continue
         
         firmwares = device_firmwares[device_id]
         
@@ -120,9 +135,9 @@ def generate_readme() -> str:
             section += f"\n\n### {hardware_version}"
         section += f"\n\nFirmwares for this hardware version: {len(firmwares)}\n\n"
         
-        # Create table
-        section += "| Version | Date | Changes | Notes |\n"
-        section += "| ------- | ---- | ------- | ----- |\n"
+        # Create table with supported models column
+        section += "| Version | Supported Models | Date | Download | Notes |\n"
+        section += "| ------- | ---------------- | ---- | -------- | ----- |\n"
         
         for firmware in firmwares:
             version = firmware.get('version', '')
@@ -130,13 +145,72 @@ def generate_readme() -> str:
             changes = firmware.get('changes', '')
             notes = firmware.get('notes', '')
             download_url = firmware.get('download_url', '')
+            filename = firmware.get('filename', '')
+            supported_models = firmware.get('supported_models', [])
             is_beta = firmware.get('is_beta', False)
             
-            # Format version with link if URL exists
-            if download_url:
-                version_link = f"[{version}]({download_url})"
+            # Format download link - prefer GitHub release if filename exists
+            github_repo = "JoeyGE0/hikvision-fw-archive"
+            if filename:
+                # Link to latest release download (since makeLatest: true in workflow)
+                firmware_download_url = f"https://github.com/{github_repo}/releases/latest/download/{filename}"
+                download_link = f"[📥 Download]({firmware_download_url})"
+            elif download_url:
+                # Fallback to Hikvision URL
+                firmware_download_url = download_url
+                download_link = f"[🔗 Link]({download_url})"
             else:
-                version_link = version
+                firmware_download_url = ""
+                download_link = "—"
+            
+            # Format supported models - prefer "Applied to:" text if available
+            # Make model names clickable links to the firmware download
+            applied_to = firmware.get('applied_to', '')
+            if applied_to and firmware_download_url:
+                # Extract model names from "Applied to:" text and make them links
+                # Pattern: "Applied to: DS-1200KI(B)" or "Applied to: DS-2CD2047G2-LU/SL(2.8mm)(C)"
+                import re
+                # Find all model patterns (DS-xxx, AE-xxx, IDS-xxx)
+                model_pattern = r'(DS-[0-9A-Z-]+(?:[/-][A-Z0-9]+)*(?:\([^)]+\))?|AE-[0-9A-Z-]+(?:[/-][A-Z0-9]+)*(?:\([^)]+\))?|IDS-[0-9A-Z-]+(?:[/-][A-Z0-9]+)*(?:\([^)]+\))?)'
+                models_found = re.findall(model_pattern, applied_to, re.IGNORECASE)
+                
+                if models_found:
+                    # Replace each model name with a clickable link
+                    models_text = applied_to
+                    for model_name in models_found:
+                        # Create link: [model_name](download_url)
+                        linked_model = f"[{model_name}]({firmware_download_url})"
+                        # Replace the model name with the linked version
+                        models_text = models_text.replace(model_name, linked_model, 1)
+                else:
+                    # No models found, use text as-is
+                    models_text = applied_to
+            elif applied_to:
+                # Have "Applied to:" text but no download URL yet
+                models_text = applied_to
+            elif supported_models and len(supported_models) > 0:
+                # Show up to 3 models, then "and X more" if there are more
+                if firmware_download_url:
+                    # Make model names clickable
+                    linked_models = [f"[{m}]({firmware_download_url})" for m in supported_models[:3]]
+                    if len(supported_models) <= 3:
+                        models_text = ', '.join(linked_models)
+                    else:
+                        models_text = ', '.join(linked_models) + f', and {len(supported_models) - 3} more'
+                else:
+                    if len(supported_models) <= 3:
+                        models_text = ', '.join(supported_models)
+                    else:
+                        models_text = ', '.join(supported_models[:3]) + f', and {len(supported_models) - 3} more'
+            else:
+                # Fallback to primary model
+                if firmware_download_url:
+                    models_text = f"[{model}]({firmware_download_url})"
+                else:
+                    models_text = model
+            
+            # Format version
+            version_link = version
             
             # Add beta warning
             if is_beta:
@@ -145,8 +219,9 @@ def generate_readme() -> str:
             # Escape pipe characters in content
             changes = changes.replace('|', '\\|')
             notes = notes.replace('|', '\\|')
+            models_text = models_text.replace('|', '\\|')
             
-            section += f"| {version_link} | {date} | {changes} | {notes} |\n"
+            section += f"| {version_link} | {models_text} | {date} | {download_link} | {notes} |\n"
             total_count += 1
         
         firmware_sections.append(section)
