@@ -2,5 +2,9 @@
   "100001": {
     "model": "DS-K3B411BX",
     "hardware_version": "UNKNOWN"
+  },
+  "100002": {
+    "model": "DS-2TD5537T-7",
+    "hardware_version": "UNKNOWN"
   }
 }

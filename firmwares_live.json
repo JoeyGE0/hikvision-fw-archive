@@ -1,19 +1,16 @@
 {
-  "DS-K3B411BX_UNKNOWN_2.0.5": {
-    "device_id": 100001,
-    "model": "DS-K3B411BX",
+  "DS-2TD5537T-7_UNKNOWN_5.5.49": {
+    "device_id": 100002,
+    "model": "DS-2TD5537T-7",
     "hardware_version": "UNKNOWN",
-    "version": "2.0.5",
-    "date": "2020-25-10",
-    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202510/Firmware__V2.0.5_250922_S3000677823.zip",
-    "filename": "Firmware__V2.0.5_250922_S3000677823.zip",
+    "version": "5.5.49",
+    "date": "2020-22-11",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202211/Firmware__V5.5.49_220822_S3000450133.zip",
+    "filename": "Firmware__V5.5.49_220822_S3000450133.zip",
     "supported_models": [
-      "DS-K3B411BX",
-      "DS-K3B411BX-L",
-      "DS-K3B411BX-M",
-      "DS-K3B411BX-R"
+      "DS-2TD5537T-7"
     ],
-    "applied_to": "Applied to: DS-K3B411BX-L/M-Dp65",
+    "applied_to": "Applied to: DS-2TD5537T-7/W",
     "changes": "",
     "notes": "",
     "is_beta": false,
