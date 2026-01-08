@@ -606,6 +606,16 @@ class HikvisionScraper:
         if not all([model, version]):
             return
         
+        # IMPORTANT: Only add firmware if download succeeded (has local_file_path)
+        # Skip entries that failed to download or were already existing
+        local_file_path = fw_data.get('local_file_path', '')
+        already_exists = fw_data.get('already_exists', False)
+        
+        # Don't add if download failed (no local file) or if it already exists
+        if not local_file_path and not already_exists:
+            logger.debug(f"  ⊘ Skipping firmware without downloaded file: {model} {hw_version} v{version}")
+            return
+        
         # Get/create device ID
         device_id = get_device_id(self.devices, model, hw_version)
         if device_id is None:
@@ -628,15 +638,59 @@ class HikvisionScraper:
                 'is_beta': is_beta_firmware(version, fw_data.get('notes', '')),
                 'source': fw_data.get('source', 'live')
             }
-            self.scraped_count += 1
-            logger.info(f"  ✓ Added NEW firmware: {model} {hw_version} v{version}")
-            if self.scraped_count % 50 == 0:
-                logger.info(f"  Added {self.scraped_count} new firmwares so far...")
+            # Only count as scraped if we actually downloaded a file
+            if local_file_path:
+                self.scraped_count += 1
+                logger.info(f"  ✓ Added NEW firmware: {model} {hw_version} v{version}")
+                if self.scraped_count % 50 == 0:
+                    logger.info(f"  Added {self.scraped_count} new firmwares so far...")
         else:
             logger.debug(f"  ⊘ Skipped existing firmware: {model} {hw_version} v{version}")
     
+    def cleanup_failed_downloads(self):
+        """Remove firmware entries that don't have corresponding files."""
+        firmware_dir = Path('firmwares')
+        if not firmware_dir.exists():
+            return
+        
+        # Get list of actual firmware files
+        firmware_files = set()
+        for ext in ['.zip', '.dav', '.pak', '.bin']:
+            for filepath in firmware_dir.glob(f'*{ext}'):
+                firmware_files.add(filepath.name)
+        
+        # Remove entries that don't have files
+        removed_count = 0
+        keys_to_remove = []
+        for key, fw_data in self.firmwares_live.items():
+            download_url = fw_data.get('download_url', '')
+            if download_url:
+                # Extract filename from URL
+                filename = download_url.split('/')[-1].split('?')[0]
+                if filename and filename not in firmware_files:
+                    # Check if file exists with different name pattern
+                    model = fw_data.get('model', '')
+                    version = fw_data.get('version', '')
+                    # Try to find file by model/version pattern
+                    found = False
+                    for fname in firmware_files:
+                        if model.replace('-', '_') in fname.replace('-', '_') and version.replace('.', '_') in fname.replace('.', '_'):
+                            found = True
+                            break
+                    if not found:
+                        keys_to_remove.append(key)
+        
+        for key in keys_to_remove:
+            del self.firmwares_live[key]
+            removed_count += 1
+        
+        if removed_count > 0:
+            logger.info(f"  🧹 Cleaned up {removed_count} firmware entry(ies) without files")
+    
     def save(self):
         """Save all data."""
+        # Clean up failed downloads before saving
+        self.cleanup_failed_downloads()
         save_json('devices.json', self.devices)
         save_json('firmwares_live.json', self.firmwares_live)
         logger.info("Data saved")
