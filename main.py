@@ -511,12 +511,34 @@ class HikvisionScraper:
                                                             continue
                                                         
                                                         # Extract date
-                                                        date_match = re.search(r'(\d{6}|\d{8})', actual_download_url + link_text)
+                                                        # Prioritize filename date over URL path date
+                                                        # Filename dates are more accurate (e.g., 220822 = 2022-08-22)
+                                                        # URL path dates are just year-month (e.g., /202211/ = 2022-11)
                                                         date_str = ''
+                                                        
+                                                        # First try to find date in link_text (filename) - more accurate
+                                                        date_match = re.search(r'(\d{6}|\d{8})', link_text)
                                                         if date_match:
                                                             date_code = date_match.group(1)
                                                             if len(date_code) == 6:
                                                                 date_str = f"20{date_code[:2]}-{date_code[2:4]}-{date_code[4:6]}"
+                                                            elif len(date_code) == 8:
+                                                                date_str = f"{date_code[:4]}-{date_code[4:6]}-{date_code[6:8]}"
+                                                        
+                                                        # If no date in filename, try URL (but URL dates are less reliable)
+                                                        if not date_str:
+                                                            date_match = re.search(r'(\d{6}|\d{8})', actual_download_url)
+                                                            if date_match:
+                                                                date_code = date_match.group(1)
+                                                                # Only use URL date if it's 8 digits (YYYYMMDD), not 6 (could be YYMMDD or YYYYMM)
+                                                                if len(date_code) == 8:
+                                                                    date_str = f"{date_code[:4]}-{date_code[4:6]}-{date_code[6:8]}"
+                                                                elif len(date_code) == 6:
+                                                                    # Check if it looks like YYMMDD (starts with 20-23) vs YYYYMM (starts with 19-20)
+                                                                    if date_code[:2] in ['20', '21', '22', '23']:
+                                                                        # Likely YYMMDD format
+                                                                        date_str = f"20{date_code[:2]}-{date_code[2:4]}-{date_code[4:6]}"
+                                                                    # Otherwise skip - could be YYYYMM which isn't a full date
                                                         
                                                         # Add firmware to list (download happened in modal handling above)
                                                         firmwares.append({
