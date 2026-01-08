@@ -139,7 +139,7 @@ The scraper in `main.py` can always be improved:
 ## Status
 
 **Status:** ✅ SUCCESS  
-**Last Run:** 2026-01-08 07:55:49 UTC  
+**Last Run:** 2026-01-08 08:39:43 UTC  
 **Firmwares Found:** 8  
 **New Firmwares:** 1  
 **Test Mode:** Disabled
@@ -164,10 +164,10 @@ Firmwares for this hardware version: 4
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 3.0.3 | AE-DC2018-D1 | 2025-10-29 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
-| 1.1.0 | AE-DC2018-D1 | 2024-11-05 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
-| 3.0.2 | AE-DC2018-D1 | 2024-06-24 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
-| 2.0.3 | AE-DC2018-D1 | 2024-05-10 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
+| 3.0.3 | [AE-DC2018-D1](https://www.hikvision.com/en/policies/materials-license-agreement/) | 2025-10-29 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
+| 1.1.0 | [AE-DC2018-D1](https://www.hikvision.com/en/policies/materials-license-agreement/) | 2024-11-05 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
+| 3.0.2 | [AE-DC2018-D1](https://www.hikvision.com/en/policies/materials-license-agreement/) | 2024-06-24 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
+| 2.0.3 | [AE-DC2018-D1](https://www.hikvision.com/en/policies/materials-license-agreement/) | 2024-05-10 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
 
 
 ## AE-DC2018-K2
@@ -178,7 +178,7 @@ Firmwares for this hardware version: 1
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 3.0.3 | AE-DC2018-K2 | 2025-11-12 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
+| 3.0.3 | [AE-DC2018-K2](https://www.hikvision.com/en/policies/materials-license-agreement/) | 2025-11-12 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
 
 
 ## AE-DC2928-N6
@@ -189,7 +189,7 @@ Firmwares for this hardware version: 1
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 4.0.1 | AE-DC2928-N6 | 2024-12-13 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
+| 4.0.1 | [AE-DC2928-N6](https://www.hikvision.com/en/policies/materials-license-agreement/) | 2024-12-13 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
 
 
 ## AE-DC4018-D1PRO
@@ -200,10 +200,10 @@ Firmwares for this hardware version: 1
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 2.0.2 | AE-DC4018-D1PRO | 2025-10-29 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
+| 2.0.2 | [AE-DC4018-D1PRO](https://www.hikvision.com/en/policies/materials-license-agreement/) | 2025-10-29 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
 
 
-## DS-2TD5537T-7
+## DS-K3B411BX
 
 ### UNKNOWN
 
@@ -211,4 +211,4 @@ Firmwares for this hardware version: 1
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 5.5.49 | DS-2TD5537T-7 | 2020-22-11 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202211/Firmware__V5.5.49_220822_S3000450133.zip) |  |
+| 2.0.5 | Applied to: [DS-K3B411BX-L/M-Dp65](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V2.0.5_250922_S3000677823.zip) | 2020-25-10 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V2.0.5_250922_S3000677823.zip) |  |
