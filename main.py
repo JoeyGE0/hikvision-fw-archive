@@ -607,12 +607,13 @@ class HikvisionScraper:
             return
         
         # IMPORTANT: Only add firmware if download succeeded (has local_file_path)
-        # Skip entries that failed to download or were already existing
+        # Skip entries that failed to download
         local_file_path = fw_data.get('local_file_path', '')
         already_exists = fw_data.get('already_exists', False)
         
-        # Don't add if download failed (no local file) or if it already exists
-        if not local_file_path and not already_exists:
+        # Don't add NEW entries if download failed (no local file)
+        # If it already exists, we'll skip it at line 628 anyway
+        if not local_file_path:
             logger.debug(f"  ⊘ Skipping firmware without downloaded file: {model} {hw_version} v{version}")
             return
         
