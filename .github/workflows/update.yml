@@ -69,58 +69,14 @@ jobs:
           fi
           echo "============================"
 
-      - name: Commit files
-        continue-on-error: true
-        run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          # Add all changes (including new firmware files) and commit
-          git add -A
-          git commit -m "Auto update" || exit 0
-
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
-          force: false
-
-  release:
-    runs-on: ubuntu-latest
-    needs: auto-update
-    if: success() && fromJSON(needs.auto-update.outputs.new-firmwares) > 0
-
-    permissions:
-      contents: write
-
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          ref: ${{ github.ref }}
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
-      - name: Install Python dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      - name: Install Playwright browsers and system dependencies
-        run: |
-          playwright install chromium
-          playwright install-deps chromium
-
       - name: Get time and date
+        if: fromJSON(steps.changes.outputs.firmwares) > 0
         run: |
           echo "DATE=$(date +%Y.%m.%d -u)" >> $GITHUB_ENV
           echo "UNIX_TS=$(date +%s)" >> $GITHUB_ENV
 
       - name: Check firmware files
+        if: fromJSON(steps.changes.outputs.firmwares) > 0
         id: check_files
         run: |
           # Use find to reliably check for firmware files (handles spaces, etc.)
@@ -137,7 +93,7 @@ jobs:
           fi
 
       - name: Create release
-        if: github.ref == 'refs/heads/main' && steps.check_files.outputs.has_files == 'true'
+        if: github.ref == 'refs/heads/main' && fromJSON(steps.changes.outputs.firmwares) > 0 && steps.check_files.outputs.has_files == 'true'
         uses: ncipollo/release-action@v1
         with:
           tag: ${{ env.UNIX_TS }}
@@ -150,16 +106,14 @@ jobs:
           makeLatest: true
 
       - name: Upload firmware files to release
-        if: github.ref == 'refs/heads/main' && steps.check_files.outputs.has_files == 'true'
+        if: github.ref == 'refs/heads/main' && fromJSON(steps.changes.outputs.firmwares) > 0 && steps.check_files.outputs.has_files == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Upload firmware files to the release using GitHub CLI
-          # Use find to reliably get all firmware files (handles spaces, etc.)
+          # Upload firmware files directly to release (no need to commit them to repo)
           if [ -d "firmwares" ]; then
             echo "Uploading firmware files to release ${{ env.UNIX_TS }}..."
             uploaded=0
-            # Use process substitution to avoid subshell issue with counter
             while IFS= read -r file; do
               if [ -f "$file" ]; then
                 echo "Uploading $(basename "$file")..."
@@ -173,5 +127,23 @@ jobs:
             done < <(find firmwares -type f \( -name "*.zip" -o -name "*.dav" -o -name "*.bin" -o -name "*.pak" \))
             echo "Uploaded $uploaded firmware file(s) to release"
           else
-            echo "No firmwares directory found - files should be committed in auto-update job"
+            echo "No firmwares directory found"
           fi
+
+      - name: Commit files
+        continue-on-error: true
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          # Remove firmware files from git tracking (they're too large for GitHub >100MB)
+          git rm -r --cached firmwares/ 2>/dev/null || true
+          # Only commit JSON files and README (firmware files are uploaded to releases instead)
+          git add devices.json firmwares_live.json firmwares_manual.json firmware_info.json status.json README.md .gitignore || true
+          git commit -m "Auto update" || exit 0
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+          force: false
