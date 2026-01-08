@@ -1,2 +1,0 @@
-# Firmwares that are reported to exist but don't appear in the archive yet
-# Format: Model Name - Hardware Version - Firmware Version - Date (if known)

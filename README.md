@@ -164,10 +164,10 @@ Firmwares for this hardware version: 4
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 3.0.3 | AE-DC2018-D1 | 2025-10-29 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
-| 1.1.0 | AE-DC2018-D1 | 2024-11-05 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
-| 3.0.2 | AE-DC2018-D1 | 2024-06-24 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
-| 2.0.3 | AE-DC2018-D1 | 2024-05-10 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
+| 3.0.3 | [AE-DC2018-D1](https://www.hikvision.com/en/policies/materials-license-agreement/) | 2025-10-29 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
+| 1.1.0 | [AE-DC2018-D1](https://www.hikvision.com/en/policies/materials-license-agreement/) | 2024-11-05 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
+| 3.0.2 | [AE-DC2018-D1](https://www.hikvision.com/en/policies/materials-license-agreement/) | 2024-06-24 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
+| 2.0.3 | [AE-DC2018-D1](https://www.hikvision.com/en/policies/materials-license-agreement/) | 2024-05-10 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
 
 
 ## AE-DC2018-K2
@@ -178,7 +178,7 @@ Firmwares for this hardware version: 1
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 3.0.3 | AE-DC2018-K2 | 2025-11-12 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
+| 3.0.3 | [AE-DC2018-K2](https://www.hikvision.com/en/policies/materials-license-agreement/) | 2025-11-12 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
 
 
 ## AE-DC2928-N6
@@ -189,7 +189,7 @@ Firmwares for this hardware version: 1
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 4.0.1 | AE-DC2928-N6 | 2024-12-13 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
+| 4.0.1 | [AE-DC2928-N6](https://www.hikvision.com/en/policies/materials-license-agreement/) | 2024-12-13 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
 
 
 ## AE-DC4018-D1PRO
@@ -200,7 +200,7 @@ Firmwares for this hardware version: 1
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 2.0.2 | AE-DC4018-D1PRO | 2025-10-29 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
+| 2.0.2 | [AE-DC4018-D1PRO](https://www.hikvision.com/en/policies/materials-license-agreement/) | 2025-10-29 | [🔗 Link](https://www.hikvision.com/en/policies/materials-license-agreement/) |  |
 
 
 ## DS-2TD5537T-7
@@ -211,4 +211,4 @@ Firmwares for this hardware version: 1
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 5.5.49 | DS-2TD5537T-7 | 2020-22-11 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202211/Firmware__V5.5.49_220822_S3000450133.zip) |  |
+| 5.5.49 | [DS-2TD5537T-7](https://assets.hikvision.com/prd/public/all/files/202211/Firmware__V5.5.49_220822_S3000450133.zip) | 2020-22-11 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202211/Firmware__V5.5.49_220822_S3000450133.zip) |  |
