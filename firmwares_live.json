@@ -262,5 +262,17 @@
     "notes": "",
     "is_beta": false,
     "source": "live"
+  },
+  "AE-DC4018-D1PRO_UNKNOWN_2.0.2": {
+    "device_id": 100010,
+    "model": "AE-DC4018-D1PRO",
+    "hardware_version": "UNKNOWN",
+    "version": "2.0.2",
+    "date": "2025-10-29",
+    "download_url": "https://www.hikvision.com/en/policies/materials-license-agreement/",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
   }
 }

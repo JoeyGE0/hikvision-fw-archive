@@ -38,5 +38,9 @@
   "100009": {
     "model": "AE-DC2928-N6",
     "hardware_version": "UNKNOWN"
+  },
+  "100010": {
+    "model": "AE-DC4018-D1PRO",
+    "hardware_version": "UNKNOWN"
   }
 }
