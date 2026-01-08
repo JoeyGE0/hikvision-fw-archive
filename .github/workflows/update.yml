@@ -92,16 +92,35 @@ jobs:
             echo "file_count=0" >> $GITHUB_OUTPUT
           fi
 
+      - name: Generate release body
+        if: github.ref == 'refs/heads/main' && fromJSON(steps.changes.outputs.firmwares) > 0 && steps.check_files.outputs.has_files == 'true'
+        id: release_body
+        run: |
+          # Get list of firmware files
+          FIRMWARE_FILES=$(find firmwares -type f \( -name "*.zip" -o -name "*.dav" -o -name "*.bin" -o -name "*.pak" \) -exec basename {} \; | tr '\n' ',' | sed 's/,$//')
+          
+          # Generate release body using Python
+          RELEASE_BODY=$(python3 -c "
+          import sys
+          sys.path.insert(0, '.')
+          from release import generate_release_body
+          files = '$FIRMWARE_FILES'.split(',') if '$FIRMWARE_FILES' else []
+          body = generate_release_body(files)
+          print(body)
+          ")
+          
+          # Save to output (escape newlines for GitHub Actions)
+          echo "body<<EOF" >> $GITHUB_OUTPUT
+          echo "$RELEASE_BODY" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
       - name: Create release
         if: github.ref == 'refs/heads/main' && fromJSON(steps.changes.outputs.firmwares) > 0 && steps.check_files.outputs.has_files == 'true'
         uses: ncipollo/release-action@v1
         with:
           tag: ${{ env.UNIX_TS }}
           name: ${{ env.DATE }}
-          body: |
-            Automated firmware archive update.
-
-            New firmwares may have been added. Check the README for details.
+          body: ${{ steps.release_body.outputs.body }}
           commit: main
           makeLatest: true
 
