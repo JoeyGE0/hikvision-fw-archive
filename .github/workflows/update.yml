@@ -19,6 +19,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
+          persist-credentials: false
           fetch-depth: 0
 
       - name: Set up Python
@@ -73,32 +74,15 @@ jobs:
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-
-          # Check if firmware files exist and add them
-          if [ -d "firmwares" ]; then
-            echo "Checking for firmware files..."
-            ls -la firmwares/ || echo "firmwares directory is empty"
-            
-            # Add firmware files if they exist
-            if ls firmwares/*.zip firmwares/*.dav firmwares/*.bin firmwares/*.pak 1> /dev/null 2>&1; then
-              echo "Found firmware files, adding to git..."
-              git add firmwares/*.zip firmwares/*.dav firmwares/*.bin firmwares/*.pak
-              git status --short | grep firmwares || echo "No firmware files staged"
-            else
-              echo "No firmware files found to commit"
-            fi
-          else
-            echo "firmwares/ directory does not exist"
-          fi
-
-          # Commit all changes (including JSON files and firmware files if added)
-          git commit -a -m "Auto update" || exit 0
+          # Add all changes (including new firmware files) and commit
+          git add -A
+          git commit -m "Auto update" || exit 0
 
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
+          branch: ${{ github.ref }}
           force: false
 
   release:
@@ -114,7 +98,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          ref: main
+          ref: ${{ github.ref }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -139,12 +123,13 @@ jobs:
       - name: Check firmware files
         id: check_files
         run: |
-          if [ -d "firmwares" ] && [ "$(ls -A firmwares/*.zip firmwares/*.dav firmwares/*.bin firmwares/*.pak 2>/dev/null | wc -l)" -gt 0 ]; then
+          # Use find to reliably check for firmware files (handles spaces, etc.)
+          FIRMWARE_COUNT=$(find firmwares -type f \( -name "*.zip" -o -name "*.dav" -o -name "*.bin" -o -name "*.pak" \) 2>/dev/null | wc -l)
+          if [ "$FIRMWARE_COUNT" -gt 0 ]; then
             echo "Firmware files found:"
-            ls -lh firmwares/*.zip firmwares/*.dav firmwares/*.bin firmwares/*.pak 2>/dev/null || true
+            find firmwares -type f \( -name "*.zip" -o -name "*.dav" -o -name "*.bin" -o -name "*.pak" \) -exec ls -lh {} \;
             echo "has_files=true" >> $GITHUB_OUTPUT
-            FILE_COUNT=$(ls -1 firmwares/*.zip firmwares/*.dav firmwares/*.bin firmwares/*.pak 2>/dev/null | wc -l)
-            echo "file_count=$FILE_COUNT" >> $GITHUB_OUTPUT
+            echo "file_count=$FIRMWARE_COUNT" >> $GITHUB_OUTPUT
           else
             echo "No firmware files found - skipping release"
             echo "has_files=false" >> $GITHUB_OUTPUT
@@ -165,21 +150,28 @@ jobs:
           makeLatest: true
 
       - name: Upload firmware files to release
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/main' && steps.check_files.outputs.has_files == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Upload firmware files to the release using GitHub CLI
+          # Use find to reliably get all firmware files (handles spaces, etc.)
           if [ -d "firmwares" ]; then
             echo "Uploading firmware files to release ${{ env.UNIX_TS }}..."
             uploaded=0
-            for file in firmwares/*.zip firmwares/*.dav firmwares/*.bin firmwares/*.pak; do
+            # Use process substitution to avoid subshell issue with counter
+            while IFS= read -r file; do
               if [ -f "$file" ]; then
                 echo "Uploading $(basename "$file")..."
-                gh release upload ${{ env.UNIX_TS }} "$file" --repo ${{ github.repository }} && uploaded=$((uploaded + 1)) || echo "Failed to upload $file"
+                if gh release upload ${{ env.UNIX_TS }} "$file" --repo ${{ github.repository }}; then
+                  uploaded=$((uploaded + 1))
+                  echo "  ✓ Uploaded: $(basename "$file")"
+                else
+                  echo "  ✗ Failed to upload: $(basename "$file")"
+                fi
               fi
-            done
-            echo "Uploaded $uploaded firmware file(s)"
+            done < <(find firmwares -type f \( -name "*.zip" -o -name "*.dav" -o -name "*.bin" -o -name "*.pak" \))
+            echo "Uploaded $uploaded firmware file(s) to release"
           else
             echo "No firmwares directory found - files should be committed in auto-update job"
           fi
