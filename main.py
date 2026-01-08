@@ -43,7 +43,7 @@ FIRMWARE_URL = f"{BASE_URL}/en/support/download/firmware/"
 # TEST MODE: Set to True to only scrape 1 firmware file (prevents IP banning/rate limiting)
 # Maximum number of firmware files to download (0 = unlimited)
 # Set this to limit downloads and avoid hitting rate limits
-MAX_FIRMWARES_TO_DOWNLOAD = 5  # Change this to set your desired limit
+MAX_FIRMWARES_TO_DOWNLOAD = 5  # Change this to set your desired limit (0 = unlimited)
 
 # Legacy TEST_MODE (deprecated - use MAX_FIRMWARES_TO_DOWNLOAD instead)
 TEST_MODE = False
@@ -289,7 +289,7 @@ class HikvisionScraper:
                                                         actual_download_url = href
                                                         local_file_path = ''  # Will be set if download succeeds
                                                         
-                                                        # Extract version and model early to check if firmware exists
+                                                        # Extract version and model (we'll check existence AFTER getting real URL)
                                                         version = self.extract_version(link_text + ' ' + href)
                                                         context_text = collapse_content.inner_text()
                                                         hw_version = self.extract_hardware_version(context_text, model)
@@ -298,38 +298,30 @@ class HikvisionScraper:
                                                         # Increment total found counter (count all firmwares we find)
                                                         total_found_count += 1
                                                         
-                                                        # Check if firmware already exists (before downloading)
-                                                        if version:
-                                                            firmware_key = f"{normalized_model}_{hw_version}_{version}"
-                                                            firmware_exists = firmware_key in self.firmwares_live
-                                                            
-                                                            if firmware_exists:
-                                                                skipped_existing_count += 1
-                                                                logger.info(f"    ⊘ Skipping existing firmware: {normalized_model} {hw_version} v{version} ({skipped_existing_count} skipped)")
-                                                                # Add to list but skip download
-                                                                firmwares.append({
-                                                                    'model': normalized_model,
-                                                                    'hardware_version': hw_version,
-                                                                    'version': version,
-                                                                    'download_url': href,
-                                                                    'local_file_path': '',
-                                                                    'date': '',
-                                                                    'changes': '',
-                                                                    'notes': '',
-                                                                    'source': 'live',
-                                                                    'already_exists': True
-                                                                })
-                                                                continue  # Skip download for existing firmware
-                                                        
-                                                        # Check download limit for NEW firmwares
-                                                        if MAX_FIRMWARES_TO_DOWNLOAD > 0 and new_downloads_count >= MAX_FIRMWARES_TO_DOWNLOAD:
-                                                            logger.info(f"  ⏹️  Download limit reached: Downloaded {new_downloads_count} NEW firmware(s) (limit: {MAX_FIRMWARES_TO_DOWNLOAD}), stopping...")
-                                                            test_mode_limit_reached = True
-                                                            break
-                                                        
                                                         # Direct firmware file link
                                                         if any(ext in href.lower() for ext in ['.dav', '.zip', '.pak', '.bin']):
                                                             is_firmware_link = True
+                                                            # For direct links, check existence now
+                                                            if version:
+                                                                firmware_key = f"{normalized_model}_{hw_version}_{version}"
+                                                                firmware_exists = firmware_key in self.firmwares_live
+                                                                
+                                                                if firmware_exists:
+                                                                    skipped_existing_count += 1
+                                                                    logger.info(f"    ⊘ Skipping existing firmware: {normalized_model} {hw_version} v{version} ({skipped_existing_count} skipped)")
+                                                                    firmwares.append({
+                                                                        'model': normalized_model,
+                                                                        'hardware_version': hw_version,
+                                                                        'version': version,
+                                                                        'download_url': href,
+                                                                        'local_file_path': '',
+                                                                        'date': '',
+                                                                        'changes': '',
+                                                                        'notes': '',
+                                                                        'source': 'live',
+                                                                        'already_exists': True
+                                                                    })
+                                                                    continue
                                                         # License agreement link (needs to be clicked to get actual URL)
                                                         elif href == '#download-agreement' or 'download-agreement' in href.lower():
                                                             is_firmware_link = True
@@ -338,64 +330,87 @@ class HikvisionScraper:
                                                             # Click to open modal
                                                             try:
                                                                 # Use JavaScript click to avoid timeout issues
-                                                                logger.info(f"    Clicking license agreement link with JavaScript...")
+                                                                logger.info(f"    Clicking license agreement link...")
                                                                 page.evaluate('(element) => { element.click(); }', link)
-                                                                time.sleep(1)  # Wait for modal to appear
+                                                                time.sleep(3)  # Wait for modal to appear and load
                                                                 
-                                                                # Wait for modal/dialog to appear with multiple strategies
-                                                                try:
-                                                                    page.wait_for_selector('dialog, [role="dialog"]', timeout=5000, state='visible')
-                                                                    logger.info(f"    Modal appeared")
-                                                                except:
-                                                                    logger.info(f"    Modal selector wait timed out, continuing anyway...")
-                                                                    time.sleep(1)  # Additional wait
+                                                                # Find modal - simplified approach that works
+                                                                modal = page.query_selector('[role="dialog"]')
+                                                                if not modal:
+                                                                    # Try alternative selector
+                                                                    modal = page.query_selector('dialog')
                                                                 
-                                                                time.sleep(1)  # Additional wait for content to load
+                                                                if not modal:
+                                                                    logger.warning(f"    ⚠ Could not find modal after clicking agreement link")
+                                                                    continue
                                                                 
-                                                                # Try multiple selectors to find the download link
+                                                                logger.info(f"    ✓ Modal found")
+                                                                
+                                                                # Find the download link - SIMPLIFIED: just check all links in modal
                                                                 agree_link = None
+                                                                all_modal_links = modal.query_selector_all('a[href]')
+                                                                logger.info(f"    Checking {len(all_modal_links)} links in modal...")
                                                                 
-                                                                # Strategy 1: Look for links with file extensions in dialog
-                                                                agree_link = page.query_selector('dialog a[href*=".zip"], dialog a[href*=".dav"], dialog a[href*=".pak"], dialog a[href*=".bin"]')
-                                                                
-                                                                # Strategy 2: Look in any modal-like element
-                                                                if not agree_link:
-                                                                    agree_link = page.query_selector('[role="dialog"] a[href*=".zip"], [role="dialog"] a[href*=".dav"], [role="dialog"] a[href*=".pak"], [role="dialog"] a[href*=".bin"]')
-                                                                
-                                                                # Strategy 3: Find all links in dialog and check for file extensions or "Agree" text
-                                                                if not agree_link:
-                                                                    all_modal_links = page.query_selector_all('dialog a[href], [role="dialog"] a[href]')
-                                                                    logger.info(f"    Checking {len(all_modal_links)} links in modal...")
-                                                                    for modal_link in all_modal_links:
-                                                                        modal_href = modal_link.get_attribute('href') or ''
-                                                                        modal_text = modal_link.inner_text().strip().lower()
-                                                                        logger.debug(f"      Modal link: {modal_text[:30]}... | {modal_href[:60]}...")
-                                                                        if (any(ext in modal_href.lower() for ext in ['.dav', '.zip', '.pak', '.bin']) or
-                                                                            ('agree' in modal_text and any(ext in modal_href.lower() for ext in ['assets.hikvision.com', 'hikvision.com']))):
-                                                                            agree_link = modal_link
-                                                                            logger.info(f"    ✓ Found download link via text search")
-                                                                            break
-                                                                
-                                                                # Strategy 4: Look for any link containing assets.hikvision.com (their CDN)
-                                                                if not agree_link:
-                                                                    all_links = page.query_selector_all('a[href*="assets.hikvision.com"]')
-                                                                    for test_link in all_links:
-                                                                        test_href = test_link.get_attribute('href') or ''
-                                                                        if any(ext in test_href.lower() for ext in ['.dav', '.zip', '.pak', '.bin']):
-                                                                            agree_link = test_link
-                                                                            logger.info(f"    ✓ Found download link via CDN search")
-                                                                            break
+                                                                for modal_link in all_modal_links:
+                                                                    modal_href = modal_link.get_attribute('href') or ''
+                                                                    modal_text = modal_link.inner_text().strip()
+                                                                    
+                                                                    # Check if it's a firmware file URL (most reliable)
+                                                                    if any(ext in modal_href.lower() for ext in ['.dav', '.zip', '.pak', '.bin']):
+                                                                        agree_link = modal_link
+                                                                        logger.info(f"    ✓ Found download link: {modal_text[:50]}...")
+                                                                        logger.info(f"      URL: {modal_href[:100]}...")
+                                                                        break
                                                                 
                                                                 if agree_link:
                                                                     actual_download_url = agree_link.get_attribute('href') or ''
-                                                                    logger.info(f"    ✓ Found download link, clicking to download...")
+                                                                    logger.info(f"    ✓ Found download URL: {actual_download_url[:100]}...")
+                                                                    
+                                                                    # NOW check if firmware already exists (we have the real URL now)
+                                                                    if version:
+                                                                        firmware_key = f"{normalized_model}_{hw_version}_{version}"
+                                                                        firmware_exists = firmware_key in self.firmwares_live
+                                                                        
+                                                                        if firmware_exists:
+                                                                            skipped_existing_count += 1
+                                                                            logger.info(f"    ⊘ Skipping existing firmware: {normalized_model} {hw_version} v{version} ({skipped_existing_count} skipped)")
+                                                                            # Close modal
+                                                                            close_btn = page.query_selector('dialog button, [role="dialog"] button, dialog [aria-label*="close" i], [role="dialog"] [aria-label*="close" i]')
+                                                                            if close_btn:
+                                                                                close_btn.click()
+                                                                                time.sleep(0.5)
+                                                                            firmwares.append({
+                                                                                'model': normalized_model,
+                                                                                'hardware_version': hw_version,
+                                                                                'version': version,
+                                                                                'download_url': actual_download_url,
+                                                                                'local_file_path': '',
+                                                                                'date': '',
+                                                                                'changes': '',
+                                                                                'notes': '',
+                                                                                'source': 'live',
+                                                                                'already_exists': True
+                                                                            })
+                                                                            continue
+                                                                    
+                                                                    # Check download limit for NEW firmwares
+                                                                    if MAX_FIRMWARES_TO_DOWNLOAD > 0 and new_downloads_count >= MAX_FIRMWARES_TO_DOWNLOAD:
+                                                                        logger.info(f"  ⏹️  Download limit reached: Downloaded {new_downloads_count} NEW firmware(s) (limit: {MAX_FIRMWARES_TO_DOWNLOAD}), stopping...")
+                                                                        # Close modal
+                                                                        close_btn = page.query_selector('dialog button, [role="dialog"] button')
+                                                                        if close_btn:
+                                                                            close_btn.click()
+                                                                        test_mode_limit_reached = True
+                                                                        break
+                                                                    
+                                                                    logger.info(f"    Starting download...")
                                                                     
                                                                     # Click the link to trigger download (with browser context)
                                                                     try:
-                                                                        # Wait for download and click simultaneously
-                                                                        with page.expect_download(timeout=30000) as download_info:
-                                                                            # Use JavaScript click to ensure it works
-                                                                            page.evaluate('(element) => { element.click(); }', agree_link)
+                                                                        # Wait for download and click simultaneously - this maintains browser session
+                                                                        with page.expect_download(timeout=120000) as download_info:  # 2 min timeout for large files
+                                                                            # Scroll into view and click - ensures it's visible
+                                                                            page.evaluate('(el) => { el.scrollIntoView({block: "center"}); el.click(); }', agree_link)
                                                                         
                                                                         download = download_info.value
                                                                         
