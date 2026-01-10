@@ -139,9 +139,9 @@ The scraper in `main.py` can always be improved:
 ## Status
 
 **Status:** ✅ SUCCESS  
-**Last Run:** 2026-01-08 08:56:58 UTC  
-**Firmwares Found:** 1  
-**New Firmwares:** 1  
+**Last Run:** 2026-01-10 09:11:16 UTC  
+**Firmwares Found:** 4  
+**New Firmwares:** 4  
 **Test Mode:** Disabled
 
 
@@ -152,15 +152,18 @@ The scraper in `main.py` can always be improved:
 
 Below is the complete list of archived firmwares, organized by device model and hardware version.
 
-**Total: 1**
+**Total: 4**
 
 
 
 <details>
-<summary><h2>DS-2TD5537T-7 - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-K3B411BX - UNKNOWN (4 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 5.5.49 | Applied to: [DS-2TD5537T-7/W](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.49_220822_S3000450133.zip) | 2020-22-11 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.49_220822_S3000450133.zip) |  |
+| 2.0.5 | Applied to: [DS-K3B411BX-L/M-Dp65](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V2.0.5_250922_S3000677823.zip) | 2025-09-22 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V2.0.5_250922_S3000677823.zip) |  |
+| 1.3.0 | Applied to: [DS-K3B411BX-L/M-Dp65](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.3.0_250107_S3000626026.zip) | 2025-01-07 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.3.0_250107_S3000626026.zip) |  |
+| 2.4.0 | Applied to: [DS-K3B411BX-L/M-Dp65](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V2.4.0_250106_S3000625394.zip) | 2025-01-06 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V2.4.0_250106_S3000625394.zip) |  |
+| 1.0.0 | Applied to: [DS-K3B411BX-L/M-Dp65](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.0.0_240523_S3000577702.zip) | 2024-05-23 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.0.0_240523_S3000577702.zip) |  |
 
 </details>
