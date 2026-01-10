@@ -278,6 +278,13 @@ class HikvisionScraper:
                                                 for link_idx, link in enumerate(links, 1):
                                                     if test_mode_limit_reached:
                                                         break
+                                                    
+                                                    # Check download limit BEFORE processing link (saves time)
+                                                    if MAX_FIRMWARES_TO_DOWNLOAD > 0 and new_downloads_count >= MAX_FIRMWARES_TO_DOWNLOAD:
+                                                        logger.info(f"  ⏹️  Download limit reached: Downloaded {new_downloads_count} NEW firmware(s) (limit: {MAX_FIRMWARES_TO_DOWNLOAD}), stopping...")
+                                                        test_mode_limit_reached = True
+                                                        break
+                                                    
                                                     try:
                                                         href = link.get_attribute('href') or ''
                                                         link_text = link.inner_text().strip()
@@ -337,6 +344,17 @@ class HikvisionScraper:
                                                                         'already_exists': True
                                                                     })
                                                                     continue
+                                                                
+                                                                # Check download limit for NEW firmwares (direct links)
+                                                                if MAX_FIRMWARES_TO_DOWNLOAD > 0 and new_downloads_count >= MAX_FIRMWARES_TO_DOWNLOAD:
+                                                                    logger.info(f"  ⏹️  Download limit reached: Downloaded {new_downloads_count} NEW firmware(s) (limit: {MAX_FIRMWARES_TO_DOWNLOAD}), stopping...")
+                                                                    test_mode_limit_reached = True
+                                                                    break
+                                                                
+                                                                # TODO: Direct links could be downloaded here, but currently only modal links are downloaded
+                                                                # For now, just skip direct links (they'll be processed via modal if available)
+                                                                logger.debug(f"    Found direct link but skipping download (modal links preferred): {normalized_model} {hw_version} v{version}")
+                                                                continue
                                                         # License agreement link (needs to be clicked to get actual URL)
                                                         elif href == '#download-agreement' or 'download-agreement' in href.lower():
                                                             is_firmware_link = True
@@ -452,25 +470,39 @@ class HikvisionScraper:
                                                                         filepath = firmware_dir / filename
                                                                         
                                                                         download.save_as(filepath)
-                                                                        local_file_path = str(filepath)  # Store for firmware dict
-                                                                        stored_filename = filename  # Store filename for GitHub release linking
-                                                                        new_downloads_count += 1  # Increment counter for new download
                                                                         
-                                                                        # Verify file was actually saved
+                                                                        # Verify file was actually saved BEFORE counting as successful
                                                                         if filepath.exists():
                                                                             file_size = filepath.stat().st_size
+                                                                            local_file_path = str(filepath)  # Store for firmware dict
+                                                                            stored_filename = filename  # Store filename for GitHub release linking
+                                                                            new_downloads_count += 1  # Only increment on successful download
                                                                             logger.info(f"    ✓ File downloaded to: {filepath} ({file_size:,} bytes) (NEW firmware #{new_downloads_count})")
                                                                         else:
                                                                             logger.error(f"    ✗ File download failed: {filepath} does not exist!")
                                                                             local_file_path = ''  # Clear path if file doesn't exist
                                                                             stored_filename = ''  # Clear filename if file doesn't exist
+                                                                            # Don't increment counter - download failed
                                                                     except Exception as download_err:
                                                                         logger.warning(f"    ⚠ Download failed: {download_err}")
                                                                         import traceback
                                                                         logger.debug(f"    Traceback: {traceback.format_exc()}")
+                                                                        local_file_path = ''  # Clear path on error
                                                                         stored_filename = ''  # Clear filename on error
+                                                                        # Don't increment counter - download failed, continue to next firmware
+                                                                        # Close modal and continue to next link
+                                                                        try:
+                                                                            close_btn = page.query_selector('dialog button, [role="dialog"] button, dialog [aria-label*="close" i], [role="dialog"] [aria-label*="close" i]')
+                                                                            if close_btn:
+                                                                                close_btn.click()
+                                                                                time.sleep(0.5)
+                                                                        except:
+                                                                            pass  # Modal might already be closed
+                                                                        continue  # Skip to next firmware link (don't add failed download to list)
                                                                     
-                                                                    logger.info(f"    ✓ Download URL: {actual_download_url[:80]}...")
+                                                                    # Only log success message if download actually succeeded
+                                                                    if local_file_path:
+                                                                        logger.info(f"    ✓ Download URL: {actual_download_url[:80]}...")
                                                                 else:
                                                                     logger.warning(f"    ⚠ Could not find download URL in modal after all strategies")
                                                                     # Close modal and continue
@@ -579,10 +611,6 @@ class HikvisionScraper:
                         if test_mode_limit_reached:
                             logger.info(f"  ⏹️  Stopped early after reaching download limit of {MAX_FIRMWARES_TO_DOWNLOAD} firmware(s)")
                             break
-                            
-                            # Small delay between batches
-                            if batch_num < total_batches - 1:
-                                time.sleep(1)
                         
                         fw_count_after = len(firmwares)
                         fw_found_this_search = fw_count_after - fw_count_before
