@@ -747,22 +747,30 @@ class HikvisionScraper:
         removed_count = 0
         keys_to_remove = []
         for key, fw_data in self.firmwares_live.items():
-            download_url = fw_data.get('download_url', '')
-            if download_url:
-                # Extract filename from URL
-                filename = download_url.split('/')[-1].split('?')[0]
-                if filename and filename not in firmware_files:
-                    # Check if file exists with different name pattern
-                    model = fw_data.get('model', '')
-                    version = fw_data.get('version', '')
-                    # Try to find file by model/version pattern
-                    found = False
-                    for fname in firmware_files:
-                        if model.replace('-', '_') in fname.replace('-', '_') and version.replace('.', '_') in fname.replace('.', '_'):
-                            found = True
-                            break
-                    if not found:
-                        keys_to_remove.append(key)
+            # Check filename field first (most reliable)
+            filename = fw_data.get('filename', '')
+            if filename:
+                if filename not in firmware_files:
+                    keys_to_remove.append(key)
+                    continue
+            else:
+                # Fallback: check download_url
+                download_url = fw_data.get('download_url', '')
+                if download_url:
+                    # Extract filename from URL
+                    url_filename = download_url.split('/')[-1].split('?')[0]
+                    if url_filename and url_filename not in firmware_files:
+                        # Check if file exists with different name pattern
+                        model = fw_data.get('model', '')
+                        version = fw_data.get('version', '')
+                        # Try to find file by model/version pattern
+                        found = False
+                        for fname in firmware_files:
+                            if model.replace('-', '_') in fname.replace('-', '_') and version.replace('.', '_') in fname.replace('.', '_'):
+                                found = True
+                                break
+                        if not found:
+                            keys_to_remove.append(key)
         
         for key in keys_to_remove:
             del self.firmwares_live[key]
@@ -771,10 +779,112 @@ class HikvisionScraper:
         if removed_count > 0:
             logger.info(f"  🧹 Cleaned up {removed_count} firmware entry(ies) without files")
     
+    def sync_firmwares_directory(self):
+        """Sync firmware files in directory with JSON entries - add missing entries."""
+        firmware_dir = Path('firmwares')
+        if not firmware_dir.exists():
+            return
+        
+        # Get list of actual firmware files
+        firmware_files = {}
+        for ext in ['.zip', '.dav', '.pak', '.bin']:
+            for filepath in firmware_dir.glob(f'*{ext}'):
+                firmware_files[filepath.name] = filepath
+        
+        # Find files that aren't in JSON
+        added_count = 0
+        for filename, filepath in firmware_files.items():
+            # Check if this file is already in JSON
+            found = False
+            for key, fw_data in self.firmwares_live.items():
+                if fw_data.get('filename') == filename:
+                    found = True
+                    break
+            
+            if not found:
+                # Try to extract model/version from filename
+                # Pattern: Firmware__V1.0.6_191031_S3000312642.zip
+                # Pattern: Firmware_Asia_V4.75.013_240919_S3000600889.zip
+                match = re.search(r'V(\d+\.\d+\.\d+(?:\.\d+)?)', filename, re.IGNORECASE)
+                version = match.group(1) if match else None
+                
+                # Try to extract model from filename or use placeholder
+                model_match = re.search(r'(DS-[0-9A-Z-]+|AE-[0-9A-Z-]+|IDS-[0-9A-Z-]+)', filename, re.IGNORECASE)
+                model = model_match.group(1).upper() if model_match else 'UNKNOWN'
+                
+                # Extract date from filename if possible
+                date_match = re.search(r'(\d{6}|\d{8})', filename)
+                date_str = ''
+                if date_match:
+                    date_code = date_match.group(1)
+                    if len(date_code) == 6:
+                        date_str = f"20{date_code[:2]}-{date_code[2:4]}-{date_code[4:6]}"
+                    elif len(date_code) == 8:
+                        date_str = f"{date_code[:4]}-{date_code[4:6]}-{date_code[6:8]}"
+                
+                if version:
+                    # Get or create device ID
+                    hw_version = 'UNKNOWN'
+                    device_id = get_device_id(self.devices, model, hw_version)
+                    if device_id is None:
+                        device_id = create_device_id(self.devices, model, hw_version)
+                    
+                    # Create key
+                    key = f"{model}_{hw_version}_{version}"
+                    
+                    # Add to JSON
+                    self.firmwares_live[key] = {
+                        'device_id': device_id,
+                        'model': model,
+                        'hardware_version': hw_version,
+                        'version': version,
+                        'date': date_str,
+                        'download_url': '',  # Will be filled from release if available
+                        'filename': filename,
+                        'supported_models': [model],
+                        'applied_to': '',
+                        'changes': '',
+                        'notes': 'Synced from firmware directory',
+                        'is_beta': is_beta_firmware(version, ''),
+                        'source': 'directory_sync'
+                    }
+                    added_count += 1
+                    logger.info(f"  ✓ Synced firmware from directory: {filename} ({model} v{version})")
+        
+        if added_count > 0:
+            logger.info(f"  📦 Synced {added_count} firmware file(s) from directory to JSON")
+    
+    def cleanup_empty_devices(self):
+        """Remove devices that have no firmwares."""
+        # Get all device IDs that have firmwares
+        devices_with_firmwares = set()
+        for fw_data in self.firmwares_live.values():
+            device_id = fw_data.get('device_id')
+            if device_id:
+                devices_with_firmwares.add(str(device_id))
+        
+        # Remove devices without firmwares
+        removed_count = 0
+        devices_to_remove = []
+        for device_id in self.devices.keys():
+            if device_id not in devices_with_firmwares:
+                devices_to_remove.append(device_id)
+        
+        for device_id in devices_to_remove:
+            del self.devices[device_id]
+            removed_count += 1
+        
+        if removed_count > 0:
+            logger.info(f"  🧹 Cleaned up {removed_count} device(s) without firmwares")
+    
     def save(self):
         """Save all data."""
+        # Sync firmware directory with JSON (add missing entries)
+        self.sync_firmwares_directory()
         # Clean up failed downloads before saving
         self.cleanup_failed_downloads()
+        # Clean up devices without firmwares
+        self.cleanup_empty_devices()
         save_json('devices.json', self.devices)
         save_json('firmwares_live.json', self.firmwares_live)
         logger.info("Data saved")

@@ -152,48 +152,20 @@ The scraper in `main.py` can always be improved:
 
 Below is the complete list of archived firmwares, organized by device model and hardware version.
 
-**Total: 7**
+**Total: 6**
 
 
 
 <details>
-<summary><h2>AE-DC2015-B1 - UNKNOWN (2 firmwares)</h2></summary>
+<summary><h2>UNKNOWN - UNKNOWN (6 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 1.1.5 | Applied to: [AE-DC2015-B1](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.5_220421_S3000442625.zip) | 2022-04-21 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.5_220421_S3000442625.zip) |  |
-| 1.1.4 | Applied to: [AE-DC2015-B1](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.4_210811_S3000384048.zip) | 2021-08-11 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.4_210811_S3000384048.zip) |  |
-
-</details>
-
-
-<details>
-<summary><h2>AE-DC2022-V200 - UNKNOWN (1 firmwares)</h2></summary>
-
-| Version | Supported Models | Date | Download | Notes |
-| ------- | ---------------- | ---- | -------- | ----- |
-| 1.0.10 | Applied to: [AE-DC2022-V200(2CH)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.0.10_250902_S3000672017.zip) | 2025-09-02 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.0.10_250902_S3000672017.zip) |  |
-
-</details>
-
-
-<details>
-<summary><h2>AE-DC2032-V300 - UNKNOWN (1 firmwares)</h2></summary>
-
-| Version | Supported Models | Date | Download | Notes |
-| ------- | ---------------- | ---- | -------- | ----- |
-| 1.0.10 | Applied to: [AE-DC2032-V300(3CH)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.0.10_250902_S3000671476.zip) | 2025-09-02 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.0.10_250902_S3000671476.zip) |  |
-
-</details>
-
-
-<details>
-<summary><h2>DS-K3B411BX - UNKNOWN (3 firmwares)</h2></summary>
-
-| Version | Supported Models | Date | Download | Notes |
-| ------- | ---------------- | ---- | -------- | ----- |
-| 2.0.5 | Applied to: [DS-K3B411BX-L/M](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V2.0.5_250922_S3000677823.zip) | 2025-09-22 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V2.0.5_250922_S3000677823.zip) |  |
-| 2.4.0 | Applied to: [DS-K3B411BX-L/M](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V2.4.0_250106_S3000625394.zip) | 2025-01-06 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V2.4.0_250106_S3000625394.zip) |  |
-| 1.0.0 | Applied to: [DS-K3B411BX-L/M](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.0.0_240523_S3000577702.zip) | 2024-05-23 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.0.0_240523_S3000577702.zip) |  |
+| 4.75.013 | [UNKNOWN](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware_Asia_V4.75.013_240919_S3000600889.zip) | 2024-09-19 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware_Asia_V4.75.013_240919_S3000600889.zip) | Synced from firmware directory |
+| 5.5.49 | [UNKNOWN](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.49_220822_S3000450133.zip) | 2022-08-22 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.49_220822_S3000450133.zip) | Synced from firmware directory |
+| 3.6.1 | [UNKNOWN](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V3.6.1_220714_S3000446766.zip) | 2022-07-14 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V3.6.1_220714_S3000446766.zip) | Synced from firmware directory |
+| 1.1.2 | [UNKNOWN](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.2_200828_S3000334190.zip) | 2020-08-28 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.2_200828_S3000334190.zip) | Synced from firmware directory |
+| 1.0.8 | [UNKNOWN](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.0.8_200320_S3000313276.zip) | 2020-03-20 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.0.8_200320_S3000313276.zip) | Synced from firmware directory |
+| 1.0.6 | [UNKNOWN](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.0.6_191031_S3000312642.zip) | 2019-10-31 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.0.6_191031_S3000312642.zip) | Synced from firmware directory |
 
 </details>
