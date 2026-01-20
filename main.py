@@ -812,22 +812,28 @@ class HikvisionScraper:
         for key, fw_data in self.firmwares_live.items():
             # Check filename field first (most reliable)
             filename = fw_data.get('filename', '')
-            if filename:
-                if filename not in firmware_files:
-                    # Try to match by version in filename (files might have different names)
-                    version = fw_data.get('version', '')
-                    found = False
-                    if version:
-                        # Try to find file with matching version
-                        version_pattern = version.replace('.', '_')
-                        for fname in firmware_files:
-                            if version_pattern in fname.replace('.', '_') or f"V{version}" in fname:
-                                # Found matching file - update filename
-                                fw_data['filename'] = fname
-                                found = True
-                                break
-                    if not found:
-                        keys_to_remove.append(key)
+                if filename:
+                    if filename not in firmware_files:
+                        # Try to match by version in filename (files might have different names)
+                        version = fw_data.get('version', '')
+                        found = False
+                        if version:
+                            # Try to find file with matching version
+                            version_pattern = version.replace('.', '_')
+                            for fname in firmware_files:
+                                if version_pattern in fname.replace('.', '_') or f"V{version}" in fname:
+                                    # Found matching file - update filename
+                                    fw_data['filename'] = fname
+                                    found = True
+                                    logger.debug(f"  ✓ Matched file by version: {fname} -> {key}")
+                                    break
+                        if not found:
+                            # Don't remove if it has a model (might be synced from elsewhere)
+                            model = fw_data.get('model', '')
+                            if model == 'UNKNOWN':
+                                keys_to_remove.append(key)
+                            else:
+                                logger.debug(f"  ⊘ Keeping entry without file (will sync): {key}")
                     continue
             else:
                 # Fallback: check download_url
