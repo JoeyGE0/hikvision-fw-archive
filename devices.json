@@ -26,5 +26,9 @@
   "100007": {
     "model": "AE-DC2032-V300",
     "hardware_version": "UNKNOWN"
+  },
+  "100008": {
+    "model": "UNKNOWN",
+    "hardware_version": "UNKNOWN"
   }
 }

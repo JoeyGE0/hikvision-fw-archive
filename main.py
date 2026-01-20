@@ -1086,7 +1086,43 @@ class HikvisionScraper:
             logger.warning(f"  ⚠ Failed to fetch GitHub releases: {e}")
             return
         
-        # Collect all firmware filenames from releases
+        # Build mapping of filename -> model/version/date from release bodies
+        # Release notes format: "### MODEL - vVERSION\n\n- **Supported Devices:** ...\n- **Release Date:** YYYY-MM-DD\n- **Download:** [📥 Download FILENAME](...)"
+        filename_to_info = {}
+        for release in releases:
+            body = release.get('body', '')
+            if not body:
+                continue
+            
+            # Parse release body to extract model/version/date for each firmware
+            # Pattern: "### MODEL - vVERSION"
+            firmware_sections = re.findall(r'###\s+([^-]+)\s+-\s+v(\d+\.\d+\.\d+(?:\.\d+)?)', body, re.IGNORECASE)
+            
+            for model_match, version_match in firmware_sections:
+                model = model_match.strip().upper()
+                version = version_match.strip()
+                
+                # Extract date from this section
+                # Find the section for this model/version
+                section_pattern = rf'###\s+{re.escape(model_match.strip())}\s+-\s+v{re.escape(version)}(.*?)(?=###|$)'
+                section_match = re.search(section_pattern, body, re.DOTALL | re.IGNORECASE)
+                if section_match:
+                    section_text = section_match.group(1)
+                    # Extract date: "Release Date: YYYY-MM-DD"
+                    date_match = re.search(r'Release Date:\s*(\d{4}-\d{2}-\d{2})', section_text, re.IGNORECASE)
+                    date_str = date_match.group(1) if date_match else ''
+                    
+                    # Extract filename from download link: "[📥 Download FILENAME](...)"
+                    filename_match = re.search(r'Download\s+([^\]]+)', section_text, re.IGNORECASE)
+                    if filename_match:
+                        filename = filename_match.group(1).strip()
+                        filename_to_info[filename] = {
+                            'model': model,
+                            'version': version,
+                            'date': date_str
+                        }
+        
+        # Also collect all firmware filenames from assets (fallback if not in release notes)
         release_filenames = set()
         for release in releases:
             assets = release.get('assets', [])
@@ -1096,6 +1132,8 @@ class HikvisionScraper:
                     release_filenames.add(filename)
         
         logger.info(f"  Found {len(release_filenames)} firmware file(s) in GitHub releases")
+        if filename_to_info:
+            logger.info(f"  Extracted model info from {len(filename_to_info)} release note(s)")
         
         # Find files in releases that aren't in JSON
         added_count = 0
@@ -1108,29 +1146,36 @@ class HikvisionScraper:
                     break
             
             if not found:
-                # Try to extract model/version from filename
-                match = re.search(r'V(\d+\.\d+\.\d+(?:\.\d+)?)', filename, re.IGNORECASE)
-                version = match.group(1) if match else None
+                # Try to get model/version from release notes first
+                info = filename_to_info.get(filename)
+                if info:
+                    model = info['model']
+                    version = info['version']
+                    date_str = info['date']
+                else:
+                    # Fallback: Try to extract model/version from filename
+                    match = re.search(r'V(\d+\.\d+\.\d+(?:\.\d+)?)', filename, re.IGNORECASE)
+                    version = match.group(1) if match else None
+                    
+                    # Try to extract model from filename
+                    model_match = re.search(r'(DS-[0-9A-Z-]+|AE-[0-9A-Z-]+|IDS-[0-9A-Z-]+)', filename, re.IGNORECASE)
+                    model = model_match.group(1).upper() if model_match else None
+                    date_str = ''
                 
-                # Try to extract model from filename - DON'T create entries without model info
-                model_match = re.search(r'(DS-[0-9A-Z-]+|AE-[0-9A-Z-]+|IDS-[0-9A-Z-]+)', filename, re.IGNORECASE)
-                model = model_match.group(1).upper() if model_match else None
-                
-                # Only sync if we can extract both model AND version from filename
-                # Skip files without model info (they'll be synced from scraping)
+                # Only sync if we have both model AND version
                 if not model or not version:
                     logger.debug(f"  ⊘ Skipping release file without model info: {filename}")
                     continue
                 
-                # Extract date from filename if possible
-                date_match = re.search(r'(\d{6}|\d{8})', filename)
-                date_str = ''
-                if date_match:
-                    date_code = date_match.group(1)
-                    if len(date_code) == 6:
-                        date_str = f"20{date_code[:2]}-{date_code[2:4]}-{date_code[4:6]}"
-                    elif len(date_code) == 8:
-                        date_str = f"{date_code[:4]}-{date_code[4:6]}-{date_code[6:8]}"
+                # Extract date from filename if not already extracted from release notes
+                if not date_str:
+                    date_match = re.search(r'(\d{6}|\d{8})', filename)
+                    if date_match:
+                        date_code = date_match.group(1)
+                        if len(date_code) == 6:
+                            date_str = f"20{date_code[:2]}-{date_code[2:4]}-{date_code[4:6]}"
+                        elif len(date_code) == 8:
+                            date_str = f"{date_code[:4]}-{date_code[4:6]}-{date_code[6:8]}"
                 
                 if version:
                     # Get or create device ID

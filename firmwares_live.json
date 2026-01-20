@@ -126,5 +126,39 @@
     "notes": "",
     "is_beta": false,
     "source": "live"
+  },
+  "UNKNOWN_UNKNOWN_5.5.49": {
+    "device_id": 100008,
+    "model": "UNKNOWN",
+    "hardware_version": "UNKNOWN",
+    "version": "5.5.49",
+    "date": "2022-08-22",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.49_220822_S3000450133.zip",
+    "filename": "Firmware__V5.5.49_220822_S3000450133.zip",
+    "supported_models": [
+      "UNKNOWN"
+    ],
+    "applied_to": "",
+    "changes": "",
+    "notes": "Synced from GitHub releases",
+    "is_beta": false,
+    "source": "github_releases_sync"
+  },
+  "UNKNOWN_UNKNOWN_4.75.013": {
+    "device_id": 100008,
+    "model": "UNKNOWN",
+    "hardware_version": "UNKNOWN",
+    "version": "4.75.013",
+    "date": "2024-09-19",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware_Europe_V4.75.013_240919_S3000600830.zip",
+    "filename": "Firmware_Europe_V4.75.013_240919_S3000600830.zip",
+    "supported_models": [
+      "UNKNOWN"
+    ],
+    "applied_to": "",
+    "changes": "",
+    "notes": "Synced from GitHub releases",
+    "is_beta": false,
+    "source": "github_releases_sync"
   }
 }
