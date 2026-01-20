@@ -814,7 +814,20 @@ class HikvisionScraper:
             filename = fw_data.get('filename', '')
             if filename:
                 if filename not in firmware_files:
-                    keys_to_remove.append(key)
+                    # Try to match by version in filename (files might have different names)
+                    version = fw_data.get('version', '')
+                    found = False
+                    if version:
+                        # Try to find file with matching version
+                        version_pattern = version.replace('.', '_')
+                        for fname in firmware_files:
+                            if version_pattern in fname.replace('.', '_') or f"V{version}" in fname:
+                                # Found matching file - update filename
+                                fw_data['filename'] = fname
+                                found = True
+                                break
+                    if not found:
+                        keys_to_remove.append(key)
                     continue
             else:
                 # Fallback: check download_url
@@ -829,11 +842,19 @@ class HikvisionScraper:
                         # Try to find file by model/version pattern
                         found = False
                         for fname in firmware_files:
-                            if model.replace('-', '_') in fname.replace('-', '_') and version.replace('.', '_') in fname.replace('.', '_'):
+                            if version and (version.replace('.', '_') in fname.replace('.', '_') or f"V{version}" in fname):
+                                # Found matching file - update filename
+                                fw_data['filename'] = fname
                                 found = True
                                 break
                         if not found:
                             keys_to_remove.append(key)
+                else:
+                    # No filename and no download_url - might be a ghost entry
+                    # But don't remove if it has a model (might be synced from elsewhere)
+                    model = fw_data.get('model', '')
+                    if model == 'UNKNOWN':
+                        keys_to_remove.append(key)
         
         for key in keys_to_remove:
             del self.firmwares_live[key]
