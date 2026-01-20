@@ -34,5 +34,13 @@
   "100009": {
     "model": "AE-DC5013-F6",
     "hardware_version": "UNKNOWN"
+  },
+  "100010": {
+    "model": "AE-DC5013-F6PRO",
+    "hardware_version": "UNKNOWN"
+  },
+  "100011": {
+    "model": "AE-DC5113-F6S",
+    "hardware_version": "UNKNOWN"
   }
 }
