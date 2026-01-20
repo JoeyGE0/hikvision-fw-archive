@@ -862,18 +862,50 @@ class HikvisionScraper:
             for key, fw_data in self.firmwares_live.items():
                 if fw_data.get('filename') == filename:
                     found = True
+                    # Update filename if it was missing
+                    if not fw_data.get('filename'):
+                        fw_data['filename'] = filename
                     break
             
             if not found:
+                # Try to match by filename to existing entries first (might have model info)
+                matched_existing = False
+                for key, fw_data in self.firmwares_live.items():
+                    existing_filename = fw_data.get('filename', '')
+                    if existing_filename == filename:
+                        # File already matched to an entry, skip
+                        matched_existing = True
+                        break
+                    # Try to match by version if filename doesn't match
+                    existing_version = fw_data.get('version', '')
+                    match = re.search(r'V(\d+\.\d+\.\d+(?:\.\d+)?)', filename, re.IGNORECASE)
+                    version = match.group(1) if match else None
+                    if version and existing_version == version:
+                        # Update existing entry with filename if missing
+                        if not existing_filename:
+                            fw_data['filename'] = filename
+                            logger.debug(f"  ✓ Matched file to existing entry: {filename} -> {key}")
+                            matched_existing = True
+                            break
+                
+                if matched_existing:
+                    continue
+                
                 # Try to extract model/version from filename
                 # Pattern: Firmware__V1.0.6_191031_S3000312642.zip
                 # Pattern: Firmware_Asia_V4.75.013_240919_S3000600889.zip
                 match = re.search(r'V(\d+\.\d+\.\d+(?:\.\d+)?)', filename, re.IGNORECASE)
                 version = match.group(1) if match else None
                 
-                # Try to extract model from filename or use placeholder
+                # Try to extract model from filename - DON'T create entries without model info
                 model_match = re.search(r'(DS-[0-9A-Z-]+|AE-[0-9A-Z-]+|IDS-[0-9A-Z-]+)', filename, re.IGNORECASE)
-                model = model_match.group(1).upper() if model_match else 'UNKNOWN'
+                model = model_match.group(1).upper() if model_match else None
+                
+                # Only sync if we can extract both model AND version from filename
+                # Skip files without model info (they'll be synced from releases or scraping)
+                if not model or not version:
+                    logger.debug(f"  ⊘ Skipping firmware file without model info: {filename}")
+                    continue
                 
                 # Extract date from filename if possible
                 date_match = re.search(r'(\d{6}|\d{8})', filename)
@@ -885,34 +917,41 @@ class HikvisionScraper:
                     elif len(date_code) == 8:
                         date_str = f"{date_code[:4]}-{date_code[4:6]}-{date_code[6:8]}"
                 
-                if version:
-                    # Get or create device ID
-                    hw_version = 'UNKNOWN'
-                    device_id = get_device_id(self.devices, model, hw_version)
-                    if device_id is None:
-                        device_id = create_device_id(self.devices, model, hw_version)
-                    
-                    # Create key
-                    key = f"{model}_{hw_version}_{version}"
-                    
-                    # Add to JSON
-                    self.firmwares_live[key] = {
-                        'device_id': device_id,
-                        'model': model,
-                        'hardware_version': hw_version,
-                        'version': version,
-                        'date': date_str,
-                        'download_url': '',  # Will be filled from release if available
-                        'filename': filename,
-                        'supported_models': [model],
-                        'applied_to': '',
-                        'changes': '',
-                        'notes': 'Synced from firmware directory',
-                        'is_beta': is_beta_firmware(version, ''),
-                        'source': 'directory_sync'
-                    }
-                    added_count += 1
-                    logger.info(f"  ✓ Synced firmware from directory: {filename} ({model} v{version})")
+                # Get or create device ID
+                hw_version = 'UNKNOWN'
+                device_id = get_device_id(self.devices, model, hw_version)
+                if device_id is None:
+                    device_id = create_device_id(self.devices, model, hw_version)
+                
+                # Create key
+                key = f"{model}_{hw_version}_{version}"
+                
+                # Check if entry already exists with different filename (avoid duplicates)
+                if key in self.firmwares_live:
+                    # Update filename if missing
+                    if not self.firmwares_live[key].get('filename'):
+                        self.firmwares_live[key]['filename'] = filename
+                        logger.debug(f"  ✓ Updated filename for existing entry: {key}")
+                    continue
+                
+                # Add to JSON
+                self.firmwares_live[key] = {
+                    'device_id': device_id,
+                    'model': model,
+                    'hardware_version': hw_version,
+                    'version': version,
+                    'date': date_str,
+                    'download_url': '',  # Will be filled from release if available
+                    'filename': filename,
+                    'supported_models': [model],
+                    'applied_to': '',
+                    'changes': '',
+                    'notes': 'Synced from firmware directory',
+                    'is_beta': is_beta_firmware(version, ''),
+                    'source': 'directory_sync'
+                }
+                added_count += 1
+                logger.info(f"  ✓ Synced firmware from directory: {filename} ({model} v{version})")
         
         if added_count > 0:
             logger.info(f"  📦 Synced {added_count} firmware file(s) from directory to JSON")
@@ -939,6 +978,45 @@ class HikvisionScraper:
         
         if removed_count > 0:
             logger.info(f"  🧹 Cleaned up {removed_count} device(s) without firmwares")
+    
+    def cleanup_unknown_entries(self):
+        """Remove firmware entries with UNKNOWN model that don't have files or useful info."""
+        firmware_dir = Path('firmwares')
+        firmware_files = set()
+        if firmware_dir.exists():
+            for ext in ['.zip', '.dav', '.pak', '.bin']:
+                for filepath in firmware_dir.glob(f'*{ext}'):
+                    firmware_files.add(filepath.name)
+        
+        removed_count = 0
+        keys_to_remove = []
+        
+        for key, fw_data in self.firmwares_live.items():
+            model = fw_data.get('model', '')
+            # Only remove UNKNOWN entries that:
+            # 1. Are from directory sync (not from scraping)
+            # 2. Don't have a file
+            # 3. Don't have download_url or applied_to
+            if model == 'UNKNOWN':
+                filename = fw_data.get('filename', '')
+                download_url = fw_data.get('download_url', '')
+                applied_to = fw_data.get('applied_to', '')
+                source = fw_data.get('source', '')
+                
+                # Keep if it has a file OR has useful info
+                has_file = filename and filename in firmware_files
+                has_useful_info = download_url or applied_to
+                
+                # Only remove if it's from directory sync AND has no file AND no useful info
+                if source == 'directory_sync' and not has_file and not has_useful_info:
+                    keys_to_remove.append(key)
+        
+        for key in keys_to_remove:
+            del self.firmwares_live[key]
+            removed_count += 1
+        
+        if removed_count > 0:
+            logger.info(f"  🧹 Cleaned up {removed_count} incomplete UNKNOWN firmware entry(ies) without files")
     
     def sync_github_releases(self):
         """Sync GitHub releases with JSON - add missing entries from releases."""
@@ -990,9 +1068,15 @@ class HikvisionScraper:
                 match = re.search(r'V(\d+\.\d+\.\d+(?:\.\d+)?)', filename, re.IGNORECASE)
                 version = match.group(1) if match else None
                 
-                # Try to extract model from filename
+                # Try to extract model from filename - DON'T create entries without model info
                 model_match = re.search(r'(DS-[0-9A-Z-]+|AE-[0-9A-Z-]+|IDS-[0-9A-Z-]+)', filename, re.IGNORECASE)
-                model = model_match.group(1).upper() if model_match else 'UNKNOWN'
+                model = model_match.group(1).upper() if model_match else None
+                
+                # Only sync if we can extract both model AND version from filename
+                # Skip files without model info (they'll be synced from scraping)
+                if not model or not version:
+                    logger.debug(f"  ⊘ Skipping release file without model info: {filename}")
+                    continue
                 
                 # Extract date from filename if possible
                 date_match = re.search(r'(\d{6}|\d{8})', filename)
@@ -1071,6 +1155,8 @@ class HikvisionScraper:
         self.sync_github_releases()
         # Sync firmware directory with JSON (add missing entries)
         self.sync_firmwares_directory()
+        # Clean up incomplete UNKNOWN entries
+        self.cleanup_unknown_entries()
         # Clean up failed downloads before saving
         self.cleanup_failed_downloads()
         # Clean up devices without firmwares
