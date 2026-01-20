@@ -17,20 +17,24 @@ def main():
     
     scraper = HikvisionScraper()
     
-    # Step 1: Sync firmware directory with JSON
-    logger.info("\n📦 Step 1: Syncing firmware directory with JSON...")
+    # Step 1: Sync GitHub releases with JSON
+    logger.info("\n🔄 Step 1: Syncing GitHub releases with JSON...")
+    scraper.sync_github_releases()
+    
+    # Step 2: Sync firmware directory with JSON
+    logger.info("\n📦 Step 2: Syncing firmware directory with JSON...")
     scraper.sync_firmwares_directory()
     
-    # Step 2: Clean up failed downloads
-    logger.info("\n🧹 Step 2: Cleaning up failed downloads...")
+    # Step 3: Clean up failed downloads
+    logger.info("\n🧹 Step 3: Cleaning up failed downloads...")
     scraper.cleanup_failed_downloads()
     
-    # Step 3: Clean up empty devices
-    logger.info("\n🧹 Step 3: Cleaning up empty devices...")
+    # Step 4: Clean up empty devices
+    logger.info("\n🧹 Step 4: Cleaning up empty devices...")
     scraper.cleanup_empty_devices()
     
-    # Step 4: Save everything
-    logger.info("\n💾 Step 4: Saving data...")
+    # Step 5: Save everything
+    logger.info("\n💾 Step 5: Saving data...")
     scraper.save()
     
     # Step 5: Show summary

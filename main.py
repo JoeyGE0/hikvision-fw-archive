@@ -16,6 +16,12 @@ try:
 except ImportError:
     PLAYWRIGHT_AVAILABLE = False
 
+try:
+    import requests
+    REQUESTS_AVAILABLE = True
+except ImportError:
+    REQUESTS_AVAILABLE = False
+
 from common import (
     create_device_id,
     extract_applied_to,
@@ -41,6 +47,10 @@ if 'GITHUB_ACTIONS' in os.environ:
 
 BASE_URL = "https://www.hikvision.com"
 FIRMWARE_URL = f"{BASE_URL}/en/support/download/firmware/"
+
+# GitHub repo info for releases sync
+GITHUB_REPO = "JoeyGE0/hikvision-fw-archive"
+GITHUB_API_BASE = "https://api.github.com/repos"
 
 # TEST MODE: Set to True to only scrape 1 firmware file (prevents IP banning/rate limiting)
 # Maximum number of firmware files to download (0 = unlimited)
@@ -877,8 +887,135 @@ class HikvisionScraper:
         if removed_count > 0:
             logger.info(f"  🧹 Cleaned up {removed_count} device(s) without firmwares")
     
+    def sync_github_releases(self):
+        """Sync GitHub releases with JSON - add missing entries from releases."""
+        if not REQUESTS_AVAILABLE:
+            logger.debug("  ⚠ Requests library not available, skipping GitHub releases sync")
+            return
+        
+        logger.info("  🔄 Syncing GitHub releases with JSON...")
+        
+        # Get GitHub token if available (for higher rate limits)
+        github_token = os.environ.get('GITHUB_TOKEN')
+        headers = {}
+        if github_token:
+            headers['Authorization'] = f'token {github_token}'
+        
+        # Get all releases
+        releases_url = f"{GITHUB_API_BASE}/{GITHUB_REPO}/releases"
+        try:
+            response = requests.get(releases_url, headers=headers, timeout=30)
+            response.raise_for_status()
+            releases = response.json()
+        except Exception as e:
+            logger.warning(f"  ⚠ Failed to fetch GitHub releases: {e}")
+            return
+        
+        # Collect all firmware filenames from releases
+        release_filenames = set()
+        for release in releases:
+            assets = release.get('assets', [])
+            for asset in assets:
+                filename = asset.get('name', '')
+                if filename and any(filename.lower().endswith(ext) for ext in ['.zip', '.dav', '.pak', '.bin']):
+                    release_filenames.add(filename)
+        
+        logger.info(f"  Found {len(release_filenames)} firmware file(s) in GitHub releases")
+        
+        # Find files in releases that aren't in JSON
+        added_count = 0
+        for filename in release_filenames:
+            # Check if this file is already in JSON
+            found = False
+            for key, fw_data in self.firmwares_live.items():
+                if fw_data.get('filename') == filename:
+                    found = True
+                    break
+            
+            if not found:
+                # Try to extract model/version from filename
+                match = re.search(r'V(\d+\.\d+\.\d+(?:\.\d+)?)', filename, re.IGNORECASE)
+                version = match.group(1) if match else None
+                
+                # Try to extract model from filename
+                model_match = re.search(r'(DS-[0-9A-Z-]+|AE-[0-9A-Z-]+|IDS-[0-9A-Z-]+)', filename, re.IGNORECASE)
+                model = model_match.group(1).upper() if model_match else 'UNKNOWN'
+                
+                # Extract date from filename if possible
+                date_match = re.search(r'(\d{6}|\d{8})', filename)
+                date_str = ''
+                if date_match:
+                    date_code = date_match.group(1)
+                    if len(date_code) == 6:
+                        date_str = f"20{date_code[:2]}-{date_code[2:4]}-{date_code[4:6]}"
+                    elif len(date_code) == 8:
+                        date_str = f"{date_code[:4]}-{date_code[4:6]}-{date_code[6:8]}"
+                
+                if version:
+                    # Get or create device ID
+                    hw_version = 'UNKNOWN'
+                    device_id = get_device_id(self.devices, model, hw_version)
+                    if device_id is None:
+                        device_id = create_device_id(self.devices, model, hw_version)
+                    
+                    # Create key
+                    key = f"{model}_{hw_version}_{version}"
+                    
+                    # Create download URL (latest release)
+                    download_url = f"https://github.com/{GITHUB_REPO}/releases/latest/download/{filename}"
+                    
+                    # Add to JSON
+                    self.firmwares_live[key] = {
+                        'device_id': device_id,
+                        'model': model,
+                        'hardware_version': hw_version,
+                        'version': version,
+                        'date': date_str,
+                        'download_url': download_url,
+                        'filename': filename,
+                        'supported_models': [model],
+                        'applied_to': '',
+                        'changes': '',
+                        'notes': 'Synced from GitHub releases',
+                        'is_beta': is_beta_firmware(version, ''),
+                        'source': 'github_releases_sync'
+                    }
+                    added_count += 1
+                    logger.info(f"  ✓ Synced firmware from GitHub releases: {filename} ({model} v{version})")
+        
+        if added_count > 0:
+            logger.info(f"  📦 Synced {added_count} firmware file(s) from GitHub releases to JSON")
+        
+        # Clean up entries that claim files exist in releases but don't
+        removed_count = 0
+        keys_to_remove = []
+        for key, fw_data in self.firmwares_live.items():
+            filename = fw_data.get('filename', '')
+            download_url = fw_data.get('download_url', '')
+            
+            # If it claims to be from GitHub releases but file doesn't exist in releases
+            if filename and 'github.com' in download_url and filename not in release_filenames:
+                # Check if file exists locally
+                firmware_dir = Path('firmwares')
+                local_file_exists = False
+                if firmware_dir.exists():
+                    local_file_exists = (firmware_dir / filename).exists()
+                
+                # Only remove if not in releases AND not locally
+                if not local_file_exists:
+                    keys_to_remove.append(key)
+        
+        for key in keys_to_remove:
+            del self.firmwares_live[key]
+            removed_count += 1
+        
+        if removed_count > 0:
+            logger.info(f"  🧹 Cleaned up {removed_count} firmware entry(ies) that don't exist in releases or locally")
+    
     def save(self):
         """Save all data."""
+        # Sync GitHub releases with JSON (add missing entries from releases)
+        self.sync_github_releases()
         # Sync firmware directory with JSON (add missing entries)
         self.sync_firmwares_directory()
         # Clean up failed downloads before saving
