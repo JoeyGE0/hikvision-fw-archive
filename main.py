@@ -957,7 +957,7 @@ class HikvisionScraper:
             logger.info(f"  📦 Synced {added_count} firmware file(s) from directory to JSON")
     
     def cleanup_empty_devices(self):
-        """Remove devices that have no firmwares."""
+        """Remove devices that have no firmwares AND no files."""
         # Get all device IDs that have firmwares
         devices_with_firmwares = set()
         for fw_data in self.firmwares_live.values():
@@ -965,19 +965,36 @@ class HikvisionScraper:
             if device_id:
                 devices_with_firmwares.add(str(device_id))
         
-        # Remove devices without firmwares
+        # Check which devices have firmware files
+        firmware_dir = Path('firmwares')
+        devices_with_files = set()
+        if firmware_dir.exists():
+            for ext in ['.zip', '.dav', '.pak', '.bin']:
+                for filepath in firmware_dir.glob(f'*{ext}'):
+                    filename = filepath.name
+                    # Try to match file to device by checking all firmwares
+                    for fw_data in self.firmwares_live.values():
+                        if fw_data.get('filename') == filename:
+                            device_id = fw_data.get('device_id')
+                            if device_id:
+                                devices_with_files.add(str(device_id))
+        
+        # Remove devices without firmwares AND without files
         removed_count = 0
         devices_to_remove = []
         for device_id in self.devices.keys():
-            if device_id not in devices_with_firmwares:
-                devices_to_remove.append(device_id)
+            if device_id not in devices_with_firmwares and device_id not in devices_with_files:
+                # Only remove if device is UNKNOWN and has no files
+                device_info = self.devices.get(device_id, {})
+                if device_info.get('model') == 'UNKNOWN':
+                    devices_to_remove.append(device_id)
         
         for device_id in devices_to_remove:
             del self.devices[device_id]
             removed_count += 1
         
         if removed_count > 0:
-            logger.info(f"  🧹 Cleaned up {removed_count} device(s) without firmwares")
+            logger.info(f"  🧹 Cleaned up {removed_count} device(s) without firmwares or files")
     
     def cleanup_unknown_entries(self):
         """Remove firmware entries with UNKNOWN model that don't have files or useful info."""
