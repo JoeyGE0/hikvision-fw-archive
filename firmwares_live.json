@@ -1,38 +1,4 @@
 {
-  "UNKNOWN_UNKNOWN_4.75.013": {
-    "device_id": 100000,
-    "model": "UNKNOWN",
-    "hardware_version": "UNKNOWN",
-    "version": "4.75.013",
-    "date": "2024-09-19",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware_Europe_V4.75.013_240919_S3000600830.zip",
-    "filename": "Firmware_Asia_V4.75.013_240919_S3000600889.zip",
-    "supported_models": [
-      "UNKNOWN"
-    ],
-    "applied_to": "",
-    "changes": "",
-    "notes": "Synced from GitHub releases",
-    "is_beta": false,
-    "source": "github_releases_sync"
-  },
-  "UNKNOWN_UNKNOWN_5.5.49": {
-    "device_id": 100000,
-    "model": "UNKNOWN",
-    "hardware_version": "UNKNOWN",
-    "version": "5.5.49",
-    "date": "2022-08-22",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.49_220822_S3000450133.zip",
-    "filename": "Firmware__V5.5.49_220822_S3000450133.zip",
-    "supported_models": [
-      "UNKNOWN"
-    ],
-    "applied_to": "",
-    "changes": "",
-    "notes": "Synced from GitHub releases",
-    "is_beta": false,
-    "source": "github_releases_sync"
-  },
   "DS-2TD5537T-7_UNKNOWN_5.5.49": {
     "device_id": 100001,
     "model": "DS-2TD5537T-7",
@@ -207,6 +173,178 @@
       "AE-DC2015-B1"
     ],
     "applied_to": "Applied to: AE-DC2015-B1",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-DC2015-B1_UNKNOWN_1.0.8": {
+    "device_id": 100005,
+    "model": "AE-DC2015-B1",
+    "hardware_version": "UNKNOWN",
+    "version": "1.0.8",
+    "date": "2020-03-20",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202209/Firmware__V1.0.8_200320_S3000313276.zip",
+    "filename": "Firmware__V1.0.8_200320_S3000313276.zip",
+    "supported_models": [
+      "AE-DC2015-B1"
+    ],
+    "applied_to": "Applied to: AE-DC2015-B1",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-DC2015-B1_UNKNOWN_1.0.6": {
+    "device_id": 100005,
+    "model": "AE-DC2015-B1",
+    "hardware_version": "UNKNOWN",
+    "version": "1.0.6",
+    "date": "2019-10-31",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202209/Firmware__V1.0.6_191031_S3000312642.zip",
+    "filename": "Firmware__V1.0.6_191031_S3000312642.zip",
+    "supported_models": [
+      "AE-DC2015-B1"
+    ],
+    "applied_to": "Applied to: AE-DC2015-B1",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-DC2022-V200_UNKNOWN_1.0.10": {
+    "device_id": 100006,
+    "model": "AE-DC2022-V200",
+    "hardware_version": "UNKNOWN",
+    "version": "1.0.10",
+    "date": "2025-09-02",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202509/Firmware__V1.0.10_250902_S3000672017.zip",
+    "filename": "Firmware__V1.0.10_250902_S3000672017.zip",
+    "supported_models": [
+      "AE-DC2022-V200"
+    ],
+    "applied_to": "Applied to: AE-DC2022-V200(2CH)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-DC2032-V300_UNKNOWN_1.0.10": {
+    "device_id": 100007,
+    "model": "AE-DC2032-V300",
+    "hardware_version": "UNKNOWN",
+    "version": "1.0.10",
+    "date": "2025-09-02",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202509/Firmware__V1.0.10_250902_S3000671476.zip",
+    "filename": "Firmware__V1.0.10_250902_S3000671476.zip",
+    "supported_models": [
+      "AE-DC2032-V300"
+    ],
+    "applied_to": "Applied to: AE-DC2032-V300(3CH)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-DC2032-V300_UNKNOWN_1.0.3": {
+    "device_id": 100007,
+    "model": "AE-DC2032-V300",
+    "hardware_version": "UNKNOWN",
+    "version": "1.0.3",
+    "date": "2025-03-28",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202504/Firmware__V1.0.3_250328_S3000641095.zip",
+    "filename": "Firmware__V1.0.3_250328_S3000641095.zip",
+    "supported_models": [
+      "AE-DC2032-V300"
+    ],
+    "applied_to": "Applied to: AE-DC2032-V300(3CH)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-DC4328-K5_UNKNOWN_1.0.7": {
+    "device_id": 100008,
+    "model": "AE-DC4328-K5",
+    "hardware_version": "UNKNOWN",
+    "version": "1.0.7",
+    "date": "2023-06-05",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202308/Firmware__V1.0.7_230605_S3000521095.zip",
+    "filename": "Firmware__V1.0.7_230605_S3000521095.zip",
+    "supported_models": [
+      "AE-DC4328-K5",
+      "AE-DC4328-K5-RU"
+    ],
+    "applied_to": "Applied to: AE-DC4328-K5(2CH)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-DC4328-K5_UNKNOWN_3.0.1": {
+    "device_id": 100008,
+    "model": "AE-DC4328-K5",
+    "hardware_version": "UNKNOWN",
+    "version": "3.0.1",
+    "date": "2023-04-10",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202401/Firmware__V3.0.1_230410_S3000550212.zip",
+    "filename": "Firmware__V3.0.1_230410_S3000550212.zip",
+    "supported_models": [
+      "AE-DC4328-K5",
+      "AE-DC4328-K5-RU"
+    ],
+    "applied_to": "Applied to: AE-DC4328-K5(2CH)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-DC5013-F6_UNKNOWN_1.3.2": {
+    "device_id": 100009,
+    "model": "AE-DC5013-F6",
+    "hardware_version": "UNKNOWN",
+    "version": "1.3.2",
+    "date": "2022-04-20",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202209/Firmware__V1.3.2_220420_S3000442626.zip",
+    "filename": "Firmware__V1.3.2_220420_S3000442626.zip",
+    "supported_models": [
+      "AE-DC5013-F6"
+    ],
+    "applied_to": "Applied to: AE-DC5013-F6",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-DC5013-F6_UNKNOWN_1.3.0": {
+    "device_id": 100009,
+    "model": "AE-DC5013-F6",
+    "hardware_version": "UNKNOWN",
+    "version": "1.3.0",
+    "date": "2021-11-10",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202207/DashCam_AE_DC5013_F6_EN_STD_V1.3.0_build211110.zip",
+    "filename": "DashCam_AE_DC5013_F6_EN_STD_V1.3.0_build211110.zip",
+    "supported_models": [
+      "AE-DC5013-F6"
+    ],
+    "applied_to": "Applied to: AE-DC5013-F6",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-DC5013-F6_UNKNOWN_1.2.7": {
+    "device_id": 100009,
+    "model": "AE-DC5013-F6",
+    "hardware_version": "UNKNOWN",
+    "version": "1.2.7",
+    "date": "2021-04-09",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202207/DashCam_AE_DC5013_F6_CN_STD_V1.2.7_build210409.zip",
+    "filename": "DashCam_AE_DC5013_F6_CN_STD_V1.2.7_build210409.zip",
+    "supported_models": [
+      "AE-DC5013-F6"
+    ],
+    "applied_to": "Applied to: AE-DC5013-F6",
     "changes": "",
     "notes": "",
     "is_beta": false,

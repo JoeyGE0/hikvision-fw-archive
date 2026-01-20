@@ -1,8 +1,4 @@
 {
-  "100000": {
-    "model": "UNKNOWN",
-    "hardware_version": "UNKNOWN"
-  },
   "100001": {
     "model": "DS-2TD5537T-7",
     "hardware_version": "UNKNOWN"
@@ -21,6 +17,22 @@
   },
   "100005": {
     "model": "AE-DC2015-B1",
+    "hardware_version": "UNKNOWN"
+  },
+  "100006": {
+    "model": "AE-DC2022-V200",
+    "hardware_version": "UNKNOWN"
+  },
+  "100007": {
+    "model": "AE-DC2032-V300",
+    "hardware_version": "UNKNOWN"
+  },
+  "100008": {
+    "model": "AE-DC4328-K5",
+    "hardware_version": "UNKNOWN"
+  },
+  "100009": {
+    "model": "AE-DC5013-F6",
     "hardware_version": "UNKNOWN"
   }
 }
