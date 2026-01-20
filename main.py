@@ -284,6 +284,44 @@ class HikvisionScraper:
                                                 links = collapse_content.query_selector_all('a[href]')
                                                 logger.info(f"    Found {len(links)} links in expanded content for {model}")
                                                 
+                                                # Sort links by date (newest first) to prioritize recent releases
+                                                def extract_link_date(link_element):
+                                                    """Extract date from link for sorting."""
+                                                    try:
+                                                        href = link_element.get_attribute('href') or ''
+                                                        link_text = link_element.inner_text().strip()
+                                                        
+                                                        # Try to find date in link_text (filename) - more accurate
+                                                        date_match = re.search(r'(\d{6}|\d{8})', link_text)
+                                                        if date_match:
+                                                            date_code = date_match.group(1)
+                                                            if len(date_code) == 6:
+                                                                return f"20{date_code[:2]}-{date_code[2:4]}-{date_code[4:6]}"
+                                                            elif len(date_code) == 8:
+                                                                return f"{date_code[:4]}-{date_code[4:6]}-{date_code[6:8]}"
+                                                        
+                                                        # If no date in filename, try URL
+                                                        date_match = re.search(r'(\d{6}|\d{8})', href)
+                                                        if date_match:
+                                                            date_code = date_match.group(1)
+                                                            if len(date_code) == 8:
+                                                                return f"{date_code[:4]}-{date_code[4:6]}-{date_code[6:8]}"
+                                                            elif len(date_code) == 6:
+                                                                if date_code[:2] in ['20', '21', '22', '23']:
+                                                                    return f"20{date_code[:2]}-{date_code[2:4]}-{date_code[4:6]}"
+                                                        
+                                                        # No date found - put at end (oldest)
+                                                        return '0000-00-00'
+                                                    except:
+                                                        return '0000-00-00'
+                                                
+                                                # Sort links by date (newest first)
+                                                links_with_dates = [(link, extract_link_date(link)) for link in links]
+                                                links_with_dates.sort(key=lambda x: x[1], reverse=True)  # Newest first
+                                                links = [link for link, _ in links_with_dates]
+                                                
+                                                logger.info(f"    Sorted {len(links)} links by date (newest first)")
+                                                
                                                 firmware_links_found = 0
                                                 for link_idx, link in enumerate(links, 1):
                                                     if test_mode_limit_reached:
