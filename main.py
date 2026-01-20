@@ -115,6 +115,7 @@ class HikvisionScraper:
         new_downloads_count = 0  # Track how many NEW firmwares we've downloaded
         skipped_existing_count = 0  # Track how many existing firmwares we skipped
         total_found_count = 0  # Track total firmwares found on website
+        downloaded_in_this_run = set()  # Track firmware keys downloaded in this run to prevent duplicates
         browser = None
         
         try:
@@ -372,10 +373,14 @@ class HikvisionScraper:
                                                             if version:
                                                                 firmware_key = f"{normalized_model}_{hw_version}_{version}"
                                                                 firmware_exists = firmware_key in self.firmwares_live
+                                                                firmware_downloaded_this_run = firmware_key in downloaded_in_this_run
                                                                 
-                                                                if firmware_exists:
-                                                                    skipped_existing_count += 1
-                                                                    logger.info(f"    ⊘ Skipping existing firmware: {normalized_model} {hw_version} v{version} ({skipped_existing_count} skipped)")
+                                                                if firmware_exists or firmware_downloaded_this_run:
+                                                                    if firmware_downloaded_this_run:
+                                                                        logger.info(f"    ⊘ Skipping duplicate firmware (already downloaded this run): {normalized_model} {hw_version} v{version}")
+                                                                    else:
+                                                                        skipped_existing_count += 1
+                                                                        logger.info(f"    ⊘ Skipping existing firmware: {normalized_model} {hw_version} v{version} ({skipped_existing_count} skipped)")
                                                                     firmwares.append({
                                                                         'model': normalized_model,
                                                                         'hardware_version': hw_version,
@@ -451,10 +456,14 @@ class HikvisionScraper:
                                                                     if version:
                                                                         firmware_key = f"{normalized_model}_{hw_version}_{version}"
                                                                         firmware_exists = firmware_key in self.firmwares_live
+                                                                        firmware_downloaded_this_run = firmware_key in downloaded_in_this_run
                                                                         
-                                                                        if firmware_exists:
-                                                                            skipped_existing_count += 1
-                                                                            logger.info(f"    ⊘ Skipping existing firmware: {normalized_model} {hw_version} v{version} ({skipped_existing_count} skipped)")
+                                                                        if firmware_exists or firmware_downloaded_this_run:
+                                                                            if firmware_downloaded_this_run:
+                                                                                logger.info(f"    ⊘ Skipping duplicate firmware (already downloaded this run): {normalized_model} {hw_version} v{version}")
+                                                                            else:
+                                                                                skipped_existing_count += 1
+                                                                                logger.info(f"    ⊘ Skipping existing firmware: {normalized_model} {hw_version} v{version} ({skipped_existing_count} skipped)")
                                                                             # Close modal
                                                                             close_btn = page.query_selector('dialog button, [role="dialog"] button, dialog [aria-label*="close" i], [role="dialog"] [aria-label*="close" i]')
                                                                             if close_btn:
@@ -524,6 +533,12 @@ class HikvisionScraper:
                                                                             file_size = filepath.stat().st_size
                                                                             local_file_path = str(filepath)  # Store for firmware dict
                                                                             stored_filename = filename  # Store filename for GitHub release linking
+                                                                            
+                                                                            # Track this firmware as downloaded in this run (prevent duplicates)
+                                                                            if version:
+                                                                                firmware_key = f"{normalized_model}_{hw_version}_{version}"
+                                                                                downloaded_in_this_run.add(firmware_key)
+                                                                            
                                                                             new_downloads_count += 1  # Only increment on successful download
                                                                             logger.info(f"    ✓ File downloaded to: {filepath} ({file_size:,} bytes) (NEW firmware #{new_downloads_count})")
                                                                         else:
