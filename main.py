@@ -1115,7 +1115,8 @@ class HikvisionScraper:
                 date_match = re.search(r'Release Date:\s*(\d{4}-\d{2}-\d{2})', section, re.IGNORECASE)
                 date_str = date_match.group(1) if date_match else ''
                 
-                # Extract filename from download link: "[📥 Download FILENAME](...)" or "Download: 📥 Download FILENAME"
+                # Extract filename from download link: "[📥 Download FILENAME](...)"
+                # Pattern: [📥 Download FILENAME](url) - extract text between [ and ]
                 filename_match = re.search(r'\[📥\s*Download\s+([^\]]+)\]', section, re.IGNORECASE)
                 if filename_match:
                     filename = filename_match.group(1).strip()
@@ -1124,6 +1125,7 @@ class HikvisionScraper:
                         'version': version,
                         'date': date_str
                     }
+                    logger.debug(f"  ✓ Extracted from release notes: {filename} -> {model} v{version}")
         
         # Also collect all firmware filenames from assets (fallback if not in release notes)
         release_filenames = set()
