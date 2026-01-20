@@ -1095,32 +1095,35 @@ class HikvisionScraper:
                 continue
             
             # Parse release body to extract model/version/date for each firmware
-            # Pattern: "### MODEL - vVERSION"
-            firmware_sections = re.findall(r'###\s+([^-]+)\s+-\s+v(\d+\.\d+\.\d+(?:\.\d+)?)', body, re.IGNORECASE)
-            
-            for model_match, version_match in firmware_sections:
-                model = model_match.strip().upper()
-                version = version_match.strip()
+            # Pattern: "### MODEL - vVERSION" or "### UNKNOWN - vVERSION"
+            # Split body into sections by "###"
+            sections = re.split(r'###\s+', body)
+            for section in sections[1:]:  # Skip first empty section
+                # Extract model and version from header: "MODEL - vVERSION"
+                header_match = re.match(r'([^-]+)\s+-\s+v(\d+\.\d+\.\d+(?:\.\d+)?)', section, re.IGNORECASE)
+                if not header_match:
+                    continue
                 
-                # Extract date from this section
-                # Find the section for this model/version
-                section_pattern = rf'###\s+{re.escape(model_match.strip())}\s+-\s+v{re.escape(version)}(.*?)(?=###|$)'
-                section_match = re.search(section_pattern, body, re.DOTALL | re.IGNORECASE)
-                if section_match:
-                    section_text = section_match.group(1)
-                    # Extract date: "Release Date: YYYY-MM-DD"
-                    date_match = re.search(r'Release Date:\s*(\d{4}-\d{2}-\d{2})', section_text, re.IGNORECASE)
-                    date_str = date_match.group(1) if date_match else ''
-                    
-                    # Extract filename from download link: "[📥 Download FILENAME](...)"
-                    filename_match = re.search(r'Download\s+([^\]]+)', section_text, re.IGNORECASE)
-                    if filename_match:
-                        filename = filename_match.group(1).strip()
-                        filename_to_info[filename] = {
-                            'model': model,
-                            'version': version,
-                            'date': date_str
-                        }
+                model = header_match.group(1).strip().upper()
+                version = header_match.group(2).strip()
+                
+                # Skip UNKNOWN entries (they don't have model info)
+                if model == 'UNKNOWN':
+                    continue
+                
+                # Extract date: "Release Date: YYYY-MM-DD"
+                date_match = re.search(r'Release Date:\s*(\d{4}-\d{2}-\d{2})', section, re.IGNORECASE)
+                date_str = date_match.group(1) if date_match else ''
+                
+                # Extract filename from download link: "[📥 Download FILENAME](...)" or "Download: 📥 Download FILENAME"
+                filename_match = re.search(r'\[📥\s*Download\s+([^\]]+)\]', section, re.IGNORECASE)
+                if filename_match:
+                    filename = filename_match.group(1).strip()
+                    filename_to_info[filename] = {
+                        'model': model,
+                        'version': version,
+                        'date': date_str
+                    }
         
         # Also collect all firmware filenames from assets (fallback if not in release notes)
         release_filenames = set()

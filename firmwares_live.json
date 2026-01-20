@@ -1,140 +1,12 @@
 {
-  "DS-K3B411BX_UNKNOWN_2.0.5": {
-    "device_id": 100001,
-    "model": "DS-K3B411BX",
-    "hardware_version": "UNKNOWN",
-    "version": "2.0.5",
-    "date": "2025-09-22",
-    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202510/Firmware__V2.0.5_250922_S3000677823.zip",
-    "filename": "Firmware__V2.0.5_250922_S3000677823.zip",
-    "supported_models": [
-      "DS-K3B411BX",
-      "DS-K3B411BX-L",
-      "DS-K3B411BX-M",
-      "DS-K3B411BX-R"
-    ],
-    "applied_to": "Applied to: DS-K3B411BX-L/M",
-    "changes": "",
-    "notes": "",
-    "is_beta": false,
-    "source": "live"
-  },
-  "DS-K3B411BX_UNKNOWN_1.0.0": {
-    "device_id": 100001,
-    "model": "DS-K3B411BX",
-    "hardware_version": "UNKNOWN",
-    "version": "1.0.0",
-    "date": "2024-05-23",
-    "download_url": "https://assets.hikvision.com/prd/public/all/files/202406/1717709521275/Firmware__V1.0.0_240523_S3000577702.zip",
-    "filename": "Firmware__V1.0.0_240523_S3000577702.zip",
-    "supported_models": [
-      "DS-K3B411BX",
-      "DS-K3B411BX-L",
-      "DS-K3B411BX-M",
-      "DS-K3B411BX-R"
-    ],
-    "applied_to": "Applied to: DS-K3B411BX-L/M",
-    "changes": "",
-    "notes": "",
-    "is_beta": false,
-    "source": "live"
-  },
-  "DS-K3B411BX_UNKNOWN_2.4.0": {
-    "device_id": 100001,
-    "model": "DS-K3B411BX",
-    "hardware_version": "UNKNOWN",
-    "version": "2.4.0",
-    "date": "2025-01-06",
-    "download_url": "https://assets.hikvision.com/prd/public/all/files/202502/Firmware__V2.4.0_250106_S3000625394.zip",
-    "filename": "Firmware__V2.4.0_250106_S3000625394.zip",
-    "supported_models": [
-      "DS-K3B411BX",
-      "DS-K3B411BX-L",
-      "DS-K3B411BX-M",
-      "DS-K3B411BX-R"
-    ],
-    "applied_to": "Applied to: DS-K3B411BX-L/M",
-    "changes": "",
-    "notes": "",
-    "is_beta": false,
-    "source": "live"
-  },
-  "AE-DC2015-B1_UNKNOWN_1.1.4": {
-    "device_id": 100005,
-    "model": "AE-DC2015-B1",
-    "hardware_version": "UNKNOWN",
-    "version": "1.1.4",
-    "date": "2021-08-11",
-    "download_url": "https://assets.hikvision.com/prd/public/all/files/202209/Firmware__V1.1.4_210811_S3000384048.zip",
-    "filename": "Firmware__V1.1.4_210811_S3000384048.zip",
-    "supported_models": [
-      "AE-DC2015-B1"
-    ],
-    "applied_to": "Applied to: AE-DC2015-B1",
-    "changes": "",
-    "notes": "",
-    "is_beta": false,
-    "source": "live"
-  },
-  "AE-DC2015-B1_UNKNOWN_1.1.5": {
-    "device_id": 100005,
-    "model": "AE-DC2015-B1",
-    "hardware_version": "UNKNOWN",
-    "version": "1.1.5",
-    "date": "2022-04-21",
-    "download_url": "https://assets.hikvision.com/prd/public/all/files/202209/Firmware__V1.1.5_220421_S3000442625.zip",
-    "filename": "Firmware__V1.1.5_220421_S3000442625.zip",
-    "supported_models": [
-      "AE-DC2015-B1"
-    ],
-    "applied_to": "Applied to: AE-DC2015-B1",
-    "changes": "",
-    "notes": "",
-    "is_beta": false,
-    "source": "live"
-  },
-  "AE-DC2022-V200_UNKNOWN_1.0.10": {
-    "device_id": 100006,
-    "model": "AE-DC2022-V200",
-    "hardware_version": "UNKNOWN",
-    "version": "1.0.10",
-    "date": "2025-09-02",
-    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202509/Firmware__V1.0.10_250902_S3000672017.zip",
-    "filename": "Firmware__V1.0.10_250902_S3000672017.zip",
-    "supported_models": [
-      "AE-DC2022-V200"
-    ],
-    "applied_to": "Applied to: AE-DC2022-V200(2CH)",
-    "changes": "",
-    "notes": "",
-    "is_beta": false,
-    "source": "live"
-  },
-  "AE-DC2032-V300_UNKNOWN_1.0.10": {
-    "device_id": 100007,
-    "model": "AE-DC2032-V300",
-    "hardware_version": "UNKNOWN",
-    "version": "1.0.10",
-    "date": "2025-09-02",
-    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202509/Firmware__V1.0.10_250902_S3000671476.zip",
-    "filename": "Firmware__V1.0.10_250902_S3000671476.zip",
-    "supported_models": [
-      "AE-DC2032-V300"
-    ],
-    "applied_to": "Applied to: AE-DC2032-V300(3CH)",
-    "changes": "",
-    "notes": "",
-    "is_beta": false,
-    "source": "live"
-  },
-  "UNKNOWN_UNKNOWN_5.5.49": {
-    "device_id": 100008,
+  "UNKNOWN_UNKNOWN_4.75.013": {
+    "device_id": 100000,
     "model": "UNKNOWN",
     "hardware_version": "UNKNOWN",
-    "version": "5.5.49",
-    "date": "2022-08-22",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.49_220822_S3000450133.zip",
-    "filename": "Firmware__V5.5.49_220822_S3000450133.zip",
+    "version": "4.75.013",
+    "date": "2024-09-19",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware_Europe_V4.75.013_240919_S3000600830.zip",
+    "filename": "Firmware_Europe_V4.75.013_240919_S3000600830.zip",
     "supported_models": [
       "UNKNOWN"
     ],
@@ -144,14 +16,14 @@
     "is_beta": false,
     "source": "github_releases_sync"
   },
-  "UNKNOWN_UNKNOWN_4.75.013": {
-    "device_id": 100008,
+  "UNKNOWN_UNKNOWN_5.5.49": {
+    "device_id": 100000,
     "model": "UNKNOWN",
     "hardware_version": "UNKNOWN",
-    "version": "4.75.013",
-    "date": "2024-09-19",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware_Europe_V4.75.013_240919_S3000600830.zip",
-    "filename": "Firmware_Europe_V4.75.013_240919_S3000600830.zip",
+    "version": "5.5.49",
+    "date": "2022-08-22",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.49_220822_S3000450133.zip",
+    "filename": "Firmware__V5.5.49_220822_S3000450133.zip",
     "supported_models": [
       "UNKNOWN"
     ],
