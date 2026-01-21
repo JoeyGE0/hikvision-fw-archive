@@ -62,5 +62,37 @@
   "100016": {
     "model": "AE-DC8312-C6S",
     "hardware_version": "UNKNOWN"
+  },
+  "100017": {
+    "model": "AE-DC8322-G2PRO",
+    "hardware_version": "UNKNOWN"
+  },
+  "100018": {
+    "model": "AE-DI2032-G40",
+    "hardware_version": "UNKNOWN"
+  },
+  "100019": {
+    "model": "AE-DI5042-G4",
+    "hardware_version": "UNKNOWN"
+  },
+  "100020": {
+    "model": "AE-DI5052-G40",
+    "hardware_version": "UNKNOWN"
+  },
+  "100021": {
+    "model": "AE-MD5043-SD",
+    "hardware_version": "UNKNOWN"
+  },
+  "100022": {
+    "model": "AE-MH0408",
+    "hardware_version": "UNKNOWN"
+  },
+  "100023": {
+    "model": "AE-VC1B1I-ISF",
+    "hardware_version": "UNKNOWN"
+  },
+  "100024": {
+    "model": "AE-VC215I-ISF",
+    "hardware_version": "UNKNOWN"
   }
 }

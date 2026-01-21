@@ -139,8 +139,8 @@ The scraper in `main.py` can always be improved:
 ## Status
 
 **Status:** ✅ SUCCESS  
-**Last Run:** 2026-01-21 05:15:19 UTC  
-**Firmwares Found:** 40  
+**Last Run:** 2026-01-21 17:54:29 UTC  
+**Firmwares Found:** 50  
 **New Firmwares:** 10  
 **Test Mode:** Disabled
 
@@ -152,7 +152,7 @@ The scraper in `main.py` can always be improved:
 
 Below is the complete list of archived firmwares, organized by device model and hardware version.
 
-**Total: 40**
+**Total: 50**
 
 
 
@@ -173,7 +173,7 @@ Below is the complete list of archived firmwares, organized by device model and 
 | ------- | ---------------- | ---- | -------- | ----- |
 | 1.1.5 | Applied to: [AE-DC2015-B1](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.5_220421_S3000442625.zip) | 2022-04-21 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.5_220421_S3000442625.zip) |  |
 | 1.1.3 | Applied to: [AE-DC2015-B1](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.3_250304_S3000634438.zip) | 2021-11-16 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.3_250304_S3000634438.zip) |  |
-| 1.1.4 | Applied to: [AE-DC2015-B1](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.4_210811_S3000384048.zip) | 2021-08-11 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.4_210811_S3000384048.zip) |  |
+| 1.1.4 | Applied to: [AE-DC2015-B1](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.4_220725_S3000443106.zip) | 2021-08-11 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.4_220725_S3000443106.zip) |  |
 | 1.1.2 | Applied to: [AE-DC2015-B1](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.2_200914_S3000337767.zip) | 2020-09-14 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.2_200914_S3000337767.zip) |  |
 | 1.0.8 | Applied to: [AE-DC2015-B1](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.0.8_250703_S3000666382.zip) | 2020-03-20 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.0.8_250703_S3000666382.zip) |  |
 | 1.0.6 | Applied to: [AE-DC2015-B1](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.0.6_191031_S3000312642.zip) | 2019-10-31 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.0.6_191031_S3000312642.zip) |  |
@@ -292,7 +292,7 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 1.1.7 | Applied to: [AE-DC8222-C8PRO(3.5K)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.7_250807_S3000666340.zip)(2024) | 2025-08-07 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.7_250807_S3000666340.zip) |  |
+| 1.1.7 | Applied to: [AE-DC8222-C8PRO(3.5K)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.7_230919_S3000526629.zip)(2024) | 2025-08-07 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.7_230919_S3000526629.zip) |  |
 | 1.1.3 | Applied to: [AE-DC8222-C8PRO(3.5K)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.3_250304_S3000634438.zip)(2024) | 2025-03-04 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.3_250304_S3000634438.zip) |  |
 
 </details>
@@ -304,6 +304,88 @@ Below is the complete list of archived firmwares, organized by device model and 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 1.0.8 | Applied to: [AE-DC8312-C6S(GPS)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.0.8_250703_S3000666382.zip) | 2025-07-03 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.0.8_250703_S3000666382.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>AE-DC8322-G2PRO - UNKNOWN (2 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 1.1.7 | Applied to: [AE-DC8322-G2PRO(HK)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.7_230919_S3000526629.zip)(GPS) | 2023-09-19 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.7_230919_S3000526629.zip) |  |
+| 1.1.4 | Applied to: [AE-DC8322-G2PRO(HK)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.4_220725_S3000443106.zip)(GPS) | 2022-07-25 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.4_220725_S3000443106.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>AE-DI2032-G40 - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.1.2 | Applied to: [AE-DI2032-G40(B)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.1.2_250102_S3000625549.zip)(EU) | 2025-01-02 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.1.2_250102_S3000625549.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>AE-DI5042-G4 - UNKNOWN (2 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 4.9.1 | Applied to: [AE-DI5042-G4(GPS+4G)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V4.9.1_240118_S3000552549.zip)(Lite) | 2024-01-18 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V4.9.1_240118_S3000552549.zip) |  |
+| 4.4.3 | Applied to: [AE-DI5042-G4(GPS+4G)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/020a231f-6ff3-452b-be5e-24b24bfac6d5.zip)(Lite) | 2022-03-18 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/020a231f-6ff3-452b-be5e-24b24bfac6d5.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>AE-DI5052-G40 - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 4.7.4 | Applied to: [AE-DI5052-G40](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V4.7.4_251117_S3000685762.zip) PRO(EU) | 2025-11-17 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V4.7.4_251117_S3000685762.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>AE-MD5043-SD - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.1 | Applied to: [AE-MD5043-SD/GLF(EU-STD)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.1_241121_S3000622031.zip) | 2024-11-21 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.1_241121_S3000622031.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>AE-MH0408 - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.1 | Applied to: [AE-MH0408(1T)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.1_241121_S3000622073.zip)(RJ45) | 2024-11-21 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.1_241121_S3000622073.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>AE-VC1B1I-ISF - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 3.0.2 | Applied to: [AE-VC1B1I-ISF(RJ45)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V3.0.2_240613_S3000580999.zip)(6mm) | 2024-06-13 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V3.0.2_240613_S3000580999.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>AE-VC215I-ISF - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 3.0.2 | Applied to: [AE-VC215I-ISF(M12)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V3.0.2_230315_S3000488384.zip)(2.8mm) | 2023-03-15 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V3.0.2_230315_S3000488384.zip) |  |
 
 </details>
 

@@ -151,7 +151,7 @@
     "version": "1.1.4",
     "date": "2021-08-11",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202209/Firmware__V1.1.4_210811_S3000384048.zip",
-    "filename": "Firmware__V1.1.4_210811_S3000384048.zip",
+    "filename": "Firmware__V1.1.4_220725_S3000443106.zip",
     "supported_models": [
       "AE-DC2015-B1"
     ],
@@ -649,7 +649,7 @@
     "version": "1.1.7",
     "date": "2025-08-07",
     "download_url": "https://assets.hikvision.com/prd/normal/all/files/202508/Firmware__V1.1.7_250807_S3000666340.zip",
-    "filename": "Firmware__V1.1.7_250807_S3000666340.zip",
+    "filename": "Firmware__V1.1.7_230919_S3000526629.zip",
     "supported_models": [
       "AE-DC8222-C8PRO"
     ],
@@ -688,6 +688,176 @@
       "AE-DC8312-C6S"
     ],
     "applied_to": "Applied to: AE-DC8312-C6S(GPS)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-DC8322-G2PRO_UNKNOWN_1.1.7": {
+    "device_id": 100017,
+    "model": "AE-DC8322-G2PRO",
+    "hardware_version": "UNKNOWN",
+    "version": "1.1.7",
+    "date": "2023-09-19",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202309/Firmware__V1.1.7_230919_S3000526629.zip",
+    "filename": "Firmware__V1.1.7_230919_S3000526629.zip",
+    "supported_models": [
+      "AE-DC8322-G2PRO"
+    ],
+    "applied_to": "Applied to: AE-DC8322-G2PRO(HK)(GPS)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-DC8322-G2PRO_UNKNOWN_1.1.4": {
+    "device_id": 100017,
+    "model": "AE-DC8322-G2PRO",
+    "hardware_version": "UNKNOWN",
+    "version": "1.1.4",
+    "date": "2022-07-25",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202208/Firmware__V1.1.4_220725_S3000443106.zip",
+    "filename": "Firmware__V1.1.4_220725_S3000443106.zip",
+    "supported_models": [
+      "AE-DC8322-G2PRO"
+    ],
+    "applied_to": "Applied to: AE-DC8322-G2PRO(HK)(GPS)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-DI2032-G40_UNKNOWN_5.1.2": {
+    "device_id": 100018,
+    "model": "AE-DI2032-G40",
+    "hardware_version": "UNKNOWN",
+    "version": "5.1.2",
+    "date": "2025-01-02",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202501/Firmware__V5.1.2_250102_S3000625549.zip",
+    "filename": "Firmware__V5.1.2_250102_S3000625549.zip",
+    "supported_models": [
+      "AE-DI2032-G40"
+    ],
+    "applied_to": "Applied to: AE-DI2032-G40(B)(EU)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-DI5042-G4_UNKNOWN_4.9.1": {
+    "device_id": 100019,
+    "model": "AE-DI5042-G4",
+    "hardware_version": "UNKNOWN",
+    "version": "4.9.1",
+    "date": "2024-01-18",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202401/Firmware__V4.9.1_240118_S3000552549.zip",
+    "filename": "Firmware__V4.9.1_240118_S3000552549.zip",
+    "supported_models": [
+      "AE-DI5042-G4"
+    ],
+    "applied_to": "Applied to: AE-DI5042-G4(GPS+4G)(Lite)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-DI5042-G4_UNKNOWN_4.4.3": {
+    "device_id": 100019,
+    "model": "AE-DI5042-G4",
+    "hardware_version": "UNKNOWN",
+    "version": "4.4.3",
+    "date": "2022-03-18",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/020a231f-6ff3-452b-be5e-24b24bfac6d5.zip",
+    "filename": "020a231f-6ff3-452b-be5e-24b24bfac6d5.zip",
+    "supported_models": [
+      "AE-DI5042-G4"
+    ],
+    "applied_to": "Applied to: AE-DI5042-G4(GPS+4G)(Lite)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-DI5052-G40_UNKNOWN_4.7.4": {
+    "device_id": 100020,
+    "model": "AE-DI5052-G40",
+    "hardware_version": "UNKNOWN",
+    "version": "4.7.4",
+    "date": "2025-11-17",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202511/Firmware__V4.7.4_251117_S3000685762.zip",
+    "filename": "Firmware__V4.7.4_251117_S3000685762.zip",
+    "supported_models": [
+      "AE-DI5052-G40"
+    ],
+    "applied_to": "Applied to: AE-DI5052-G40 PRO(EU)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-MD5043-SD_UNKNOWN_5.8.1": {
+    "device_id": 100021,
+    "model": "AE-MD5043-SD",
+    "hardware_version": "UNKNOWN",
+    "version": "5.8.1",
+    "date": "2024-11-21",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202412/Firmware__V5.8.1_241121_S3000622031.zip",
+    "filename": "Firmware__V5.8.1_241121_S3000622031.zip",
+    "supported_models": [
+      "AE-MD5043-SD"
+    ],
+    "applied_to": "Applied to: AE-MD5043-SD/GLF(EU-STD)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-MH0408_UNKNOWN_5.8.1": {
+    "device_id": 100022,
+    "model": "AE-MH0408",
+    "hardware_version": "UNKNOWN",
+    "version": "5.8.1",
+    "date": "2024-11-21",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202412/Firmware__V5.8.1_241121_S3000622073.zip",
+    "filename": "Firmware__V5.8.1_241121_S3000622073.zip",
+    "supported_models": [
+      "AE-MH0408"
+    ],
+    "applied_to": "Applied to: AE-MH0408(1T)(RJ45)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-VC1B1I-ISF_UNKNOWN_3.0.2": {
+    "device_id": 100023,
+    "model": "AE-VC1B1I-ISF",
+    "hardware_version": "UNKNOWN",
+    "version": "3.0.2",
+    "date": "2024-06-13",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202406/1718922865963/Firmware__V3.0.2_240613_S3000580999.zip",
+    "filename": "Firmware__V3.0.2_240613_S3000580999.zip",
+    "supported_models": [
+      "AE-VC1B1I-ISF"
+    ],
+    "applied_to": "Applied to: AE-VC1B1I-ISF(RJ45)(6mm)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-VC215I-ISF_UNKNOWN_3.0.2": {
+    "device_id": 100024,
+    "model": "AE-VC215I-ISF",
+    "hardware_version": "UNKNOWN",
+    "version": "3.0.2",
+    "date": "2023-03-15",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202305/Firmware__V3.0.2_230315_S3000488384.zip",
+    "filename": "Firmware__V3.0.2_230315_S3000488384.zip",
+    "supported_models": [
+      "AE-VC215I-ISF"
+    ],
+    "applied_to": "Applied to: AE-VC215I-ISF(M12)(2.8mm)",
     "changes": "",
     "notes": "",
     "is_beta": false,
