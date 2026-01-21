@@ -42,5 +42,25 @@
   "100011": {
     "model": "AE-DC5113-F6S",
     "hardware_version": "UNKNOWN"
+  },
+  "100012": {
+    "model": "AE-DC5313-C6",
+    "hardware_version": "UNKNOWN"
+  },
+  "100013": {
+    "model": "AE-DC5313-C6PRO",
+    "hardware_version": "UNKNOWN"
+  },
+  "100014": {
+    "model": "AE-DC8012-C8",
+    "hardware_version": "UNKNOWN"
+  },
+  "100015": {
+    "model": "AE-DC8222-C8PRO",
+    "hardware_version": "UNKNOWN"
+  },
+  "100016": {
+    "model": "AE-DC8312-C6S",
+    "hardware_version": "UNKNOWN"
   }
 }

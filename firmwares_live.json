@@ -134,7 +134,7 @@
     "version": "1.1.3",
     "date": "2021-11-16",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202209/Firmware__V1.1.3_211116_S3000401023.zip",
-    "filename": "Firmware__V1.1.3_211116_S3000401023.zip",
+    "filename": "Firmware__V1.1.3_250304_S3000634438.zip",
     "supported_models": [
       "AE-DC2015-B1"
     ],
@@ -185,7 +185,7 @@
     "version": "1.0.8",
     "date": "2020-03-20",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202209/Firmware__V1.0.8_200320_S3000313276.zip",
-    "filename": "Firmware__V1.0.8_200320_S3000313276.zip",
+    "filename": "Firmware__V1.0.8_250703_S3000666382.zip",
     "supported_models": [
       "AE-DC2015-B1"
     ],
@@ -306,7 +306,7 @@
     "version": "1.3.2",
     "date": "2022-04-20",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202209/Firmware__V1.3.2_220420_S3000442626.zip",
-    "filename": "Firmware__V1.3.2_220420_S3000442626.zip",
+    "filename": "Firmware__V1.1.3_250304_S3000634438.zip",
     "supported_models": [
       "AE-DC5013-F6"
     ],
@@ -408,7 +408,7 @@
     "version": "1.3.2",
     "date": "2022-04-20",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202209/Firmware__V1.3.2_220420_S3000442626.zip",
-    "filename": "Firmware__V1.3.2_220420_S3000442626.zip",
+    "filename": "Firmware__V1.1.3_250304_S3000634438.zip",
     "supported_models": [
       "AE-DC5013-F6PRO"
     ],
@@ -442,7 +442,7 @@
     "version": "1.3.2",
     "date": "2022-09-28",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202210/Firmware__V1.3.2_220928_S3000456412.zip",
-    "filename": "Firmware__V1.3.2_220928_S3000456412.zip",
+    "filename": "Firmware__V1.1.3_250304_S3000634438.zip",
     "supported_models": [
       "AE-DC5113-F6S"
     ],
@@ -510,11 +510,184 @@
     "version": "1.2.3",
     "date": "2020-05-25",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202209/Firmware__V1.2.3_200525_S3000320925.zip",
-    "filename": "Firmware__V1.2.3_200525_S3000320925.zip",
+    "filename": "Firmware__V1.2.3_230605_S3000503831.zip",
     "supported_models": [
       "AE-DC5113-F6S"
     ],
     "applied_to": "Applied to: AE-DC5113-F6S",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-DC5313-C6_UNKNOWN_1.2.4": {
+    "device_id": 100012,
+    "model": "AE-DC5313-C6",
+    "hardware_version": "UNKNOWN",
+    "version": "1.2.4",
+    "date": "2022-12-09",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202301/Firmware__V1.2.4_221209_S3000475000.zip",
+    "filename": "Firmware__V1.2.4_221209_S3000475000.zip",
+    "supported_models": [
+      "AE-DC5313-C6"
+    ],
+    "applied_to": "Applied to: AE-DC5313-C6",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-DC5313-C6_UNKNOWN_1.1.6": {
+    "device_id": 100012,
+    "model": "AE-DC5313-C6",
+    "hardware_version": "UNKNOWN",
+    "version": "1.1.6",
+    "date": "2022-09-20",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202210/Firmware__V1.1.6_220920_S3000456100.zip",
+    "filename": "Firmware__V1.1.6_220920_S3000456100.zip",
+    "supported_models": [
+      "AE-DC5313-C6"
+    ],
+    "applied_to": "Applied to: AE-DC5313-C6",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-DC5313-C6_UNKNOWN_1.1.10": {
+    "device_id": 100012,
+    "model": "AE-DC5313-C6",
+    "hardware_version": "UNKNOWN",
+    "version": "1.1.10",
+    "date": "2022-02-23",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202207/DashCam_AE_DC5313_C6_CN_STD_V1.1.10_build220223.zip",
+    "filename": "DashCam_AE_DC5313_C6_CN_STD_V1.1.10_build220223.zip",
+    "supported_models": [
+      "AE-DC5313-C6"
+    ],
+    "applied_to": "Applied to: AE-DC5313-C6",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-DC5313-C6PRO_UNKNOWN_1.2.4": {
+    "device_id": 100013,
+    "model": "AE-DC5313-C6PRO",
+    "hardware_version": "UNKNOWN",
+    "version": "1.2.4",
+    "date": "2022-12-09",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202301/Firmware__V1.2.4_221209_S3000475000.zip",
+    "filename": "Firmware__V1.2.4_221209_S3000475000.zip",
+    "supported_models": [
+      "AE-DC5313-C6PRO",
+      "AE-DC5313-C6PRO-V"
+    ],
+    "applied_to": "Applied to: AE-DC5313-C6PRO",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-DC5313-C6PRO_UNKNOWN_1.1.6": {
+    "device_id": 100013,
+    "model": "AE-DC5313-C6PRO",
+    "hardware_version": "UNKNOWN",
+    "version": "1.1.6",
+    "date": "2021-10-28",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202207/DashCam_AE_DC5313_C6_EN_STD_V1.1.6_build211028.zip",
+    "filename": "DashCam_AE_DC5313_C6_EN_STD_V1.1.6_build211028.zip",
+    "supported_models": [
+      "AE-DC5313-C6PRO",
+      "AE-DC5313-C6PRO-V"
+    ],
+    "applied_to": "Applied to: AE-DC5313-C6PRO",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-DC5313-C6PRO_UNKNOWN_1.1.3": {
+    "device_id": 100013,
+    "model": "AE-DC5313-C6PRO",
+    "hardware_version": "UNKNOWN",
+    "version": "1.1.3",
+    "date": "2020-10-23",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202207/DashCam_AE_DC5313_C6_CN_STD_V1.1.3_build201023.zip",
+    "filename": "DashCam_AE_DC5313_C6_CN_STD_V1.1.3_build201023.zip",
+    "supported_models": [
+      "AE-DC5313-C6PRO",
+      "AE-DC5313-C6PRO-V"
+    ],
+    "applied_to": "Applied to: AE-DC5313-C6PRO",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-DC8012-C8_UNKNOWN_1.2.3": {
+    "device_id": 100014,
+    "model": "AE-DC8012-C8",
+    "hardware_version": "UNKNOWN",
+    "version": "1.2.3",
+    "date": "2023-06-05",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202306/Firmware__V1.2.3_230605_S3000503831.zip",
+    "filename": "Firmware__V1.2.3_230605_S3000503831.zip",
+    "supported_models": [
+      "AE-DC8012-C8"
+    ],
+    "applied_to": "Applied to: AE-DC8012-C8(2025)(2ch)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-DC8222-C8PRO_UNKNOWN_1.1.7": {
+    "device_id": 100015,
+    "model": "AE-DC8222-C8PRO",
+    "hardware_version": "UNKNOWN",
+    "version": "1.1.7",
+    "date": "2025-08-07",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202508/Firmware__V1.1.7_250807_S3000666340.zip",
+    "filename": "Firmware__V1.1.7_250807_S3000666340.zip",
+    "supported_models": [
+      "AE-DC8222-C8PRO"
+    ],
+    "applied_to": "Applied to: AE-DC8222-C8PRO(3.5K)(2024)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-DC8222-C8PRO_UNKNOWN_1.1.3": {
+    "device_id": 100015,
+    "model": "AE-DC8222-C8PRO",
+    "hardware_version": "UNKNOWN",
+    "version": "1.1.3",
+    "date": "2025-03-04",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202503/Firmware__V1.1.3_250304_S3000634438.zip",
+    "filename": "Firmware__V1.1.3_250304_S3000634438.zip",
+    "supported_models": [
+      "AE-DC8222-C8PRO"
+    ],
+    "applied_to": "Applied to: AE-DC8222-C8PRO(3.5K)(2024)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-DC8312-C6S_UNKNOWN_1.0.8": {
+    "device_id": 100016,
+    "model": "AE-DC8312-C6S",
+    "hardware_version": "UNKNOWN",
+    "version": "1.0.8",
+    "date": "2025-07-03",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202509/Firmware__V1.0.8_250703_S3000666382.zip",
+    "filename": "Firmware__V1.0.8_250703_S3000666382.zip",
+    "supported_models": [
+      "AE-DC8312-C6S"
+    ],
+    "applied_to": "Applied to: AE-DC8312-C6S(GPS)",
     "changes": "",
     "notes": "",
     "is_beta": false,
