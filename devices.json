@@ -118,5 +118,33 @@
   "100030": {
     "model": "DS-1200KI",
     "hardware_version": "UNKNOWN"
+  },
+  "100031": {
+    "model": "DS-2CD1023G0-IUF",
+    "hardware_version": "IPC_G0"
+  },
+  "100032": {
+    "model": "DS-2CD1023G0E-I",
+    "hardware_version": "IPC_G0"
+  },
+  "100033": {
+    "model": "DS-2CD1023G2-LIDUF",
+    "hardware_version": "IPC_G0"
+  },
+  "100034": {
+    "model": "DS-2CD1023G2-LIU",
+    "hardware_version": "IPC_G0"
+  },
+  "100035": {
+    "model": "DS-2CD1023G2-LIUF",
+    "hardware_version": "IPC_G0"
+  },
+  "100036": {
+    "model": "DS-2CD1027G2-L",
+    "hardware_version": "IPC_G0"
+  },
+  "100037": {
+    "model": "DS-2CD1027G2H-LIU",
+    "hardware_version": "IPC_G0"
   }
 }
