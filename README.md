@@ -139,8 +139,8 @@ The scraper in `main.py` can always be improved:
 ## Status
 
 **Status:** ✅ SUCCESS  
-**Last Run:** 2026-01-21 17:54:29 UTC  
-**Firmwares Found:** 50  
+**Last Run:** 2026-01-22 05:20:48 UTC  
+**Firmwares Found:** 60  
 **New Firmwares:** 10  
 **Test Mode:** Disabled
 
@@ -152,7 +152,7 @@ The scraper in `main.py` can always be improved:
 
 Below is the complete list of archived firmwares, organized by device model and hardware version.
 
-**Total: 50**
+**Total: 60**
 
 
 
@@ -208,7 +208,7 @@ Below is the complete list of archived firmwares, organized by device model and 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 1.0.7 | Applied to: [AE-DC4328-K5(2CH)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.0.7_230605_S3000521095.zip) | 2023-06-05 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.0.7_230605_S3000521095.zip) |  |
-| 3.0.1 | Applied to: [AE-DC4328-K5(2CH)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V3.0.1_230410_S3000550212.zip) | 2023-04-10 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V3.0.1_230410_S3000550212.zip) |  |
+| 3.0.1 | Applied to: [AE-DC4328-K5(2CH)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V3.0.1_230306_S3000485364.zip) | 2023-04-10 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V3.0.1_230306_S3000485364.zip) |  |
 
 </details>
 
@@ -232,7 +232,7 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 1.3.4 | Applied to: [AE-DC5013-F6PRO](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.3.4_230919_S3000526631.zip) | 2023-09-19 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.3.4_230919_S3000526631.zip) |  |
+| 1.3.4 | Applied to: [AE-DC5013-F6PRO](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.3.4_S3000653240.zip) | 2023-09-19 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.3.4_S3000653240.zip) |  |
 | 1.3.2 | Applied to: [AE-DC5013-F6PRO](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.3_250304_S3000634438.zip) | 2022-04-20 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.3_250304_S3000634438.zip) |  |
 | 1.3.0 | Applied to: [AE-DC5013-F6PRO](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/DashCam_AE_DC5013_F6_CN_STD_V1.3.0_build210625.zip) | 2021-06-25 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/DashCam_AE_DC5013_F6_CN_STD_V1.3.0_build210625.zip) |  |
 
@@ -258,7 +258,7 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 1.2.4 | Applied to: [AE-DC5313-C6](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.2.4_221209_S3000475000.zip) | 2022-12-09 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.2.4_221209_S3000475000.zip) |  |
+| 1.2.4 | Applied to: [AE-DC5313-C6](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.2.4_220629_S3000442948.zip) | 2022-12-09 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.2.4_220629_S3000442948.zip) |  |
 | 1.1.6 | Applied to: [AE-DC5313-C6](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.6_220920_S3000456100.zip) | 2022-09-20 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.6_220920_S3000456100.zip) |  |
 | 1.1.10 | Applied to: [AE-DC5313-C6](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/DashCam_AE_DC5313_C6_CN_STD_V1.1.10_build220223.zip) | 2022-02-23 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/DashCam_AE_DC5313_C6_CN_STD_V1.1.10_build220223.zip) |  |
 
@@ -270,7 +270,7 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 1.2.4 | Applied to: [AE-DC5313-C6PRO](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.2.4_221209_S3000475000.zip) | 2022-12-09 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.2.4_221209_S3000475000.zip) |  |
+| 1.2.4 | Applied to: [AE-DC5313-C6PRO](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.2.4_220629_S3000442948.zip) | 2022-12-09 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.2.4_220629_S3000442948.zip) |  |
 | 1.1.6 | Applied to: [AE-DC5313-C6PRO](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/DashCam_AE_DC5313_C6_EN_STD_V1.1.6_build211028.zip) | 2021-10-28 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/DashCam_AE_DC5313_C6_EN_STD_V1.1.6_build211028.zip) |  |
 | 1.1.3 | Applied to: [AE-DC5313-C6PRO](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/DashCam_AE_DC5313_C6_CN_STD_V1.1.3_build201023.zip) | 2020-10-23 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/DashCam_AE_DC5313_C6_CN_STD_V1.1.3_build201023.zip) |  |
 
@@ -324,7 +324,7 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 5.1.2 | Applied to: [AE-DI2032-G40(B)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.1.2_250102_S3000625549.zip)(EU) | 2025-01-02 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.1.2_250102_S3000625549.zip) |  |
+| 5.1.2 | Applied to: [AE-DI2032-G40(B)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.1.2_251024_S3000683492.zip)(EU) | 2025-01-02 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.1.2_251024_S3000683492.zip) |  |
 
 </details>
 
@@ -386,6 +386,70 @@ Below is the complete list of archived firmwares, organized by device model and 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 3.0.2 | Applied to: [AE-VC215I-ISF(M12)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V3.0.2_230315_S3000488384.zip)(2.8mm) | 2023-03-15 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V3.0.2_230315_S3000488384.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>AE-VC583I-ISF - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 3.0.1 | Applied to: [AE-VC583I-IS/P(H)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V3.0.1_230306_S3000485364.zip)(M12)(16mm) | 2023-03-06 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V3.0.1_230306_S3000485364.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-1005KI - UNKNOWN (2 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 1.3.4 | Applied to: [DS-1005KI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.3.4_S3000653240.zip) | 2020-25-06 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.3.4_S3000653240.zip) |  |
+| 1.3.1 | Applied to: [DS-1005KI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/4e0fc5d3-bfdf-4c83-8120-5498fed38183.zip) | 2017-10-12 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/4e0fc5d3-bfdf-4c83-8120-5498fed38183.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-1006KI - UNKNOWN (2 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 2.0.0 | Applied to: [DS-1006KI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V2.0.0_230822_S3000522028.zip) | 2023-08-22 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V2.0.0_230822_S3000522028.zip) |  |
+| 1.2.4 | Applied to: [DS-1006KI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.2.4_220629_S3000442948.zip) | 2022-06-29 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.2.4_220629_S3000442948.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-1100KI - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.1.2 | Applied to: [DS-1100KI(C)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.1.2_251024_S3000683492.zip) | 2025-10-24 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.1.2_251024_S3000683492.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-1105KI - UNKNOWN (3 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.1.2 | Applied to: [DS-1105KI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.1.2_251024_S3000683489.zip) | 2025-10-24 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.1.2_251024_S3000683489.zip) |  |
+| 4.6.0 | Applied to: [DS-1105KI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V4.6.0_230704_S3000509505.zip) | 2023-07-04 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V4.6.0_230704_S3000509505.zip) |  |
+| 1.1.0 | Applied to: [DS-1105KI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.0_220914_S3000453160.zip) | 2022-09-14 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.0_220914_S3000453160.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-1200KI - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 2.0.0 | Applied to: [DS-1200KI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V2.0.0_230822_S3000522029.zip) | 2023-08-22 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V2.0.0_230822_S3000522029.zip) |  |
 
 </details>
 

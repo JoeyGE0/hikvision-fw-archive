@@ -94,5 +94,29 @@
   "100024": {
     "model": "AE-VC215I-ISF",
     "hardware_version": "UNKNOWN"
+  },
+  "100025": {
+    "model": "AE-VC583I-ISF",
+    "hardware_version": "UNKNOWN"
+  },
+  "100026": {
+    "model": "DS-1005KI",
+    "hardware_version": "UNKNOWN"
+  },
+  "100027": {
+    "model": "DS-1006KI",
+    "hardware_version": "UNKNOWN"
+  },
+  "100028": {
+    "model": "DS-1100KI",
+    "hardware_version": "UNKNOWN"
+  },
+  "100029": {
+    "model": "DS-1105KI",
+    "hardware_version": "UNKNOWN"
+  },
+  "100030": {
+    "model": "DS-1200KI",
+    "hardware_version": "UNKNOWN"
   }
 }
