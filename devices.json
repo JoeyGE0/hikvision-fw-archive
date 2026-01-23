@@ -146,5 +146,33 @@
   "100037": {
     "model": "DS-2CD1027G2H-LIU",
     "hardware_version": "IPC_G0"
+  },
+  "100038": {
+    "model": "DS-2CD1027G2H-LIUF",
+    "hardware_version": "IPC_G0"
+  },
+  "100039": {
+    "model": "DS-2CD1027G3-LIU",
+    "hardware_version": "IPC_G0"
+  },
+  "100040": {
+    "model": "DS-2CD1043G0-I",
+    "hardware_version": "IPC_E7S"
+  },
+  "100041": {
+    "model": "DS-2CD1043G2-LIDUF",
+    "hardware_version": "IPC_G0"
+  },
+  "100042": {
+    "model": "DS-2CD1043G2-LIU",
+    "hardware_version": "IPC_G0"
+  },
+  "100043": {
+    "model": "DS-2CD1043G2-LIUF",
+    "hardware_version": "IPC_G0"
+  },
+  "100044": {
+    "model": "DS-2CD1047G2-L",
+    "hardware_version": "IPC_G0"
   }
 }
