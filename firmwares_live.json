@@ -1908,5 +1908,177 @@
     "notes": "",
     "is_beta": false,
     "source": "live"
+  },
+  "DS-2CD1167G3-LIU_IPC_G0_5.9.12": {
+    "device_id": 100067,
+    "model": "DS-2CD1167G3-LIU",
+    "hardware_version": "IPC_G0",
+    "version": "5.9.12",
+    "date": "2025-09-19",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202509/Firmware__V5.9.12_250919_S3000675616.zip",
+    "filename": "Firmware__V5.9.12_250919_S3000675616.zip",
+    "supported_models": [
+      "DS-2CD1167G3-LIUF",
+      "DS-2CD1167G3-LIU"
+    ],
+    "applied_to": "Applied to: DS-2CD1167G3-LIUF(2.8mm)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1167G3-LIU_IPC_G0_5.9.11": {
+    "device_id": 100067,
+    "model": "DS-2CD1167G3-LIU",
+    "hardware_version": "IPC_G0",
+    "version": "5.9.11",
+    "date": "2025-08-22",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202508/Firmware__V5.9.11_250822_S3000669952.zip",
+    "filename": "Firmware__V5.9.11_250822_S3000669952.zip",
+    "supported_models": [
+      "DS-2CD1167G3-LIUF",
+      "DS-2CD1167G3-LIU"
+    ],
+    "applied_to": "Applied to: DS-2CD1167G3-LIUF(2.8mm)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1183G0-I_IPC_G0_5.7.19": {
+    "device_id": 100068,
+    "model": "DS-2CD1183G0-I",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.19",
+    "date": "2024-12-07",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202412/Firmware__V5.7.19_241207_S3000618481.zip",
+    "filename": "Firmware__V5.7.19_241207_S3000618481.zip",
+    "supported_models": [
+      "DS-2CD1183G0-I"
+    ],
+    "applied_to": "Applied to: DS-2CD1183G0-I(2.8mm)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1183G0-I_IPC_G0_5.7.23": {
+    "device_id": 100068,
+    "model": "DS-2CD1183G0-I",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.23",
+    "date": "2024-10-08",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202410/Firmware__V5.7.23_241008_S3000605524.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
+    "supported_models": [
+      "DS-2CD1183G0-I"
+    ],
+    "applied_to": "Applied to: DS-2CD1183G0-I(2.8mm)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1183G0-I_IPC_G0_5.7.18": {
+    "device_id": 100068,
+    "model": "DS-2CD1183G0-I",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.18",
+    "date": "2024-08-26",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202409/Firmware__V5.7.18_240826_S3000597013.zip",
+    "filename": "Firmware__V5.7.18_240826_S3000597013.zip",
+    "supported_models": [
+      "DS-2CD1183G0-I"
+    ],
+    "applied_to": "Applied to: DS-2CD1183G0-I(2.8mm)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1183G0-IUF_IPC_G0_5.7.23": {
+    "device_id": 100069,
+    "model": "DS-2CD1183G0-IUF",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.23",
+    "date": "2024-10-08",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202410/Firmware__V5.7.23_241008_S3000605524.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
+    "supported_models": [
+      "DS-2CD1183G0-IUF"
+    ],
+    "applied_to": "Applied to: DS-2CD1183G0-IUF(2.8mm)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1183G0-IUF_IPC_G0_5.7.18": {
+    "device_id": 100069,
+    "model": "DS-2CD1183G0-IUF",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.18",
+    "date": "2024-08-26",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202409/Firmware__V5.7.18_240826_S3000597013.zip",
+    "filename": "Firmware__V5.7.18_240826_S3000597013.zip",
+    "supported_models": [
+      "DS-2CD1183G0-IUF"
+    ],
+    "applied_to": "Applied to: DS-2CD1183G0-IUF(2.8mm)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1323G0-IUF_IPC_G0_5.7.23": {
+    "device_id": 100070,
+    "model": "DS-2CD1323G0-IUF",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.23",
+    "date": "2024-12-11",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202505/Firmware__V5.7.23_241211_S3000620671.zip",
+    "filename": "Firmware__V5.7.23_241211_S3000620671.zip",
+    "supported_models": [
+      "DS-2CD1323G0-IUF"
+    ],
+    "applied_to": "Applied to: DS-2CD1323G0-IUF(2.8mm)(C)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1323G0E-I_IPC_G0_5.7.23": {
+    "device_id": 100071,
+    "model": "DS-2CD1323G0E-I",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.23",
+    "date": "2024-12-11",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202505/Firmware__V5.7.23_241211_S3000620671.zip",
+    "filename": "Firmware__V5.7.23_241211_S3000620671.zip",
+    "supported_models": [
+      "DS-2CD1323G0E-I"
+    ],
+    "applied_to": "Applied to: DS-2CD1323G0E-I(2.8mm)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1323G0E-I_IPC_G0_5.5.84": {
+    "device_id": 100071,
+    "model": "DS-2CD1323G0E-I",
+    "hardware_version": "IPC_G0",
+    "version": "5.5.84",
+    "date": "2021-01-04",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/c3afe62f-4071-4e50-a292-ded015321289.zip",
+    "filename": "c3afe62f-4071-4e50-a292-ded015321289.zip",
+    "supported_models": [
+      "DS-2CD1323G0E-I"
+    ],
+    "applied_to": "Applied to: DS-2CD1323G0E-I(2.8mm)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
   }
 }
