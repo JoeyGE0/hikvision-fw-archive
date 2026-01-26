@@ -198,3 +198,35 @@ def extract_models(text: str) -> List[str]:
             seen.add(base_model)
     
     return models
+
+
+def extract_release_notes_url(collapse_content) -> str:
+    """Extract release notes PDF URL from collapse content element.
+    
+    Looks for div.release-section and finds PDF links within it.
+    Returns the PDF URL if found, empty string otherwise.
+    """
+    if not collapse_content:
+        return ''
+    
+    try:
+        # Find release section
+        release_section = collapse_content.query_selector('div.release-section')
+        if not release_section:
+            return ''
+        
+        # Find all links in release section
+        release_links = release_section.query_selector_all('a[href]')
+        
+        for link in release_links:
+            href = link.get_attribute('href') or ''
+            link_text = link.inner_text().strip()
+            
+            # Check if it's a PDF link (ends with .pdf or contains 'release' in text/URL)
+            if href.endswith('.pdf') or 'release' in href.lower() or 'release' in link_text.lower():
+                return href
+        
+        return ''
+    except Exception:
+        # If anything fails, return empty string
+        return ''

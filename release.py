@@ -150,16 +150,24 @@ def generate_readme() -> str:
             supported_models = firmware.get('supported_models', [])
             is_beta = firmware.get('is_beta', False)
             
-            # Format download link - prefer GitHub release if filename exists
+            # Format download link - prefer download_url from JSON (stable) over building latest URL
             github_repo = "JoeyGE0/hikvision-fw-archive"
-            if filename:
-                # Link to latest release download (since makeLatest: true in workflow)
+            if download_url:
+                # Use the download_url from JSON (should be stable release URL or Hikvision URL)
+                firmware_download_url = download_url
+                # Check if it's a GitHub release URL to determine link style
+                if 'github.com' in download_url and '/releases/download/' in download_url:
+                    download_link = f"[📥 Download]({firmware_download_url})"
+                elif 'github.com' in download_url:
+                    # Fallback for any other GitHub URL format
+                    download_link = f"[📥 Download]({firmware_download_url})"
+                else:
+                    # Hikvision or other external URL
+                    download_link = f"[🔗 Link]({firmware_download_url})"
+            elif filename:
+                # No download_url but have filename - build latest URL as last resort
                 firmware_download_url = f"https://github.com/{github_repo}/releases/latest/download/{filename}"
                 download_link = f"[📥 Download]({firmware_download_url})"
-            elif download_url:
-                # Fallback to Hikvision URL
-                firmware_download_url = download_url
-                download_link = f"[🔗 Link]({download_url})"
             else:
                 firmware_download_url = ""
                 download_link = "—"
@@ -213,16 +221,22 @@ def generate_readme() -> str:
             # Format version
             version_link = version
             
+            # Format release notes URL if present
+            notes_display = notes
+            if notes and notes.startswith('http'):
+                # It's a URL - format as markdown link
+                notes_display = f"[📄 Release Notes]({notes})"
+            
             # Add beta warning
             if is_beta:
-                notes = f"⚠️ Beta firmware. {notes}".strip()
+                notes_display = f"⚠️ Beta firmware. {notes_display}".strip()
             
             # Escape pipe characters in content
             changes = changes.replace('|', '\\|')
-            notes = notes.replace('|', '\\|')
+            notes_display = notes_display.replace('|', '\\|')
             models_text = models_text.replace('|', '\\|')
             
-            section += f"| {version_link} | {models_text} | {date} | {download_link} | {notes} |\n"
+            section += f"| {version_link} | {models_text} | {date} | {download_link} | {notes_display} |\n"
             total_count += 1
         
         # Close the details tag

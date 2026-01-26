@@ -26,6 +26,7 @@ from common import (
     create_device_id,
     extract_applied_to,
     extract_models,
+    extract_release_notes_url,
     format_date,
     get_device_id,
     is_beta_firmware,
@@ -357,6 +358,9 @@ class HikvisionScraper:
                                                         # Extract "Applied to:" section (e.g., "Applied to: DS-1200KI camera")
                                                         applied_to_text = extract_applied_to(context_text)
                                                         
+                                                        # Extract release notes PDF URL from collapse content
+                                                        release_notes_url = extract_release_notes_url(collapse_content)
+                                                        
                                                         # Extract all supported models from context (might include variants)
                                                         supported_models = extract_models(context_text + ' ' + link_text)
                                                         # Ensure the primary model is included
@@ -392,7 +396,7 @@ class HikvisionScraper:
                                                                         'applied_to': applied_to_text,
                                                                         'date': '',
                                                                         'changes': '',
-                                                                        'notes': '',
+                                                                        'notes': release_notes_url,  # Store PDF URL in notes field
                                                                         'source': 'live',
                                                                         'already_exists': True
                                                                     })
@@ -480,7 +484,7 @@ class HikvisionScraper:
                                                                                 'applied_to': applied_to_text,
                                                                                 'date': '',
                                                                                 'changes': '',
-                                                                                'notes': '',
+                                                                                'notes': release_notes_url,  # Store PDF URL in notes field
                                                                                 'source': 'live',
                                                                                 'already_exists': True
                                                                             })
@@ -647,7 +651,7 @@ class HikvisionScraper:
                                                             'applied_to': applied_to_text,  # "Applied to:" text from page
                                                             'date': date_str,
                                                             'changes': '',
-                                                            'notes': '',
+                                                            'notes': release_notes_url,  # Store PDF URL in notes field
                                                             'source': 'live'
                                                         })
                                                     except Exception as link_err:
