@@ -346,5 +346,33 @@
   "100087": {
     "model": "DS-2CD1363G2P-LIUF",
     "hardware_version": "IPC_G0"
+  },
+  "100088": {
+    "model": "DS-2CD1367G2H-LIUF",
+    "hardware_version": "IPC_G0"
+  },
+  "100089": {
+    "model": "DS-2CD1367G2HP-LIUF",
+    "hardware_version": "IPC_G0"
+  },
+  "100090": {
+    "model": "DS-2CD1367G3-LIU",
+    "hardware_version": "IPC_G0"
+  },
+  "100091": {
+    "model": "DS-2CD1383G0-I",
+    "hardware_version": "IPC_G0"
+  },
+  "100092": {
+    "model": "DS-2CD1383G0-IUF",
+    "hardware_version": "IPC_G0"
+  },
+  "100093": {
+    "model": "DS-2CD1383G2P-LIUF",
+    "hardware_version": "IPC_G0"
+  },
+  "100094": {
+    "model": "DS-2CD1623G0-I",
+    "hardware_version": "IPC_G0"
   }
 }

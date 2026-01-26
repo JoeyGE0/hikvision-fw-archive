@@ -139,8 +139,8 @@ The scraper in `main.py` can always be improved:
 ## Status
 
 **Status:** ✅ SUCCESS  
-**Last Run:** 2026-01-26 05:50:29 UTC  
-**Firmwares Found:** 140  
+**Last Run:** 2026-01-26 08:33:20 UTC  
+**Firmwares Found:** 150  
 **New Firmwares:** 10  
 **Test Mode:** Disabled
 
@@ -152,7 +152,7 @@ The scraper in `main.py` can always be improved:
 
 Below is the complete list of archived firmwares, organized by device model and hardware version.
 
-**Total: 140**
+**Total: 150**
 
 
 
@@ -355,7 +355,7 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 5.8.1 | Applied to: [AE-MD5043-SD/GLF(EU-STD)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.10_250714_S3000661518.zip) | 2024-11-21 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.10_250714_S3000661518.zip) |  |
+| 5.8.1 | Applied to: [AE-MD5043-SD/GLF(EU-STD)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_251029_S3000683386.zip) | 2024-11-21 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_251029_S3000683386.zip) |  |
 
 </details>
 
@@ -365,7 +365,7 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 5.8.1 | Applied to: [AE-MH0408(1T)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.10_250714_S3000661518.zip)(RJ45) | 2024-11-21 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.10_250714_S3000661518.zip) |  |
+| 5.8.1 | Applied to: [AE-MH0408(1T)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_251029_S3000683386.zip)(RJ45) | 2024-11-21 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_251029_S3000683386.zip) |  |
 
 </details>
 
@@ -502,7 +502,7 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 5.8.21 | Applied to: [DS-2CD1023G2-LIUF/SL(2.8mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_251117_S3000687895.zip) | 2025-07-14 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_251117_S3000687895.zip) |  |
+| 5.8.21 | Applied to: [DS-2CD1023G2-LIUF/SL(2.8mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_250508_S3000647345.zip) | 2025-07-14 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_250508_S3000647345.zip) |  |
 
 </details>
 
@@ -522,7 +522,7 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 5.8.21 | Applied to: [DS-2CD1027G2H-LIUF(2.8mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_251117_S3000687895.zip) | 2025-07-14 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_251117_S3000687895.zip) |  |
+| 5.8.21 | Applied to: [DS-2CD1027G2H-LIUF(2.8mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_250508_S3000647345.zip) | 2025-07-14 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_250508_S3000647345.zip) |  |
 
 </details>
 
@@ -532,7 +532,7 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 5.8.21 | Applied to: [DS-2CD1027G2H-LIUF/SRB(2.8mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_251117_S3000687895.zip) | 2025-07-14 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_251117_S3000687895.zip) |  |
+| 5.8.21 | Applied to: [DS-2CD1027G2H-LIUF/SRB(2.8mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_250508_S3000647345.zip) | 2025-07-14 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_250508_S3000647345.zip) |  |
 
 </details>
 
@@ -636,7 +636,7 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 5.8.21 | Applied to: [DS-2CD1047G3H-LIU/SRB(2.8mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_251117_S3000687895.zip) | 2025-11-17 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_251117_S3000687895.zip) |  |
+| 5.8.21 | Applied to: [DS-2CD1047G3H-LIU/SRB(2.8mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_250508_S3000647345.zip) | 2025-11-17 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_250508_S3000647345.zip) |  |
 
 </details>
 
@@ -658,7 +658,7 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 5.8.21 | Applied to: [DS-2CD1067G2H-LIUF/SRB(2.8mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_251117_S3000687895.zip) | 2025-05-08 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_251117_S3000687895.zip) |  |
+| 5.8.21 | Applied to: [DS-2CD1067G2H-LIUF/SRB(2.8mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_250508_S3000647345.zip) | 2025-05-08 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_250508_S3000647345.zip) |  |
 
 </details>
 
@@ -740,7 +740,7 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 5.8.21 | Applied to: [DS-2CD1127G2H-LIU(2.8mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_251117_S3000687895.zip) | 2025-07-14 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_251117_S3000687895.zip) |  |
+| 5.8.21 | Applied to: [DS-2CD1127G2H-LIU(2.8mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_250508_S3000647345.zip) | 2025-07-14 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_250508_S3000647345.zip) |  |
 
 </details>
 
@@ -811,7 +811,7 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 5.8.21 | Applied to: [DS-2CD1147G3H-LIUF(2.8mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_251117_S3000687895.zip) | 2025-11-17 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_251117_S3000687895.zip) |  |
+| 5.8.21 | Applied to: [DS-2CD1147G3H-LIUF(2.8mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_250508_S3000647345.zip) | 2025-11-17 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_250508_S3000647345.zip) |  |
 
 </details>
 
@@ -898,7 +898,7 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 5.8.21 | Applied to: [DS-2CD1323G2-LIUF/SL(2.8mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_251117_S3000687895.zip) | 2025-07-14 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_251117_S3000687895.zip) |  |
+| 5.8.21 | Applied to: [DS-2CD1323G2-LIUF/SL(2.8mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_250508_S3000647345.zip) | 2025-07-14 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_250508_S3000647345.zip) |  |
 
 </details>
 
@@ -918,7 +918,7 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 5.8.21 | Applied to: [DS-2CD1327G2H-LIUF(2.8mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_251117_S3000687895.zip) | 2025-07-14 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_251117_S3000687895.zip) |  |
+| 5.8.21 | Applied to: [DS-2CD1327G2H-LIUF(2.8mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_250508_S3000647345.zip) | 2025-07-14 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_250508_S3000647345.zip) |  |
 
 </details>
 
@@ -928,7 +928,7 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 5.8.21 | Applied to: [DS-2CD1327G2H-LIUF/SL(2.8mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_251117_S3000687895.zip) | 2025-07-14 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_251117_S3000687895.zip) |  |
+| 5.8.21 | Applied to: [DS-2CD1327G2H-LIUF/SL(2.8mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_250508_S3000647345.zip) | 2025-07-14 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_250508_S3000647345.zip) |  |
 
 </details>
 
@@ -1022,7 +1022,7 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 5.8.21 | Applied to: [DS-2CD1347G3H-LIU(2.8mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_251117_S3000687895.zip) | 2025-11-17 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_251117_S3000687895.zip) |  |
+| 5.8.21 | Applied to: [DS-2CD1347G3H-LIU(2.8mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_250508_S3000647345.zip) | 2025-11-17 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_250508_S3000647345.zip) |  |
 
 </details>
 
@@ -1043,6 +1043,79 @@ Below is the complete list of archived firmwares, organized by device model and 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.8.11 | Applied to: [DS-2CD1363G2P-LIUF/SL(2.8mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_251029_S3000683386.zip) | 2025-10-29 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_251029_S3000683386.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD1367G2H-LIUF - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.21 | Applied to: [DS-2CD1367G2H-LIUF/SRB(2.8mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_250508_S3000647345.zip) | 2025-05-08 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.21_250508_S3000647345.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD1367G2HP-LIUF - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.11 | Applied to: [DS-2CD1367G2HP-LIUF/SL(2.8mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_251029_S3000683386.zip) | 2025-10-29 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_251029_S3000683386.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD1367G3-LIU - IPC_G0 (2 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.9.12 | Applied to: [DS-2CD1367G3-LIU/SRB(2.8mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.12_250919_S3000675616.zip) | 2025-09-19 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.12_250919_S3000675616.zip) |  |
+| 5.9.11 | Applied to: [DS-2CD1367G3-LIU/SRB(2.8mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.11_250822_S3000669952.zip) | 2025-08-22 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.11_250822_S3000669952.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD1383G0-I - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.23 | Applied to: [DS-2CD1383G0-I(2.8mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.23_241008_S3000605524.zip)(C) | 2024-10-08 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.23_241008_S3000605524.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD1383G0-IUF - IPC_G0 (2 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.23 | Applied to: [DS-2CD1383G0-IUF(2.8mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.23_241008_S3000605524.zip) | 2024-10-08 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.23_241008_S3000605524.zip) |  |
+| 5.7.18 | Applied to: [DS-2CD1383G0-IUF(2.8mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.18_240826_S3000597013.zip) | 2024-08-26 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.18_240826_S3000597013.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD1383G2P-LIUF - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.11 | Applied to: [DS-2CD1383G2P-LIUF/SL(2mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_251029_S3000683386.zip) | 2025-10-29 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_251029_S3000683386.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD1623G0-I - IPC_G0 (2 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.23 | Applied to: [DS-2CD1623G0-IZ(2.8-12mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.23_241211_S3000620665.zip) | 2024-12-11 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.23_241211_S3000620665.zip) |  |
+| 5.5.800 | Applied to: [DS-2CD1623G0-IZ(2.8-12mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/5d0fc94c-b0e2-48ab-9a55-9c49876b7081.zip) | 2021-06-28 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/5d0fc94c-b0e2-48ab-9a55-9c49876b7081.zip) |  |
 
 </details>
 
