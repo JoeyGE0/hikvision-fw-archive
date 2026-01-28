@@ -1075,7 +1075,7 @@
     "version": "5.7.23",
     "date": "2024-12-11",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202505/Firmware__V5.7.23_241211_S3000620671.zip",
-    "filename": "Firmware__V5.7.23_241008_S3000605507.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
     "supported_models": [
       "DS-2CD1023G0-IUF"
     ],
@@ -1092,7 +1092,7 @@
     "version": "5.7.23",
     "date": "2024-12-11",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202505/Firmware__V5.7.23_241211_S3000620671.zip",
-    "filename": "Firmware__V5.7.23_241008_S3000605507.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
     "supported_models": [
       "DS-2CD1023G0E-I"
     ],
@@ -1161,7 +1161,7 @@
     "version": "5.8.21",
     "date": "2025-07-14",
     "download_url": "https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.21_250714_S3000661481.zip",
-    "filename": "Firmware__V5.8.21_251117_S3000687895.zip",
+    "filename": "Firmware__V5.8.21_250714_S3000661481.zip",
     "supported_models": [
       "DS-2CD1023G2-LIUF"
     ],
@@ -1196,7 +1196,7 @@
     "version": "5.8.21",
     "date": "2025-07-14",
     "download_url": "https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.21_250714_S3000661481.zip",
-    "filename": "Firmware__V5.8.21_251117_S3000687895.zip",
+    "filename": "Firmware__V5.8.21_250714_S3000661481.zip",
     "supported_models": [
       "DS-2CD1027G2H-LIUF",
       "DS-2CD1027G2H-LIU"
@@ -1214,7 +1214,7 @@
     "version": "5.8.21",
     "date": "2025-07-14",
     "download_url": "https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.21_250714_S3000661481.zip",
-    "filename": "Firmware__V5.8.21_251117_S3000687895.zip",
+    "filename": "Firmware__V5.8.21_250714_S3000661481.zip",
     "supported_models": [
       "DS-2CD1027G2H-LIUF"
     ],
@@ -1267,7 +1267,7 @@
     "version": "5.7.23",
     "date": "2024-12-11",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202505/Firmware__V5.7.23_241211_S3000620671.zip",
-    "filename": "Firmware__V5.7.23_241008_S3000605507.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
     "supported_models": [
       "DS-2CD1043G0-IUF",
       "DS-2CD1043G0-I"
@@ -1462,7 +1462,7 @@
     "version": "5.8.21",
     "date": "2025-11-17",
     "download_url": "https://assets.hikvision.com/prd/normal/all/files/202512/Firmware__V5.8.21_251117_S3000687895.zip",
-    "filename": "Firmware__V5.8.21_251117_S3000687895.zip",
+    "filename": "Firmware__V5.8.21_250714_S3000661481.zip",
     "supported_models": [
       "DS-2CD1047G3H-LIU",
       "DS-2CD1047G3H-LIUF"
@@ -1480,7 +1480,7 @@
     "version": "5.7.23",
     "date": "2024-10-08",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202410/Firmware__V5.7.23_241008_S3000605524.zip",
-    "filename": "Firmware__V5.7.23_241008_S3000605507.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
     "supported_models": [
       "DS-2CD1053G0-I"
     ],
@@ -1531,7 +1531,7 @@
     "version": "5.8.21",
     "date": "2025-05-08",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202505/Firmware__V5.8.21_250508_S3000647345.zip",
-    "filename": "Firmware__V5.8.21_251117_S3000687895.zip",
+    "filename": "Firmware__V5.8.21_250714_S3000661481.zip",
     "supported_models": [
       "DS-2CD1067G2H-LIUF"
     ],
@@ -1584,7 +1584,7 @@
     "version": "5.7.23",
     "date": "2024-10-08",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202410/Firmware__V5.7.23_241008_S3000605524.zip",
-    "filename": "Firmware__V5.7.23_241008_S3000605507.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
     "supported_models": [
       "DS-2CD1083G0-I"
     ],
@@ -1601,7 +1601,7 @@
     "version": "5.7.23",
     "date": "2024-10-08",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202410/Firmware__V5.7.23_241008_S3000605524.zip",
-    "filename": "Firmware__V5.7.23_241008_S3000605507.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
     "supported_models": [
       "DS-2CD1083G0-IUF"
     ],
@@ -1618,7 +1618,7 @@
     "version": "5.7.23",
     "date": "2024-12-11",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202505/Firmware__V5.7.23_241211_S3000620671.zip",
-    "filename": "Firmware__V5.7.23_241008_S3000605507.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
     "supported_models": [
       "DS-2CD1123G0-IUF"
     ],
@@ -1635,7 +1635,7 @@
     "version": "5.7.23",
     "date": "2024-12-11",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202505/Firmware__V5.7.23_241211_S3000620671.zip",
-    "filename": "Firmware__V5.7.23_241008_S3000605507.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
     "supported_models": [
       "DS-2CD1123G0E-I"
     ],
@@ -1705,7 +1705,7 @@
     "version": "5.8.21",
     "date": "2025-07-14",
     "download_url": "https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.21_250714_S3000661481.zip",
-    "filename": "Firmware__V5.8.21_251117_S3000687895.zip",
+    "filename": "Firmware__V5.8.21_250714_S3000661481.zip",
     "supported_models": [
       "DS-2CD1127G2H-LIU",
       "DS-2CD1127G2H-LIUF"
@@ -1741,7 +1741,7 @@
     "version": "5.7.23",
     "date": "2024-12-11",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202505/Firmware__V5.7.23_241211_S3000620671.zip",
-    "filename": "Firmware__V5.7.23_241008_S3000605507.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
     "supported_models": [
       "DS-2CD1143G0-I"
     ],
@@ -1847,7 +1847,7 @@
     "version": "5.8.21",
     "date": "2025-11-17",
     "download_url": "https://assets.hikvision.com/prd/normal/all/files/202512/Firmware__V5.8.21_251117_S3000687895.zip",
-    "filename": "Firmware__V5.8.21_251117_S3000687895.zip",
+    "filename": "Firmware__V5.8.21_250714_S3000661481.zip",
     "supported_models": [
       "DS-2CD1147G3H-LIUF",
       "DS-2CD1147G3H-LIU"
@@ -1865,7 +1865,7 @@
     "version": "5.7.23",
     "date": "2024-10-08",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202410/Firmware__V5.7.23_241008_S3000605524.zip",
-    "filename": "Firmware__V5.7.23_241008_S3000605507.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
     "supported_models": [
       "DS-2CD1153G0-I"
     ],
@@ -1969,7 +1969,7 @@
     "version": "5.7.23",
     "date": "2024-10-08",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202410/Firmware__V5.7.23_241008_S3000605524.zip",
-    "filename": "Firmware__V5.7.23_241008_S3000605507.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
     "supported_models": [
       "DS-2CD1183G0-I"
     ],
@@ -2003,7 +2003,7 @@
     "version": "5.7.23",
     "date": "2024-10-08",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202410/Firmware__V5.7.23_241008_S3000605524.zip",
-    "filename": "Firmware__V5.7.23_241008_S3000605507.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
     "supported_models": [
       "DS-2CD1183G0-IUF"
     ],
@@ -2037,7 +2037,7 @@
     "version": "5.7.23",
     "date": "2024-12-11",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202505/Firmware__V5.7.23_241211_S3000620671.zip",
-    "filename": "Firmware__V5.7.23_241008_S3000605507.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
     "supported_models": [
       "DS-2CD1323G0-IUF"
     ],
@@ -2054,7 +2054,7 @@
     "version": "5.7.23",
     "date": "2024-12-11",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202505/Firmware__V5.7.23_241211_S3000620671.zip",
-    "filename": "Firmware__V5.7.23_241008_S3000605507.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
     "supported_models": [
       "DS-2CD1323G0E-I"
     ],
@@ -2106,7 +2106,7 @@
     "version": "5.8.21",
     "date": "2025-07-14",
     "download_url": "https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.21_250714_S3000661481.zip",
-    "filename": "Firmware__V5.8.21_251117_S3000687895.zip",
+    "filename": "Firmware__V5.8.21_250714_S3000661481.zip",
     "supported_models": [
       "DS-2CD1323G2-LIUF"
     ],
@@ -2141,7 +2141,7 @@
     "version": "5.8.21",
     "date": "2025-07-14",
     "download_url": "https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.21_250714_S3000661481.zip",
-    "filename": "Firmware__V5.8.21_251117_S3000687895.zip",
+    "filename": "Firmware__V5.8.21_250714_S3000661481.zip",
     "supported_models": [
       "DS-2CD1327G2H-LIUF",
       "DS-2CD1327G2H-LIU"
@@ -2159,7 +2159,7 @@
     "version": "5.8.21",
     "date": "2025-07-14",
     "download_url": "https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.21_250714_S3000661481.zip",
-    "filename": "Firmware__V5.8.21_251117_S3000687895.zip",
+    "filename": "Firmware__V5.8.21_250714_S3000661481.zip",
     "supported_models": [
       "DS-2CD1327G2H-LIUF"
     ],
@@ -2212,7 +2212,7 @@
     "version": "5.7.23",
     "date": "2024-12-11",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202505/Firmware__V5.7.23_241211_S3000620671.zip",
-    "filename": "Firmware__V5.7.23_241008_S3000605507.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
     "supported_models": [
       "DS-2CD1343G0-I",
       "DS-2CD1343G0-IUF"
@@ -2390,7 +2390,7 @@
     "version": "5.8.21",
     "date": "2025-11-17",
     "download_url": "https://assets.hikvision.com/prd/normal/all/files/202512/Firmware__V5.8.21_251117_S3000687895.zip",
-    "filename": "Firmware__V5.8.21_251117_S3000687895.zip",
+    "filename": "Firmware__V5.8.21_250714_S3000661481.zip",
     "supported_models": [
       "DS-2CD1347G3H-LIU",
       "DS-2CD1347G3H-LIUF"
@@ -2408,7 +2408,7 @@
     "version": "5.7.23",
     "date": "2024-10-08",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202410/Firmware__V5.7.23_241008_S3000605524.zip",
-    "filename": "Firmware__V5.7.23_241008_S3000605507.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
     "supported_models": [
       "DS-2CD1353G0-I"
     ],
@@ -2442,7 +2442,7 @@
     "version": "5.8.21",
     "date": "2025-05-08",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202505/Firmware__V5.8.21_250508_S3000647345.zip",
-    "filename": "Firmware__V5.8.21_251117_S3000687895.zip",
+    "filename": "Firmware__V5.8.21_250714_S3000661481.zip",
     "supported_models": [
       "DS-2CD1367G2H-LIUF"
     ],
@@ -2512,7 +2512,7 @@
     "version": "5.7.23",
     "date": "2024-10-08",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202410/Firmware__V5.7.23_241008_S3000605524.zip",
-    "filename": "Firmware__V5.7.23_241008_S3000605507.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
     "supported_models": [
       "DS-2CD1383G0-I"
     ],
@@ -2529,7 +2529,7 @@
     "version": "5.7.23",
     "date": "2024-10-08",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202410/Firmware__V5.7.23_241008_S3000605524.zip",
-    "filename": "Firmware__V5.7.23_241008_S3000605507.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
     "supported_models": [
       "DS-2CD1383G0-IUF"
     ],
@@ -2580,7 +2580,7 @@
     "version": "5.7.23",
     "date": "2024-12-11",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202505/Firmware__V5.7.23_241211_S3000620665.zip",
-    "filename": "Firmware__V5.7.23_241008_S3000605507.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
     "supported_models": [
       "DS-2CD1623G0-I",
       "DS-2CD1623G0-IZ",
@@ -2636,7 +2636,7 @@
     "version": "5.8.21",
     "date": "2025-07-14",
     "download_url": "https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.21_250714_S3000661481.zip",
-    "filename": "Firmware__V5.8.21_251117_S3000687895.zip",
+    "filename": "Firmware__V5.8.21_250714_S3000661481.zip",
     "supported_models": [
       "DS-2CD1623G2-LIU",
       "DS-2CD1B23G2-LIU",
@@ -2674,7 +2674,7 @@
     "version": "5.8.21",
     "date": "2025-07-14",
     "download_url": "https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.21_250714_S3000661481.zip",
-    "filename": "Firmware__V5.8.21_251117_S3000687895.zip",
+    "filename": "Firmware__V5.8.21_250714_S3000661481.zip",
     "supported_models": [
       "DS-2CD1627G2H-LIU",
       "DS-2CD1B27G2H-LIUF",
@@ -2693,7 +2693,7 @@
     "version": "5.7.23",
     "date": "2024-12-11",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202505/Firmware__V5.7.23_241211_S3000620665.zip",
-    "filename": "Firmware__V5.7.23_241008_S3000605507.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
     "supported_models": [
       "DS-2CD1643G0-IZ",
       "DS-2CD1643G0-I",
@@ -2806,7 +2806,7 @@
     "version": "5.7.23",
     "date": "2024-10-08",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202410/Firmware__V5.7.23_241008_S3000605507.zip",
-    "filename": "Firmware__V5.7.23_241008_S3000605507.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
     "supported_models": [
       "DS-2CD1653G0-I",
       "DS-2CD1653G0-IZ",
@@ -2825,7 +2825,7 @@
     "version": "5.7.23",
     "date": "2024-12-11",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202505/Firmware__V5.7.23_241211_S3000620665.zip",
-    "filename": "Firmware__V5.7.23_241008_S3000605507.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
     "supported_models": [
       "DS-2CD1723G0-I",
       "DS-2CD1723G0-IZ",
@@ -2900,7 +2900,7 @@
     "version": "5.7.23",
     "date": "2024-12-11",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202505/Firmware__V5.7.23_241211_S3000620665.zip",
-    "filename": "Firmware__V5.7.23_241008_S3000605507.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
     "supported_models": [
       "DS-2CD1743G0-I",
       "DS-2CD1743G0-IZ",
@@ -2975,7 +2975,7 @@
     "version": "5.7.23",
     "date": "2024-10-08",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202410/Firmware__V5.7.23_241008_S3000605507.zip",
-    "filename": "Firmware__V5.7.23_241008_S3000605507.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
     "supported_models": [
       "DS-2CD1753G0-I",
       "DS-2CD1753G0-IZ",
@@ -2994,7 +2994,7 @@
     "version": "5.7.23",
     "date": "2024-10-08",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202410/Firmware__V5.7.23_241008_S3000605507.zip",
-    "filename": "Firmware__V5.7.23_241008_S3000605507.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
     "supported_models": [
       "DS-2CD1A23G0-IZ",
       "DS-2CD1A23G0-IZU"
@@ -3012,7 +3012,7 @@
     "version": "5.7.23",
     "date": "2024-10-08",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202410/Firmware__V5.7.23_241008_S3000605507.zip",
-    "filename": "Firmware__V5.7.23_241008_S3000605507.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
     "supported_models": [
       "DS-2CD1A43G0-IZ",
       "DS-2CD1A43G0-IZU"
@@ -3030,7 +3030,7 @@
     "version": "5.8.21",
     "date": "2025-07-14",
     "download_url": "https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.21_250714_S3000661481.zip",
-    "filename": "Firmware__V5.8.21_251117_S3000687895.zip",
+    "filename": "Firmware__V5.8.21_250714_S3000661481.zip",
     "supported_models": [
       "DS-2CD1B23G2-LIUF"
     ],
@@ -3047,7 +3047,7 @@
     "version": "5.8.21",
     "date": "2025-07-14",
     "download_url": "https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.21_250714_S3000661481.zip",
-    "filename": "Firmware__V5.8.21_251117_S3000687895.zip",
+    "filename": "Firmware__V5.8.21_250714_S3000661481.zip",
     "supported_models": [
       "DS-2CD1B27G2H-LIUF"
     ],
@@ -3206,7 +3206,7 @@
     "version": "5.8.21",
     "date": "2025-11-17",
     "download_url": "https://assets.hikvision.com/prd/normal/all/files/202512/Firmware__V5.8.21_251117_S3000687895.zip",
-    "filename": "Firmware__V5.8.21_251117_S3000687895.zip",
+    "filename": "Firmware__V5.8.21_250714_S3000661481.zip",
     "supported_models": [
       "DS-2CD1B47G3H-LIU",
       "DS-2CD1B47G3H-LIUF"
@@ -3278,7 +3278,7 @@
     "version": "5.7.23",
     "date": "2024-12-11",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202505/Firmware__V5.7.23_241211_S3000620665.zip",
-    "filename": "Firmware__V5.7.23_241211_S3000620665.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
     "supported_models": [
       "DS-2CD1H43G0-IZ",
       "DS-2CD1H43G0-IZS"
@@ -3314,7 +3314,7 @@
     "version": "5.7.23",
     "date": "2024-10-08",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202410/Firmware__V5.7.23_241008_S3000605507.zip",
-    "filename": "Firmware__V5.7.23_241008_S3000605507.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
     "supported_models": [
       "DS-2CD1H53G0-IZ",
       "DS-2CD1H53G0-IZS"
@@ -3340,6 +3340,183 @@
     "applied_to": "Applied to: DS-2CD1P23G2-IUF(2.8mm)",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202508/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-E10.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1P27G2-L_IPC_G0_5.8.10": {
+    "device_id": 100127,
+    "model": "DS-2CD1P27G2-L",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.10",
+    "date": "2025-07-14",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.10_250714_S3000661509.zip",
+    "filename": "Firmware__V5.8.10_250714_S3000661509.zip",
+    "supported_models": [
+      "DS-2CD1P27G2-LUF",
+      "DS-2CD1P27G2-L"
+    ],
+    "applied_to": "Applied to: DS-2CD1P27G2-LUF(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202508/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-E10.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1P43G2-I_IPC_G0_5.8.10": {
+    "device_id": 100128,
+    "model": "DS-2CD1P43G2-I",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.10",
+    "date": "2025-07-14",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.10_250714_S3000661509.zip",
+    "filename": "Firmware__V5.8.10_250714_S3000661509.zip",
+    "supported_models": [
+      "DS-2CD1P43G2-I",
+      "DS-2CD1P43G2-IUF"
+    ],
+    "applied_to": "Applied to: DS-2CD1P43G2-I(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202508/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-E10.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1P47G2-L_IPC_G0_5.8.10": {
+    "device_id": 100129,
+    "model": "DS-2CD1P47G2-L",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.10",
+    "date": "2025-07-14",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.10_250714_S3000661509.zip",
+    "filename": "Firmware__V5.8.10_250714_S3000661509.zip",
+    "supported_models": [
+      "DS-2CD1P47G2-L",
+      "DS-2CD1P47G2-LUF"
+    ],
+    "applied_to": "Applied to: DS-2CD1P47G2-L(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202508/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-E10.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1T23G0-I_IPC_G0_5.7.23": {
+    "device_id": 100130,
+    "model": "DS-2CD1T23G0-I",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.23",
+    "date": "2024-10-08",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202410/Firmware__V5.7.23_241008_S3000605524.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
+    "supported_models": [
+      "DS-2CD1T23G0-I"
+    ],
+    "applied_to": "Applied to: DS-2CD1T23G0-I(4mm)(C)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202507/releasenote%5CNetwork_Camera-V5.7.23_SP_Release_Note-E8.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1T23G2-LIU_IPC_G0_5.8.10": {
+    "device_id": 100131,
+    "model": "DS-2CD1T23G2-LIU",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.10",
+    "date": "2024-12-05",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202412/Firmware__V5.8.10_241205_S3000618834.zip",
+    "filename": "Firmware__V5.8.10_241205_S3000618834.zip",
+    "supported_models": [
+      "DS-2CD1T23G2-LIUF",
+      "DS-2CD1T23G2-LIU"
+    ],
+    "applied_to": "Applied to: DS-2CD1T23G2-LIUF(4mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202507/releasenote%5CNetwork_Camera-V5.8.10_SP2_Release_Note-E9.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1T23G2-LIUF_IPC_G0_5.8.21": {
+    "device_id": 100132,
+    "model": "DS-2CD1T23G2-LIUF",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.21",
+    "date": "2025-07-14",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.21_250714_S3000661481.zip",
+    "filename": "Firmware__V5.8.21_250714_S3000661481.zip",
+    "supported_models": [
+      "DS-2CD1T23G2-LIUF"
+    ],
+    "applied_to": "Applied to: DS-2CD1T23G2-LIUF/SL(4mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202508/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-E9.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1T27G2-L_IPC_G0_5.8.10": {
+    "device_id": 100133,
+    "model": "DS-2CD1T27G2-L",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.10",
+    "date": "2024-12-05",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202412/Firmware__V5.8.10_241205_S3000618834.zip",
+    "filename": "Firmware__V5.8.10_241205_S3000618834.zip",
+    "supported_models": [
+      "DS-2CD1T27G2-L",
+      "DS-2CD1T27G2-LUF"
+    ],
+    "applied_to": "Applied to: DS-2CD1T27G2-L(4mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202507/releasenote%5CNetwork_Camera-V5.8.10_SP2_Release_Note-E9.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1T27G2H-LIU_IPC_G0_5.8.21": {
+    "device_id": 100134,
+    "model": "DS-2CD1T27G2H-LIU",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.21",
+    "date": "2025-07-14",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.21_250714_S3000661481.zip",
+    "filename": "Firmware__V5.8.21_250714_S3000661481.zip",
+    "supported_models": [
+      "DS-2CD1T27G2H-LIU",
+      "DS-2CD1T27G2H-LIUF"
+    ],
+    "applied_to": "Applied to: DS-2CD1T27G2H-LIU(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202508/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-E9.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1T27G2H-LIUF_IPC_G0_5.8.21": {
+    "device_id": 100135,
+    "model": "DS-2CD1T27G2H-LIUF",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.21",
+    "date": "2025-07-14",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.21_250714_S3000661481.zip",
+    "filename": "Firmware__V5.8.21_250714_S3000661481.zip",
+    "supported_models": [
+      "DS-2CD1T27G2H-LIUF"
+    ],
+    "applied_to": "Applied to: DS-2CD1T27G2H-LIUF/SL(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202508/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-E9.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1T27G3-LIU_IPC_G0_5.9.12": {
+    "device_id": 100136,
+    "model": "DS-2CD1T27G3-LIU",
+    "hardware_version": "IPC_G0",
+    "version": "5.9.12",
+    "date": "2025-09-19",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202509/Firmware__V5.9.12_250919_S3000675616.zip",
+    "filename": "Firmware__V5.9.12_250919_S3000675616.zip",
+    "supported_models": [
+      "DS-2CD1T27G3-LIU",
+      "DS-2CD1T27G3-LIUF"
+    ],
+    "applied_to": "Applied to: DS-2CD1T27G3-LIU/SRB(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202511/releasenote%5CNetwork_Camera-V5.9.12_250919_Release_Note-IPCE_E_E15.pdf",
     "is_beta": false,
     "source": "live"
   }
