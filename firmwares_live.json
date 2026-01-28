@@ -3421,7 +3421,7 @@
     "version": "5.8.10",
     "date": "2024-12-05",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202412/Firmware__V5.8.10_241205_S3000618834.zip",
-    "filename": "Firmware__V5.8.10_241205_S3000618834.zip",
+    "filename": "Firmware__V5.8.10_250714_S3000661509.zip",
     "supported_models": [
       "DS-2CD1T23G2-LIUF",
       "DS-2CD1T23G2-LIU"
@@ -3456,7 +3456,7 @@
     "version": "5.8.10",
     "date": "2024-12-05",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202412/Firmware__V5.8.10_241205_S3000618834.zip",
-    "filename": "Firmware__V5.8.10_241205_S3000618834.zip",
+    "filename": "Firmware__V5.8.10_250714_S3000661509.zip",
     "supported_models": [
       "DS-2CD1T27G2-L",
       "DS-2CD1T27G2-LUF"
@@ -3515,6 +3515,183 @@
       "DS-2CD1T27G3-LIUF"
     ],
     "applied_to": "Applied to: DS-2CD1T27G3-LIU/SRB(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202511/releasenote%5CNetwork_Camera-V5.9.12_250919_Release_Note-IPCE_E_E15.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1T27G3-LIU_IPC_G0_5.9.11": {
+    "device_id": 100136,
+    "model": "DS-2CD1T27G3-LIU",
+    "hardware_version": "IPC_G0",
+    "version": "5.9.11",
+    "date": "2025-08-22",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202508/Firmware__V5.9.11_250822_S3000669952.zip",
+    "filename": "Firmware__V5.9.11_250822_S3000669952.zip",
+    "supported_models": [
+      "DS-2CD1T27G3-LIU",
+      "DS-2CD1T27G3-LIUF"
+    ],
+    "applied_to": "Applied to: DS-2CD1T27G3-LIU/SRB(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202511/releasenote%5CNetwork_Camera-V5.9.12_250919_Release_Note-IPCE_E_E15.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1T27G3-LIU_IPC_G0_5.9.13": {
+    "device_id": 100136,
+    "model": "DS-2CD1T27G3-LIU",
+    "hardware_version": "IPC_G0",
+    "version": "5.9.13",
+    "date": "2025-11-24",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202512/Firmware__V5.9.13_251124_S3000688200.zip",
+    "filename": "Firmware__V5.9.13_251124_S3000688200.zip",
+    "supported_models": [
+      "DS-2CD1T27G3-LIU",
+      "DS-2CD1T27G3-LIUF"
+    ],
+    "applied_to": "Applied to: DS-2CD1T27G3-LIU/LSRB(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.9.13_251124_Release_Note-IPCE_E_E15.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1T43G0-I_IPC_G0_5.7.23": {
+    "device_id": 100137,
+    "model": "DS-2CD1T43G0-I",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.23",
+    "date": "2024-10-08",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202410/Firmware__V5.7.23_241008_S3000605524.zip",
+    "filename": "Firmware__V5.7.23_241008_S3000605524.zip",
+    "supported_models": [
+      "DS-2CD1T43G0-I"
+    ],
+    "applied_to": "Applied to: DS-2CD1T43G0-I(4mm)(C)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202507/releasenote%5CNetwork_Camera-V5.7.23_SP_Release_Note-E8.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1T43G2-LIU_IPC_G0_5.8.10": {
+    "device_id": 100138,
+    "model": "DS-2CD1T43G2-LIU",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.10",
+    "date": "2025-07-14",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.10_250714_S3000661509.zip",
+    "filename": "Firmware__V5.8.10_250714_S3000661509.zip",
+    "supported_models": [
+      "DS-2CD1T43G2-LIUF",
+      "DS-2CD1T43G2-LIU"
+    ],
+    "applied_to": "Applied to: DS-2CD1T43G2-LIUF(4mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202508/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-E10.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1T43G2-LIUF_IPC_G0_5.8.10": {
+    "device_id": 100139,
+    "model": "DS-2CD1T43G2-LIUF",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.10",
+    "date": "2025-07-14",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.10_250714_S3000661518.zip",
+    "filename": "Firmware__V5.8.10_250714_S3000661518.zip",
+    "supported_models": [
+      "DS-2CD1T43G2-LIUF"
+    ],
+    "applied_to": "Applied to: DS-2CD1T43G2-LIUF/SL(4mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202508/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-E10.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1T47G2-L_IPC_G0_5.8.10": {
+    "device_id": 100140,
+    "model": "DS-2CD1T47G2-L",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.10",
+    "date": "2025-07-14",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.10_250714_S3000661509.zip",
+    "filename": "Firmware__V5.8.10_250714_S3000661509.zip",
+    "supported_models": [
+      "DS-2CD1T47G2-LUF",
+      "DS-2CD1T47G2-L"
+    ],
+    "applied_to": "Applied to: DS-2CD1T47G2-LUF(4mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202508/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-E10.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1T47G2H-LIU_IPC_G0_5.8.10": {
+    "device_id": 100141,
+    "model": "DS-2CD1T47G2H-LIU",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.10",
+    "date": "2025-07-14",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.10_250714_S3000661518.zip",
+    "filename": "Firmware__V5.8.10_250714_S3000661518.zip",
+    "supported_models": [
+      "DS-2CD1T47G2H-LIU",
+      "DS-2CD1T47G2H-LIUF"
+    ],
+    "applied_to": "Applied to: DS-2CD1T47G2H-LIU(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202508/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-E10.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1T47G2H-LIUF_IPC_G0_5.8.10": {
+    "device_id": 100142,
+    "model": "DS-2CD1T47G2H-LIUF",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.10",
+    "date": "2025-07-14",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.10_250714_S3000661518.zip",
+    "filename": "Firmware__V5.8.10_250714_S3000661518.zip",
+    "supported_models": [
+      "DS-2CD1T47G2H-LIUF"
+    ],
+    "applied_to": "Applied to: DS-2CD1T47G2H-LIUF/SRB(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202508/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-E10.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1T47G3-LIU_IPC_G0_5.9.12": {
+    "device_id": 100143,
+    "model": "DS-2CD1T47G3-LIU",
+    "hardware_version": "IPC_G0",
+    "version": "5.9.12",
+    "date": "2025-09-19",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202509/Firmware__V5.9.12_250919_S3000675616.zip",
+    "filename": "Firmware__V5.9.12_250919_S3000675616.zip",
+    "supported_models": [
+      "DS-2CD1T47G3-LIU",
+      "DS-2CD1T47G3-LIUF"
+    ],
+    "applied_to": "Applied to: DS-2CD1T47G3-LIU/SRB(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202511/releasenote%5CNetwork_Camera-V5.9.12_250919_Release_Note-IPCE_E_E15.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1T47G3-LIU_IPC_G0_5.9.11": {
+    "device_id": 100143,
+    "model": "DS-2CD1T47G3-LIU",
+    "hardware_version": "IPC_G0",
+    "version": "5.9.11",
+    "date": "2025-08-22",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202508/Firmware__V5.9.11_250822_S3000669952.zip",
+    "filename": "Firmware__V5.9.11_250822_S3000669952.zip",
+    "supported_models": [
+      "DS-2CD1T47G3-LIU",
+      "DS-2CD1T47G3-LIUF"
+    ],
+    "applied_to": "Applied to: DS-2CD1T47G3-LIU/SRB(2.8mm)",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202511/releasenote%5CNetwork_Camera-V5.9.12_250919_Release_Note-IPCE_E_E15.pdf",
     "is_beta": false,
