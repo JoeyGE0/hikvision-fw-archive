@@ -658,5 +658,21 @@
   "100165": {
     "model": "DS-2CD2026G2-I",
     "hardware_version": "IPC_G0"
+  },
+  "100166": {
+    "model": "DS-2CD2026G2-IU",
+    "hardware_version": "IPC_G0"
+  },
+  "100167": {
+    "model": "DS-2CD2027G2-L",
+    "hardware_version": "IPC_G0"
+  },
+  "100168": {
+    "model": "DS-2CD2041G1-IDW",
+    "hardware_version": "IPC_G0"
+  },
+  "100169": {
+    "model": "DS-2CD2043G0-I",
+    "hardware_version": "IPC_G1"
   }
 }
