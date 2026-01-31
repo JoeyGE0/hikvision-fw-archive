@@ -674,5 +674,33 @@
   "100169": {
     "model": "DS-2CD2043G0-I",
     "hardware_version": "IPC_G1"
+  },
+  "100170": {
+    "model": "DS-2CD2043G2-I",
+    "hardware_version": "IPC_G0"
+  },
+  "100171": {
+    "model": "DS-2CD2043G2-LI",
+    "hardware_version": "IPC_G0"
+  },
+  "100172": {
+    "model": "DS-2CD2043G2-LI2U",
+    "hardware_version": "IPC_G0"
+  },
+  "100173": {
+    "model": "DS-2CD2043G2-LIZ",
+    "hardware_version": "IPC_G0"
+  },
+  "100174": {
+    "model": "DS-2CD2043G2-LIZ2UY",
+    "hardware_version": "IPC_G0"
+  },
+  "100175": {
+    "model": "DS-2CD2045FWD-I",
+    "hardware_version": "IPC_G1"
+  },
+  "100176": {
+    "model": "DS-2CD2046G2-I",
+    "hardware_version": "IPC_G0"
   }
 }
