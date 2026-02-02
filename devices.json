@@ -806,5 +806,29 @@
   "100202": {
     "model": "DS-2CD2083G2-I",
     "hardware_version": "IPC_G0"
+  },
+  "100203": {
+    "model": "DS-2CD2083G2-LI",
+    "hardware_version": "IPC_G0"
+  },
+  "100204": {
+    "model": "DS-2CD2083G2-LI2U",
+    "hardware_version": "IPC_G0"
+  },
+  "100205": {
+    "model": "DS-2CD2085G1-I",
+    "hardware_version": "IPC_G0"
+  },
+  "100206": {
+    "model": "DS-2CD2086G2-I",
+    "hardware_version": "IPC_G0"
+  },
+  "100207": {
+    "model": "DS-2CD2086G2-IU",
+    "hardware_version": "IPC_G0"
+  },
+  "100208": {
+    "model": "DS-2CD2086G2H-I",
+    "hardware_version": "IPC_G0"
   }
 }
