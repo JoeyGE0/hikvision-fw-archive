@@ -886,5 +886,33 @@
   "100222": {
     "model": "DS-2CD2125FHWD-I",
     "hardware_version": "IPC_G0"
+  },
+  "100223": {
+    "model": "DS-2CD2125FWD-I",
+    "hardware_version": "IPC_G1"
+  },
+  "100224": {
+    "model": "DS-2CD2125G0-IMS",
+    "hardware_version": "IPC_G1"
+  },
+  "100225": {
+    "model": "DS-2CD2126G2-I",
+    "hardware_version": "IPC_G0"
+  },
+  "100226": {
+    "model": "DS-2CD2126G2-IMS",
+    "hardware_version": "IPC_G0"
+  },
+  "100227": {
+    "model": "DS-2CD2141G1-IDW",
+    "hardware_version": "IPC_G0"
+  },
+  "100228": {
+    "model": "DS-2CD2143G0-I",
+    "hardware_version": "IPC_G1"
+  },
+  "100229": {
+    "model": "DS-2CD2143G0-IU",
+    "hardware_version": "IPC_G1"
   }
 }

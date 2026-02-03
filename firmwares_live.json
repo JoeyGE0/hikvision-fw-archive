@@ -5639,5 +5639,182 @@
     "notes": "https://assets.hikvision.com/prd/public/all/files/202301/Network%20Camera%20V5.6.820%20Release%20Note%20--G1.pdf",
     "is_beta": false,
     "source": "live"
+  },
+  "DS-2CD2125FWD-I_IPC_G1_5.6.821": {
+    "device_id": 100223,
+    "model": "DS-2CD2125FWD-I",
+    "hardware_version": "IPC_G1",
+    "version": "5.6.821",
+    "date": "2023-08-31",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202309/Firmware__V5.6.821_230831_S3000525150.zip",
+    "filename": "Firmware__V5.6.821_230831_S3000525150.zip",
+    "supported_models": [
+      "DS-2CD2125FWD-IS",
+      "DS-2CD2125FWD-I"
+    ],
+    "applied_to": "Applied to: DS-2CD2125FWD-IS(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202301/Network%20Camera%20V5.6.820%20Release%20Note%20--G1.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2125FWD-I_IPC_G1_5.6.820": {
+    "device_id": 100223,
+    "model": "DS-2CD2125FWD-I",
+    "hardware_version": "IPC_G1",
+    "version": "5.6.820",
+    "date": "2022-05-19",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202301/Firmware__V5.6.820_220519_S3000430633.zip",
+    "filename": "Firmware__V5.6.820_220519_S3000430633.zip",
+    "supported_models": [
+      "DS-2CD2125FWD-IS",
+      "DS-2CD2125FWD-I"
+    ],
+    "applied_to": "Applied to: DS-2CD2125FWD-IS(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202301/Network%20Camera%20V5.6.820%20Release%20Note%20--G1.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2125G0-IMS_IPC_G1_5.6.821": {
+    "device_id": 100224,
+    "model": "DS-2CD2125G0-IMS",
+    "hardware_version": "IPC_G1",
+    "version": "5.6.821",
+    "date": "2023-08-31",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202309/Firmware__V5.6.821_230831_S3000525150.zip",
+    "filename": "Firmware__V5.6.821_230831_S3000525150.zip",
+    "supported_models": [
+      "DS-2CD2125G0-IMS"
+    ],
+    "applied_to": "Applied to: DS-2CD2125G0-IMS(4mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.6.821_Release_Note-IPC_G1_230831.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2126G2-I_IPC_G0_5.7.19": {
+    "device_id": 100225,
+    "model": "DS-2CD2126G2-I",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.19",
+    "date": "2024-12-07",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202412/Firmware__V5.7.19_241207_S3000618481.zip",
+    "filename": "Firmware__V5.7.19_241207_S3000618481.zip",
+    "supported_models": [
+      "DS-2CD2126G2-ISU",
+      "DS-2CD2126G2-I"
+    ],
+    "applied_to": "Applied to: DS-2CD2126G2-ISU(2.8mm)(C)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.7.19_241207_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2126G2-I_IPC_G0_5.7.0": {
+    "device_id": 100225,
+    "model": "DS-2CD2126G2-I",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.0",
+    "date": "2024-10-23",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202411/Firmware__V5.7.0_241023_S3000609022.zip",
+    "filename": "Firmware__V5.7.0_241023_S3000609022.zip",
+    "supported_models": [
+      "DS-2CD2126G2-ISU",
+      "DS-2CD2126G2-I"
+    ],
+    "applied_to": "Applied to: DS-2CD2126G2-ISU(2.8mm)(C)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.7.19_241207_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2126G2-IMS_IPC_G0_5.7.19": {
+    "device_id": 100226,
+    "model": "DS-2CD2126G2-IMS",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.19",
+    "date": "2024-12-07",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202412/Firmware__V5.7.19_241207_S3000618481.zip",
+    "filename": "Firmware__V5.7.19_241207_S3000618481.zip",
+    "supported_models": [
+      "DS-2CD2126G2-IMS"
+    ],
+    "applied_to": "Applied to: DS-2CD2126G2-IMS(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.7.19_241207_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2141G1-IDW_IPC_G0_5.5.89": {
+    "device_id": 100227,
+    "model": "DS-2CD2141G1-IDW",
+    "hardware_version": "IPC_G0",
+    "version": "5.5.89",
+    "date": "2021-04-29",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/87acab3e-5d46-45cd-88c4-87b51139b600.zip",
+    "filename": "87acab3e-5d46-45cd-88c4-87b51139b600.zip",
+    "supported_models": [
+      "DS-2CD2141G1-IDW",
+      "DS-2CD2141G1-IDW1"
+    ],
+    "applied_to": "Applied to: DS-2CD2141G1-IDW1(2.8mm)(T)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CNetwork_Camera_V5.5.89_Release_Note_--G0.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2141G1-IDW_IPC_G0_5.5.82": {
+    "device_id": 100227,
+    "model": "DS-2CD2141G1-IDW",
+    "hardware_version": "IPC_G0",
+    "version": "5.5.82",
+    "date": "2019-01-30",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/e8cbe4a1-a383-4ffa-a762-1891fa4b0901.zip",
+    "filename": "e8cbe4a1-a383-4ffa-a762-1891fa4b0901.zip",
+    "supported_models": [
+      "DS-2CD2141G1-IDW",
+      "DS-2CD2141G1-IDW1"
+    ],
+    "applied_to": "Applied to: DS-2CD2141G1-IDW1(2.8mm)(T)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CNetwork_Camera_V5.5.89_Release_Note_--G0.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2143G0-I_IPC_G1_5.6.821": {
+    "device_id": 100228,
+    "model": "DS-2CD2143G0-I",
+    "hardware_version": "IPC_G1",
+    "version": "5.6.821",
+    "date": "2023-08-31",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202309/Firmware__V5.6.821_230831_S3000525150.zip",
+    "filename": "Firmware__V5.6.821_230831_S3000525150.zip",
+    "supported_models": [
+      "DS-2CD2143G0-I",
+      "DS-2CD2143G0-IS"
+    ],
+    "applied_to": "Applied to: DS-2CD2143G0-I(2.8mm)(BLACK)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.6.821_Release_Note-IPC_G1_230831.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2143G0-IU_IPC_G1_5.6.821": {
+    "device_id": 100229,
+    "model": "DS-2CD2143G0-IU",
+    "hardware_version": "IPC_G1",
+    "version": "5.6.821",
+    "date": "2023-08-31",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202309/Firmware__V5.6.821_230831_S3000525150.zip",
+    "filename": "Firmware__V5.6.821_230831_S3000525150.zip",
+    "supported_models": [
+      "DS-2CD2143G0-IU"
+    ],
+    "applied_to": "Applied to: DS-2CD2143G0-IU(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.6.821_Release_Note-IPC_G1_230831.pdf",
+    "is_beta": false,
+    "source": "live"
   }
 }
