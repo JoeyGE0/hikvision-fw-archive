@@ -5094,7 +5094,7 @@
     "version": "5.7.5",
     "date": "2025-07-18",
     "download_url": "https://assets.hikvision.com/prd/normal/all/files/202508/Firmware__V5.7.5_250718_S3000663086.zip",
-    "filename": "Firmware__V5.7.5_241103_S3000612864.zip",
+    "filename": "Firmware__V5.7.5_250718_S3000663086.zip",
     "supported_models": [
       "DS-2CD2083G2-I",
       "DS-2CD2083G2-IU"
@@ -5148,7 +5148,7 @@
     "version": "5.7.5",
     "date": "2024-11-03",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202411/Firmware__V5.7.5_241103_S3000612864.zip",
-    "filename": "Firmware__V5.7.5_241103_S3000612864.zip",
+    "filename": "Firmware__V5.7.5_250718_S3000663086.zip",
     "supported_models": [
       "DS-2CD2083G2-LI",
       "DS-2CD2083G2-LI2U"
@@ -6171,6 +6171,166 @@
     "applied_to": "Applied to: DS-2CD2166G2H-I(2.8mm)(eF)",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.7.19_241207_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2167G2H-LI_IPC_G0_5.7.19": {
+    "device_id": 100248,
+    "model": "DS-2CD2167G2H-LI",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.19",
+    "date": "2024-12-07",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202412/Firmware__V5.7.19_241207_S3000618481.zip",
+    "filename": "Firmware__V5.7.19_241207_S3000618481.zip",
+    "supported_models": [
+      "DS-2CD2167G2H-LI",
+      "DS-2CD2167G2H-LISU"
+    ],
+    "applied_to": "Applied to: DS-2CD2167G2H-LI(2.8mm)(eF)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.7.19_241207_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2167G3-LI_IPC_G0_5.8.30": {
+    "device_id": 100249,
+    "model": "DS-2CD2167G3-LI",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.30",
+    "date": "2025-12-10",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.30_251210_S3000691342.zip",
+    "filename": "Firmware__V5.8.30_251210_S3000691342.zip",
+    "supported_models": [
+      "DS-2CD2167G3-LI",
+      "DS-2CD2167G3-LIS2UY",
+      "DS-2CD2167G3-LIY"
+    ],
+    "applied_to": "Applied to: DS-2CD2167G3-LIS2UY(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-H13.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2183G0-I_IPC_G1_5.6.821": {
+    "device_id": 100250,
+    "model": "DS-2CD2183G0-I",
+    "hardware_version": "IPC_G1",
+    "version": "5.6.821",
+    "date": "2023-08-31",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202309/Firmware__V5.6.821_230831_S3000525150.zip",
+    "filename": "Firmware__V5.6.821_230831_S3000525150.zip",
+    "supported_models": [
+      "DS-2CD2183G0-I",
+      "DS-2CD2183G0-IS"
+    ],
+    "applied_to": "Applied to: DS-2CD2183G0-I(2.8mm)(BLACK)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.6.821_Release_Note-IPC_G1_230831.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2183G0-I_IPC_G1_5.6.820": {
+    "device_id": 100250,
+    "model": "DS-2CD2183G0-I",
+    "hardware_version": "IPC_G1",
+    "version": "5.6.820",
+    "date": "2022-05-19",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202301/Firmware__V5.6.820_220519_S3000430633.zip",
+    "filename": "Firmware__V5.6.820_220519_S3000430633.zip",
+    "supported_models": [
+      "DS-2CD2183G0-I",
+      "DS-2CD2183G0-IS"
+    ],
+    "applied_to": "Applied to: DS-2CD2183G0-I(2.8mm)(BLACK)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.6.821_Release_Note-IPC_G1_230831.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2183G0-IU_IPC_G1_5.6.821": {
+    "device_id": 100251,
+    "model": "DS-2CD2183G0-IU",
+    "hardware_version": "IPC_G1",
+    "version": "5.6.821",
+    "date": "2023-08-31",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202309/Firmware__V5.6.821_230831_S3000525150.zip",
+    "filename": "Firmware__V5.6.821_230831_S3000525150.zip",
+    "supported_models": [
+      "DS-2CD2183G0-IU"
+    ],
+    "applied_to": "Applied to: DS-2CD2183G0-IU(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.6.821_Release_Note-IPC_G1_230831.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2183G2-I_IPC_G0_5.7.5": {
+    "device_id": 100252,
+    "model": "DS-2CD2183G2-I",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.5",
+    "date": "2025-07-18",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202508/Firmware__V5.7.5_250718_S3000663086.zip",
+    "filename": "Firmware__V5.7.5_250718_S3000663086.zip",
+    "supported_models": [
+      "DS-2CD2183G2-IS",
+      "DS-2CD2183G2-I"
+    ],
+    "applied_to": "Applied to: DS-2CD2183G2-IS(2.8mm)(BLACK)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.7.19_241207_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2183G2-I_IPC_G0_5.7.19": {
+    "device_id": 100252,
+    "model": "DS-2CD2183G2-I",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.19",
+    "date": "2024-12-07",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202412/Firmware__V5.7.19_241207_S3000618481.zip",
+    "filename": "Firmware__V5.7.19_241207_S3000618481.zip",
+    "supported_models": [
+      "DS-2CD2183G2-IS",
+      "DS-2CD2183G2-I"
+    ],
+    "applied_to": "Applied to: DS-2CD2183G2-IS(2.8mm)(BLACK)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.7.19_241207_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2183G2-IU_IPC_G0_5.7.5": {
+    "device_id": 100253,
+    "model": "DS-2CD2183G2-IU",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.5",
+    "date": "2025-07-18",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202508/Firmware__V5.7.5_250718_S3000663086.zip",
+    "filename": "Firmware__V5.7.5_250718_S3000663086.zip",
+    "supported_models": [
+      "DS-2CD2183G2-IU"
+    ],
+    "applied_to": "Applied to: DS-2CD2183G2-IU(2.8mm)(D)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202508/releasenote%5CNetwork_Camera-V5.7.5_250718_Release_Note-H8.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2183G2-IU_IPC_G0_5.7.19": {
+    "device_id": 100253,
+    "model": "DS-2CD2183G2-IU",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.19",
+    "date": "2024-12-07",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202412/Firmware__V5.7.19_241207_S3000618481.zip",
+    "filename": "Firmware__V5.7.19_241207_S3000618481.zip",
+    "supported_models": [
+      "DS-2CD2183G2-IU"
+    ],
+    "applied_to": "Applied to: DS-2CD2183G2-IU(2.8mm)(D)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202508/releasenote%5CNetwork_Camera-V5.7.5_250718_Release_Note-H8.pdf",
     "is_beta": false,
     "source": "live"
   }
