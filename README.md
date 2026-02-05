@@ -138,44 +138,11 @@ The scraper in `main.py` can always be improved:
 
 ## Status
 
-**Status:** ❌ ERROR  
-**Last Run:** 2026-02-05 07:50:28 UTC  
-**Firmwares Found:** 359  
-**New Firmwares:** 9  
+**Status:** ✅ SUCCESS  
+**Last Run:** 2026-02-05 19:27:10 UTC  
+**Firmwares Found:** 369  
+**New Firmwares:** 10  
 **Test Mode:** Disabled
-
-
-
-**Recent Errors:**
-- ⚠️ Search failed for DS-2DE: ElementHandle.fill: Element is not attached to the DOM
-Call log:
-    - fill("")
-  - attempting fill action
-    - waiting for element to be visible, enabled and editable
-
-- ⚠️ Search failed for DS-76: ElementHandle.fill: Element is not attached to the DOM
-Call log:
-    - fill("")
-  - attempting fill action
-    - waiting for element to be visible, enabled and editable
-
-- ⚠️ Search failed for DS-77: ElementHandle.fill: Element is not attached to the DOM
-Call log:
-    - fill("")
-  - attempting fill action
-    - waiting for element to be visible, enabled and editable
-
-- ⚠️ Search failed for DS-2TD: ElementHandle.fill: Element is not attached to the DOM
-Call log:
-    - fill("")
-  - attempting fill action
-    - waiting for element to be visible, enabled and editable
-
-- ⚠️ Search failed for AE-: ElementHandle.fill: Element is not attached to the DOM
-Call log:
-    - fill("")
-  - attempting fill action
-    - waiting for element to be visible, enabled and editable
 
 
 
@@ -185,7 +152,7 @@ Call log:
 
 Below is the complete list of archived firmwares, organized by device model and hardware version.
 
-**Total: 359**
+**Total: 369**
 
 
 
@@ -1062,11 +1029,13 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 
 <details>
-<summary><h2>DS-2CD1353G0-I - IPC_G0 (1 firmwares)</h2></summary>
+<summary><h2>DS-2CD1353G0-I - IPC_G0 (3 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.7.23 | Applied to: [DS-2CD1353G0-I(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202410/Firmware__V5.7.23_241008_S3000605524.zip)(C) | 2024-10-08 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202410/Firmware__V5.7.23_241008_S3000605524.zip) |  |
+| 5.5.800 | Applied to: [DS-2CD1353G0-I(2.8mm)](https://assets.hikvision.com/prd/public/all/files/af64952b-34be-46d9-94b8-3bf76fb5a5f4.zip) | 2021-08-16 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/af64952b-34be-46d9-94b8-3bf76fb5a5f4.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CNetwork_Camera_V5.5.89_Release_Note_--G0.pdf) |
+| 5.5.89 | Applied to: [DS-2CD1353G0-I(2.8mm)](https://assets.hikvision.com/prd/public/all/files/87acab3e-5d46-45cd-88c4-87b51139b600.zip) | 2021-04-29 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/87acab3e-5d46-45cd-88c4-87b51139b600.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CNetwork_Camera_V5.5.89_Release_Note_--G0.pdf) |
 
 </details>
 
@@ -2789,6 +2758,59 @@ Below is the complete list of archived firmwares, organized by device model and 
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.7.5 | Applied to: [DS-2CD2183G2-IU(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202508/Firmware__V5.7.5_250718_S3000663086.zip)(D) | 2025-07-18 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202508/Firmware__V5.7.5_250718_S3000663086.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202508/releasenote%5CNetwork_Camera-V5.7.5_250718_Release_Note-H8.pdf) |
 | 5.7.19 | Applied to: [DS-2CD2183G2-IU(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202412/Firmware__V5.7.19_241207_S3000618481.zip)(D) | 2024-12-07 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202412/Firmware__V5.7.19_241207_S3000618481.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202508/releasenote%5CNetwork_Camera-V5.7.5_250718_Release_Note-H8.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD2183G2-LI - IPC_G0 (2 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.19 | Applied to: [DS-2CD2183G2-LI(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202412/Firmware__V5.7.19_241207_S3000618481.zip) | 2024-12-07 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202412/Firmware__V5.7.19_241207_S3000618481.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.7.19_241207_Release_Note.pdf) |
+| 5.7.5 | Applied to: [DS-2CD2183G2-LI(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202411/Firmware__V5.7.5_241103_S3000612864.zip) | 2024-11-03 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202411/Firmware__V5.7.5_241103_S3000612864.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.7.19_241207_Release_Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD2185FWD-I - IPC_G1 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.6.821 | Applied to: [DS-2CD2185FWD-I(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202309/Firmware__V5.6.821_230831_S3000525150.zip)(BLACK) | 2023-08-31 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202309/Firmware__V5.6.821_230831_S3000525150.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.6.821_Release_Note-IPC_G1_230831.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD2185G0-IMS - IPC_G1 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.6.821 | Applied to: [DS-2CD2185G0-IMS(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202309/Firmware__V5.6.821_230831_S3000525150.zip) | 2023-08-31 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202309/Firmware__V5.6.821_230831_S3000525150.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.6.821_Release_Note-IPC_G1_230831.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD2186G2-I - IPC_G0 (3 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.19 | Applied to: [DS-2CD2186G2-I(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202412/Firmware__V5.7.19_241207_S3000618481.zip) | 2024-12-07 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202412/Firmware__V5.7.19_241207_S3000618481.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CNetwork_Camera-V5.5.820_Release_Note-G3.pdf) |
+| 5.5.820 | Applied to: [DS-2CD2186G2-I(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_231108_S3000539625.zip) | 2023-11-08 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_231108_S3000539625.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CNetwork_Camera-V5.5.820_Release_Note-G3.pdf) |
+| 5.5.800 | Applied to: [DS-2CD2186G2-I(2.8mm)](https://assets.hikvision.com/prd/public/all/files/7ddcc773-b084-4adc-a9e1-08ed4b8252f4.zip) | 2021-10-09 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/7ddcc773-b084-4adc-a9e1-08ed4b8252f4.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CNetwork_Camera-V5.5.820_Release_Note-G3.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD2186G2H-I - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.19 | Applied to: [DS-2CD2186G2H-I(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202412/Firmware__V5.7.19_241207_S3000618481.zip)(eF) | 2024-12-07 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202412/Firmware__V5.7.19_241207_S3000618481.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.7.19_241207_Release_Note.pdf) |
 
 </details>
 
