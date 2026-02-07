@@ -1094,5 +1094,21 @@
   "100274": {
     "model": "DS-2CD2326G1-I",
     "hardware_version": "IPC_G0"
+  },
+  "100275": {
+    "model": "DS-2CD2326G2-I",
+    "hardware_version": "IPC_G0"
+  },
+  "100276": {
+    "model": "DS-2CD2326G2-ISU",
+    "hardware_version": "IPC_G0"
+  },
+  "100277": {
+    "model": "DS-2CD2327G2-L",
+    "hardware_version": "IPC_G0"
+  },
+  "100278": {
+    "model": "DS-2CD2343G0-I",
+    "hardware_version": "IPC_G1"
   }
 }
