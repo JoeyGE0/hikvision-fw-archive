@@ -6876,7 +6876,7 @@
     "version": "5.5.820",
     "date": "2022-05-20",
     "download_url": "https://assets.hikvision.com/prd/public/all/files/202205/IPC_G3_EN_STD_5.5.820_220520.zip",
-    "filename": "IPC_G3_EN_STD_5.5.820_220520.zip",
+    "filename": "Firmware__V5.5.820_231108_S3000539625.zip",
     "supported_models": [
       "DS-2CD2326G2-IU",
       "DS-2CD2326G2-I"
@@ -7180,6 +7180,182 @@
       "DS-2CD2346G2-I"
     ],
     "applied_to": "Applied to: DS-2CD2346G2-IU(2.8mm)(C)(BLACK)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.7.19_241207_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2346G2-ISU_IPC_G0_5.5.820": {
+    "device_id": 100288,
+    "model": "DS-2CD2346G2-ISU",
+    "hardware_version": "IPC_G0",
+    "version": "5.5.820",
+    "date": "2023-11-08",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_231108_S3000539625.zip",
+    "filename": "Firmware__V5.5.820_231108_S3000539625.zip",
+    "supported_models": [
+      "DS-2CD2346G2-ISU"
+    ],
+    "applied_to": "Applied to: DS-2CD2346G2-ISU/SL(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/330c4c2c-5730-4877-a942-0be87cea67ca.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2346G2-ISU_IPC_G0_5.5.800": {
+    "device_id": 100288,
+    "model": "DS-2CD2346G2-ISU",
+    "hardware_version": "IPC_G0",
+    "version": "5.5.800",
+    "date": "2021-10-09",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/7ddcc773-b084-4adc-a9e1-08ed4b8252f4.zip",
+    "filename": "7ddcc773-b084-4adc-a9e1-08ed4b8252f4.zip",
+    "supported_models": [
+      "DS-2CD2346G2-ISU"
+    ],
+    "applied_to": "Applied to: DS-2CD2346G2-ISU/SL(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/330c4c2c-5730-4877-a942-0be87cea67ca.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2346G2H-I_IPC_G0_5.7.19": {
+    "device_id": 100289,
+    "model": "DS-2CD2346G2H-I",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.19",
+    "date": "2024-12-07",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202412/Firmware__V5.7.19_241207_S3000618481.zip",
+    "filename": "Firmware__V5.7.19_241207_S3000618481.zip",
+    "supported_models": [
+      "DS-2CD2346G2H-I",
+      "DS-2CD2346G2H-IU"
+    ],
+    "applied_to": "Applied to: DS-2CD2346G2H-IU(2.8mm)(eF)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.7.19_241207_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2346G2H-IS2U_IPC_G0_5.7.19": {
+    "device_id": 100290,
+    "model": "DS-2CD2346G2H-IS2U",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.19",
+    "date": "2024-12-07",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202412/Firmware__V5.7.19_241207_S3000618481.zip",
+    "filename": "Firmware__V5.7.19_241207_S3000618481.zip",
+    "supported_models": [
+      "DS-2CD2346G2H-IS2U"
+    ],
+    "applied_to": "Applied to: DS-2CD2346G2H-IS2U/SRB(2.8mm)/eFO-STDBLK",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.7.19_241207_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2346G3-IZ_IPC_G0_5.8.21": {
+    "device_id": 100291,
+    "model": "DS-2CD2346G3-IZ",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.21",
+    "date": "2025-11-17",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202512/Firmware__V5.8.21_251117_S3000687899.zip",
+    "filename": "Firmware__V5.8.21_251117_S3000687899.zip",
+    "supported_models": [
+      "DS-2CD2346G3-IZ",
+      "DS-2CD2346G3-IZY",
+      "DS-2CD2346G3-IZ2UY"
+    ],
+    "applied_to": "Applied to: DS-2CD2346G3-IZY(2.8/4mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.8.21_SP1_251117_Release_Note-H13U.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2346G3-IZS2UY_IPC_G0_5.8.21": {
+    "device_id": 100292,
+    "model": "DS-2CD2346G3-IZS2UY",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.21",
+    "date": "2025-11-17",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202512/Firmware__V5.8.21_251117_S3000687899.zip",
+    "filename": "Firmware__V5.8.21_251117_S3000687899.zip",
+    "supported_models": [
+      "DS-2CD2346G3-IZS2UY"
+    ],
+    "applied_to": "Applied to: DS-2CD2346G3-IZS2UY/SRB(2.8/4mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.8.21_SP1_251117_Release_Note-H13U.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2347G2-L_IPC_G0_5.5.820": {
+    "device_id": 100293,
+    "model": "DS-2CD2347G2-L",
+    "hardware_version": "IPC_G0",
+    "version": "5.5.820",
+    "date": "2023-11-08",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_231108_S3000539625.zip",
+    "filename": "Firmware__V5.5.820_231108_S3000539625.zip",
+    "supported_models": [
+      "DS-2CD2347G2-L",
+      "DS-2CD2347G2-LU"
+    ],
+    "applied_to": "Applied to: DS-2CD2347G2-L(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CNetwork_Camera-V5.5.820_Release_Note-G3.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2347G2-L_IPC_G0_5.5.800": {
+    "device_id": 100293,
+    "model": "DS-2CD2347G2-L",
+    "hardware_version": "IPC_G0",
+    "version": "5.5.800",
+    "date": "2021-10-09",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/7ddcc773-b084-4adc-a9e1-08ed4b8252f4.zip",
+    "filename": "7ddcc773-b084-4adc-a9e1-08ed4b8252f4.zip",
+    "supported_models": [
+      "DS-2CD2347G2-L",
+      "DS-2CD2347G2-LU"
+    ],
+    "applied_to": "Applied to: DS-2CD2347G2-L(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CNetwork_Camera-V5.5.820_Release_Note-G3.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2347G2-LSU_IPC_G0_5.7.19": {
+    "device_id": 100294,
+    "model": "DS-2CD2347G2-LSU",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.19",
+    "date": "2024-12-07",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202412/Firmware__V5.7.19_241207_S3000618481.zip",
+    "filename": "Firmware__V5.7.19_241207_S3000618481.zip",
+    "supported_models": [
+      "DS-2CD2347G2-LSU"
+    ],
+    "applied_to": "Applied to: DS-2CD2347G2-LSU/SL/2.8mm/C/O-STD/BLACK",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.7.19_241207_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2347G2H-LI_IPC_G0_5.7.19": {
+    "device_id": 100295,
+    "model": "DS-2CD2347G2H-LI",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.19",
+    "date": "2024-12-07",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202412/Firmware__V5.7.19_241207_S3000618481.zip",
+    "filename": "Firmware__V5.7.19_241207_S3000618481.zip",
+    "supported_models": [
+      "DS-2CD2347G2H-LI",
+      "DS-2CD2347G2H-LIU"
+    ],
+    "applied_to": "Applied to: DS-2CD2347G2H-LIU(2.8mm)(eF)/O-STD/BLACK",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.7.19_241207_Release_Note.pdf",
     "is_beta": false,
