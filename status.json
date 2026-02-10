@@ -1,7 +1,7 @@
 {
-  "last_run": "2026-02-09T07:50:30.350850",
+  "last_run": "2026-02-10T07:39:56.250777",
   "status": "success",
-  "firmwares_found": 437,
+  "firmwares_found": 447,
   "new_firmwares": 10,
   "errors": [],
   "test_mode": false
