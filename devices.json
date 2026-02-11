@@ -1294,5 +1294,9 @@
   "100324": {
     "model": "DS-2CD2545FWD-I",
     "hardware_version": "IPC_G1"
+  },
+  "100325": {
+    "model": "DS-2CD2546G2-IS",
+    "hardware_version": "IPC_G0"
   }
 }

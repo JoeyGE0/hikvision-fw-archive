@@ -138,11 +138,44 @@ The scraper in `main.py` can always be improved:
 
 ## Status
 
-**Status:** ✅ SUCCESS  
-**Last Run:** 2026-02-11 08:00:51 UTC  
-**Firmwares Found:** 467  
-**New Firmwares:** 10  
+**Status:** ❌ ERROR  
+**Last Run:** 2026-02-11 19:42:45 UTC  
+**Firmwares Found:** 470  
+**New Firmwares:** 3  
 **Test Mode:** Disabled
+
+
+
+**Recent Errors:**
+- ⚠️ Search failed for DS-2DE: ElementHandle.fill: Element is not attached to the DOM
+Call log:
+    - fill("")
+  - attempting fill action
+    - waiting for element to be visible, enabled and editable
+
+- ⚠️ Search failed for DS-76: ElementHandle.fill: Element is not attached to the DOM
+Call log:
+    - fill("")
+  - attempting fill action
+    - waiting for element to be visible, enabled and editable
+
+- ⚠️ Search failed for DS-77: ElementHandle.fill: Element is not attached to the DOM
+Call log:
+    - fill("")
+  - attempting fill action
+    - waiting for element to be visible, enabled and editable
+
+- ⚠️ Search failed for DS-2TD: ElementHandle.fill: Element is not attached to the DOM
+Call log:
+    - fill("")
+  - attempting fill action
+    - waiting for element to be visible, enabled and editable
+
+- ⚠️ Search failed for AE-: ElementHandle.fill: Element is not attached to the DOM
+Call log:
+    - fill("")
+  - attempting fill action
+    - waiting for element to be visible, enabled and editable
 
 
 
@@ -152,7 +185,7 @@ The scraper in `main.py` can always be improved:
 
 Below is the complete list of archived firmwares, organized by device model and hardware version.
 
-**Total: 467**
+**Total: 470**
 
 
 
@@ -3497,12 +3530,24 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 
 <details>
-<summary><h2>DS-2CD2545FWD-I - IPC_G1 (2 firmwares)</h2></summary>
+<summary><h2>DS-2CD2545FWD-I - IPC_G1 (3 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.6.821 | Applied to: [DS-2CD2545FWD-IWS(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202309/Firmware__V5.6.821_230831_S3000525150.zip)(D) | 2023-08-31 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202309/Firmware__V5.6.821_230831_S3000525150.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.6.821_Release_Note-IPC_G1_230831.pdf) |
 | 5.6.6 | Applied to: [DS-2CD2545FWD-IWS(2.8mm)](https://assets.hikvision.com/prd/public/all/files/f18aceb7-b896-4c7d-ad2e-8f0d2a91bcc3.zip)(D) | 2021-06-25 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/f18aceb7-b896-4c7d-ad2e-8f0d2a91bcc3.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.6.821_Release_Note-IPC_G1_230831.pdf) |
+| 5.6.3 | Applied to: [DS-2CD2545FWD-IWS(2.8mm)](https://assets.hikvision.com/prd/public/all/files/fd283720-cf75-46b4-a8b9-aaa670def906.zip)(D) | 2019-09-23 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/fd283720-cf75-46b4-a8b9-aaa670def906.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.6.821_Release_Note-IPC_G1_230831.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD2546G2-IS - IPC_G0 (2 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.5.820 | Applied to: [DS-2CD2546G2-I(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_231108_S3000539625.zip) | 2023-11-08 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_231108_S3000539625.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/330c4c2c-5730-4877-a942-0be87cea67ca.pdf) |
+| 5.5.800 | Applied to: [DS-2CD2546G2-I(2.8mm)](https://assets.hikvision.com/prd/public/all/files/7ddcc773-b084-4adc-a9e1-08ed4b8252f4.zip) | 2021-10-09 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/7ddcc773-b084-4adc-a9e1-08ed4b8252f4.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/330c4c2c-5730-4877-a942-0be87cea67ca.pdf) |
 
 </details>
 
