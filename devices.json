@@ -1274,5 +1274,25 @@
   "100319": {
     "model": "DS-2CD2523G0-I",
     "hardware_version": "IPC_G1"
+  },
+  "100320": {
+    "model": "DS-2CD2523G2-I",
+    "hardware_version": "IPC_G0"
+  },
+  "100321": {
+    "model": "DS-2CD2525FWD-I",
+    "hardware_version": "IPC_G1"
+  },
+  "100322": {
+    "model": "DS-2CD2526G2-IS",
+    "hardware_version": "IPC_G0"
+  },
+  "100323": {
+    "model": "DS-2CD2543G0-I",
+    "hardware_version": "IPC_G1"
+  },
+  "100324": {
+    "model": "DS-2CD2545FWD-I",
+    "hardware_version": "IPC_G1"
   }
 }
