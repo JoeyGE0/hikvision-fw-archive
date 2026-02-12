@@ -8498,5 +8498,184 @@
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202511/releasenote%5CNetwork_Camera-V5.8.2_251103_Release_Note-IPCE_G9.pdf",
     "is_beta": false,
     "source": "live"
+  },
+  "DS-2CD1B67G3-LIU_IPC_G0_5.9.13": {
+    "device_id": 100121,
+    "model": "DS-2CD1B67G3-LIU",
+    "hardware_version": "IPC_G0",
+    "version": "5.9.13",
+    "date": "2025-11-24",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202512/Firmware__V5.9.13_251124_S3000688200.zip",
+    "filename": "Firmware__V5.9.13_251124_S3000688200.zip",
+    "supported_models": [
+      "DS-2CD1B67G3-LIU",
+      "DS-2CD1B67G3-LIUF"
+    ],
+    "applied_to": "Applied to: DS-2CD1B67G3-LIU/LSL(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.9.13_251124_Release_Note-IPCE_E_E15.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1T67G3-LIU_IPC_G0_5.9.13": {
+    "device_id": 100148,
+    "model": "DS-2CD1T67G3-LIU",
+    "hardware_version": "IPC_G0",
+    "version": "5.9.13",
+    "date": "2025-11-24",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202512/Firmware__V5.9.13_251124_S3000688200.zip",
+    "filename": "Firmware__V5.9.13_251124_S3000688200.zip",
+    "supported_models": [
+      "DS-2CD1T67G3-LIU",
+      "DS-2CD1T67G3-LIUF"
+    ],
+    "applied_to": "Applied to: DS-2CD1T67G3-LIU/LSL(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.9.13_251124_Release_Note-IPCE_E_E15.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD26166G3-IZSY_IPC_G0_5.8.2": {
+    "device_id": 100333,
+    "model": "DS-2CD26166G3-IZSY",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.2",
+    "date": "2025-11-03",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202511/Firmware__V5.8.2_251103_S3000682542.zip",
+    "filename": "Firmware__V5.8.2_251103_S3000682542.zip",
+    "supported_models": [
+      "DS-2CD26166G3-IZSY"
+    ],
+    "applied_to": "Applied to: DS-2CD26166G3-IZSY(2.8-12mm)(eF)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202511/releasenote%5CNetwork_Camera-V5.8.2_251103_Release_Note-IPCE_G9.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2621G0-I_IPC_G0_5.7.23": {
+    "device_id": 100334,
+    "model": "DS-2CD2621G0-I",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.23",
+    "date": "2024-12-11",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202505/Firmware__V5.7.23_241211_S3000620665.zip",
+    "filename": "Firmware__V5.7.23_241211_S3000620665.zip",
+    "supported_models": [
+      "DS-2CD2621G0-IZS",
+      "DS-2CD2621G0-I",
+      "DS-2CD2621G0-IS",
+      "DS-2CD2621G0-IZ"
+    ],
+    "applied_to": "Applied to: DS-2CD2621G0-IZS(2.8-12mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202507/releasenote%5CNetwork_Camera-V5.7.23_SP2_Release_Note-E8.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2621G0-I_IPC_G0_5.5.800": {
+    "device_id": 100334,
+    "model": "DS-2CD2621G0-I",
+    "hardware_version": "IPC_G0",
+    "version": "5.5.800",
+    "date": "2021-06-28",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/2b726e56-901f-4e8d-9fd4-e9d67bc8e80a.zip",
+    "filename": "2b726e56-901f-4e8d-9fd4-e9d67bc8e80a.zip",
+    "supported_models": [
+      "DS-2CD2621G0-IZS",
+      "DS-2CD2621G0-I",
+      "DS-2CD2621G0-IS",
+      "DS-2CD2621G0-IZ"
+    ],
+    "applied_to": "Applied to: DS-2CD2621G0-IZS(2.8-12mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202507/releasenote%5CNetwork_Camera-V5.7.23_SP2_Release_Note-E8.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2623G1-IZ_IPC_G1_5.6.821": {
+    "device_id": 100335,
+    "model": "DS-2CD2623G1-IZ",
+    "hardware_version": "IPC_G1",
+    "version": "5.6.821",
+    "date": "2023-08-31",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202309/Firmware__V5.6.821_230831_S3000525150.zip",
+    "filename": "Firmware__V5.6.821_230831_S3000525150.zip",
+    "supported_models": [
+      "DS-2CD2623G1-IZ",
+      "DS-2CD2623G1-IZS"
+    ],
+    "applied_to": "Applied to: DS-2CD2623G1-IZ(2.8-12mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.6.821_Release_Note-IPC_G1_230831.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2623G2-IZS_IPC_G0_5.7.0": {
+    "device_id": 100336,
+    "model": "DS-2CD2623G2-IZS",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.0",
+    "date": "2024-10-23",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202411/Firmware__V5.7.0_241023_S3000609022.zip",
+    "filename": "Firmware__V5.7.0_241023_S3000609022.zip",
+    "supported_models": [
+      "DS-2CD2623G2-IZS"
+    ],
+    "applied_to": "Applied to: DS-2CD2623G2-IZS(2.8-12mm)(US Branch)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CNetwork_Camera-V5.7.13_Release_Note-G5.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2623G2-IZS_IPC_G0_5.7.13": {
+    "device_id": 100336,
+    "model": "DS-2CD2623G2-IZS",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.13",
+    "date": "2023-04-03",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202304/Firmware__V5.7.13_230403_S3000490228.zip",
+    "filename": "Firmware__V5.7.13_230403_S3000490228.zip",
+    "supported_models": [
+      "DS-2CD2623G2-IZS"
+    ],
+    "applied_to": "Applied to: DS-2CD2623G2-IZS(2.8-12mm)(US Branch)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CNetwork_Camera-V5.7.13_Release_Note-G5.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2625FHWD-IZS_IPC_G1_5.6.821": {
+    "device_id": 100337,
+    "model": "DS-2CD2625FHWD-IZS",
+    "hardware_version": "IPC_G1",
+    "version": "5.6.821",
+    "date": "2023-08-31",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202309/Firmware__V5.6.821_230831_S3000525150.zip",
+    "filename": "Firmware__V5.6.821_230831_S3000525150.zip",
+    "supported_models": [
+      "DS-2CD2625FHWD-IZS"
+    ],
+    "applied_to": "Applied to: DS-2CD2625FHWD-IZS(2.8-12mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.6.821_Release_Note-IPC_G1_230831.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2625FWD-IZS_IPC_G1_5.6.821": {
+    "device_id": 100338,
+    "model": "DS-2CD2625FWD-IZS",
+    "hardware_version": "IPC_G1",
+    "version": "5.6.821",
+    "date": "2023-08-31",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202309/Firmware__V5.6.821_230831_S3000525150.zip",
+    "filename": "Firmware__V5.6.821_230831_S3000525150.zip",
+    "supported_models": [
+      "DS-2CD2625FWD-IZS"
+    ],
+    "applied_to": "Applied to: DS-2CD2625FWD-IZS(2.8-12mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.6.821_Release_Note-IPC_G1_230831.pdf",
+    "is_beta": false,
+    "source": "live"
   }
 }
