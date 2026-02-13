@@ -1350,5 +1350,37 @@
   "100338": {
     "model": "DS-2CD2625FWD-IZS",
     "hardware_version": "IPC_G1"
+  },
+  "100339": {
+    "model": "DS-2CD2626G2-IZS",
+    "hardware_version": "IPC_G0"
+  },
+  "100340": {
+    "model": "DS-2CD2626G2-IZSU",
+    "hardware_version": "IPC_G0"
+  },
+  "100341": {
+    "model": "DS-2CD2626G2T-IZS",
+    "hardware_version": "IPC_G0"
+  },
+  "100342": {
+    "model": "DS-2CD2643G1-IZ",
+    "hardware_version": "IPC_G1"
+  },
+  "100343": {
+    "model": "DS-2CD2645FWD-IZS",
+    "hardware_version": "IPC_G1"
+  },
+  "100344": {
+    "model": "DS-2CD2646G1-IZS",
+    "hardware_version": "IPC_G0"
+  },
+  "100345": {
+    "model": "DS-2CD2646G2-IZS",
+    "hardware_version": "IPC_G0"
+  },
+  "100346": {
+    "model": "DS-2CD2646G2-IZSU",
+    "hardware_version": "IPC_G0"
   }
 }
