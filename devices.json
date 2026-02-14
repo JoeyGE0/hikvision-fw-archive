@@ -1462,5 +1462,41 @@
   "100366": {
     "model": "DS-2CD2725FWD-IZS",
     "hardware_version": "IPC_G1"
+  },
+  "100367": {
+    "model": "DS-2CD2726G1-IZS",
+    "hardware_version": "IPC_G0"
+  },
+  "100368": {
+    "model": "DS-2CD2726G2-IZS",
+    "hardware_version": "IPC_G0"
+  },
+  "100369": {
+    "model": "DS-2CD2726G2T-IZS",
+    "hardware_version": "IPC_G0"
+  },
+  "100370": {
+    "model": "DS-2CD2743G1-IZ",
+    "hardware_version": "IPC_G1"
+  },
+  "100371": {
+    "model": "DS-2CD2745FWD-IZS",
+    "hardware_version": "IPC_G1"
+  },
+  "100372": {
+    "model": "DS-2CD2746G1-IZS",
+    "hardware_version": "IPC_G0"
+  },
+  "100373": {
+    "model": "DS-2CD2746G2-IZS",
+    "hardware_version": "IPC_G0"
+  },
+  "100374": {
+    "model": "DS-2CD2763G1-IZ",
+    "hardware_version": "IPC_G1"
+  },
+  "100375": {
+    "model": "DS-2CD2765G0-IZS",
+    "hardware_version": "IPC_G1"
   }
 }

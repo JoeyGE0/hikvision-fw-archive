@@ -9193,5 +9193,177 @@
     "notes": "https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.6.821_Release_Note-IPC_G1_230831.pdf",
     "is_beta": false,
     "source": "live"
+  },
+  "DS-2CD2726G1-IZS_IPC_G0_5.6.0": {
+    "device_id": 100367,
+    "model": "DS-2CD2726G1-IZS",
+    "hardware_version": "IPC_G0",
+    "version": "5.6.0",
+    "date": "2019-05-07",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/18db80e0-2712-4496-8bd3-646f5014a59b.zip",
+    "filename": "18db80e0-2712-4496-8bd3-646f5014a59b.zip",
+    "supported_models": [
+      "DS-2CD2726G1-IZS"
+    ],
+    "applied_to": "Applied to: DS-2CD2726G1-IZS(2.8-12mm)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2726G2-IZS_IPC_G0_5.7.0": {
+    "device_id": 100368,
+    "model": "DS-2CD2726G2-IZS",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.0",
+    "date": "2024-10-23",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202411/Firmware__V5.7.0_241023_S3000609022.zip",
+    "filename": "Firmware__V5.7.0_241023_S3000609022.zip",
+    "supported_models": [
+      "DS-2CD2726G2-IZS"
+    ],
+    "applied_to": "Applied to: DS-2CD2726G2-IZS(2.8-12mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CNetwork_Camera-V5.5.820_Release_Note-G3.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2726G2-IZS_IPC_G0_5.5.820": {
+    "device_id": 100368,
+    "model": "DS-2CD2726G2-IZS",
+    "hardware_version": "IPC_G0",
+    "version": "5.5.820",
+    "date": "2023-11-08",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_231108_S3000539625.zip",
+    "filename": "Firmware__V5.5.820_231108_S3000539625.zip",
+    "supported_models": [
+      "DS-2CD2726G2-IZS"
+    ],
+    "applied_to": "Applied to: DS-2CD2726G2-IZS(2.8-12mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CNetwork_Camera-V5.5.820_Release_Note-G3.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2726G2T-IZS_IPC_G0_5.7.0": {
+    "device_id": 100369,
+    "model": "DS-2CD2726G2T-IZS",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.0",
+    "date": "2024-10-23",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202411/Firmware__V5.7.0_241023_S3000609022.zip",
+    "filename": "Firmware__V5.7.0_241023_S3000609022.zip",
+    "supported_models": [
+      "DS-2CD2726G2T-IZS"
+    ],
+    "applied_to": "Applied to: DS-2CD2726G2T-IZS(2.8-12mm)(D)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202507/releasenote%5CNetwork_Camera-V5.7.0_SP6_Release_Note-G6_I.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2743G1-IZ_IPC_G1_5.6.821": {
+    "device_id": 100370,
+    "model": "DS-2CD2743G1-IZ",
+    "hardware_version": "IPC_G1",
+    "version": "5.6.821",
+    "date": "2023-08-31",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202309/Firmware__V5.6.821_230831_S3000525150.zip",
+    "filename": "Firmware__V5.6.821_230831_S3000525150.zip",
+    "supported_models": [
+      "DS-2CD2743G1-IZS",
+      "DS-2CD2743G1-IZ"
+    ],
+    "applied_to": "Applied to: DS-2CD2743G1-IZS(2.8-12mm)(BLACK)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.6.821_Release_Note-IPC_G1_230831.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2745FWD-IZS_IPC_G1_5.6.821": {
+    "device_id": 100371,
+    "model": "DS-2CD2745FWD-IZS",
+    "hardware_version": "IPC_G1",
+    "version": "5.6.821",
+    "date": "2023-08-31",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202309/Firmware__V5.6.821_230831_S3000525150.zip",
+    "filename": "Firmware__V5.6.821_230831_S3000525150.zip",
+    "supported_models": [
+      "DS-2CD2745FWD-IZS"
+    ],
+    "applied_to": "Applied to: DS-2CD2745FWD-IZS/2.8-12mm/B/O-STD/BLACK",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.6.821_Release_Note-IPC_G1_230831.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2746G1-IZS_IPC_G0_5.6.0": {
+    "device_id": 100372,
+    "model": "DS-2CD2746G1-IZS",
+    "hardware_version": "IPC_G0",
+    "version": "5.6.0",
+    "date": "2019-05-07",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/18db80e0-2712-4496-8bd3-646f5014a59b.zip",
+    "filename": "18db80e0-2712-4496-8bd3-646f5014a59b.zip",
+    "supported_models": [
+      "DS-2CD2746G1-IZS"
+    ],
+    "applied_to": "Applied to: DS-2CD2746G1-IZS(2.8-12mm)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2746G2-IZS_IPC_G0_5.5.820": {
+    "device_id": 100373,
+    "model": "DS-2CD2746G2-IZS",
+    "hardware_version": "IPC_G0",
+    "version": "5.5.820",
+    "date": "2023-11-08",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_231108_S3000539625.zip",
+    "filename": "Firmware__V5.5.820_231108_S3000539625.zip",
+    "supported_models": [
+      "DS-2CD2746G2-IZS"
+    ],
+    "applied_to": "Applied to: DS-2CD2746G2-IZS(2.8-12mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CNetwork_Camera-V5.5.820_Release_Note-G3.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2763G1-IZ_IPC_G1_5.6.821": {
+    "device_id": 100374,
+    "model": "DS-2CD2763G1-IZ",
+    "hardware_version": "IPC_G1",
+    "version": "5.6.821",
+    "date": "2023-08-31",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202309/Firmware__V5.6.821_230831_S3000525150.zip",
+    "filename": "Firmware__V5.6.821_230831_S3000525150.zip",
+    "supported_models": [
+      "DS-2CD2763G1-IZ",
+      "DS-2CD2763G1-IZS"
+    ],
+    "applied_to": "Applied to: DS-2CD2763G1-IZ(2.8-12mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.6.821_Release_Note-IPC_G1_230831.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2765G0-IZS_IPC_G1_5.6.821": {
+    "device_id": 100375,
+    "model": "DS-2CD2765G0-IZS",
+    "hardware_version": "IPC_G1",
+    "version": "5.6.821",
+    "date": "2023-08-31",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202309/Firmware__V5.6.821_230831_S3000525150.zip",
+    "filename": "Firmware__V5.6.821_230831_S3000525150.zip",
+    "supported_models": [
+      "DS-2CD2765G0-IZS"
+    ],
+    "applied_to": "Applied to: DS-2CD2765G0-IZS(2.8-12mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.6.821_Release_Note-IPC_G1_230831.pdf",
+    "is_beta": false,
+    "source": "live"
   }
 }
