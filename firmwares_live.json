@@ -9365,5 +9365,178 @@
     "notes": "https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.6.821_Release_Note-IPC_G1_230831.pdf",
     "is_beta": false,
     "source": "live"
+  },
+  "DS-2CD2767G3T-LIZSY_IPC_G0_5.8.30": {
+    "device_id": 100376,
+    "model": "DS-2CD2767G3T-LIZSY",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.30",
+    "date": "2025-12-10",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.30_251210_S3000691342.zip",
+    "filename": "Firmware__V5.8.30_251210_S3000691342.zip",
+    "supported_models": [
+      "DS-2CD2767G3T-LIZSY"
+    ],
+    "applied_to": "Applied to: DS-2CD2767G3T-LIZSY(2.8-12mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-H13.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2783G1-IZ_IPC_G1_5.6.821": {
+    "device_id": 100377,
+    "model": "DS-2CD2783G1-IZ",
+    "hardware_version": "IPC_G1",
+    "version": "5.6.821",
+    "date": "2023-08-31",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202309/Firmware__V5.6.821_230831_S3000525150.zip",
+    "filename": "Firmware__V5.6.821_230831_S3000525150.zip",
+    "supported_models": [
+      "DS-2CD2783G1-IZ",
+      "DS-2CD2783G1-IZS"
+    ],
+    "applied_to": "Applied to: DS-2CD2783G1-IZ(2.8-12mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.6.821_Release_Note-IPC_G1_230831.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2783G2-IZS_IPC_G0_5.7.6": {
+    "device_id": 100378,
+    "model": "DS-2CD2783G2-IZS",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.6",
+    "date": "2026-01-28",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.6_260128_S3000701683.zip",
+    "filename": "Firmware__V5.7.6_260128_S3000701683.zip",
+    "supported_models": [
+      "DS-2CD2783G2-IZS"
+    ],
+    "applied_to": "Applied to: DS-2CD2783G2-IZS(2.8-12mm)(D)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2783G2-LIZS2U_IPC_G0_5.7.6": {
+    "device_id": 100379,
+    "model": "DS-2CD2783G2-LIZS2U",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.6",
+    "date": "2026-01-28",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.6_260128_S3000701683.zip",
+    "filename": "Firmware__V5.7.6_260128_S3000701683.zip",
+    "supported_models": [
+      "DS-2CD2783G2-LIZS2U"
+    ],
+    "applied_to": "Applied to: DS-2CD2783G2-LIZS2U(2.8-12mm)(T)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2785G0-IZS_IPC_G1_5.6.821": {
+    "device_id": 100380,
+    "model": "DS-2CD2785G0-IZS",
+    "hardware_version": "IPC_G1",
+    "version": "5.6.821",
+    "date": "2023-08-31",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202309/Firmware__V5.6.821_230831_S3000525150.zip",
+    "filename": "Firmware__V5.6.821_230831_S3000525150.zip",
+    "supported_models": [
+      "DS-2CD2785G0-IZS"
+    ],
+    "applied_to": "Applied to: DS-2CD2785G0-IZS(2.8-12mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.6.821_Release_Note-IPC_G1_230831.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2786G2-IZS_IPC_G0_5.5.820": {
+    "device_id": 100381,
+    "model": "DS-2CD2786G2-IZS",
+    "hardware_version": "IPC_G0",
+    "version": "5.5.820",
+    "date": "2023-11-08",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_231108_S3000539625.zip",
+    "filename": "Firmware__V5.5.820_231108_S3000539625.zip",
+    "supported_models": [
+      "DS-2CD2786G2-IZS"
+    ],
+    "applied_to": "Applied to: DS-2CD2786G2-IZS(2.8-12mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CNetwork_Camera-V5.5.820_Release_Note-G3.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2787G3T-LIZSY_IPC_G0_5.8.30": {
+    "device_id": 100382,
+    "model": "DS-2CD2787G3T-LIZSY",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.30",
+    "date": "2025-12-10",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.30_251210_S3000691342.zip",
+    "filename": "Firmware__V5.8.30_251210_S3000691342.zip",
+    "supported_models": [
+      "DS-2CD2787G3T-LIZSY"
+    ],
+    "applied_to": "Applied to: DS-2CD2787G3T-LIZSY(2.8-12mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-H13.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2821G0_IPC_G0_5.5.800": {
+    "device_id": 100383,
+    "model": "DS-2CD2821G0",
+    "hardware_version": "IPC_G0",
+    "version": "5.5.800",
+    "date": "2021-06-28",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/2b726e56-901f-4e8d-9fd4-e9d67bc8e80a.zip",
+    "filename": "2b726e56-901f-4e8d-9fd4-e9d67bc8e80a.zip",
+    "supported_models": [
+      "DS-2CD2821G0"
+    ],
+    "applied_to": "Applied to: DS-2CD2821G0",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2935FWD-I_IPC_G0_5.4.52": {
+    "device_id": 100384,
+    "model": "DS-2CD2935FWD-I",
+    "hardware_version": "IPC_G0",
+    "version": "5.4.52",
+    "date": "2020-04-16",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/7d4a69ad-ffac-4b30-a09d-66f19a538df0.zip",
+    "filename": "7d4a69ad-ffac-4b30-a09d-66f19a538df0.zip",
+    "supported_models": [
+      "DS-2CD2935FWD-I",
+      "DS-2CD2935FWD-IS"
+    ],
+    "applied_to": "Applied to: DS-2CD2935FWD-I(1.16mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CIPC_V5.4.52_G1__Release_Note--External.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2955FWD-I_IPC_G0_5.4.52": {
+    "device_id": 100385,
+    "model": "DS-2CD2955FWD-I",
+    "hardware_version": "IPC_G0",
+    "version": "5.4.52",
+    "date": "2020-04-16",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/7d4a69ad-ffac-4b30-a09d-66f19a538df0.zip",
+    "filename": "7d4a69ad-ffac-4b30-a09d-66f19a538df0.zip",
+    "supported_models": [
+      "DS-2CD2955FWD-IS",
+      "DS-2CD2955FWD-I"
+    ],
+    "applied_to": "Applied to: DS-2CD2955FWD-IS(1.05mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CIPC_V5.4.52_G1__Release_Note--External.pdf",
+    "is_beta": false,
+    "source": "live"
   }
 }
