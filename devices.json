@@ -1578,5 +1578,45 @@
   "100395": {
     "model": "DS-2CD2H23G1-IZ",
     "hardware_version": "IPC_G1"
+  },
+  "100396": {
+    "model": "DS-2CD2H25FHWD-IZS",
+    "hardware_version": "IPC_G1"
+  },
+  "100397": {
+    "model": "DS-2CD2H25FWD-IZS",
+    "hardware_version": "IPC_G1"
+  },
+  "100398": {
+    "model": "DS-2CD2H26G2-IZS",
+    "hardware_version": "IPC_G0"
+  },
+  "100399": {
+    "model": "DS-2CD2H43G1-IZ",
+    "hardware_version": "IPC_G1"
+  },
+  "100400": {
+    "model": "DS-2CD2H45FWD-IZS",
+    "hardware_version": "IPC_G1"
+  },
+  "100401": {
+    "model": "DS-2CD2H46G2-IZS",
+    "hardware_version": "IPC_G0"
+  },
+  "100402": {
+    "model": "DS-2CD2H55FWD-IZS",
+    "hardware_version": "IPC_G0"
+  },
+  "100403": {
+    "model": "DS-2CD2H63G1-IZ",
+    "hardware_version": "IPC_G1"
+  },
+  "100404": {
+    "model": "DS-2CD2H67G3-LIZS2UY",
+    "hardware_version": "IPC_G0"
+  },
+  "100405": {
+    "model": "DS-2CD2H67G3-LIZSY",
+    "hardware_version": "IPC_G0"
   }
 }
