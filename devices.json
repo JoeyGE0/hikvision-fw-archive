@@ -1690,5 +1690,25 @@
   "100423": {
     "model": "DS-2CD2T26G1-4I",
     "hardware_version": "IPC_G0"
+  },
+  "100424": {
+    "model": "DS-2CD2T26G2-2I",
+    "hardware_version": "IPC_G0"
+  },
+  "100425": {
+    "model": "DS-2CD2T26G2-ISU",
+    "hardware_version": "IPC_G0"
+  },
+  "100426": {
+    "model": "DS-2CD2T27G2-L",
+    "hardware_version": "IPC_G0"
+  },
+  "100427": {
+    "model": "DS-2CD2T43G0-I5",
+    "hardware_version": "IPC_G1"
+  },
+  "100428": {
+    "model": "DS-2CD2T43G2P-LISU",
+    "hardware_version": "IPC_G0"
   }
 }
