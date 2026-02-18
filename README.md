@@ -139,8 +139,8 @@ The scraper in `main.py` can always be improved:
 ## Status
 
 **Status:** ✅ SUCCESS  
-**Last Run:** 2026-02-18 08:43:56 UTC  
-**Firmwares Found:** 600  
+**Last Run:** 2026-02-18 20:38:29 UTC  
+**Firmwares Found:** 610  
 **New Firmwares:** 10  
 **Test Mode:** Disabled
 
@@ -152,7 +152,7 @@ The scraper in `main.py` can always be improved:
 
 Below is the complete list of archived firmwares, organized by device model and hardware version.
 
-**Total: 600**
+**Total: 610**
 
 
 
@@ -4635,6 +4635,106 @@ Below is the complete list of archived firmwares, organized by device model and 
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.5.820 | Applied to: [DS-2CD2T47G2-L(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_231108_S3000539625.zip) | 2023-11-08 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_231108_S3000539625.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CNetwork_Camera-V5.5.820_Release_Note-G3.pdf) |
 | 5.5.800 | Applied to: [DS-2CD2T47G2-L(2.8mm)](https://assets.hikvision.com/prd/public/all/files/7ddcc773-b084-4adc-a9e1-08ed4b8252f4.zip) | 2021-10-09 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/7ddcc773-b084-4adc-a9e1-08ed4b8252f4.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CNetwork_Camera-V5.5.820_Release_Note-G3.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD2T63G0-I5 - IPC_G1 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.6.821 | Applied to: [DS-2CD2T63G0-I8(4mm)](https://assets.hikvision.com/prd/public/all/files/202309/Firmware__V5.6.821_230831_S3000525150.zip) | 2023-08-31 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202309/Firmware__V5.6.821_230831_S3000525150.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.6.821_Release_Note-IPC_G1_230831.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD2T63G2P-LISU - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.11 | Applied to: [DS-2CD2T63G2P-LISU/SL(180°)](https://assets.hikvision.com/prd/normal/all/files/202511/Firmware__V5.8.11_251029_S3000683386.zip) | 2025-10-29 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202511/Firmware__V5.8.11_251029_S3000683386.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CNetwork_Camera-V5.8.11_SP1_251029_Release_Note-IPCE_P_E11.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD2T65G1-I5 - IPC_G1 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.6.821 | Applied to: [DS-2CD2T65G1-I5(4mm)](https://assets.hikvision.com/prd/public/all/files/202309/Firmware__V5.6.821_230831_S3000525150.zip)(BLACK) | 2023-08-31 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202309/Firmware__V5.6.821_230831_S3000525150.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.6.821_Release_Note-IPC_G1_230831.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD2T66G2P-ISU - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.20 | Applied to: [DS-2CD2T66G2P-ISU/SL(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202512/Firmware__V5.7.20_251125_S3000690065.zip)(C) | 2025-11-25 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202512/Firmware__V5.7.20_251125_S3000690065.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.7.20_251125_Release_Note-IPCE_P_G5.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD2T67G2P-LSU - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.20 | Applied to: [DS-2CD2T67G2P-LSU/SL(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202512/Firmware__V5.7.20_251125_S3000690065.zip)(C) | 2025-11-25 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202512/Firmware__V5.7.20_251125_S3000690065.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.7.20_251125_Release_Note-IPCE_P_G5.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD2T67G3-LIS2UY - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.30 | Applied to: [DS-2CD2T67G3-LIS2UY/SL(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.30_251210_S3000691342.zip) | 2025-12-10 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.30_251210_S3000691342.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-H13.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD2T67G3-LIY - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.30 | Applied to: [DS-2CD2T67G3-LIY(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.30_251210_S3000691342.zip) | 2025-12-10 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.30_251210_S3000691342.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-H13.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD2T83G0-I5 - IPC_G1 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.6.821 | Applied to: [DS-2CD2T83G0-I5(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202309/Firmware__V5.6.821_230831_S3000525150.zip) | 2023-08-31 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202309/Firmware__V5.6.821_230831_S3000525150.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.6.821_Release_Note-IPC_G1_230831.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD2T83G2-2I - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.6 | Applied to: [DS-2CD2T83G2-2I(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.6_260128_S3000701683.zip)(D) | 2026-01-28 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.6_260128_S3000701683.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD2T83G2-2LI - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.6 | Applied to: [DS-2CD2T83G2-2LI2U(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.6_260128_S3000701683.zip)(T) | 2026-01-28 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.6_260128_S3000701683.zip) |  |
 
 </details>
 
