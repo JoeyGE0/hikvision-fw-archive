@@ -139,8 +139,8 @@ The scraper in `main.py` can always be improved:
 ## Status
 
 **Status:** ✅ SUCCESS  
-**Last Run:** 2026-02-25 10:00:48 UTC  
-**Firmwares Found:** 737  
+**Last Run:** 2026-02-25 22:04:28 UTC  
+**Firmwares Found:** 747  
 **New Firmwares:** 10  
 **Test Mode:** Disabled
 
@@ -152,7 +152,7 @@ The scraper in `main.py` can always be improved:
 
 Below is the complete list of archived firmwares, organized by device model and hardware version.
 
-**Total: 737**
+**Total: 747**
 
 
 
@@ -5942,6 +5942,106 @@ Below is the complete list of archived firmwares, organized by device model and 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.7.55 | Applied to: [DS-2CD3766G2HT-LIZSU(PTRZ)](https://assets.hikvision.com/prd/public/all/files/202502/Firmware__V5.7.55_250211_S3000630839.zip)(27135)eFO-STD | 2025-02-11 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202502/Firmware__V5.7.55_250211_S3000630839.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202503/releasenote%5CNetwork_Camera-V5.7.55_SP4_Release_Note-G5_P.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD3766G2T-IZS - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.55 | Applied to: [DS-2CD3766G2T-IZS(2.7-13.5mm)](https://assets.hikvision.com/prd/public/all/files/202411/Firmware__V5.7.55_241108_S3000612871.zip)(H) | 2024-11-08 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202411/Firmware__V5.7.55_241108_S3000612871.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.7.55_SP3_241108_Release_Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD3766G3T-IZSU - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.30 | Applied to: [DS-2CD3766G3T-IZSUY(2.7-13.5mm)](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.30_251210_S3000691324.zip) | 2025-12-10 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.30_251210_S3000691324.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-H13.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD3766G3T-LIZSU - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.30 | Applied to: [DS-2CD3766G3T-LIZSU(2.7-13.5mm)](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.30_251210_S3000691324.zip)(eF)O-STD | 2025-12-10 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.30_251210_S3000691324.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-H13.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD3767G3-LIZSUY - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.30 | Applied to: [DS-2CD3767G3-LIZSUY/SL(PTRZ)](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.30_251210_S3000691324.zip)(27135)O-STD | 2025-12-10 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.30_251210_S3000691324.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-H13.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD3767G3T-LIZSU - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.30 | Applied to: [DS-2CD3767G3T-LIZSU(2.7-13.5mm)](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.30_251210_S3000691324.zip) | 2025-12-10 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.30_251210_S3000691324.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-H13.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD3767G3T-LIZSUY - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.30 | Applied to: [DS-2CD3767G3T-LIZSUY/SL(PTRZ)](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.30_251210_S3000691324.zip)(27135)OSTD | 2025-12-10 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.30_251210_S3000691324.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-H13.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD3786G2-IZS - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.55 | Applied to: [DS-2CD3786G2-IZS(2.7-13.5mm)](https://assets.hikvision.com/prd/public/all/files/202411/Firmware__V5.7.55_241108_S3000612871.zip)(H) | 2024-11-08 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202411/Firmware__V5.7.55_241108_S3000612871.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.7.55_SP3_241108_Release_Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD3786G2H-LIZSU - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.55 | Applied to: [DS-2CD3786G2H-LIZSU(PTRZ)](https://assets.hikvision.com/prd/public/all/files/202502/Firmware__V5.7.55_250211_S3000630839.zip)(27135)eF/O-STD | 2025-02-11 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202502/Firmware__V5.7.55_250211_S3000630839.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202503/releasenote%5CNetwork_Camera-V5.7.55_SP4_Release_Note-G5_P.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD3786G2HT-LIZS - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.55 | Applied to: [DS-2CD3786G2HT-LIZSU(2.7-13.5mm)](https://assets.hikvision.com/prd/public/all/files/202411/Firmware__V5.7.55_241108_S3000612871.zip) | 2024-11-08 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202411/Firmware__V5.7.55_241108_S3000612871.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.7.55_SP3_241108_Release_Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD3786G2HT-LIZSU - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.55 | Applied to: [DS-2CD3786G2HT-LIZSU(PTRZ)](https://assets.hikvision.com/prd/public/all/files/202502/Firmware__V5.7.55_250211_S3000630839.zip)(27135)eFO-STD | 2025-02-11 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202502/Firmware__V5.7.55_250211_S3000630839.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202503/releasenote%5CNetwork_Camera-V5.7.55_SP4_Release_Note-G5_P.pdf) |
 
 </details>
 

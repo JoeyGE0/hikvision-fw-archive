@@ -13018,5 +13018,181 @@
     "notes": "https://assets.hikvision.com/prd/public/all/files/202503/releasenote%5CNetwork_Camera-V5.7.55_SP4_Release_Note-G5_P.pdf",
     "is_beta": false,
     "source": "live"
+  },
+  "DS-2CD3766G2T-IZS_IPC_G0_5.7.55": {
+    "device_id": 100566,
+    "model": "DS-2CD3766G2T-IZS",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.55",
+    "date": "2024-11-08",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202411/Firmware__V5.7.55_241108_S3000612871.zip",
+    "filename": "Firmware__V5.7.55_241108_S3000612871.zip",
+    "supported_models": [
+      "DS-2CD3766G2T-IZS",
+      "DS-2CD3766G2T-IZSY"
+    ],
+    "applied_to": "Applied to: DS-2CD3766G2T-IZS(2.7-13.5mm)(H)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.7.55_SP3_241108_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD3766G3T-IZSU_IPC_G0_5.8.30": {
+    "device_id": 100567,
+    "model": "DS-2CD3766G3T-IZSU",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.30",
+    "date": "2025-12-10",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.30_251210_S3000691324.zip",
+    "filename": "Firmware__V5.8.30_251210_S3000691324.zip",
+    "supported_models": [
+      "DS-2CD3766G3T-IZSUY",
+      "DS-2CD3766G3T-IZSU"
+    ],
+    "applied_to": "Applied to: DS-2CD3766G3T-IZSUY(2.7-13.5mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-H13.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD3766G3T-LIZSU_IPC_G0_5.8.30": {
+    "device_id": 100568,
+    "model": "DS-2CD3766G3T-LIZSU",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.30",
+    "date": "2025-12-10",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.30_251210_S3000691324.zip",
+    "filename": "Firmware__V5.8.30_251210_S3000691324.zip",
+    "supported_models": [
+      "DS-2CD3766G3T-LIZSU",
+      "DS-2CD3766G3T-LIZSUY"
+    ],
+    "applied_to": "Applied to: DS-2CD3766G3T-LIZSU(2.7-13.5mm)(eF)O-STD",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-H13.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD3767G3-LIZSUY_IPC_G0_5.8.30": {
+    "device_id": 100569,
+    "model": "DS-2CD3767G3-LIZSUY",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.30",
+    "date": "2025-12-10",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.30_251210_S3000691324.zip",
+    "filename": "Firmware__V5.8.30_251210_S3000691324.zip",
+    "supported_models": [
+      "DS-2CD3767G3-LIZSUY"
+    ],
+    "applied_to": "Applied to: DS-2CD3767G3-LIZSUY/SL(PTRZ)(27135)O-STD",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-H13.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD3767G3T-LIZSU_IPC_G0_5.8.30": {
+    "device_id": 100570,
+    "model": "DS-2CD3767G3T-LIZSU",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.30",
+    "date": "2025-12-10",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.30_251210_S3000691324.zip",
+    "filename": "Firmware__V5.8.30_251210_S3000691324.zip",
+    "supported_models": [
+      "DS-2CD3767G3T-LIZSU",
+      "DS-2CD3767G3T-LIZSUY"
+    ],
+    "applied_to": "Applied to: DS-2CD3767G3T-LIZSU(2.7-13.5mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-H13.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD3767G3T-LIZSUY_IPC_G0_5.8.30": {
+    "device_id": 100571,
+    "model": "DS-2CD3767G3T-LIZSUY",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.30",
+    "date": "2025-12-10",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.30_251210_S3000691324.zip",
+    "filename": "Firmware__V5.8.30_251210_S3000691324.zip",
+    "supported_models": [
+      "DS-2CD3767G3T-LIZSUY"
+    ],
+    "applied_to": "Applied to: DS-2CD3767G3T-LIZSUY/SL(PTRZ)(27135)OSTD",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-H13.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD3786G2-IZS_IPC_G0_5.7.55": {
+    "device_id": 100572,
+    "model": "DS-2CD3786G2-IZS",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.55",
+    "date": "2024-11-08",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202411/Firmware__V5.7.55_241108_S3000612871.zip",
+    "filename": "Firmware__V5.7.55_241108_S3000612871.zip",
+    "supported_models": [
+      "DS-2CD3786G2-IZS"
+    ],
+    "applied_to": "Applied to: DS-2CD3786G2-IZS(2.7-13.5mm)(H)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.7.55_SP3_241108_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD3786G2H-LIZSU_IPC_G0_5.7.55": {
+    "device_id": 100573,
+    "model": "DS-2CD3786G2H-LIZSU",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.55",
+    "date": "2025-02-11",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202502/Firmware__V5.7.55_250211_S3000630839.zip",
+    "filename": "Firmware__V5.7.55_250211_S3000630839.zip",
+    "supported_models": [
+      "DS-2CD3786G2H-LIZSU"
+    ],
+    "applied_to": "Applied to: DS-2CD3786G2H-LIZSU(PTRZ)(27135)eF/O-STD",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202503/releasenote%5CNetwork_Camera-V5.7.55_SP4_Release_Note-G5_P.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD3786G2HT-LIZS_IPC_G0_5.7.55": {
+    "device_id": 100574,
+    "model": "DS-2CD3786G2HT-LIZS",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.55",
+    "date": "2024-11-08",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202411/Firmware__V5.7.55_241108_S3000612871.zip",
+    "filename": "Firmware__V5.7.55_241108_S3000612871.zip",
+    "supported_models": [
+      "DS-2CD3786G2HT-LIZS",
+      "DS-2CD3786G2HT-LIZSU",
+      "DS-2CD3786G2HT-LIZSUY"
+    ],
+    "applied_to": "Applied to: DS-2CD3786G2HT-LIZSU(2.7-13.5mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.7.55_SP3_241108_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD3786G2HT-LIZSU_IPC_G0_5.7.55": {
+    "device_id": 100575,
+    "model": "DS-2CD3786G2HT-LIZSU",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.55",
+    "date": "2025-02-11",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202502/Firmware__V5.7.55_250211_S3000630839.zip",
+    "filename": "Firmware__V5.7.55_250211_S3000630839.zip",
+    "supported_models": [
+      "DS-2CD3786G2HT-LIZSU"
+    ],
+    "applied_to": "Applied to: DS-2CD3786G2HT-LIZSU(PTRZ)(27135)eFO-STD",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202503/releasenote%5CNetwork_Camera-V5.7.55_SP4_Release_Note-G5_P.pdf",
+    "is_beta": false,
+    "source": "live"
   }
 }
