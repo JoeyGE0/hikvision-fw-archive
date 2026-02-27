@@ -1,8 +1,8 @@
 {
-  "last_run": "2026-02-26T21:59:30.709322",
+  "last_run": "2026-02-27T10:03:18.913990",
   "status": "error",
-  "firmwares_found": 762,
-  "new_firmwares": 5,
+  "firmwares_found": 769,
+  "new_firmwares": 7,
   "errors": [
     "Search failed for DS-2DE: ElementHandle.fill: Element is not attached to the DOM\nCall log:\n    - fill(\"\")\n  - attempting fill action\n    - waiting for element to be visible, enabled and editable\n",
     "Search failed for DS-76: ElementHandle.fill: Element is not attached to the DOM\nCall log:\n    - fill(\"\")\n  - attempting fill action\n    - waiting for element to be visible, enabled and editable\n",
