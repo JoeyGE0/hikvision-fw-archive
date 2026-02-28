@@ -2422,5 +2422,25 @@
   "100606": {
     "model": "DS-2CD3T46G3-2ISU",
     "hardware_version": "IPC_G0"
+  },
+  "100607": {
+    "model": "DS-2CD3T46G3-ISU",
+    "hardware_version": "IPC_G0"
+  },
+  "100608": {
+    "model": "DS-2CD3T46G3-LISU",
+    "hardware_version": "IPC_G0"
+  },
+  "100609": {
+    "model": "DS-2CD3T47G3-LISU",
+    "hardware_version": "IPC_G0"
+  },
+  "100610": {
+    "model": "DS-2CD3T66G2-4IS",
+    "hardware_version": "IPC_G0"
+  },
+  "100611": {
+    "model": "DS-2CD3T66G2H-LIS",
+    "hardware_version": "IPC_G0"
   }
 }
