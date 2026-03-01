@@ -139,8 +139,8 @@ The scraper in `main.py` can always be improved:
 ## Status
 
 **Status:** ✅ SUCCESS  
-**Last Run:** 2026-02-28 21:32:36 UTC  
-**Firmwares Found:** 794  
+**Last Run:** 2026-03-01 10:15:04 UTC  
+**Firmwares Found:** 804  
 **New Firmwares:** 10  
 **Test Mode:** Disabled
 
@@ -152,7 +152,7 @@ The scraper in `main.py` can always be improved:
 
 Below is the complete list of archived firmwares, organized by device model and hardware version.
 
-**Total: 794**
+**Total: 804**
 
 
 
@@ -6503,6 +6503,97 @@ Below is the complete list of archived firmwares, organized by device model and 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.8.30 | Applied to: [DS-2CD3T86G3-LISUY(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.30_251210_S3000691324.zip)(eF) | 2025-12-10 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.30_251210_S3000691324.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-H13.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD3T87G2P-LSU - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.20 | Applied to: [DS-2CD3T87G2P-LSU/SL(4mm)](https://assets.hikvision.com/prd/normal/all/files/202512/Firmware__V5.7.20_251125_S3000690065.zip)(C) | 2025-11-25 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202512/Firmware__V5.7.20_251125_S3000690065.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.7.20_251125_Release_Note-IPCE_P_G5.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD3T87G3-LISU - IPC_G0 (2 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.30 | Applied to: [DS-2CD3T87G3-LISUY(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.30_251210_S3000691324.zip) | 2025-12-10 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.30_251210_S3000691324.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-H13.pdf) |
+| 5.8.10 | Applied to: [DS-2CD3T87G3-LISUY(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202505/Firmware__V5.8.10_250410_S3000646734.zip) | 2025-04-10 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202505/Firmware__V5.8.10_250410_S3000646734.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-H13.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD3TC7G3-LISU - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.2 | Applied to: [DS-2CD3TC7G3-LISUY(4mm)](https://assets.hikvision.com/prd/normal/all/files/202511/Firmware__V5.8.2_251103_S3000682562.zip)(BLACK) | 2025-11-03 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202511/Firmware__V5.8.2_251103_S3000682562.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202511/releasenote%5CNetwork_Camera-V5.8.2_251103_Release_Note-IPCE_H_G9.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD4A24FWD-IZ - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.5.84 | Applied to: [DS-2CD4A24FWD-IZ(4.7-94mm)](https://assets.hikvision.com/prd/public/all/files/d555f2de-098a-40f4-b417-e8db8a68a42a.zip)(T) | 2019-05-07 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/d555f2de-098a-40f4-b417-e8db8a68a42a.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD4A45G0-IZ - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.5.85 | Applied to: [DS-2CD4A45G0-IZHS(4.7-94mm)](https://assets.hikvision.com/prd/public/all/files/d3b888f5-d9e5-4f4a-8eac-251e4f17471c.zip)(B) | 2019-11-07 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/d3b888f5-d9e5-4f4a-8eac-251e4f17471c.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD4B26FWD-IZ - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.5.91 | Applied to: [DS-2CD4B26FWD-IZS(2.8-12mm)](https://assets.hikvision.com/prd/public/all/files/560e73e2-270f-4f2d-b248-d18f6e89e09e.zip) | 2021-04-29 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/560e73e2-270f-4f2d-b248-d18f6e89e09e.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5C%E3%80%90Release_Note%E3%80%91Mobile_IPC_V5.5.91_210429.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD4B36FWD-IZ - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.5.91 | Applied to: [DS-2CD4B36FWD-IZS(2.8-12mm)](https://assets.hikvision.com/prd/public/all/files/560e73e2-270f-4f2d-b248-d18f6e89e09e.zip) | 2021-04-29 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/560e73e2-270f-4f2d-b248-d18f6e89e09e.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5C%E3%80%90Release_Note%E3%80%91Mobile_IPC_V5.5.91_210429.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD4B45G0-IZS - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.5.85 | Applied to: [DS-2CD4B45G0-IZS(4.7-65.8mm)](https://assets.hikvision.com/prd/public/all/files/d3b888f5-d9e5-4f4a-8eac-251e4f17471c.zip)(B) | 2019-11-07 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/d3b888f5-d9e5-4f4a-8eac-251e4f17471c.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD4D36FWD-IZ - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.5.91 | Applied to: [DS-2CD4D36FWD-IZS(2.8-12mm)](https://assets.hikvision.com/prd/public/all/files/560e73e2-270f-4f2d-b248-d18f6e89e09e.zip) | 2021-04-29 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/560e73e2-270f-4f2d-b248-d18f6e89e09e.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5C%E3%80%90Release_Note%E3%80%91Mobile_IPC_V5.5.91_210429.pdf) |
 
 </details>
 
