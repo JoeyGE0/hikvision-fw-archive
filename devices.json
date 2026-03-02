@@ -2570,5 +2570,33 @@
   "100643": {
     "model": "DS-2CD6984G0-IH",
     "hardware_version": "IPC_G0"
+  },
+  "100644": {
+    "model": "DS-2CD6B55G0-PL",
+    "hardware_version": "IPC_G0"
+  },
+  "100645": {
+    "model": "DS-2CD6D24FWD-IZHS",
+    "hardware_version": "IPC_G0"
+  },
+  "100646": {
+    "model": "DS-2CD6D42G0-IS",
+    "hardware_version": "IPC_G0"
+  },
+  "100647": {
+    "model": "DS-2CD6D42G2-IS",
+    "hardware_version": "IPC_G0"
+  },
+  "100648": {
+    "model": "DS-2CD6D44G1-IZS",
+    "hardware_version": "IPC_G0"
+  },
+  "100649": {
+    "model": "DS-2CD6D44G1H-IZS",
+    "hardware_version": "IPC_G0"
+  },
+  "100650": {
+    "model": "DS-2CD6D52G0-IH",
+    "hardware_version": "IPC_G0"
   }
 }
