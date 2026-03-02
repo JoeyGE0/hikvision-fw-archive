@@ -2558,5 +2558,17 @@
   "100640": {
     "model": "DS-2CD6924G0-IHS",
     "hardware_version": "IPC_G0"
+  },
+  "100641": {
+    "model": "DS-2CD6944G0-IHS",
+    "hardware_version": "IPC_G0"
+  },
+  "100642": {
+    "model": "DS-2CD6951G2-IS",
+    "hardware_version": "IPC_G0"
+  },
+  "100643": {
+    "model": "DS-2CD6984G0-IH",
+    "hardware_version": "IPC_G0"
   }
 }

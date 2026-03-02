@@ -138,11 +138,44 @@ The scraper in `main.py` can always be improved:
 
 ## Status
 
-**Status:** ✅ SUCCESS  
-**Last Run:** 2026-03-01 21:38:37 UTC  
-**Firmwares Found:** 814  
-**New Firmwares:** 10  
+**Status:** ❌ ERROR  
+**Last Run:** 2026-03-02 10:23:16 UTC  
+**Firmwares Found:** 821  
+**New Firmwares:** 7  
 **Test Mode:** Disabled
+
+
+
+**Recent Errors:**
+- ⚠️ Search failed for DS-2DE: ElementHandle.fill: Element is not attached to the DOM
+Call log:
+    - fill("")
+  - attempting fill action
+    - waiting for element to be visible, enabled and editable
+
+- ⚠️ Search failed for DS-76: ElementHandle.fill: Element is not attached to the DOM
+Call log:
+    - fill("")
+  - attempting fill action
+    - waiting for element to be visible, enabled and editable
+
+- ⚠️ Search failed for DS-77: ElementHandle.fill: Element is not attached to the DOM
+Call log:
+    - fill("")
+  - attempting fill action
+    - waiting for element to be visible, enabled and editable
+
+- ⚠️ Search failed for DS-2TD: ElementHandle.fill: Element is not attached to the DOM
+Call log:
+    - fill("")
+  - attempting fill action
+    - waiting for element to be visible, enabled and editable
+
+- ⚠️ Search failed for AE-: ElementHandle.fill: Element is not attached to the DOM
+Call log:
+    - fill("")
+  - attempting fill action
+    - waiting for element to be visible, enabled and editable
 
 
 
@@ -152,7 +185,7 @@ The scraper in `main.py` can always be improved:
 
 Below is the complete list of archived firmwares, organized by device model and hardware version.
 
-**Total: 814**
+**Total: 821**
 
 
 
@@ -6689,11 +6722,45 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 
 <details>
-<summary><h2>DS-2CD6924G0-IHS - IPC_G0 (1 firmwares)</h2></summary>
+<summary><h2>DS-2CD6924G0-IHS - IPC_G0 (3 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.1 | Applied to: [DS-2CD6924G0-IHS(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202406/1718399693233/Firmware__V5.7.1_240613_S3000580356.zip)(C) | 2024-06-13 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202406/1718399693233/Firmware__V5.7.1_240613_S3000580356.zip) |  |
 | 5.7.0 | Applied to: [DS-2CD6924G0-IHS/NFC(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202402/Firmware__V5.7.0_240129_S3000555034.zip) | 2024-01-29 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202402/Firmware__V5.7.0_240129_S3000555034.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CIPCP_H5_5.5.820_Release_Note.pdf) |
+| 5.5.820 | Applied to: [DS-2CD6924G0-IHS/NFC(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_230717_S3000547672.zip) | 2023-07-17 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_230717_S3000547672.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CIPCP_H5_5.5.820_Release_Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD6944G0-IHS - IPC_G0 (3 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.1 | Applied to: [DS-2CD6944G0-IHS(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202406/1718399693233/Firmware__V5.7.1_240613_S3000580356.zip)(C) | 2024-06-13 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202406/1718399693233/Firmware__V5.7.1_240613_S3000580356.zip) |  |
+| 5.7.0 | Applied to: [DS-2CD6944G0-IHS(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202402/Firmware__V5.7.0_240129_S3000555034.zip) | 2024-01-29 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202402/Firmware__V5.7.0_240129_S3000555034.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CIPCP_H5_5.5.820_Release_Note.pdf) |
+| 5.5.820 | Applied to: [DS-2CD6944G0-IHS(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_230717_S3000547672.zip) | 2023-07-17 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_230717_S3000547672.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CIPCP_H5_5.5.820_Release_Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD6951G2-IS - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.11 | Applied to: [DS-2CD6951G2-IS(2mm)](https://assets.hikvision.com/prd/normal/all/files/202511/Firmware__V5.8.11_251114_S3000686926.zip) | 2025-11-14 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202511/Firmware__V5.8.11_251114_S3000686926.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CIPCG_PS_G5_Camera_V5.8.11_251114_Release_Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD6984G0-IH - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.0 | Applied to: [DS-2CD6984G0-IHSAC/NFC(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202402/Firmware__V5.7.0_240129_S3000555034.zip) | 2024-01-29 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202402/Firmware__V5.7.0_240129_S3000555034.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CIPCP_H5_5.5.820_Release_Note.pdf) |
 
 </details>
 
