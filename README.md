@@ -139,8 +139,8 @@ The scraper in `main.py` can always be improved:
 ## Status
 
 **Status:** ✅ SUCCESS  
-**Last Run:** 2026-03-02 22:02:55 UTC  
-**Firmwares Found:** 831  
+**Last Run:** 2026-03-03 10:28:46 UTC  
+**Firmwares Found:** 841  
 **New Firmwares:** 10  
 **Test Mode:** Disabled
 
@@ -152,7 +152,7 @@ The scraper in `main.py` can always be improved:
 
 Below is the complete list of archived firmwares, organized by device model and hardware version.
 
-**Total: 831**
+**Total: 841**
 
 
 
@@ -6801,6 +6801,106 @@ Below is the complete list of archived firmwares, organized by device model and 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.5.820 | Applied to: [DS-2CD6D52G0-IHS(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202207/IPC_H7_EN_STD_5.5.820_220609.zip) | 2022-06-09 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202207/IPC_H7_EN_STD_5.5.820_220609.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD6D54FWD- - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.5.801 | Applied to: [DS-2CD6D54FWD-IZHS(2.8-12mm)](https://assets.hikvision.com/prd/public/all/files/4c6ede40-0464-4a88-a0e4-f87cc45b37a2.zip) | 2021-09-27 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/4c6ede40-0464-4a88-a0e4-f87cc45b37a2.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202207/IPC%20V5.5.801%20build%20210927%20Release%20Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD6D54G1-IZ - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.5.801 | Applied to: [DS-2CD6D54G1-IZS(2.8-8mm)](https://assets.hikvision.com/prd/public/all/files/4c6ede40-0464-4a88-a0e4-f87cc45b37a2.zip) | 2021-09-27 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/4c6ede40-0464-4a88-a0e4-f87cc45b37a2.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202207/IPC%20V5.5.801%20build%20210927%20Release%20Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD6D54G1-IZS - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.5.821 | Applied to: [DS-2CD6D54G1-IZS(2.8-8mm)](https://assets.hikvision.com/prd/public/all/files/202310/Firmware__V5.5.821_230830_S3000530199.zip)(B) | 2023-08-30 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202310/Firmware__V5.5.821_230830_S3000530199.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202310/releasenote%5CIPCMC_H3_V5.5.821_Release_Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD6D54G1-ZS - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.5.801 | Applied to: [DS-2CD6D54G1-ZS/RC(2.8-8mm)](https://assets.hikvision.com/prd/public/all/files/4c6ede40-0464-4a88-a0e4-f87cc45b37a2.zip) | 2021-09-27 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/4c6ede40-0464-4a88-a0e4-f87cc45b37a2.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202207/IPC%20V5.5.801%20build%20210927%20Release%20Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD6D54G2-IZHS - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.9.0 | Applied to: [DS-2CD6D54G2-IZHS(2.8-8mm)](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.9.0_251208_S3000690292.zip) | 2025-12-08 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.9.0_251208_S3000690292.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CPanoVu_Camera_6D5x_V5.9.0_251208_Release_Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD6D55G2-IZHS - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.9.0 | Applied to: [DS-2CD6D55G2-IZHS(2.8-8mm/2mm)](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.9.0_251208_S3000690292.zip) | 2025-12-08 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.9.0_251208_S3000690292.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CPanoVu_Camera_6D5x_V5.9.0_251208_Release_Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD6D82G0-IH - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.5.820 | Applied to: [DS-2CD6D82G0-IHS(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202207/IPC_H7_EN_STD_5.5.820_220609.zip) | 2022-06-09 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202207/IPC_H7_EN_STD_5.5.820_220609.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD6D82G2-IS - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.9.0 | Applied to: [DS-2CD6D82G2-IS(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202508/Firmware__V5.9.0_250730_S3000665724.zip) | 2025-07-30 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202508/Firmware__V5.9.0_250730_S3000665724.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5C6_Series_Dual-Lens_Camera_V5.9.0_250730_Release_Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD6F82G0-S - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.2 | Applied to: [DS-2CD6F82G0-S(4mm/8mm)](https://assets.hikvision.com/prd/public/all/files/202507/Firmware__V5.8.2_250709_S3000660429.zip) | 2025-07-09 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202507/Firmware__V5.8.2_250709_S3000660429.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD6F82G0-WS - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.2 | Applied to: [DS-2CD6F82G0-WS(4mm/8mm)](https://assets.hikvision.com/prd/public/all/files/202507/Firmware__V5.8.2_250709_S3000660429.zip) | 2025-07-09 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202507/Firmware__V5.8.2_250709_S3000660429.zip) |  |
 
 </details>
 
