@@ -139,8 +139,8 @@ The scraper in `main.py` can always be improved:
 ## Status
 
 **Status:** ✅ SUCCESS  
-**Last Run:** 2026-03-03 10:28:46 UTC  
-**Firmwares Found:** 841  
+**Last Run:** 2026-03-03 22:12:44 UTC  
+**Firmwares Found:** 851  
 **New Firmwares:** 10  
 **Test Mode:** Disabled
 
@@ -152,7 +152,7 @@ The scraper in `main.py` can always be improved:
 
 Below is the complete list of archived firmwares, organized by device model and hardware version.
 
-**Total: 841**
+**Total: 851**
 
 
 
@@ -3076,6 +3076,16 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 
 <details>
+<summary><h2>DS-2CD2343G2D-LIZ2UY - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.11 | Applied to: [DS-2CD2343G2D-LIZ2UY/SL(2.8/4mm)](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.11_251216_S3000692172.zip) | 2025-12-16 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.11_251216_S3000692172.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.8.11_251216_Release_Note-IPCE_D_H13.pdf) |
+
+</details>
+
+
+<details>
 <summary><h2>DS-2CD2343G2P-LISU - IPC_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
@@ -3173,6 +3183,16 @@ Below is the complete list of archived firmwares, organized by device model and 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.8.21 | Applied to: [DS-2CD2346G3-IZS2UY/SRB(2.8/4mm)](https://assets.hikvision.com/prd/normal/all/files/202512/Firmware__V5.8.21_251117_S3000687899.zip) | 2025-11-17 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202512/Firmware__V5.8.21_251117_S3000687899.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.8.21_SP1_251117_Release_Note-H13U.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD2346G3D-IZ2UY - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.11 | Applied to: [DS-2CD2346G3D-IZ2UY/SRB(2.8/4)](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.11_251216_S3000692172.zip)O-STDBLACK | 2025-12-16 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.11_251216_S3000692172.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.8.11_251216_Release_Note-IPCE_D_H13.pdf) |
 
 </details>
 
@@ -5214,6 +5234,16 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 
 <details>
+<summary><h2>DS-2CD3343G2 - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.11 | Applied to: [DS-2CD3343G2/X2-LIZSUY/SL(2.8/4mm)](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.11_251216_S3000692172.zip)O-STD | 2025-12-16 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.11_251216_S3000692172.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.8.11_251216_Release_Note-IPCE_D_H13.pdf) |
+
+</details>
+
+
+<details>
 <summary><h2>DS-2CD3346G2-IS - IPC_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
@@ -6619,6 +6649,46 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 
 <details>
+<summary><h2>DS-2CD6365G1-IVS - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.3 | Applied to: [DS-2CD6365G1-IVS(1.16mm)](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.3_260112_S3000699425.zip) | 2026-01-12 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.3_260112_S3000699425.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD6365G1-S - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.3 | Applied to: [DS-2CD6365G1-S/RC(1.16mm)](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.3_260112_S3000699425.zip) | 2026-01-12 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.3_260112_S3000699425.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD63C5G1-IVS - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.3 | Applied to: [DS-2CD63C5G1-IVS(1.29mm)](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.3_260112_S3000699425.zip) | 2026-01-12 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.3_260112_S3000699425.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD63C5G1-S - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.3 | Applied to: [DS-2CD63C5G1-S/RC(1.29mm)](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.3_260112_S3000699425.zip) | 2026-01-12 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.3_260112_S3000699425.zip) |  |
+
+</details>
+
+
+<details>
 <summary><h2>DS-2CD6425G1-XX - IPC_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
@@ -6901,6 +6971,36 @@ Below is the complete list of archived firmwares, organized by device model and 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.8.2 | Applied to: [DS-2CD6F82G0-WS(4mm/8mm)](https://assets.hikvision.com/prd/public/all/files/202507/Firmware__V5.8.2_250709_S3000660429.zip) | 2025-07-09 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202507/Firmware__V5.8.2_250709_S3000660429.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD6W65G1-IVS - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.3 | Applied to: [DS-2CD6W65G1-IVS(1.16mm)](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.3_260112_S3000699425.zip) | 2026-01-12 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.3_260112_S3000699425.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CE11D0T-PIRLO - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 1.04.00 | Applied to: [DS-2CE11D0T-PIRLO(2.8mm)](https://assets.hikvision.com/prd/public/all/files/69abb770-f4dd-44cc-8019-2402c5b56195.zip) | 2019-12-02 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/69abb770-f4dd-44cc-8019-2402c5b56195.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CE12D0T-PIRLO - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 1.04.00 | Applied to: [DS-2CE12D0T-PIRLO(2.8mm)](https://assets.hikvision.com/prd/public/all/files/69abb770-f4dd-44cc-8019-2402c5b56195.zip) | 2019-12-02 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/69abb770-f4dd-44cc-8019-2402c5b56195.zip) |  |
 
 </details>
 
