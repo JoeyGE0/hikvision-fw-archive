@@ -2718,5 +2718,45 @@
   "100680": {
     "model": "DS-2CFS04",
     "hardware_version": "UNKNOWN"
+  },
+  "100681": {
+    "model": "DS-2CFW02",
+    "hardware_version": "UNKNOWN"
+  },
+  "100682": {
+    "model": "DS-2CFW04",
+    "hardware_version": "UNKNOWN"
+  },
+  "100683": {
+    "model": "DS-2CFW06-P",
+    "hardware_version": "UNKNOWN"
+  },
+  "100684": {
+    "model": "DS-2CFWQ3",
+    "hardware_version": "UNKNOWN"
+  },
+  "100685": {
+    "model": "DS-2CFWQ5",
+    "hardware_version": "UNKNOWN"
+  },
+  "100686": {
+    "model": "DS-2CFWQ6-D",
+    "hardware_version": "UNKNOWN"
+  },
+  "100687": {
+    "model": "DS-2CV1021G0-IDW",
+    "hardware_version": "UNKNOWN"
+  },
+  "100688": {
+    "model": "DS-2CV1023G2-LIDW",
+    "hardware_version": "UNKNOWN"
+  },
+  "100689": {
+    "model": "DS-2CV1043G2-LIDW",
+    "hardware_version": "UNKNOWN"
+  },
+  "100690": {
+    "model": "DS-2CV1F23G2-LIDWF",
+    "hardware_version": "UNKNOWN"
   }
 }
