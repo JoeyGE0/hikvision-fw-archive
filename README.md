@@ -139,8 +139,8 @@ The scraper in `main.py` can always be improved:
 ## Status
 
 **Status:** ✅ SUCCESS  
-**Last Run:** 2026-03-03 22:12:44 UTC  
-**Firmwares Found:** 851  
+**Last Run:** 2026-03-04 10:11:44 UTC  
+**Firmwares Found:** 861  
 **New Firmwares:** 10  
 **Test Mode:** Disabled
 
@@ -152,7 +152,7 @@ The scraper in `main.py` can always be improved:
 
 Below is the complete list of archived firmwares, organized by device model and hardware version.
 
-**Total: 851**
+**Total: 861**
 
 
 
@@ -7001,6 +7001,106 @@ Below is the complete list of archived firmwares, organized by device model and 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 1.04.00 | Applied to: [DS-2CE12D0T-PIRLO(2.8mm)](https://assets.hikvision.com/prd/public/all/files/69abb770-f4dd-44cc-8019-2402c5b56195.zip) | 2019-12-02 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/69abb770-f4dd-44cc-8019-2402c5b56195.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CE16C0T-IRP - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 1.03.00 | Applied to: [DS-2CE16C0T-IRP(2.8mm)](https://assets.hikvision.com/prd/public/all/files/2d1e38da-635e-4597-9968-4849720b7602.zip)(B) | 2018-01-17 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/2d1e38da-635e-4597-9968-4849720b7602.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CE16D0T-VFIR3F - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 1.09.00 | Applied to: [DS-2CE16D0T-VFIR3F(2.8-12mm)](https://assets.hikvision.com/prd/public/all/files/c07f4409-e9af-42b2-af68-4dd1a78afad4.zip) | 2021-12-02 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/c07f4409-e9af-42b2-af68-4dd1a78afad4.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CE16H0T-ITF - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 1.03.02 | Applied to: [DS-2CE16H0T-ITF(2.8mm)](https://assets.hikvision.com/prd/public/all/files/431928a6-68c4-4c12-9768-f832b6d9ce30.zip) | 2020-08-26 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/431928a6-68c4-4c12-9768-f832b6d9ce30.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CE56C0T-IRP - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 1.03.00 | Applied to: [DS-2CE56C0T-IRP(2.8mm)](https://assets.hikvision.com/prd/public/all/files/2d1e38da-635e-4597-9968-4849720b7602.zip)(B) | 2018-01-17 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/2d1e38da-635e-4597-9968-4849720b7602.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CE56D0T-VFIR3E - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 1.05.01 | Applied to: [DS-2CE56D0T-VFIR3E(2.8-12mm)](https://assets.hikvision.com/prd/public/all/files/43fc2fab-1e87-4a88-b81f-807028b6c33c.zip) | 2020-03-23 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/43fc2fab-1e87-4a88-b81f-807028b6c33c.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CE56D0T-VFIR3F - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 1.09.00 | Applied to: [DS-2CE56D0T-VFIR3F(2.8-12mm)](https://assets.hikvision.com/prd/public/all/files/70474c85-ca48-4d5d-bc63-6ff018ea610c.zip) | 2019-12-02 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/70474c85-ca48-4d5d-bc63-6ff018ea610c.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CE56D0T-VFIRE - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 1.05.01 | Applied to: [DS-2CE56D0T-VFIRE(2.8-12mm)](https://assets.hikvision.com/prd/public/all/files/f5bbc2ed-315c-4413-a94c-5fd4fdda15de.zip) | 2020-03-23 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/f5bbc2ed-315c-4413-a94c-5fd4fdda15de.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CE56D0T-VPIR3F - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 1.09.00 | Applied to: [DS-2CE56D0T-VPIR3F(2.8-12mm)](https://assets.hikvision.com/prd/public/all/files/70474c85-ca48-4d5d-bc63-6ff018ea610c.zip) | 2019-12-02 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/70474c85-ca48-4d5d-bc63-6ff018ea610c.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CE71D0T-PIRLO - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 1.04.00 | Applied to: [DS-2CE71D0T-PIRLO(2.8mm)](https://assets.hikvision.com/prd/public/all/files/69abb770-f4dd-44cc-8019-2402c5b56195.zip) | 2019-12-02 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/69abb770-f4dd-44cc-8019-2402c5b56195.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CFS04 - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.9.11 | Applied to: [DS-2CFS04/4G(4mm)](https://assets.hikvision.com/prd/normal/all/files/202511/Firmware__V5.9.11_251030_S3000682327.zip) | 2025-10-30 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202511/Firmware__V5.9.11_251030_S3000682327.zip) |  |
 
 </details>
 

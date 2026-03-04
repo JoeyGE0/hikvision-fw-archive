@@ -2678,5 +2678,45 @@
   "100670": {
     "model": "DS-2CE12D0T-PIRLO",
     "hardware_version": "UNKNOWN"
+  },
+  "100671": {
+    "model": "DS-2CE16C0T-IRP",
+    "hardware_version": "UNKNOWN"
+  },
+  "100672": {
+    "model": "DS-2CE16D0T-VFIR3F",
+    "hardware_version": "UNKNOWN"
+  },
+  "100673": {
+    "model": "DS-2CE16H0T-ITF",
+    "hardware_version": "UNKNOWN"
+  },
+  "100674": {
+    "model": "DS-2CE56C0T-IRP",
+    "hardware_version": "UNKNOWN"
+  },
+  "100675": {
+    "model": "DS-2CE56D0T-VFIR3E",
+    "hardware_version": "UNKNOWN"
+  },
+  "100676": {
+    "model": "DS-2CE56D0T-VFIR3F",
+    "hardware_version": "UNKNOWN"
+  },
+  "100677": {
+    "model": "DS-2CE56D0T-VFIRE",
+    "hardware_version": "UNKNOWN"
+  },
+  "100678": {
+    "model": "DS-2CE56D0T-VPIR3F",
+    "hardware_version": "UNKNOWN"
+  },
+  "100679": {
+    "model": "DS-2CE71D0T-PIRLO",
+    "hardware_version": "UNKNOWN"
+  },
+  "100680": {
+    "model": "DS-2CFS04",
+    "hardware_version": "UNKNOWN"
   }
 }
