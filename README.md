@@ -139,8 +139,8 @@ The scraper in `main.py` can always be improved:
 ## Status
 
 **Status:** ✅ SUCCESS  
-**Last Run:** 2026-03-04 22:09:31 UTC  
-**Firmwares Found:** 871  
+**Last Run:** 2026-03-05 10:35:15 UTC  
+**Firmwares Found:** 881  
 **New Firmwares:** 10  
 **Test Mode:** Disabled
 
@@ -152,7 +152,7 @@ The scraper in `main.py` can always be improved:
 
 Below is the complete list of archived firmwares, organized by device model and hardware version.
 
-**Total: 871**
+**Total: 881**
 
 
 
@@ -7201,6 +7201,79 @@ Below is the complete list of archived firmwares, organized by device model and 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.8.22 | Applied to: [DS-2CV1F23G2-LIDWF(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.22_250708_S3000661552.zip)(B) | 2025-07-08 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.22_250708_S3000661552.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202508/releasenote%5CNetwork_Camera-V5.8.22_250708_Release_Note-E9.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CV1F43G2-LIDWF - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.22 | Applied to: [DS-2CV1F43G2-LIDWF(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.22_250708_S3000661562.zip)(B) | 2025-07-08 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.22_250708_S3000661562.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202508/releasenote%5CNetwork_Camera-V5.8.22_250708_Release_Note-E10.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CV2021G2-IDW - UNKNOWN (3 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.24 | Applied to: [DS-2CV2021G2-IDW(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202509/Firmware__V5.7.24_250828_S3000671925.zip) | 2025-08-28 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202509/Firmware__V5.7.24_250828_S3000671925.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202404/1712790066963/releasenote%5CIPC_E6_5.5.821_Release_Note.pdf) |
+| 5.5.821 | Applied to: [DS-2CV2021G2-IDW(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.821_231108_S3000539545.zip) | 2023-11-08 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.821_231108_S3000539545.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202404/1712790066963/releasenote%5CIPC_E6_5.5.821_Release_Note.pdf) |
+| 5.5.803 | Applied to: [DS-2CV2021G2-IDW(2.8mm)](https://assets.hikvision.com/prd/public/all/files/e037f86a-4a71-43a9-9297-c597d9bca538.zip) | 2021-08-17 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/e037f86a-4a71-43a9-9297-c597d9bca538.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202404/1712790066963/releasenote%5CIPC_E6_5.5.821_Release_Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CV2026G0-IDW - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.5.820 | Applied to: [DS-2CV2026G0-IDW(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_231120_S3000541957.zip)(D) | 2023-11-20 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_231120_S3000541957.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.5.820_Release_Note-G6.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CV2027G0-LDW - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.5.820 | Applied to: [DS-2CV2027G0-LDW(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_231120_S3000541957.zip) | 2023-11-20 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_231120_S3000541957.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.5.820_Release_Note-G6.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CV2041G2-IDW - UNKNOWN (2 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.24 | Applied to: [DS-2CV2041G2-IDW(4mm)](https://assets.hikvision.com/prd/normal/all/files/202509/Firmware__V5.7.24_250828_S3000671925.zip)(D) | 2025-08-28 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202509/Firmware__V5.7.24_250828_S3000671925.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.5.820_Release_Note-G6.pdf) |
+| 5.5.820 | Applied to: [DS-2CV2041G2-IDW(4mm)](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_231120_S3000541958.zip)(D) | 2023-11-20 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_231120_S3000541958.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.5.820_Release_Note-G6.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CV2046G0-IDW - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.5.820 | Applied to: [DS-2CV2046G0-IDW(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_231120_S3000541957.zip)(D) | 2023-11-20 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_231120_S3000541957.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.5.820_Release_Note-G6.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CV2126G0-IDW - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.5.820 | Applied to: [DS-2CV2126G0-IDW(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_231120_S3000541957.zip) | 2023-11-20 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_231120_S3000541957.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.5.820_Release_Note-G6.pdf) |
 
 </details>
 

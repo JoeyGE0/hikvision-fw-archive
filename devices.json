@@ -2758,5 +2758,33 @@
   "100690": {
     "model": "DS-2CV1F23G2-LIDWF",
     "hardware_version": "UNKNOWN"
+  },
+  "100691": {
+    "model": "DS-2CV1F43G2-LIDWF",
+    "hardware_version": "UNKNOWN"
+  },
+  "100692": {
+    "model": "DS-2CV2021G2-IDW",
+    "hardware_version": "UNKNOWN"
+  },
+  "100693": {
+    "model": "DS-2CV2026G0-IDW",
+    "hardware_version": "UNKNOWN"
+  },
+  "100694": {
+    "model": "DS-2CV2027G0-LDW",
+    "hardware_version": "UNKNOWN"
+  },
+  "100695": {
+    "model": "DS-2CV2041G2-IDW",
+    "hardware_version": "UNKNOWN"
+  },
+  "100696": {
+    "model": "DS-2CV2046G0-IDW",
+    "hardware_version": "UNKNOWN"
+  },
+  "100697": {
+    "model": "DS-2CV2126G0-IDW",
+    "hardware_version": "UNKNOWN"
   }
 }
