@@ -2786,5 +2786,33 @@
   "100697": {
     "model": "DS-2CV2126G0-IDW",
     "hardware_version": "UNKNOWN"
+  },
+  "100698": {
+    "model": "DS-2CV2141G2-IDW",
+    "hardware_version": "UNKNOWN"
+  },
+  "100699": {
+    "model": "DS-2CV2146G0-IDW",
+    "hardware_version": "UNKNOWN"
+  },
+  "100700": {
+    "model": "DS-2CV2Q21FD-IW",
+    "hardware_version": "UNKNOWN"
+  },
+  "100701": {
+    "model": "DS-2CV2U32G1-IW",
+    "hardware_version": "UNKNOWN"
+  },
+  "100702": {
+    "model": "DS-2DB4223I-CX",
+    "hardware_version": "UNKNOWN"
+  },
+  "100703": {
+    "model": "DS-2DB4236I-CWX",
+    "hardware_version": "UNKNOWN"
+  },
+  "100704": {
+    "model": "DS-2DE2A204IW-DE3",
+    "hardware_version": "IPC_G0"
   }
 }

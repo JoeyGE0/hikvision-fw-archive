@@ -139,8 +139,8 @@ The scraper in `main.py` can always be improved:
 ## Status
 
 **Status:** ✅ SUCCESS  
-**Last Run:** 2026-03-05 10:35:15 UTC  
-**Firmwares Found:** 881  
+**Last Run:** 2026-03-05 23:40:00 UTC  
+**Firmwares Found:** 891  
 **New Firmwares:** 10  
 **Test Mode:** Disabled
 
@@ -152,7 +152,7 @@ The scraper in `main.py` can always be improved:
 
 Below is the complete list of archived firmwares, organized by device model and hardware version.
 
-**Total: 881**
+**Total: 891**
 
 
 
@@ -7274,6 +7274,79 @@ Below is the complete list of archived firmwares, organized by device model and 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.5.820 | Applied to: [DS-2CV2126G0-IDW(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_231120_S3000541957.zip) | 2023-11-20 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_231120_S3000541957.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.5.820_Release_Note-G6.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CV2141G2-IDW - UNKNOWN (2 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.24 | Applied to: [DS-2CV2141G2-IDW(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202509/Firmware__V5.7.24_250828_S3000671925.zip) | 2025-08-28 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202509/Firmware__V5.7.24_250828_S3000671925.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202511/releasenote%5CNetwork_Camera-V5.7.24_SP1_Release_Note-E8.pdf) |
+| 5.5.800 | Applied to: [DS-2CV2141G2-IDW(2.8mm)](https://assets.hikvision.com/prd/public/all/files/48db7f95-c2ae-44ae-9708-0a05fc35bb9f.zip) | 2021-08-16 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/48db7f95-c2ae-44ae-9708-0a05fc35bb9f.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202511/releasenote%5CNetwork_Camera-V5.7.24_SP1_Release_Note-E8.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CV2146G0-IDW - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.5.820 | Applied to: [DS-2CV2146G0-IDW(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_231120_S3000541957.zip) | 2023-11-20 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_231120_S3000541957.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.5.820_Release_Note-G6.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CV2Q21FD-IW - UNKNOWN (2 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.5.821 | Applied to: [DS-2CV2Q21FD-IW(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.821_231108_S3000539548.zip) | 2023-11-08 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.821_231108_S3000539548.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202404/1712790068455/releasenote%5CIPC_E6_5.5.821_Release_Note.pdf) |
+| 5.4.800 | Applied to: [DS-2CV2Q21FD-IW(2.8mm)](https://assets.hikvision.com/prd/public/all/files/6005351b-ceff-48af-bb0a-5e671137820c.zip) | 2021-10-20 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/6005351b-ceff-48af-bb0a-5e671137820c.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202404/1712790068455/releasenote%5CIPC_E6_5.5.821_Release_Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CV2U32G1-IW - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.4.71 | Applied to: [DS-2CV2U32G1-IDW(1.68mm)](https://assets.hikvision.com/prd/public/all/files/202311/Firmware__V5.4.71_181129_S3000260066.zip) | 2018-11-29 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202311/Firmware__V5.4.71_181129_S3000260066.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2DB4223I-CX - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.7 | Applied to: [DS-2DB4223I-CX(T5/316L)](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.7.7_231117_S3000540108.zip) | 2023-11-17 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.7.7_231117_S3000540108.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2DB4236I-CWX - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.7 | Applied to: [DS-2DB4236I-CWX(T5/316L)](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.7.7_231117_S3000540108.zip) | 2023-11-17 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.7.7_231117_S3000540108.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2DE2A204IW-DE3 - IPC_G0 (2 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.30 | Applied to: [DS-2DE2A204IW-DE3/W(C0)](https://assets.hikvision.com/prd/normal/all/files/202509/Firmware__V5.7.30_250729_S3000670024.zip)(S6)(C) | 2025-07-29 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202509/Firmware__V5.7.30_250729_S3000670024.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202511/releasenote%5CV5.7.30_250729_Release_Note.pdf) |
+| 5.7.11 | Applied to: [DS-2DE2A204IW-DE3(C0)](https://assets.hikvision.com/prd/public/all/files/202307/Firmware__V5.7.11_230612_S3000509332.zip)(S6)(C) | 2023-06-12 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202307/Firmware__V5.7.11_230612_S3000509332.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CRelease_Note_E7_V5.7.11_230612.pdf) |
 
 </details>
 
