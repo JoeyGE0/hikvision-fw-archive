@@ -2838,5 +2838,45 @@
   "100710": {
     "model": "DS-2DE2C200MWG-4G",
     "hardware_version": "IPC_G0"
+  },
+  "100711": {
+    "model": "DS-2CD27126G3-IPTRZS2UY",
+    "hardware_version": "IPC_G0"
+  },
+  "100712": {
+    "model": "DS-2CD27126G3-IPTRZSY",
+    "hardware_version": "IPC_G0"
+  },
+  "100713": {
+    "model": "DS-2CD27166G3-IPTRZS2UY",
+    "hardware_version": "IPC_G0"
+  },
+  "100714": {
+    "model": "DS-2CD27166G3-IPTRZSY",
+    "hardware_version": "IPC_G0"
+  },
+  "100715": {
+    "model": "DS-2CD2766G3-IPTRZS2UY",
+    "hardware_version": "IPC_G0"
+  },
+  "100716": {
+    "model": "DS-2CD2766G3-IPTRZSY",
+    "hardware_version": "IPC_G0"
+  },
+  "100717": {
+    "model": "DS-2CD2786G3-IPTRZS2UY",
+    "hardware_version": "IPC_G0"
+  },
+  "100718": {
+    "model": "DS-2CD2786G3-IPTRZSY",
+    "hardware_version": "IPC_G0"
+  },
+  "100719": {
+    "model": "DS-2DE2C200MWG-E",
+    "hardware_version": "IPC_G0"
+  },
+  "100720": {
+    "model": "DS-2DE2C200MWG",
+    "hardware_version": "IPC_G0"
   }
 }
