@@ -2878,5 +2878,45 @@
   "100720": {
     "model": "DS-2DE2C200MWG",
     "hardware_version": "IPC_G0"
+  },
+  "100721": {
+    "model": "DS-2DE2C200SCG-E",
+    "hardware_version": "IPC_G0"
+  },
+  "100722": {
+    "model": "DS-2DE2C400MW-DE",
+    "hardware_version": "IPC_G0"
+  },
+  "100723": {
+    "model": "DS-2DE2C400MWG-4G",
+    "hardware_version": "IPC_G0"
+  },
+  "100724": {
+    "model": "DS-2DE2C400MWG-E",
+    "hardware_version": "IPC_G0"
+  },
+  "100725": {
+    "model": "DS-2DE2C400MWG",
+    "hardware_version": "IPC_G0"
+  },
+  "100726": {
+    "model": "DS-2DE2C400SCG-E",
+    "hardware_version": "IPC_G0"
+  },
+  "100727": {
+    "model": "DS-2DE2C600MWG-E",
+    "hardware_version": "IPC_G0"
+  },
+  "100728": {
+    "model": "DS-2DE3204W-DE",
+    "hardware_version": "IPC_G0"
+  },
+  "100729": {
+    "model": "DS-2DE3A400BW-DE",
+    "hardware_version": "IPC_G0"
+  },
+  "100730": {
+    "model": "DS-2DE3A404IW-DE",
+    "hardware_version": "IPC_G0"
   }
 }

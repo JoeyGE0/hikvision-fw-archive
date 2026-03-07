@@ -139,8 +139,8 @@ The scraper in `main.py` can always be improved:
 ## Status
 
 **Status:** ✅ SUCCESS  
-**Last Run:** 2026-03-06 22:26:46 UTC  
-**Firmwares Found:** 911  
+**Last Run:** 2026-03-07 10:33:19 UTC  
+**Firmwares Found:** 921  
 **New Firmwares:** 10  
 **Test Mode:** Disabled
 
@@ -152,7 +152,7 @@ The scraper in `main.py` can always be improved:
 
 Below is the complete list of archived firmwares, organized by device model and hardware version.
 
-**Total: 911**
+**Total: 921**
 
 
 
@@ -7511,6 +7511,106 @@ Below is the complete list of archived firmwares, organized by device model and 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.8.21 | Applied to: [DS-2DE2C200MWG-E(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.21_250714_S3000661481.zip) | 2025-07-14 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.21_250714_S3000661481.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202508/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-E9.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2DE2C200SCG-E - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.20 | Applied to: [DS-2DE2C200SCG-E(F0)](https://assets.hikvision.com/prd/public/all/files/202307/Firmware__V5.7.20_230630_S3000509422.zip) | 2023-06-30 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202307/Firmware__V5.7.20_230630_S3000509422.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CNetwork_Camera-V5.7.20_SP4_Release_Note-E8.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2DE2C400MW-DE - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.20 | Applied to: [DS-2DE2C400MW-DE(F0)](https://assets.hikvision.com/prd/public/all/files/202307/Firmware__V5.7.20_230630_S3000509422.zip)(S7) | 2023-06-30 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202307/Firmware__V5.7.20_230630_S3000509422.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CNetwork_Camera-V5.7.20_SP4_Release_Note-E8.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2DE2C400MWG - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.23 | Applied to: [DS-2DE2C400MWG/W(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202511/Firmware__V5.8.23_250820_S3000674333.zip) | 2025-08-20 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202511/Firmware__V5.8.23_250820_S3000674333.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.8.23_Release_Note-E9_E10.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2DE2C400MWG-4G - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.34 | Applied to: [DS-2DE2C400MWG-4G(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202509/Firmware__V5.8.34_250908_S3000674302.zip) | 2025-09-08 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202509/Firmware__V5.8.34_250908_S3000674302.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CNetwork_Camera-V5.8.34_250908_Release_Note-IPCE_GL_E10.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2DE2C400MWG-E - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.10 | Applied to: [DS-2DE2C400MWG-E(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.10_250714_S3000661518.zip) | 2025-07-14 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.10_250714_S3000661518.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202508/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-E10.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2DE2C400SCG-E - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.20 | Applied to: [DS-2DE2C400SCG-E(F0)](https://assets.hikvision.com/prd/public/all/files/202307/Firmware__V5.7.20_230630_S3000509422.zip) | 2023-06-30 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202307/Firmware__V5.7.20_230630_S3000509422.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CNetwork_Camera-V5.7.20_SP4_Release_Note-E8.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2DE2C600MWG-E - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.1 | Applied to: [DS-2DE2C600MWG-E(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202501/Firmware__V5.8.1_250114_S3000626327.zip) | 2025-01-14 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202501/Firmware__V5.8.1_250114_S3000626327.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CV5.8.1_250114_Release_Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2DE3204W-DE - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.1 | Applied to: [DS-2DE3204W-DE(T5)](https://assets.hikvision.com/prd/public/all/files/202401/Firmware__V5.8.1_231108_S3000540195.zip) | 2023-11-08 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202401/Firmware__V5.8.1_231108_S3000540195.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CIPDE_C_H8_V5.8.1_Release_Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2DE3A400BW-DE - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.0 | Applied to: [DS-2DE3A400BW-DE(F1)](https://assets.hikvision.com/prd/public/all/files/202401/Firmware__V5.8.0_231109_S3000541088.zip)(T5) | 2023-11-09 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202401/Firmware__V5.8.0_231109_S3000541088.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CRelease_Note_IPDE_H8_5.8.0_231109.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2DE3A404IW-DE - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.12 | Applied to: [DS-2DE3A404IW-DE(S6)](https://assets.hikvision.com/prd/public/all/files/202303/Firmware__V5.7.12_220907_S3000453567.zip) | 2022-09-07 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202303/Firmware__V5.7.12_220907_S3000453567.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CIPDE_E7_V5.7.12_Release_Note.pdf) |
 
 </details>
 
