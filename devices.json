@@ -2966,5 +2966,21 @@
   "100742": {
     "model": "DS-2DE4225WG1-E3",
     "hardware_version": "IPC_G0"
+  },
+  "100743": {
+    "model": "DS-2DE4415IW-DE",
+    "hardware_version": "IPC_G0"
+  },
+  "100744": {
+    "model": "DS-2DE4415IWG-E",
+    "hardware_version": "IPC_G0"
+  },
+  "100745": {
+    "model": "DS-2DE4415IWG1-E",
+    "hardware_version": "IPC_G0"
+  },
+  "100746": {
+    "model": "DS-2DE4425IW-DE",
+    "hardware_version": "IPC_G0"
   }
 }
