@@ -3014,5 +3014,25 @@
   "100754": {
     "model": "DS-2DE4A225IW-DE",
     "hardware_version": "IPC_G0"
+  },
+  "100755": {
+    "model": "DS-2DE4A225IWG-E",
+    "hardware_version": "IPC_G0"
+  },
+  "100756": {
+    "model": "DS-2DE4A225IWG1-E",
+    "hardware_version": "IPC_G0"
+  },
+  "100757": {
+    "model": "DS-2DE4A425IW-DE",
+    "hardware_version": "IPC_G0"
+  },
+  "100758": {
+    "model": "DS-2DE4A425IWG1-E",
+    "hardware_version": "IPC_G0"
+  },
+  "100759": {
+    "model": "DS-2DE5225IW-AE",
+    "hardware_version": "IPC_G0"
   }
 }
