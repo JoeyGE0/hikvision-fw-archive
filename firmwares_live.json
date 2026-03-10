@@ -17238,5 +17238,175 @@
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202507/releasenote%5CRelease_Note.pdf",
     "is_beta": false,
     "source": "live"
+  },
+  "DS-2DE5330W-AE3_IPC_G0_5.6.14": {
+    "device_id": 100766,
+    "model": "DS-2DE5330W-AE3",
+    "hardware_version": "IPC_G0",
+    "version": "5.6.14",
+    "date": "2019-08-26",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/6d583cfc-1b98-4ee8-973c-2fad9724b521.zip",
+    "filename": "6d583cfc-1b98-4ee8-973c-2fad9724b521.zip",
+    "supported_models": [
+      "DS-2DE5330W-AE3"
+    ],
+    "applied_to": "Applied to: DS-2DE5330W-AE3",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202507/releasenote%5CRelease_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2DE5425IW-AE_IPC_G0_5.6.14": {
+    "device_id": 100767,
+    "model": "DS-2DE5425IW-AE",
+    "hardware_version": "IPC_G0",
+    "version": "5.6.14",
+    "date": "2019-08-26",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/6d583cfc-1b98-4ee8-973c-2fad9724b521.zip",
+    "filename": "6d583cfc-1b98-4ee8-973c-2fad9724b521.zip",
+    "supported_models": [
+      "DS-2DE5425IW-AE"
+    ],
+    "applied_to": "Applied to: DS-2DE5425IW-AE(C)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202507/releasenote%5CRelease_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2DE5425IW-AE_IPC_G0_5.5.800": {
+    "device_id": 100767,
+    "model": "DS-2DE5425IW-AE",
+    "hardware_version": "IPC_G0",
+    "version": "5.5.800",
+    "date": "2021-06-28",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/54ad2899-2282-4f50-a330-d5675227d26f.zip",
+    "filename": "54ad2899-2282-4f50-a330-d5675227d26f.zip",
+    "supported_models": [
+      "DS-2DE5425IW-AE"
+    ],
+    "applied_to": "Applied to: DS-2DE5425IW-AE(S5)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/4cdf7c64-e179-4c02-a3ae-ec999c2710e9.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2DE5425IW-AE_IPC_G0_5.7.11": {
+    "device_id": 100767,
+    "model": "DS-2DE5425IW-AE",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.11",
+    "date": "2023-06-12",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202307/Firmware__V5.7.11_230612_S3000509332.zip",
+    "filename": "Firmware__V5.7.11_230612_S3000509332.zip",
+    "supported_models": [
+      "DS-2DE5425IW-AE"
+    ],
+    "applied_to": "Applied to: DS-2DE5425IW-AE(S6)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CRelease_Note_E7_V5.7.11_230612.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2DE5425IW-AE_IPC_G0_5.8.12": {
+    "device_id": 100767,
+    "model": "DS-2DE5425IW-AE",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.12",
+    "date": "2025-09-15",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202510/Firmware__V5.8.12_250915_S3000675132.zip",
+    "filename": "Firmware__V5.8.12_250915_S3000675132.zip",
+    "supported_models": [
+      "DS-2DE5425IW-AE"
+    ],
+    "applied_to": "Applied to: DS-2DE5425IW-AE(T5)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202510/releasenote%5CV5.8.12_250915_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2DE5425IWG-E_IPC_G0_5.8.10": {
+    "device_id": 100768,
+    "model": "DS-2DE5425IWG-E",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.10",
+    "date": "2024-04-03",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202405/1716330077337/Firmware__V5.8.10_240403_S3000567042.zip",
+    "filename": "Firmware__V5.8.10_240403_S3000567042.zip",
+    "supported_models": [
+      "DS-2DE5425IWG-E"
+    ],
+    "applied_to": "Applied to: DS-2DE5425IWG-E(B)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CIDPE_L_H8_V5.8.10_240403_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2DE5425IWG1-E_IPC_G0_5.8.1": {
+    "device_id": 100769,
+    "model": "DS-2DE5425IWG1-E",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.1",
+    "date": "2026-01-15",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.1_260115_S3000699374.zip",
+    "filename": "Firmware__V5.8.1_260115_S3000699374.zip",
+    "supported_models": [
+      "DS-2DE5425IWG1-E"
+    ],
+    "applied_to": "Applied to: DS-2DE5425IWG1-E",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202603/releasenote%5CV5.8.1_260115_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2DE5425WG1-E_IPC_G0_5.8.1": {
+    "device_id": 100770,
+    "model": "DS-2DE5425WG1-E",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.1",
+    "date": "2026-01-15",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.1_260115_S3000699374.zip",
+    "filename": "Firmware__V5.8.1_260115_S3000699374.zip",
+    "supported_models": [
+      "DS-2DE5425WG1-E"
+    ],
+    "applied_to": "Applied to: DS-2DE5425WG1-E",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202603/releasenote%5CV5.8.1_260115_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2DE5432IW-AE_IPC_G0_5.6.14": {
+    "device_id": 100771,
+    "model": "DS-2DE5432IW-AE",
+    "hardware_version": "IPC_G0",
+    "version": "5.6.14",
+    "date": "2019-12-04",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/4ab6dd7a-1bbb-4423-afb6-0c529edc5bd2.zip",
+    "filename": "4ab6dd7a-1bbb-4423-afb6-0c529edc5bd2.zip",
+    "supported_models": [
+      "DS-2DE5432IW-AE"
+    ],
+    "applied_to": "Applied to: DS-2DE5432IW-AE(B)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202507/releasenote%5CRelease_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2DE5432IW-AE_IPC_G0_5.5.820": {
+    "device_id": 100771,
+    "model": "DS-2DE5432IW-AE",
+    "hardware_version": "IPC_G0",
+    "version": "5.5.820",
+    "date": "2022-05-25",
+    "download_url": "https://assets.hikvision.com/prd/public/all/files/202206/IPDE_G3_EN_STD_5.5.820_220525.zip",
+    "filename": "IPDE_G3_EN_STD_5.5.820_220525.zip",
+    "supported_models": [
+      "DS-2DE5432IW-AE"
+    ],
+    "applied_to": "Applied to: DS-2DE5432IW-AE(S5)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CPTZ_V5.5.820_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
   }
 }
