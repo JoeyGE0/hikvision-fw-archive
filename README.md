@@ -139,8 +139,8 @@ The scraper in `main.py` can always be improved:
 ## Status
 
 **Status:** ✅ SUCCESS  
-**Last Run:** 2026-03-10 22:34:14 UTC  
-**Firmwares Found:** 991  
+**Last Run:** 2026-03-11 10:53:00 UTC  
+**Firmwares Found:** 1001  
 **New Firmwares:** 10  
 **Test Mode:** Disabled
 
@@ -152,7 +152,7 @@ The scraper in `main.py` can always be improved:
 
 Below is the complete list of archived firmwares, organized by device model and hardware version.
 
-**Total: 991**
+**Total: 1001**
 
 
 
@@ -8050,6 +8050,70 @@ Below is the complete list of archived firmwares, organized by device model and 
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.5.820 | Applied to: [DS-2DE5432IW-AE(S5)](https://assets.hikvision.com/prd/public/all/files/202206/IPDE_G3_EN_STD_5.5.820_220525.zip) | 2022-05-25 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202206/IPDE_G3_EN_STD_5.5.820_220525.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CPTZ_V5.5.820_Release_Note.pdf) |
 | 5.6.14 | Applied to: [DS-2DE5432IW-AE(B)](https://assets.hikvision.com/prd/public/all/files/4ab6dd7a-1bbb-4423-afb6-0c529edc5bd2.zip) | 2019-12-04 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/4ab6dd7a-1bbb-4423-afb6-0c529edc5bd2.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202507/releasenote%5CRelease_Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2DE5432IWG-E - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.10 | Applied to: [DS-2DE5432IWG-E(B)](https://assets.hikvision.com/prd/public/all/files/202405/1716330077337/Firmware__V5.8.10_240403_S3000567042.zip) | 2024-04-03 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202405/1716330077337/Firmware__V5.8.10_240403_S3000567042.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CIDPE_L_H8_V5.8.10_240403_Release_Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2DE5432IWG1-E - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.1 | Applied to: [DS-2DE5432IWG1-E](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.1_260115_S3000699374.zip) | 2026-01-15 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.1_260115_S3000699374.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202603/releasenote%5CV5.8.1_260115_Release_Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2DE5432WG1-E - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.1 | Applied to: [DS-2DE5432WG1-E](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.1_260115_S3000699374.zip) | 2026-01-15 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.1_260115_S3000699374.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202603/releasenote%5CV5.8.1_260115_Release_Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2DE7225IW-AE - IPC_G0 (3 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.11 | Applied to: [DS-2DE7225IW-AE(S6)](https://assets.hikvision.com/prd/public/all/files/202209/Firmware__V5.7.11_220905_S3000452187.zip) | 2022-09-05 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202209/Firmware__V5.7.11_220905_S3000452187.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CV5.7.11_Release_Note--E7.pdf) |
+| 5.5.800 | Applied to: [DS-2DE7225IW-AE(S5)](https://assets.hikvision.com/prd/public/all/files/54ad2899-2282-4f50-a330-d5675227d26f.zip) | 2021-06-28 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/54ad2899-2282-4f50-a330-d5675227d26f.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/4cdf7c64-e179-4c02-a3ae-ec999c2710e9.pdf) |
+| 5.6.18 | Applied to: [DS-2DE7225IW-AE(B)](https://assets.hikvision.com/prd/public/all/files/2d8cfccf-08c0-4b96-8dd4-9396e1383825.zip) | 2021-04-28 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/2d8cfccf-08c0-4b96-8dd4-9396e1383825.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202507/releasenote%5CRelease_Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2DE7232IW-AE - IPC_G0 (3 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.5.800 | Applied to: [DS-2DE7232IW-AE(S5)](https://assets.hikvision.com/prd/public/all/files/54ad2899-2282-4f50-a330-d5675227d26f.zip) | 2021-06-28 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/54ad2899-2282-4f50-a330-d5675227d26f.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/4cdf7c64-e179-4c02-a3ae-ec999c2710e9.pdf) |
+| 5.6.18 | Applied to: [DS-2DE7232IW-AE](https://assets.hikvision.com/prd/public/all/files/2d8cfccf-08c0-4b96-8dd4-9396e1383825.zip) | 2021-04-28 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/2d8cfccf-08c0-4b96-8dd4-9396e1383825.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CPTZ_Camera_V5.6.0_Release_Note_--R7.pdf) |
+| 5.6.0 | Applied to: [DS-2DE7232IW-AE](https://assets.hikvision.com/prd/public/all/files/10aa0b1e-cc23-4cbd-8165-f40e222950e7.zip) | 2019-01-28 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/10aa0b1e-cc23-4cbd-8165-f40e222950e7.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CPTZ_Camera_V5.6.0_Release_Note_--R7.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2DE7425IW-AE - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.6.18 | Applied to: [DS-2DE7425IW-AE(B)](https://assets.hikvision.com/prd/public/all/files/2d8cfccf-08c0-4b96-8dd4-9396e1383825.zip) | 2021-04-28 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/2d8cfccf-08c0-4b96-8dd4-9396e1383825.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202507/releasenote%5CRelease_Note.pdf) |
 
 </details>
 
