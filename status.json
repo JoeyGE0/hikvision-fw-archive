@@ -1,8 +1,14 @@
 {
-  "last_run": "2026-03-12T18:44:36.170724",
-  "status": "success",
-  "firmwares_found": 1021,
-  "new_firmwares": 10,
-  "errors": [],
+  "last_run": "2026-03-13T07:04:20.793294",
+  "status": "error",
+  "firmwares_found": 1026,
+  "new_firmwares": 5,
+  "errors": [
+    "Search failed for DS-2DE: ElementHandle.fill: Element is not attached to the DOM\nCall log:\n    - fill(\"\")\n  - attempting fill action\n    - waiting for element to be visible, enabled and editable\n",
+    "Search failed for DS-76: ElementHandle.fill: Element is not attached to the DOM\nCall log:\n    - fill(\"\")\n  - attempting fill action\n    - waiting for element to be visible, enabled and editable\n",
+    "Search failed for DS-77: ElementHandle.fill: Element is not attached to the DOM\nCall log:\n    - fill(\"\")\n  - attempting fill action\n    - waiting for element to be visible, enabled and editable\n",
+    "Search failed for DS-2TD: ElementHandle.fill: Element is not attached to the DOM\nCall log:\n    - fill(\"\")\n  - attempting fill action\n    - waiting for element to be visible, enabled and editable\n",
+    "Search failed for AE-: ElementHandle.fill: Element is not attached to the DOM\nCall log:\n    - fill(\"\")\n  - attempting fill action\n    - waiting for element to be visible, enabled and editable\n"
+  ],
   "test_mode": false
 }
