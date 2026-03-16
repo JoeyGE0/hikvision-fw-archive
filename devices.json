@@ -3106,5 +3106,9 @@
   "100777": {
     "model": "DS-2DE7425IW-AE",
     "hardware_version": "IPC_G0"
+  },
+  "100778": {
+    "model": "DS-2CD2343G2-I",
+    "hardware_version": "IPC_G0"
   }
 }
