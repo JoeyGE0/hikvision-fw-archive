@@ -3138,5 +3138,29 @@
   "100785": {
     "model": "DS-2CD2366G2H-I",
     "hardware_version": "IPC_G0"
+  },
+  "100786": {
+    "model": "DS-2CD2366G2H-IS2U",
+    "hardware_version": "IPC_G0"
+  },
+  "100787": {
+    "model": "DS-2CD2367G2-L",
+    "hardware_version": "IPC_G0"
+  },
+  "100788": {
+    "model": "DS-2CD2367G2H-LISU",
+    "hardware_version": "IPC_G0"
+  },
+  "100789": {
+    "model": "DS-2CD2367G2H-LIU",
+    "hardware_version": "IPC_G0"
+  },
+  "100790": {
+    "model": "DS-2CD2383G2-LI2U",
+    "hardware_version": "IPC_G0"
+  },
+  "100791": {
+    "model": "DS-2CD2386G2H-I",
+    "hardware_version": "IPC_G0"
   }
 }
