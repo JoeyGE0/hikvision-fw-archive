@@ -19445,5 +19445,187 @@
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CNetwork_Camera-V5.7.23_260114_Release_Note.pdf",
     "is_beta": false,
     "source": "live"
+  },
+  "DS-2CD2523G2-I_IPC_G0_5.7.23": {
+    "device_id": 100320,
+    "model": "DS-2CD2523G2-I",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.23",
+    "date": "2026-01-14",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip",
+    "filename": "Firmware__V5.7.23_260114_S3000702187.zip",
+    "supported_models": [
+      "DS-2CD2523G2-I",
+      "DS-2CD2523G2-IS"
+    ],
+    "applied_to": "Applied to: DS-2CD2523G2-I(2.8mm)(D)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202507/releasenote%5CNetwork_Camera-V5.7.0_SP6_Release_Note-G6_I.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2523G2-LI_IPC_G0_5.7.23": {
+    "device_id": 100802,
+    "model": "DS-2CD2523G2-LI",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.23",
+    "date": "2026-01-14",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip",
+    "filename": "Firmware__V5.7.23_260114_S3000702187.zip",
+    "supported_models": [
+      "DS-2CD2523G2-LI",
+      "DS-2CD2523G2-LI2U",
+      "DS-2CD2523G2-LIS2U"
+    ],
+    "applied_to": "Applied to: DS-2CD2523G2-LI2U(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CNetwork_Camera-V5.7.23_260114_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2526G2-IS_IPC_G0_5.7.23": {
+    "device_id": 100322,
+    "model": "DS-2CD2526G2-IS",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.23",
+    "date": "2026-01-14",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip",
+    "filename": "Firmware__V5.7.23_260114_S3000702187.zip",
+    "supported_models": [
+      "DS-2CD2526G2-I",
+      "DS-2CD2526G2-IS"
+    ],
+    "applied_to": "Applied to: DS-2CD2526G2-I(2.8mm)(D)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202507/releasenote%5CNetwork_Camera-V5.7.0_SP6_Release_Note-G6_I.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2543G2-I_IPC_G0_5.7.23": {
+    "device_id": 100803,
+    "model": "DS-2CD2543G2-I",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.23",
+    "date": "2026-01-14",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip",
+    "filename": "Firmware__V5.7.23_260114_S3000702187.zip",
+    "supported_models": [
+      "DS-2CD2543G2-I",
+      "DS-2CD2543G2-IS"
+    ],
+    "applied_to": "Applied to: DS-2CD2543G2-I(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CNetwork_Camera-V5.7.23_260114_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2543G2-LI_IPC_G0_5.7.23": {
+    "device_id": 100804,
+    "model": "DS-2CD2543G2-LI",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.23",
+    "date": "2026-01-14",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip",
+    "filename": "Firmware__V5.7.23_260114_S3000702187.zip",
+    "supported_models": [
+      "DS-2CD2543G2-LI",
+      "DS-2CD2543G2-LI2U"
+    ],
+    "applied_to": "Applied to: DS-2CD2543G2-LI2U(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CNetwork_Camera-V5.7.23_260114_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2546G2-IS_IPC_G0_5.7.23": {
+    "device_id": 100325,
+    "model": "DS-2CD2546G2-IS",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.23",
+    "date": "2026-01-14",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip",
+    "filename": "Firmware__V5.7.23_260114_S3000702187.zip",
+    "supported_models": [
+      "DS-2CD2546G2-I",
+      "DS-2CD2546G2-IS",
+      "DS-2CD2546G2-IWS"
+    ],
+    "applied_to": "Applied to: DS-2CD2546G2-I(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/330c4c2c-5730-4877-a942-0be87cea67ca.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2547G2-LS_IPC_G0_5.7.23": {
+    "device_id": 100805,
+    "model": "DS-2CD2547G2-LS",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.23",
+    "date": "2026-01-14",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip",
+    "filename": "Firmware__V5.7.23_260114_S3000702187.zip",
+    "supported_models": [
+      "DS-2CD2547G2-LS"
+    ],
+    "applied_to": "Applied to: DS-2CD2547G2-LS(2.8mm)(C)(BLACK)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CNetwork_Camera-V5.7.23_260114_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2563G2-I_IPC_G0_5.7.23": {
+    "device_id": 100806,
+    "model": "DS-2CD2563G2-I",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.23",
+    "date": "2026-01-14",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip",
+    "filename": "Firmware__V5.7.23_260114_S3000702187.zip",
+    "supported_models": [
+      "DS-2CD2563G2-IS",
+      "DS-2CD2563G2-I"
+    ],
+    "applied_to": "Applied to: DS-2CD2563G2-IS(4mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CNetwork_Camera-V5.7.23_260114_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2563G2-LI_IPC_G0_5.7.23": {
+    "device_id": 100807,
+    "model": "DS-2CD2563G2-LI",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.23",
+    "date": "2026-01-14",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip",
+    "filename": "Firmware__V5.7.23_260114_S3000702187.zip",
+    "supported_models": [
+      "DS-2CD2563G2-LI",
+      "DS-2CD2563G2-LI2U",
+      "DS-2CD2563G2-LIS2U"
+    ],
+    "applied_to": "Applied to: DS-2CD2563G2-LI2U(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CNetwork_Camera-V5.7.23_260114_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2566G2-I_IPC_G0_5.7.23": {
+    "device_id": 100808,
+    "model": "DS-2CD2566G2-I",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.23",
+    "date": "2026-01-14",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip",
+    "filename": "Firmware__V5.7.23_260114_S3000702187.zip",
+    "supported_models": [
+      "DS-2CD2566G2-IS",
+      "DS-2CD2566G2-I"
+    ],
+    "applied_to": "Applied to: DS-2CD2566G2-IS(4mm)(C)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CNetwork_Camera-V5.7.23_260114_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
   }
 }

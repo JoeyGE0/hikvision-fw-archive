@@ -3202,5 +3202,33 @@
   "100801": {
     "model": "DS-2CD2466G2-I",
     "hardware_version": "IPC_G0"
+  },
+  "100802": {
+    "model": "DS-2CD2523G2-LI",
+    "hardware_version": "IPC_G0"
+  },
+  "100803": {
+    "model": "DS-2CD2543G2-I",
+    "hardware_version": "IPC_G0"
+  },
+  "100804": {
+    "model": "DS-2CD2543G2-LI",
+    "hardware_version": "IPC_G0"
+  },
+  "100805": {
+    "model": "DS-2CD2547G2-LS",
+    "hardware_version": "IPC_G0"
+  },
+  "100806": {
+    "model": "DS-2CD2563G2-I",
+    "hardware_version": "IPC_G0"
+  },
+  "100807": {
+    "model": "DS-2CD2563G2-LI",
+    "hardware_version": "IPC_G0"
+  },
+  "100808": {
+    "model": "DS-2CD2566G2-I",
+    "hardware_version": "IPC_G0"
   }
 }
