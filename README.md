@@ -139,9 +139,9 @@ The scraper in `main.py` can always be improved:
 ## Status
 
 **Status:** ❌ ERROR  
-**Last Run:** 2026-03-19 20:25:06 UTC  
-**Firmwares Found:** 1126  
-**New Firmwares:** 9  
+**Last Run:** 2026-03-20 08:27:36 UTC  
+**Firmwares Found:** 1130  
+**New Firmwares:** 4  
 **Test Mode:** Disabled
 
 
@@ -185,7 +185,7 @@ Call log:
 
 Below is the complete list of archived firmwares, organized by device model and hardware version.
 
-**Total: 1126**
+**Total: 1130**
 
 
 
@@ -4230,21 +4230,43 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 
 <details>
-<summary><h2>DS-2CD2646G2-IZS - IPC_G0 (1 firmwares)</h2></summary>
+<summary><h2>DS-2CD2646G2-IZS - IPC_G0 (2 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.23 | Applied to: [DS-2CD2646G2-IZS(2.8-12mm)](https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip) | 2026-01-14 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CNetwork_Camera-V5.5.820_Release_Note-G3.pdf) |
 | 5.5.820 | Applied to: [DS-2CD2646G2-IZS(2.8-12mm)](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_231108_S3000539625.zip) | 2023-11-08 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202312/Firmware__V5.5.820_231108_S3000539625.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CNetwork_Camera-V5.5.820_Release_Note-G3.pdf) |
 
 </details>
 
 
 <details>
-<summary><h2>DS-2CD2646G2-IZSU - IPC_G0 (1 firmwares)</h2></summary>
+<summary><h2>DS-2CD2646G2-IZSU - IPC_G0 (2 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.23 | Applied to: [DS-2CD2646G2-IZSU/SL(2.8-12mm)](https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip) | 2026-01-14 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/330c4c2c-5730-4877-a942-0be87cea67ca.pdf) |
 | 5.5.800 | Applied to: [DS-2CD2646G2-IZSU/SL(2.8-12mm)](https://assets.hikvision.com/prd/public/all/files/7ddcc773-b084-4adc-a9e1-08ed4b8252f4.zip) | 2021-10-09 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/7ddcc773-b084-4adc-a9e1-08ed4b8252f4.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/330c4c2c-5730-4877-a942-0be87cea67ca.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD2646G2H-IZS - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.23 | Applied to: [DS-2CD2646G2H-IZS(2.8-12mm)](https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip)(eF) | 2026-01-14 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CNetwork_Camera-V5.7.23_260114_Release_Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD2646G2H-IZS2U - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.23 | Applied to: [DS-2CD2646G2H-IZS2U/SRB(2.8-12mm)](https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip)eFO-STD | 2026-01-14 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CNetwork_Camera-V5.7.23_260114_Release_Note.pdf) |
 
 </details>
 

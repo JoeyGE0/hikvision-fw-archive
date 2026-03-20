@@ -3254,5 +3254,13 @@
   "100814": {
     "model": "DS-2CD2643G2-LIZS2U",
     "hardware_version": "IPC_G0"
+  },
+  "100815": {
+    "model": "DS-2CD2646G2H-IZS",
+    "hardware_version": "IPC_G0"
+  },
+  "100816": {
+    "model": "DS-2CD2646G2H-IZS2U",
+    "hardware_version": "IPC_G0"
   }
 }
