@@ -3546,5 +3546,21 @@
   "100887": {
     "model": "DS-2CD2T23G2-2LI",
     "hardware_version": "IPC_G0"
+  },
+  "100888": {
+    "model": "DS-2CD2T23G2-LIS2U",
+    "hardware_version": "IPC_G0"
+  },
+  "100889": {
+    "model": "DS-2CD2T43G2-2I",
+    "hardware_version": "IPC_G0"
+  },
+  "100890": {
+    "model": "DS-2CD2T43G2-2LI",
+    "hardware_version": "IPC_G0"
+  },
+  "100891": {
+    "model": "DS-2CD2T43G2-LIS2U",
+    "hardware_version": "IPC_G0"
   }
 }
