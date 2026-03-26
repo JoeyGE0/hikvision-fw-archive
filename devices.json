@@ -3626,5 +3626,17 @@
   "100907": {
     "model": "DS-2CD2T67G2H-LISU",
     "hardware_version": "IPC_G0"
+  },
+  "100908": {
+    "model": "DS-2CD2T83G2-LIS2U",
+    "hardware_version": "IPC_G0"
+  },
+  "100909": {
+    "model": "DS-2CD2T86G2-2I",
+    "hardware_version": "IPC_G0"
+  },
+  "100910": {
+    "model": "DS-2CD2T86G2-4IY",
+    "hardware_version": "IPC_G0"
   }
 }
