@@ -3638,5 +3638,33 @@
   "100910": {
     "model": "DS-2CD2T86G2-4IY",
     "hardware_version": "IPC_G0"
+  },
+  "100911": {
+    "model": "DS-2CD2T86G2H-2I",
+    "hardware_version": "IPC_G0"
+  },
+  "100912": {
+    "model": "DS-2CD2T86G2H-IS2U",
+    "hardware_version": "IPC_G0"
+  },
+  "100913": {
+    "model": "DS-2CD2T87G2-L",
+    "hardware_version": "IPC_G0"
+  },
+  "100914": {
+    "model": "DS-2CD2T87G2-LSU",
+    "hardware_version": "IPC_G0"
+  },
+  "100915": {
+    "model": "DS-2CD2T87G2H-LI",
+    "hardware_version": "IPC_G0"
+  },
+  "100916": {
+    "model": "DS-2CD2T87G2H-LISU",
+    "hardware_version": "IPC_G0"
+  },
+  "100917": {
+    "model": "DS-2CD3023G2-IU",
+    "hardware_version": "IPC_G0"
   }
 }
