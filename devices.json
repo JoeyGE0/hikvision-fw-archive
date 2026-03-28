@@ -3702,5 +3702,29 @@
   "100926": {
     "model": "DS-2CD3143G2-LISU",
     "hardware_version": "IPC_G0"
+  },
+  "100927": {
+    "model": "DS-2CD3163G2-I",
+    "hardware_version": "IPC_G0"
+  },
+  "100928": {
+    "model": "DS-2CD3163G2-LISU",
+    "hardware_version": "IPC_G0"
+  },
+  "100929": {
+    "model": "DS-2CD3183G2-LISU",
+    "hardware_version": "IPC_G0"
+  },
+  "100930": {
+    "model": "DS-2CD3323G2-IU",
+    "hardware_version": "IPC_G0"
+  },
+  "100931": {
+    "model": "DS-2CD3323G2-LISU",
+    "hardware_version": "IPC_G0"
+  },
+  "100932": {
+    "model": "DS-2CD3323G2-LIU",
+    "hardware_version": "IPC_G0"
   }
 }
