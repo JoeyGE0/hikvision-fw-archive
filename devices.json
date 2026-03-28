@@ -3726,5 +3726,17 @@
   "100932": {
     "model": "DS-2CD3323G2-LIU",
     "hardware_version": "IPC_G0"
+  },
+  "100933": {
+    "model": "DS-2CD3343G2-IU",
+    "hardware_version": "IPC_G0"
+  },
+  "100934": {
+    "model": "DS-2CD3343G2-LISU",
+    "hardware_version": "IPC_G0"
+  },
+  "100935": {
+    "model": "DS-2CD3343G2-LIU",
+    "hardware_version": "IPC_G0"
   }
 }

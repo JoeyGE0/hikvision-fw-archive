@@ -139,9 +139,9 @@ The scraper in `main.py` can always be improved:
 ## Status
 
 **Status:** ❌ ERROR  
-**Last Run:** 2026-03-28 10:32:10 UTC  
-**Firmwares Found:** 1270  
-**New Firmwares:** 6  
+**Last Run:** 2026-03-28 21:51:03 UTC  
+**Firmwares Found:** 1273  
+**New Firmwares:** 3  
 **Test Mode:** Disabled
 
 
@@ -185,7 +185,7 @@ Call log:
 
 Below is the complete list of archived firmwares, organized by device model and hardware version.
 
-**Total: 1270**
+**Total: 1273**
 
 
 
@@ -7016,6 +7016,36 @@ Below is the complete list of archived firmwares, organized by device model and 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.8.11 | Applied to: [DS-2CD3343G2/X2-LIZSUY/SL(2.8/4mm)](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.11_251216_S3000692172.zip)O-STD | 2025-12-16 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202601/Firmware__V5.8.11_251216_S3000692172.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.8.11_251216_Release_Note-IPCE_D_H13.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD3343G2-IU - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.23 | Applied to: [DS-2CD3343G2-IU(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip) | 2026-01-14 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CNetwork_Camera-V5.7.23_260114_Release_Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD3343G2-LISU - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.23 | Applied to: [DS-2CD3343G2-LISU(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip) | 2026-01-14 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CNetwork_Camera-V5.7.23_260114_Release_Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD3343G2-LIU - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.23 | Applied to: [DS-2CD3343G2-LIU/SL(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip) | 2026-01-14 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CNetwork_Camera-V5.7.23_260114_Release_Note.pdf) |
 
 </details>
 
