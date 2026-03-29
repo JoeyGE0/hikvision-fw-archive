@@ -3778,5 +3778,21 @@
   "100945": {
     "model": "DS-2CD3563G2-IS",
     "hardware_version": "IPC_G0"
+  },
+  "100946": {
+    "model": "DS-2CD3563G2-LIS",
+    "hardware_version": "IPC_G0"
+  },
+  "100947": {
+    "model": "DS-2CD3583G2-LIS",
+    "hardware_version": "IPC_G0"
+  },
+  "100948": {
+    "model": "DS-2CD3623G2-IZS",
+    "hardware_version": "IPC_G0"
+  },
+  "100949": {
+    "model": "DS-2CD3623G2-LIZSU",
+    "hardware_version": "IPC_G0"
   }
 }
