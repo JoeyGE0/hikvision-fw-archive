@@ -22554,5 +22554,109 @@
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CNetwork_Camera-V5.7.23_260114_Release_Note.pdf",
     "is_beta": false,
     "source": "live"
+  },
+  "DS-2CD3643G2-IZS_IPC_G0_5.7.23": {
+    "device_id": 100950,
+    "model": "DS-2CD3643G2-IZS",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.23",
+    "date": "2026-01-14",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip",
+    "filename": "Firmware__V5.7.23_260114_S3000702187.zip",
+    "supported_models": [
+      "DS-2CD3643G2-IZS",
+      "DS-2CD3643G2-IZSU"
+    ],
+    "applied_to": "Applied to: DS-2CD3643G2-IZS(2.7-13.5mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CNetwork_Camera-V5.7.23_260114_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD3643G2-LIZSU_IPC_G0_5.7.23": {
+    "device_id": 100951,
+    "model": "DS-2CD3643G2-LIZSU",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.23",
+    "date": "2026-01-14",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip",
+    "filename": "Firmware__V5.7.23_260114_S3000702187.zip",
+    "supported_models": [
+      "DS-2CD3643G2-LIZSU"
+    ],
+    "applied_to": "Applied to: DS-2CD3643G2-LIZSU(2.7-13.5mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CNetwork_Camera-V5.7.23_260114_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD3663G2-IZS_IPC_G0_5.7.23": {
+    "device_id": 100952,
+    "model": "DS-2CD3663G2-IZS",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.23",
+    "date": "2026-01-14",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip",
+    "filename": "Firmware__V5.7.23_260114_S3000702187.zip",
+    "supported_models": [
+      "DS-2CD3663G2-IZS",
+      "DS-2CD3663G2-IZSU"
+    ],
+    "applied_to": "Applied to: DS-2CD3663G2-IZS(2.7-13.5mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CNetwork_Camera-V5.7.23_260114_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD3663G2-LIZSU_IPC_G0_5.7.23": {
+    "device_id": 100953,
+    "model": "DS-2CD3663G2-LIZSU",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.23",
+    "date": "2026-01-14",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip",
+    "filename": "Firmware__V5.7.23_260114_S3000702187.zip",
+    "supported_models": [
+      "DS-2CD3663G2-LIZSU"
+    ],
+    "applied_to": "Applied to: DS-2CD3663G2-LIZSU(2.7-13.5mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CNetwork_Camera-V5.7.23_260114_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD3683G2-IZSU_IPC_G0_5.7.23": {
+    "device_id": 100954,
+    "model": "DS-2CD3683G2-IZSU",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.23",
+    "date": "2026-01-14",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip",
+    "filename": "Firmware__V5.7.23_260114_S3000702187.zip",
+    "supported_models": [
+      "DS-2CD3683G2-IZSU"
+    ],
+    "applied_to": "Applied to: DS-2CD3683G2-IZSU(2.7-13.5mm)(B)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CNetwork_Camera-V5.7.23_260114_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD3683G2-LIZSU_IPC_G0_5.7.23": {
+    "device_id": 100955,
+    "model": "DS-2CD3683G2-LIZSU",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.23",
+    "date": "2026-01-14",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip",
+    "filename": "Firmware__V5.7.23_260114_S3000702187.zip",
+    "supported_models": [
+      "DS-2CD3683G2-LIZSU"
+    ],
+    "applied_to": "Applied to: DS-2CD3683G2-LIZSU(2.7-13.5mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CNetwork_Camera-V5.7.23_260114_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
   }
 }
