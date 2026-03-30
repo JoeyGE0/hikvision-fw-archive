@@ -3818,5 +3818,37 @@
   "100955": {
     "model": "DS-2CD3683G2-LIZSU",
     "hardware_version": "IPC_G0"
+  },
+  "100956": {
+    "model": "DS-2CD3723G2-IZSU",
+    "hardware_version": "IPC_G0"
+  },
+  "100957": {
+    "model": "DS-2CD3723G2-LIZSU",
+    "hardware_version": "IPC_G0"
+  },
+  "100958": {
+    "model": "DS-2CD3743G2-IZSU",
+    "hardware_version": "IPC_G0"
+  },
+  "100959": {
+    "model": "DS-2CD3743G2-LIZSU",
+    "hardware_version": "IPC_G0"
+  },
+  "100960": {
+    "model": "DS-2CD3763G2-IZSU",
+    "hardware_version": "IPC_G0"
+  },
+  "100961": {
+    "model": "DS-2CD3763G2-LIZSU",
+    "hardware_version": "IPC_G0"
+  },
+  "100962": {
+    "model": "DS-2CD3783G2-IZSU",
+    "hardware_version": "IPC_G0"
+  },
+  "100963": {
+    "model": "DS-2CD3783G2-LIZSU",
+    "hardware_version": "IPC_G0"
   }
 }
