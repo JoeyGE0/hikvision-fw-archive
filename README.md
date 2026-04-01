@@ -10,6 +10,10 @@ An unofficial archive of Hikvision camera and NVR firmware files, maintained for
 - [Contributing](#contributing)
 - [Firmware List](#firmware-list)
 
+
+# currently in broken state!!!!
+
+
 ## About
 
 This repository contains an automated collection of Hikvision firmware download links scraped from their official download center. Hikvision only displays the latest firmware for each device on their website, making it difficult to access older versions for rollback or troubleshooting purposes.
