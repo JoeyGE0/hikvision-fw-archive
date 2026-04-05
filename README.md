@@ -10,10 +10,6 @@ An unofficial archive of Hikvision camera and NVR firmware files, maintained for
 - [Contributing](#contributing)
 - [Firmware List](#firmware-list)
 
-
-# currently in broken state!!!!
-
-
 ## About
 
 This repository contains an automated collection of Hikvision firmware download links scraped from their official download center. Hikvision only displays the latest firmware for each device on their website, making it difficult to access older versions for rollback or troubleshooting purposes.
@@ -143,9 +139,9 @@ The scraper in `main.py` can always be improved:
 ## Status
 
 **Status:** ❌ ERROR  
-**Last Run:** 2026-03-30 23:09:27 UTC  
-**Firmwares Found:** 1302  
-**New Firmwares:** 9  
+**Last Run:** 2026-04-05 19:31:32 UTC  
+**Firmwares Found:** 1303  
+**New Firmwares:** 1  
 **Test Mode:** Disabled
 
 
@@ -189,7 +185,7 @@ Call log:
 
 Below is the complete list of archived firmwares, organized by device model and hardware version.
 
-**Total: 1302**
+**Total: 1303**
 
 
 
@@ -3778,6 +3774,16 @@ Below is the complete list of archived firmwares, organized by device model and 
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.6.821 | Applied to: [DS-2CD2443G0-I(2.8mm)](https://assets.hikvision.com/prd/public/all/files/202309/Firmware__V5.6.821_230831_S3000525150.zip) | 2023-08-31 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202309/Firmware__V5.6.821_230831_S3000525150.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.6.821_Release_Note-IPC_G1_230831.pdf) |
 | 5.5.83 | Applied to: [DS-2CD2443G0-I(2.8mm)](https://assets.hikvision.com/prd/public/all/files/52faab7e-03ae-4dee-9dbd-a67988b4b16b.zip) | 2019-02-21 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/52faab7e-03ae-4dee-9dbd-a67988b4b16b.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.6.821_Release_Note-IPC_G1_230831.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD2443G2-I - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.23 | Applied to: [DS-2CD2443G2-I(2mm)](https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip) | 2026-01-14 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CNetwork_Camera-V5.7.23_260114_Release_Note.pdf) |
 
 </details>
 

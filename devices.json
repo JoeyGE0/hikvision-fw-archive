@@ -3850,5 +3850,9 @@
   "100963": {
     "model": "DS-2CD3783G2-LIZSU",
     "hardware_version": "IPC_G0"
+  },
+  "100964": {
+    "model": "DS-2CD2443G2-I",
+    "hardware_version": "IPC_G0"
   }
 }
