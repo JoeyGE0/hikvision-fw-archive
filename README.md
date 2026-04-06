@@ -139,9 +139,9 @@ The scraper in `main.py` can always be improved:
 ## Status
 
 **Status:** ❌ ERROR  
-**Last Run:** 2026-04-05 19:31:32 UTC  
-**Firmwares Found:** 1303  
-**New Firmwares:** 1  
+**Last Run:** 2026-04-06 23:08:55 UTC  
+**Firmwares Found:** 1307  
+**New Firmwares:** 4  
 **Test Mode:** Disabled
 
 
@@ -185,7 +185,7 @@ Call log:
 
 Below is the complete list of archived firmwares, organized by device model and hardware version.
 
-**Total: 1303**
+**Total: 1307**
 
 
 
@@ -3839,6 +3839,16 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 
 <details>
+<summary><h2>DS-2CD2483G2-I - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.23 | Applied to: [DS-2CD2483G2-I(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip) | 2026-01-14 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CNetwork_Camera-V5.7.23_260114_Release_Note.pdf) |
+
+</details>
+
+
+<details>
 <summary><h2>DS-2CD2523G0-I - IPC_G1 (3 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
@@ -5330,6 +5340,16 @@ Below is the complete list of archived firmwares, organized by device model and 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.8.23 | Applied to: [DS-2CD2D45G2-U(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202508/Firmware__V5.8.23_250716_S3000662537.zip) | 2025-07-16 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202508/Firmware__V5.8.23_250716_S3000662537.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CCovert_Camera_2Dxx_V5.8.23_250716_Release_Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD2E23G2-U - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.23 | Applied to: [DS-2CD2E23G2-U(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip) | 2026-01-14 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CNetwork_Camera-V5.7.23_260114_Release_Note.pdf) |
 
 </details>
 
@@ -8255,6 +8275,16 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 
 <details>
+<summary><h2>DS-2CD3843G2-AP - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.23 | Applied to: [DS-2CD3843G2-AP](https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip) | 2026-01-14 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CNetwork_Camera-V5.7.23_260114_Release_Note.pdf) |
+
+</details>
+
+
+<details>
 <summary><h2>DS-2CD3956G2-IS - IPC_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
@@ -8340,6 +8370,16 @@ Below is the complete list of archived firmwares, organized by device model and 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.8.2 | Applied to: [DS-2CD3H167G3-LIZSUY(2.7-13.5mm)](https://assets.hikvision.com/prd/normal/all/files/202511/Firmware__V5.8.2_251103_S3000682562.zip) | 2025-11-03 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202511/Firmware__V5.8.2_251103_S3000682562.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202511/releasenote%5CNetwork_Camera-V5.8.2_251103_Release_Note-IPCE_H_G9.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD3H23G2-LIZSU - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.23 | Applied to: [DS-2CD3H23G2-LIZSU(2.7-13.5mm)](https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip) | 2026-01-14 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202602/Firmware__V5.7.23_260114_S3000702187.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CNetwork_Camera-V5.7.23_260114_Release_Note.pdf) |
 
 </details>
 

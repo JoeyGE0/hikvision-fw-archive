@@ -3854,5 +3854,21 @@
   "100964": {
     "model": "DS-2CD2443G2-I",
     "hardware_version": "IPC_G0"
+  },
+  "100965": {
+    "model": "DS-2CD2483G2-I",
+    "hardware_version": "IPC_G0"
+  },
+  "100966": {
+    "model": "DS-2CD2E23G2-U",
+    "hardware_version": "IPC_G0"
+  },
+  "100967": {
+    "model": "DS-2CD3843G2-AP",
+    "hardware_version": "IPC_G0"
+  },
+  "100968": {
+    "model": "DS-2CD3H23G2-LIZSU",
+    "hardware_version": "IPC_G0"
   }
 }
