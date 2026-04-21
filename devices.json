@@ -3918,5 +3918,13 @@
   "100980": {
     "model": "DS-2CD3T63G2-LISU",
     "hardware_version": "IPC_G0"
+  },
+  "100981": {
+    "model": "DS-2CD3T83G2-2LISU",
+    "hardware_version": "IPC_G0"
+  },
+  "100982": {
+    "model": "DS-2CD3T83G2-LISU",
+    "hardware_version": "IPC_G0"
   }
 }
