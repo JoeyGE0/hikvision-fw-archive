@@ -139,8 +139,8 @@ The scraper in `main.py` can always be improved:
 ## Status
 
 **Status:** ✅ SUCCESS  
-**Last Run:** 2026-04-23 22:02:52 UTC  
-**Firmwares Found:** 1377  
+**Last Run:** 2026-04-29 18:22:11 UTC  
+**Firmwares Found:** 1387  
 **New Firmwares:** 10  
 **Test Mode:** Disabled
 
@@ -152,7 +152,7 @@ The scraper in `main.py` can always be improved:
 
 Below is the complete list of archived firmwares, organized by device model and hardware version.
 
-**Total: 1377**
+**Total: 1387**
 
 
 
@@ -342,10 +342,11 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 
 <details>
-<summary><h2>AE-DI5052-G40 - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>AE-DI5052-G40 - UNKNOWN (2 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
+| 4.7.5 | Applied to: [AE-DI5052-G40](https://assets.hikvision.com/prd/normal/all/files/202604/Firmware__V4.7.5_260409_S3000716981.zip) PRO(EU) | 2026-04-09 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202604/Firmware__V4.7.5_260409_S3000716981.zip) |  |
 | 4.7.4 | Applied to: [AE-DI5052-G40](https://assets.hikvision.com/prd/normal/all/files/202511/Firmware__V4.7.4_251117_S3000685762.zip) PRO(EU) | 2025-11-17 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202511/Firmware__V4.7.4_251117_S3000685762.zip) |  |
 
 </details>
@@ -387,6 +388,16 @@ Below is the complete list of archived firmwares, organized by device model and 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 3.0.2 | Applied to: [AE-VC215I-ISF(M12)](https://assets.hikvision.com/prd/public/all/files/202305/Firmware__V3.0.2_230315_S3000488384.zip)(2.8mm) | 2023-03-15 | [🔗 Link](https://assets.hikvision.com/prd/public/all/files/202305/Firmware__V3.0.2_230315_S3000488384.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>AE-VC3B2I-ISF - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 4.3.3 | Applied to: [AE-VC3B2I-ISF(RJ45)](https://assets.hikvision.com/prd/normal/all/files/202604/Firmware__V4.3.3_260311_S3000717251.zip)(6mm) | 2026-03-11 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202604/Firmware__V4.3.3_260311_S3000717251.zip) |  |
 
 </details>
 
@@ -582,10 +593,11 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 
 <details>
-<summary><h2>DS-2CD1043G2-LIUF - IPC_G0 (1 firmwares)</h2></summary>
+<summary><h2>DS-2CD1043G2-LIUF - IPC_G0 (2 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.41 | Applied to: [DS-2CD1043G2-LIUF/SL(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202604/Firmware__V5.8.41_260401_S3000712602.zip) | 2026-04-01 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202604/Firmware__V5.8.41_260401_S3000712602.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.41_SP1_Release_Note-E10.pdf) |
 | 5.8.10 | Applied to: [DS-2CD1043G2-LIUF/SL(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.10_250714_S3000661518.zip) | 2025-07-14 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.10_250714_S3000661518.zip) |  |
 
 </details>
@@ -602,20 +614,22 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 
 <details>
-<summary><h2>DS-2CD1047G2H-LIU - IPC_G0 (1 firmwares)</h2></summary>
+<summary><h2>DS-2CD1047G2H-LIU - IPC_G0 (2 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.41 | Applied to: [DS-2CD1047G2H-LIU(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202604/Firmware__V5.8.41_260401_S3000712602.zip)(BLACK) | 2026-04-01 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202604/Firmware__V5.8.41_260401_S3000712602.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.41_SP1_Release_Note-E10.pdf) |
 | 5.8.10 | Applied to: [DS-2CD1047G2H-LIU(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.10_250714_S3000661518.zip)(BLACK) | 2025-07-14 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.10_250714_S3000661518.zip) |  |
 
 </details>
 
 
 <details>
-<summary><h2>DS-2CD1047G2H-LIUF - IPC_G0 (1 firmwares)</h2></summary>
+<summary><h2>DS-2CD1047G2H-LIUF - IPC_G0 (2 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.41 | Applied to: [DS-2CD1047G2H-LIUF/SRB(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202604/Firmware__V5.8.41_260401_S3000712602.zip) | 2026-04-01 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202604/Firmware__V5.8.41_260401_S3000712602.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.41_SP1_Release_Note-E10.pdf) |
 | 5.8.10 | Applied to: [DS-2CD1047G2H-LIUF/SRB(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.10_250714_S3000661518.zip) | 2025-07-14 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.10_250714_S3000661518.zip) |  |
 
 </details>
@@ -790,10 +804,11 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 
 <details>
-<summary><h2>DS-2CD1147G2H-LIU - IPC_G0 (1 firmwares)</h2></summary>
+<summary><h2>DS-2CD1147G2H-LIU - IPC_G0 (2 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.41 | Applied to: [DS-2CD1147G2H-LIU(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202604/Firmware__V5.8.41_260401_S3000712602.zip)(BLACK) | 2026-04-01 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202604/Firmware__V5.8.41_260401_S3000712602.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.41_SP1_Release_Note-E10.pdf) |
 | 5.8.10 | Applied to: [DS-2CD1147G2H-LIU(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.10_250714_S3000661518.zip)(BLACK) | 2025-07-14 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.10_250714_S3000661518.zip) |  |
 
 </details>
@@ -971,10 +986,11 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 
 <details>
-<summary><h2>DS-2CD1343G2-LIUF - IPC_G0 (1 firmwares)</h2></summary>
+<summary><h2>DS-2CD1343G2-LIUF - IPC_G0 (2 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.41 | Applied to: [DS-2CD1343G2-LIUF/SL(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202604/Firmware__V5.8.41_260401_S3000712602.zip) | 2026-04-01 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202604/Firmware__V5.8.41_260401_S3000712602.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.41_SP1_Release_Note-E10.pdf) |
 | 5.8.10 | Applied to: [DS-2CD1343G2-LIUF/SL(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.10_250714_S3000661518.zip) | 2025-07-14 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.10_250714_S3000661518.zip) |  |
 
 </details>
@@ -991,20 +1007,22 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 
 <details>
-<summary><h2>DS-2CD1347G2H-LIU - IPC_G0 (1 firmwares)</h2></summary>
+<summary><h2>DS-2CD1347G2H-LIU - IPC_G0 (2 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.41 | Applied to: [DS-2CD1347G2H-LIU(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202604/Firmware__V5.8.41_260401_S3000712602.zip)(BLACK) | 2026-04-01 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202604/Firmware__V5.8.41_260401_S3000712602.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.41_SP1_Release_Note-E10.pdf) |
 | 5.8.10 | Applied to: [DS-2CD1347G2H-LIU(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.10_250714_S3000661518.zip) | 2025-07-14 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.10_250714_S3000661518.zip) |  |
 
 </details>
 
 
 <details>
-<summary><h2>DS-2CD1347G2H-LIUF - IPC_G0 (1 firmwares)</h2></summary>
+<summary><h2>DS-2CD1347G2H-LIUF - IPC_G0 (2 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.41 | Applied to: [DS-2CD1347G2H-LIUF/SRB(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202604/Firmware__V5.8.41_260401_S3000712602.zip) | 2026-04-01 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202604/Firmware__V5.8.41_260401_S3000712602.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.41_SP1_Release_Note-E10.pdf) |
 | 5.8.10 | Applied to: [DS-2CD1347G2H-LIUF/SL(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.10_250714_S3000661518.zip) | 2025-07-14 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.10_250714_S3000661518.zip) |  |
 
 </details>
@@ -1195,10 +1213,11 @@ Below is the complete list of archived firmwares, organized by device model and 
 
 
 <details>
-<summary><h2>DS-2CD1643G2-LIU - IPC_G0 (1 firmwares)</h2></summary>
+<summary><h2>DS-2CD1643G2-LIU - IPC_G0 (2 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.41 | Applied to: [DS-2CD1B43G2-LIU(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202604/Firmware__V5.8.41_260401_S3000712602.zip) | 2026-04-01 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202604/Firmware__V5.8.41_260401_S3000712602.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.41_SP1_Release_Note-E10.pdf) |
 | 5.8.10 | Applied to: [DS-2CD1B43G2-LIU(2.8mm)](https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.10_250714_S3000661518.zip) | 2025-07-14 | [🔗 Link](https://assets.hikvision.com/prd/normal/all/files/202507/Firmware__V5.8.10_250714_S3000661518.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202508/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-E10.pdf) |
 
 </details>
