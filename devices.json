@@ -3998,5 +3998,13 @@
   "101000": {
     "model": "AE-VC3B2I-ISF",
     "hardware_version": "UNKNOWN"
+  },
+  "101001": {
+    "model": "DS-2CD2767G3-LIPTRZS2UY",
+    "hardware_version": "IPC_G0"
+  },
+  "101002": {
+    "model": "DS-2CD2767G3-LIPTRZSY",
+    "hardware_version": "IPC_G0"
   }
 }
