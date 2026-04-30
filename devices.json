@@ -4006,5 +4006,17 @@
   "101002": {
     "model": "DS-2CD2767G3-LIPTRZSY",
     "hardware_version": "IPC_G0"
+  },
+  "101003": {
+    "model": "DS-2CD2787G3-LIPTRZS2UY",
+    "hardware_version": "IPC_G0"
+  },
+  "101004": {
+    "model": "DS-2CD2787G3-LIPTRZSY",
+    "hardware_version": "IPC_G0"
+  },
+  "101005": {
+    "model": "DS-2CD3143G2-LISUY",
+    "hardware_version": "IPC_G0"
   }
 }
