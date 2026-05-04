@@ -24618,5 +24618,175 @@
     "notes": "",
     "is_beta": false,
     "source": "live"
+  },
+  "DS-2CD2647G3-LIZS2UY_IPC_G0_5.8.32": {
+    "device_id": 100986,
+    "model": "DS-2CD2647G3-LIZS2UY",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.32",
+    "date": "2026-04-23",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202605/Firmware__V5.8.32_260423_S3000719136.zip",
+    "filename": "Firmware__V5.8.32_260423_S3000719136.zip",
+    "supported_models": [
+      "DS-2CD2647G3-LIZS2UY"
+    ],
+    "applied_to": "Applied to: DS-2CD2647G3-LIZS2UY/SRB(2.8-12mm)/O-STD",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2647G3-LIZSY_IPC_G0_5.8.32": {
+    "device_id": 100987,
+    "model": "DS-2CD2647G3-LIZSY",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.32",
+    "date": "2026-04-23",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202605/Firmware__V5.8.32_260423_S3000719136.zip",
+    "filename": "Firmware__V5.8.32_260423_S3000719136.zip",
+    "supported_models": [
+      "DS-2CD2647G3-LIZSY"
+    ],
+    "applied_to": "Applied to: DS-2CD2647G3-LIZSY(2.8-12mm)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2647G3T-LIZSY_IPC_G0_5.8.32": {
+    "device_id": 100988,
+    "model": "DS-2CD2647G3T-LIZSY",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.32",
+    "date": "2026-04-23",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202605/Firmware__V5.8.32_260423_S3000719136.zip",
+    "filename": "Firmware__V5.8.32_260423_S3000719136.zip",
+    "supported_models": [
+      "DS-2CD2647G3T-LIZSY"
+    ],
+    "applied_to": "Applied to: DS-2CD2647G3T-LIZSY(2.8-12mm)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2746G3-IPTRZS2UY_IPC_G0_5.8.32": {
+    "device_id": 100989,
+    "model": "DS-2CD2746G3-IPTRZS2UY",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.32",
+    "date": "2026-04-23",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202605/Firmware__V5.8.32_260423_S3000719136.zip",
+    "filename": "Firmware__V5.8.32_260423_S3000719136.zip",
+    "supported_models": [
+      "DS-2CD2746G3-IPTRZS2UY"
+    ],
+    "applied_to": "Applied to: DS-2CD2746G3-IPTRZS2UY/SRB(2.8-12)O-STD",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2746G3-IPTRZSY_IPC_G0_5.8.32": {
+    "device_id": 100990,
+    "model": "DS-2CD2746G3-IPTRZSY",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.32",
+    "date": "2026-04-23",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202605/Firmware__V5.8.32_260423_S3000719136.zip",
+    "filename": "Firmware__V5.8.32_260423_S3000719136.zip",
+    "supported_models": [
+      "DS-2CD2746G3-IPTRZSY"
+    ],
+    "applied_to": "Applied to: DS-2CD2746G3-IPTRZSY(2.8-12mm)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2747G3-LIPTRZS2UY_IPC_G0_5.8.32": {
+    "device_id": 101006,
+    "model": "DS-2CD2747G3-LIPTRZS2UY",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.32",
+    "date": "2026-04-23",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202605/Firmware__V5.8.32_260423_S3000719136.zip",
+    "filename": "Firmware__V5.8.32_260423_S3000719136.zip",
+    "supported_models": [
+      "DS-2CD2747G3-LIPTRZS2UY"
+    ],
+    "applied_to": "Applied to: DS-2CD2747G3-LIPTRZS2UY/SL(2.8-12)O-STD",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2747G3-LIPTRZSY_IPC_G0_5.8.32": {
+    "device_id": 101007,
+    "model": "DS-2CD2747G3-LIPTRZSY",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.32",
+    "date": "2026-04-23",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202605/Firmware__V5.8.32_260423_S3000719136.zip",
+    "filename": "Firmware__V5.8.32_260423_S3000719136.zip",
+    "supported_models": [
+      "DS-2CD2747G3-LIPTRZSY"
+    ],
+    "applied_to": "Applied to: DS-2CD2747G3-LIPTRZSY(2.8-12mm)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2747G3T-LIZSY_IPC_G0_5.8.32": {
+    "device_id": 100991,
+    "model": "DS-2CD2747G3T-LIZSY",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.32",
+    "date": "2026-04-23",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202605/Firmware__V5.8.32_260423_S3000719136.zip",
+    "filename": "Firmware__V5.8.32_260423_S3000719136.zip",
+    "supported_models": [
+      "DS-2CD2747G3T-LIZSY"
+    ],
+    "applied_to": "Applied to: DS-2CD2747G3T-LIZSY(2.8-12mm)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2767G3T-LIZSY_IPC_G0_5.8.32": {
+    "device_id": 100376,
+    "model": "DS-2CD2767G3T-LIZSY",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.32",
+    "date": "2026-03-30",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202604/Firmware__V5.8.32_260330_S3000710937.zip",
+    "filename": "Firmware__V5.8.32_260330_S3000710937.zip",
+    "supported_models": [
+      "DS-2CD2767G3T-LIZSY"
+    ],
+    "applied_to": "Applied to: DS-2CD2767G3T-LIZSY(2.8-12mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.32_SP1_260330_Release_Note-H13.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2H47G3-LIZS2UY_IPC_G0_5.8.32": {
+    "device_id": 100992,
+    "model": "DS-2CD2H47G3-LIZS2UY",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.32",
+    "date": "2026-04-23",
+    "download_url": "https://assets.hikvision.com/prd/normal/all/files/202605/Firmware__V5.8.32_260423_S3000719136.zip",
+    "filename": "Firmware__V5.8.32_260423_S3000719136.zip",
+    "supported_models": [
+      "DS-2CD2H47G3-LIZS2UY"
+    ],
+    "applied_to": "Applied to: DS-2CD2H47G3-LIZS2UY/SRB(2.8-12mm)/O-STD",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
   }
 }
