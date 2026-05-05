@@ -1289,6 +1289,29 @@ class HikvisionScraper:
         logger.info(f"  Found {len(release_filenames)} firmware file(s) in GitHub releases")
         if filename_to_info:
             logger.info(f"  Extracted model info from {len(filename_to_info)} release note(s)")
+
+        # Normalize existing entries to GitHub-style download URLs for consistency.
+        # This makes JSON/README/releases consistent for HA consumers.
+        normalized_url_count = 0
+        for fw_data in self.firmwares_live.values():
+            filename = (fw_data.get('filename') or '').strip()
+            download_url = (fw_data.get('download_url') or '').strip()
+
+            # Try to infer filename from URL if missing.
+            if not filename and download_url:
+                inferred = download_url.split('/')[-1].split('?')[0]
+                if inferred and any(inferred.lower().endswith(ext) for ext in ['.zip', '.dav', '.pak', '.bin']):
+                    filename = inferred
+                    fw_data['filename'] = inferred
+
+            if filename:
+                github_url = f"https://github.com/{GITHUB_REPO}/releases/latest/download/{filename}"
+                if fw_data.get('download_url') != github_url:
+                    fw_data['download_url'] = github_url
+                    normalized_url_count += 1
+
+        if normalized_url_count > 0:
+            logger.info(f"  🔗 Normalized {normalized_url_count} firmware download URL(s) to GitHub release links")
         
         # Find files in releases that aren't in JSON
         added_count = 0
@@ -1384,8 +1407,14 @@ class HikvisionScraper:
             filename = fw_data.get('filename', '')
             download_url = fw_data.get('download_url', '')
             
-            # If it claims to be from GitHub releases but file doesn't exist in releases
-            if filename and 'github.com' in download_url and filename not in release_filenames:
+            # Only prune entries that were created by GitHub release sync itself and
+            # now reference missing release assets.
+            if (
+                fw_data.get('source') == 'github_releases_sync'
+                and filename
+                and 'github.com' in download_url
+                and filename not in release_filenames
+            ):
                 # Check if file exists locally
                 firmware_dir = Path('firmwares')
                 local_file_exists = False
