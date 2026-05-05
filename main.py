@@ -796,7 +796,41 @@ class HikvisionScraper:
                 if self.scraped_count % 50 == 0:
                     logger.info(f"  Added {self.scraped_count} new firmwares so far...")
         else:
-            logger.debug(f"  ⊘ Skipped existing firmware: {model} {hw_version} v{version}")
+            existing = self.firmwares_live.get(key, {})
+            updated_fields = []
+
+            # Keep existing entries fresh: backfill metadata when newly discovered.
+            new_notes = (fw_data.get('notes') or '').strip()
+            if new_notes and not (existing.get('notes') or '').strip():
+                existing['notes'] = new_notes
+                updated_fields.append('notes')
+
+            new_applied_to = (fw_data.get('applied_to') or '').strip()
+            if new_applied_to and not (existing.get('applied_to') or '').strip():
+                existing['applied_to'] = new_applied_to
+                updated_fields.append('applied_to')
+
+            existing_models = existing.get('supported_models') or []
+            new_models = fw_data.get('supported_models') or []
+            merged_models = []
+            seen_models = set()
+            for m in list(existing_models) + list(new_models):
+                mm = str(m).strip().upper()
+                if mm and mm not in seen_models:
+                    seen_models.add(mm)
+                    merged_models.append(mm)
+            if merged_models and merged_models != existing_models:
+                existing['supported_models'] = merged_models
+                updated_fields.append('supported_models')
+
+            # Never overwrite a good notes URL with blank.
+            if updated_fields:
+                self.firmwares_live[key] = existing
+                logger.info(
+                    f"  ↻ Updated existing firmware metadata: {model} {hw_version} v{version} ({', '.join(updated_fields)})"
+                )
+            else:
+                logger.debug(f"  ⊘ Skipped existing firmware: {model} {hw_version} v{version}")
     
     def cleanup_failed_downloads(self):
         """Remove firmware entries that don't have corresponding files."""
@@ -988,8 +1022,8 @@ class HikvisionScraper:
             logger.info(f"  📦 Synced {added_count} firmware file(s) from directory to JSON")
     
     def cleanup_empty_devices(self):
-        """Remove devices that have no firmwares AND no files."""
-        # Get all device IDs that have firmwares
+        """Remove devices that are not referenced by any firmware entry."""
+        # Get all device IDs referenced by firmwares
         devices_with_firmwares = set()
         for fw_data in self.firmwares_live.values():
             device_id = fw_data.get('device_id')
@@ -1010,15 +1044,12 @@ class HikvisionScraper:
                             if device_id:
                                 devices_with_files.add(str(device_id))
         
-        # Remove devices without firmwares AND without files
+        # Remove devices without firmware references
         removed_count = 0
         devices_to_remove = []
         for device_id in self.devices.keys():
             if device_id not in devices_with_firmwares and device_id not in devices_with_files:
-                # Only remove if device is UNKNOWN and has no files
-                device_info = self.devices.get(device_id, {})
-                if device_info.get('model') == 'UNKNOWN':
-                    devices_to_remove.append(device_id)
+                devices_to_remove.append(device_id)
         
         for device_id in devices_to_remove:
             del self.devices[device_id]
@@ -1026,6 +1057,121 @@ class HikvisionScraper:
         
         if removed_count > 0:
             logger.info(f"  🧹 Cleaned up {removed_count} device(s) without firmwares or files")
+
+    def repair_and_validate_entries(self):
+        """Repair recoverable entries and remove irrecoverably invalid records."""
+        repaired_count = 0
+        removed_count = 0
+        keys_to_remove = []
+
+        # Build reverse lookup for known devices by model/hardware pair
+        device_pair_to_id = {}
+        for did, dinfo in self.devices.items():
+            model = (dinfo.get('model') or '').strip().upper()
+            hw = (dinfo.get('hardware_version') or 'UNKNOWN').strip().upper()
+            if model:
+                device_pair_to_id[(model, hw)] = int(did)
+
+        for key, fw_data in self.firmwares_live.items():
+            model = (fw_data.get('model') or '').strip().upper()
+            hw_version = (fw_data.get('hardware_version') or 'UNKNOWN').strip().upper()
+            version = (fw_data.get('version') or '').strip()
+            filename = (fw_data.get('filename') or '').strip()
+            download_url = (fw_data.get('download_url') or '').strip()
+
+            # Try to repair missing version from key as fallback.
+            if not version and isinstance(key, str):
+                version_match = re.search(r'(\d+\.\d+\.\d+(?:\.\d+)?)$', key)
+                if version_match:
+                    fw_data['version'] = version_match.group(1)
+                    version = fw_data['version']
+                    repaired_count += 1
+
+            # Try to repair missing model from supported_models first.
+            if not model:
+                supported = fw_data.get('supported_models') or []
+                if isinstance(supported, list) and supported:
+                    first_model = str(supported[0]).strip().upper()
+                    if first_model:
+                        fw_data['model'] = first_model
+                        model = first_model
+                        repaired_count += 1
+
+            # Remove entries that cannot possibly be resolved.
+            if not model or not version:
+                keys_to_remove.append(key)
+                continue
+
+            # Normalize canonical fields
+            fw_data['model'] = model
+            fw_data['hardware_version'] = hw_version or 'UNKNOWN'
+            if not fw_data.get('supported_models'):
+                fw_data['supported_models'] = [model]
+
+            # If filename missing but URL has a usable filename, infer it.
+            if not filename and download_url:
+                inferred = download_url.split('/')[-1].split('?')[0]
+                if inferred and any(inferred.lower().endswith(ext) for ext in ['.zip', '.dav', '.pak', '.bin']):
+                    fw_data['filename'] = inferred
+                    repaired_count += 1
+
+            # Ensure device_id points to an existing device mapping.
+            pair_key = (model, fw_data.get('hardware_version', 'UNKNOWN'))
+            device_id = fw_data.get('device_id')
+            if pair_key not in device_pair_to_id:
+                new_id = create_device_id(self.devices, pair_key[0], pair_key[1])
+                device_pair_to_id[pair_key] = new_id
+                fw_data['device_id'] = new_id
+                repaired_count += 1
+            else:
+                canonical_id = device_pair_to_id[pair_key]
+                if not device_id or str(device_id) != str(canonical_id):
+                    fw_data['device_id'] = canonical_id
+                    repaired_count += 1
+
+        for key in keys_to_remove:
+            del self.firmwares_live[key]
+            removed_count += 1
+
+        if repaired_count > 0:
+            logger.info(f"  🛠️  Repaired {repaired_count} firmware field issue(s)")
+        if removed_count > 0:
+            logger.info(f"  🧹 Removed {removed_count} irrecoverably invalid firmware entry(ies)")
+
+    def integrity_report(self) -> dict:
+        """Return integrity report for dry-run verification."""
+        report = {
+            'firmwares_missing_model': 0,
+            'firmwares_missing_version': 0,
+            'firmwares_missing_device_id': 0,
+            'firmwares_with_unknown_model': 0,
+            'firmwares_missing_notes': 0,
+            'orphan_device_entries': 0,
+        }
+
+        referenced_device_ids = set()
+        for fw_data in self.firmwares_live.values():
+            model = (fw_data.get('model') or '').strip()
+            version = (fw_data.get('version') or '').strip()
+            device_id = fw_data.get('device_id')
+            if not model:
+                report['firmwares_missing_model'] += 1
+            if not version:
+                report['firmwares_missing_version'] += 1
+            if not device_id:
+                report['firmwares_missing_device_id'] += 1
+            if model.upper() == 'UNKNOWN':
+                report['firmwares_with_unknown_model'] += 1
+            if not (fw_data.get('notes') or '').strip():
+                report['firmwares_missing_notes'] += 1
+            if device_id:
+                referenced_device_ids.add(str(device_id))
+
+        for did in self.devices.keys():
+            if did not in referenced_device_ids:
+                report['orphan_device_entries'] += 1
+
+        return report
     
     def cleanup_unknown_entries(self):
         """Remove firmware entries with UNKNOWN model that don't have files or useful info."""
@@ -1149,14 +1295,24 @@ class HikvisionScraper:
         for filename in release_filenames:
             # Check if this file is already in JSON
             found = False
+            release_info = filename_to_info.get(filename)
             for key, fw_data in self.firmwares_live.items():
                 if fw_data.get('filename') == filename:
                     found = True
+                    # Backfill release metadata for existing entries, but do not
+                    # replace good data with blanks.
+                    if release_info:
+                        if release_info.get('date') and not fw_data.get('date'):
+                            fw_data['date'] = release_info['date']
+                        if release_info.get('model') and not fw_data.get('model'):
+                            fw_data['model'] = release_info['model']
+                        if release_info.get('version') and not fw_data.get('version'):
+                            fw_data['version'] = release_info['version']
                     break
             
             if not found:
                 # Try to get model/version from release notes first
-                info = filename_to_info.get(filename)
+                info = release_info
                 if info:
                     model = info['model']
                     version = info['version']
@@ -1253,6 +1409,8 @@ class HikvisionScraper:
         self.sync_github_releases()
         # Sync firmware directory with JSON (add missing entries)
         self.sync_firmwares_directory()
+        # Repair malformed records and ensure device mappings are consistent
+        self.repair_and_validate_entries()
         # Clean up incomplete UNKNOWN entries
         self.cleanup_unknown_entries()
         # Clean up failed downloads before saving
