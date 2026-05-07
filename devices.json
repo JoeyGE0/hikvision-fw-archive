@@ -4026,5 +4026,29 @@
   "101007": {
     "model": "DS-2CD2747G3-LIPTRZSY",
     "hardware_version": "IPC_G0"
+  },
+  "101008": {
+    "model": "DS-2CD2023G2-IU",
+    "hardware_version": "IPC_G0"
+  },
+  "101009": {
+    "model": "DS-2CD2043G2-IU",
+    "hardware_version": "IPC_G0"
+  },
+  "101010": {
+    "model": "DS-2CD2083G2-IU",
+    "hardware_version": "IPC_G0"
+  },
+  "101011": {
+    "model": "DS-2CD2147G2-LSU",
+    "hardware_version": "IPC_G0"
+  },
+  "101012": {
+    "model": "DS-2CD2187G2-LSU",
+    "hardware_version": "IPC_G0"
+  },
+  "101013": {
+    "model": "DS-2CD2323G2-IU",
+    "hardware_version": "IPC_G0"
   }
 }
