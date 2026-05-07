@@ -4050,5 +4050,25 @@
   "101013": {
     "model": "DS-2CD2323G2-IU",
     "hardware_version": "IPC_G0"
+  },
+  "101014": {
+    "model": "DS-2CD2343G2-IU",
+    "hardware_version": "IPC_G0"
+  },
+  "101015": {
+    "model": "DS-2CD2347G2-LU",
+    "hardware_version": "IPC_G0"
+  },
+  "101016": {
+    "model": "DS-2CD2383G2-IU",
+    "hardware_version": "IPC_G0"
+  },
+  "101017": {
+    "model": "DS-2CD2387G2-LU",
+    "hardware_version": "IPC_G0"
+  },
+  "101018": {
+    "model": "DS-2CD2523G2-IS",
+    "hardware_version": "IPC_G0"
   }
 }
