@@ -4126,5 +4126,17 @@
   "101032": {
     "model": "DS-2CD2T167G3P-LIS2UY",
     "hardware_version": "IPC_G0"
+  },
+  "101033": {
+    "model": "DS-2CD2T47G3P-LIS2UY",
+    "hardware_version": "IPC_G0"
+  },
+  "101034": {
+    "model": "DS-2CD2T67G3P-LIS2UY",
+    "hardware_version": "IPC_G0"
+  },
+  "101035": {
+    "model": "DS-2CD2T87G3P-LIS2UY",
+    "hardware_version": "IPC_G0"
   }
 }
