@@ -25675,5 +25675,179 @@
     "notes": "https://assets.hikvision.com/prd/public/all/files/202403/releasenote%5CNetwork_Camera-V5.5.820_Release_Note-G3.pdf",
     "is_beta": false,
     "source": "live"
+  },
+  "DS-2CD20126G3-IUY_IPC_G0_5.8.3": {
+    "device_id": 100154,
+    "model": "DS-2CD20126G3-IUY",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.3",
+    "date": "2026-03-20",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.3_260320_S3000708466.zip",
+    "filename": "Firmware__V5.8.3_260320_S3000708466.zip",
+    "supported_models": [
+      "DS-2CD20126G3-IUY"
+    ],
+    "applied_to": "Applied to: DS-2CD20126G3-IUY/SRB(2.8mm)eFO-STDBLACK",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.3_SP1_260320_Release_Note-IPCE_G9.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2046G3-IZ2UY_IPC_G0_5.8.32": {
+    "device_id": 100181,
+    "model": "DS-2CD2046G3-IZ2UY",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.32",
+    "date": "2026-03-30",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.32_260330_S3000710893.zip",
+    "filename": "Firmware__V5.8.32_260330_S3000710893.zip",
+    "supported_models": [
+      "DS-2CD2046G3-IZ2UY"
+    ],
+    "applied_to": "Applied to: DS-2CD2046G3-IZ2UY/SRB(2.8/4)O-STDBLACK",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.32_SP1_260330_Release_Note-H13U.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2087G3-LI_IPC_G0_5.8.32": {
+    "device_id": 100213,
+    "model": "DS-2CD2087G3-LI",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.32",
+    "date": "2026-03-30",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.32_260330_S3000710937.zip",
+    "filename": "Firmware__V5.8.32_260330_S3000710937.zip",
+    "supported_models": [
+      "DS-2CD2087G3-LI",
+      "DS-2CD2087G3-LI2UY",
+      "DS-2CD2087G3-LIY"
+    ],
+    "applied_to": "Applied to: DS-2CD2087G3-LI2UY(2.8mm)(BLACK)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.32_SP1_260330_Release_Note-H13.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD23126G3-IS2UY_IPC_G0_5.8.3": {
+    "device_id": 100265,
+    "model": "DS-2CD23126G3-IS2UY",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.3",
+    "date": "2026-03-20",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.3_260320_S3000708466.zip",
+    "filename": "Firmware__V5.8.3_260320_S3000708466.zip",
+    "supported_models": [
+      "DS-2CD23126G3-IS2UY"
+    ],
+    "applied_to": "Applied to: DS-2CD23126G3-IS2UY/SRB(2.8mm)(eF)/O-STD",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.3_SP1_260320_Release_Note-IPCE_G9.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2346G3-IZS2UY_IPC_G0_5.8.32": {
+    "device_id": 100292,
+    "model": "DS-2CD2346G3-IZS2UY",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.32",
+    "date": "2026-03-30",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.32_260330_S3000710893.zip",
+    "filename": "Firmware__V5.8.32_260330_S3000710893.zip",
+    "supported_models": [
+      "DS-2CD2346G3-IZS2UY"
+    ],
+    "applied_to": "Applied to: DS-2CD2346G3-IZS2UY/SRB(2.8/4mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.32_SP1_260330_Release_Note-H13U.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2387G3-LI_IPC_G0_5.8.32": {
+    "device_id": 100309,
+    "model": "DS-2CD2387G3-LI",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.32",
+    "date": "2026-03-30",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.32_260330_S3000710937.zip",
+    "filename": "Firmware__V5.8.32_260330_S3000710937.zip",
+    "supported_models": [
+      "DS-2CD2387G3-LI",
+      "DS-2CD2387G3-LI2UY",
+      "DS-2CD2387G3-LIY"
+    ],
+    "applied_to": "Applied to: DS-2CD2387G3-LI2UY(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.32_SP1_260330_Release_Note-H13.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD26126G3-IZS2UY_IPC_G0_5.8.3": {
+    "device_id": 100330,
+    "model": "DS-2CD26126G3-IZS2UY",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.3",
+    "date": "2026-03-20",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.3_260320_S3000708466.zip",
+    "filename": "Firmware__V5.8.3_260320_S3000708466.zip",
+    "supported_models": [
+      "DS-2CD26126G3-IZS2UY"
+    ],
+    "applied_to": "Applied to: DS-2CD26126G3-IZS2UY/SRB(2.8-12)eFO-STD",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.3_SP1_260320_Release_Note-IPCE_G9.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2H126G3-IZS2UY_IPC_G0_5.8.3": {
+    "device_id": 100391,
+    "model": "DS-2CD2H126G3-IZS2UY",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.3",
+    "date": "2026-03-20",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.3_260320_S3000708466.zip",
+    "filename": "Firmware__V5.8.3_260320_S3000708466.zip",
+    "supported_models": [
+      "DS-2CD2H126G3-IZS2UY"
+    ],
+    "applied_to": "Applied to: DS-2CD2H126G3-IZS2UY/SRB(2.8-12)eFO-STD",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.3_SP1_260320_Release_Note-IPCE_G9.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2H87G3-LIZS2UY_IPC_G0_5.8.32": {
+    "device_id": 100409,
+    "model": "DS-2CD2H87G3-LIZS2UY",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.32",
+    "date": "2026-03-30",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.32_260330_S3000710937.zip",
+    "filename": "Firmware__V5.8.32_260330_S3000710937.zip",
+    "supported_models": [
+      "DS-2CD2H87G3-LIZS2UY"
+    ],
+    "applied_to": "Applied to: DS-2CD2H87G3-LIZS2UY/SRB(2.8-12mm)/O-STD",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.32_SP1_260330_Release_Note-H13.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2T87G3-LIS2UY_IPC_G0_5.8.32": {
+    "device_id": 100450,
+    "model": "DS-2CD2T87G3-LIS2UY",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.32",
+    "date": "2026-03-30",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.32_260330_S3000710937.zip",
+    "filename": "Firmware__V5.8.32_260330_S3000710937.zip",
+    "supported_models": [
+      "DS-2CD2T87G3-LIS2UY"
+    ],
+    "applied_to": "Applied to: DS-2CD2T87G3-LIS2UY/SRB(2.8mm)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.32_SP1_260330_Release_Note-H13.pdf",
+    "is_beta": false,
+    "source": "live"
   }
 }
