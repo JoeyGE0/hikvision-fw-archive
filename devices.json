@@ -4503,10 +4503,6 @@
     "model": "DS-2XC6046G0-LIS-316L-",
     "hardware_version": "UNKNOWN"
   },
-  "101128": {
-    "model": "UNKNOWN",
-    "hardware_version": "UNKNOWN"
-  },
   "101129": {
     "model": "IDS-2CD7A45G0-IZ-H-S-Y-",
     "hardware_version": "IPC_G0"
@@ -4753,6 +4749,110 @@
   },
   "101190": {
     "model": "DS-2TD2628-10-QA-GLT",
+    "hardware_version": "UNKNOWN"
+  },
+  "101191": {
+    "model": "UNKNOWN",
+    "hardware_version": "UNKNOWN"
+  },
+  "101192": {
+    "model": "DS-2TD2628-10-QA-GLT-LA-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101193": {
+    "model": "DS-2TD2628-3-QA-GLT",
+    "hardware_version": "UNKNOWN"
+  },
+  "101194": {
+    "model": "DS-2TD2628-7-QA-GLT",
+    "hardware_version": "UNKNOWN"
+  },
+  "101195": {
+    "model": "DS-2TD4228-10-W",
+    "hardware_version": "UNKNOWN"
+  },
+  "101196": {
+    "model": "DS-2TXS2628-10P-QA-GLT-CH30S80",
+    "hardware_version": "UNKNOWN"
+  },
+  "101197": {
+    "model": "DS-2TXS2628-10P-QA-GLT-CH30S80-LA-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101198": {
+    "model": "DS-2TXS2628-10P-QA-GLT-CH36S80",
+    "hardware_version": "UNKNOWN"
+  },
+  "101199": {
+    "model": "DS-2TXS2628-3P-QA-GLT-CH30S80",
+    "hardware_version": "UNKNOWN"
+  },
+  "101200": {
+    "model": "DS-2TXS2628-3P-QA-GLT-CH36S80",
+    "hardware_version": "UNKNOWN"
+  },
+  "101201": {
+    "model": "DS-2TXS2628-7P-QA-GLT-CH30S80",
+    "hardware_version": "UNKNOWN"
+  },
+  "101202": {
+    "model": "DS-2TXS2628-7P-QA-GLT-CH36S80",
+    "hardware_version": "UNKNOWN"
+  },
+  "101203": {
+    "model": "DS-2TXS2628-8P-QA-GLT-CH36S80-BR-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101204": {
+    "model": "AE-DI5052-G40-PRO-OVERSEAS-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101205": {
+    "model": "DS-2DT5432MWG-T--PA-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101206": {
+    "model": "DS-2DY7236IX-A-T5-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101207": {
+    "model": "DS-2DY9240IX-A-T5-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101208": {
+    "model": "DS-2DY9250IAX-A-T5-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101209": {
+    "model": "DS-2DY9250X-A-T5-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101210": {
+    "model": "DS-2DY5225IX-AE-T5-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101211": {
+    "model": "DS-2DY5225IX-DM-T5-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101212": {
+    "model": "DS-2DY5425IXG-E",
+    "hardware_version": "UNKNOWN"
+  },
+  "101213": {
+    "model": "DS-2DY5432IXG-E",
+    "hardware_version": "UNKNOWN"
+  },
+  "101214": {
+    "model": "DS-2DY5432IXG-M",
+    "hardware_version": "UNKNOWN"
+  },
+  "101215": {
+    "model": "DS-2DY5440IXG-E",
+    "hardware_version": "UNKNOWN"
+  },
+  "101216": {
+    "model": "DS-2DY7432IXG-XY",
     "hardware_version": "UNKNOWN"
   }
 }
