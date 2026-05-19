@@ -4854,5 +4854,193 @@
   "101216": {
     "model": "DS-2DY7432IXG-XY",
     "hardware_version": "UNKNOWN"
+  },
+  "101217": {
+    "model": "DS-2DY7436IXG-CXLWF-316L-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101218": {
+    "model": "DS-2DY7845IXG-CXLWF-316L-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101219": {
+    "model": "DS-2DY9236I-CWX-T5-316L-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101220": {
+    "model": "DS-2SE7C432IWG-4G-14-F0-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101221": {
+    "model": "DS-3E1506P-EI-M-4P1T1F",
+    "hardware_version": "UNKNOWN"
+  },
+  "101222": {
+    "model": "IDS-2CD70166G2-AP",
+    "hardware_version": "IPC_G0"
+  },
+  "101223": {
+    "model": "IDS-2CD70166G2-E-IHSYR",
+    "hardware_version": "IPC_G0"
+  },
+  "101224": {
+    "model": "IDS-2CD7046G2-AP",
+    "hardware_version": "IPC_G0"
+  },
+  "101225": {
+    "model": "IDS-2CD7046G2-E-IHSYR",
+    "hardware_version": "IPC_G0"
+  },
+  "101226": {
+    "model": "IDS-2CD7046G2-EP-IHSYR",
+    "hardware_version": "IPC_G0"
+  },
+  "101227": {
+    "model": "IDS-2CD7086G2-AP",
+    "hardware_version": "IPC_G0"
+  },
+  "101228": {
+    "model": "IDS-2CD7086G2-E-IHSYR",
+    "hardware_version": "IPC_G0"
+  },
+  "101229": {
+    "model": "IDS-2CD7086G2-EP-IHSYR",
+    "hardware_version": "IPC_G0"
+  },
+  "101230": {
+    "model": "IDS-2CD70C6G2-AP",
+    "hardware_version": "IPC_G0"
+  },
+  "101231": {
+    "model": "IDS-2CD70C6G2-E-IHSYR",
+    "hardware_version": "IPC_G0"
+  },
+  "101232": {
+    "model": "IDS-2CD71166G2-IZHSY",
+    "hardware_version": "IPC_G0"
+  },
+  "101233": {
+    "model": "IDS-2CD7146G2-IZ-H-S-Y--1T-",
+    "hardware_version": "IPC_G0"
+  },
+  "101234": {
+    "model": "IDS-2CD7186G2-IZ-H-S-Y-",
+    "hardware_version": "IPC_G0"
+  },
+  "101235": {
+    "model": "IDS-2CD71C6G2-IZ-H-S-Y-",
+    "hardware_version": "IPC_G0"
+  },
+  "101236": {
+    "model": "IDS-2CD7546G2-XZHS-Y-",
+    "hardware_version": "IPC_G0"
+  },
+  "101237": {
+    "model": "IDS-2CD7546G2-P-XZHS-Y-",
+    "hardware_version": "IPC_G0"
+  },
+  "101238": {
+    "model": "IDS-2CD7547G2-XZHS-Y-",
+    "hardware_version": "IPC_G0"
+  },
+  "101239": {
+    "model": "IDS-2CD7547G2-ZHS-RC",
+    "hardware_version": "IPC_G0"
+  },
+  "101240": {
+    "model": "IDS-2CD7547G2-P-XZHS-Y-",
+    "hardware_version": "IPC_G0"
+  },
+  "101241": {
+    "model": "IDS-2CD7586G2-XZHS-Y-",
+    "hardware_version": "IPC_G0"
+  },
+  "101242": {
+    "model": "IDS-2CD7586G2-P-XZHS-Y-",
+    "hardware_version": "IPC_G0"
+  },
+  "101243": {
+    "model": "IDS-2CD7587G2-XZHS-Y-",
+    "hardware_version": "IPC_G0"
+  },
+  "101244": {
+    "model": "IDS-2CD7587G2-ZHS-RC",
+    "hardware_version": "IPC_G0"
+  },
+  "101245": {
+    "model": "IDS-2CD7587G2-P-XZHS-Y-",
+    "hardware_version": "IPC_G0"
+  },
+  "101246": {
+    "model": "IDS-2CD7A166G2-IZHSY",
+    "hardware_version": "IPC_G0"
+  },
+  "101247": {
+    "model": "IDS-2CD7A45G2-IZHS-Y-",
+    "hardware_version": "IPC_G0"
+  },
+  "101248": {
+    "model": "IDS-2CD7A45G2-P-IZHS-Y-",
+    "hardware_version": "IPC_G0"
+  },
+  "101249": {
+    "model": "IDS-2CD7A46G2-IZHS-Y--1T---5G-",
+    "hardware_version": "IPC_G0"
+  },
+  "101250": {
+    "model": "IDS-2CD7A46G2-IZHS-Y--4G",
+    "hardware_version": "IPC_G0"
+  },
+  "101251": {
+    "model": "IDS-2CD7A46G2-P-IZHS-Y---5G-",
+    "hardware_version": "IPC_G0"
+  },
+  "101252": {
+    "model": "IDS-2CD7A46G2-P-IZHS-Y--4G",
+    "hardware_version": "IPC_G0"
+  },
+  "101253": {
+    "model": "IDS-2CD7A47G2-XZHS-Y-",
+    "hardware_version": "IPC_G0"
+  },
+  "101254": {
+    "model": "IDS-2CD7A47G2-P-XZHS-Y-",
+    "hardware_version": "IPC_G0"
+  },
+  "101255": {
+    "model": "IDS-2CD7A86G2-IZHS-Y---5G-",
+    "hardware_version": "IPC_G0"
+  },
+  "101256": {
+    "model": "IDS-2CD7A86G2-IZHS-Y--4G",
+    "hardware_version": "IPC_G0"
+  },
+  "101257": {
+    "model": "IDS-2CD7A86G2-P-IZHS-Y---5G-",
+    "hardware_version": "IPC_G0"
+  },
+  "101258": {
+    "model": "IDS-2CD7A86G2-P-IZHS-Y--4G",
+    "hardware_version": "IPC_G0"
+  },
+  "101259": {
+    "model": "IDS-2CD7A87G2-XZHS-Y-",
+    "hardware_version": "IPC_G0"
+  },
+  "101260": {
+    "model": "IDS-2CD7A87G2-P-XZHS-Y-",
+    "hardware_version": "IPC_G0"
+  },
+  "101261": {
+    "model": "IDS-2CD7AC6G2-IZHS-Y-",
+    "hardware_version": "IPC_G0"
+  },
+  "101262": {
+    "model": "IDS-2CD8A87G0P-PW",
+    "hardware_version": "IPC_G0"
+  },
+  "101263": {
+    "model": "DS-2DE3A400BW-DE-T5-",
+    "hardware_version": "IPC_G0"
   }
 }
