@@ -33,11 +33,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Install Playwright browsers and system dependencies
-        run: |
-          playwright install chromium
-          playwright install-deps chromium
-
       - name: Create local changes
         id: changes
         run: |
@@ -49,7 +44,7 @@ jobs:
 
           # Show download summary from logs
           echo "=== Download Summary ==="
-          echo "$SCRAPER_OUTPUT" | grep -E "(File downloaded|Download limit|Download Summary|NEW firmware)" || echo "No download messages found"
+          echo "$SCRAPER_OUTPUT" | grep -E "(File downloaded|Download limit|Download Summary|NEW firmware|HTTP Download)" || echo "No download messages found"
           echo "========================"
 
           # Default to 0 if output is empty or not a number

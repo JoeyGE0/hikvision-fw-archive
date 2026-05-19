@@ -73,6 +73,7 @@ def generate_readme() -> str:
         'success': '✅',
         'error': '❌',
         'no_new_firmwares': '⚠️',
+        'running': '🔄',
         'unknown': '❓'
     }.get(status_text, '❓')
     

@@ -49,6 +49,17 @@ if 'GITHUB_ACTIONS' in os.environ:
 BASE_URL = "https://www.hikvision.com"
 FIRMWARE_URL = f"{BASE_URL}/en/support/download/firmware/"
 
+HTTP_HEADERS = {
+    'User-Agent': (
+        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
+        'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    ),
+    'Referer': FIRMWARE_URL,
+}
+
+# Default: HTTP catalog parse (fast, reliable). Set USE_PLAYWRIGHT=1 to use legacy browser scraper.
+USE_HTTP_SCRAPER = os.environ.get('USE_PLAYWRIGHT', '').lower() not in ('1', 'true', 'yes')
+
 # GitHub repo info for releases sync
 GITHUB_REPO = "JoeyGE0/hikvision-fw-archive"
 GITHUB_API_BASE = "https://api.github.com/repos"
@@ -57,6 +68,11 @@ GITHUB_API_BASE = "https://api.github.com/repos"
 # Maximum number of firmware files to download (0 = unlimited)
 # Set this to limit downloads and avoid hitting rate limits
 MAX_FIRMWARES_TO_DOWNLOAD = 10  # Downloads 10 new firmwares per run (20 per day)
+
+# Stop when this many models in a row have only already-archived firmware (caught-up runs)
+CONSECUTIVE_FULLY_SKIPPED_MODELS_LIMIT = int(
+    os.environ.get('CONSECUTIVE_FULLY_SKIPPED_MODELS_LIMIT', '40')
+)
 
 # Legacy TEST_MODE (deprecated - use MAX_FIRMWARES_TO_DOWNLOAD instead)
 TEST_MODE = False
@@ -105,7 +121,511 @@ class HikvisionScraper:
         elif 'DS-76' in model or 'DS-77' in model:
             return 'NVR_G0'
         return 'UNKNOWN'
-    
+
+    def dismiss_page_overlays(self, page) -> int:
+        """Dismiss cookie banners, region prompts, and other blocking overlays."""
+        dismissed = 0
+
+        # Hikvision GDPR cookie bar (a.gdpr-button-accept) + OneTrust fallback
+        try:
+            page.wait_for_selector(
+                'a.gdpr-button-accept, #onetrust-accept-btn-handler, .gdpr-info-wrapper',
+                state='visible',
+                timeout=8000,
+            )
+        except Exception:
+            pass
+        for sel in (
+            'a.gdpr-button-accept',
+            '#onetrust-accept-btn-handler',
+            '.gdpr-button-wrapper a:has-text("Accept All")',
+        ):
+            try:
+                btn = page.locator(sel).first
+                if btn.count() > 0 and btn.is_visible():
+                    btn.click(timeout=5000, force=True)
+                    dismissed += 1
+                    logger.info('  → Clicked cookie consent: Accept All')
+                    time.sleep(0.6)
+                    break
+            except Exception:
+                pass
+
+        accept_labels = ['Accept All', 'Accept all', 'I Agree', 'Got it']
+        for label in accept_labels:
+            try:
+                btn = page.get_by_role('button', name=label, exact=False)
+                if btn.count() > 0 and btn.first.is_visible():
+                    btn.first.click(timeout=3000, force=True)
+                    dismissed += 1
+                    logger.info(f'  → Clicked overlay button: {label}')
+                    time.sleep(0.4)
+            except Exception:
+                pass
+
+        # Region redirect (.ip-wrap — "visit Australia & New Zealand")
+        try:
+            region_close = page.locator('.ip-wrap span.cha, .ip-box span.cha').first
+            if region_close.count() > 0 and region_close.is_visible():
+                region_close.click(timeout=3000, force=True)
+                dismissed += 1
+                logger.info('  → Closed region redirect overlay')
+                time.sleep(0.4)
+        except Exception:
+            pass
+
+        close_selectors = [
+            '[aria-label="Close"]',
+            '[aria-label="close"]',
+            'button.close',
+            '.modal-close',
+            '.close-btn',
+        ]
+        for sel in close_selectors:
+            try:
+                for btn in page.query_selector_all(sel):
+                    if btn.is_visible():
+                        btn.click(timeout=2000, force=True)
+                        dismissed += 1
+                        time.sleep(0.3)
+            except Exception:
+                pass
+
+        try:
+            page.keyboard.press('Escape')
+        except Exception:
+            pass
+        return dismissed
+
+    def cookie_banner_visible(self, page) -> bool:
+        """True if Hikvision GDPR / OneTrust cookie UI is still on screen."""
+        for sel in (
+            'a.gdpr-button-accept',
+            '.gdpr-info-wrapper',
+            '#onetrust-banner-sdk',
+            '#onetrust-accept-btn-handler',
+        ):
+            try:
+                loc = page.locator(sel).first
+                if loc.count() > 0 and loc.is_visible():
+                    return True
+            except Exception:
+                pass
+        try:
+            return page.locator('text=Accept All').first.is_visible()
+        except Exception:
+            return False
+
+    def region_popup_visible(self, page) -> bool:
+        """True if geo redirect banner (.ip-wrap) is still on screen."""
+        try:
+            loc = page.locator('.ip-wrap .ip-box').first
+            return loc.count() > 0 and loc.is_visible()
+        except Exception:
+            return False
+
+    def find_materials_license_download_link(self, page):
+        """Materials License modal: red Agree is <a class="agree a-download-href"> with the .zip URL."""
+        try:
+            link = page.locator(
+                'a.agree.a-download-href[href*=".zip"], '
+                'a.agree.a-download-href[href*=".dav"], '
+                'a.agree.a-download-href[href*=".pak"], '
+                'a.agree.a-download-href[href*=".bin"]'
+            ).first
+            if link.count() > 0 and link.is_visible():
+                return link
+        except Exception:
+            pass
+        return None
+
+    def dismiss_download_interstitials(self, page) -> int:
+        """Close blocking popups before download (eBay Notice). Does not click Agree — use expect_download."""
+        dismissed = 0
+        for _ in range(3):
+            acted = False
+
+            # Hikvision "Notice" / eBay market statement — close with X (don't use Read more)
+            try:
+                notice_dlg = page.locator('[role="dialog"], dialog, .modal, section').filter(
+                    has_text=re.compile(r'eBay online market|HIKVISION eBay', re.I)
+                )
+                if notice_dlg.count() == 0:
+                    notice_dlg = page.locator('[role="dialog"], dialog').filter(
+                        has=page.locator('text=Notice')
+                    )
+                if notice_dlg.count() > 0 and notice_dlg.first.is_visible():
+                    box = notice_dlg.first
+                    for sel in (
+                        'button.close',
+                        '[aria-label="Close"]',
+                        '.close',
+                        'span.cha',
+                        'button:has-text("×")',
+                    ):
+                        close_btn = box.locator(sel).first
+                        if close_btn.count() > 0 and close_btn.is_visible():
+                            close_btn.click(timeout=3000, force=True)
+                            dismissed += 1
+                            acted = True
+                            logger.info('  → Closed Notice / eBay statement popup')
+                            time.sleep(0.8)
+                            break
+                    if not acted:
+                        try:
+                            page.keyboard.press('Escape')
+                            dismissed += 1
+                            acted = True
+                            logger.info('  → Closed Notice popup (Escape)')
+                            time.sleep(0.5)
+                        except Exception:
+                            pass
+            except Exception:
+                pass
+
+            if not acted:
+                break
+        return dismissed
+
+    def find_firmware_download_modal(self, page):
+        """Return dialog element that contains a firmware file link, or None."""
+        for modal in page.query_selector_all('[role="dialog"], dialog'):
+            try:
+                if not modal.is_visible():
+                    continue
+                for link in modal.query_selector_all('a[href]'):
+                    href = (link.get_attribute('href') or '').lower()
+                    if any(ext in href for ext in ['.dav', '.zip', '.pak', '.bin']):
+                        return modal
+            except Exception:
+                continue
+        return None
+
+    def close_firmware_modal(self, page) -> None:
+        """Close license-agreement modal if open."""
+        close_btn = page.query_selector(
+            'dialog button, [role="dialog"] button, '
+            'dialog [aria-label*="close" i], [role="dialog"] [aria-label*="close" i]'
+        )
+        if close_btn:
+            close_btn.click()
+            time.sleep(0.4)
+
+    def firmware_is_archived(
+        self,
+        normalized_model: str,
+        hw_version: str,
+        version: str,
+        downloaded_in_this_run: set,
+    ) -> bool:
+        if not version:
+            return False
+        firmware_key = f"{normalized_model}_{hw_version}_{version}"
+        return (
+            firmware_key in self.firmwares_live
+            or firmware_key in downloaded_in_this_run
+        )
+
+    def firmware_file_in_archive(self, filename: str) -> bool:
+        """True if any archived entry already uses this release filename."""
+        if not filename:
+            return False
+        return any(
+            (fw.get('filename') or '') == filename
+            for fw in self.firmwares_live.values()
+        )
+
+    def append_existing_firmware_record(
+        self,
+        firmwares: List[Dict],
+        *,
+        normalized_model: str,
+        hw_version: str,
+        version: str,
+        supported_models: List[str],
+        applied_to_text: str,
+        release_notes_url: str,
+    ) -> None:
+        firmwares.append({
+            'model': normalized_model,
+            'hardware_version': hw_version,
+            'version': version,
+            'download_url': '',
+            'local_file_path': '',
+            'filename': '',
+            'supported_models': supported_models,
+            'applied_to': applied_to_text,
+            'date': '',
+            'changes': '',
+            'notes': release_notes_url,
+            'source': 'live',
+            'already_exists': True,
+        })
+
+    @staticmethod
+    def _date_from_text(text: str) -> str:
+        """Extract YYYY-MM-DD from firmware filename or label (YYMMDD in names)."""
+        for date_code in re.findall(r'(\d{6}|\d{8})', text):
+            if len(date_code) == 6:
+                year = int('20' + date_code[:2])
+                month = int(date_code[2:4])
+                day = int(date_code[4:6])
+            else:
+                year = int(date_code[:4])
+                month = int(date_code[4:6])
+                day = int(date_code[6:8])
+            if 2000 <= year <= 2100 and 1 <= month <= 12 and 1 <= day <= 31:
+                return f"{year:04d}-{month:02d}-{day:02d}"
+        return ''
+
+    def fetch_catalog_html(self) -> str:
+        if not REQUESTS_AVAILABLE:
+            raise RuntimeError('requests library required for HTTP scraper')
+        logger.info('  → Fetching firmware catalog page (HTTP)...')
+        t0 = time.time()
+        response = requests.get(FIRMWARE_URL, timeout=120, headers=HTTP_HEADERS)
+        response.raise_for_status()
+        size_mb = len(response.content) / (1024 * 1024)
+        logger.info(f'  ✓ Downloaded {size_mb:.1f} MB in {time.time() - t0:.1f}s')
+        if size_mb < 1:
+            raise RuntimeError('Firmware page too small — may be blocked')
+        return response.text
+
+    def parse_catalog_entries(self, html: str) -> List[Dict]:
+        """Parse model + firmware URLs from SSR HTML (data-href on agreement links)."""
+        logger.info('  → Parsing catalog from HTML...')
+        t0 = time.time()
+
+        model_by_id: Dict[str, str] = {}
+        for match in re.finditer(r'data-target="(#firmware-collapse-\d+)"', html):
+            tid = match.group(1)
+            chunk = html[match.end():match.end() + 800]
+            model_match = re.search(
+                r'(DS-[0-9A-Z-]+|AE-[0-9A-Z-]+|IDS-[0-9A-Z-]+)',
+                chunk,
+                re.I,
+            )
+            if model_match:
+                model_by_id[tid] = normalize_model_name(model_match.group(1)).upper()
+
+        entries: List[Dict] = []
+        parts = re.split(r'(firmware-collapse-\d+)', html)
+        for i in range(1, len(parts), 2):
+            panel_id = parts[i]
+            chunk = parts[i + 1] if i + 1 < len(parts) else ''
+            model = model_by_id.get(f'#{panel_id}', 'UNKNOWN')
+            if model == 'UNKNOWN':
+                inferred = self.extract_model(chunk)
+                if inferred:
+                    model = inferred
+            hw_version = self.extract_hardware_version(chunk, model)
+
+            for title, url in re.findall(
+                r'data-title="([^"]*)".*?data-href="(https://assets\.hikvision\.com[^"]+\.(?:zip|dav|pak|bin))"',
+                chunk,
+                re.DOTALL | re.I,
+            ):
+                version = self.extract_version(title + ' ' + url) or ''
+                date_str = self._date_from_text(title) or self._date_from_text(url)
+                notes = ''
+                pdf = re.search(
+                    r'href="(https://assets\.hikvision\.com[^"]+\.pdf[^"]*)"',
+                    chunk,
+                    re.I,
+                )
+                if pdf:
+                    notes = pdf.group(1)
+                entries.append({
+                    'model': model,
+                    'hardware_version': hw_version,
+                    'version': version,
+                    'url': url,
+                    'label': title,
+                    'date': date_str,
+                    'notes': notes,
+                })
+
+        if len(entries) < 100:
+            logger.warning('  Panel parse weak — using global data-href scan')
+            entries = []
+            for title, url in re.findall(
+                r'data-title="([^"]*)".*?data-href="(https://assets\.hikvision\.com[^"]+\.(?:zip|dav|pak|bin))"',
+                html,
+                re.DOTALL | re.I,
+            ):
+                version = self.extract_version(title + ' ' + url) or ''
+                entries.append({
+                    'model': 'UNKNOWN',
+                    'hardware_version': 'UNKNOWN',
+                    'version': version,
+                    'url': url,
+                    'label': title,
+                    'date': self._date_from_text(title) or self._date_from_text(url),
+                    'notes': '',
+                })
+
+        entries.sort(key=lambda e: e.get('date') or '0000-00-00', reverse=True)
+        logger.info(f'  ✓ Parsed {len(entries)} firmware URL(s) in {time.time() - t0:.1f}s')
+        return entries
+
+    def download_firmware_http(self, url: str, filename: str) -> Path:
+        firmware_dir = Path('firmwares')
+        firmware_dir.mkdir(exist_ok=True)
+        path = firmware_dir / filename
+        logger.info(f'    ↓ Downloading {filename}...')
+        t0 = time.time()
+        with requests.get(url, headers=HTTP_HEADERS, stream=True, timeout=600) as response:
+            response.raise_for_status()
+            content_type = (response.headers.get('content-type') or '').lower()
+            if 'html' in content_type:
+                raise RuntimeError('CDN returned HTML (check Referer)')
+            total = 0
+            with open(path, 'wb') as handle:
+                for chunk in response.iter_content(chunk_size=1024 * 256):
+                    if chunk:
+                        handle.write(chunk)
+                        total += len(chunk)
+        if total < 10_000:
+            path.unlink(missing_ok=True)
+            raise RuntimeError(f'Download too small ({total} bytes)')
+        logger.info(
+            f'    ✓ Saved {path.name} ({total:,} bytes) in {time.time() - t0:.1f}s'
+        )
+        return path
+
+    def scrape_via_http(self) -> List[Dict]:
+        """Scrape via one HTTP GET + HTML parse (no Playwright)."""
+        html = self.fetch_catalog_html()
+        catalog = self.parse_catalog_entries(html)
+
+        firmwares: List[Dict] = []
+        new_downloads_count = 0
+        skipped_existing_count = 0
+        downloaded_in_this_run: set = set()
+        downloaded_filenames_this_run: set = set()
+        consecutive_fully_skipped_models = 0
+        last_model: Optional[str] = None
+        prev_model_had_new = False
+        prev_model_had_links = False
+
+        logger.info('  → Downloading new firmware(s) (newest first)...')
+
+        for entry in catalog:
+            if MAX_FIRMWARES_TO_DOWNLOAD > 0 and new_downloads_count >= MAX_FIRMWARES_TO_DOWNLOAD:
+                logger.info(
+                    f'  ⏹️  Download limit reached ({MAX_FIRMWARES_TO_DOWNLOAD})'
+                )
+                break
+
+            model = entry['model']
+            hw_version = entry['hardware_version']
+            version = entry['version']
+            url = entry['url']
+
+            if model != last_model:
+                if (
+                    last_model is not None
+                    and prev_model_had_links
+                    and not prev_model_had_new
+                ):
+                    consecutive_fully_skipped_models += 1
+                    if (
+                        new_downloads_count == 0
+                        and consecutive_fully_skipped_models
+                        >= CONSECUTIVE_FULLY_SKIPPED_MODELS_LIMIT
+                    ):
+                        logger.info(
+                            f'  ⏹️  Caught up: {consecutive_fully_skipped_models} models '
+                            f'fully archived — stopping'
+                        )
+                        break
+                elif prev_model_had_new:
+                    consecutive_fully_skipped_models = 0
+                last_model = model
+                prev_model_had_new = False
+                prev_model_had_links = False
+
+            if not version:
+                continue
+
+            prev_model_had_links = True
+            firmware_key = f"{model}_{hw_version}_{version}"
+            filename = url.split('/')[-1].split('?')[0]
+
+            if self.firmware_is_archived(model, hw_version, version, downloaded_in_this_run):
+                skipped_existing_count += 1
+                if firmware_key not in downloaded_in_this_run:
+                    logger.info(
+                        f'    ⊘ Skipping existing: {model} {hw_version} v{version} '
+                        f'({skipped_existing_count} skipped)'
+                    )
+                self.append_existing_firmware_record(
+                    firmwares,
+                    normalized_model=model,
+                    hw_version=hw_version,
+                    version=version,
+                    supported_models=[model] if model != 'UNKNOWN' else [],
+                    applied_to_text='',
+                    release_notes_url=entry.get('notes', ''),
+                )
+                continue
+
+            local_file_path = ''
+            stored_filename = ''
+            file_already_fetched = (
+                filename in downloaded_filenames_this_run
+                or self.firmware_file_in_archive(filename)
+            )
+            filepath = Path('firmwares') / filename
+
+            if file_already_fetched and filepath.exists():
+                logger.info(
+                    f'    ⊘ Reusing firmware file {filename} for {model} v{version}'
+                )
+                local_file_path = str(filepath)
+                stored_filename = filename
+                downloaded_in_this_run.add(firmware_key)
+            else:
+                try:
+                    filepath = self.download_firmware_http(url, filename)
+                    local_file_path = str(filepath)
+                    stored_filename = filename
+                    downloaded_filenames_this_run.add(filename)
+                    downloaded_in_this_run.add(firmware_key)
+                    new_downloads_count += 1
+                    prev_model_had_new = True
+                    consecutive_fully_skipped_models = 0
+                    logger.info(f'    ✓ NEW firmware #{new_downloads_count}')
+                except Exception as err:
+                    logger.warning(f'    ⚠ Download failed for {model} v{version}: {err}')
+                    self.errors.append(f'Download failed {model} v{version}: {err}')
+                    continue
+
+            firmwares.append({
+                'model': model,
+                'hardware_version': hw_version,
+                'version': version,
+                'download_url': '',
+                'local_file_path': local_file_path,
+                'filename': stored_filename,
+                'supported_models': [model] if model != 'UNKNOWN' else [],
+                'applied_to': '',
+                'date': format_date(entry.get('date', '')),
+                'changes': '',
+                'notes': entry.get('notes', ''),
+                'source': 'live',
+            })
+
+        logger.info('=' * 60)
+        logger.info('📊 HTTP Download Summary:')
+        logger.info(f'  • Catalog entries: {len(catalog)}')
+        logger.info(f'  • Already existing (skipped): {skipped_existing_count}')
+        logger.info(f'  • New downloads this run: {new_downloads_count}')
+        if new_downloads_count == 0:
+            logger.info('  ✓ No new firmwares — archive caught up for scanned items')
+        logger.info('=' * 60)
+        return firmwares
+
     def scrape_with_playwright(self) -> List[Dict]:
         """Actually scrape Hikvision's site using the real structure."""
         if not PLAYWRIGHT_AVAILABLE:
@@ -117,17 +637,32 @@ class HikvisionScraper:
         skipped_existing_count = 0  # Track how many existing firmwares we skipped
         total_found_count = 0  # Track total firmwares found on website
         downloaded_in_this_run = set()  # Track firmware keys downloaded in this run to prevent duplicates
+        consecutive_fully_skipped_models = 0
         browser = None
         
         try:
             with sync_playwright() as p:
                 logger.info("  → Launching browser...")
                 browser = p.chromium.launch(headless=True)
-                page = browser.new_page()
+                context = browser.new_context(
+                    locale='en-NZ',
+                    timezone_id='Pacific/Auckland',
+                    user_agent=(
+                        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
+                        'AppleWebKit/537.36 (KHTML, like Gecko) '
+                        'Chrome/120.0.0.0 Safari/537.36'
+                    ),
+                )
+                page = context.new_page()
                 
                 logger.info("Loading firmware page...")
                 page.goto(FIRMWARE_URL, wait_until='networkidle', timeout=60000)
                 time.sleep(5)
+                overlay_count = self.dismiss_page_overlays(page)
+                time.sleep(1)
+                overlay_count += self.dismiss_page_overlays(page)
+                if overlay_count:
+                    logger.info(f"  → Dismissed {overlay_count} overlay(s) on load")
                 
                 # Find the search box with class "firmware-search"
                 search_input = page.query_selector('input.firmware-search')
@@ -158,6 +693,10 @@ class HikvisionScraper:
                         search_input.press('Enter')
                         logger.info(f"  → Waiting for results to load...")
                         time.sleep(5)  # Wait for results
+                        overlay_count = self.dismiss_page_overlays(page)
+                        if overlay_count:
+                            logger.info(f"  → Dismissed {overlay_count} overlay(s) after search")
+                        search_input = page.query_selector('input.firmware-search') or search_input
                         
                         # Click "View more" button multiple times to load all results
                         logger.info(f"  → Loading all results (clicking 'View more' buttons)...")
@@ -197,8 +736,9 @@ class HikvisionScraper:
                         batch_size = 100
                         total_batches = (len(firmware_titles) + batch_size - 1) // batch_size
                         
-                        # Flag to break out of nested loops in test mode
+                        # Flag to break out of nested loops (download limit or caught-up early exit)
                         test_mode_limit_reached = False
+                        stop_reason = ''
                         
                         for batch_num in range(total_batches):
                             if test_mode_limit_reached:
@@ -213,11 +753,19 @@ class HikvisionScraper:
                                 if test_mode_limit_reached:
                                     break
                                 try:
+                                    if i % 15 == 1:
+                                        self.dismiss_page_overlays(page)
+                                        self.dismiss_download_interstitials(page)
+
                                     logger.info(f"    Processing item {i}...")
                                     model_text = title_element.inner_text().strip()
                                     logger.info(f"    Model text extracted: {model_text[:50]}...")
                                     model = self.extract_model(model_text)
                                     logger.info(f"    Extracted model: {model}")
+
+                                    model_firmware_links = 0
+                                    model_skipped_existing = 0
+                                    model_got_new_download = False
                                     
                                     if not model:
                                         logger.warning(f"    Could not extract model from: {model_text}")
@@ -333,8 +881,9 @@ class HikvisionScraper:
                                                     if MAX_FIRMWARES_TO_DOWNLOAD > 0 and new_downloads_count >= MAX_FIRMWARES_TO_DOWNLOAD:
                                                         logger.info(f"  ⏹️  Download limit reached: Downloaded {new_downloads_count} NEW firmware(s) (limit: {MAX_FIRMWARES_TO_DOWNLOAD}), stopping...")
                                                         test_mode_limit_reached = True
+                                                        stop_reason = 'download_limit'
                                                         break
-                                                    
+
                                                     try:
                                                         href = link.get_attribute('href') or ''
                                                         link_text = link.inner_text().strip()
@@ -373,6 +922,7 @@ class HikvisionScraper:
                                                         # Direct firmware file link
                                                         if any(ext in href.lower() for ext in ['.dav', '.zip', '.pak', '.bin']):
                                                             is_firmware_link = True
+                                                            model_firmware_links += 1
                                                             # For direct links, check existence now
                                                             if version:
                                                                 firmware_key = f"{normalized_model}_{hw_version}_{version}"
@@ -385,29 +935,26 @@ class HikvisionScraper:
                                                                     else:
                                                                         skipped_existing_count += 1
                                                                         logger.info(f"    ⊘ Skipping existing firmware: {normalized_model} {hw_version} v{version} ({skipped_existing_count} skipped)")
-                                                                    firmwares.append({
-                                                                        'model': normalized_model,
-                                                                        'hardware_version': hw_version,
-                                                                        'version': version,
-                                                                        'download_url': href,
-                                                                        'local_file_path': '',
-                                                                        'filename': '',
-                                                                        'supported_models': supported_models,
-                                                                        'applied_to': applied_to_text,
-                                                                        'date': '',
-                                                                        'changes': '',
-                                                                        'notes': release_notes_url,  # Store PDF URL in notes field
-                                                                        'source': 'live',
-                                                                        'already_exists': True
-                                                                    })
+                                                                    model_firmware_links += 1
+                                                                    model_skipped_existing += 1
+                                                                    self.append_existing_firmware_record(
+                                                                        firmwares,
+                                                                        normalized_model=normalized_model,
+                                                                        hw_version=hw_version,
+                                                                        version=version,
+                                                                        supported_models=supported_models,
+                                                                        applied_to_text=applied_to_text,
+                                                                        release_notes_url=release_notes_url,
+                                                                    )
                                                                     continue
                                                                 
                                                                 # Check download limit for NEW firmwares (direct links)
                                                                 if MAX_FIRMWARES_TO_DOWNLOAD > 0 and new_downloads_count >= MAX_FIRMWARES_TO_DOWNLOAD:
                                                                     logger.info(f"  ⏹️  Download limit reached: Downloaded {new_downloads_count} NEW firmware(s) (limit: {MAX_FIRMWARES_TO_DOWNLOAD}), stopping...")
                                                                     test_mode_limit_reached = True
+                                                                    stop_reason = 'download_limit'
                                                                     break
-                                                                
+
                                                                 # TODO: Direct links could be downloaded here, but currently only modal links are downloaded
                                                                 # For now, just skip direct links (they'll be processed via modal if available)
                                                                 logger.debug(f"    Found direct link but skipping download (modal links preferred): {normalized_model} {hw_version} v{version}")
@@ -415,45 +962,89 @@ class HikvisionScraper:
                                                         # License agreement link (needs to be clicked to get actual URL)
                                                         elif href == '#download-agreement' or 'download-agreement' in href.lower():
                                                             is_firmware_link = True
+                                                            model_firmware_links += 1
                                                             logger.info(f"    Found license agreement link: {link_text[:50]}...")
+
+                                                            # Skip modal when version already archived (newest-first still walks older links)
+                                                            if version and self.firmware_is_archived(
+                                                                normalized_model, hw_version, version, downloaded_in_this_run
+                                                            ):
+                                                                if f"{normalized_model}_{hw_version}_{version}" in downloaded_in_this_run:
+                                                                    logger.info(
+                                                                        f"    ⊘ Skipping duplicate firmware (already downloaded this run): "
+                                                                        f"{normalized_model} {hw_version} v{version}"
+                                                                    )
+                                                                else:
+                                                                    skipped_existing_count += 1
+                                                                    model_skipped_existing += 1
+                                                                    logger.info(
+                                                                        f"    ⊘ Skipping existing firmware (no modal): "
+                                                                        f"{normalized_model} {hw_version} v{version} ({skipped_existing_count} skipped)"
+                                                                    )
+                                                                self.append_existing_firmware_record(
+                                                                    firmwares,
+                                                                    normalized_model=normalized_model,
+                                                                    hw_version=hw_version,
+                                                                    version=version,
+                                                                    supported_models=supported_models,
+                                                                    applied_to_text=applied_to_text,
+                                                                    release_notes_url=release_notes_url,
+                                                                )
+                                                                continue
                                                             
                                                             # Click to open modal
                                                             try:
                                                                 # Use JavaScript click to avoid timeout issues
                                                                 logger.info(f"    Clicking license agreement link...")
                                                                 page.evaluate('(element) => { element.click(); }', link)
-                                                                time.sleep(3)  # Wait for modal to appear and load
-                                                                
-                                                                # Find modal - simplified approach that works
-                                                                modal = page.query_selector('[role="dialog"]')
-                                                                if not modal:
-                                                                    # Try alternative selector
-                                                                    modal = page.query_selector('dialog')
-                                                                
-                                                                if not modal:
-                                                                    logger.warning(f"    ⚠ Could not find modal after clicking agreement link")
-                                                                    continue
-                                                                
-                                                                logger.info(f"    ✓ Modal found")
-                                                                
-                                                                # Find the download link - SIMPLIFIED: just check all links in modal
-                                                                agree_link = None
-                                                                all_modal_links = modal.query_selector_all('a[href]')
-                                                                logger.info(f"    Checking {len(all_modal_links)} links in modal...")
-                                                                
-                                                                for modal_link in all_modal_links:
-                                                                    modal_href = modal_link.get_attribute('href') or ''
-                                                                    modal_text = modal_link.inner_text().strip()
-                                                                    
-                                                                    # Check if it's a firmware file URL (most reliable)
-                                                                    if any(ext in modal_href.lower() for ext in ['.dav', '.zip', '.pak', '.bin']):
-                                                                        agree_link = modal_link
-                                                                        logger.info(f"    ✓ Found download link: {modal_text[:50]}...")
-                                                                        logger.info(f"      URL: {modal_href[:100]}...")
-                                                                        break
-                                                                
+                                                                time.sleep(2)
+                                                                self.dismiss_download_interstitials(page)
+                                                                time.sleep(0.5)
+
+                                                                agree_link = self.find_materials_license_download_link(page)
                                                                 if agree_link:
                                                                     actual_download_url = agree_link.get_attribute('href') or ''
+                                                                    logger.info(
+                                                                        '    ✓ Materials License Agreement — '
+                                                                        'download via Agree link'
+                                                                    )
+                                                                    logger.info(f"      URL: {actual_download_url[:100]}...")
+                                                                else:
+                                                                    modal = self.find_firmware_download_modal(page)
+                                                                    if not modal:
+                                                                        logger.warning(
+                                                                            f"    ⚠ Could not find download link after agreement "
+                                                                            f"(license/notice popup may be blocking)"
+                                                                        )
+                                                                        self.close_firmware_modal(page)
+                                                                        continue
+
+                                                                    logger.info(f"    ✓ Download modal found")
+                                                                    agree_link = None
+                                                                    all_modal_links = modal.query_selector_all('a[href]')
+                                                                    logger.info(
+                                                                        f"    Checking {len(all_modal_links)} links in modal..."
+                                                                    )
+                                                                    for modal_link in all_modal_links:
+                                                                        modal_href = modal_link.get_attribute('href') or ''
+                                                                        modal_text = modal_link.inner_text().strip()
+                                                                        if any(
+                                                                            ext in modal_href.lower()
+                                                                            for ext in ['.dav', '.zip', '.pak', '.bin']
+                                                                        ):
+                                                                            agree_link = modal_link
+                                                                            actual_download_url = modal_href
+                                                                            logger.info(
+                                                                                f"    ✓ Found download link: {modal_text[:50]}..."
+                                                                            )
+                                                                            logger.info(
+                                                                                f"      URL: {modal_href[:100]}..."
+                                                                            )
+                                                                            break
+
+                                                                if agree_link:
+                                                                    if not actual_download_url:
+                                                                        actual_download_url = agree_link.get_attribute('href') or ''
                                                                     logger.info(f"    ✓ Found download URL: {actual_download_url[:100]}...")
                                                                     
                                                                     # NOW check if firmware already exists (we have the real URL now)
@@ -467,27 +1058,18 @@ class HikvisionScraper:
                                                                                 logger.info(f"    ⊘ Skipping duplicate firmware (already downloaded this run): {normalized_model} {hw_version} v{version}")
                                                                             else:
                                                                                 skipped_existing_count += 1
+                                                                                model_skipped_existing += 1
                                                                                 logger.info(f"    ⊘ Skipping existing firmware: {normalized_model} {hw_version} v{version} ({skipped_existing_count} skipped)")
-                                                                            # Close modal
-                                                                            close_btn = page.query_selector('dialog button, [role="dialog"] button, dialog [aria-label*="close" i], [role="dialog"] [aria-label*="close" i]')
-                                                                            if close_btn:
-                                                                                close_btn.click()
-                                                                                time.sleep(0.5)
-                                                                            firmwares.append({
-                                                                                'model': normalized_model,
-                                                                                'hardware_version': hw_version,
-                                                                                'version': version,
-                                                                                'download_url': actual_download_url,
-                                                                                'local_file_path': '',
-                                                                                'filename': '',
-                                                                                'supported_models': supported_models,
-                                                                                'applied_to': applied_to_text,
-                                                                                'date': '',
-                                                                                'changes': '',
-                                                                                'notes': release_notes_url,  # Store PDF URL in notes field
-                                                                                'source': 'live',
-                                                                                'already_exists': True
-                                                                            })
+                                                                            self.close_firmware_modal(page)
+                                                                            self.append_existing_firmware_record(
+                                                                                firmwares,
+                                                                                normalized_model=normalized_model,
+                                                                                hw_version=hw_version,
+                                                                                version=version,
+                                                                                supported_models=supported_models,
+                                                                                applied_to_text=applied_to_text,
+                                                                                release_notes_url=release_notes_url,
+                                                                            )
                                                                             continue
                                                                     
                                                                     # Check download limit for NEW firmwares
@@ -498,15 +1080,17 @@ class HikvisionScraper:
                                                                         if close_btn:
                                                                             close_btn.click()
                                                                         test_mode_limit_reached = True
+                                                                        stop_reason = 'download_limit'
                                                                         break
-                                                                    
+
                                                                     logger.info(f"    Starting download...")
-                                                                    
+                                                                    self.dismiss_page_overlays(page)
+                                                                    self.dismiss_download_interstitials(page)
+
                                                                     # Click the link to trigger download (with browser context)
                                                                     try:
                                                                         # Wait for download and click simultaneously - this maintains browser session
                                                                         with page.expect_download(timeout=120000) as download_info:  # 2 min timeout for large files
-                                                                            # Scroll into view and click - ensures it's visible
                                                                             page.evaluate('(el) => { el.scrollIntoView({block: "center"}); el.click(); }', agree_link)
                                                                         
                                                                         download = download_info.value
@@ -544,6 +1128,8 @@ class HikvisionScraper:
                                                                                 downloaded_in_this_run.add(firmware_key)
                                                                             
                                                                             new_downloads_count += 1  # Only increment on successful download
+                                                                            model_got_new_download = True
+                                                                            consecutive_fully_skipped_models = 0
                                                                             logger.info(f"    ✓ File downloaded to: {filepath} ({file_size:,} bytes) (NEW firmware #{new_downloads_count})")
                                                                         else:
                                                                             logger.error(f"    ✗ File download failed: {filepath} does not exist!")
@@ -657,6 +1243,32 @@ class HikvisionScraper:
                                                     except Exception as link_err:
                                                         logger.debug(f"    Link processing error: {link_err}")
                                                         continue
+
+                                                # Caught-up detection: every link for this model was already archived
+                                                if (
+                                                    model_firmware_links > 0
+                                                    and model_skipped_existing == model_firmware_links
+                                                    and not model_got_new_download
+                                                ):
+                                                    consecutive_fully_skipped_models += 1
+                                                    logger.info(
+                                                        f"    ↳ Model fully archived "
+                                                        f"({consecutive_fully_skipped_models}/"
+                                                        f"{CONSECUTIVE_FULLY_SKIPPED_MODELS_LIMIT} consecutive)"
+                                                    )
+                                                    if (
+                                                        new_downloads_count == 0
+                                                        and consecutive_fully_skipped_models
+                                                        >= CONSECUTIVE_FULLY_SKIPPED_MODELS_LIMIT
+                                                    ):
+                                                        logger.info(
+                                                            f"  ⏹️  Caught up: {consecutive_fully_skipped_models} models in a row "
+                                                            f"fully archived with no new downloads — stopping early"
+                                                        )
+                                                        test_mode_limit_reached = True
+                                                        stop_reason = 'caught_up'
+                                                elif model_firmware_links > 0:
+                                                    consecutive_fully_skipped_models = 0
                                             else:
                                                 logger.warning(f"    Collapse content exists but not visible for {model}")
                                                 continue
@@ -676,7 +1288,15 @@ class HikvisionScraper:
                                 time.sleep(1)
                         
                         if test_mode_limit_reached:
-                            logger.info(f"  ⏹️  Stopped early after reaching download limit of {MAX_FIRMWARES_TO_DOWNLOAD} firmware(s)")
+                            if stop_reason == 'caught_up':
+                                logger.info(
+                                    "  ⏹️  Stopped early — archive appears caught up for scanned models"
+                                )
+                            else:
+                                logger.info(
+                                    f"  ⏹️  Stopped early after reaching download limit of "
+                                    f"{MAX_FIRMWARES_TO_DOWNLOAD} firmware(s)"
+                                )
                             break
                         
                         fw_count_after = len(firmwares)
@@ -734,6 +1354,11 @@ class HikvisionScraper:
             logger.info(f"  ⏹️  Download limit reached ({MAX_FIRMWARES_TO_DOWNLOAD}) - more firmwares may be available on next run")
         elif skipped > 0 and new_downloads_count == 0:
             logger.info(f"  ✓ All found firmwares already exist - you're caught up!")
+        if new_downloads_count == 0 and consecutive_fully_skipped_models >= CONSECUTIVE_FULLY_SKIPPED_MODELS_LIMIT:
+            logger.info(
+                f"  ⏹️  Early exit: stopped after {consecutive_fully_skipped_models} "
+                f"fully-archived models in a row"
+            )
         logger.info("=" * 60)
         
         return unique_firmwares
@@ -1450,6 +2075,22 @@ class HikvisionScraper:
         save_json('firmwares_live.json', self.firmwares_live)
         logger.info("Data saved")
     
+    def save_status_running(self):
+        """Mark scrape as in progress (so README does not show stale SUCCESS)."""
+        from datetime import datetime
+        existing = load_json('status.json') or {}
+        self.status = {
+            **existing,
+            'status': 'running',
+            'last_run': datetime.now().isoformat(),
+            'firmwares_found': len(self.firmwares_live),
+            'new_firmwares': 0,
+            'errors': self.errors[-10:],
+            'test_mode': TEST_MODE,
+        }
+        save_json('status.json', self.status)
+        logger.info("  → Status set to running")
+
     def save_status(self):
         """Save status and errors to status.json."""
         from datetime import datetime
@@ -1474,13 +2115,21 @@ class HikvisionScraper:
             logger.info(f"📥 Download limit: {MAX_FIRMWARES_TO_DOWNLOAD} firmware file(s)")
         else:
             logger.info("📥 Download limit: Unlimited")
+        if USE_HTTP_SCRAPER:
+            logger.info("Mode: HTTP catalog (no browser)")
+        else:
+            logger.info("Mode: Playwright browser (USE_PLAYWRIGHT=1)")
         logger.info("Starting Hikvision firmware scrape...")
         logger.info("=" * 60)
         
         start_time = time.time()
+        self.save_status_running()
         
         try:
-            firmwares = self.scrape_with_playwright()
+            if USE_HTTP_SCRAPER:
+                firmwares = self.scrape_via_http()
+            else:
+                firmwares = self.scrape_with_playwright()
             
             logger.info(f"→ Processing {len(firmwares)} firmwares into database...")
             processed = 0
