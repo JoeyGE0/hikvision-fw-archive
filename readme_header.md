@@ -140,6 +140,7 @@ The scraper in `main.py` can always be improved:
 
 **Status:** {{STATUS}}  
 **Last Run:** {{LAST_RUN}}  
+**Scraper:** {{SCRAPER_MODE}}  
 **Firmwares Found:** {{FIRMWARES_FOUND}}  
 **New Firmwares:** {{NEW_FIRMWARES}}  
 **Test Mode:** {{TEST_MODE}}
