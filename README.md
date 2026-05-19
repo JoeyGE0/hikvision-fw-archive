@@ -138,17 +138,13 @@ The scraper in `main.py` can always be improved:
 
 ## Status
 
-**Status:** ❌ ERROR  
-**Last Run:** 2026-05-19 01:02:38 UTC  
+**Status:** ⚠️ NO_NEW_FIRMWARES  
+**Last Run:** 2026-05-19 01:11:35 UTC  
 **Scraper:** HTTP  
 **Firmwares Found:** 1525  
 **New Firmwares:** 0  
 **Test Mode:** Disabled
 
-
-
-**Recent Errors:**
-- ⚠️ Scraping failed: Firmware page too small — may be blocked
 
 
 ---
