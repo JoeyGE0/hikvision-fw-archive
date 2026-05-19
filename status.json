@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-05-19T01:11:35.016443",
+  "last_run": "2026-05-19T01:19:27.167310",
   "status": "no_new_firmwares",
   "scraper_mode": "http",
   "post_merge_verified": "2026-05-19T13:00:29.926000",
@@ -7,5 +7,7 @@
   "firmwares_found": 1525,
   "new_firmwares": 0,
   "errors": [],
-  "test_mode": false
+  "test_mode": false,
+  "catalog_fetch": "playwright",
+  "catalog_entries": 4578
 }
