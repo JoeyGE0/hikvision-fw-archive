@@ -326,6 +326,15 @@ class HikvisionScraper:
             or firmware_key in downloaded_in_this_run
         )
 
+    def firmware_file_in_archive(self, filename: str) -> bool:
+        """True if any archived entry already uses this release filename."""
+        if not filename:
+            return False
+        return any(
+            (fw.get('filename') or '') == filename
+            for fw in self.firmwares_live.values()
+        )
+
     def append_existing_firmware_record(
         self,
         firmwares: List[Dict],
@@ -493,6 +502,7 @@ class HikvisionScraper:
         new_downloads_count = 0
         skipped_existing_count = 0
         downloaded_in_this_run: set = set()
+        downloaded_filenames_this_run: set = set()
         consecutive_fully_skipped_models = 0
         last_model: Optional[str] = None
         prev_model_had_new = False
@@ -540,6 +550,7 @@ class HikvisionScraper:
 
             prev_model_had_links = True
             firmware_key = f"{model}_{hw_version}_{version}"
+            filename = url.split('/')[-1].split('?')[0]
 
             if self.firmware_is_archived(model, hw_version, version, downloaded_in_this_run):
                 skipped_existing_count += 1
@@ -559,22 +570,36 @@ class HikvisionScraper:
                 )
                 continue
 
-            filename = url.split('/')[-1].split('?')[0]
             local_file_path = ''
             stored_filename = ''
-            try:
-                filepath = self.download_firmware_http(url, filename)
+            file_already_fetched = (
+                filename in downloaded_filenames_this_run
+                or self.firmware_file_in_archive(filename)
+            )
+            filepath = Path('firmwares') / filename
+
+            if file_already_fetched and filepath.exists():
+                logger.info(
+                    f'    ⊘ Reusing firmware file {filename} for {model} v{version}'
+                )
                 local_file_path = str(filepath)
                 stored_filename = filename
                 downloaded_in_this_run.add(firmware_key)
-                new_downloads_count += 1
-                prev_model_had_new = True
-                consecutive_fully_skipped_models = 0
-                logger.info(f'    ✓ NEW firmware #{new_downloads_count}')
-            except Exception as err:
-                logger.warning(f'    ⚠ Download failed for {model} v{version}: {err}')
-                self.errors.append(f'Download failed {model} v{version}: {err}')
-                continue
+            else:
+                try:
+                    filepath = self.download_firmware_http(url, filename)
+                    local_file_path = str(filepath)
+                    stored_filename = filename
+                    downloaded_filenames_this_run.add(filename)
+                    downloaded_in_this_run.add(firmware_key)
+                    new_downloads_count += 1
+                    prev_model_had_new = True
+                    consecutive_fully_skipped_models = 0
+                    logger.info(f'    ✓ NEW firmware #{new_downloads_count}')
+                except Exception as err:
+                    logger.warning(f'    ⚠ Download failed for {model} v{version}: {err}')
+                    self.errors.append(f'Download failed {model} v{version}: {err}')
+                    continue
 
             firmwares.append({
                 'model': model,
