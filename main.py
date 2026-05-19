@@ -105,6 +105,8 @@ class HikvisionScraper:
         self.firmware_info = load_json('firmware_info.json')
         self.scraped_count = 0
         self.errors = []
+        self._catalog_fetch_method = 'unknown'
+        self._catalog_entry_count = 0
         self.status = {
             'last_run': None,
             'status': 'unknown',
@@ -438,49 +440,74 @@ class HikvisionScraper:
         return None
 
     def fetch_catalog_html_playwright(self) -> str:
-        """Load catalog in headless browser when datacenter HTTP is blocked (e.g. GitHub Actions)."""
+        """Load full SSR catalog via browser context (GitHub Actions / blocked HTTP)."""
         if not PLAYWRIGHT_AVAILABLE:
             raise RuntimeError(
                 'Catalog page blocked over HTTP and Playwright is not installed. '
                 'pip install playwright && playwright install chromium'
             )
-        logger.info('  → Fetching firmware catalog page (Playwright fallback)...')
+        logger.info('  → Fetching firmware catalog (Playwright API request)...')
         t0 = time.time()
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
             try:
-                page = browser.new_page(user_agent=HTTP_USER_AGENT)
+                context = browser.new_context(user_agent=HTTP_USER_AGENT)
+                page = context.new_page()
+                page.goto(f'{BASE_URL}/en/', wait_until='domcontentloaded', timeout=60_000)
+                page.wait_for_timeout(800)
                 page.goto(FIRMWARE_URL, wait_until='domcontentloaded', timeout=120_000)
-                page.wait_for_timeout(2000)
+                page.wait_for_timeout(1500)
                 self.dismiss_page_overlays(page)
-                page.wait_for_timeout(1000)
-                try:
-                    page.wait_for_selector(
-                        'a[data-href*="assets.hikvision.com"], [data-target*="firmware-collapse"]',
-                        timeout=30_000,
+                page.wait_for_timeout(500)
+
+                # Full ~13MB SSR HTML (page.content() is only partial DOM).
+                req_headers = {**HTTP_HEADERS, 'Referer': FIRMWARE_URL}
+                response = context.request.get(
+                    FIRMWARE_URL,
+                    headers=req_headers,
+                    timeout=120_000,
+                )
+                html = response.text() if response.ok else ''
+                if self.catalog_html_looks_valid(html):
+                    logger.info(
+                        f'  ✓ Playwright API catalog ({len(html) / (1024 * 1024):.1f} MB) '
+                        f'in {time.time() - t0:.1f}s'
                     )
-                except Exception:
-                    pass
+                    return html
+
+                logger.warning(
+                    f'  ⚠ Playwright API response invalid ({len(html):,} bytes, '
+                    f'status {response.status}) — trying rendered DOM'
+                )
                 html = page.content()
             finally:
                 browser.close()
         if not self.catalog_html_looks_valid(html):
             raise RuntimeError(
-                f'Playwright catalog page still invalid ({len(html):,} bytes) — may be blocked'
+                f'Playwright catalog still invalid ({len(html):,} bytes) — may be blocked'
             )
         logger.info(
-            f'  ✓ Playwright catalog loaded ({len(html) / (1024 * 1024):.1f} MB HTML) '
+            f'  ✓ Playwright DOM catalog ({len(html) / (1024 * 1024):.1f} MB) '
             f'in {time.time() - t0:.1f}s'
         )
         return html
 
     def fetch_catalog_html(self) -> str:
+        # GitHub datacenter IPs are often blocked by requests; prefer Playwright there.
+        on_ci = os.environ.get('GITHUB_ACTIONS', '').lower() == 'true'
+        if on_ci and PLAYWRIGHT_AVAILABLE:
+            try:
+                self._catalog_fetch_method = 'playwright'
+                return self.fetch_catalog_html_playwright()
+            except Exception as err:
+                logger.warning(f'  ⚠ Playwright catalog fetch failed on CI: {err}')
+
         html = self.fetch_catalog_html_http()
         if html:
+            self._catalog_fetch_method = 'http'
             return html
-        if os.environ.get('USE_PLAYWRIGHT', '').lower() in ('1', 'true', 'yes'):
-            return self.fetch_catalog_html_playwright()
         if PLAYWRIGHT_AVAILABLE:
+            self._catalog_fetch_method = 'playwright'
             return self.fetch_catalog_html_playwright()
         raise RuntimeError(
             'Firmware catalog blocked over HTTP (common on GitHub Actions). '
@@ -593,6 +620,13 @@ class HikvisionScraper:
         """Scrape via one HTTP GET + HTML parse (no Playwright)."""
         html = self.fetch_catalog_html()
         catalog = self.parse_catalog_entries(html)
+        self._catalog_entry_count = len(catalog)
+        allow_early_exit = len(catalog) >= 1000
+        if not allow_early_exit:
+            logger.warning(
+                f'  ⚠ Catalog only has {len(catalog)} entries — disabling early exit '
+                f'(likely incomplete page on CI)'
+            )
 
         firmwares: List[Dict] = []
         new_downloads_count = 0
@@ -626,7 +660,8 @@ class HikvisionScraper:
                 ):
                     consecutive_fully_skipped_models += 1
                     if (
-                        new_downloads_count == 0
+                        allow_early_exit
+                        and new_downloads_count == 0
                         and consecutive_fully_skipped_models
                         >= CONSECUTIVE_FULLY_SKIPPED_MODELS_LIMIT
                     ):
@@ -2193,6 +2228,9 @@ class HikvisionScraper:
         self.status['last_run'] = datetime.now().isoformat()
         self.status['firmwares_found'] = len(self.firmwares_live)
         self.status['new_firmwares'] = self.scraped_count
+        self.status['scraper_mode'] = 'http'
+        self.status['catalog_fetch'] = self._catalog_fetch_method
+        self.status['catalog_entries'] = self._catalog_entry_count
         self.status['errors'] = self.errors[-10:]  # Keep last 10 errors
         if self.errors:
             self.status['status'] = 'error'

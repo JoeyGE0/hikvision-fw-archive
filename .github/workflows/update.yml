@@ -54,7 +54,10 @@ jobs:
 
           # Show download summary from logs
           echo "=== Download Summary ==="
-          echo "$SCRAPER_OUTPUT" | grep -E "(File downloaded|Download limit|Download Summary|NEW firmware|HTTP Download)" || echo "No download messages found"
+          echo "$SCRAPER_OUTPUT" | grep -E "(Fetching firmware catalog|Parsed [0-9]+ firmware|Download limit|Download Summary|NEW firmware|Caught up|Catalog only)" || echo "No download messages found"
+          echo ""
+          echo "=== Catalog / Status ==="
+          python3 -c "import json; s=json.load(open('status.json')); print('catalog_fetch:', s.get('catalog_fetch')); print('catalog_entries:', s.get('catalog_entries')); print('new_firmwares:', s.get('new_firmwares')); print('status:', s.get('status'))" 2>/dev/null || true
           echo "========================"
 
           # Default to 0 if output is empty or not a number
