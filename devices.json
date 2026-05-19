@@ -4211,10 +4211,6 @@
     "model": "DS-K1T670MX-WE",
     "hardware_version": "UNKNOWN"
   },
-  "101054": {
-    "model": "UNKNOWN",
-    "hardware_version": "UNKNOWN"
-  },
   "101055": {
     "model": "DS-J142I",
     "hardware_version": "UNKNOWN"
@@ -4337,6 +4333,178 @@
   },
   "101085": {
     "model": "DS-2DF4420-DX-304--E-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101086": {
+    "model": "DS-2DF4420-DX-316L--E-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101087": {
+    "model": "DS-2DF4420WG-XEY-ADC--E-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101088": {
+    "model": "DS-K1T342DWX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101089": {
+    "model": "DS-K1T342DWX-E1",
+    "hardware_version": "UNKNOWN"
+  },
+  "101090": {
+    "model": "DS-K1T342DX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101091": {
+    "model": "DS-K1T342DX-E1",
+    "hardware_version": "UNKNOWN"
+  },
+  "101092": {
+    "model": "DS-K1T342EFWX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101093": {
+    "model": "DS-K1T342EFWX-E1",
+    "hardware_version": "UNKNOWN"
+  },
+  "101094": {
+    "model": "DS-K1T342EWX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101095": {
+    "model": "DS-K1T342EWX-E1",
+    "hardware_version": "UNKNOWN"
+  },
+  "101096": {
+    "model": "DS-K1T342EX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101097": {
+    "model": "DS-K1T342EX-E1",
+    "hardware_version": "UNKNOWN"
+  },
+  "101098": {
+    "model": "DS-K1T342MFWX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101099": {
+    "model": "DS-K1T342MFWX-E1",
+    "hardware_version": "UNKNOWN"
+  },
+  "101100": {
+    "model": "DS-K1T342MFX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101101": {
+    "model": "DS-K1T342MFX-E1",
+    "hardware_version": "UNKNOWN"
+  },
+  "101102": {
+    "model": "DS-K1T342MWX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101103": {
+    "model": "DS-K1T342MWX-E1",
+    "hardware_version": "UNKNOWN"
+  },
+  "101104": {
+    "model": "DS-K1T342MX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101105": {
+    "model": "DS-K1T342MX-E1",
+    "hardware_version": "UNKNOWN"
+  },
+  "101106": {
+    "model": "DS-K1T343EFWX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101107": {
+    "model": "DS-K1T343EWX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101108": {
+    "model": "DS-K1T343MFWX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101109": {
+    "model": "DS-K1T343MWX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101110": {
+    "model": "DS-KAS342",
+    "hardware_version": "UNKNOWN"
+  },
+  "101111": {
+    "model": "DS-2CD1363G2P-LIUF-S-L--RB-",
+    "hardware_version": "IPC_G0"
+  },
+  "101112": {
+    "model": "DS-2CD1367G2HP-LIUF-S-L--RB-",
+    "hardware_version": "IPC_G0"
+  },
+  "101113": {
+    "model": "DS-2CD1383G2P-LIUF-S-L--RB-",
+    "hardware_version": "IPC_G0"
+  },
+  "101114": {
+    "model": "DS-2CD1T63G2P-LIUF-S-L--RB-",
+    "hardware_version": "IPC_G0"
+  },
+  "101115": {
+    "model": "DS-2CD1T67G2HP-LIUF-S-L--RB-",
+    "hardware_version": "IPC_G0"
+  },
+  "101116": {
+    "model": "DS-2CD1T83G2P-LIUF-S-L--RB-",
+    "hardware_version": "IPC_G0"
+  },
+  "101117": {
+    "model": "DS-2CD2343G2P-LISU-S-L--RB-",
+    "hardware_version": "IPC_G0"
+  },
+  "101118": {
+    "model": "DS-2CD2363G2P-LISU-S-L--RB-",
+    "hardware_version": "IPC_G0"
+  },
+  "101119": {
+    "model": "DS-2CD2383G2P-LISU-S-L--RB-",
+    "hardware_version": "IPC_G0"
+  },
+  "101120": {
+    "model": "DS-2CD2T43G2P-LISU-S-L--RB-",
+    "hardware_version": "IPC_G0"
+  },
+  "101121": {
+    "model": "DS-2CD2T63G2P-LISU-S-L--RB-",
+    "hardware_version": "IPC_G0"
+  },
+  "101122": {
+    "model": "DS-2CD2T83G2P-LISU-S-L--RB-",
+    "hardware_version": "IPC_G0"
+  },
+  "101123": {
+    "model": "DS-2DE2A204IWG1-E-W",
+    "hardware_version": "IPC_G0"
+  },
+  "101124": {
+    "model": "DS-2DE2A404IWG1-E-W",
+    "hardware_version": "IPC_G0"
+  },
+  "101125": {
+    "model": "DS-2DE2A604IWG1-E-W",
+    "hardware_version": "IPC_G0"
+  },
+  "101126": {
+    "model": "DS-2ST4C420MWG-E-14-PA-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101127": {
+    "model": "DS-2XC6046G0-LIS-316L-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101128": {
+    "model": "UNKNOWN",
     "hardware_version": "UNKNOWN"
   }
 }
