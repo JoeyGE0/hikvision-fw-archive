@@ -621,11 +621,9 @@ class HikvisionScraper:
         html = self.fetch_catalog_html()
         catalog = self.parse_catalog_entries(html)
         self._catalog_entry_count = len(catalog)
-        allow_early_exit = len(catalog) >= 1000
-        if not allow_early_exit:
+        if len(catalog) < 1000:
             logger.warning(
-                f'  ⚠ Catalog only has {len(catalog)} entries — disabling early exit '
-                f'(likely incomplete page on CI)'
+                f'  ⚠ Catalog only has {len(catalog)} entries — page may be incomplete'
             )
 
         firmwares: List[Dict] = []
@@ -633,10 +631,6 @@ class HikvisionScraper:
         skipped_existing_count = 0
         downloaded_in_this_run: set = set()
         downloaded_filenames_this_run: set = set()
-        consecutive_fully_skipped_models = 0
-        last_model: Optional[str] = None
-        prev_model_had_new = False
-        prev_model_had_links = False
 
         logger.info('  → Downloading new firmware(s) (newest first)...')
 
@@ -652,34 +646,8 @@ class HikvisionScraper:
             version = entry['version']
             url = entry['url']
 
-            if model != last_model:
-                if (
-                    last_model is not None
-                    and prev_model_had_links
-                    and not prev_model_had_new
-                ):
-                    consecutive_fully_skipped_models += 1
-                    if (
-                        allow_early_exit
-                        and new_downloads_count == 0
-                        and consecutive_fully_skipped_models
-                        >= CONSECUTIVE_FULLY_SKIPPED_MODELS_LIMIT
-                    ):
-                        logger.info(
-                            f'  ⏹️  Caught up: {consecutive_fully_skipped_models} models '
-                            f'fully archived — stopping'
-                        )
-                        break
-                elif prev_model_had_new:
-                    consecutive_fully_skipped_models = 0
-                last_model = model
-                prev_model_had_new = False
-                prev_model_had_links = False
-
             if not version:
                 continue
-
-            prev_model_had_links = True
             firmware_key = f"{model}_{hw_version}_{version}"
             filename = url.split('/')[-1].split('?')[0]
 
@@ -724,8 +692,6 @@ class HikvisionScraper:
                     downloaded_filenames_this_run.add(filename)
                     downloaded_in_this_run.add(firmware_key)
                     new_downloads_count += 1
-                    prev_model_had_new = True
-                    consecutive_fully_skipped_models = 0
                     logger.info(f'    ✓ NEW firmware #{new_downloads_count}')
                 except Exception as err:
                     logger.warning(f'    ⚠ Download failed for {model} v{version}: {err}')
