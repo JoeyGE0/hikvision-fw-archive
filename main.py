@@ -49,12 +49,28 @@ if 'GITHUB_ACTIONS' in os.environ:
 BASE_URL = "https://www.hikvision.com"
 FIRMWARE_URL = f"{BASE_URL}/en/support/download/firmware/"
 
+HTTP_USER_AGENT = (
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
+    'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
+)
+
 HTTP_HEADERS = {
-    'User-Agent': (
-        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
-        'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'User-Agent': HTTP_USER_AGENT,
+    'Accept': (
+        'text/html,application/xhtml+xml,application/xml;q=0.9,'
+        'image/avif,image/webp,image/apng,*/*;q=0.8'
     ),
+    'Accept-Language': 'en-US,en;q=0.9',
+    'Accept-Encoding': 'gzip, deflate, br',
     'Referer': FIRMWARE_URL,
+    'DNT': '1',
+    'Connection': 'keep-alive',
+    'Upgrade-Insecure-Requests': '1',
+    'Sec-Fetch-Dest': 'document',
+    'Sec-Fetch-Mode': 'navigate',
+    'Sec-Fetch-Site': 'none',
+    'Sec-Fetch-User': '?1',
+    'Cache-Control': 'max-age=0',
 }
 
 # Default: HTTP catalog parse (fast, reliable). Set USE_PLAYWRIGHT=1 to use legacy browser scraper.
@@ -378,18 +394,98 @@ class HikvisionScraper:
                 return f"{year:04d}-{month:02d}-{day:02d}"
         return ''
 
-    def fetch_catalog_html(self) -> str:
+    @staticmethod
+    def catalog_html_looks_valid(html: str) -> bool:
+        """True if SSR catalog markup is present (not a block/captcha page)."""
+        if not html:
+            return False
+        has_panel = 'firmware-collapse-' in html
+        has_downloads = 'data-href="https://assets.hikvision.com' in html
+        return has_panel and has_downloads and len(html) > 200_000
+
+    def fetch_catalog_html_http(self) -> Optional[str]:
         if not REQUESTS_AVAILABLE:
-            raise RuntimeError('requests library required for HTTP scraper')
-        logger.info('  → Fetching firmware catalog page (HTTP)...')
+            return None
+        session = requests.Session()
+        last_size = 0
+        for attempt in range(1, 4):
+            logger.info(f'  → Fetching firmware catalog page (HTTP, attempt {attempt}/3)...')
+            t0 = time.time()
+            try:
+                session.headers.update(HTTP_HEADERS)
+                session.get(f'{BASE_URL}/en/', timeout=60)
+                time.sleep(0.5)
+                session.headers['Referer'] = f'{BASE_URL}/en/'
+                session.headers['Sec-Fetch-Site'] = 'same-origin'
+                response = session.get(FIRMWARE_URL, timeout=120)
+                response.raise_for_status()
+                html = response.text
+                last_size = len(response.content)
+                size_mb = last_size / (1024 * 1024)
+                logger.info(f'  ✓ Downloaded {size_mb:.1f} MB in {time.time() - t0:.1f}s')
+                if self.catalog_html_looks_valid(html):
+                    return html
+                logger.warning(
+                    f'  ⚠ HTTP page missing catalog markup ({last_size:,} bytes) — retrying'
+                )
+            except Exception as err:
+                logger.warning(f'  ⚠ HTTP fetch attempt {attempt} failed: {err}')
+            if attempt < 3:
+                time.sleep(5 * attempt)
+        logger.warning(
+            f'  ⚠ HTTP catalog fetch failed after 3 attempts (last size {last_size:,} bytes)'
+        )
+        return None
+
+    def fetch_catalog_html_playwright(self) -> str:
+        """Load catalog in headless browser when datacenter HTTP is blocked (e.g. GitHub Actions)."""
+        if not PLAYWRIGHT_AVAILABLE:
+            raise RuntimeError(
+                'Catalog page blocked over HTTP and Playwright is not installed. '
+                'pip install playwright && playwright install chromium'
+            )
+        logger.info('  → Fetching firmware catalog page (Playwright fallback)...')
         t0 = time.time()
-        response = requests.get(FIRMWARE_URL, timeout=120, headers=HTTP_HEADERS)
-        response.raise_for_status()
-        size_mb = len(response.content) / (1024 * 1024)
-        logger.info(f'  ✓ Downloaded {size_mb:.1f} MB in {time.time() - t0:.1f}s')
-        if size_mb < 1:
-            raise RuntimeError('Firmware page too small — may be blocked')
-        return response.text
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            try:
+                page = browser.new_page(user_agent=HTTP_USER_AGENT)
+                page.goto(FIRMWARE_URL, wait_until='domcontentloaded', timeout=120_000)
+                page.wait_for_timeout(2000)
+                self.dismiss_page_overlays(page)
+                page.wait_for_timeout(1000)
+                try:
+                    page.wait_for_selector(
+                        'a[data-href*="assets.hikvision.com"], [data-target*="firmware-collapse"]',
+                        timeout=30_000,
+                    )
+                except Exception:
+                    pass
+                html = page.content()
+            finally:
+                browser.close()
+        if not self.catalog_html_looks_valid(html):
+            raise RuntimeError(
+                f'Playwright catalog page still invalid ({len(html):,} bytes) — may be blocked'
+            )
+        logger.info(
+            f'  ✓ Playwright catalog loaded ({len(html) / (1024 * 1024):.1f} MB HTML) '
+            f'in {time.time() - t0:.1f}s'
+        )
+        return html
+
+    def fetch_catalog_html(self) -> str:
+        html = self.fetch_catalog_html_http()
+        if html:
+            return html
+        if os.environ.get('USE_PLAYWRIGHT', '').lower() in ('1', 'true', 'yes'):
+            return self.fetch_catalog_html_playwright()
+        if PLAYWRIGHT_AVAILABLE:
+            return self.fetch_catalog_html_playwright()
+        raise RuntimeError(
+            'Firmware catalog blocked over HTTP (common on GitHub Actions). '
+            'Install Playwright in CI or set USE_PLAYWRIGHT=1 for a browser fallback.'
+        )
 
     def parse_catalog_entries(self, html: str) -> List[Dict]:
         """Parse model + firmware URLs from SSR HTML (data-href on agreement links)."""
