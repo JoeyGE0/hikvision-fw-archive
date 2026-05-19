@@ -60,8 +60,8 @@ HTTP_HEADERS = {
 # Default: HTTP catalog parse (fast, reliable). Set USE_PLAYWRIGHT=1 to use legacy browser scraper.
 USE_HTTP_SCRAPER = os.environ.get('USE_PLAYWRIGHT', '').lower() not in ('1', 'true', 'yes')
 
-# GitHub repo info for releases sync (single source of truth in common.ARCHIVE_GITHUB_REPO)
-GITHUB_REPO = ARCHIVE_GITHUB_REPO
+# GitHub repo info for releases sync
+GITHUB_REPO = "JoeyGE0/hikvision-fw-archive"
 GITHUB_API_BASE = "https://api.github.com/repos"
 
 # TEST MODE: Set to True to only scrape 1 firmware file (prevents IP banning/rate limiting)
@@ -355,14 +355,19 @@ class HikvisionScraper:
 
     @staticmethod
     def _date_from_text(text: str) -> str:
-        """Extract YYYY-MM-DD from firmware filename or label."""
-        date_match = re.search(r'(\d{6}|\d{8})', text)
-        if not date_match:
-            return ''
-        date_code = date_match.group(1)
-        if len(date_code) == 6:
-            return f"20{date_code[:2]}-{date_code[2:4]}-{date_code[4:6]}"
-        return f"{date_code[:4]}-{date_code[4:6]}-{date_code[6:8]}"
+        """Extract YYYY-MM-DD from firmware filename or label (YYMMDD in names)."""
+        for date_code in re.findall(r'(\d{6}|\d{8})', text):
+            if len(date_code) == 6:
+                year = int('20' + date_code[:2])
+                month = int(date_code[2:4])
+                day = int(date_code[4:6])
+            else:
+                year = int(date_code[:4])
+                month = int(date_code[4:6])
+                day = int(date_code[6:8])
+            if 2000 <= year <= 2100 and 1 <= month <= 12 and 1 <= day <= 31:
+                return f"{year:04d}-{month:02d}-{day:02d}"
+        return ''
 
     def fetch_catalog_html(self) -> str:
         if not REQUESTS_AVAILABLE:
@@ -383,12 +388,16 @@ class HikvisionScraper:
         t0 = time.time()
 
         model_by_id: Dict[str, str] = {}
-        for tid, name in re.findall(
-            r'data-target="(#firmware-collapse-\d+)"[^>]*>\s*([^<]+?)\s*</',
-            html,
-            re.DOTALL,
-        ):
-            model_by_id[tid] = normalize_model_name(name.strip())
+        for match in re.finditer(r'data-target="(#firmware-collapse-\d+)"', html):
+            tid = match.group(1)
+            chunk = html[match.end():match.end() + 800]
+            model_match = re.search(
+                r'(DS-[0-9A-Z-]+|AE-[0-9A-Z-]+|IDS-[0-9A-Z-]+)',
+                chunk,
+                re.I,
+            )
+            if model_match:
+                model_by_id[tid] = normalize_model_name(model_match.group(1)).upper()
 
         entries: List[Dict] = []
         parts = re.split(r'(firmware-collapse-\d+)', html)
@@ -396,6 +405,10 @@ class HikvisionScraper:
             panel_id = parts[i]
             chunk = parts[i + 1] if i + 1 < len(parts) else ''
             model = model_by_id.get(f'#{panel_id}', 'UNKNOWN')
+            if model == 'UNKNOWN':
+                inferred = self.extract_model(chunk)
+                if inferred:
+                    model = inferred
             hw_version = self.extract_hardware_version(chunk, model)
 
             for title, url in re.findall(
