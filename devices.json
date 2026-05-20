@@ -4751,10 +4751,6 @@
     "model": "DS-2TD2628-10-QA-GLT",
     "hardware_version": "UNKNOWN"
   },
-  "101191": {
-    "model": "UNKNOWN",
-    "hardware_version": "UNKNOWN"
-  },
   "101192": {
     "model": "DS-2TD2628-10-QA-GLT-LA-",
     "hardware_version": "UNKNOWN"
@@ -5041,6 +5037,86 @@
   },
   "101263": {
     "model": "DS-2DE3A400BW-DE-T5-",
+    "hardware_version": "IPC_G0"
+  },
+  "101264": {
+    "model": "UNKNOWN",
+    "hardware_version": "UNKNOWN"
+  },
+  "101265": {
+    "model": "DS-2TD4228T-10-W",
+    "hardware_version": "UNKNOWN"
+  },
+  "101266": {
+    "model": "DS-2DE3A404IWG-E-W",
+    "hardware_version": "IPC_G0"
+  },
+  "101267": {
+    "model": "DS-2DE7A220MCG-EB",
+    "hardware_version": "IPC_G0"
+  },
+  "101268": {
+    "model": "DS-2DE7A412MCG-EB",
+    "hardware_version": "IPC_G0"
+  },
+  "101269": {
+    "model": "DS-2DE7A812MCG-EB",
+    "hardware_version": "IPC_G0"
+  },
+  "101270": {
+    "model": "IDS-2CD7347G0-XS",
+    "hardware_version": "IPC_G0"
+  },
+  "101271": {
+    "model": "IDS-2CD7387G0-XS",
+    "hardware_version": "IPC_G0"
+  },
+  "101272": {
+    "model": "IDS-2CD7D47G0-XS",
+    "hardware_version": "IPC_G0"
+  },
+  "101273": {
+    "model": "IDS-2CD7D87G0-XS",
+    "hardware_version": "IPC_G0"
+  },
+  "101274": {
+    "model": "IDS-2CD7T47G0-XHS-Y-",
+    "hardware_version": "IPC_G0"
+  },
+  "101275": {
+    "model": "IDS-2CD7T87G0-XHS-Y-",
+    "hardware_version": "IPC_G0"
+  },
+  "101276": {
+    "model": "DS-2CFW02--EU-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101277": {
+    "model": "DS-2CV1023G2-LIDW-F--B-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101278": {
+    "model": "DS-2CV1F23G2-LIDWF-B-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101279": {
+    "model": "DS-2DE2C200MWG-W",
+    "hardware_version": "IPC_G0"
+  },
+  "101280": {
+    "model": "DS-2DF7C432MXG1--W-R",
+    "hardware_version": "UNKNOWN"
+  },
+  "101281": {
+    "model": "DS-2DF7C432MXG1--W-R-4G",
+    "hardware_version": "UNKNOWN"
+  },
+  "101282": {
+    "model": "DS-J142I",
+    "hardware_version": "NVR_V4"
+  },
+  "101283": {
+    "model": "DS-2CD2D25G1-D-NF",
     "hardware_version": "IPC_G0"
   }
 }

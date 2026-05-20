@@ -1,13 +1,13 @@
 {
-  "last_run": "2026-05-19T18:45:45.807702",
+  "last_run": "2026-05-20T08:09:03.031998",
   "status": "success",
   "scraper_mode": "http",
   "post_merge_verified": "2026-05-19T13:00:29.926000",
   "catalog_urls_parsed": 4568,
-  "firmwares_found": 1704,
-  "new_firmwares": 50,
+  "firmwares_found": 1725,
+  "new_firmwares": 24,
   "errors": [],
   "test_mode": false,
   "catalog_fetch": "playwright",
-  "catalog_entries": 4578
+  "catalog_entries": 4568
 }
