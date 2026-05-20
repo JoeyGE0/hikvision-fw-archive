@@ -5118,5 +5118,109 @@
   "101283": {
     "model": "DS-2CD2D25G1-D-NF",
     "hardware_version": "IPC_G0"
+  },
+  "101284": {
+    "model": "DS-2CD2D45G1-M-D-NF",
+    "hardware_version": "IPC_G0"
+  },
+  "101285": {
+    "model": "DS-2CD6445G2-C1-HDMI",
+    "hardware_version": "IPC_G0"
+  },
+  "101286": {
+    "model": "DS-2DT5432MWG-T-4G--PA-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101287": {
+    "model": "IDS-2CD7046G0-H-AP",
+    "hardware_version": "IPC_G0"
+  },
+  "101288": {
+    "model": "IDS-2CD7086G0-H-AP",
+    "hardware_version": "IPC_G0"
+  },
+  "101289": {
+    "model": "IDS-2CD70C5G0-H-AP",
+    "hardware_version": "IPC_G0"
+  },
+  "101290": {
+    "model": "IDS-2CD7146G0-H-IZ-H-S-Y-",
+    "hardware_version": "IPC_G0"
+  },
+  "101291": {
+    "model": "IDS-2CD7186G0-H-IZ-H-S-Y-",
+    "hardware_version": "IPC_G0"
+  },
+  "101292": {
+    "model": "IDS-2CD71C5G0-H-IZ-H-S-Y-",
+    "hardware_version": "IPC_G0"
+  },
+  "101293": {
+    "model": "IDS-2CD7A46G0-H-IZHS-Y-",
+    "hardware_version": "IPC_G0"
+  },
+  "101294": {
+    "model": "IDS-2CD7A86G0-H-IZHS-Y-",
+    "hardware_version": "IPC_G0"
+  },
+  "101295": {
+    "model": "IDS-2CD7AC5G0-H-IZHS-Y-",
+    "hardware_version": "IPC_G0"
+  },
+  "101296": {
+    "model": "DS-2CD1043G2-LIUF-SL",
+    "hardware_version": "IPC_G0"
+  },
+  "101297": {
+    "model": "DS-2CD1047G2H-LIU-F-",
+    "hardware_version": "IPC_G0"
+  },
+  "101298": {
+    "model": "DS-2CD1047G2H-LIUF-S-L--RB-",
+    "hardware_version": "IPC_G0"
+  },
+  "101299": {
+    "model": "DS-2CD1147G2H-LIU-F-",
+    "hardware_version": "IPC_G0"
+  },
+  "101300": {
+    "model": "DS-2CD1343G2-LIUF-SL",
+    "hardware_version": "IPC_G0"
+  },
+  "101301": {
+    "model": "DS-2CD1347G2H-LIU-F-",
+    "hardware_version": "IPC_G0"
+  },
+  "101302": {
+    "model": "DS-2CD1347G2H-LIUF-S-L--RB-",
+    "hardware_version": "IPC_G0"
+  },
+  "101303": {
+    "model": "DS-2CD1643G2-LIU-F-",
+    "hardware_version": "IPC_G0"
+  },
+  "101304": {
+    "model": "DS-2CD1647G2H-LIU-F-",
+    "hardware_version": "IPC_G0"
+  },
+  "101305": {
+    "model": "DS-2CD1B43G2-LIUF-S-L--RB-",
+    "hardware_version": "IPC_G0"
+  },
+  "101306": {
+    "model": "DS-2CD1B47G2H-LIUF-S-L--RB-",
+    "hardware_version": "IPC_G0"
+  },
+  "101307": {
+    "model": "DS-2CD1T43G2-LIUF-SL",
+    "hardware_version": "IPC_G0"
+  },
+  "101308": {
+    "model": "DS-2CD1T47G2H-LIU-F-",
+    "hardware_version": "IPC_G0"
+  },
+  "101309": {
+    "model": "DS-2CD1T47G2H-LIUF-S-L--RB-",
+    "hardware_version": "IPC_G0"
   }
 }
