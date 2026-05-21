@@ -165,7 +165,7 @@ jobs:
           # Remove firmware files from git tracking (they're too large for GitHub >100MB)
           git rm -r --cached firmwares/ 2>/dev/null || true
           # Only commit JSON files and README (firmware files are uploaded to releases instead)
-          git add devices.json firmwares_live.json firmwares_manual.json firmware_info.json status.json README.md .gitignore || true
+          git add devices.json firmwares_live.json firmwares_manual.json firmware_info.json status.json README.md priority_models.json .gitignore || true
           git commit -m "Auto update" || exit 0
 
       - name: Push changes

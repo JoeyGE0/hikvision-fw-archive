@@ -94,6 +94,9 @@ CONSECUTIVE_FULLY_SKIPPED_MODELS_LIMIT = int(
 TEST_MODE = False
 MAX_FIRMWARES_IN_TEST_MODE = 1
 
+# One-shot priority list (see priority_models.json.example)
+PRIORITY_MODELS_FILE = 'priority_models.json'
+
 
 class HikvisionScraper:
     """Scraper that actually works with Hikvision's site structure."""
@@ -107,6 +110,8 @@ class HikvisionScraper:
         self.errors = []
         self._catalog_fetch_method = 'unknown'
         self._catalog_entry_count = 0
+        self._priority_patterns: List[str] = []
+        self._priority_one_shot = False
         self.status = {
             'last_run': None,
             'status': 'unknown',
@@ -120,7 +125,92 @@ class HikvisionScraper:
         """Extract model from text."""
         match = re.search(r'(DS-[0-9A-Z-]+|AE-[0-9A-Z-]+|IDS-[0-9A-Z-]+)', text, re.IGNORECASE)
         return match.group(1).upper() if match else None
-    
+
+    @staticmethod
+    def _expand_priority_patterns(raw_patterns: List[str]) -> List[str]:
+        """Split comma/slash-separated user patterns into match tokens."""
+        expanded: List[str] = []
+        for raw in raw_patterns:
+            if not raw:
+                continue
+            for part in re.split(r'[/,]+', str(raw).strip()):
+                part = part.strip().upper()
+                if part:
+                    expanded.append(part)
+        return expanded
+
+    def load_priority_models(self) -> List[str]:
+        """Load one-shot priority model list from file or PRIORITY_MODELS env."""
+        patterns: List[str] = []
+        one_shot = True
+
+        env_raw = os.environ.get('PRIORITY_MODELS', '').strip()
+        if env_raw:
+            patterns = self._expand_priority_patterns(
+                [p.strip() for p in re.split(r'[,\n]+', env_raw) if p.strip()]
+            )
+            one_shot = os.environ.get('PRIORITY_MODELS_ONE_SHOT', '1').lower() not in (
+                '0', 'false', 'no',
+            )
+        elif os.path.exists(PRIORITY_MODELS_FILE):
+            data = load_json(PRIORITY_MODELS_FILE)
+            if isinstance(data, list):
+                patterns = self._expand_priority_patterns([str(x) for x in data])
+            elif isinstance(data, dict):
+                patterns = self._expand_priority_patterns(
+                    [str(x) for x in data.get('models', [])]
+                )
+                one_shot = bool(data.get('one_shot', True))
+
+        self._priority_patterns = patterns
+        self._priority_one_shot = one_shot and bool(patterns)
+        if patterns:
+            logger.info(
+                f'  ★ Priority models ({len(patterns)} pattern(s), '
+                f'{"one-shot" if self._priority_one_shot else "repeat"}): '
+                f'{", ".join(patterns)}'
+            )
+        return patterns
+
+    def model_matches_priority(self, model: str) -> bool:
+        """True if catalog model matches any priority pattern (prefix / substring)."""
+        m = (model or '').upper()
+        if not m or m == 'UNKNOWN':
+            return False
+        for pattern in self._priority_patterns:
+            if len(pattern) < 8:
+                continue
+            if m.startswith(pattern) or pattern in m:
+                return True
+        return False
+
+    def sort_catalog_by_priority(self, catalog: List[Dict]) -> List[Dict]:
+        """Put priority model firmware first (newest date first within each group)."""
+        if not self._priority_patterns:
+            return catalog
+        priority_rows: List[Dict] = []
+        other_rows: List[Dict] = []
+        for entry in catalog:
+            if self.model_matches_priority(entry.get('model', '')):
+                priority_rows.append(entry)
+            else:
+                other_rows.append(entry)
+        by_date = lambda rows: sorted(
+            rows, key=lambda e: e.get('date') or '0000-00-00', reverse=True
+        )
+        logger.info(
+            f'  ★ Priority catalog rows: {len(priority_rows)} first, '
+            f'then {len(other_rows)} others'
+        )
+        return by_date(priority_rows) + by_date(other_rows)
+
+    def clear_priority_models_file(self) -> None:
+        """Clear one-shot priority file after a successful priority run."""
+        if not os.path.exists(PRIORITY_MODELS_FILE):
+            return
+        save_json(PRIORITY_MODELS_FILE, {'models': [], 'one_shot': False})
+        logger.info(f'  ★ Cleared {PRIORITY_MODELS_FILE} (one-shot priorities consumed)')
+
     def extract_version(self, text: str) -> Optional[str]:
         """Extract version from text."""
         match = re.search(r'[Vv]?(\d+\.\d+\.\d+(?:\.\d+)?)', text)
@@ -620,6 +710,7 @@ class HikvisionScraper:
         """Scrape via one HTTP GET + HTML parse (no Playwright)."""
         html = self.fetch_catalog_html()
         catalog = self.parse_catalog_entries(html)
+        catalog = self.sort_catalog_by_priority(catalog)
         self._catalog_entry_count = len(catalog)
         if len(catalog) < 1000:
             logger.warning(
@@ -632,7 +723,10 @@ class HikvisionScraper:
         downloaded_in_this_run: set = set()
         downloaded_filenames_this_run: set = set()
 
-        logger.info('  → Downloading new firmware(s) (newest first)...')
+        if self._priority_patterns:
+            logger.info('  → Downloading new firmware(s) (priority models first)...')
+        else:
+            logger.info('  → Downloading new firmware(s) (newest first)...')
 
         for entry in catalog:
             if MAX_FIRMWARES_TO_DOWNLOAD > 0 and new_downloads_count >= MAX_FIRMWARES_TO_DOWNLOAD:
@@ -2197,6 +2291,8 @@ class HikvisionScraper:
         self.status['scraper_mode'] = 'http'
         self.status['catalog_fetch'] = self._catalog_fetch_method
         self.status['catalog_entries'] = self._catalog_entry_count
+        if self._priority_patterns:
+            self.status['priority_models'] = self._priority_patterns
         self.status['errors'] = self.errors[-10:]  # Keep last 10 errors
         if self.errors:
             self.status['status'] = 'error'
@@ -2224,6 +2320,7 @@ class HikvisionScraper:
         
         start_time = time.time()
         self.save_status_running()
+        self.load_priority_models()
         
         try:
             if USE_HTTP_SCRAPER:
@@ -2259,6 +2356,8 @@ class HikvisionScraper:
             logger.info(f"  • New firmwares added: {self.scraped_count}")
             logger.info(f"  • Time taken: {elapsed:.1f} seconds")
             logger.info("=" * 60)
+            if self._priority_one_shot:
+                self.clear_priority_models_file()
         except Exception as e:
             error_msg = f"Scraping failed: {str(e)}"
             logger.error(error_msg)
