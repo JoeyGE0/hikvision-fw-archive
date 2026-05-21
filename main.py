@@ -946,24 +946,27 @@ class HikvisionScraper:
         firmwares: List[Dict] = []
         new_downloads_count = 0
         skipped_existing_count = 0
+        priority_new_downloads = 0
+        priority_skipped_archived = 0
         downloaded_in_this_run: set = set()
         downloaded_filenames_this_run: set = set()
 
-        download_catalog = catalog
+        priority_row_count = (
+            sum(1 for e in catalog if self.entry_matches_priority(e))
+            if self._priority_patterns else 0
+        )
         if self._priority_patterns:
-            download_catalog = [e for e in catalog if self.entry_matches_priority(e)]
             logger.info(
-                f'  → Priority-only downloads: {len(download_catalog)} row(s) '
-                f'(limit {MAX_FIRMWARES_TO_DOWNLOAD})'
+                f'  → Priority-first downloads: {priority_row_count} priority row(s) '
+                f'first, then rest of catalog (max {MAX_FIRMWARES_TO_DOWNLOAD} new files)'
             )
-            if not download_catalog:
-                logger.warning(
-                    '  → No priority firmware rows in catalog — nothing to download this run'
-                )
         else:
             logger.info('  → Downloading new firmware(s) (newest first)...')
 
-        for entry in download_catalog:
+        for entry in catalog:
+            is_priority_row = bool(
+                self._priority_patterns and self.entry_matches_priority(entry)
+            )
             if MAX_FIRMWARES_TO_DOWNLOAD > 0 and new_downloads_count >= MAX_FIRMWARES_TO_DOWNLOAD:
                 logger.info(
                     f'  ⏹️  Download limit reached ({MAX_FIRMWARES_TO_DOWNLOAD})'
@@ -982,6 +985,8 @@ class HikvisionScraper:
 
             if self.firmware_is_archived(model, hw_version, version, downloaded_in_this_run):
                 skipped_existing_count += 1
+                if is_priority_row:
+                    priority_skipped_archived += 1
                 if firmware_key not in downloaded_in_this_run:
                     logger.info(
                         f'    ⊘ Skipping existing: {model} {hw_version} v{version} '
@@ -1030,6 +1035,8 @@ class HikvisionScraper:
                     downloaded_filenames_this_run.add(filename)
                     downloaded_in_this_run.add(firmware_key)
                     new_downloads_count += 1
+                    if is_priority_row:
+                        priority_new_downloads += 1
                     logger.info(f'    ✓ NEW firmware #{new_downloads_count}')
                 except Exception as err:
                     logger.warning(f'    ⚠ Download failed for {model} v{version}: {err}')
@@ -1070,9 +1077,10 @@ class HikvisionScraper:
             logger.info('  ✓ No new firmwares — archive caught up for scanned items')
         if self._priority_patterns:
             logger.info(
-                f'[PRIORITY] done: {new_downloads_count} downloaded, '
-                f'{skipped_existing_count} already archived, '
-                f'{len(download_catalog)} checked'
+                f'[PRIORITY] summary: {priority_new_downloads} new from priority rows, '
+                f'{priority_skipped_archived} priority already archived, '
+                f'{priority_row_count} priority row(s) in catalog; '
+                f'{new_downloads_count} total new downloads (limit {MAX_FIRMWARES_TO_DOWNLOAD})'
             )
         logger.info('=' * 60)
         return firmwares
