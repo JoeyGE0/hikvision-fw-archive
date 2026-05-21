@@ -1,7 +1,4 @@
 {
-  "models": [
-    "DS-2CD2387G3-LIS2UY",
-    "DS-2CD1383G2P-LIUF"
-  ],
-  "one_shot": true
+  "models": [],
+  "one_shot": false
 }

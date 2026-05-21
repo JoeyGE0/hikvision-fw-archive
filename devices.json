@@ -2743,10 +2743,6 @@
     "model": "DS-2CFWQ6-D",
     "hardware_version": "UNKNOWN"
   },
-  "100687": {
-    "model": "DS-2CV1021G0-IDW",
-    "hardware_version": "UNKNOWN"
-  },
   "100688": {
     "model": "DS-2CV1023G2-LIDW",
     "hardware_version": "UNKNOWN"
@@ -2761,10 +2757,6 @@
   },
   "100691": {
     "model": "DS-2CV1F43G2-LIDWF",
-    "hardware_version": "UNKNOWN"
-  },
-  "100692": {
-    "model": "DS-2CV2021G2-IDW",
     "hardware_version": "UNKNOWN"
   },
   "100693": {
@@ -2793,10 +2785,6 @@
   },
   "100699": {
     "model": "DS-2CV2146G0-IDW",
-    "hardware_version": "UNKNOWN"
-  },
-  "100700": {
-    "model": "DS-2CV2Q21FD-IW",
     "hardware_version": "UNKNOWN"
   },
   "100701": {
@@ -5410,5 +5398,17 @@
   "101356": {
     "model": "DS-2DF8425IX-AEL-T5-",
     "hardware_version": "UNKNOWN"
+  },
+  "101357": {
+    "model": "DS-2CV1021G0-IDW",
+    "hardware_version": "IPC_E6"
+  },
+  "101358": {
+    "model": "DS-2CV2021G2-IDW",
+    "hardware_version": "IPC_E6"
+  },
+  "101359": {
+    "model": "DS-2CV2Q21FD-IW",
+    "hardware_version": "IPC_E6"
   }
 }
