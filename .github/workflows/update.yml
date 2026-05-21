@@ -54,7 +54,7 @@ jobs:
 
           # Show download summary from logs
           echo "=== Download Summary ==="
-          echo "$SCRAPER_OUTPUT" | grep -E "(Fetching firmware catalog|Parsed [0-9]+ firmware|Download limit|Download Summary|NEW firmware|Caught up|Catalog only|\[PRIORITY\]|Priority-first|already archived|Updated archived)" || echo "No download messages found"
+          echo "$SCRAPER_OUTPUT" | grep -E "(Fetching firmware catalog|Parsed [0-9]+ firmware|Download limit|Download Summary|NEW firmware|Caught up|Catalog only)" || echo "No download messages found"
           echo ""
           echo "=== Catalog / Status ==="
           python3 -c "import json; s=json.load(open('status.json')); print('catalog_fetch:', s.get('catalog_fetch')); print('catalog_entries:', s.get('catalog_entries')); print('new_firmwares:', s.get('new_firmwares')); print('status:', s.get('status'))" 2>/dev/null || true
@@ -165,12 +165,12 @@ jobs:
           # Remove firmware files from git tracking (they're too large for GitHub >100MB)
           git rm -r --cached firmwares/ 2>/dev/null || true
           # Only commit JSON files and README (firmware files are uploaded to releases instead)
-          git add devices.json firmwares_live.json firmwares_manual.json firmware_info.json status.json README.md priority_models.json .gitignore || true
+          git add devices.json firmwares_live.json firmwares_manual.json firmware_info.json status.json README.md .gitignore || true
           git commit -m "Auto update" || exit 0
 
       - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
-          force: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git pull --rebase origin main
+          git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" "HEAD:refs/heads/${{ github.ref_name }}"
