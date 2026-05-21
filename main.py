@@ -614,6 +614,25 @@ class HikvisionScraper:
             close_btn.click()
             time.sleep(0.4)
 
+    def _find_live_firmware_key(
+        self, model: str, hw_version: str, version: str
+    ) -> Optional[str]:
+        """Find firmwares_live key; match model+version even if HW differs (e.g. UNKNOWN vs IPC_G0)."""
+        if not model or not version:
+            return None
+        model = model.strip().upper()
+        hw_version = (hw_version or 'UNKNOWN').strip().upper()
+        version = version.strip()
+        exact = f'{model}_{hw_version}_{version}'
+        if exact in self.firmwares_live:
+            return exact
+        prefix = f'{model}_'
+        suffix = f'_{version}'
+        for key in self.firmwares_live:
+            if key.startswith(prefix) and key.endswith(suffix):
+                return key
+        return None
+
     def firmware_is_archived(
         self,
         normalized_model: str,
@@ -625,7 +644,7 @@ class HikvisionScraper:
             return False
         firmware_key = f"{normalized_model}_{hw_version}_{version}"
         return (
-            firmware_key in self.firmwares_live
+            self._find_live_firmware_key(normalized_model, hw_version, version) is not None
             or firmware_key in downloaded_in_this_run
         )
 
@@ -1049,6 +1068,12 @@ class HikvisionScraper:
         logger.info(f'  • New downloads this run: {new_downloads_count}')
         if new_downloads_count == 0:
             logger.info('  ✓ No new firmwares — archive caught up for scanned items')
+        if self._priority_patterns:
+            logger.info(
+                f'[PRIORITY] done: {new_downloads_count} downloaded, '
+                f'{skipped_existing_count} already archived, '
+                f'{len(download_catalog)} checked'
+            )
         logger.info('=' * 60)
         return firmwares
 
@@ -1789,6 +1814,40 @@ class HikvisionScraper:
         
         return unique_firmwares
     
+    def _merge_firmware_metadata(self, existing: Dict, fw_data: Dict) -> List[str]:
+        """Merge catalog/release metadata into an existing firmwares_live entry."""
+        updated_fields: List[str] = []
+
+        new_notes = (fw_data.get('notes') or '').strip()
+        if new_notes and not (existing.get('notes') or '').strip():
+            existing['notes'] = new_notes
+            updated_fields.append('notes')
+
+        new_applied_to = (fw_data.get('applied_to') or '').strip()
+        if new_applied_to and not (existing.get('applied_to') or '').strip():
+            existing['applied_to'] = new_applied_to
+            updated_fields.append('applied_to')
+
+        existing_models = existing.get('supported_models') or []
+        new_models = fw_data.get('supported_models') or []
+        merged_models: List[str] = []
+        seen_models: set = set()
+        for m in list(existing_models) + list(new_models):
+            mm = str(m).strip().upper()
+            if mm and mm != 'UNKNOWN' and mm not in seen_models:
+                seen_models.add(mm)
+                merged_models.append(mm)
+        if merged_models and merged_models != existing_models:
+            existing['supported_models'] = merged_models
+            updated_fields.append('supported_models')
+
+        new_date = format_date(fw_data.get('date', ''))
+        if new_date and not (existing.get('date') or '').strip():
+            existing['date'] = new_date
+            updated_fields.append('date')
+
+        return updated_fields
+
     def process_firmware(self, fw_data: Dict):
         """Process and save firmware."""
         model = fw_data.get('model', '')
@@ -1798,15 +1857,28 @@ class HikvisionScraper:
         if not all([model, version]):
             return
         
-        # IMPORTANT: Only add firmware if download succeeded (has local_file_path)
-        # Skip entries that failed to download
         local_file_path = fw_data.get('local_file_path', '')
-        already_exists = fw_data.get('already_exists', False)
-        
+        key = self._find_live_firmware_key(model, hw_version, version) or (
+            f"{model}_{hw_version}_{version}"
+        )
+
+        # Archived firmware: refresh metadata from catalog without re-downloading
+        if not local_file_path and key in self.firmwares_live:
+            existing = self.firmwares_live[key]
+            updated_fields = self._merge_firmware_metadata(existing, fw_data)
+            if updated_fields:
+                self.firmwares_live[key] = existing
+                logger.info(
+                    f'  ↻ Updated archived firmware metadata: {model} {hw_version} '
+                    f'v{version} ({", ".join(updated_fields)})'
+                )
+            return
+
         # Don't add NEW entries if download failed (no local file)
-        # If it already exists, we'll skip it at line 628 anyway
         if not local_file_path:
-            logger.debug(f"  ⊘ Skipping firmware without downloaded file: {model} {hw_version} v{version}")
+            logger.debug(
+                f'  ⊘ Skipping firmware without downloaded file: {model} {hw_version} v{version}'
+            )
             return
         
         # Get/create device ID
@@ -1814,9 +1886,6 @@ class HikvisionScraper:
         if device_id is None:
             device_id = create_device_id(self.devices, model, hw_version)
             logger.debug(f"Created device: {model} {hw_version} -> ID {device_id}")
-        
-        # Create key
-        key = f"{model}_{hw_version}_{version}"
         
         if key not in self.firmwares_live:
             # Extract filename from local_file_path if available
@@ -1848,33 +1917,8 @@ class HikvisionScraper:
                     logger.info(f"  Added {self.scraped_count} new firmwares so far...")
         else:
             existing = self.firmwares_live.get(key, {})
-            updated_fields = []
+            updated_fields = self._merge_firmware_metadata(existing, fw_data)
 
-            # Keep existing entries fresh: backfill metadata when newly discovered.
-            new_notes = (fw_data.get('notes') or '').strip()
-            if new_notes and not (existing.get('notes') or '').strip():
-                existing['notes'] = new_notes
-                updated_fields.append('notes')
-
-            new_applied_to = (fw_data.get('applied_to') or '').strip()
-            if new_applied_to and not (existing.get('applied_to') or '').strip():
-                existing['applied_to'] = new_applied_to
-                updated_fields.append('applied_to')
-
-            existing_models = existing.get('supported_models') or []
-            new_models = fw_data.get('supported_models') or []
-            merged_models = []
-            seen_models = set()
-            for m in list(existing_models) + list(new_models):
-                mm = str(m).strip().upper()
-                if mm and mm not in seen_models:
-                    seen_models.add(mm)
-                    merged_models.append(mm)
-            if merged_models and merged_models != existing_models:
-                existing['supported_models'] = merged_models
-                updated_fields.append('supported_models')
-
-            # Never overwrite a good notes URL with blank.
             if updated_fields:
                 self.firmwares_live[key] = existing
                 logger.info(
@@ -2631,10 +2675,17 @@ class HikvisionScraper:
                     logger.error(f"Failed to save data: {save_err}")
         finally:
             self.save_status()
-            if self._priority_one_shot and self.status.get('status') in (
-                'success', 'no_new_firmwares',
+            if (
+                self._priority_one_shot
+                and self.status.get('status') in ('success', 'no_new_firmwares')
+                and self.scraped_count > 0
             ):
                 self.clear_priority_models_file()
+            elif self._priority_one_shot and self.scraped_count == 0:
+                logger.info(
+                    '[PRIORITY] keeping priority_models.json — no new downloads this run '
+                    '(firmware may already be archived; re-run or clear file manually)'
+                )
 
 
 def main():
