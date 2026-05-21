@@ -256,11 +256,174 @@ class HikvisionScraper:
             return hw_match.group(1).upper()
         
         # Default based on model
-        if 'DS-2CD' in model or 'DS-2DE' in model:
+        if 'DS-2CD' in model or 'DS-2DE' in model or 'IDS-2CD' in model:
             return 'IPC_G0'
         elif 'DS-76' in model or 'DS-77' in model:
             return 'NVR_G0'
         return 'UNKNOWN'
+
+    @staticmethod
+    def _canonical_firmware_key(model: str, hw_version: str, version: str) -> str:
+        return f"{model}_{hw_version}_{version}"
+
+    def _metadata_from_catalog_label(self, label: str, model: str) -> tuple:
+        """Derive applied_to text and supported_models from a catalog firmware title."""
+        label = (label or '').strip()
+        model = (model or '').strip().upper()
+        applied_to = extract_applied_to(label)
+        if not applied_to and re.search(r'Applied\s+to\s*:', label, re.IGNORECASE):
+            applied_to = ' '.join(label.split())
+        models = extract_models(f'{label} {applied_to}')
+        if model and model != 'UNKNOWN':
+            if model not in [m.upper() for m in models]:
+                models.insert(0, model)
+        elif models:
+            model = models[0]
+        if not models and model and model != 'UNKNOWN':
+            models = [model]
+        return applied_to, models, model
+
+    def _migrate_firmware_entry(self, old_key: str, new_key: str, fw_data: Dict) -> None:
+        """Move or merge a firmware entry when canonical model/hw/version key changes."""
+        if old_key == new_key:
+            return
+        if new_key in self.firmwares_live:
+            existing = self.firmwares_live[new_key]
+            for field in (
+                'applied_to', 'notes', 'changes', 'date', 'download_url', 'filename',
+            ):
+                new_val = (fw_data.get(field) or '').strip()
+                if new_val and not (existing.get(field) or '').strip():
+                    existing[field] = fw_data[field]
+            merged_models: List[str] = []
+            seen: set = set()
+            for m in list(existing.get('supported_models') or []) + list(
+                fw_data.get('supported_models') or []
+            ):
+                mm = str(m).strip().upper()
+                if mm and mm != 'UNKNOWN' and mm not in seen:
+                    seen.add(mm)
+                    merged_models.append(mm)
+            if merged_models:
+                existing['supported_models'] = merged_models
+        else:
+            self.firmwares_live[new_key] = fw_data
+        if old_key in self.firmwares_live:
+            del self.firmwares_live[old_key]
+
+    def heal_firmware_metadata(self) -> None:
+        """Backfill model, hardware version, applied_to, and supported_models on existing JSON."""
+        healed_records = 0
+        migrated_keys = 0
+
+        for old_key in list(self.firmwares_live.keys()):
+            if old_key not in self.firmwares_live:
+                continue
+            fw = self.firmwares_live[old_key]
+            changed = False
+
+            model = (fw.get('model') or '').strip().upper()
+            hw_version = (fw.get('hardware_version') or 'UNKNOWN').strip().upper()
+            version = (fw.get('version') or '').strip()
+            applied_to = (fw.get('applied_to') or '').strip()
+            text_blob = ' '.join(
+                x for x in (
+                    applied_to,
+                    fw.get('notes', ''),
+                    fw.get('changes', ''),
+                    fw.get('filename', ''),
+                    old_key,
+                ) if x
+            )
+
+            if not model or model == 'UNKNOWN':
+                key_model = re.match(
+                    r'^(DS-[0-9A-Z-]+|AE-[0-9A-Z-]+|IDS-[0-9A-Z-]+)_',
+                    old_key,
+                    re.IGNORECASE,
+                )
+                candidates: List[str] = []
+                if key_model:
+                    candidates.append(key_model.group(1).upper())
+                candidates.extend(
+                    str(m).strip().upper()
+                    for m in (fw.get('supported_models') or [])
+                    if str(m).strip().upper() not in ('', 'UNKNOWN')
+                )
+                candidates.extend(extract_models(applied_to))
+                candidates.extend(extract_models(text_blob))
+                filename_model = self.extract_model(fw.get('filename', '') or '')
+                if filename_model:
+                    candidates.append(filename_model)
+                for candidate in candidates:
+                    if candidate and candidate != 'UNKNOWN':
+                        model = candidate
+                        fw['model'] = model
+                        changed = True
+                        break
+
+            if not applied_to:
+                supported = [
+                    str(m).strip()
+                    for m in (fw.get('supported_models') or [])
+                    if str(m).strip().upper() not in ('', 'UNKNOWN')
+                ]
+                if supported:
+                    if len(supported) == 1:
+                        fw['applied_to'] = f'Applied to: {supported[0]}'
+                    else:
+                        fw['applied_to'] = 'Applied to: ' + ', '.join(supported[:8])
+                        if len(supported) > 8:
+                            fw['applied_to'] += f', and {len(supported) - 8} more'
+                    applied_to = fw['applied_to']
+                    changed = True
+
+            merged_models: List[str] = []
+            seen_models: set = set()
+            for m in list(fw.get('supported_models') or []) + extract_models(
+                f'{applied_to} {text_blob}'
+            ):
+                mm = str(m).strip().upper()
+                if mm and mm != 'UNKNOWN' and mm not in seen_models:
+                    seen_models.add(mm)
+                    merged_models.append(mm)
+            if model and model != 'UNKNOWN' and model not in seen_models:
+                merged_models.insert(0, model)
+            if merged_models and merged_models != fw.get('supported_models'):
+                fw['supported_models'] = merged_models
+                changed = True
+
+            if hw_version == 'UNKNOWN' and model and model != 'UNKNOWN':
+                key_hw = re.match(
+                    rf'^{re.escape(model)}_([^_]+)_{re.escape(version)}$',
+                    old_key,
+                    re.IGNORECASE,
+                )
+                if key_hw and key_hw.group(1).upper() != 'UNKNOWN':
+                    hw_version = key_hw.group(1).upper()
+                else:
+                    hw_version = self.extract_hardware_version(text_blob, model)
+                if hw_version != 'UNKNOWN':
+                    fw['hardware_version'] = hw_version
+                    changed = True
+
+            if model and model != 'UNKNOWN' and version:
+                new_key = self._canonical_firmware_key(
+                    model, fw.get('hardware_version', 'UNKNOWN'), version
+                )
+                if new_key != old_key:
+                    self._migrate_firmware_entry(old_key, new_key, fw)
+                    migrated_keys += 1
+                    changed = True
+
+            if changed:
+                healed_records += 1
+
+        if healed_records > 0 or migrated_keys > 0:
+            logger.info(
+                f'  🩹 Healed {healed_records} firmware record(s), '
+                f'migrated {migrated_keys} key(s)'
+            )
 
     def dismiss_page_overlays(self, page) -> int:
         """Dismiss cookie banners, region prompts, and other blocking overlays."""
@@ -805,13 +968,22 @@ class HikvisionScraper:
                         f'    ⊘ Skipping existing: {model} {hw_version} v{version} '
                         f'({skipped_existing_count} skipped)'
                     )
+                applied_to, supported_models, resolved_model = self._metadata_from_catalog_label(
+                    entry.get('label', ''), model
+                )
+                if resolved_model and resolved_model != 'UNKNOWN':
+                    model = resolved_model
+                if hw_version == 'UNKNOWN' and model != 'UNKNOWN':
+                    hw_version = self.extract_hardware_version(
+                        f"{applied_to} {entry.get('label', '')}", model
+                    )
                 self.append_existing_firmware_record(
                     firmwares,
                     normalized_model=model,
                     hw_version=hw_version,
                     version=version,
-                    supported_models=[model] if model != 'UNKNOWN' else [],
-                    applied_to_text='',
+                    supported_models=supported_models,
+                    applied_to_text=applied_to,
                     release_notes_url=entry.get('notes', ''),
                 )
                 continue
@@ -845,6 +1017,16 @@ class HikvisionScraper:
                     self.errors.append(f'Download failed {model} v{version}: {err}')
                     continue
 
+            applied_to, supported_models, resolved_model = self._metadata_from_catalog_label(
+                entry.get('label', ''), model
+            )
+            if resolved_model and resolved_model != 'UNKNOWN':
+                model = resolved_model
+            if hw_version == 'UNKNOWN' and model != 'UNKNOWN':
+                hw_version = self.extract_hardware_version(
+                    f"{applied_to} {entry.get('label', '')}", model
+                )
+
             firmwares.append({
                 'model': model,
                 'hardware_version': hw_version,
@@ -852,8 +1034,8 @@ class HikvisionScraper:
                 'download_url': '',
                 'local_file_path': local_file_path,
                 'filename': stored_filename,
-                'supported_models': [model] if model != 'UNKNOWN' else [],
-                'applied_to': '',
+                'supported_models': supported_models,
+                'applied_to': applied_to,
                 'date': format_date(entry.get('date', '')),
                 'changes': '',
                 'notes': entry.get('notes', ''),
@@ -2125,24 +2307,37 @@ class HikvisionScraper:
                 
                 model = header_match.group(1).strip().upper()
                 version = header_match.group(2).strip()
-                
-                # Skip UNKNOWN entries (they don't have model info)
-                if model == 'UNKNOWN':
+
+                supported_match = re.search(
+                    r'\*\*Supported Devices:\*\*\s*([^\n]+)',
+                    section,
+                    re.IGNORECASE,
+                )
+                applied_to = supported_match.group(1).strip() if supported_match else ''
+                section_models = extract_models(f'{applied_to} {section}')
+                if model == 'UNKNOWN' and section_models:
+                    model = section_models[0]
+                elif model == 'UNKNOWN':
                     continue
-                
+                if not applied_to and section_models:
+                    applied_to = 'Applied to: ' + ', '.join(section_models[:5])
+
                 # Extract date: "Release Date: YYYY-MM-DD"
                 date_match = re.search(r'Release Date:\s*(\d{4}-\d{2}-\d{2})', section, re.IGNORECASE)
                 date_str = date_match.group(1) if date_match else ''
-                
+
                 # Extract filename from download link: "[📥 Download FILENAME](...)"
-                # Pattern: [📥 Download FILENAME](url) - extract text between [ and ]
                 filename_match = re.search(r'\[📥\s*Download\s+([^\]]+)\]', section, re.IGNORECASE)
                 if filename_match:
                     filename = filename_match.group(1).strip()
+                    if model not in section_models:
+                        section_models.insert(0, model)
                     filename_to_info[filename] = {
                         'model': model,
                         'version': version,
-                        'date': date_str
+                        'date': date_str,
+                        'applied_to': applied_to,
+                        'supported_models': section_models or [model],
                     }
                     logger.debug(f"  ✓ Extracted from release notes: {filename} -> {model} v{version}")
         
@@ -2196,10 +2391,22 @@ class HikvisionScraper:
                     if release_info:
                         if release_info.get('date') and not fw_data.get('date'):
                             fw_data['date'] = release_info['date']
-                        if release_info.get('model') and not fw_data.get('model'):
+                        if release_info.get('model') and (
+                            not fw_data.get('model')
+                            or str(fw_data.get('model', '')).upper() == 'UNKNOWN'
+                        ):
                             fw_data['model'] = release_info['model']
                         if release_info.get('version') and not fw_data.get('version'):
                             fw_data['version'] = release_info['version']
+                        if release_info.get('applied_to') and not (
+                            fw_data.get('applied_to') or ''
+                        ).strip():
+                            fw_data['applied_to'] = release_info['applied_to']
+                        if release_info.get('supported_models') and (
+                            not fw_data.get('supported_models')
+                            or fw_data.get('supported_models') == ['UNKNOWN']
+                        ):
+                            fw_data['supported_models'] = release_info['supported_models']
                     break
             
             if not found:
@@ -2307,6 +2514,8 @@ class HikvisionScraper:
         self.sync_github_releases()
         # Sync firmware directory with JSON (add missing entries)
         self.sync_firmwares_directory()
+        # Backfill UNKNOWN models, hardware versions, and applied_to metadata
+        self.heal_firmware_metadata()
         # Repair malformed records and ensure device mappings are consistent
         self.repair_and_validate_entries()
         # Clean up incomplete UNKNOWN entries
