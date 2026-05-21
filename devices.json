@@ -5354,5 +5354,61 @@
   "101342": {
     "model": "DS-2DF7C425IXR-AEL-T5-",
     "hardware_version": "UNKNOWN"
+  },
+  "101343": {
+    "model": "DS-7232HGHI-M2-T-2K",
+    "hardware_version": "DVR_V4"
+  },
+  "101344": {
+    "model": "IDS-2CD7A86G0-H-IZHSY",
+    "hardware_version": "IPC_G0"
+  },
+  "101345": {
+    "model": "DS-2DF7C432IXR-AEL-T5-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101346": {
+    "model": "DS-2DF7C442IXG1-EL-W--Y-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101347": {
+    "model": "DS-2DF7C445IXR-AEL-T5-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101348": {
+    "model": "DS-2DF7C825IXG1-EL-W--Y-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101349": {
+    "model": "DS-2DF7C842IXG1-EL-W--Y-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101350": {
+    "model": "DS-2DF8225IX-AEL-T5-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101351": {
+    "model": "DS-2DF8225IX-AELW-T5-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101352": {
+    "model": "DS-2DF8242I5X-AELW-T5-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101353": {
+    "model": "DS-2DF8242I5XG-ELW",
+    "hardware_version": "UNKNOWN"
+  },
+  "101354": {
+    "model": "DS-2DF8242IX-AEL-T5-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101355": {
+    "model": "DS-2DF8242IX-AELW-T5-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101356": {
+    "model": "DS-2DF8425IX-AEL-T5-",
+    "hardware_version": "UNKNOWN"
   }
 }
