@@ -130,13 +130,25 @@ class HikvisionScraper:
     def _expand_priority_patterns(raw_patterns: List[str]) -> List[str]:
         """Split comma/slash-separated user patterns into match tokens."""
         expanded: List[str] = []
+        seen: set = set()
+
+        def add_pattern(part: str) -> None:
+            part = part.strip().upper()
+            if not part or part in seen:
+                return
+            seen.add(part)
+            expanded.append(part)
+            # Hikvision often uses G2P-LIUF in catalog vs G2-LIUF on the label
+            if 'G2-LIUF' in part and 'G2P-LIUF' not in part:
+                add_pattern(part.replace('G2-LIUF', 'G2P-LIUF'))
+            elif 'G2P-LIUF' in part and 'G2-LIUF' not in part:
+                add_pattern(part.replace('G2P-LIUF', 'G2-LIUF'))
+
         for raw in raw_patterns:
             if not raw:
                 continue
             for part in re.split(r'[/,]+', str(raw).strip()):
-                part = part.strip().upper()
-                if part:
-                    expanded.append(part)
+                add_pattern(part)
         return expanded
 
     def load_priority_models(self) -> List[str]:
@@ -166,10 +178,14 @@ class HikvisionScraper:
         self._priority_one_shot = one_shot and bool(patterns)
         if patterns:
             logger.info(
-                f'  ★ Priority models ({len(patterns)} pattern(s), '
-                f'{"one-shot" if self._priority_one_shot else "repeat"}): '
+                f'[PRIORITY] {len(patterns)} pattern(s), '
+                f'{"one-shot" if self._priority_one_shot else "repeat"}: '
                 f'{", ".join(patterns)}'
             )
+        elif os.path.exists(PRIORITY_MODELS_FILE):
+            logger.info(f'[PRIORITY] {PRIORITY_MODELS_FILE} exists but has no models')
+        else:
+            logger.info('[PRIORITY] none (no file or env)')
         return patterns
 
     def model_matches_priority(self, model: str) -> bool:
@@ -184,6 +200,16 @@ class HikvisionScraper:
                 return True
         return False
 
+    def entry_matches_priority(self, entry: Dict) -> bool:
+        """Match priority patterns against model and firmware title/label text."""
+        if self.model_matches_priority(entry.get('model', '')):
+            return True
+        text = f"{entry.get('label', '')} {entry.get('model', '')}".upper()
+        for pattern in self._priority_patterns:
+            if len(pattern) >= 8 and pattern in text:
+                return True
+        return False
+
     def sort_catalog_by_priority(self, catalog: List[Dict]) -> List[Dict]:
         """Put priority model firmware first (newest date first within each group)."""
         if not self._priority_patterns:
@@ -191,7 +217,7 @@ class HikvisionScraper:
         priority_rows: List[Dict] = []
         other_rows: List[Dict] = []
         for entry in catalog:
-            if self.model_matches_priority(entry.get('model', '')):
+            if self.entry_matches_priority(entry):
                 priority_rows.append(entry)
             else:
                 other_rows.append(entry)
@@ -199,9 +225,14 @@ class HikvisionScraper:
             rows, key=lambda e: e.get('date') or '0000-00-00', reverse=True
         )
         logger.info(
-            f'  ★ Priority catalog rows: {len(priority_rows)} first, '
-            f'then {len(other_rows)} others'
+            f'[PRIORITY] {len(priority_rows)} catalog row(s) matched; '
+            f'{len(other_rows)} deferred'
         )
+        if self._priority_patterns and not priority_rows:
+            logger.warning(
+                '[PRIORITY] no catalog rows matched — check model names '
+                f'(patterns: {", ".join(self._priority_patterns)})'
+            )
         return by_date(priority_rows) + by_date(other_rows)
 
     def clear_priority_models_file(self) -> None:
@@ -209,7 +240,8 @@ class HikvisionScraper:
         if not os.path.exists(PRIORITY_MODELS_FILE):
             return
         save_json(PRIORITY_MODELS_FILE, {'models': [], 'one_shot': False})
-        logger.info(f'  ★ Cleared {PRIORITY_MODELS_FILE} (one-shot priorities consumed)')
+        self._priority_patterns = []
+        logger.info(f'[PRIORITY] cleared {PRIORITY_MODELS_FILE} (one-shot done)')
 
     def extract_version(self, text: str) -> Optional[str]:
         """Extract version from text."""
@@ -638,6 +670,14 @@ class HikvisionScraper:
                 chunk,
                 re.DOTALL | re.I,
             ):
+                entry_model = model
+                title_models = extract_models(title)
+                if entry_model == 'UNKNOWN' and title_models:
+                    entry_model = title_models[0]
+                elif entry_model == 'UNKNOWN':
+                    title_model = self.extract_model(title)
+                    if title_model:
+                        entry_model = title_model
                 version = self.extract_version(title + ' ' + url) or ''
                 date_str = self._date_from_text(title) or self._date_from_text(url)
                 notes = ''
@@ -649,7 +689,7 @@ class HikvisionScraper:
                 if pdf:
                     notes = pdf.group(1)
                 entries.append({
-                    'model': model,
+                    'model': entry_model,
                     'hardware_version': hw_version,
                     'version': version,
                     'url': url,
@@ -667,8 +707,12 @@ class HikvisionScraper:
                 re.DOTALL | re.I,
             ):
                 version = self.extract_version(title + ' ' + url) or ''
+                title_models = extract_models(title)
+                fallback_model = title_models[0] if title_models else (
+                    self.extract_model(title) or 'UNKNOWN'
+                )
                 entries.append({
-                    'model': 'UNKNOWN',
+                    'model': fallback_model,
                     'hardware_version': 'UNKNOWN',
                     'version': version,
                     'url': url,
@@ -723,12 +767,21 @@ class HikvisionScraper:
         downloaded_in_this_run: set = set()
         downloaded_filenames_this_run: set = set()
 
+        download_catalog = catalog
         if self._priority_patterns:
-            logger.info('  → Downloading new firmware(s) (priority models first)...')
+            download_catalog = [e for e in catalog if self.entry_matches_priority(e)]
+            logger.info(
+                f'  → Priority-only downloads: {len(download_catalog)} row(s) '
+                f'(limit {MAX_FIRMWARES_TO_DOWNLOAD})'
+            )
+            if not download_catalog:
+                logger.warning(
+                    '  → No priority firmware rows in catalog — nothing to download this run'
+                )
         else:
             logger.info('  → Downloading new firmware(s) (newest first)...')
 
-        for entry in catalog:
+        for entry in download_catalog:
             if MAX_FIRMWARES_TO_DOWNLOAD > 0 and new_downloads_count >= MAX_FIRMWARES_TO_DOWNLOAD:
                 logger.info(
                     f'  ⏹️  Download limit reached ({MAX_FIRMWARES_TO_DOWNLOAD})'
@@ -2356,8 +2409,6 @@ class HikvisionScraper:
             logger.info(f"  • New firmwares added: {self.scraped_count}")
             logger.info(f"  • Time taken: {elapsed:.1f} seconds")
             logger.info("=" * 60)
-            if self._priority_one_shot:
-                self.clear_priority_models_file()
         except Exception as e:
             error_msg = f"Scraping failed: {str(e)}"
             logger.error(error_msg)
@@ -2370,8 +2421,11 @@ class HikvisionScraper:
                 except Exception as save_err:
                     logger.error(f"Failed to save data: {save_err}")
         finally:
-            # Always save status, even on error
             self.save_status()
+            if self._priority_one_shot and self.status.get('status') in (
+                'success', 'no_new_firmwares',
+            ):
+                self.clear_priority_models_file()
 
 
 def main():
