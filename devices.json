@@ -5027,10 +5027,6 @@
     "model": "DS-2DE3A400BW-DE-T5-",
     "hardware_version": "IPC_G0"
   },
-  "101264": {
-    "model": "UNKNOWN",
-    "hardware_version": "UNKNOWN"
-  },
   "101265": {
     "model": "DS-2TD4228T-10-W",
     "hardware_version": "UNKNOWN"
@@ -6170,5 +6166,73 @@
   "101549": {
     "model": "DS-2DE2A204IW-DE3-S6-",
     "hardware_version": "IPC_G0"
+  },
+  "101550": {
+    "model": "UNKNOWN",
+    "hardware_version": "UNKNOWN"
+  },
+  "101551": {
+    "model": "DS-2DE2A404IW-DE3-S6-",
+    "hardware_version": "IPC_G0"
+  },
+  "101552": {
+    "model": "DS-2DE4A225IW-DE-S6-",
+    "hardware_version": "IPC_G0"
+  },
+  "101553": {
+    "model": "DS-2DE4A425IW-DE-S6-",
+    "hardware_version": "IPC_G0"
+  },
+  "101554": {
+    "model": "DS-2DE5225IW-AE-S6-",
+    "hardware_version": "IPC_G0"
+  },
+  "101555": {
+    "model": "DS-2DE5232IW-AE-S6-",
+    "hardware_version": "IPC_G0"
+  },
+  "101556": {
+    "model": "DS-2DE5232W-AE-S6-",
+    "hardware_version": "IPC_G0"
+  },
+  "101557": {
+    "model": "DS-2DE5425IW-AE-S6-",
+    "hardware_version": "IPC_G0"
+  },
+  "101558": {
+    "model": "DS-2DF8C425MHS-DEL",
+    "hardware_version": "UNKNOWN"
+  },
+  "101559": {
+    "model": "DS-2DF8C425MHS-DELW",
+    "hardware_version": "UNKNOWN"
+  },
+  "101560": {
+    "model": "DS-2DF8C435MHS-DEL",
+    "hardware_version": "UNKNOWN"
+  },
+  "101561": {
+    "model": "DS-2DF8C435MHS-DELW",
+    "hardware_version": "UNKNOWN"
+  },
+  "101562": {
+    "model": "DS-2DP3D404IWG1-E-36",
+    "hardware_version": "UNKNOWN"
+  },
+  "101563": {
+    "model": "DS-2DP7D825IXG1-LEF-Y--432",
+    "hardware_version": "UNKNOWN"
+  },
+  "101564": {
+    "model": "DS-2DP7D836IXG1-LEF-Y--432",
+    "hardware_version": "UNKNOWN"
+  },
+  "101565": {
+    "model": "DS-2DP7D836IXG1-LEF-Y--432-IR-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101566": {
+    "model": "DS-2DT8C442MXG-ELWT",
+    "hardware_version": "UNKNOWN"
   }
 }
