@@ -6234,5 +6234,41 @@
   "101566": {
     "model": "DS-2DT8C442MXG-ELWT",
     "hardware_version": "UNKNOWN"
+  },
+  "101567": {
+    "model": "DS-2TD2537T-15-Q-C-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101568": {
+    "model": "DS-2DT8C842MXG-ELWT",
+    "hardware_version": "UNKNOWN"
+  },
+  "101569": {
+    "model": "DS-2DY3220IW-DE-S6-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101570": {
+    "model": "DS-2DY3220IW-DE4-S6-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101571": {
+    "model": "DS-2DY3420IW-DE-S6-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101572": {
+    "model": "DS-2DY3420IW-DE4-S6-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101573": {
+    "model": "DS-3WRM12C",
+    "hardware_version": "UNKNOWN"
+  },
+  "101574": {
+    "model": "DS-3WRM12C-2",
+    "hardware_version": "UNKNOWN"
+  },
+  "101575": {
+    "model": "DS-3WRM12C-3",
+    "hardware_version": "UNKNOWN"
   }
 }
