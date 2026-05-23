@@ -6270,5 +6270,53 @@
   "101575": {
     "model": "DS-3WRM12C-3",
     "hardware_version": "UNKNOWN"
+  },
+  "101576": {
+    "model": "DS-2CD2347G3P-LIS2UY-S-L--RB-",
+    "hardware_version": "IPC_G0"
+  },
+  "101577": {
+    "model": "DS-2CD2367G3P-LIS2UY-S-L--RB-",
+    "hardware_version": "IPC_G0"
+  },
+  "101578": {
+    "model": "DS-2CD2T47G3P-LIS2UY-S-L--RB-",
+    "hardware_version": "IPC_G0"
+  },
+  "101579": {
+    "model": "DS-2CD2T67G3P-LIS2UY-S-L--RB-",
+    "hardware_version": "IPC_G0"
+  },
+  "101580": {
+    "model": "DS-2CD6045G0-SC-IZRS",
+    "hardware_version": "IPC_G0"
+  },
+  "101581": {
+    "model": "DS-2CD6085G0-SC-IZRS",
+    "hardware_version": "IPC_G0"
+  },
+  "101582": {
+    "model": "DS-2CD6944G1-IHS-U-Y",
+    "hardware_version": "IPC_G0"
+  },
+  "101583": {
+    "model": "DS-2CD6984G1-IHS-U-Y--NFC-",
+    "hardware_version": "IPC_G0"
+  },
+  "101584": {
+    "model": "DS-2DF7C442IXG1-ELWYP",
+    "hardware_version": "UNKNOWN"
+  },
+  "101585": {
+    "model": "DS-2DF7C842IXG1-ELWYP",
+    "hardware_version": "UNKNOWN"
+  },
+  "101586": {
+    "model": "DS-2DF8C435MHG1-ELWYP",
+    "hardware_version": "UNKNOWN"
+  },
+  "101587": {
+    "model": "DS-2SE2C200MWG-E-12",
+    "hardware_version": "UNKNOWN"
   }
 }
