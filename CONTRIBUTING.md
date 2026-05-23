@@ -8,12 +8,8 @@ Thank you for your interest in contributing! This guide will help you understand
 
 If you know of a firmware that should be in this archive:
 
-1. **Check if it's already reported**: Look in `missing.txt` to see if someone else has already reported it
-2. **Add to missing.txt**: If not listed, add a line with:
-   ```
-   Model: DS-2CD2XXX | Hardware: IPC_G0 | Version: 5.7.0 | Source: Official site
-   ```
-3. **Open an issue**: Provide as much detail as possible:
+1. **Search the README** on `main` for your model (Ctrl+F)
+2. **Open a GitHub issue** with as much detail as possible:
    - Device model (exact model number)
    - Hardware version
    - Firmware version
@@ -61,18 +57,18 @@ You can also edit `firmwares_manual.json` directly:
 
 ### 3. Improve the Scraper
 
-The scraper (`main.py`) needs constant updates as Hikvision changes their website:
+The scraper (`main.py`) fetches Hikvision’s **firmware catalog HTML** (HTTP, with Playwright fallback on CI), parses download links, and downloads up to **10 new files per run**. Useful improvements:
 
-- **Better parsing**: Improve model/version extraction from filenames
-- **More categories**: Add support for additional product lines
-- **Error handling**: Handle edge cases and different page layouts
-- **Rate limiting**: Be respectful of Hikvision's servers
+- **Catalog parsing**: Better model / “Applied to” extraction when panels are `UNKNOWN`
+- **Metadata heal**: `heal_firmware_metadata()` and release-note backfill
+- **Priority queue**: `priority_models.json` (see `priority_models.json.example`) — sorts models first, still respects the 10-download cap
+- **Tests**: Extend `test_metadata_and_priority.py` for any behaviour change
 
 ### 4. Fix Documentation
 
-- Update `readme_header.md` for better explanations
-- Improve `QUICKSTART.md` with clearer instructions
-- Add examples and troubleshooting tips
+- Update `readme_header.md` (the README intro is generated from this file)
+- Update `CONTRIBUTING.md` when workflow or file layout changes
+- Run `python release.py` locally to preview README changes
 
 ## File Structure
 

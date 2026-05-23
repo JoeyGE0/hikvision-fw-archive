@@ -67,6 +67,8 @@ def generate_readme() -> str:
     new_firmwares = status.get('new_firmwares', 0)
     test_mode = status.get('test_mode', False)
     scraper_mode = status.get('scraper_mode', 'http')
+    catalog_fetch = status.get('catalog_fetch', 'unknown')
+    catalog_entries = status.get('catalog_entries', 0)
     errors = status.get('errors', [])
     
     # Format status with emoji
@@ -101,6 +103,8 @@ def generate_readme() -> str:
     readme_header = readme_header.replace('{{NEW_FIRMWARES}}', str(new_firmwares))
     readme_header = readme_header.replace('{{TEST_MODE}}', '🧪 Enabled' if test_mode else 'Disabled')
     readme_header = readme_header.replace('{{SCRAPER_MODE}}', scraper_mode.upper())
+    readme_header = readme_header.replace('{{CATALOG_FETCH}}', str(catalog_fetch))
+    readme_header = readme_header.replace('{{CATALOG_ENTRIES}}', str(catalog_entries))
     readme_header = readme_header.replace('{{ERRORS}}', errors_text)
     
     # Generate firmware list
