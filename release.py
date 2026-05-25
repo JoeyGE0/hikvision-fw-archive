@@ -228,15 +228,19 @@ def generate_readme() -> str:
             # Format version
             version_link = version
             
-            # Format release notes URL if present
-            notes_display = notes
+            # Notes column: short changes summary + optional PDF link
+            notes_display = ''
+            if changes and changes.strip():
+                notes_display = changes.strip()
             if notes and notes.startswith('http'):
-                # It's a URL - format as markdown link
-                notes_display = f"[📄 Release Notes]({notes})"
+                pdf_link = f"[📄 Release Notes]({notes})"
+                notes_display = f'{notes_display} · {pdf_link}' if notes_display else pdf_link
             
             # Add beta warning
             if is_beta:
                 notes_display = f"⚠️ Beta firmware. {notes_display}".strip()
+            if not notes_display:
+                notes_display = '—'
             
             # Escape pipe characters in content
             changes = changes.replace('|', '\\|')

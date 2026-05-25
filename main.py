@@ -22,6 +22,7 @@ try:
 except ImportError:
     REQUESTS_AVAILABLE = False
 
+from release_notes import fetch_pdf_summary
 from common import (
     create_device_id,
     extract_applied_to,
@@ -114,6 +115,7 @@ class HikvisionScraper:
         self._catalog_entry_count = 0
         self._priority_patterns: List[str] = []
         self._priority_one_shot = False
+        self._release_filename_urls: Dict[str, str] = {}
         self.status = {
             'last_run': None,
             'status': 'unknown',
@@ -504,6 +506,20 @@ class HikvisionScraper:
                 if new_key != old_key:
                     self._migrate_firmware_entry(old_key, new_key, fw)
                     migrated_keys += 1
+                    changed = True
+
+            notes_url = (fw.get('notes') or '').strip()
+            if notes_url.lower().endswith('.pdf') and not (fw.get('changes') or '').strip():
+                summary = self.enrich_changes_from_notes_url(notes_url)
+                if summary:
+                    fw['changes'] = summary
+                    changed = True
+
+            fn = (fw.get('filename') or '').strip()
+            if fn:
+                rel_url = self.get_github_release_url_for_filename(fn)
+                if rel_url and (fw.get('download_url') or '') != rel_url:
+                    fw['download_url'] = rel_url
                     changed = True
 
             if changed:
@@ -995,6 +1011,60 @@ class HikvisionScraper:
             )
         return entries
 
+    def load_release_asset_index(self) -> Dict[str, str]:
+        """Map firmware filename -> stable GitHub /releases/download/{tag}/ URL."""
+        if self._release_filename_urls:
+            return self._release_filename_urls
+        if not REQUESTS_AVAILABLE:
+            return self._release_filename_urls
+
+        github_token = os.environ.get('GITHUB_TOKEN')
+        headers = {}
+        if github_token:
+            headers['Authorization'] = f'token {github_token}'
+        try:
+            page = 1
+            while True:
+                response = requests.get(
+                    f'{GITHUB_API_BASE}/{GITHUB_REPO}/releases',
+                    headers=headers,
+                    params={'per_page': 100, 'page': page},
+                    timeout=30,
+                )
+                response.raise_for_status()
+                batch = response.json()
+                if not batch:
+                    break
+                for release in batch:
+                    tag = release.get('tag_name') or str(release.get('id', ''))
+                    for asset in release.get('assets', []):
+                        name = asset.get('name', '')
+                        if (
+                            name
+                            and name not in self._release_filename_urls
+                            and any(name.lower().endswith(ext) for ext in ['.zip', '.dav', '.pak', '.bin'])
+                        ):
+                            self._release_filename_urls[name] = (
+                                f'https://github.com/{GITHUB_REPO}/releases/download/{tag}/{name}'
+                            )
+                if len(batch) < 100:
+                    break
+                page += 1
+            logger.info(
+                f'  📦 Indexed {len(self._release_filename_urls)} firmware asset(s) on GitHub releases'
+            )
+        except Exception as exc:
+            logger.warning(f'  ⚠ Could not index GitHub release assets: {exc}')
+        return self._release_filename_urls
+
+    def get_github_release_url_for_filename(self, filename: str) -> str:
+        if not filename:
+            return ''
+        return self.load_release_asset_index().get(filename, '')
+
+    def enrich_changes_from_notes_url(self, notes_url: str) -> str:
+        return fetch_pdf_summary(notes_url, self.firmware_info, headers=HTTP_HEADERS)
+
     def download_firmware_http(self, url: str, filename: str) -> Path:
         firmware_dir = Path('firmwares')
         firmware_dir.mkdir(exist_ok=True)
@@ -1024,6 +1094,7 @@ class HikvisionScraper:
         """Scrape via one HTTP GET + HTML parse (no Playwright)."""
         html = self.fetch_catalog_html()
         catalog = self.parse_catalog_entries(html)
+        self.load_release_asset_index()
         catalog = self.sort_catalog_by_priority(catalog)
         self._catalog_entry_count = len(catalog)
         if len(catalog) < 1000:
@@ -1078,6 +1149,7 @@ class HikvisionScraper:
                         f'({skipped_existing_count} skipped)'
                     )
                 applied_to, supported_models, model = self._applied_to_from_entry(entry, model)
+                changes = self.enrich_changes_from_notes_url(entry.get('notes', ''))
                 if hw_version == 'UNKNOWN' and model != 'UNKNOWN':
                     hw_version = self.extract_hardware_version(
                         f'{applied_to} {entry.get("label", "")}', model
@@ -1090,6 +1162,38 @@ class HikvisionScraper:
                     supported_models=supported_models,
                     applied_to_text=applied_to,
                     release_notes_url=entry.get('notes', ''),
+                )
+                if changes:
+                    for fw in reversed(firmwares):
+                        if fw.get('model') == model and fw.get('version') == version:
+                            fw['changes'] = changes
+                            break
+                continue
+
+            github_release_url = self.get_github_release_url_for_filename(filename)
+            if github_release_url:
+                applied_to, supported_models, model = self._applied_to_from_entry(entry, model)
+                changes = self.enrich_changes_from_notes_url(entry.get('notes', ''))
+                if hw_version == 'UNKNOWN' and model != 'UNKNOWN':
+                    hw_version = self.extract_hardware_version(
+                        f'{applied_to} {entry.get("label", "")}', model
+                    )
+                self.process_firmware({
+                    'model': model,
+                    'hardware_version': hw_version,
+                    'version': version,
+                    'download_url': github_release_url,
+                    'filename': filename,
+                    'local_file_path': '',
+                    'supported_models': supported_models,
+                    'applied_to': applied_to,
+                    'date': format_date(entry.get('date', '')),
+                    'changes': changes,
+                    'notes': entry.get('notes', ''),
+                    'source': 'live',
+                })
+                logger.info(
+                    f'    ⊘ Linked existing GitHub asset {filename} for {model} v{version}'
                 )
                 continue
 
@@ -1129,6 +1233,7 @@ class HikvisionScraper:
                 hw_version = self.extract_hardware_version(
                     f'{applied_to} {entry.get("label", "")}', model
                 )
+            changes = self.enrich_changes_from_notes_url(entry.get('notes', ''))
 
             firmwares.append({
                 'model': model,
@@ -1140,7 +1245,7 @@ class HikvisionScraper:
                 'supported_models': supported_models,
                 'applied_to': applied_to,
                 'date': format_date(entry.get('date', '')),
-                'changes': '',
+                'changes': changes,
                 'notes': entry.get('notes', ''),
                 'source': 'live',
             })
@@ -1923,6 +2028,14 @@ class HikvisionScraper:
         if new_date and not (existing.get('date') or '').strip():
             existing['date'] = new_date
             updated_fields.append('date')
+        new_changes = (fw_data.get('changes') or '').strip()
+        if new_changes and not (existing.get('changes') or '').strip():
+            existing['changes'] = new_changes
+            updated_fields.append('changes')
+        new_dl = (fw_data.get('download_url') or '').strip()
+        if new_dl and not (existing.get('download_url') or '').strip():
+            existing['download_url'] = new_dl
+            updated_fields.append('download_url')
         return updated_fields
 
     def process_firmware(self, fw_data: Dict):
@@ -1938,8 +2051,15 @@ class HikvisionScraper:
                 f'  ⊘ Refusing to save firmware with UNKNOWN model v{version}'
             )
             return
-        
+
         local_file_path = fw_data.get('local_file_path', '')
+        download_url = (fw_data.get('download_url') or '').strip()
+        filename = (fw_data.get('filename') or '').strip()
+        if not filename and local_file_path:
+            filename = Path(local_file_path).name
+        has_github_asset = bool(
+            filename and download_url and 'github.com' in download_url
+        )
         key = self._find_live_firmware_key(model, hw_version, version) or (
             f'{model}_{hw_version}_{version}'
         )
@@ -1955,7 +2075,7 @@ class HikvisionScraper:
                 )
             return
 
-        if not local_file_path:
+        if not local_file_path and not has_github_asset:
             logger.debug(
                 f'  ⊘ Skipping firmware without downloaded file: {model} {hw_version} v{version}'
             )
@@ -1989,10 +2109,13 @@ class HikvisionScraper:
                 'is_beta': is_beta_firmware(version, fw_data.get('notes', '')),
                 'source': fw_data.get('source', 'live')
             }
-            # Only count as scraped if we actually downloaded a file
             if local_file_path:
                 self.scraped_count += 1
                 logger.info(f"  ✓ Added NEW firmware: {model} {hw_version} v{version}")
+            elif has_github_asset:
+                logger.info(
+                    f"  ✓ Linked firmware (GitHub asset): {model} {hw_version} v{version}"
+                )
                 if self.scraped_count % 50 == 0:
                     logger.info(f"  Added {self.scraped_count} new firmwares so far...")
         else:
@@ -2461,41 +2584,53 @@ class HikvisionScraper:
                     }
                     logger.debug(f"  ✓ Extracted from release notes: {filename} -> {model} v{version}")
         
-        # Also collect all firmware filenames from assets (fallback if not in release notes)
+        # Index release assets (newest release wins per filename)
         release_filenames = set()
+        filename_to_tag: Dict[str, str] = {}
+        self._release_filename_urls = {}
         for release in releases:
-            assets = release.get('assets', [])
-            for asset in assets:
+            tag = release.get('tag_name') or str(release.get('id', ''))
+            for asset in release.get('assets', []):
                 filename = asset.get('name', '')
-                if filename and any(filename.lower().endswith(ext) for ext in ['.zip', '.dav', '.pak', '.bin']):
-                    release_filenames.add(filename)
-        
+                if not filename or not any(
+                    filename.lower().endswith(ext) for ext in ['.zip', '.dav', '.pak', '.bin']
+                ):
+                    continue
+                release_filenames.add(filename)
+                if filename not in filename_to_tag:
+                    filename_to_tag[filename] = tag
+                    self._release_filename_urls[filename] = (
+                        f'https://github.com/{GITHUB_REPO}/releases/download/{tag}/{filename}'
+                    )
+
         logger.info(f"  Found {len(release_filenames)} firmware file(s) in GitHub releases")
         if filename_to_info:
             logger.info(f"  Extracted model info from {len(filename_to_info)} release note(s)")
 
-        # Normalize existing entries to GitHub-style download URLs for consistency.
-        # This makes JSON/README/releases consistent for HA consumers.
         normalized_url_count = 0
         for fw_data in self.firmwares_live.values():
             filename = (fw_data.get('filename') or '').strip()
             download_url = (fw_data.get('download_url') or '').strip()
 
-            # Try to infer filename from URL if missing.
             if not filename and download_url:
                 inferred = download_url.split('/')[-1].split('?')[0]
                 if inferred and any(inferred.lower().endswith(ext) for ext in ['.zip', '.dav', '.pak', '.bin']):
                     filename = inferred
                     fw_data['filename'] = inferred
 
-            if filename:
-                github_url = f"https://github.com/{GITHUB_REPO}/releases/latest/download/{filename}"
+            if filename and filename in filename_to_tag:
+                tag = filename_to_tag[filename]
+                github_url = (
+                    f'https://github.com/{GITHUB_REPO}/releases/download/{tag}/{filename}'
+                )
                 if fw_data.get('download_url') != github_url:
                     fw_data['download_url'] = github_url
                     normalized_url_count += 1
 
         if normalized_url_count > 0:
-            logger.info(f"  🔗 Normalized {normalized_url_count} firmware download URL(s) to GitHub release links")
+            logger.info(
+                f'  🔗 Set {normalized_url_count} stable release download URL(s) (tag-specific)'
+            )
         
         # Find files in releases that aren't in JSON
         added_count = 0
@@ -2571,8 +2706,12 @@ class HikvisionScraper:
                     # Create key
                     key = f"{model}_{hw_version}_{version}"
                     
-                    # Create download URL (latest release)
-                    download_url = f"https://github.com/{GITHUB_REPO}/releases/latest/download/{filename}"
+                    download_url = self._release_filename_urls.get(filename) or (
+                        f"https://github.com/{GITHUB_REPO}/releases/download/"
+                        f"{filename_to_tag.get(filename, '')}/{filename}"
+                        if filename_to_tag.get(filename)
+                        else ''
+                    )
                     
                     # Add to JSON
                     self.firmwares_live[key] = {
@@ -2645,6 +2784,7 @@ class HikvisionScraper:
         self.cleanup_empty_devices()
         save_json('devices.json', self.devices)
         save_json('firmwares_live.json', self.firmwares_live)
+        save_json('firmware_info.json', self.firmware_info)
         logger.info("Data saved")
     
     def save_status_running(self):
