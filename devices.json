@@ -6318,5 +6318,53 @@
   "101587": {
     "model": "DS-2SE2C200MWG-E-12",
     "hardware_version": "UNKNOWN"
+  },
+  "101588": {
+    "model": "DS-2TD2367-100-PY",
+    "hardware_version": "UNKNOWN"
+  },
+  "101589": {
+    "model": "DS-2TD2367-75-PY",
+    "hardware_version": "UNKNOWN"
+  },
+  "101590": {
+    "model": "DS-2TD2568T-15-G0-T1Y",
+    "hardware_version": "UNKNOWN"
+  },
+  "101591": {
+    "model": "DS-2TD2568T-5-G0-T1Y",
+    "hardware_version": "UNKNOWN"
+  },
+  "101592": {
+    "model": "DS-2TD2528T-10-Q-C-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101593": {
+    "model": "DS-2TD2528T-3-Q-C-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101594": {
+    "model": "DS-2TD2528T-7-Q-C-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101595": {
+    "model": "DS-2TD2537T-10-Q-C-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101596": {
+    "model": "DS-2TD2537T-4-Q-C-",
+    "hardware_version": "UNKNOWN"
+  },
+  "101597": {
+    "model": "DS-2TD2608-1-QA-FP",
+    "hardware_version": "UNKNOWN"
+  },
+  "101598": {
+    "model": "DS-2TD2608-2-QA-FP",
+    "hardware_version": "UNKNOWN"
+  },
+  "101599": {
+    "model": "DS-2CD2026G2-I-U-",
+    "hardware_version": "IPC_G0"
   }
 }

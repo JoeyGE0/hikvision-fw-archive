@@ -475,8 +475,8 @@
     "hardware_version": "UNKNOWN",
     "version": "1.2.8",
     "date": "2021-05-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.2.8_210513_S3000365428.zip",
-    "filename": "Firmware__V1.2.8_210513_S3000365428.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.2.8_260509_S3000723501.zip",
+    "filename": "Firmware__V1.2.8_260509_S3000723501.zip",
     "supported_models": [
       "AE-DC5113-F6S"
     ],
@@ -801,8 +801,8 @@
     "hardware_version": "UNKNOWN",
     "version": "5.8.1",
     "date": "2024-11-21",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.100_260325_S3000712063.zip",
-    "filename": "Firmware__V5.8.100_260325_S3000712063.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_260409_S3000714729.zip",
+    "filename": "Firmware__V5.8.11_260409_S3000714729.zip",
     "supported_models": [
       "AE-MD5043-SD"
     ],
@@ -818,8 +818,8 @@
     "hardware_version": "UNKNOWN",
     "version": "5.8.1",
     "date": "2024-11-21",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.100_260325_S3000712063.zip",
-    "filename": "Firmware__V5.8.100_260325_S3000712063.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_260409_S3000714729.zip",
+    "filename": "Firmware__V5.8.11_260409_S3000714729.zip",
     "supported_models": [
       "AE-MH0408"
     ],
@@ -12228,8 +12228,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.8.1",
     "date": "2025-08-07",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.100_260325_S3000712063.zip",
-    "filename": "Firmware__V5.8.100_260325_S3000712063.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_260409_S3000714729.zip",
+    "filename": "Firmware__V5.8.11_260409_S3000714729.zip",
     "supported_models": [
       "DS-2CD3646G2T-LIDZSU"
     ],
@@ -12567,8 +12567,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.8.1",
     "date": "2025-08-07",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.100_260325_S3000712063.zip",
-    "filename": "Firmware__V5.8.100_260325_S3000712063.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_260409_S3000714729.zip",
+    "filename": "Firmware__V5.8.11_260409_S3000714729.zip",
     "supported_models": [
       "DS-2CD3686G2T-LIDZSU"
     ],
@@ -13713,8 +13713,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.8.1",
     "date": "2025-08-07",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.100_260325_S3000712063.zip",
-    "filename": "Firmware__V5.8.100_260325_S3000712063.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_260409_S3000714729.zip",
+    "filename": "Firmware__V5.8.11_260409_S3000714729.zip",
     "supported_models": [
       "DS-2CD3T46G2-LIDSU"
     ],
@@ -13945,8 +13945,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.8.1",
     "date": "2025-08-07",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.100_260325_S3000712063.zip",
-    "filename": "Firmware__V5.8.100_260325_S3000712063.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_260409_S3000714729.zip",
+    "filename": "Firmware__V5.8.11_260409_S3000714729.zip",
     "supported_models": [
       "DS-2CD3T86G2-LIDSU"
     ],
@@ -14405,8 +14405,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.7.1",
     "date": "2024-06-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260413_S3000716685.zip",
-    "filename": "Firmware__V5.7.11_260413_S3000716685.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260506_S3000720327.zip",
+    "filename": "Firmware__V5.7.11_260506_S3000720327.zip",
     "supported_models": [
       "DS-2CD6924G0-IHS",
       "DS-2CD6924G0-IHSY"
@@ -14457,8 +14457,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.7.1",
     "date": "2024-06-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260413_S3000716685.zip",
-    "filename": "Firmware__V5.7.11_260413_S3000716685.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260506_S3000720327.zip",
+    "filename": "Firmware__V5.7.11_260506_S3000720327.zip",
     "supported_models": [
       "DS-2CD6944G0-IHS"
     ],
@@ -15580,8 +15580,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.7.11",
     "date": "2023-06-12",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260413_S3000716685.zip",
-    "filename": "Firmware__V5.7.11_260413_S3000716685.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260506_S3000720327.zip",
+    "filename": "Firmware__V5.7.11_260506_S3000720327.zip",
     "supported_models": [
       "DS-2DE2A204IW-DE3"
     ],
@@ -15648,8 +15648,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.7.11",
     "date": "2023-06-12",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260413_S3000716685.zip",
-    "filename": "Firmware__V5.7.11_260413_S3000716685.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260506_S3000720327.zip",
+    "filename": "Firmware__V5.7.11_260506_S3000720327.zip",
     "supported_models": [
       "DS-2DE2A404IW-DE3"
     ],
@@ -16056,8 +16056,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.8.1",
     "date": "2025-01-14",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.100_260325_S3000712063.zip",
-    "filename": "Firmware__V5.8.100_260325_S3000712063.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_260409_S3000714729.zip",
+    "filename": "Firmware__V5.8.11_260409_S3000714729.zip",
     "supported_models": [
       "DS-2DE2C600MWG-E"
     ],
@@ -16073,8 +16073,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.8.1",
     "date": "2023-11-08",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.100_260325_S3000712063.zip",
-    "filename": "Firmware__V5.8.100_260325_S3000712063.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_260409_S3000714729.zip",
+    "filename": "Firmware__V5.8.11_260409_S3000714729.zip",
     "supported_models": [
       "DS-2DE3204W-DE"
     ],
@@ -16176,8 +16176,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.7.11",
     "date": "2022-09-05",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260413_S3000716685.zip",
-    "filename": "Firmware__V5.7.11_260413_S3000716685.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260506_S3000720327.zip",
+    "filename": "Firmware__V5.7.11_260506_S3000720327.zip",
     "supported_models": [
       "DS-2DE4215IW-DE"
     ],
@@ -16227,8 +16227,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.8.1",
     "date": "2026-01-15",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.100_260325_S3000712063.zip",
-    "filename": "Firmware__V5.8.100_260325_S3000712063.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_260409_S3000714729.zip",
+    "filename": "Firmware__V5.8.11_260409_S3000714729.zip",
     "supported_models": [
       "DS-2DE4215IWG1-E"
     ],
@@ -16278,8 +16278,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.7.11",
     "date": "2022-09-05",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260413_S3000716685.zip",
-    "filename": "Firmware__V5.7.11_260413_S3000716685.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260506_S3000720327.zip",
+    "filename": "Firmware__V5.7.11_260506_S3000720327.zip",
     "supported_models": [
       "DS-2DE4225IW-DE"
     ],
@@ -16329,8 +16329,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.8.1",
     "date": "2026-01-15",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.100_260325_S3000712063.zip",
-    "filename": "Firmware__V5.8.100_260325_S3000712063.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_260409_S3000714729.zip",
+    "filename": "Firmware__V5.8.11_260409_S3000714729.zip",
     "supported_models": [
       "DS-2DE4225IWG1-E"
     ],
@@ -16380,8 +16380,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.7.11",
     "date": "2022-09-05",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260413_S3000716685.zip",
-    "filename": "Firmware__V5.7.11_260413_S3000716685.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260506_S3000720327.zip",
+    "filename": "Firmware__V5.7.11_260506_S3000720327.zip",
     "supported_models": [
       "DS-2DE4225W-DE"
     ],
@@ -16414,8 +16414,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.7.11",
     "date": "2022-09-05",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260413_S3000716685.zip",
-    "filename": "Firmware__V5.7.11_260413_S3000716685.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260506_S3000720327.zip",
+    "filename": "Firmware__V5.7.11_260506_S3000720327.zip",
     "supported_models": [
       "DS-2DE4225W-DE3"
     ],
@@ -16448,8 +16448,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.8.1",
     "date": "2026-01-15",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.100_260325_S3000712063.zip",
-    "filename": "Firmware__V5.8.100_260325_S3000712063.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_260409_S3000714729.zip",
+    "filename": "Firmware__V5.8.11_260409_S3000714729.zip",
     "supported_models": [
       "DS-2DE4225WG1-E3"
     ],
@@ -16500,8 +16500,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.7.11",
     "date": "2022-09-05",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260413_S3000716685.zip",
-    "filename": "Firmware__V5.7.11_260413_S3000716685.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260506_S3000720327.zip",
+    "filename": "Firmware__V5.7.11_260506_S3000720327.zip",
     "supported_models": [
       "DS-2DE4415IW-DE"
     ],
@@ -16551,8 +16551,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.8.1",
     "date": "2026-01-15",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.100_260325_S3000712063.zip",
-    "filename": "Firmware__V5.8.100_260325_S3000712063.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_260409_S3000714729.zip",
+    "filename": "Firmware__V5.8.11_260409_S3000714729.zip",
     "supported_models": [
       "DS-2DE4415IWG1-E"
     ],
@@ -16603,8 +16603,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.7.11",
     "date": "2022-09-05",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260413_S3000716685.zip",
-    "filename": "Firmware__V5.7.11_260413_S3000716685.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260506_S3000720327.zip",
+    "filename": "Firmware__V5.7.11_260506_S3000720327.zip",
     "supported_models": [
       "DS-2DE4425IW-DE"
     ],
@@ -16654,8 +16654,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.8.1",
     "date": "2026-01-15",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.100_260325_S3000712063.zip",
-    "filename": "Firmware__V5.8.100_260325_S3000712063.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_260409_S3000714729.zip",
+    "filename": "Firmware__V5.8.11_260409_S3000714729.zip",
     "supported_models": [
       "DS-2DE4425IWG1-E"
     ],
@@ -16688,8 +16688,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.7.11",
     "date": "2022-09-05",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260413_S3000716685.zip",
-    "filename": "Firmware__V5.7.11_260413_S3000716685.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260506_S3000720327.zip",
+    "filename": "Firmware__V5.7.11_260506_S3000720327.zip",
     "supported_models": [
       "DS-2DE4425W-DE"
     ],
@@ -16705,8 +16705,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.7.11",
     "date": "2022-09-05",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260413_S3000716685.zip",
-    "filename": "Firmware__V5.7.11_260413_S3000716685.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260506_S3000720327.zip",
+    "filename": "Firmware__V5.7.11_260506_S3000720327.zip",
     "supported_models": [
       "DS-2DE4425W-DE3"
     ],
@@ -16722,8 +16722,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.8.1",
     "date": "2026-01-15",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.100_260325_S3000712063.zip",
-    "filename": "Firmware__V5.8.100_260325_S3000712063.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_260409_S3000714729.zip",
+    "filename": "Firmware__V5.8.11_260409_S3000714729.zip",
     "supported_models": [
       "DS-2DE4425WG1-E3"
     ],
@@ -16739,8 +16739,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.8.1",
     "date": "2026-01-15",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.100_260325_S3000712063.zip",
-    "filename": "Firmware__V5.8.100_260325_S3000712063.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_260409_S3000714729.zip",
+    "filename": "Firmware__V5.8.11_260409_S3000714729.zip",
     "supported_models": [
       "DS-2DE4825IWG1-E"
     ],
@@ -16790,8 +16790,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.7.11",
     "date": "2023-06-12",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260413_S3000716685.zip",
-    "filename": "Firmware__V5.7.11_260413_S3000716685.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260506_S3000720327.zip",
+    "filename": "Firmware__V5.7.11_260506_S3000720327.zip",
     "supported_models": [
       "DS-2DE4A225IW-DE"
     ],
@@ -16824,8 +16824,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.8.1",
     "date": "2026-01-15",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.100_260325_S3000712063.zip",
-    "filename": "Firmware__V5.8.100_260325_S3000712063.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_260409_S3000714729.zip",
+    "filename": "Firmware__V5.8.11_260409_S3000714729.zip",
     "supported_models": [
       "DS-2DE4A225IWG1-E"
     ],
@@ -16875,8 +16875,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.7.11",
     "date": "2023-06-12",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260413_S3000716685.zip",
-    "filename": "Firmware__V5.7.11_260413_S3000716685.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260506_S3000720327.zip",
+    "filename": "Firmware__V5.7.11_260506_S3000720327.zip",
     "supported_models": [
       "DS-2DE4A425IW-DE"
     ],
@@ -16892,8 +16892,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.8.1",
     "date": "2026-01-15",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.100_260325_S3000712063.zip",
-    "filename": "Firmware__V5.8.100_260325_S3000712063.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_260409_S3000714729.zip",
+    "filename": "Firmware__V5.8.11_260409_S3000714729.zip",
     "supported_models": [
       "DS-2DE4A425IWG1-E"
     ],
@@ -16961,8 +16961,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.7.11",
     "date": "2023-06-12",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260413_S3000716685.zip",
-    "filename": "Firmware__V5.7.11_260413_S3000716685.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260506_S3000720327.zip",
+    "filename": "Firmware__V5.7.11_260506_S3000720327.zip",
     "supported_models": [
       "DS-2DE5225IW-AE"
     ],
@@ -17063,8 +17063,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.7.11",
     "date": "2023-06-12",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260413_S3000716685.zip",
-    "filename": "Firmware__V5.7.11_260413_S3000716685.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260506_S3000720327.zip",
+    "filename": "Firmware__V5.7.11_260506_S3000720327.zip",
     "supported_models": [
       "DS-2DE5232IW-AE"
     ],
@@ -17097,8 +17097,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.7.11",
     "date": "2023-06-12",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260413_S3000716685.zip",
-    "filename": "Firmware__V5.7.11_260413_S3000716685.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260506_S3000720327.zip",
+    "filename": "Firmware__V5.7.11_260506_S3000720327.zip",
     "supported_models": [
       "DS-2DE5232W-AE"
     ],
@@ -17200,8 +17200,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.7.11",
     "date": "2023-06-12",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260413_S3000716685.zip",
-    "filename": "Firmware__V5.7.11_260413_S3000716685.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260506_S3000720327.zip",
+    "filename": "Firmware__V5.7.11_260506_S3000720327.zip",
     "supported_models": [
       "DS-2DE5425IW-AE"
     ],
@@ -17251,8 +17251,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.8.1",
     "date": "2026-01-15",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.100_260325_S3000712063.zip",
-    "filename": "Firmware__V5.8.100_260325_S3000712063.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_260409_S3000714729.zip",
+    "filename": "Firmware__V5.8.11_260409_S3000714729.zip",
     "supported_models": [
       "DS-2DE5425IWG1-E"
     ],
@@ -17268,8 +17268,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.8.1",
     "date": "2026-01-15",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.100_260325_S3000712063.zip",
-    "filename": "Firmware__V5.8.100_260325_S3000712063.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_260409_S3000714729.zip",
+    "filename": "Firmware__V5.8.11_260409_S3000714729.zip",
     "supported_models": [
       "DS-2DE5425WG1-E"
     ],
@@ -17336,8 +17336,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.8.1",
     "date": "2026-01-15",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.100_260325_S3000712063.zip",
-    "filename": "Firmware__V5.8.100_260325_S3000712063.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_260409_S3000714729.zip",
+    "filename": "Firmware__V5.8.11_260409_S3000714729.zip",
     "supported_models": [
       "DS-2DE5432IWG1-E"
     ],
@@ -17353,8 +17353,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.8.1",
     "date": "2026-01-15",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.100_260325_S3000712063.zip",
-    "filename": "Firmware__V5.8.100_260325_S3000712063.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_260409_S3000714729.zip",
+    "filename": "Firmware__V5.8.11_260409_S3000714729.zip",
     "supported_models": [
       "DS-2DE5432WG1-E"
     ],
@@ -17405,8 +17405,8 @@
     "hardware_version": "IPC_G0",
     "version": "5.7.11",
     "date": "2022-09-05",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260413_S3000716685.zip",
-    "filename": "Firmware__V5.7.11_260413_S3000716685.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260506_S3000720327.zip",
+    "filename": "Firmware__V5.7.11_260506_S3000720327.zip",
     "supported_models": [
       "DS-2DE7225IW-AE"
     ],
@@ -23050,7 +23050,7 @@
     ],
     "applied_to": "Applied to: DS-2CD2687G3-LIZSY(2.8-12mm)",
     "changes": "",
-    "notes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.32_SP1_260330_Release_Note-H13.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -24349,7 +24349,7 @@
     ],
     "applied_to": "Applied to: DS-2CD2767G3-LIPTRZSY(2.8-12mm)",
     "changes": "",
-    "notes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.32_SP1_260330_Release_Note-H13.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -24383,7 +24383,7 @@
     ],
     "applied_to": "Applied to: DS-2CD2787G3-LIPTRZSY(2.8-12mm)",
     "changes": "",
-    "notes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.32_SP1_260330_Release_Note-H13.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -24400,7 +24400,7 @@
     ],
     "applied_to": "Applied to: DS-2CD2T87G3-LIY(2.8mm)(BLACK)",
     "changes": "",
-    "notes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.32_SP1_260330_Release_Note-H13.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -25922,7 +25922,7 @@
     ],
     "applied_to": "Applied to: DS-7104NI-S2-WX",
     "changes": "",
-    "notes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNVS_V4.32.406_20260427_ReleaseNote.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -27462,8 +27462,8 @@
     "hardware_version": "UNKNOWN",
     "version": "5.7.11",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260413_S3000716685.zip",
-    "filename": "Firmware__V5.7.11_260413_S3000716685.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260506_S3000720327.zip",
+    "filename": "Firmware__V5.7.11_260506_S3000720327.zip",
     "supported_models": [
       "DS-2DF4220-DX-S6-316L-"
     ],
@@ -27479,8 +27479,8 @@
     "hardware_version": "UNKNOWN",
     "version": "5.7.11",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260413_S3000716685.zip",
-    "filename": "Firmware__V5.7.11_260413_S3000716685.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260506_S3000720327.zip",
+    "filename": "Firmware__V5.7.11_260506_S3000720327.zip",
     "supported_models": [
       "DS-2DF4220-DX-S6-316L--C-"
     ],
@@ -27496,8 +27496,8 @@
     "hardware_version": "UNKNOWN",
     "version": "5.7.11",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260413_S3000716685.zip",
-    "filename": "Firmware__V5.7.11_260413_S3000716685.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260506_S3000720327.zip",
+    "filename": "Firmware__V5.7.11_260506_S3000720327.zip",
     "supported_models": [
       "DS-2DF4420-DX-S6--C--304-"
     ],
@@ -27513,8 +27513,8 @@
     "hardware_version": "UNKNOWN",
     "version": "5.7.11",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260413_S3000716685.zip",
-    "filename": "Firmware__V5.7.11_260413_S3000716685.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260506_S3000720327.zip",
+    "filename": "Firmware__V5.7.11_260506_S3000720327.zip",
     "supported_models": [
       "DS-2DF4420-DX-S6-316L--C-"
     ],
@@ -27530,8 +27530,8 @@
     "hardware_version": "UNKNOWN",
     "version": "5.7.11",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260413_S3000716685.zip",
-    "filename": "Firmware__V5.7.11_260413_S3000716685.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260506_S3000720327.zip",
+    "filename": "Firmware__V5.7.11_260506_S3000720327.zip",
     "supported_models": [
       "DS-2DF4420WG-XEY"
     ],
@@ -31310,7 +31310,7 @@
     "supported_models": [
       "DS-2DF8425IX-AELW-T5-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8425IX-AELW-T5-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31327,7 +31327,7 @@
     "supported_models": [
       "DS-2DF8425IXG1-EL-W--Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8425IXG1-EL-W--Y-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31344,7 +31344,7 @@
     "supported_models": [
       "DS-2DF8442I5XG1-EL-W--Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8442I5XG1-EL-W--Y-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31361,7 +31361,7 @@
     "supported_models": [
       "DS-2DF8442IXG1-EL-W--Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8442IXG1-EL-W--Y-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31378,7 +31378,7 @@
     "supported_models": [
       "DS-2DF8442IXS-AEL-T5-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8442IXS-AEL-T5-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31395,7 +31395,7 @@
     "supported_models": [
       "DS-2DF8442IXS-AELW-T5-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8442IXS-AELW-T5-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31412,7 +31412,7 @@
     "supported_models": [
       "DS-2DF8442IXS-AELWY-T5-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8442IXS-AELWY-T5-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31429,7 +31429,7 @@
     "supported_models": [
       "DS-2DF8442IXS-AELY-T5-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8442IXS-AELY-T5-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31446,7 +31446,7 @@
     "supported_models": [
       "DS-2DF8A442IXG-EL"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8A442IXG-EL",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31463,7 +31463,7 @@
     "supported_models": [
       "DS-2DF8A442IXG-ELY"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8A442IXG-ELY",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31480,7 +31480,7 @@
     "supported_models": [
       "DS-2DF8A442IXG-F-SP"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8A442IXG-F-SP",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31497,7 +31497,7 @@
     "supported_models": [
       "DS-2DF8A442IXG1-EL-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8A442IXG1-EL-Y-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31514,7 +31514,7 @@
     "supported_models": [
       "DS-2DF8A442IXS-AEL-T5-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8A442IXS-AEL-T5-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31531,7 +31531,7 @@
     "supported_models": [
       "DS-2DF8A442IXS-AELY-T5-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8A442IXS-AELY-T5-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31548,7 +31548,7 @@
     "supported_models": [
       "DS-2DF8A442IXS-AF-SP-T5-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8A442IXS-AF-SP-T5-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31565,7 +31565,7 @@
     "supported_models": [
       "DS-2DF8A442NXG-EL"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8A442NXG-EL",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31582,7 +31582,7 @@
     "supported_models": [
       "DS-2DF8A442NXG1-EL"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8A442NXG1-EL",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31599,7 +31599,7 @@
     "supported_models": [
       "DS-2DF8A442NXS-AEL-T5-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8A442NXS-AEL-T5-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31616,7 +31616,7 @@
     "supported_models": [
       "DS-2DF8A842IXG-EL"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8A842IXG-EL",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31633,7 +31633,7 @@
     "supported_models": [
       "DS-2DF8A842IXG1-EL"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8A842IXG1-EL",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31650,7 +31650,7 @@
     "supported_models": [
       "DS-2DF8A842IXS-AEL-T5-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8A842IXS-AEL-T5-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31667,7 +31667,7 @@
     "supported_models": [
       "DS-2DF8C260I5XG-ELW"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8C260I5XG-ELW",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31684,7 +31684,7 @@
     "supported_models": [
       "DS-2DF8C260I5XG1-ELW"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8C260I5XG1-ELW",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31701,7 +31701,7 @@
     "supported_models": [
       "DS-2DF8C260I5XS-AELW-T5-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8C260I5XS-AELW-T5-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31718,7 +31718,7 @@
     "supported_models": [
       "DS-2DF8C442IXG-EL"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8C442IXG-EL",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31735,7 +31735,7 @@
     "supported_models": [
       "DS-2DF8C442IXG-ELW"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8C442IXG-ELW",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31752,7 +31752,7 @@
     "supported_models": [
       "DS-2DF8C442IXG1-EL-W--Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8C442IXG1-EL-W--Y-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31769,7 +31769,7 @@
     "supported_models": [
       "DS-2DF8C442IXS-AEL-T5-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8C442IXS-AEL-T5-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31786,7 +31786,7 @@
     "supported_models": [
       "DS-2DF8C442IXS-AELW-T5-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8C442IXS-AELW-T5-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31803,7 +31803,7 @@
     "supported_models": [
       "DS-2DF8C442IXS-AL-5G-T5-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8C442IXS-AL-5G-T5-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31820,7 +31820,7 @@
     "supported_models": [
       "DS-2DF8C448I5XG-ELW"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8C448I5XG-ELW",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31837,7 +31837,7 @@
     "supported_models": [
       "DS-2DF8C448I5XG1-ELW-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8C448I5XG1-ELW-Y-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31854,7 +31854,7 @@
     "supported_models": [
       "DS-2DF8C448I5XS-AELW-T5-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8C448I5XS-AELW-T5-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31871,7 +31871,7 @@
     "supported_models": [
       "DS-2DF8C825IXG-EL"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8C825IXG-EL",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31888,7 +31888,7 @@
     "supported_models": [
       "DS-2DF8C825IXG-ELW"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8C825IXG-ELW",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31905,7 +31905,7 @@
     "supported_models": [
       "DS-2DF8C825IXG1-EL-W--Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8C825IXG1-EL-W--Y-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31922,7 +31922,7 @@
     "supported_models": [
       "DS-2DF8C825IXS-AEL-T5-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8C825IXS-AEL-T5-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31939,7 +31939,7 @@
     "supported_models": [
       "DS-2DF8C825IXS-AELW-T5-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8C825IXS-AELW-T5-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31956,7 +31956,7 @@
     "supported_models": [
       "DS-2DF8C842IXG-EL"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8C842IXG-EL",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31973,7 +31973,7 @@
     "supported_models": [
       "DS-2DF8C842IXG-ELW"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8C842IXG-ELW",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -31990,7 +31990,7 @@
     "supported_models": [
       "DS-2DF8C842IXG1-EL-W--Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8C842IXG1-EL-W--Y-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -32007,7 +32007,7 @@
     "supported_models": [
       "DS-2DF8C842IXS-AEL-T5-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8C842IXS-AEL-T5-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -32024,7 +32024,7 @@
     "supported_models": [
       "DS-2DF8C848I5XG-ELW"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8C848I5XG-ELW",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -32041,7 +32041,7 @@
     "supported_models": [
       "DS-2DF8C848I5XG1-ELW"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8C848I5XG1-ELW",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -32058,7 +32058,7 @@
     "supported_models": [
       "DS-2DF8C848I5XS-AELW-T5-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8C848I5XS-AELW-T5-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -32075,7 +32075,7 @@
     "supported_models": [
       "DS-2DF9C453LXG-LW"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF9C453LXG-LW",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -32092,7 +32092,7 @@
     "supported_models": [
       "DS-2DF9C453LXG1-LW"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF9C453LXG1-LW",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -32109,7 +32109,7 @@
     "supported_models": [
       "DS-2DF9C848LXG-LW"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF9C848LXG-LW",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -32126,7 +32126,7 @@
     "supported_models": [
       "DS-2DF9C848LXG1-LW"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF9C848LXG1-LW",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -32143,7 +32143,7 @@
     "supported_models": [
       "DS-2DT6232X-AELY-T5-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DT6232X-AELY-T5-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -32160,7 +32160,7 @@
     "supported_models": [
       "DS-2DT6425X-AELY-T5-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DT6425X-AELY-T5-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -32177,7 +32177,7 @@
     "supported_models": [
       "DS-2XS6A46G1-IZS-4G"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2XS6A46G1-IZS-4G",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CSolar-powered_Security_Camera_V5.7.72_260330_Release_Note.pdf",
     "is_beta": false,
@@ -32194,7 +32194,7 @@
     "supported_models": [
       "DS-2XS6A46G1-LIZS-4G"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2XS6A46G1-LIZS-4G",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CSolar-powered_Security_Camera_V5.7.72_260330_Release_Note.pdf",
     "is_beta": false,
@@ -32211,7 +32211,7 @@
     "supported_models": [
       "DS-2XS6A46G1-P-IZS-4G"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2XS6A46G1-P-IZS-4G",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CSolar-powered_Security_Camera_V5.7.72_260330_Release_Note.pdf",
     "is_beta": false,
@@ -32228,7 +32228,7 @@
     "supported_models": [
       "DS-2XS6A47G1-LS-4G"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2XS6A47G1-LS-4G",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CSolar-powered_Security_Camera_V5.7.72_260330_Release_Note.pdf",
     "is_beta": false,
@@ -32245,7 +32245,7 @@
     "supported_models": [
       "DS-2XS6A87G1-LS-4G"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2XS6A87G1-LS-4G",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CSolar-powered_Security_Camera_V5.7.72_260330_Release_Note.pdf",
     "is_beta": false,
@@ -32262,7 +32262,7 @@
     "supported_models": [
       "DS-2CD2326G2-I-U-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD2326G2-I-U-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/public/all/files/330c4c2c-5730-4877-a942-0be87cea67ca.pdf",
     "is_beta": false,
@@ -32279,7 +32279,7 @@
     "supported_models": [
       "DS-2CD2326G2-I-U-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD2326G2-I-U-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/public/all/files/330c4c2c-5730-4877-a942-0be87cea67ca.pdf",
     "is_beta": false,
@@ -32296,7 +32296,7 @@
     "supported_models": [
       "IDS-2CD7026G0--AP-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: IDS-2CD7026G0--AP-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CDeepinView_Camera_V5.8.61_Release_Note.pdf",
     "is_beta": false,
@@ -32313,7 +32313,7 @@
     "supported_models": [
       "IDS-2CD7026G0-EP-IHSY"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: IDS-2CD7026G0-EP-IHSY",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CDeepinView_Camera_V5.8.61_Release_Note.pdf",
     "is_beta": false,
@@ -32330,7 +32330,7 @@
     "supported_models": [
       "IDS-2CD7046G0-E-IHSY--F11--R-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: IDS-2CD7046G0-E-IHSY--F11--R-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CDeepinView_Camera_V5.8.61_Release_Note.pdf",
     "is_beta": false,
@@ -32347,7 +32347,7 @@
     "supported_models": [
       "IDS-2CD7046G0-EP-IHSY"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: IDS-2CD7046G0-EP-IHSY",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CDeepinView_Camera_V5.8.61_Release_Note.pdf",
     "is_beta": false,
@@ -32364,7 +32364,7 @@
     "supported_models": [
       "IDS-2CD7046G0-P-AP"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: IDS-2CD7046G0-P-AP",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CDeepinView_Camera_V5.8.61_Release_Note.pdf",
     "is_beta": false,
@@ -32381,7 +32381,7 @@
     "supported_models": [
       "IDS-2CD7086G0--AP-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: IDS-2CD7086G0--AP-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CDeepinView_Camera_V5.8.61_Release_Note.pdf",
     "is_beta": false,
@@ -32398,7 +32398,7 @@
     "supported_models": [
       "IDS-2CD7146G0-IZ-H-S-Y--D-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: IDS-2CD7146G0-IZ-H-S-Y--D-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CDeepinView_Camera_V5.8.61_Release_Note.pdf",
     "is_beta": false,
@@ -32415,7 +32415,7 @@
     "supported_models": [
       "IDS-2CD7186G0-IZ-H-S-Y--D-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: IDS-2CD7186G0-IZ-H-S-Y--D-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CDeepinView_Camera_V5.8.61_Release_Note.pdf",
     "is_beta": false,
@@ -32432,7 +32432,7 @@
     "supported_models": [
       "IDS-2CD7526G0-IZHS-Y--R-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: IDS-2CD7526G0-IZHS-Y--R-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CDeepinView_Camera_V5.8.61_Release_Note.pdf",
     "is_beta": false,
@@ -32449,7 +32449,7 @@
     "supported_models": [
       "IDS-2CD7546G0-IZHS-Y--R-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: IDS-2CD7546G0-IZHS-Y--R-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202510/releasenote%5CDeepinView_Camera_V5.8.61_Release_Note.pdf",
     "is_beta": false,
@@ -32466,7 +32466,7 @@
     "supported_models": [
       "IDS-2CD7547G0-XZHS-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: IDS-2CD7547G0-XZHS-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CDeepinView_Camera_V5.8.61_Release_Note.pdf",
     "is_beta": false,
@@ -32483,7 +32483,7 @@
     "supported_models": [
       "IDS-2CD7547G0-P-XZHS-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: IDS-2CD7547G0-P-XZHS-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CDeepinView_Camera_V5.8.61_Release_Note.pdf",
     "is_beta": false,
@@ -32500,7 +32500,7 @@
     "supported_models": [
       "IDS-2CD7586G0-IZHS-Y--R-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: IDS-2CD7586G0-IZHS-Y--R-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CDeepinView_Camera_V5.8.61_Release_Note.pdf",
     "is_beta": false,
@@ -32517,7 +32517,7 @@
     "supported_models": [
       "IDS-2CD7587G0-XZHS-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: IDS-2CD7587G0-XZHS-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CDeepinView_Camera_V5.8.61_Release_Note.pdf",
     "is_beta": false,
@@ -32534,7 +32534,7 @@
     "supported_models": [
       "IDS-2CD7A26G0-IZHS-Y--R-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: IDS-2CD7A26G0-IZHS-Y--R-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CDeepinView_Camera_V5.8.61_Release_Note.pdf",
     "is_beta": false,
@@ -32551,7 +32551,7 @@
     "supported_models": [
       "IDS-2CD7A26G0-P-IZHS-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: IDS-2CD7A26G0-P-IZHS-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CDeepinView_Camera_V5.8.61_Release_Note.pdf",
     "is_beta": false,
@@ -32568,7 +32568,7 @@
     "supported_models": [
       "IDS-2CD7A46G0-IZHS-Y--R-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: IDS-2CD7A46G0-IZHS-Y--R-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CDeepinView_Camera_V5.8.61_Release_Note.pdf",
     "is_beta": false,
@@ -32585,7 +32585,7 @@
     "supported_models": [
       "IDS-2CD7A46G0-P-IZHS-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: IDS-2CD7A46G0-P-IZHS-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CDeepinView_Camera_V5.8.61_Release_Note.pdf",
     "is_beta": false,
@@ -32602,7 +32602,7 @@
     "supported_models": [
       "IDS-2CD7A46G0-S-IZHSY"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: IDS-2CD7A46G0-S-IZHSY",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CDeepinView_Camera_V5.8.61_Release_Note.pdf",
     "is_beta": false,
@@ -32619,7 +32619,7 @@
     "supported_models": [
       "IDS-2CD7A47G0-XZHS-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: IDS-2CD7A47G0-XZHS-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CDeepinView_Camera_V5.8.61_Release_Note.pdf",
     "is_beta": false,
@@ -32636,7 +32636,7 @@
     "supported_models": [
       "IDS-2CD7A47G0-P-XZHS-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: IDS-2CD7A47G0-P-XZHS-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CDeepinView_Camera_V5.8.61_Release_Note.pdf",
     "is_beta": false,
@@ -32653,7 +32653,7 @@
     "supported_models": [
       "IDS-2CD7A86G0-IZHSY"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: IDS-2CD7A86G0-IZHSY",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CDeepinView_Camera_V5.8.61_Release_Note.pdf",
     "is_beta": false,
@@ -32670,7 +32670,7 @@
     "supported_models": [
       "IDS-2CD7A87G0-XZHS-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: IDS-2CD7A87G0-XZHS-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CDeepinView_Camera_V5.8.61_Release_Note.pdf",
     "is_beta": false,
@@ -32687,7 +32687,7 @@
     "supported_models": [
       "IDS-2CD8A46G0-SC-XZY"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: IDS-2CD8A46G0-SC-XZY",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CDeepinView_Camera_V5.8.61_Release_Note.pdf",
     "is_beta": false,
@@ -32704,7 +32704,7 @@
     "supported_models": [
       "IDS-2CD8A47G0-SC-ZY"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: IDS-2CD8A47G0-SC-ZY",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CDeepinView_Camera_V5.8.61_Release_Note.pdf",
     "is_beta": false,
@@ -32721,7 +32721,7 @@
     "supported_models": [
       "DS-2CD2346G3D-IZ2UY-S-L--RB-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD2346G3D-IZ2UY-S-L--RB-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.11_260326_Release_IPCE_D_H13.pdf",
     "is_beta": false,
@@ -32738,7 +32738,7 @@
     "supported_models": [
       "DS-2CD3046G3-IU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3046G3-IU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -32755,7 +32755,7 @@
     "supported_models": [
       "DS-2CD3046G3-IU-SL-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3046G3-IU-SL-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -32772,7 +32772,7 @@
     "supported_models": [
       "DS-2CD3046G3-LIU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3046G3-LIU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -32789,7 +32789,7 @@
     "supported_models": [
       "DS-2CD3046G3-LIU-Y--SL"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3046G3-LIU-Y--SL",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -32806,7 +32806,7 @@
     "supported_models": [
       "DS-2CD3047G3-LIU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3047G3-LIU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -32823,7 +32823,7 @@
     "supported_models": [
       "DS-2CD3047G3-LIU-Y--SL"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3047G3-LIU-Y--SL",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -32840,7 +32840,7 @@
     "supported_models": [
       "DS-2CD3066G3-IU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3066G3-IU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -32857,7 +32857,7 @@
     "supported_models": [
       "DS-2CD3066G3-IU-SL-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3066G3-IU-SL-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -32874,7 +32874,7 @@
     "supported_models": [
       "DS-2CD3066G3-LIU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3066G3-LIU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -32891,7 +32891,7 @@
     "supported_models": [
       "DS-2CD3066G3-LIU-Y--SL"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3066G3-LIU-Y--SL",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -32908,7 +32908,7 @@
     "supported_models": [
       "DS-2CD3067G3-LIU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3067G3-LIU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -32925,7 +32925,7 @@
     "supported_models": [
       "DS-2CD3067G3-LIU-Y--SL"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3067G3-LIU-Y--SL",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -32942,7 +32942,7 @@
     "supported_models": [
       "DS-2CD3086G3-IU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3086G3-IU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -32959,7 +32959,7 @@
     "supported_models": [
       "DS-2CD3086G3-IU-SL-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3086G3-IU-SL-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -32976,7 +32976,7 @@
     "supported_models": [
       "DS-2CD3086G3-LIU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3086G3-LIU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -32993,7 +32993,7 @@
     "supported_models": [
       "DS-2CD3086G3-LIU-Y--SL"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3086G3-LIU-Y--SL",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33010,7 +33010,7 @@
     "supported_models": [
       "DS-2CD3087G3-LIU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3087G3-LIU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33027,7 +33027,7 @@
     "supported_models": [
       "DS-2CD3087G3-LIU-Y--SL"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3087G3-LIU-Y--SL",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33044,7 +33044,7 @@
     "supported_models": [
       "DS-2CD3146G3-ISU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3146G3-ISU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33061,7 +33061,7 @@
     "supported_models": [
       "DS-2CD3146G3-LISU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3146G3-LISU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33078,7 +33078,7 @@
     "supported_models": [
       "DS-2CD3147G3-LISU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3147G3-LISU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33095,7 +33095,7 @@
     "supported_models": [
       "DS-2CD3166G3-ISU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3166G3-ISU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33112,7 +33112,7 @@
     "supported_models": [
       "DS-2CD3166G3-LISU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3166G3-LISU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33129,7 +33129,7 @@
     "supported_models": [
       "DS-2CD3167G3-LISU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3167G3-LISU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33146,7 +33146,7 @@
     "supported_models": [
       "DS-2CD3186G3-ISU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3186G3-ISU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33163,7 +33163,7 @@
     "supported_models": [
       "DS-2CD3186G3-LISU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3186G3-LISU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33180,7 +33180,7 @@
     "supported_models": [
       "DS-2CD3187G3-LISU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3187G3-LISU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33197,7 +33197,7 @@
     "supported_models": [
       "DS-2CD3343G2-X2-LIZSUY-SL"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3343G2-X2-LIZSUY-SL",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.11_260326_Release_IPCE_D_H13.pdf",
     "is_beta": false,
@@ -33214,7 +33214,7 @@
     "supported_models": [
       "DS-2CD3346G3-ISU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3346G3-ISU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33231,7 +33231,7 @@
     "supported_models": [
       "DS-2CD3346G3-ISU-SL-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3346G3-ISU-SL-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33248,7 +33248,7 @@
     "supported_models": [
       "DS-2CD3346G3-LISU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3346G3-LISU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33265,7 +33265,7 @@
     "supported_models": [
       "DS-2CD3346G3-LISU-SL-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3346G3-LISU-SL-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33282,7 +33282,7 @@
     "supported_models": [
       "DS-2CD3347G3-LISU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3347G3-LISU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33299,7 +33299,7 @@
     "supported_models": [
       "DS-2CD3347G3-LISU-SL-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3347G3-LISU-SL-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33316,7 +33316,7 @@
     "supported_models": [
       "DS-2CD3366G3-ISU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3366G3-ISU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33333,7 +33333,7 @@
     "supported_models": [
       "DS-2CD3366G3-ISU-SL-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3366G3-ISU-SL-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33350,7 +33350,7 @@
     "supported_models": [
       "DS-2CD3366G3-LISU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3366G3-LISU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33367,7 +33367,7 @@
     "supported_models": [
       "DS-2CD3366G3-LISU-SL-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3366G3-LISU-SL-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33384,7 +33384,7 @@
     "supported_models": [
       "DS-2CD3367G3-LISU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3367G3-LISU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33401,7 +33401,7 @@
     "supported_models": [
       "DS-2CD3367G3-LISU-SL-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3367G3-LISU-SL-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33418,7 +33418,7 @@
     "supported_models": [
       "DS-2CD3386G3-ISU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3386G3-ISU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33435,7 +33435,7 @@
     "supported_models": [
       "DS-2CD3386G3-ISU-SL-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3386G3-ISU-SL-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33452,7 +33452,7 @@
     "supported_models": [
       "DS-2CD3386G3-LISU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3386G3-LISU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33469,7 +33469,7 @@
     "supported_models": [
       "DS-2CD3386G3-LISU-SL-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3386G3-LISU-SL-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33486,7 +33486,7 @@
     "supported_models": [
       "DS-2CD3387G3-LISU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3387G3-LISU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33503,7 +33503,7 @@
     "supported_models": [
       "DS-2CD3387G3-LISU-SL-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3387G3-LISU-SL-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33520,7 +33520,7 @@
     "supported_models": [
       "DS-2CD3546G3-IS-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3546G3-IS-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33537,7 +33537,7 @@
     "supported_models": [
       "DS-2CD3566G3-IS-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3566G3-IS-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33554,7 +33554,7 @@
     "supported_models": [
       "DS-2CD3586G3-IS-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3586G3-IS-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33571,7 +33571,7 @@
     "supported_models": [
       "DS-2CD3646G3-IZSU-SL-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3646G3-IZSU-SL-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33588,7 +33588,7 @@
     "supported_models": [
       "DS-2CD3646G3-LIZSU-Y--SL"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3646G3-LIZSU-Y--SL",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33605,7 +33605,7 @@
     "supported_models": [
       "DS-2CD3646G3T-IZSU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3646G3T-IZSU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33622,7 +33622,7 @@
     "supported_models": [
       "DS-2CD3646G3T-LIZSU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3646G3T-LIZSU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33639,7 +33639,7 @@
     "supported_models": [
       "DS-2CD3647G3-LIZSU-Y--SL"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3647G3-LIZSU-Y--SL",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33656,7 +33656,7 @@
     "supported_models": [
       "DS-2CD3647G3T-LIZSU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3647G3T-LIZSU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33673,7 +33673,7 @@
     "supported_models": [
       "DS-2CD3666G3-IZSU-SL-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3666G3-IZSU-SL-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33690,7 +33690,7 @@
     "supported_models": [
       "DS-2CD3666G3-LIZSU-Y--SL"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3666G3-LIZSU-Y--SL",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33707,7 +33707,7 @@
     "supported_models": [
       "DS-2CD3666G3T-IZSU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3666G3T-IZSU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33724,7 +33724,7 @@
     "supported_models": [
       "DS-2CD3666G3T-LIZSU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3666G3T-LIZSU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33741,7 +33741,7 @@
     "supported_models": [
       "DS-2CD3667G3-LIZSU-Y--SL"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3667G3-LIZSU-Y--SL",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33758,7 +33758,7 @@
     "supported_models": [
       "DS-2CD3667G3T-LIZSU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3667G3T-LIZSU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33775,7 +33775,7 @@
     "supported_models": [
       "DS-2CD3686G3-IZSU-SL-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3686G3-IZSU-SL-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33792,7 +33792,7 @@
     "supported_models": [
       "DS-2CD3686G3-LIZSU-Y--SL"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3686G3-LIZSU-Y--SL",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33809,7 +33809,7 @@
     "supported_models": [
       "DS-2CD3686G3T-IZSU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3686G3T-IZSU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33826,7 +33826,7 @@
     "supported_models": [
       "DS-2CD3686G3T-LIZSU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3686G3T-LIZSU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33843,7 +33843,7 @@
     "supported_models": [
       "DS-2CD3687G3-LIZSU-Y--SL"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3687G3-LIZSU-Y--SL",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33860,7 +33860,7 @@
     "supported_models": [
       "DS-2CD3687G3T-LIZSU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3687G3T-LIZSU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33877,7 +33877,7 @@
     "supported_models": [
       "DS-2CD3746G3T-IZSU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3746G3T-IZSU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33894,7 +33894,7 @@
     "supported_models": [
       "DS-2CD3746G3T-LIZSU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3746G3T-LIZSU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33911,7 +33911,7 @@
     "supported_models": [
       "DS-2CD3747G3-LIZSUY-SL-PTRZ-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3747G3-LIZSUY-SL-PTRZ-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33928,7 +33928,7 @@
     "supported_models": [
       "DS-2CD3747G3T-LIZSU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3747G3T-LIZSU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33945,7 +33945,7 @@
     "supported_models": [
       "DS-2CD3747G3T-LIZSUY-SL-PTRZ-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3747G3T-LIZSUY-SL-PTRZ-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33962,7 +33962,7 @@
     "supported_models": [
       "DS-2CD3766G3T-IZSU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3766G3T-IZSU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33979,7 +33979,7 @@
     "supported_models": [
       "DS-2CD3766G3T-LIZSU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3766G3T-LIZSU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -33996,7 +33996,7 @@
     "supported_models": [
       "DS-2CD3767G3-LIZSUY-SL-PTRZ-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3767G3-LIZSUY-SL-PTRZ-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34013,7 +34013,7 @@
     "supported_models": [
       "DS-2CD3767G3T-LIZSU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3767G3T-LIZSU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34030,7 +34030,7 @@
     "supported_models": [
       "DS-2CD3767G3T-LIZSUY-SL-PTRZ-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3767G3T-LIZSUY-SL-PTRZ-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34047,7 +34047,7 @@
     "supported_models": [
       "DS-2CD3786G3T-IZSU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3786G3T-IZSU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34064,7 +34064,7 @@
     "supported_models": [
       "DS-2CD3786G3T-LIZSU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3786G3T-LIZSU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34081,7 +34081,7 @@
     "supported_models": [
       "DS-2CD3787G3-LIZSUY-SL-PTRZ-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3787G3-LIZSUY-SL-PTRZ-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34098,7 +34098,7 @@
     "supported_models": [
       "DS-2CD3787G3T-LIZSU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3787G3T-LIZSU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34115,7 +34115,7 @@
     "supported_models": [
       "DS-2CD3787G3T-LIZSUY-SL-PTRZ-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3787G3T-LIZSUY-SL-PTRZ-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34132,7 +34132,7 @@
     "supported_models": [
       "DS-2CD3H46G3-LIZSU-Y--SL"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3H46G3-LIZSU-Y--SL",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34149,7 +34149,7 @@
     "supported_models": [
       "DS-2CD3H47G3-LIZSUY-SL"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3H47G3-LIZSUY-SL",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34166,7 +34166,7 @@
     "supported_models": [
       "DS-2CD3H66G3-LIZSU-Y--SL"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3H66G3-LIZSU-Y--SL",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34183,7 +34183,7 @@
     "supported_models": [
       "DS-2CD3H67G3-LIZSUY-SL"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3H67G3-LIZSUY-SL",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34200,7 +34200,7 @@
     "supported_models": [
       "DS-2CD3H86G3-LIZSU-Y--SL"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3H86G3-LIZSU-Y--SL",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34217,7 +34217,7 @@
     "supported_models": [
       "DS-2CD3H87G3-LIZSUY-SL"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3H87G3-LIZSUY-SL",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34234,7 +34234,7 @@
     "supported_models": [
       "DS-2CD3T46G3-2ISU-4ISU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3T46G3-2ISU-4ISU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34251,7 +34251,7 @@
     "supported_models": [
       "DS-2CD3T46G3-ISU-SL-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3T46G3-ISU-SL-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34268,7 +34268,7 @@
     "supported_models": [
       "DS-2CD3T46G3-LISU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3T46G3-LISU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34285,7 +34285,7 @@
     "supported_models": [
       "DS-2CD3T46G3-LISU-SL-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3T46G3-LISU-SL-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34302,7 +34302,7 @@
     "supported_models": [
       "DS-2CD3T47G3-LISU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3T47G3-LISU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34319,7 +34319,7 @@
     "supported_models": [
       "DS-2CD3T47G3-LISU-SL-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3T47G3-LISU-SL-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34336,7 +34336,7 @@
     "supported_models": [
       "DS-2CD3T66G3-2ISU-4ISU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3T66G3-2ISU-4ISU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34353,7 +34353,7 @@
     "supported_models": [
       "DS-2CD3T66G3-ISU-SL-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3T66G3-ISU-SL-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34370,7 +34370,7 @@
     "supported_models": [
       "DS-2CD3T66G3-LISU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3T66G3-LISU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34387,7 +34387,7 @@
     "supported_models": [
       "DS-2CD3T66G3-LISU-SL-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3T66G3-LISU-SL-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34404,7 +34404,7 @@
     "supported_models": [
       "DS-2CD3T67G3-LISU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3T67G3-LISU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34421,7 +34421,7 @@
     "supported_models": [
       "DS-2CD3T67G3-LISU-SL-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3T67G3-LISU-SL-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34438,7 +34438,7 @@
     "supported_models": [
       "DS-2CD3T86G3-2ISU-4ISU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3T86G3-2ISU-4ISU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34455,7 +34455,7 @@
     "supported_models": [
       "DS-2CD3T86G3-ISU-SL-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3T86G3-ISU-SL-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34472,7 +34472,7 @@
     "supported_models": [
       "DS-2CD3T86G3-LISU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3T86G3-LISU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34489,7 +34489,7 @@
     "supported_models": [
       "DS-2CD3T86G3-LISU-SL-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3T86G3-LISU-SL-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34506,7 +34506,7 @@
     "supported_models": [
       "DS-2CD3T87G3-LISU-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3T87G3-LISU-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34523,7 +34523,7 @@
     "supported_models": [
       "DS-2CD3T87G3-LISU-SL-Y-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD3T87G3-LISU-SL-Y-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf",
     "is_beta": false,
@@ -34540,7 +34540,7 @@
     "supported_models": [
       "DS-2DE2A204IW-DE3-S6-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DE2A204IW-DE3-S6-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -34557,7 +34557,7 @@
     "supported_models": [
       "DS-2DE2A404IW-DE3-S6-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DE2A404IW-DE3-S6-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -34574,7 +34574,7 @@
     "supported_models": [
       "DS-2DE4A225IW-DE-S6-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DE4A225IW-DE-S6-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -34591,7 +34591,7 @@
     "supported_models": [
       "DS-2DE4A425IW-DE-S6-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DE4A425IW-DE-S6-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -34608,7 +34608,7 @@
     "supported_models": [
       "DS-2DE5225IW-AE-S6-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DE5225IW-AE-S6-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -34625,7 +34625,7 @@
     "supported_models": [
       "DS-2DE5232IW-AE-S6-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DE5232IW-AE-S6-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -34642,7 +34642,7 @@
     "supported_models": [
       "DS-2DE5232W-AE-S6-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DE5232W-AE-S6-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -34659,7 +34659,7 @@
     "supported_models": [
       "DS-2DE5425IW-AE-S6-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DE5425IW-AE-S6-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -34676,7 +34676,7 @@
     "supported_models": [
       "DS-2DF8C425MHS-DEL"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8C425MHS-DEL",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -34693,7 +34693,7 @@
     "supported_models": [
       "DS-2DF8C425MHS-DELW"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8C425MHS-DELW",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -34710,7 +34710,7 @@
     "supported_models": [
       "DS-2DF8C435MHS-DEL"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8C435MHS-DEL",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -34727,7 +34727,7 @@
     "supported_models": [
       "DS-2DF8C435MHS-DELW"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8C435MHS-DELW",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -34744,7 +34744,7 @@
     "supported_models": [
       "DS-2DP3D404IWG1-E-36"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DP3D404IWG1-E-36",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -34761,7 +34761,7 @@
     "supported_models": [
       "DS-2DP7D825IXG1-LEF-Y--432"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DP7D825IXG1-LEF-Y--432",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -34778,7 +34778,7 @@
     "supported_models": [
       "DS-2DP7D836IXG1-LEF-Y--432"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DP7D836IXG1-LEF-Y--432",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -34795,7 +34795,7 @@
     "supported_models": [
       "DS-2DP7D836IXG1-LEF-Y--432-IR-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DP7D836IXG1-LEF-Y--432-IR-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -34812,7 +34812,7 @@
     "supported_models": [
       "DS-2DT8C442MXG-ELWT"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DT8C442MXG-ELWT",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -34829,7 +34829,7 @@
     "supported_models": [
       "DS-2TD2537T-15-Q-C-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2TD2537T-15-Q-C-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CGeneral_Firmware_Update_Release_notes.pdf",
     "is_beta": false,
@@ -34846,7 +34846,7 @@
     "supported_models": [
       "DS-2DT8C842MXG-ELWT"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DT8C842MXG-ELWT",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -34863,7 +34863,7 @@
     "supported_models": [
       "DS-2DY3220IW-DE-S6-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DY3220IW-DE-S6-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -34880,7 +34880,7 @@
     "supported_models": [
       "DS-2DY3220IW-DE4-S6-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DY3220IW-DE4-S6-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -34897,7 +34897,7 @@
     "supported_models": [
       "DS-2DY3420IW-DE-S6-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DY3420IW-DE-S6-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -34914,7 +34914,7 @@
     "supported_models": [
       "DS-2DY3420IW-DE4-S6-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DY3420IW-DE4-S6-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -34931,7 +34931,7 @@
     "supported_models": [
       "DS-3WRM12C"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-3WRM12C",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -34948,7 +34948,7 @@
     "supported_models": [
       "DS-3WRM12C-2"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-3WRM12C-2",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -34965,7 +34965,7 @@
     "supported_models": [
       "DS-3WRM12C-3"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-3WRM12C-3",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -34977,99 +34977,14 @@
     "hardware_version": "UNKNOWN",
     "version": "5.8.1",
     "date": "2026-03-26",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.100_260325_S3000712063.zip",
-    "filename": "Firmware__V5.8.100_260325_S3000712063.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_260409_S3000714729.zip",
+    "filename": "Firmware__V5.8.11_260409_S3000714729.zip",
     "supported_models": [
       "UNKNOWN"
     ],
     "applied_to": "",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.1_260326_Release_Note.pdf",
-    "is_beta": false,
-    "source": "live"
-  },
-  "UNKNOWN_UNKNOWN_5.5.342": {
-    "device_id": 101550,
-    "model": "UNKNOWN",
-    "hardware_version": "UNKNOWN",
-    "version": "5.5.342",
-    "date": "2026-04-16",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.342_260416_S3000717610.zip",
-    "filename": "Firmware__V5.5.342_260416_S3000717610.zip",
-    "supported_models": [
-      "UNKNOWN"
-    ],
-    "applied_to": "",
-    "changes": "",
-    "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CGeneral_Firmware_Update_Release_notes.pdf",
-    "is_beta": false,
-    "source": "live"
-  },
-  "UNKNOWN_UNKNOWN_5.8.12": {
-    "device_id": 101550,
-    "model": "UNKNOWN",
-    "hardware_version": "UNKNOWN",
-    "version": "5.8.12",
-    "date": "2026-04-16",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.12_260416_S3000716519.zip",
-    "filename": "Firmware__V5.8.12_260416_S3000716519.zip",
-    "supported_models": [
-      "UNKNOWN"
-    ],
-    "applied_to": "",
-    "changes": "",
-    "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.12_260416_Release_IPCE_P_E11.pdf",
-    "is_beta": false,
-    "source": "live"
-  },
-  "UNKNOWN_UNKNOWN_5.9.5": {
-    "device_id": 101550,
-    "model": "UNKNOWN",
-    "hardware_version": "UNKNOWN",
-    "version": "5.9.5",
-    "date": "2026-04-16",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.5_260416_S3000716247.zip",
-    "filename": "Firmware__V5.9.5_260416_S3000716247.zip",
-    "supported_models": [
-      "UNKNOWN"
-    ],
-    "applied_to": "",
-    "changes": "",
-    "notes": "https://assets.hikvision.com/prd/normal/all/files/202507/releasenote%5CRelease_Note.pdf",
-    "is_beta": false,
-    "source": "live"
-  },
-  "UNKNOWN_UNKNOWN_5.8.23": {
-    "device_id": 101550,
-    "model": "UNKNOWN",
-    "hardware_version": "UNKNOWN",
-    "version": "5.8.23",
-    "date": "2026-04-03",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.23_260403_S3000712866.zip",
-    "filename": "Firmware__V5.8.23_260403_S3000712866.zip",
-    "supported_models": [
-      "UNKNOWN"
-    ],
-    "applied_to": "",
-    "changes": "",
-    "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.23_SP1_Release_Note-E9_E10.pdf",
-    "is_beta": false,
-    "source": "live"
-  },
-  "UNKNOWN_UNKNOWN_5.8.41": {
-    "device_id": 101550,
-    "model": "UNKNOWN",
-    "hardware_version": "UNKNOWN",
-    "version": "5.8.41",
-    "date": "2026-04-01",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.41_260401_S3000712617.zip",
-    "filename": "Firmware__V5.8.41_260401_S3000712617.zip",
-    "supported_models": [
-      "UNKNOWN"
-    ],
-    "applied_to": "",
-    "changes": "",
-    "notes": "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.41_SP1_Release_Note-G6.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -35084,7 +34999,7 @@
     "supported_models": [
       "DS-2CD2347G3P-LIS2UY-S-L--RB-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD2347G3P-LIS2UY-S-L--RB-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.100_260325_Release_Note.pdf",
     "is_beta": false,
@@ -35101,7 +35016,7 @@
     "supported_models": [
       "DS-2CD2367G3P-LIS2UY-S-L--RB-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD2367G3P-LIS2UY-S-L--RB-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.100_260325_Release_Note.pdf",
     "is_beta": false,
@@ -35118,7 +35033,7 @@
     "supported_models": [
       "DS-2CD2T47G3P-LIS2UY-S-L--RB-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD2T47G3P-LIS2UY-S-L--RB-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.100_260325_Release_Note.pdf",
     "is_beta": false,
@@ -35135,7 +35050,7 @@
     "supported_models": [
       "DS-2CD2T67G3P-LIS2UY-S-L--RB-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD2T67G3P-LIS2UY-S-L--RB-",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.100_260325_Release_Note.pdf",
     "is_beta": false,
@@ -35152,7 +35067,7 @@
     "supported_models": [
       "DS-2CD6045G0-SC-IZRS"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD6045G0-SC-IZRS",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -35169,7 +35084,7 @@
     "supported_models": [
       "DS-2CD6085G0-SC-IZRS"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD6085G0-SC-IZRS",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -35181,12 +35096,12 @@
     "hardware_version": "IPC_G0",
     "version": "5.8.1",
     "date": "2026-03-25",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.1_260325_S3000711852.zip",
-    "filename": "Firmware__V5.8.1_260325_S3000711852.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_260409_S3000714729.zip",
+    "filename": "Firmware__V5.8.11_260409_S3000714729.zip",
     "supported_models": [
       "DS-2CD6944G1-IHS-U-Y"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD6944G1-IHS-U-Y",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -35198,12 +35113,12 @@
     "hardware_version": "IPC_G0",
     "version": "5.8.1",
     "date": "2026-03-25",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.1_260325_S3000711852.zip",
-    "filename": "Firmware__V5.8.1_260325_S3000711852.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_260409_S3000714729.zip",
+    "filename": "Firmware__V5.8.11_260409_S3000714729.zip",
     "supported_models": [
       "DS-2CD6984G1-IHS-U-Y--NFC-"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2CD6984G1-IHS-U-Y--NFC-",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -35220,7 +35135,7 @@
     "supported_models": [
       "DS-2DF7C442IXG1-ELWYP"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF7C442IXG1-ELWYP",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -35237,7 +35152,7 @@
     "supported_models": [
       "DS-2DF7C842IXG1-ELWYP"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF7C842IXG1-ELWYP",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -35254,7 +35169,7 @@
     "supported_models": [
       "DS-2DF8C435MHG1-ELWYP"
     ],
-    "applied_to": "",
+    "applied_to": "Applied to: DS-2DF8C435MHG1-ELWYP",
     "changes": "",
     "notes": "",
     "is_beta": false,
@@ -35271,9 +35186,332 @@
     "supported_models": [
       "DS-2SE2C200MWG-E-12"
     ],
+    "applied_to": "Applied to: DS-2SE2C200MWG-E-12",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2TD2367-100-PY_UNKNOWN_5.5.98": {
+    "device_id": 101588,
+    "model": "DS-2TD2367-100-PY",
+    "hardware_version": "UNKNOWN",
+    "version": "5.5.98",
+    "date": "2026-05-12",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.98_260512_S3000723889.zip",
+    "filename": "Firmware__V5.5.98_260512_S3000723889.zip",
+    "supported_models": [
+      "DS-2TD2367-100-PY"
+    ],
+    "applied_to": "Applied to: DS-2TD2367-100-PY",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2TD2367-75-PY_UNKNOWN_5.5.98": {
+    "device_id": 101589,
+    "model": "DS-2TD2367-75-PY",
+    "hardware_version": "UNKNOWN",
+    "version": "5.5.98",
+    "date": "2026-05-12",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.98_260512_S3000723889.zip",
+    "filename": "Firmware__V5.5.98_260512_S3000723889.zip",
+    "supported_models": [
+      "DS-2TD2367-75-PY"
+    ],
+    "applied_to": "Applied to: DS-2TD2367-75-PY",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "UNKNOWN_UNKNOWN_1.2.8": {
+    "device_id": 101550,
+    "model": "UNKNOWN",
+    "hardware_version": "UNKNOWN",
+    "version": "1.2.8",
+    "date": "2026-05-09",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.2.8_260509_S3000723501.zip",
+    "filename": "Firmware__V1.2.8_260509_S3000723501.zip",
+    "supported_models": [
+      "UNKNOWN"
+    ],
     "applied_to": "",
     "changes": "",
     "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "UNKNOWN_UNKNOWN_5.7.11": {
+    "device_id": 101550,
+    "model": "UNKNOWN",
+    "hardware_version": "UNKNOWN",
+    "version": "5.7.11",
+    "date": "2026-05-06",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260506_S3000720327.zip",
+    "filename": "Firmware__V5.7.11_260506_S3000720327.zip",
+    "supported_models": [
+      "UNKNOWN"
+    ],
+    "applied_to": "",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2TD2568T-15-G0-T1Y_UNKNOWN_5.5.348": {
+    "device_id": 101590,
+    "model": "DS-2TD2568T-15-G0-T1Y",
+    "hardware_version": "UNKNOWN",
+    "version": "5.5.348",
+    "date": "2026-04-27",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.348_260427_S3000719140.zip",
+    "filename": "Firmware__V5.5.348_260427_S3000719140.zip",
+    "supported_models": [
+      "DS-2TD2568T-15-G0-T1Y"
+    ],
+    "applied_to": "Applied to: DS-2TD2568T-15-G0-T1Y",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CGeneral_Firmware_Update_Release_notes.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2TD2568T-5-G0-T1Y_UNKNOWN_5.5.348": {
+    "device_id": 101591,
+    "model": "DS-2TD2568T-5-G0-T1Y",
+    "hardware_version": "UNKNOWN",
+    "version": "5.5.348",
+    "date": "2026-04-27",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.348_260427_S3000719140.zip",
+    "filename": "Firmware__V5.5.348_260427_S3000719140.zip",
+    "supported_models": [
+      "DS-2TD2568T-5-G0-T1Y"
+    ],
+    "applied_to": "Applied to: DS-2TD2568T-5-G0-T1Y",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CGeneral_Firmware_Update_Release_notes.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "UNKNOWN_UNKNOWN_5.5.348": {
+    "device_id": 101550,
+    "model": "UNKNOWN",
+    "hardware_version": "UNKNOWN",
+    "version": "5.5.348",
+    "date": "2026-04-27",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.348_260427_S3000719140.zip",
+    "filename": "Firmware__V5.5.348_260427_S3000719140.zip",
+    "supported_models": [
+      "UNKNOWN"
+    ],
+    "applied_to": "",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CGeneral_Firmware_Update_Release_notes.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2TD2528T-10-Q-C-_UNKNOWN_5.5.338": {
+    "device_id": 101592,
+    "model": "DS-2TD2528T-10-Q-C-",
+    "hardware_version": "UNKNOWN",
+    "version": "5.5.338",
+    "date": "2026-04-13",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.338_260413_S3000716448.zip",
+    "filename": "Firmware__V5.5.338_260413_S3000716448.zip",
+    "supported_models": [
+      "DS-2TD2528T-10-Q-C-"
+    ],
+    "applied_to": "Applied to: DS-2TD2528T-10-Q-C-",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CGeneral_Firmware_Update_Release_notes.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2TD2528T-3-Q-C-_UNKNOWN_5.5.338": {
+    "device_id": 101593,
+    "model": "DS-2TD2528T-3-Q-C-",
+    "hardware_version": "UNKNOWN",
+    "version": "5.5.338",
+    "date": "2026-04-13",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.338_260413_S3000716448.zip",
+    "filename": "Firmware__V5.5.338_260413_S3000716448.zip",
+    "supported_models": [
+      "DS-2TD2528T-3-Q-C-"
+    ],
+    "applied_to": "Applied to: DS-2TD2528T-3-Q-C-",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CGeneral_Firmware_Update_Release_notes.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2TD2528T-7-Q-C-_UNKNOWN_5.5.338": {
+    "device_id": 101594,
+    "model": "DS-2TD2528T-7-Q-C-",
+    "hardware_version": "UNKNOWN",
+    "version": "5.5.338",
+    "date": "2026-04-13",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.338_260413_S3000716448.zip",
+    "filename": "Firmware__V5.5.338_260413_S3000716448.zip",
+    "supported_models": [
+      "DS-2TD2528T-7-Q-C-"
+    ],
+    "applied_to": "Applied to: DS-2TD2528T-7-Q-C-",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CGeneral_Firmware_Update_Release_notes.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2TD2537T-10-Q-C-_UNKNOWN_5.5.338": {
+    "device_id": 101595,
+    "model": "DS-2TD2537T-10-Q-C-",
+    "hardware_version": "UNKNOWN",
+    "version": "5.5.338",
+    "date": "2026-04-13",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.338_260413_S3000716448.zip",
+    "filename": "Firmware__V5.5.338_260413_S3000716448.zip",
+    "supported_models": [
+      "DS-2TD2537T-10-Q-C-"
+    ],
+    "applied_to": "Applied to: DS-2TD2537T-10-Q-C-",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CGeneral_Firmware_Update_Release_notes.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2TD2537T-4-Q-C-_UNKNOWN_5.5.338": {
+    "device_id": 101596,
+    "model": "DS-2TD2537T-4-Q-C-",
+    "hardware_version": "UNKNOWN",
+    "version": "5.5.338",
+    "date": "2026-04-13",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.338_260413_S3000716448.zip",
+    "filename": "Firmware__V5.5.338_260413_S3000716448.zip",
+    "supported_models": [
+      "DS-2TD2537T-4-Q-C-"
+    ],
+    "applied_to": "Applied to: DS-2TD2537T-4-Q-C-",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CGeneral_Firmware_Update_Release_notes.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2TD2608-1-QA-FP_UNKNOWN_5.5.338": {
+    "device_id": 101597,
+    "model": "DS-2TD2608-1-QA-FP",
+    "hardware_version": "UNKNOWN",
+    "version": "5.5.338",
+    "date": "2026-04-13",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.338_260413_S3000716448.zip",
+    "filename": "Firmware__V5.5.338_260413_S3000716448.zip",
+    "supported_models": [
+      "DS-2TD2608-1-QA-FP"
+    ],
+    "applied_to": "Applied to: DS-2TD2608-1-QA-FP",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CGeneral_Firmware_Update_Release_notes.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2TD2608-2-QA-FP_UNKNOWN_5.5.338": {
+    "device_id": 101598,
+    "model": "DS-2TD2608-2-QA-FP",
+    "hardware_version": "UNKNOWN",
+    "version": "5.5.338",
+    "date": "2026-04-13",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.338_260413_S3000716448.zip",
+    "filename": "Firmware__V5.5.338_260413_S3000716448.zip",
+    "supported_models": [
+      "DS-2TD2608-2-QA-FP"
+    ],
+    "applied_to": "Applied to: DS-2TD2608-2-QA-FP",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CGeneral_Firmware_Update_Release_notes.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "UNKNOWN_UNKNOWN_5.5.61": {
+    "device_id": 101550,
+    "model": "UNKNOWN",
+    "hardware_version": "UNKNOWN",
+    "version": "5.5.61",
+    "date": "2026-04-13",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.61_260413_S3000715287.zip",
+    "filename": "Firmware__V5.5.61_260413_S3000715287.zip",
+    "supported_models": [
+      "UNKNOWN"
+    ],
+    "applied_to": "",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CGeneral_Firmware_Update_Release_notes.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "UNKNOWN_UNKNOWN_5.8.11": {
+    "device_id": 101550,
+    "model": "UNKNOWN",
+    "hardware_version": "UNKNOWN",
+    "version": "5.8.11",
+    "date": "2026-04-09",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_260409_S3000714729.zip",
+    "filename": "Firmware__V5.8.11_260409_S3000714729.zip",
+    "supported_models": [
+      "UNKNOWN"
+    ],
+    "applied_to": "",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.11_260409Release_IPDE_E9.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "UNKNOWN_UNKNOWN_5.5.506": {
+    "device_id": 101550,
+    "model": "UNKNOWN",
+    "hardware_version": "UNKNOWN",
+    "version": "5.5.506",
+    "date": "2026-04-01",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.506_260401_S3000716059.zip",
+    "filename": "Firmware__V5.5.506_260401_S3000716059.zip",
+    "supported_models": [
+      "UNKNOWN"
+    ],
+    "applied_to": "",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CThermal_TandemVu_Series_V5.5.506_Release_note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "UNKNOWN_UNKNOWN_5.9.14": {
+    "device_id": 101550,
+    "model": "UNKNOWN",
+    "hardware_version": "UNKNOWN",
+    "version": "5.9.14",
+    "date": "2026-04-01",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.14_260401_S3000712573.zip",
+    "filename": "Firmware__V5.9.14_260401_S3000712573.zip",
+    "supported_models": [
+      "UNKNOWN"
+    ],
+    "applied_to": "",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD2026G2-I-U-_IPC_G0_5.5.820": {
+    "device_id": 101599,
+    "model": "DS-2CD2026G2-I-U-",
+    "hardware_version": "IPC_G0",
+    "version": "5.5.820",
+    "date": "2026-03-27",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.0_260327_S3000711576.zip",
+    "filename": "Firmware__V5.7.0_260327_S3000711576.zip",
+    "supported_models": [
+      "DS-2CD2026G2-I-U-"
+    ],
+    "applied_to": "Applied to: DS-2CD2026G2-I-U-",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CNetwork_Camera-V5.5.820_Release_Note-G3.pdf",
     "is_beta": false,
     "source": "live"
   }
