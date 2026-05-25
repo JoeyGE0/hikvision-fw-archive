@@ -29,9 +29,11 @@ from common import (
     extract_release_notes_url,
     format_date,
     get_device_id,
+    HIKVISION_MODEL_PATTERN,
     is_beta_firmware,
     load_json,
     normalize_model_name,
+    normalize_product_model,
     parse_version,
     save_json,
 )
@@ -123,8 +125,8 @@ class HikvisionScraper:
         
     def extract_model(self, text: str) -> Optional[str]:
         """Extract model from text."""
-        match = re.search(r'(DS-[0-9A-Z-]+|AE-[0-9A-Z-]+|IDS-[0-9A-Z-]+)', text, re.IGNORECASE)
-        return match.group(1).upper() if match else None
+        match = re.search(HIKVISION_MODEL_PATTERN, text, re.IGNORECASE)
+        return normalize_product_model(match.group(1)) if match else None
     
     def extract_version(self, text: str) -> Optional[str]:
         """Extract version from text."""
@@ -133,17 +135,89 @@ class HikvisionScraper:
     
     def extract_hardware_version(self, text: str, model: str) -> str:
         """Extract hardware version."""
+        model = (model or '').upper()
         # Look for IPC_, NVR_, etc.
         hw_match = re.search(r'(IPC_[A-Z0-9]+|NVR_[A-Z0-9]+|DVR_[A-Z0-9]+)', text, re.IGNORECASE)
         if hw_match:
             return hw_match.group(1).upper()
-        
-        # Default based on model
-        if 'DS-2CD' in model or 'DS-2DE' in model:
+
+        # Default based on model family
+        ipc_prefixes = (
+            'DS-2CD', 'DS-2DE', 'DS-2DF', 'DS-2DT', 'IDS-2CD', 'IDS-2DE',
+        )
+        if any(model.startswith(p) or p in model for p in ipc_prefixes):
             return 'IPC_G0'
-        elif 'DS-76' in model or 'DS-77' in model:
+        if model.startswith('HM-') or model.startswith('THC-') or 'DS-2TD' in model:
+            return 'THERMAL_G0'
+        if model.startswith('DVR-') or 'DS-72' in model:
+            return 'DVR_G0'
+        if model.startswith('NVR-') or model.startswith('DS-76') or model.startswith('DS-77'):
             return 'NVR_G0'
         return 'UNKNOWN'
+
+    def _build_panel_model_map(self, html: str) -> Dict[str, str]:
+        """Map #firmware-collapse-N -> primary model from the panel header link."""
+        panel_models: Dict[str, str] = {}
+        for match in re.finditer(
+            r'data-target="(#firmware-collapse-\d+)"[^>]*>.*?<a class="link"[^>]*>([^<]+)</a>',
+            html,
+            re.DOTALL | re.I,
+        ):
+            panel_id = match.group(1)
+            model = normalize_product_model(match.group(2))
+            if model:
+                panel_models[panel_id] = model
+        return panel_models
+
+    @staticmethod
+    def _parse_panel_applied_models(chunk: str) -> List[str]:
+        """Parse <li class="sub-item"> model codes under Applied to: sections."""
+        models: List[str] = []
+        seen: set = set()
+        for match in re.finditer(r'<li class="sub-item">([^<]+)', chunk, re.I):
+            model = normalize_product_model(match.group(1))
+            if model and model not in seen:
+                seen.add(model)
+                models.append(model)
+        return models
+
+    def _log_unknown_catalog_entry(self, entry: Dict, reason: str) -> None:
+        logger.warning(
+            '    ⚠ UNKNOWN model (%s) v%s | label=%r | panel=%s | applied=%s',
+            reason,
+            entry.get('version', ''),
+            (entry.get('label') or '')[:120],
+            entry.get('panel_id', ''),
+            entry.get('applied_models', [])[:3],
+        )
+
+    def _merge_catalog_entries_by_url(self, entries: List[Dict]) -> List[Dict]:
+        """One row per firmware URL; prefer entries that resolved a real model."""
+        by_url: Dict[str, Dict] = {}
+        for entry in entries:
+            url = entry.get('url', '')
+            if not url:
+                continue
+            existing = by_url.get(url)
+            if not existing:
+                by_url[url] = entry
+                continue
+            if existing.get('model') == 'UNKNOWN' and entry.get('model') != 'UNKNOWN':
+                merged = dict(entry)
+            elif entry.get('model') == 'UNKNOWN':
+                merged = dict(existing)
+            else:
+                merged = dict(existing)
+            applied = list(dict.fromkeys(
+                list(merged.get('applied_models') or [])
+                + list(entry.get('applied_models') or [])
+                + list(existing.get('applied_models') or [])
+            ))
+            merged['applied_models'] = applied
+            if merged.get('model') == 'UNKNOWN' and applied:
+                merged['model'] = applied[0]
+            by_url[url] = merged
+        return list(by_url.values())
 
     @staticmethod
     def _expand_priority_patterns(raw_patterns: List[str]) -> List[str]:
@@ -264,6 +338,25 @@ class HikvisionScraper:
         if not models and model and model != 'UNKNOWN':
             models = [model]
         return applied_to, models, model
+
+    def _applied_to_from_entry(self, entry: Dict, model: str) -> tuple:
+        applied_to, supported_models, resolved_model = self._metadata_from_catalog_label(
+            entry.get('label', ''), model
+        )
+        panel_models = list(entry.get('applied_models') or [])
+        if panel_models:
+            supported_models = list(dict.fromkeys(panel_models + list(supported_models)))
+            if not applied_to:
+                applied_to = (
+                    f'Applied to: {supported_models[0]}'
+                    if len(supported_models) == 1
+                    else 'Applied to: ' + ', '.join(supported_models[:8])
+                )
+        if resolved_model and resolved_model != 'UNKNOWN':
+            model = resolved_model
+        elif model == 'UNKNOWN' and supported_models:
+            model = supported_models[0]
+        return applied_to, supported_models, model
 
     @staticmethod
     def _canonical_firmware_key(model: str, hw_version: str, version: str) -> str:
@@ -800,29 +893,28 @@ class HikvisionScraper:
         logger.info('  → Parsing catalog from HTML...')
         t0 = time.time()
 
-        model_by_id: Dict[str, str] = {}
-        for match in re.finditer(r'data-target="(#firmware-collapse-\d+)"', html):
-            tid = match.group(1)
-            chunk = html[match.end():match.end() + 800]
-            model_match = re.search(
-                r'(DS-[0-9A-Z-]+|AE-[0-9A-Z-]+|IDS-[0-9A-Z-]+)',
-                chunk,
-                re.I,
-            )
-            if model_match:
-                model_by_id[tid] = normalize_model_name(model_match.group(1)).upper()
+        panel_models = self._build_panel_model_map(html)
 
         entries: List[Dict] = []
         parts = re.split(r'(firmware-collapse-\d+)', html)
         for i in range(1, len(parts), 2):
             panel_id = parts[i]
+            panel_key = f'#{panel_id}'
             chunk = parts[i + 1] if i + 1 < len(parts) else ''
-            model = model_by_id.get(f'#{panel_id}', 'UNKNOWN')
+            model = panel_models.get(panel_key, 'UNKNOWN')
             if model == 'UNKNOWN':
                 inferred = self.extract_model(chunk)
                 if inferred:
                     model = inferred
-            hw_version = self.extract_hardware_version(chunk, model)
+            applied_models = self._parse_panel_applied_models(chunk)
+            if model != 'UNKNOWN':
+                if model not in applied_models:
+                    applied_models.insert(0, model)
+            elif applied_models:
+                model = applied_models[0]
+            hw_version = self.extract_hardware_version(
+                f'{chunk} {" ".join(applied_models)}', model
+            )
 
             for title, url in re.findall(
                 r'data-title="([^"]*)".*?data-href="(https://assets\.hikvision\.com[^"]+\.(?:zip|dav|pak|bin))"',
@@ -847,6 +939,9 @@ class HikvisionScraper:
                 )
                 if pdf:
                     notes = pdf.group(1)
+                entry_applied = list(applied_models)
+                if entry_model != 'UNKNOWN' and entry_model not in entry_applied:
+                    entry_applied.insert(0, entry_model)
                 entries.append({
                     'model': entry_model,
                     'hardware_version': hw_version,
@@ -855,9 +950,12 @@ class HikvisionScraper:
                     'label': title,
                     'date': date_str,
                     'notes': notes,
+                    'panel_id': panel_key,
+                    'applied_models': entry_applied,
                 })
 
-        if len(entries) < 100:
+        raw_count = len(entries)
+        if raw_count == 0 or (raw_count < 100 and not panel_models):
             logger.warning('  Panel parse weak — using global data-href scan')
             entries = []
             for title, url in re.findall(
@@ -878,10 +976,23 @@ class HikvisionScraper:
                     'label': title,
                     'date': self._date_from_text(title) or self._date_from_text(url),
                     'notes': '',
+                    'panel_id': '',
+                    'applied_models': title_models,
                 })
 
+        raw_count = len(entries)
+        entries = self._merge_catalog_entries_by_url(entries)
+        unknown_count = sum(1 for e in entries if e.get('model') == 'UNKNOWN')
         entries.sort(key=lambda e: e.get('date') or '0000-00-00', reverse=True)
-        logger.info(f'  ✓ Parsed {len(entries)} firmware URL(s) in {time.time() - t0:.1f}s')
+        logger.info(
+            f'  ✓ Parsed {len(entries)} unique firmware URL(s) in {time.time() - t0:.1f}s '
+            f'({raw_count} raw rows, {unknown_count} unresolved models)'
+        )
+        if unknown_count:
+            logger.warning(
+                f'  ⚠ {unknown_count} catalog URL(s) have no product model — '
+                f'they will be skipped for download'
+            )
         return entries
 
     def download_firmware_http(self, url: str, filename: str) -> Path:
@@ -952,6 +1063,10 @@ class HikvisionScraper:
 
             if not version:
                 continue
+            if model == 'UNKNOWN':
+                self._log_unknown_catalog_entry(entry, 'unresolved product code')
+                continue
+
             firmware_key = f"{model}_{hw_version}_{version}"
             filename = url.split('/')[-1].split('?')[0]
 
@@ -962,11 +1077,7 @@ class HikvisionScraper:
                         f'    ⊘ Skipping existing: {model} {hw_version} v{version} '
                         f'({skipped_existing_count} skipped)'
                     )
-                applied_to, supported_models, resolved_model = self._metadata_from_catalog_label(
-                    entry.get('label', ''), model
-                )
-                if resolved_model and resolved_model != 'UNKNOWN':
-                    model = resolved_model
+                applied_to, supported_models, model = self._applied_to_from_entry(entry, model)
                 if hw_version == 'UNKNOWN' and model != 'UNKNOWN':
                     hw_version = self.extract_hardware_version(
                         f'{applied_to} {entry.get("label", "")}', model
@@ -1013,11 +1124,7 @@ class HikvisionScraper:
                     self.errors.append(f'Download failed {model} v{version}: {err}')
                     continue
 
-            applied_to, supported_models, resolved_model = self._metadata_from_catalog_label(
-                entry.get('label', ''), model
-            )
-            if resolved_model and resolved_model != 'UNKNOWN':
-                model = resolved_model
+            applied_to, supported_models, model = self._applied_to_from_entry(entry, model)
             if hw_version == 'UNKNOWN' and model != 'UNKNOWN':
                 hw_version = self.extract_hardware_version(
                     f'{applied_to} {entry.get("label", "")}', model
@@ -1823,8 +1930,13 @@ class HikvisionScraper:
         model = fw_data.get('model', '')
         hw_version = fw_data.get('hardware_version', '')
         version = fw_data.get('version', '')
-        
-        if not all([model, version]):
+
+        if not version:
+            return
+        if not model or str(model).upper() == 'UNKNOWN':
+            logger.warning(
+                f'  ⊘ Refusing to save firmware with UNKNOWN model v{version}'
+            )
             return
         
         local_file_path = fw_data.get('local_file_path', '')

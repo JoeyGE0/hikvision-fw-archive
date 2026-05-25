@@ -167,12 +167,27 @@ def extract_applied_to(text: str) -> str:
     return ''
 
 
+# Product codes on the Hikvision firmware catalog (panel headers + applied-to lists).
+HIKVISION_MODEL_PATTERN = (
+    r'(DS-[0-9A-Z./()-]+|AE-[0-9A-Z./()-]+|IDS-[0-9A-Z./()-]+|HM-[0-9A-Z./()-]+|'
+    r'THC-[0-9A-Z./()-]+|DVR-[0-9A-Z./()-]+|NVR-[0-9A-Z./()-]+|IPC-[0-9A-Z./()-]+|'
+    r'PTZ-[0-9A-Z./()-]+|IKS-[0-9A-Z./()-]+|ISD-[0-9A-Z./()-]+|HI-[0-9A-Z./()-]+|'
+    r'HL-[0-9A-Z./()-]+|VI-[0-9A-Z./()-]+|IK-[0-9A-Z./()-]+|RSC-[0-9A-Z./()-]+|'
+    r'TLD-[0-9A-Z./()-]+|IVMS-[0-9A-Z./()-]+)'
+)
+
+
+def normalize_product_model(text: str) -> str:
+    """Normalize a catalog product code from a panel link or applied-to item."""
+    return ' '.join((text or '').split()).upper()
+
+
 def extract_models(text: str) -> List[str]:
     """Extract all Hikvision model numbers from text.
     
     Looks for patterns like:
     - DS-2CD2047G2-LU/SL(2.8mm)(C)
-    - DS-2CD, DS-2DE, DS-76, DS-77, AE-, IDS-
+    - HM-TD1018-1/QR, THC-B120, DVR-108G-M1
     - Model variants separated by /, |, or commas
     
     Returns list of normalized model names.
@@ -180,9 +195,7 @@ def extract_models(text: str) -> List[str]:
     if not text:
         return []
     
-    # Pattern to match Hikvision model numbers
-    # Matches: DS-2CD..., DS-2DE..., DS-76..., DS-77..., AE-..., IDS-...
-    model_pattern = r'(DS-[0-9A-Z-]+|AE-[0-9A-Z-]+|IDS-[0-9A-Z-]+)'
+    model_pattern = HIKVISION_MODEL_PATTERN
     
     matches = re.findall(model_pattern, text, re.IGNORECASE)
     

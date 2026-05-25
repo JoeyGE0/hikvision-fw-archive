@@ -12,6 +12,36 @@ from main import HikvisionScraper, MAX_FIRMWARES_TO_DOWNLOAD
 
 
 class TestMetadataAndPriority(unittest.TestCase):
+    def test_parse_thermal_panel_header(self):
+        scraper = HikvisionScraper()
+        html = (
+            'data-target="#firmware-collapse-2277">'
+            '<a class="link" href="/en/products/thermal/hm-td1018/">HM-TD1018-1/QR</a>'
+            '</motion.div><motion.div class="main-content collapse" id="firmware-collapse-2277">'
+            '<motion.div class="sub-section"><motion.div class="applied-title">Applied to:</motion.div>'
+            '<ul class="sub-list"><li class="sub-item">HM-TD1018-1/QR </ul>'
+            '<a data-title="Firmware_V5.5.61_260413" '
+            'data-href="https://assets.hikvision.com/x/Firmware__V5.5.61_260413_S3000715287.zip"></a>'
+        )
+        entries = scraper.parse_catalog_entries(html)
+        self.assertEqual(len(entries), 1)
+        self.assertEqual(entries[0]['model'], 'HM-TD1018-1/QR')
+        self.assertEqual(entries[0]['hardware_version'], 'THERMAL_G0')
+        self.assertIn('HM-TD1018-1/QR', entries[0]['applied_models'])
+
+    def test_parse_ds2df_gets_ipc_hw(self):
+        scraper = HikvisionScraper()
+        html = (
+            'data-target="#firmware-collapse-99">'
+            '<a class="link">DS-2DF4420-DX-S6-316L--C-</a>'
+            '</div><div id="firmware-collapse-99">'
+            '<a data-title="Firmware_V5.7.11" '
+            'data-href="https://assets.hikvision.com/x/fw.zip"></a>'
+        )
+        entries = scraper.parse_catalog_entries(html)
+        self.assertEqual(entries[0]['model'], 'DS-2DF4420-DX-S6-316L--C-')
+        self.assertEqual(entries[0]['hardware_version'], 'IPC_G0')
+
     def test_parse_title_fixes_unknown_model(self):
         scraper = HikvisionScraper()
         html = (
@@ -22,7 +52,19 @@ class TestMetadataAndPriority(unittest.TestCase):
         )
         entries = scraper.parse_catalog_entries(html)
         self.assertEqual(len(entries), 1)
-        self.assertEqual(entries[0]['model'], 'DS-2CD2387G3-LIS2UY')
+        self.assertEqual(entries[0]['model'], 'DS-2CD2387G3-LIS2UY/SL')
+
+    def test_process_firmware_rejects_unknown_model(self):
+        scraper = HikvisionScraper()
+        scraper.firmwares_live = {}
+        scraper.process_firmware({
+            'model': 'UNKNOWN',
+            'hardware_version': 'UNKNOWN',
+            'version': '5.5.61',
+            'local_file_path': '/tmp/x.zip',
+            'filename': 'x.zip',
+        })
+        self.assertEqual(len(scraper.firmwares_live), 0)
 
     def test_find_live_key_hw_mismatch(self):
         scraper = HikvisionScraper()

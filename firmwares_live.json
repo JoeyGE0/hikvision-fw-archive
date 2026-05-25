@@ -2552,23 +2552,6 @@
     "is_beta": false,
     "source": "live"
   },
-  "UNKNOWN_UNKNOWN_5.8.1": {
-    "device_id": 101550,
-    "model": "UNKNOWN",
-    "hardware_version": "UNKNOWN",
-    "version": "5.8.1",
-    "date": "2026-03-26",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_260409_S3000714729.zip",
-    "filename": "Firmware__V5.8.11_260409_S3000714729.zip",
-    "supported_models": [
-      "UNKNOWN"
-    ],
-    "applied_to": "",
-    "changes": "",
-    "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.1_260326_Release_Note.pdf",
-    "is_beta": false,
-    "source": "live"
-  },
   "DS-2CD6944G1-IHS-U-Y_IPC_G0_5.8.1": {
     "device_id": 101582,
     "model": "DS-2CD6944G1-IHS-U-Y",
@@ -2637,40 +2620,6 @@
     "is_beta": false,
     "source": "live"
   },
-  "UNKNOWN_UNKNOWN_1.2.8": {
-    "device_id": 101550,
-    "model": "UNKNOWN",
-    "hardware_version": "UNKNOWN",
-    "version": "1.2.8",
-    "date": "2026-05-09",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.2.8_260509_S3000723501.zip",
-    "filename": "Firmware__V1.2.8_260509_S3000723501.zip",
-    "supported_models": [
-      "UNKNOWN"
-    ],
-    "applied_to": "",
-    "changes": "",
-    "notes": "",
-    "is_beta": false,
-    "source": "live"
-  },
-  "UNKNOWN_UNKNOWN_5.7.11": {
-    "device_id": 101550,
-    "model": "UNKNOWN",
-    "hardware_version": "UNKNOWN",
-    "version": "5.7.11",
-    "date": "2026-05-06",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260506_S3000720327.zip",
-    "filename": "Firmware__V5.7.11_260506_S3000720327.zip",
-    "supported_models": [
-      "UNKNOWN"
-    ],
-    "applied_to": "",
-    "changes": "",
-    "notes": "",
-    "is_beta": false,
-    "source": "live"
-  },
   "DS-2TD2568T-15-G0-T1Y_UNKNOWN_5.5.348": {
     "device_id": 101590,
     "model": "DS-2TD2568T-15-G0-T1Y",
@@ -2700,23 +2649,6 @@
       "DS-2TD2568T-5-G0-T1Y"
     ],
     "applied_to": "Applied to: DS-2TD2568T-5-G0-T1Y",
-    "changes": "",
-    "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CGeneral_Firmware_Update_Release_notes.pdf",
-    "is_beta": false,
-    "source": "live"
-  },
-  "UNKNOWN_UNKNOWN_5.5.348": {
-    "device_id": 101550,
-    "model": "UNKNOWN",
-    "hardware_version": "UNKNOWN",
-    "version": "5.5.348",
-    "date": "2026-04-27",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.348_260427_S3000719140.zip",
-    "filename": "Firmware__V5.5.348_260427_S3000719140.zip",
-    "supported_models": [
-      "UNKNOWN"
-    ],
-    "applied_to": "",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CGeneral_Firmware_Update_Release_notes.pdf",
     "is_beta": false,
@@ -2838,74 +2770,6 @@
     "applied_to": "Applied to: DS-2TD2608-2-QA-FP",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CGeneral_Firmware_Update_Release_notes.pdf",
-    "is_beta": false,
-    "source": "live"
-  },
-  "UNKNOWN_UNKNOWN_5.5.61": {
-    "device_id": 101550,
-    "model": "UNKNOWN",
-    "hardware_version": "UNKNOWN",
-    "version": "5.5.61",
-    "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.61_260413_S3000715287.zip",
-    "filename": "Firmware__V5.5.61_260413_S3000715287.zip",
-    "supported_models": [
-      "UNKNOWN"
-    ],
-    "applied_to": "",
-    "changes": "",
-    "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CGeneral_Firmware_Update_Release_notes.pdf",
-    "is_beta": false,
-    "source": "live"
-  },
-  "UNKNOWN_UNKNOWN_5.8.11": {
-    "device_id": 101550,
-    "model": "UNKNOWN",
-    "hardware_version": "UNKNOWN",
-    "version": "5.8.11",
-    "date": "2026-04-09",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.11_260409_S3000714729.zip",
-    "filename": "Firmware__V5.8.11_260409_S3000714729.zip",
-    "supported_models": [
-      "UNKNOWN"
-    ],
-    "applied_to": "",
-    "changes": "",
-    "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.11_260409Release_IPDE_E9.pdf",
-    "is_beta": false,
-    "source": "live"
-  },
-  "UNKNOWN_UNKNOWN_5.5.506": {
-    "device_id": 101550,
-    "model": "UNKNOWN",
-    "hardware_version": "UNKNOWN",
-    "version": "5.5.506",
-    "date": "2026-04-01",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.506_260401_S3000716059.zip",
-    "filename": "Firmware__V5.5.506_260401_S3000716059.zip",
-    "supported_models": [
-      "UNKNOWN"
-    ],
-    "applied_to": "",
-    "changes": "",
-    "notes": "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CThermal_TandemVu_Series_V5.5.506_Release_note.pdf",
-    "is_beta": false,
-    "source": "live"
-  },
-  "UNKNOWN_UNKNOWN_5.9.14": {
-    "device_id": 101550,
-    "model": "UNKNOWN",
-    "hardware_version": "UNKNOWN",
-    "version": "5.9.14",
-    "date": "2026-04-01",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.14_260401_S3000712573.zip",
-    "filename": "Firmware__V5.9.14_260401_S3000712573.zip",
-    "supported_models": [
-      "UNKNOWN"
-    ],
-    "applied_to": "",
-    "changes": "",
-    "notes": "",
     "is_beta": false,
     "source": "live"
   },
