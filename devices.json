@@ -678,5 +678,229 @@
   "101662": {
     "model": "DS-2TD2608-2-QA-FP",
     "hardware_version": "THERMAL_G0"
+  },
+  "101663": {
+    "model": "DS-2CD23127G3P-LIS2UY/S(L)(RB)",
+    "hardware_version": "IPC_G0"
+  },
+  "101664": {
+    "model": "DS-2DF4420-DX(304)(E)",
+    "hardware_version": "IPC_G0"
+  },
+  "101665": {
+    "model": "DS-2CD1363G2P-LIUF/S(L)(RB)",
+    "hardware_version": "IPC_G0"
+  },
+  "101666": {
+    "model": "DS-2CFWQ3",
+    "hardware_version": "UNKNOWN"
+  },
+  "101667": {
+    "model": "DS-2DE2A204IWG1-E/W",
+    "hardware_version": "IPC_G0"
+  },
+  "101668": {
+    "model": "DS-2ST4C420MWG-E/14(PA)",
+    "hardware_version": "UNKNOWN"
+  },
+  "101669": {
+    "model": "DS-2XC6046G0-LIS(316L)",
+    "hardware_version": "UNKNOWN"
+  },
+  "101670": {
+    "model": "HM-TD3028T-2/Q(B)",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101671": {
+    "model": "IPC-B460HAD-LUF/S(L)(RB)",
+    "hardware_version": "UNKNOWN"
+  },
+  "101672": {
+    "model": "PTZ-N2204I-DE3",
+    "hardware_version": "UNKNOWN"
+  },
+  "101673": {
+    "model": "IDS-2CD7A45G0-IZ(H)S(Y)",
+    "hardware_version": "IPC_G0"
+  },
+  "101674": {
+    "model": "DS-2CD6B35G0-PLW",
+    "hardware_version": "IPC_G0"
+  },
+  "101675": {
+    "model": "DS-K1105EDB",
+    "hardware_version": "UNKNOWN"
+  },
+  "101676": {
+    "model": "DS-2DF4220-DX(S6/316L)",
+    "hardware_version": "IPC_G0"
+  },
+  "101677": {
+    "model": "DS-2TD1217-2/QA",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101678": {
+    "model": "HM-TD1018-1/QR",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101679": {
+    "model": "DS-2CD6D52G0-IH(S)",
+    "hardware_version": "IPC_G0"
+  },
+  "101680": {
+    "model": "DS-2DF6223-CX(T5/316L)",
+    "hardware_version": "IPC_G0"
+  },
+  "101681": {
+    "model": "DS-2TD2628-10/QA/GLT",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101682": {
+    "model": "DS-2TD4228-10/W",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101683": {
+    "model": "AE-DI5052-G40 PRO",
+    "hardware_version": "UNKNOWN"
+  },
+  "101684": {
+    "model": "DS-2DT5432MWG-T (PA)",
+    "hardware_version": "IPC_G0"
+  },
+  "101685": {
+    "model": "DS-2DY7236IX-A(T5)",
+    "hardware_version": "UNKNOWN"
+  },
+  "101686": {
+    "model": "PTZ-N2C200C-D/4G",
+    "hardware_version": "UNKNOWN"
+  },
+  "101687": {
+    "model": "DS-2DY5225IX-AE(T5)",
+    "hardware_version": "UNKNOWN"
+  },
+  "101688": {
+    "model": "DS-2DY7432IXG-XY",
+    "hardware_version": "UNKNOWN"
+  },
+  "101689": {
+    "model": "DS-2CD6D44G1-IZS",
+    "hardware_version": "IPC_G0"
+  },
+  "101690": {
+    "model": "DS-2SE7C432IWG-4G/14(F0)",
+    "hardware_version": "UNKNOWN"
+  },
+  "101691": {
+    "model": "DS-3E1506P-EI/M-4P1T1F",
+    "hardware_version": "UNKNOWN"
+  },
+  "101692": {
+    "model": "IDS-2CD70166G2-AP",
+    "hardware_version": "IPC_G0"
+  },
+  "101693": {
+    "model": "IDS-2CD7046G2/EP-IHSYR",
+    "hardware_version": "IPC_G0"
+  },
+  "101694": {
+    "model": "IDS-2CD8A87G0P/PW",
+    "hardware_version": "IPC_G0"
+  },
+  "101695": {
+    "model": "DS-2DE3A400BW-DE(T5)",
+    "hardware_version": "IPC_G0"
+  },
+  "101696": {
+    "model": "IDS-2CD7347G0-XS",
+    "hardware_version": "IPC_G0"
+  },
+  "101697": {
+    "model": "DS-2CFW02(/EU)",
+    "hardware_version": "UNKNOWN"
+  },
+  "101698": {
+    "model": "DS-2DF7C432MXG1-(W)R",
+    "hardware_version": "IPC_G0"
+  },
+  "101699": {
+    "model": "IKS-2042BH-PH/W",
+    "hardware_version": "UNKNOWN"
+  },
+  "101700": {
+    "model": "DS-2CD2D25G1-D/NF",
+    "hardware_version": "IPC_G0"
+  },
+  "101701": {
+    "model": "DS-2CD6425G2-C1",
+    "hardware_version": "IPC_G0"
+  },
+  "101702": {
+    "model": "DS-2DT5432MWG-T/4G (PA)",
+    "hardware_version": "IPC_G0"
+  },
+  "101703": {
+    "model": "IDS-2CD7046G0/H-AP",
+    "hardware_version": "IPC_G0"
+  },
+  "101704": {
+    "model": "DS-2CD1043G2-LIUF/SL",
+    "hardware_version": "IPC_G0"
+  },
+  "101705": {
+    "model": "HM-TX2840-10/G0/T1",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101706": {
+    "model": "IPC-B129HAA-LU(F)(/SL)(/SRB)",
+    "hardware_version": "UNKNOWN"
+  },
+  "101707": {
+    "model": "IPC-B160HA-LU",
+    "hardware_version": "UNKNOWN"
+  },
+  "101708": {
+    "model": "DS-2CD2046G3-IZ(2U)Y",
+    "hardware_version": "IPC_G0"
+  },
+  "101709": {
+    "model": "DS-2CD2087G3-LI(2U)Y",
+    "hardware_version": "IPC_G0"
+  },
+  "101710": {
+    "model": "DS-C80N-01HI",
+    "hardware_version": "UNKNOWN"
+  },
+  "101711": {
+    "model": "IDS-2CD5347G2/V-XS",
+    "hardware_version": "IPC_G0"
+  },
+  "101712": {
+    "model": "IDS-2CD8V446G0/X2-XZHS(Y)",
+    "hardware_version": "IPC_G0"
+  },
+  "101713": {
+    "model": "DS-2DE7A225IWG-EB/SL",
+    "hardware_version": "IPC_G0"
+  },
+  "101714": {
+    "model": "DS-2DE2A204IWG1-E",
+    "hardware_version": "IPC_G0"
+  },
+  "101715": {
+    "model": "DS-2CFWQ6-D",
+    "hardware_version": "UNKNOWN"
+  },
+  "101716": {
+    "model": "HM-TD1228T-2/G1/T3A",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101717": {
+    "model": "HM-TD2168-5/G0/T1Y",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101718": {
+    "model": "DS-2CFW06-P",
+    "hardware_version": "UNKNOWN"
   }
 }
