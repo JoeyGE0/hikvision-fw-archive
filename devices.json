@@ -339,170 +339,6 @@
     "model": "DS-2CD6984G0-IHS",
     "hardware_version": "IPC_G0"
   },
-  "101137": {
-    "model": "DS-2DF4220-DX-S6-316L-",
-    "hardware_version": "UNKNOWN"
-  },
-  "101138": {
-    "model": "DS-2DF4220-DX-S6-316L--C-",
-    "hardware_version": "UNKNOWN"
-  },
-  "101139": {
-    "model": "DS-2DF4420-DX-S6--C--304-",
-    "hardware_version": "UNKNOWN"
-  },
-  "101140": {
-    "model": "DS-2DF4420-DX-S6-316L--C-",
-    "hardware_version": "UNKNOWN"
-  },
-  "101141": {
-    "model": "DS-2DF4420WG-XEY",
-    "hardware_version": "UNKNOWN"
-  },
-  "101142": {
-    "model": "DS-2TD1217-2-QA",
-    "hardware_version": "UNKNOWN"
-  },
-  "101143": {
-    "model": "DS-2TD1217-3-QA",
-    "hardware_version": "UNKNOWN"
-  },
-  "101144": {
-    "model": "DS-2TD1217-6-QA",
-    "hardware_version": "UNKNOWN"
-  },
-  "101145": {
-    "model": "DS-2TD1228-2-QA",
-    "hardware_version": "UNKNOWN"
-  },
-  "101146": {
-    "model": "DS-2TD1228-3-QA",
-    "hardware_version": "UNKNOWN"
-  },
-  "101147": {
-    "model": "DS-2TD1228-7-QA",
-    "hardware_version": "UNKNOWN"
-  },
-  "101148": {
-    "model": "DS-2TD1228T-2-QA",
-    "hardware_version": "UNKNOWN"
-  },
-  "101149": {
-    "model": "DS-2TD1228T-2-QA-B-",
-    "hardware_version": "UNKNOWN"
-  },
-  "101150": {
-    "model": "DS-2TD1228T-3-QA",
-    "hardware_version": "UNKNOWN"
-  },
-  "101151": {
-    "model": "DS-2TD1228T-3-QA-B-",
-    "hardware_version": "UNKNOWN"
-  },
-  "101152": {
-    "model": "DS-2TD2137T-4-QY0",
-    "hardware_version": "UNKNOWN"
-  },
-  "101153": {
-    "model": "DS-2TD2137T-7-QY0",
-    "hardware_version": "UNKNOWN"
-  },
-  "101154": {
-    "model": "DS-2TD2138-10-QY",
-    "hardware_version": "UNKNOWN"
-  },
-  "101155": {
-    "model": "DS-2TD2138-13-QY",
-    "hardware_version": "UNKNOWN"
-  },
-  "101156": {
-    "model": "DS-2TD2138-15-QY",
-    "hardware_version": "UNKNOWN"
-  },
-  "101157": {
-    "model": "DS-2TD2138-25-QY",
-    "hardware_version": "UNKNOWN"
-  },
-  "101158": {
-    "model": "DS-2TD2138-35-QY",
-    "hardware_version": "UNKNOWN"
-  },
-  "101159": {
-    "model": "DS-2TD2138-4-QY",
-    "hardware_version": "UNKNOWN"
-  },
-  "101160": {
-    "model": "DS-2TD2138-7-QY",
-    "hardware_version": "UNKNOWN"
-  },
-  "101161": {
-    "model": "DS-2TD2608-1-QA",
-    "hardware_version": "UNKNOWN"
-  },
-  "101162": {
-    "model": "DS-2TD2608-2-QA",
-    "hardware_version": "UNKNOWN"
-  },
-  "101163": {
-    "model": "DS-2TD2617-10-QA",
-    "hardware_version": "UNKNOWN"
-  },
-  "101164": {
-    "model": "DS-2TD2617-3-QA",
-    "hardware_version": "UNKNOWN"
-  },
-  "101165": {
-    "model": "DS-2TD2617-6-QA",
-    "hardware_version": "UNKNOWN"
-  },
-  "101166": {
-    "model": "DS-2TD2628-10-QA",
-    "hardware_version": "UNKNOWN"
-  },
-  "101167": {
-    "model": "DS-2TD2628-3-QA",
-    "hardware_version": "UNKNOWN"
-  },
-  "101168": {
-    "model": "DS-2TD2628-7-QA",
-    "hardware_version": "UNKNOWN"
-  },
-  "101169": {
-    "model": "DS-2TD2628T-3-QA",
-    "hardware_version": "UNKNOWN"
-  },
-  "101170": {
-    "model": "DS-2TD2628T-7-QA",
-    "hardware_version": "UNKNOWN"
-  },
-  "101171": {
-    "model": "DS-2TD2637-10-QY",
-    "hardware_version": "UNKNOWN"
-  },
-  "101172": {
-    "model": "DS-2TD2637-25-QY",
-    "hardware_version": "UNKNOWN"
-  },
-  "101173": {
-    "model": "DS-2TD2637-35-QY-B-",
-    "hardware_version": "UNKNOWN"
-  },
-  "101174": {
-    "model": "DS-2TD2637-7-QY",
-    "hardware_version": "UNKNOWN"
-  },
-  "101175": {
-    "model": "DS-2TD2637T-10-QY",
-    "hardware_version": "UNKNOWN"
-  },
-  "101176": {
-    "model": "DS-2TD2637T-15-QY",
-    "hardware_version": "UNKNOWN"
-  },
-  "101177": {
-    "model": "DS-2TD2637T-7-QY",
-    "hardware_version": "UNKNOWN"
-  },
   "101178": {
     "model": "DS-2TX3742-10A-Q",
     "hardware_version": "UNKNOWN"
@@ -579,10 +415,6 @@
     "model": "DS-2CD3343G2-X2-LIZSUY-SL",
     "hardware_version": "IPC_G0"
   },
-  "101567": {
-    "model": "DS-2TD2537T-15-Q-C-",
-    "hardware_version": "UNKNOWN"
-  },
   "101582": {
     "model": "DS-2CD6944G1-IHS-U-Y",
     "hardware_version": "IPC_G0"
@@ -591,52 +423,260 @@
     "model": "DS-2CD6984G1-IHS-U-Y--NFC-",
     "hardware_version": "IPC_G0"
   },
-  "101588": {
-    "model": "DS-2TD2367-100-PY",
-    "hardware_version": "UNKNOWN"
-  },
-  "101589": {
-    "model": "DS-2TD2367-75-PY",
-    "hardware_version": "UNKNOWN"
-  },
-  "101590": {
-    "model": "DS-2TD2568T-15-G0-T1Y",
-    "hardware_version": "UNKNOWN"
-  },
-  "101591": {
-    "model": "DS-2TD2568T-5-G0-T1Y",
-    "hardware_version": "UNKNOWN"
-  },
-  "101592": {
-    "model": "DS-2TD2528T-10-Q-C-",
-    "hardware_version": "UNKNOWN"
-  },
-  "101593": {
-    "model": "DS-2TD2528T-3-Q-C-",
-    "hardware_version": "UNKNOWN"
-  },
-  "101594": {
-    "model": "DS-2TD2528T-7-Q-C-",
-    "hardware_version": "UNKNOWN"
-  },
-  "101595": {
-    "model": "DS-2TD2537T-10-Q-C-",
-    "hardware_version": "UNKNOWN"
-  },
-  "101596": {
-    "model": "DS-2TD2537T-4-Q-C-",
-    "hardware_version": "UNKNOWN"
-  },
-  "101597": {
-    "model": "DS-2TD2608-1-QA-FP",
-    "hardware_version": "UNKNOWN"
-  },
-  "101598": {
-    "model": "DS-2TD2608-2-QA-FP",
-    "hardware_version": "UNKNOWN"
-  },
   "101599": {
     "model": "DS-2CD2026G2-I-U-",
     "hardware_version": "IPC_G0"
+  },
+  "101600": {
+    "model": "DS-7232HGHI-M2/T-2K",
+    "hardware_version": "DVR_G0"
+  },
+  "101601": {
+    "model": "DS-2TD2367-100/PY",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101602": {
+    "model": "ISD-SMG318L",
+    "hardware_version": "UNKNOWN"
+  },
+  "101603": {
+    "model": "HM-TD63C8-100C4L/G0/T2Y",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101604": {
+    "model": "DS-3WR18X",
+    "hardware_version": "UNKNOWN"
+  },
+  "101605": {
+    "model": "DS-2TD2568T-15/G0/T1Y",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101606": {
+    "model": "DS-7104NI-S2/WX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101607": {
+    "model": "DS-K1T670MFWX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101608": {
+    "model": "HM-TD1228-2/G1/T3A",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101609": {
+    "model": "DS-2CD2647G3-LIZS2UY/S(L)(RB)",
+    "hardware_version": "IPC_G0"
+  },
+  "101610": {
+    "model": "DS-2DF4220-DX-S6-316L-",
+    "hardware_version": "IPC_G0"
+  },
+  "101611": {
+    "model": "DS-2DF4220-DX-S6-316L--C-",
+    "hardware_version": "IPC_G0"
+  },
+  "101612": {
+    "model": "DS-2DF4420-DX-S6--C--304-",
+    "hardware_version": "IPC_G0"
+  },
+  "101613": {
+    "model": "DS-2DF4420-DX-S6-316L--C-",
+    "hardware_version": "IPC_G0"
+  },
+  "101614": {
+    "model": "DS-2DF4420WG-XEY",
+    "hardware_version": "IPC_G0"
+  },
+  "101615": {
+    "model": "DS-2TD1217-2-QA",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101616": {
+    "model": "DS-2TD1217-3-QA",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101617": {
+    "model": "DS-2TD1217-6-QA",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101618": {
+    "model": "DS-2TD1228-2-QA",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101619": {
+    "model": "DS-2TD1228-3-QA",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101620": {
+    "model": "DS-2TD1228-7-QA",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101621": {
+    "model": "DS-2TD1228T-2-QA",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101622": {
+    "model": "DS-2TD1228T-2-QA-B-",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101623": {
+    "model": "DS-2TD1228T-3-QA",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101624": {
+    "model": "DS-2TD1228T-3-QA-B-",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101625": {
+    "model": "DS-2TD2137T-4-QY0",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101626": {
+    "model": "DS-2TD2137T-7-QY0",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101627": {
+    "model": "DS-2TD2138-10-QY",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101628": {
+    "model": "DS-2TD2138-13-QY",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101629": {
+    "model": "DS-2TD2138-15-QY",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101630": {
+    "model": "DS-2TD2138-25-QY",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101631": {
+    "model": "DS-2TD2138-35-QY",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101632": {
+    "model": "DS-2TD2138-4-QY",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101633": {
+    "model": "DS-2TD2138-7-QY",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101634": {
+    "model": "DS-2TD2608-1-QA",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101635": {
+    "model": "DS-2TD2608-2-QA",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101636": {
+    "model": "DS-2TD2617-10-QA",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101637": {
+    "model": "DS-2TD2617-3-QA",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101638": {
+    "model": "DS-2TD2617-6-QA",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101639": {
+    "model": "DS-2TD2628-10-QA",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101640": {
+    "model": "DS-2TD2628-3-QA",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101641": {
+    "model": "DS-2TD2628-7-QA",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101642": {
+    "model": "DS-2TD2628T-3-QA",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101643": {
+    "model": "DS-2TD2628T-7-QA",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101644": {
+    "model": "DS-2TD2637-10-QY",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101645": {
+    "model": "DS-2TD2637-25-QY",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101646": {
+    "model": "DS-2TD2637-35-QY-B-",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101647": {
+    "model": "DS-2TD2637-7-QY",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101648": {
+    "model": "DS-2TD2637T-10-QY",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101649": {
+    "model": "DS-2TD2637T-15-QY",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101650": {
+    "model": "DS-2TD2637T-7-QY",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101651": {
+    "model": "DS-2TD2537T-15-Q-C-",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101652": {
+    "model": "DS-2TD2367-100-PY",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101653": {
+    "model": "DS-2TD2367-75-PY",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101654": {
+    "model": "DS-2TD2568T-15-G0-T1Y",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101655": {
+    "model": "DS-2TD2568T-5-G0-T1Y",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101656": {
+    "model": "DS-2TD2528T-10-Q-C-",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101657": {
+    "model": "DS-2TD2528T-3-Q-C-",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101658": {
+    "model": "DS-2TD2528T-7-Q-C-",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101659": {
+    "model": "DS-2TD2537T-10-Q-C-",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101660": {
+    "model": "DS-2TD2537T-4-Q-C-",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101661": {
+    "model": "DS-2TD2608-1-QA-FP",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101662": {
+    "model": "DS-2TD2608-2-QA-FP",
+    "hardware_version": "THERMAL_G0"
   }
 }

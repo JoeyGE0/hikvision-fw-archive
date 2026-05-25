@@ -133,12 +133,12 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 | | |
 |--|--|
 | **Status** | ✅ SUCCESS |
-| **Last run** | 2026-05-25 22:20:33 UTC |
+| **Last run** | 2026-05-25 23:12:42 UTC |
 | **Scraper** | HTTP |
 | **Catalog fetch** | playwright |
-| **Catalog rows parsed** | 4522 |
-| **Firmware records** | 2043 |
-| **New last run** | 19 |
+| **Catalog rows parsed** | 864 |
+| **Firmware records** | 173 |
+| **New last run** | 10 |
 | **Test mode** | Disabled |
 
 
@@ -149,7 +149,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 Collapsible sections per model and hardware line (newest firmware first within each section).
 
-Total: 163
+Total: 173
 
 
 
@@ -490,6 +490,16 @@ Total: 163
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.7.0 | Applied to: [DS-2CD2626G2T-IZS(2.8-12mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.0_260327_S3000711576.zip)(D) | 2024-10-23 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.0_260327_S3000711576.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202507/releasenote%5CNetwork_Camera-V5.7.0_SP6_Release_Note-G6_I.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD2647G3-LIZS2UY/S(L)(RB) - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.32 | Applied to: [DS-2CD2647G3-LIZS2UY/S(L)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.32_260423_S3000719136.zip)(RB), [DS-2CD2647G3-LIZS2UY/SRB(2.8-12MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.32_260423_S3000719136.zip)/O-STD, [DS-2CD2647G3-LIZS2UY/SRB(2.8-12)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.32_260423_S3000719136.zip)O-STDBLK, [[DS-2CD2647G3-LIZS2UY/SL(2.8-12MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.32_260423_S3000719136.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.32_260423_S3000719136.zip)OSTDBLK, DS-2CD2647G3-LIZS2UY/SL(2.8-12MM), [DS-2CD2647G3-LIZSY](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.32_260423_S3000719136.zip), [[DS-2CD2647G3-LIZSY(2.8-12MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.32_260423_S3000719136.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.32_260423_S3000719136.zip), DS-2CD2647G3-LIZSY(2.8-12MM)/O-STD/BLACK | 2026-04-23 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.32_260423_S3000719136.zip) |  |
 
 </details>
 
@@ -1067,7 +1077,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2DF4220-DX-S6-316L- - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2DF4220-DX-S6-316L- - IPC_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1077,7 +1087,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2DF4220-DX-S6-316L--C- - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2DF4220-DX-S6-316L--C- - IPC_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1087,7 +1097,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2DF4420-DX-S6--C--304- - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2DF4420-DX-S6--C--304- - IPC_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1097,7 +1107,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2DF4420-DX-S6-316L--C- - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2DF4420-DX-S6-316L--C- - IPC_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1107,7 +1117,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2DF4420WG-XEY - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2DF4420WG-XEY - IPC_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1117,7 +1127,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD1217-2-QA - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD1217-2-QA - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1127,7 +1137,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD1217-3-QA - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD1217-3-QA - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1137,7 +1147,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD1217-6-QA - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD1217-6-QA - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1147,7 +1157,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD1228-2-QA - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD1228-2-QA - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1157,7 +1167,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD1228-3-QA - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD1228-3-QA - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1167,7 +1177,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD1228-7-QA - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD1228-7-QA - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1177,7 +1187,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD1228T-2-QA - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD1228T-2-QA - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1187,7 +1197,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD1228T-2-QA-B- - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD1228T-2-QA-B- - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1197,7 +1207,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD1228T-3-QA - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD1228T-3-QA - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1207,7 +1217,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD1228T-3-QA-B- - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD1228T-3-QA-B- - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1217,7 +1227,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2137T-4-QY0 - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2137T-4-QY0 - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1227,7 +1237,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2137T-7-QY0 - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2137T-7-QY0 - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1237,7 +1247,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2138-10-QY - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2138-10-QY - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1247,7 +1257,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2138-13-QY - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2138-13-QY - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1257,7 +1267,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2138-15-QY - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2138-15-QY - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1267,7 +1277,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2138-25-QY - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2138-25-QY - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1277,7 +1287,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2138-35-QY - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2138-35-QY - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1287,7 +1297,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2138-4-QY - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2138-4-QY - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1297,7 +1307,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2138-7-QY - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2138-7-QY - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1307,7 +1317,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2367-100-PY - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2367-100-PY - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1317,7 +1327,17 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2367-75-PY - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2367-100/PY - THERMAL_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.5.98 | Applied to: [DS-2TD2367-100/PY](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.98_260512_S3000723889.zip), [DS-2TD2367-75/PY](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.98_260512_S3000723889.zip) | 2026-05-12 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.98_260512_S3000723889.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2TD2367-75-PY - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1327,7 +1347,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2528T-10-Q-C- - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2528T-10-Q-C- - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1337,7 +1357,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2528T-3-Q-C- - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2528T-3-Q-C- - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1347,7 +1367,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2528T-7-Q-C- - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2528T-7-Q-C- - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1357,7 +1377,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2537T-10-Q-C- - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2537T-10-Q-C- - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1367,7 +1387,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2537T-15-Q-C- - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2537T-15-Q-C- - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1377,7 +1397,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2537T-4-Q-C- - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2537T-4-Q-C- - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1387,7 +1407,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2568T-15-G0-T1Y - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2568T-15-G0-T1Y - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1397,7 +1417,17 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2568T-5-G0-T1Y - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2568T-15/G0/T1Y - THERMAL_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.5.348 | Applied to: [DS-2TD2568T-15/G0/T1Y](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.348_260427_S3000719140.zip), [DS-2TD2568T-5/G0/T1Y](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.348_260427_S3000719140.zip), HM-TD1218-2/G0/T1A, HM-TD1218-3/G0/T1A, HM-TD1218-7/G0/T1A, HM-TD2618-10/G0/T1A, HM-TD2618-3/G0/T1A, HM-TD2618-7/G0/T1A | 2026-04-27 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.348_260427_S3000719140.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CGeneral_Firmware_Update_Release_notes.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2TD2568T-5-G0-T1Y - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1407,7 +1437,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2608-1-QA - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2608-1-QA - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1417,7 +1447,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2608-1-QA-FP - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2608-1-QA-FP - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1427,7 +1457,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2608-2-QA - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2608-2-QA - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1437,7 +1467,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2608-2-QA-FP - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2608-2-QA-FP - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1447,7 +1477,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2617-10-QA - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2617-10-QA - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1457,7 +1487,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2617-3-QA - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2617-3-QA - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1467,7 +1497,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2617-6-QA - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2617-6-QA - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1477,7 +1507,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2628-10-QA - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2628-10-QA - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1487,7 +1517,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2628-3-QA - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2628-3-QA - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1497,7 +1527,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2628-7-QA - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2628-7-QA - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1507,7 +1537,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2628T-3-QA - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2628T-3-QA - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1517,7 +1547,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2628T-7-QA - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2628T-7-QA - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1527,7 +1557,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2637-10-QY - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2637-10-QY - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1537,7 +1567,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2637-25-QY - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2637-25-QY - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1547,7 +1577,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2637-35-QY-B- - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2637-35-QY-B- - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1557,7 +1587,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2637-7-QY - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2637-7-QY - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1567,7 +1597,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2637T-10-QY - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2637T-10-QY - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1577,7 +1607,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2637T-15-QY - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2637T-15-QY - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1587,7 +1617,7 @@ Total: 163
 
 
 <details>
-<summary><h2>DS-2TD2637T-7-QY - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2TD2637T-7-QY - THERMAL_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
@@ -1652,6 +1682,66 @@ Total: 163
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.5.338 | Applied to: [DS-2TX3742-35P-Q](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.338_260413_S3000716448.zip) | 2026-04-13 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.338_260413_S3000716448.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CGeneral_Firmware_Update_Release_notes.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-3WR18X - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 1.7.100 | Applied to: [DS-3WR18X](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.7.100_260429_S3000720515.zip), [DS-3WR30X](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.7.100_260429_S3000720515.zip), [DS-3WR30X-V](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.7.100_260429_S3000720515.zip), [[DS-3WRM18X](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.7.100_260429_S3000720515.zip)/1](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.7.100_260429_S3000720515.zip), DS-3WRM18X, [DS-3WRM18X/2](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.7.100_260429_S3000720515.zip), [DS-3WRM18X/3](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.7.100_260429_S3000720515.zip), [DS-3WRM30X/1](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.7.100_260429_S3000720515.zip) | 2026-04-29 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.7.100_260429_S3000720515.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-7104NI-S2/WX - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 4.32.406 | Applied to: [DS-7104NI-S2/WX](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V4.32.406_260427_S3000720971.zip), NKS4223WBTH, [DS-J142I](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V4.32.406_260427_S3000720971.zip), NKS422WBH, NKS422WBPH, NKS4245WBTH, NKS424WBH, NKS424WBPH | 2026-04-27 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V4.32.406_260427_S3000720971.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNVS_V4.32.406_20260427_ReleaseNote.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-7232HGHI-M2/T-2K - DVR_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 4.84.101 | Applied to: [DS-7232HGHI-M2/T-2K](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware_Asia_V4.84.101_260518_S3000724190.zip) | 2026-05-18 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware_Asia_V4.84.101_260518_S3000724190.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>DS-K1T670MFWX - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 4.48.20 | Applied to: [DS-K1T670MFWX](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V4.48.20_260427_S3000719622.zip), [DS-K1T670MWX-QR](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V4.48.20_260427_S3000719622.zip), [DS-K1T670MWX-WBQR](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V4.48.20_260427_S3000719622.zip), [DS-K1T670MWX-WEQR](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V4.48.20_260427_S3000719622.zip), [DS-K1T670MX](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V4.48.20_260427_S3000719622.zip), [DS-K1T670MX-QR](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V4.48.20_260427_S3000719622.zip), [DS-K1T670MX-WB](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V4.48.20_260427_S3000719622.zip), [DS-K1T670MX-WE](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V4.48.20_260427_S3000719622.zip) | 2026-04-27 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V4.48.20_260427_S3000719622.zip) |  |
+
+</details>
+
+
+<details>
+<summary><h2>HM-TD1228-2/G1/T3A - THERMAL_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.5.348 | Applied to: HM-TD1228-2/G1/T3A, HM-TD1228-3/G1/T3A, HM-TD1228-7/G1/T3A, HM-TD2628-10/G1/T3A, HM-TD2628-3/G1/T3A, HM-TD2628-7/G1/T3A, HM-TD2638-10/G1/T3Y | 2026-04-27 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.5.348_260427_S3000719141.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CGeneral_Firmware_Update_Release_notes.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>HM-TD63C8-100C4L/G0/T2Y - THERMAL_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.11 | Applied to: HM-TD63C8-100C4L/G0/T2Y, HM-TD63C8-75C4L/G0/T2Y, HM-TD81C8-150ZK4FL/G0/T2 | 2026-05-06 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260506_S3000720327.zip) |  |
 
 </details>
 
@@ -1752,5 +1842,15 @@ Total: 163
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.9.1 | Applied to: [IDS-2CD7AC5G0-H-IZHS-Y-](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.14_260401_S3000712573.zip) | 2026-04-02 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.14_260401_S3000712573.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CG7-V5.9.1_Release_Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>ISD-SMG318L - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 1.2.8 | Applied to: ISD-SMG318L, ISD-SMG133L, ISD-SMG333L, ISD-SMG572L, ISD-SMG572LC-I | 2026-05-09 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.2.8_260509_S3000723501.zip) |  |
 
 </details>
