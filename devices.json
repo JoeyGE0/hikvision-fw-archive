@@ -1198,5 +1198,45 @@
   "101792": {
     "model": "DS-3WAP621E-SI",
     "hardware_version": "UNKNOWN"
+  },
+  "101793": {
+    "model": "DS-3WAP622E-SI",
+    "hardware_version": "UNKNOWN"
+  },
+  "101794": {
+    "model": "DS-3WAP622G-SI",
+    "hardware_version": "UNKNOWN"
+  },
+  "101795": {
+    "model": "DS-3WAP623E-SI",
+    "hardware_version": "UNKNOWN"
+  },
+  "101796": {
+    "model": "DS-3WG105G-SI",
+    "hardware_version": "UNKNOWN"
+  },
+  "101797": {
+    "model": "DS-3WG105GP-SI",
+    "hardware_version": "UNKNOWN"
+  },
+  "101798": {
+    "model": "DS-3WG210GP-SI",
+    "hardware_version": "UNKNOWN"
+  },
+  "101799": {
+    "model": "DS-3WG507G-SI",
+    "hardware_version": "UNKNOWN"
+  },
+  "101800": {
+    "model": "DS-96128NXI-S16",
+    "hardware_version": "UNKNOWN"
+  },
+  "101801": {
+    "model": "DS-7104NI-Q1",
+    "hardware_version": "NVR_V4"
+  },
+  "101802": {
+    "model": "DS-K3B220X",
+    "hardware_version": "UNKNOWN"
   }
 }

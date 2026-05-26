@@ -1,10 +1,10 @@
 {
-  "last_run": "2026-05-26T08:07:43.313847",
+  "last_run": "2026-05-26T18:43:41.297042",
   "status": "success",
   "scraper_mode": "http",
   "post_merge_verified": "2026-05-19T13:00:29.926000",
   "catalog_urls_parsed": 4568,
-  "firmwares_found": 305,
+  "firmwares_found": 315,
   "new_firmwares": 10,
   "errors": [],
   "test_mode": false,
