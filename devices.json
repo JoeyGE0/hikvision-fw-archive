@@ -1066,5 +1066,49 @@
   "101759": {
     "model": "DS-2CD2387G2P-LSU/SL",
     "hardware_version": "IPC_G0"
+  },
+  "101760": {
+    "model": "AE-VC3B2I-ISF",
+    "hardware_version": "UNKNOWN"
+  },
+  "101761": {
+    "model": "ISD-SMG924L-H(C)",
+    "hardware_version": "UNKNOWN"
+  },
+  "101762": {
+    "model": "DS-7604NXI-K1/4P/VPRO",
+    "hardware_version": "NVR_G0"
+  },
+  "101763": {
+    "model": "DS-K1T807EBFWX-E1",
+    "hardware_version": "UNKNOWN"
+  },
+  "101764": {
+    "model": "DS-K1T320EFWX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101765": {
+    "model": "DS-K1T321EFWX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101766": {
+    "model": "DS-3E6600-16X-SA",
+    "hardware_version": "UNKNOWN"
+  },
+  "101767": {
+    "model": "DS-K3G200X",
+    "hardware_version": "UNKNOWN"
+  },
+  "101768": {
+    "model": "DS-7604NI-Q1",
+    "hardware_version": "NVR_V4"
+  },
+  "101769": {
+    "model": "DS-3E1510P-SI-8P2F",
+    "hardware_version": "UNKNOWN"
+  },
+  "101770": {
+    "model": "DS-3E1552-SI-48T4F",
+    "hardware_version": "UNKNOWN"
   }
 }
