@@ -424,10 +424,16 @@ def generate_release_body(firmware_files: List[str]) -> str:
         else:
             device_info = model
         
-        # Create download link
-        if filename:
+        # Prefer stable tag URL from JSON (latest/download 404s when file is on an older release)
+        stored_url = (fw.get('download_url') or '').strip()
+        if stored_url and '/releases/download/' in stored_url and '/latest/download/' not in stored_url:
+            download_url = stored_url
+        elif filename:
             download_url = f"https://github.com/{github_repo}/releases/latest/download/{filename}"
-            download_link = f"[📥 Download {filename}]({download_url})"
+        else:
+            download_url = ''
+        if download_url:
+            download_link = f"[📥 Download {filename or 'firmware'}]({download_url})"
         else:
             download_link = "Link not available"
         
