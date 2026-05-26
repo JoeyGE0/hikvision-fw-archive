@@ -142,5 +142,41 @@
   "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.11_260326_Release_IPCE_D_H13.pdf": {
     "changes": "some bugs to enhance system stability.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CTurbo_HD_DVR_V4.84.100build260425_Release_Notes.pdf": {
+    "changes": "improve product performance, and will take effect automatically after upgrading from previous versions.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CSolar-powered_Security_Camera_V5.7.72_260330_Release_Note.pdf": {
+    "changes": "Support diagnose logs to obtain temperature information. · Modified Features · 1. The camera’s factory default set tings include lo w power mode and 24 -hour sleep; and",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CDeepinView_Camera_V5.8.61_Release_Note.pdf": {
+    "changes": "1. ANPR algorithm updates: · 1) Fix the issue that manual capture of motorcycle license plates reports \"unknown\". · 2) Optimization for Belgian and Hungarian license plates recognition",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf": {
+    "changes": "some bugs to enhance system stability.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.1_260326_Release_Note.pdf": {
+    "changes": "some bugs to enhance system stability.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.100_260325_Release_Note.pdf": {
+    "changes": "New 2/3 Series 4, 6MP Panoramic ColorVu Camera · a) Supports Acuseek / Supports DeepinView Perimeter Detection · b) Does not support face capture",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202410/releasenote%5CNetwork_Camera-V5.7.18_240826_Release_Note-G5.pdf": {
+    "changes": "1. PTRZ product shading hood motor motion logic optimization: · 1) After the movement in the P and T directions comes to a complete stop, the sunshade motor lifts · the ball cover on top again . When starting to move, the sunshade motor will retract first, and only",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.3_SP1_260320_Release_Note-IPCE_G9.pdf": {
+    "changes": "1. Fixed the issue of device IP modification failure under the SADPV3.1.1 version and resolved · network parameter configuration error. · 2. Fixed some bugs to enhance system stability.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-H13U.pdf": {
+    "changes": "1. New products: · 2,3 series fixed point-to-point zoom PTR camera, 2143G2, 2146G3, 3143G2. · 2 series 4MP PTRZ camera, 2X46G3, 2X47G3.",
+    "source": "pdf"
   }
 }
