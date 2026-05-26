@@ -1110,5 +1110,49 @@
   "101770": {
     "model": "DS-3E1552-SI-48T4F",
     "hardware_version": "UNKNOWN"
+  },
+  "101771": {
+    "model": "DS-2CD2023G2-I(U)",
+    "hardware_version": "IPC_G0"
+  },
+  "101772": {
+    "model": "DS-K1T341CM",
+    "hardware_version": "UNKNOWN"
+  },
+  "101773": {
+    "model": "DS-K3B631TX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101774": {
+    "model": "DS-3E1516-EI V2(O-STD)",
+    "hardware_version": "UNKNOWN"
+  },
+  "101775": {
+    "model": "DS-K6BC402LX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101776": {
+    "model": "DS-K6BC402X-RS",
+    "hardware_version": "UNKNOWN"
+  },
+  "101777": {
+    "model": "DS-7608NI-M2",
+    "hardware_version": "NVR_G0"
+  },
+  "101778": {
+    "model": "DS-3WF02-5AC/D",
+    "hardware_version": "UNKNOWN"
+  },
+  "101779": {
+    "model": "DS-3WF02C-5AC/O",
+    "hardware_version": "UNKNOWN"
+  },
+  "101780": {
+    "model": "DS-3WF0EC-2NT",
+    "hardware_version": "UNKNOWN"
+  },
+  "101781": {
+    "model": "DS-3WF0EC-5ACT(B)",
+    "hardware_version": "UNKNOWN"
   }
 }

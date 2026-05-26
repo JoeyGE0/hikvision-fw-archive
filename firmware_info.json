@@ -190,5 +190,13 @@
   "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CDS-K1T321_Series_MinMoe_Terminal_V3.9.50_build260130_Release_Note.pdf": {
     "changes": "improvement and will take effect automatically after the Date of Change.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CNetwork_Camera-V5.7.23_260114_Release_Note.pdf": {
+    "changes": "Associated camera model updates.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CK21B1_K22B1_V5.04.081_build260112_ReleaseNotes.pdf": {
+    "changes": "Modified functions",
+    "source": "pdf"
   }
 }
