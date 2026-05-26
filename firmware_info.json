@@ -198,5 +198,9 @@
   "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CK21B1_K22B1_V5.04.081_build260112_ReleaseNotes.pdf": {
     "changes": "Modified functions",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CV5.03.107_X100_ReleaseNotes.pdf": {
+    "changes": "Modified functions · Related product list:",
+    "source": "pdf"
   }
 }

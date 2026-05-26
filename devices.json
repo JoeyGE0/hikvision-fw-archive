@@ -1154,5 +1154,49 @@
   "101781": {
     "model": "DS-3WF0EC-5ACT(B)",
     "hardware_version": "UNKNOWN"
+  },
+  "101782": {
+    "model": "AE-DI2032-G40/V2",
+    "hardware_version": "UNKNOWN"
+  },
+  "101783": {
+    "model": "DS-3WF1000-EI-2N",
+    "hardware_version": "UNKNOWN"
+  },
+  "101784": {
+    "model": "DS-3WF5000-EI-5ACG/3P",
+    "hardware_version": "UNKNOWN"
+  },
+  "101785": {
+    "model": "DS-3WF5000-SI-5ACG/2P",
+    "hardware_version": "UNKNOWN"
+  },
+  "101786": {
+    "model": "DS-3WFB-EI-5ACG",
+    "hardware_version": "UNKNOWN"
+  },
+  "101787": {
+    "model": "DS-7604NXI-K1(E)",
+    "hardware_version": "NVR_V4"
+  },
+  "101788": {
+    "model": "THC-B123-M",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101789": {
+    "model": "DS-96128NI-H16R",
+    "hardware_version": "UNKNOWN"
+  },
+  "101790": {
+    "model": "DS-3WAP521-SI",
+    "hardware_version": "UNKNOWN"
+  },
+  "101791": {
+    "model": "DS-3WAP522-SI",
+    "hardware_version": "UNKNOWN"
+  },
+  "101792": {
+    "model": "DS-3WAP621E-SI",
+    "hardware_version": "UNKNOWN"
   }
 }
