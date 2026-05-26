@@ -1,13 +1,26 @@
 #!/usr/bin/env python3
 """Generate README and create releases for Hikvision firmware archive."""
+from __future__ import annotations
+
 import json
 import logging
+import re
 from collections import defaultdict
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
-from typing import Dict, List
+from typing import Any, Dict, List, Optional
 
-from common import load_json, parse_version
+from common import (
+    HIKVISION_MODEL_PATTERN,
+    load_json,
+    normalize_product_model,
+    parse_version,
+    save_json,
+)
+
+GITHUB_REPO = 'JoeyGE0/hikvision-fw-archive'
+ARCHIVE_RELEASES_URL = f'https://github.com/{GITHUB_REPO}/releases'
+LICENSE_URL = 'https://www.hikvision.com/en/policies/materials-license-agreement/'
 
 logging.basicConfig(
     level=logging.INFO,
@@ -150,8 +163,6 @@ def generate_readme() -> str:
         for firmware in firmwares:
             version = firmware.get('version', '')
             date = firmware.get('date', '')
-            changes = firmware.get('changes', '')
-            notes = firmware.get('notes', '')
             download_url = firmware.get('download_url', '')
             filename = firmware.get('filename', '')
             supported_models = firmware.get('supported_models', [])
@@ -229,12 +240,7 @@ def generate_readme() -> str:
             version_link = version
             
             # Notes column: short changes summary + optional PDF link
-            notes_display = ''
-            if changes and changes.strip():
-                notes_display = changes.strip()
-            if notes and notes.startswith('http'):
-                pdf_link = f"[📄 Release Notes]({notes})"
-                notes_display = f'{notes_display} · {pdf_link}' if notes_display else pdf_link
+            notes_display = format_firmware_notes_summary(firmware)
             
             # Add beta warning
             if is_beta:
@@ -243,7 +249,6 @@ def generate_readme() -> str:
                 notes_display = '—'
             
             # Escape pipe characters in content
-            changes = changes.replace('|', '\\|')
             notes_display = notes_display.replace('|', '\\|')
             models_text = models_text.replace('|', '\\|')
             
@@ -260,6 +265,114 @@ def generate_readme() -> str:
     readme_content += '\n\n' + '\n'.join(firmware_sections)
     
     return readme_content
+
+
+def github_release_page_url(download_url: str | None) -> str | None:
+    """Map /releases/download/{tag}/file.zip to the release page for that tag."""
+    url = (download_url or '').strip()
+    match = re.search(rf'github\.com/{re.escape(GITHUB_REPO)}/releases/download/([^/]+)/', url)
+    if match:
+        return f'https://github.com/{GITHUB_REPO}/releases/tag/{match.group(1)}'
+    return None
+
+
+def index_models_for_firmware(firmware: Dict[str, Any]) -> List[str]:
+    """Return normalized model keys that should resolve to this firmware row."""
+    models: List[str] = []
+    seen: set[str] = set()
+
+    def add(raw: str) -> None:
+        key = normalize_product_model(raw)
+        if not key or key == 'UNKNOWN' or key in seen:
+            return
+        seen.add(key)
+        models.append(key)
+
+    add(firmware.get('model', ''))
+    applied_to = firmware.get('applied_to', '') or ''
+    for match in re.findall(HIKVISION_MODEL_PATTERN, applied_to, re.IGNORECASE):
+        add(match)
+    for supported in firmware.get('supported_models') or []:
+        add(str(supported))
+    return models
+
+
+def ha_firmware_record(firmware: Dict[str, Any]) -> Dict[str, Any]:
+    """Shape one archive row for Home Assistant / API consumers."""
+    download_url = (firmware.get('download_url') or '').strip()
+    notes = (firmware.get('notes') or '').strip()
+    changes = (firmware.get('changes') or '').strip()
+    release_page = github_release_page_url(download_url) or ARCHIVE_RELEASES_URL
+    return {
+        'model': firmware.get('model', ''),
+        'hardware_version': (firmware.get('hardware_version') or 'UNKNOWN').strip(),
+        'version': firmware.get('version', ''),
+        'date': firmware.get('date', ''),
+        'filename': firmware.get('filename', ''),
+        'download_url': download_url,
+        'applied_to': firmware.get('applied_to', ''),
+        'changes': changes,
+        'notes': notes,
+        'notes_pdf_url': notes if notes.startswith('http') else '',
+        'release_page_url': release_page,
+        'license_url': LICENSE_URL,
+        'archive_url': f'https://github.com/{GITHUB_REPO}',
+    }
+
+
+def generate_firmware_index() -> Dict[str, Any]:
+    """Build model → best firmware metadata index for integrations (e.g. Home Assistant)."""
+    firmwares_live = load_json('firmwares_live.json')
+    firmwares_manual = load_json('firmwares_manual.json')
+    all_firmwares = {**firmwares_live, **firmwares_manual}
+
+    # model -> list of HA records (one per archive row that references the model)
+    by_model: Dict[str, List[Dict[str, Any]]] = defaultdict(list)
+    for firmware in all_firmwares.values():
+        if not isinstance(firmware, dict):
+            continue
+        if not firmware.get('version') or not firmware.get('download_url'):
+            continue
+        record = ha_firmware_record(firmware)
+        for model_key in index_models_for_firmware(firmware):
+            by_model[model_key].append(record)
+
+    models_index: Dict[str, Any] = {}
+    for model_key, records in by_model.items():
+        records.sort(key=lambda r: parse_version(r.get('version', '0')), reverse=True)
+        by_hw: Dict[str, List[Dict[str, Any]]] = defaultdict(list)
+        for record in records:
+            hw = (record.get('hardware_version') or 'UNKNOWN').upper()
+            by_hw[hw].append(record)
+        hw_latest = {
+            hw: sorted(rows, key=lambda r: parse_version(r.get('version', '0')), reverse=True)[0]
+            for hw, rows in by_hw.items()
+        }
+        models_index[model_key] = {
+            'latest': records[0],
+            'by_hardware_version': hw_latest,
+            'all_versions': records,
+        }
+
+    return {
+        'schema_version': 1,
+        'generated_at': datetime.now(timezone.utc).isoformat(),
+        'archive_releases_url': ARCHIVE_RELEASES_URL,
+        'license_url': LICENSE_URL,
+        'models': models_index,
+    }
+
+
+def format_firmware_notes_summary(firmware: Dict) -> str:
+    """Short changes text plus optional release-note PDF link (matches README Notes column)."""
+    changes = (firmware.get('changes') or '').strip()
+    notes = (firmware.get('notes') or '').strip()
+    parts: List[str] = []
+    if changes:
+        parts.append(changes)
+    if notes.startswith('http'):
+        parts.append(f'[📄 Release Notes]({notes})')
+    return ' · '.join(parts)
 
 
 def generate_release_body(firmware_files: List[str]) -> str:
@@ -318,11 +431,16 @@ def generate_release_body(firmware_files: List[str]) -> str:
         else:
             download_link = "Link not available"
         
+        notes_summary = format_firmware_notes_summary(fw)
+
         body += f"### {model} - v{version}\n\n"
         body += f"- **Supported Devices:** {device_info}\n"
         if date:
             body += f"- **Release Date:** {date}\n"
-        body += f"- **Download:** {download_link}\n\n"
+        body += f"- **Download:** {download_link}\n"
+        if notes_summary:
+            body += f"- **Changes:** {notes_summary}\n"
+        body += "\n"
     
     body += f"---\n\n"
     body += f"⚠️ **Important:** By downloading and using these firmware files, you agree to be bound by the [Hikvision Materials License Agreement]({license_url}).\n\n"
@@ -332,14 +450,22 @@ def generate_release_body(firmware_files: List[str]) -> str:
 
 
 def main():
-    """Generate README file."""
+    """Generate README and integration index files."""
     logger.info("Generating README...")
     readme_content = generate_readme()
-    
+
     output_file = Path('README.md')
     output_file.write_text(readme_content, encoding='utf-8')
     logger.info(f"README generated: {output_file}")
-    
+
+    logger.info("Generating firmware_index.json for integrations...")
+    index = generate_firmware_index()
+    save_json('firmware_index.json', index)
+    logger.info(
+        "firmware_index.json generated (%s models)",
+        len(index.get('models', {})),
+    )
+
     # Count total firmwares
     firmwares_live = load_json('firmwares_live.json')
     firmwares_manual = load_json('firmwares_manual.json')

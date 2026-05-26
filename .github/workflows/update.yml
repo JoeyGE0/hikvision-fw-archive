@@ -166,7 +166,7 @@ jobs:
           git rm -r --cached firmwares/ 2>/dev/null || true
           # Only commit JSON files and README (firmware files are uploaded to releases instead)
           # Add one-by-one: `git add a b missing` fails entirely and stages nothing
-          for f in devices.json firmwares_live.json firmwares_manual.json firmware_info.json status.json README.md .gitignore priority_models.json; do
+          for f in devices.json firmwares_live.json firmwares_manual.json firmware_info.json firmware_index.json status.json README.md .gitignore priority_models.json; do
             if [ -f "$f" ]; then
               git add "$f"
             fi

@@ -69,6 +69,7 @@ With `"one_shot": true`, the file is cleared after a run that actually downloads
 | `firmwares_live.json` | Firmware scraped from Hikvision (main database) |
 | `firmwares_manual.json` | Entries added by hand / PR |
 | `firmware_info.json` | Extra metadata |
+| `firmware_index.json` | Per-model firmware summary for integrations ([Home Assistant ISAPI](https://github.com/JoeyGE0/hikvision_isapi)): version, date, download URL, PDF notes, change summary |
 | `status.json` | Last scraper run (status, counts, errors) |
 
 ### Local development
