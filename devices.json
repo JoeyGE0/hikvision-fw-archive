@@ -1278,5 +1278,49 @@
   "101812": {
     "model": "IDS-7104HQHI-M1/S",
     "hardware_version": "DVR_V4"
+  },
+  "101813": {
+    "model": "DS-2CD2343G2D-LIZ2UY/S(L)(RB)",
+    "hardware_version": "IPC_G0"
+  },
+  "101814": {
+    "model": "IDS-7108HQHI-M1/S",
+    "hardware_version": "DVR_V4"
+  },
+  "101815": {
+    "model": "IDS-7108HQHI-M1/T",
+    "hardware_version": "DVR_V4"
+  },
+  "101816": {
+    "model": "IDS-7116HQHI-M1/S",
+    "hardware_version": "DVR_V4"
+  },
+  "101817": {
+    "model": "IDS-7204HQHI-M1/XT",
+    "hardware_version": "DVR_V4"
+  },
+  "101818": {
+    "model": "IDS-7204HTHI-M1/XT",
+    "hardware_version": "DVR_V4"
+  },
+  "101819": {
+    "model": "IDS-7204HUHI-M1/PXT",
+    "hardware_version": "DVR_V4"
+  },
+  "101820": {
+    "model": "DS-7604NXI-K1",
+    "hardware_version": "NVR_V4"
+  },
+  "101821": {
+    "model": "DS-7604NXI-K1/4P",
+    "hardware_version": "NVR_V4"
+  },
+  "101822": {
+    "model": "DS-K3G200BX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101823": {
+    "model": "DS-7604NXI-K1(D)",
+    "hardware_version": "NVR_V4"
   }
 }

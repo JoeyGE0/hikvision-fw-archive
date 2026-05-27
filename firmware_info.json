@@ -214,5 +214,9 @@
   "https://assets.hikvision.com/prd/normal/all/files/202603/releasenote%5CTurbo_HD_DVR_V4.84.011build251217_Release_Notes.pdf": {
     "changes": "Fix known defects to improve product stability.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202510/releasenote%5CTurbo_HD_DVR_V4.83.803build250903_Release_Notes.pdf": {
+    "changes": "improve product performance, and will take effect automatically after upgrading from previous versions.",
+    "source": "pdf"
   }
 }
