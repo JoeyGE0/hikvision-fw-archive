@@ -206,5 +206,13 @@
   "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CV5.03.416_H10_ReleaseNotes.pdf": {
     "changes": "Modified functions · Related product list:",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5C5.04.051_build251218_ReleaseNotes.pdf": {
+    "changes": "Modified functions",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202603/releasenote%5CTurbo_HD_DVR_V4.84.011build251217_Release_Notes.pdf": {
+    "changes": "Fix known defects to improve product stability.",
+    "source": "pdf"
   }
 }

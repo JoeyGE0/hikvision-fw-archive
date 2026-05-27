@@ -1238,5 +1238,45 @@
   "101802": {
     "model": "DS-K3B220X",
     "hardware_version": "UNKNOWN"
+  },
+  "101803": {
+    "model": "DS-K3GL606WX-WE",
+    "hardware_version": "UNKNOWN"
+  },
+  "101804": {
+    "model": "DS-K3BC430LX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101805": {
+    "model": "DS-K3Y220LX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101806": {
+    "model": "DS-K1T642EFW",
+    "hardware_version": "UNKNOWN"
+  },
+  "101807": {
+    "model": "IDS-6708NXI-M1/X",
+    "hardware_version": "UNKNOWN"
+  },
+  "101808": {
+    "model": "DVR-204Q-M1",
+    "hardware_version": "DVR_V4"
+  },
+  "101809": {
+    "model": "DVR-204U-M1/T",
+    "hardware_version": "DVR_V4"
+  },
+  "101810": {
+    "model": "DVR-208Q-M1",
+    "hardware_version": "DVR_V4"
+  },
+  "101811": {
+    "model": "DVR-208U-M1/T",
+    "hardware_version": "DVR_V4"
+  },
+  "101812": {
+    "model": "IDS-7104HQHI-M1/S",
+    "hardware_version": "DVR_V4"
   }
 }
