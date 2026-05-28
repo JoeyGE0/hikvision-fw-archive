@@ -226,5 +226,17 @@
   "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5C2_Wire_HD_Video_Intercom_V1.3.0_build251210_Release_Note.pdf": {
     "changes": "Door station: · Fixed a rare issue where the elevator could not be called after a device restart · Optimized the web page UI and fixed some display issue · Optimized the M1 card encryption function",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CDS-K1T502_Series_Access_Control_Terminal_V1.20.0_build251204_Release_Note.pdf": {
+    "changes": "Added 502POE model, added POE support, added lock 2 locally; · 502POE model supports dual -door control, supports authentication to open door 2, supports · intercom plus door 2 （reminder: only door1 support connecting security module, door2 not · supported）;",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.7.20_251125_Release_Note-IPCE_P_G5.pdf": {
+    "changes": "Https and rtsp over https are supported by default · Web usability optimization: When the browser is zoomed to 150%, the page style will ensure the · effect, and the video will not displayed out of the box · Web resource update: Pos is disabled by default",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CDS-KD8005_Main_Module_V3.10.0_build251125_Release_Note.pdf": {
+    "changes": "Main unit of modular door station with high 5 MP resolution camera · Flexible adjustment of 0/1/2 call buttons · Standard PoE power supply (IEEE 802.3af) · IP65, IK08 protection level",
+    "source": "pdf"
   }
 }

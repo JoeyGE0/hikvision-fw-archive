@@ -1370,5 +1370,49 @@
   "101835": {
     "model": "DS-KIS705EY",
     "hardware_version": "UNKNOWN"
+  },
+  "101836": {
+    "model": "DS-2CD2366G2P-ISU/SL",
+    "hardware_version": "IPC_G0"
+  },
+  "101837": {
+    "model": "DVR-108G-M1",
+    "hardware_version": "DVR_V4"
+  },
+  "101838": {
+    "model": "DVR-204G-M1",
+    "hardware_version": "DVR_V4"
+  },
+  "101839": {
+    "model": "DVR-204G-M1/T",
+    "hardware_version": "DVR_G0"
+  },
+  "101840": {
+    "model": "DVR-208G-M1/T",
+    "hardware_version": "DVR_V4"
+  },
+  "101841": {
+    "model": "DS-3E1710HP-SI-8P2X",
+    "hardware_version": "UNKNOWN"
+  },
+  "101842": {
+    "model": "DS-K1T502DBFWX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101843": {
+    "model": "DS-E04NI-Q1/4P",
+    "hardware_version": "NVR_V4"
+  },
+  "101844": {
+    "model": "DS-KD8005-IME1",
+    "hardware_version": "UNKNOWN"
+  },
+  "101845": {
+    "model": "DS-PA201P-16WB",
+    "hardware_version": "UNKNOWN"
+  },
+  "101846": {
+    "model": "DS-3WR3N",
+    "hardware_version": "UNKNOWN"
   }
 }
