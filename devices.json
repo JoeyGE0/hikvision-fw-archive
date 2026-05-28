@@ -1322,5 +1322,53 @@
   "101823": {
     "model": "DS-7604NXI-K1(D)",
     "hardware_version": "NVR_V4"
+  },
+  "101824": {
+    "model": "DS-2CD2043G2-LIZ(2U)Y",
+    "hardware_version": "IPC_G0"
+  },
+  "101825": {
+    "model": "DS-2CD2067G3-LI(2U)Y",
+    "hardware_version": "IPC_G0"
+  },
+  "101826": {
+    "model": "NVR-104MH-K",
+    "hardware_version": "NVR_V4"
+  },
+  "101827": {
+    "model": "DS-7604NI-Q1/W",
+    "hardware_version": "NVR_V4"
+  },
+  "101828": {
+    "model": "NVR-104MH-Q/W",
+    "hardware_version": "NVR_V4"
+  },
+  "101829": {
+    "model": "THC-B120-C",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101830": {
+    "model": "DS-7104HGHI-M1",
+    "hardware_version": "DVR_V4"
+  },
+  "101831": {
+    "model": "DS-7104HGHI-M1/T",
+    "hardware_version": "DVR_V4"
+  },
+  "101832": {
+    "model": "DS-7108HGHI-M1",
+    "hardware_version": "DVR_V4"
+  },
+  "101833": {
+    "model": "DS-7108HGHI-M1/T",
+    "hardware_version": "DVR_V4"
+  },
+  "101834": {
+    "model": "DS-7116HGHI-M1",
+    "hardware_version": "DVR_V4"
+  },
+  "101835": {
+    "model": "DS-KIS705EY",
+    "hardware_version": "UNKNOWN"
   }
 }
