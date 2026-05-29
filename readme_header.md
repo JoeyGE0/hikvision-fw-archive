@@ -61,6 +61,8 @@ To bump specific models to the **front of the queue** for one run (still only 10
 
 With `"one_shot": true`, the file is cleared after a run that actually downloads new files.
 
+**Download allowlist:** CI only downloads firmware for **`DS-2CD`** models by default (`DOWNLOAD_MODEL_PREFIXES=DS-2CD`). Set `DOWNLOAD_MODEL_PREFIXES=all` to re-enable other product lines later.
+
 ### Data files
 
 | File | Purpose |
