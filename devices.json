@@ -1506,5 +1506,141 @@
   "101869": {
     "model": "IDS-TCS900-HI",
     "hardware_version": "UNKNOWN"
+  },
+  "101870": {
+    "model": "DS-2CD1383G0-I",
+    "hardware_version": "IPC_G0"
+  },
+  "101871": {
+    "model": "DS-2CD3586G2-IS",
+    "hardware_version": "IPC_G0"
+  },
+  "101872": {
+    "model": "DS-2CD2323G2-I(U)",
+    "hardware_version": "IPC_G0"
+  },
+  "101873": {
+    "model": "DS-2CD3T23G1-I/4G",
+    "hardware_version": "IPC_G0"
+  },
+  "101874": {
+    "model": "DS-2CD6924G0-IHS(/NFC)",
+    "hardware_version": "IPC_G0"
+  },
+  "101875": {
+    "model": "DS-2CD1043G0-I(UF)",
+    "hardware_version": "IPC_E7S"
+  },
+  "101876": {
+    "model": "DS-2CD2121G1-IDW",
+    "hardware_version": "IPC_E6"
+  },
+  "101877": {
+    "model": "DS-2CD2421G0-I(D)(W)",
+    "hardware_version": "IPC_E6"
+  },
+  "101878": {
+    "model": "DS-2CD3027G2-LS",
+    "hardware_version": "IPC_G0"
+  },
+  "101879": {
+    "model": "DS-2CD2025FHWD-I",
+    "hardware_version": "IPC_G1"
+  },
+  "101880": {
+    "model": "DS-2CD2045FWD-I",
+    "hardware_version": "IPC_G1"
+  },
+  "101881": {
+    "model": "DS-2CD2423G0-I(W)",
+    "hardware_version": "IPC_G1"
+  },
+  "101882": {
+    "model": "DS-2CD2523G0-I(W)(S)",
+    "hardware_version": "IPC_G1"
+  },
+  "101883": {
+    "model": "DS-2CD2545FWD-I(W)(S)",
+    "hardware_version": "IPC_G1"
+  },
+  "101884": {
+    "model": "DS-2CD6D24FWD-IZHS(B)",
+    "hardware_version": "IPC_G0"
+  },
+  "101885": {
+    "model": "DS-2CD3066G2-IS",
+    "hardware_version": "IPC_G0"
+  },
+  "101886": {
+    "model": "DS-2CD3621G2-LIZS(U)",
+    "hardware_version": "IPC_G0"
+  },
+  "101887": {
+    "model": "DS-2CD2326G2-I(U)",
+    "hardware_version": "IPC_G3"
+  },
+  "101888": {
+    "model": "DS-2CD6825G0/C-I(S)",
+    "hardware_version": "IPC_V5"
+  },
+  "101889": {
+    "model": "DS-2CD6944G0-IHS(/NFC)",
+    "hardware_version": "IPC_G0"
+  },
+  "101890": {
+    "model": "DS-2CD6D54FWD-(I)(Z)(H)(S)(/NFC)",
+    "hardware_version": "IPC_G0"
+  },
+  "101891": {
+    "model": "DS-2CD1623G0-I(Z)",
+    "hardware_version": "IPC_G0"
+  },
+  "101892": {
+    "model": "DS-2CD2021G1-I(W)",
+    "hardware_version": "IPC_G0"
+  },
+  "101893": {
+    "model": "DS-2CD1053G0-I(UF)",
+    "hardware_version": "IPC_G0"
+  },
+  "101894": {
+    "model": "DS-2CD4B26FWD-IZ(S)",
+    "hardware_version": "IPC_V5"
+  },
+  "101895": {
+    "model": "DS-2CD1023G0E-I",
+    "hardware_version": "IPC_G0"
+  },
+  "101896": {
+    "model": "DS-2CD2935FWD-I",
+    "hardware_version": "IPC_V5"
+  },
+  "101897": {
+    "model": "DS-2CD4A45G0-IZ(H)S",
+    "hardware_version": "IPC_G0"
+  },
+  "101898": {
+    "model": "DS-2CD2326G1-I/SL",
+    "hardware_version": "IPC_G0"
+  },
+  "101899": {
+    "model": "DS-2CD4A24FWD-IZ(H)(S)(T)",
+    "hardware_version": "IPC_G0"
+  },
+  "101900": {
+    "model": "DS-2CD2041G1-IDW",
+    "hardware_version": "IPC_G0"
+  },
+  "101901": {
+    "model": "DS-2CD2H55FWD-IZS",
+    "hardware_version": "IPC_G0"
+  },
+  "101902": {
+    "model": "DS-2CD2085G1-I",
+    "hardware_version": "IPC_G0"
+  },
+  "101903": {
+    "model": "DS-2CD6984G0-IH(S)(AC)(/NFC)",
+    "hardware_version": "IPC_G0"
   }
 }

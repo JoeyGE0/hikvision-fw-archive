@@ -250,5 +250,61 @@
   "https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CDS-K110X_Series_Card_Reader_V2.0.6_build251024_Release_Note.pdf": {
     "changes": "Add NFC log retrieval function to the card reader; · Disable button triggering for 700ms after swiping card to prevent accidental touch · Optimized Features · Optimize beep response for touch button",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202402/releasenote%5CH10_PanoVu-V5.7.0_SP2_Release_Note.pdf": {
+    "changes": "New function · Fixed some known issues",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.5.820_SP1_Release_Note-IPC_E7S_231109.pdf": {
+    "changes": "Modify Function Note",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202404/1712790068455/releasenote%5CIPC_E6_5.5.821_Release_Note.pdf": {
+    "changes": "Optimization · Fixed the bug of EZVIZ. · Internal",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202404/1712790070190/releasenote%5CIPC_E6_5.5.821_Release_Note.pdf": {
+    "changes": "Optimization · Fixed the bug of EZVIZ. · Internal",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202403/releasenote%5CNetwork_Camera-V5.5.820_Release_Note-G3.pdf": {
+    "changes": "Version maintenance of HC library permission authentication issues.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.6.821_Release_Note-IPC_G1_230831.pdf": {
+    "changes": "Improve real-time performance during multiple LiveView.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202310/releasenote%5CIPCMC_H3_V5.5.821_Release_Note.pdf": {
+    "changes": "New function · Fixed some known issues",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202411/releasenote%5CNetwork_Camera-V5.7.12_SP1_Release_Note-E10.pdf": {
+    "changes": "Fix the problem that image parameters are lost after upgrading in version earlier than 5.7.10. · Fix the screen issue when HC event capture. · Custom audio function is removed from some models.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202207/IPC_V5.5.850_build_220421_Release%20Note.pdf": {
+    "changes": "improve product performance, and will take effect automatically after upgrading from previous versions.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202207/IPC%20V5.5.801%20build%20210927%20Release%20Note.pdf": {
+    "changes": "improve product performance, and will take effect automatically after upgrading from previous versions.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CNetwork_Camera_V5.5.89_Release_Note_--G0.pdf": {
+    "changes": "Improved Features · After the device is upgraded to V5.5.89 version, it cannot be upgraded back to a version lower · than V5.5.89.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5C%E3%80%90Release_Note%E3%80%91Mobile_IPC_V5.5.91_210429.pdf": {
+    "changes": "improve product performance, and will take effect automatically after upgrading from previous versions.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CIPC_V5.4.52_G1__Release_Note--External.pdf": {
+    "changes": "Hik-Connect multi-screen display function: Device newly supports software decoding on · Hik-Connect. · Fixed the known issue. · Compatibility Update",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202301/Network%20Camera%20V5.6.820%20Release%20Note%20--G1.pdf": {
+    "changes": "Improved Features · Fixed some known bugs for ONVIF.",
+    "source": "pdf"
   }
 }
