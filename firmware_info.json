@@ -242,5 +242,13 @@
   "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CV5.7.63_251106_Release_Note.pdf": {
     "changes": "Algorithm optimization and updates. 2. Fix some bugs.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202511/releasenote%5CTurbo_HD_DVR_V4.83.613build251028_Release_Notes.pdf": {
+    "changes": "improve product performance, and will take effect automatically after upgrading from previous versions.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CDS-K110X_Series_Card_Reader_V2.0.6_build251024_Release_Note.pdf": {
+    "changes": "Add NFC log retrieval function to the card reader; · Disable button triggering for 700ms after swiping card to prevent accidental touch · Optimized Features · Optimize beep response for touch button",
+    "source": "pdf"
   }
 }

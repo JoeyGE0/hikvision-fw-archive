@@ -1454,5 +1454,57 @@
   "101856": {
     "model": "DS-KH7300EY-WTPE2/WHITE",
     "hardware_version": "UNKNOWN"
+  },
+  "101857": {
+    "model": "DS-2CD2027G2-L(U)",
+    "hardware_version": "IPC_G0"
+  },
+  "101858": {
+    "model": "DS-1100KI(C)",
+    "hardware_version": "UNKNOWN"
+  },
+  "101859": {
+    "model": "DS-1105KI",
+    "hardware_version": "UNKNOWN"
+  },
+  "101860": {
+    "model": "DS-KD7000EY-ME2",
+    "hardware_version": "UNKNOWN"
+  },
+  "101861": {
+    "model": "DS-3E1710HP-EI",
+    "hardware_version": "UNKNOWN"
+  },
+  "101862": {
+    "model": "DS-7208HGHI-M1",
+    "hardware_version": "DVR_V4"
+  },
+  "101863": {
+    "model": "DVR-104G-M1/T",
+    "hardware_version": "DVR_V4"
+  },
+  "101864": {
+    "model": "DS-K3G530X",
+    "hardware_version": "UNKNOWN"
+  },
+  "101865": {
+    "model": "DS-K3B501SX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101866": {
+    "model": "DS-K3G501X",
+    "hardware_version": "UNKNOWN"
+  },
+  "101867": {
+    "model": "DS-K3G530LX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101868": {
+    "model": "DS-K6B411TX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101869": {
+    "model": "IDS-TCS900-HI",
+    "hardware_version": "UNKNOWN"
   }
 }
