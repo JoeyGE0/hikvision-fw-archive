@@ -238,5 +238,9 @@
   "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CDS-KD8005_Main_Module_V3.10.0_build251125_Release_Note.pdf": {
     "changes": "Main unit of modular door station with high 5 MP resolution camera · Flexible adjustment of 0/1/2 call buttons · Standard PoE power supply (IEEE 802.3af) · IP65, IK08 protection level",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CV5.7.63_251106_Release_Note.pdf": {
+    "changes": "Algorithm optimization and updates. 2. Fix some bugs.",
+    "source": "pdf"
   }
 }

@@ -1414,5 +1414,45 @@
   "101846": {
     "model": "DS-3WR3N",
     "hardware_version": "UNKNOWN"
+  },
+  "101847": {
+    "model": "DS-2DP1618ZIXS-D/440(F0)(P5)",
+    "hardware_version": "UNKNOWN"
+  },
+  "101848": {
+    "model": "DS-K3Y411BX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101849": {
+    "model": "DS-2CD6F82G0-S",
+    "hardware_version": "IPC_G0"
+  },
+  "101850": {
+    "model": "DS-K2602T",
+    "hardware_version": "UNKNOWN"
+  },
+  "101851": {
+    "model": "DS-TP50-08H",
+    "hardware_version": "UNKNOWN"
+  },
+  "101852": {
+    "model": "DS-3WF0BC-2NT(B)",
+    "hardware_version": "UNKNOWN"
+  },
+  "101853": {
+    "model": "DS-TDSB0G-FC/2KM",
+    "hardware_version": "UNKNOWN"
+  },
+  "101854": {
+    "model": "IDS-TVJ860-GIR",
+    "hardware_version": "UNKNOWN"
+  },
+  "101855": {
+    "model": "DS-2XC6625G0(D)",
+    "hardware_version": "UNKNOWN"
+  },
+  "101856": {
+    "model": "DS-KH7300EY-WTPE2/WHITE",
+    "hardware_version": "UNKNOWN"
   }
 }
