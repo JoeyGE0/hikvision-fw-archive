@@ -136,7 +136,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 | | |
 |--|--|
 | **Status** | ⚠️ NO_NEW_FIRMWARES |
-| **Last run** | 2026-05-30 02:01:07 UTC |
+| **Last run** | 2026-05-30 07:24:12 UTC |
 | **Scraper** | HTTP |
 | **Catalog fetch** | playwright |
 | **Catalog rows parsed** | 862 |
