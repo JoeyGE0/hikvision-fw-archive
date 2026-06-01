@@ -1642,5 +1642,21 @@
   "101903": {
     "model": "DS-2CD6984G0-IH(S)(AC)(/NFC)",
     "hardware_version": "IPC_G0"
+  },
+  "101904": {
+    "model": "DS-2CD20123G2-LI(U)Y",
+    "hardware_version": "IPC_G0"
+  },
+  "101905": {
+    "model": "DS-2CD2025FWD-I",
+    "hardware_version": "IPC_G1"
+  },
+  "101906": {
+    "model": "DS-2CD2545FWD-I(W)(S)",
+    "hardware_version": "IPC_V5"
+  },
+  "101907": {
+    "model": "DS-2CD2423G0-I(W)",
+    "hardware_version": "IPC_G0"
   }
 }

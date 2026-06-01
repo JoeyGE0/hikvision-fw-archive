@@ -306,5 +306,13 @@
   "https://assets.hikvision.com/prd/public/all/files/202301/Network%20Camera%20V5.6.820%20Release%20Note%20--G1.pdf": {
     "changes": "Improved Features · Fixed some known bugs for ONVIF.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CIPC_V5.6.3_G1_Release_Note--External.pdf": {
+    "changes": "Description of Iris Mode: Modify “Manual” to “fixed”. · Fixed the compatibility issue with third party platform Digifort. · Fixed the issue that camera cannot update dynamic IP address on Hik-Connect server. · Fixed the issue that IE login failed caused by exception of port 80.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202207/Network%20Camera%20V5.5.83%20Release%20Note%20--G1.pdf": {
+    "changes": "Improve Features",
+    "source": "pdf"
   }
 }
