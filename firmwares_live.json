@@ -2133,7 +2133,7 @@
     "hardware_version": "IPC_G0",
     "version": "5.8.32",
     "date": "2026-04-23",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779750762/Firmware__V5.8.32_260423_S3000719136.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780390224/Firmware__V5.8.32_260320_S3000708449.zip",
     "filename": "Firmware__V5.8.32_260320_S3000708449.zip",
     "supported_models": [
       "DS-2CD2647G3-LIZS2UY/S(L)(RB)",
@@ -3295,7 +3295,7 @@
     "hardware_version": "UNKNOWN",
     "version": "5.8.3",
     "date": "2026-04-16",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780043044/Firmware__V5.8.3_260512_S3000722344.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780390224/Firmware__V5.8.32_260320_S3000708449.zip",
     "filename": "Firmware__V5.8.32_260320_S3000708449.zip",
     "supported_models": [
       "DS-2XC6046G0-LIS(316L)",
@@ -4742,7 +4742,7 @@
     "hardware_version": "IPC_G0",
     "version": "5.8.32",
     "date": "2026-03-30",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779320667/Firmware__V5.8.32_260330_S3000710893.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780390224/Firmware__V5.8.32_260320_S3000708449.zip",
     "filename": "Firmware__V5.8.32_260320_S3000708449.zip",
     "supported_models": [
       "DS-2CD2046G3-IZ(2U)Y",
@@ -4841,7 +4841,7 @@
     "hardware_version": "IPC_G0",
     "version": "5.8.32",
     "date": "2026-03-30",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779320667/Firmware__V5.8.32_260330_S3000710937.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780390224/Firmware__V5.8.32_260320_S3000708449.zip",
     "filename": "Firmware__V5.8.32_260320_S3000708449.zip",
     "supported_models": [
       "DS-2CD2087G3-LI(2U)Y",
@@ -5209,7 +5209,7 @@
     "hardware_version": "IPC_G0",
     "version": "5.8.32",
     "date": "2026-03-30",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779320667/Firmware__V5.8.32_260330_S3000710893.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780390224/Firmware__V5.8.32_260320_S3000708449.zip",
     "filename": "Firmware__V5.8.32_260320_S3000708449.zip",
     "supported_models": [
       "DS-2CD2046G3-IZ2UY/S(L)(RB)",
@@ -8125,7 +8125,7 @@
     "hardware_version": "IPC_G0",
     "version": "5.8.3",
     "date": "2026-03-20",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780043044/Firmware__V5.8.3_260512_S3000722344.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780390224/Firmware__V5.8.32_260320_S3000708449.zip",
     "filename": "Firmware__V5.8.32_260320_S3000708449.zip",
     "supported_models": [
       "DS-2CD20126G3-IUY/S(L)(RB)",
@@ -11802,7 +11802,7 @@
     "hardware_version": "IPC_G0",
     "version": "5.8.3",
     "date": "2026-05-12",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780043044/Firmware__V5.8.3_260512_S3000722344.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780390224/Firmware__V5.8.32_260320_S3000708449.zip",
     "filename": "Firmware__V5.8.32_260320_S3000708449.zip",
     "supported_models": [
       "DS-2CD6F82G0-S",
@@ -15112,7 +15112,7 @@
     "hardware_version": "IPC_G0",
     "version": "5.8.3",
     "date": "2026-03-20",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779107961/Firmware__V5.8.3_260320_S3000708466.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780390224/Firmware__V5.8.32_260320_S3000708449.zip",
     "filename": "Firmware__V5.8.32_260320_S3000708449.zip",
     "supported_models": [
       "DS-2CD20123G2-LI(U)Y",
@@ -15666,7 +15666,7 @@
     "hardware_version": "IPC_G0",
     "version": "5.8.32",
     "date": "2026-03-20",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780390224/Firmware__V5.8.32_260320_S3000708449.zip",
     "filename": "Firmware__V5.8.32_260320_S3000708449.zip",
     "supported_models": [
       "DS-2CD1047G3H-LIU(F)(/SL)(/SRB)",
