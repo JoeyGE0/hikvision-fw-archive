@@ -135,13 +135,13 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 | | |
 |--|--|
-| **Status** | ⚠️ NO_NEW_FIRMWARES |
-| **Last run** | 2026-06-01 20:39:34 UTC |
+| **Status** | ✅ SUCCESS |
+| **Last run** | 2026-06-02 08:50:24 UTC |
 | **Scraper** | HTTP |
 | **Catalog fetch** | playwright |
-| **Catalog rows parsed** | 861 |
-| **Firmware records** | 422 |
-| **New last run** | 0 |
+| **Catalog rows parsed** | 862 |
+| **Firmware records** | 423 |
+| **New last run** | 1 |
 | **Test mode** | Disabled |
 
 
@@ -152,7 +152,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 Collapsible sections per model and hardware line (newest firmware first within each section).
 
-Total: 422
+Total: 423
 
 
 
@@ -262,6 +262,16 @@ Total: 422
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.8.41 | Applied to: [DS-2CD1043G2-LIUF/SL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779302890/Firmware__V5.8.41_260401_S3000712602.zip), [DS-2CD1043G2-LIUF/SL(2.8MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779302890/Firmware__V5.8.41_260401_S3000712602.zip), [DS-2CD1043G2-LIUF/SL(4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779302890/Firmware__V5.8.41_260401_S3000712602.zip), [DS-2CD1047G2H-LIU(F)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779302890/Firmware__V5.8.41_260401_S3000712602.zip), [[DS-2CD1047G2H-LIU(2.8MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779302890/Firmware__V5.8.41_260401_S3000712602.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779302890/Firmware__V5.8.41_260401_S3000712602.zip)(BLACK), [DS-2CD1047G2H-LIUF(2.8MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779302890/Firmware__V5.8.41_260401_S3000712602.zip), [DS-2CD1047G2H-LIUF(4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779302890/Firmware__V5.8.41_260401_S3000712602.zip), DS-2CD1047G2H-LIU(2.8MM) | 2026-04-01 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779302890/Firmware__V5.8.41_260401_S3000712602.zip) | 1. Fixed some bugs to enhance system stability. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.41_SP1_Release_Note-E10.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD1047G3H-LIU(F)(/SL)(/SRB) - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.32 | Applied to: [DS-2CD1047G3H-LIU(F)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.32_260320_S3000708449.zip)(/SL)(/SRB), [DS-2CD1047G3H-LIU(2.8MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.32_260320_S3000708449.zip), [DS-2CD1047G3H-LIU(4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.32_260320_S3000708449.zip), [DS-2CD1047G3H-LIUF/SL(2.8MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.32_260320_S3000708449.zip), [DS-2CD1047G3H-LIUF/SL(4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.32_260320_S3000708449.zip), [DS-2CD1047G3H-LIUF/SRB(2.8MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.32_260320_S3000708449.zip), [DS-2CD1047G3H-LIUF/SRB(4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.32_260320_S3000708449.zip), [DS-2CD1047G3H-LIUF(2.8MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.32_260320_S3000708449.zip) | 2026-03-20 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.32_260320_S3000708449.zip) | — |
 
 </details>
 

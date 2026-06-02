@@ -1658,5 +1658,9 @@
   "101907": {
     "model": "DS-2CD2423G0-I(W)",
     "hardware_version": "IPC_G0"
+  },
+  "101908": {
+    "model": "DS-2CD1047G3H-LIU(F)(/SL)(/SRB)",
+    "hardware_version": "IPC_G0"
   }
 }
