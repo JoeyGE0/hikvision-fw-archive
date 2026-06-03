@@ -88,17 +88,6 @@ GITHUB_API_BASE = "https://api.github.com/repos"
 # Set this to limit downloads and avoid hitting rate limits
 MAX_FIRMWARES_TO_DOWNLOAD = 10  # Downloads 10 new firmwares per run (20 per day)
 
-# Only download firmware for models matching these prefixes (comma-separated).
-# Set DOWNLOAD_MODEL_PREFIXES=all (or empty) to download every catalog model again.
-def _load_download_model_prefixes() -> tuple:
-    raw = os.environ.get('DOWNLOAD_MODEL_PREFIXES', 'DS-2CD').strip()
-    if not raw or raw.lower() in ('all', '*', 'any'):
-        return ()
-    return tuple(p.strip().upper() for p in raw.split(',') if p.strip())
-
-
-DOWNLOAD_MODEL_PREFIXES = _load_download_model_prefixes()
-
 # Stop when this many models in a row have only already-archived firmware (caught-up runs)
 CONSECUTIVE_FULLY_SKIPPED_MODELS_LIMIT = int(
     os.environ.get('CONSECUTIVE_FULLY_SKIPPED_MODELS_LIMIT', '40')
@@ -308,15 +297,6 @@ class HikvisionScraper:
             if len(pattern) >= 8 and pattern in text:
                 return True
         return False
-
-    def model_eligible_for_download(self, model: str) -> bool:
-        """True when this model may receive a new firmware download this run."""
-        if not DOWNLOAD_MODEL_PREFIXES:
-            return True
-        normalized = normalize_product_model(model)
-        if not normalized or normalized == 'UNKNOWN':
-            return False
-        return any(normalized.startswith(prefix) for prefix in DOWNLOAD_MODEL_PREFIXES)
 
     def sort_catalog_by_priority(self, catalog: List[Dict]) -> List[Dict]:
         """Reorder catalog so priority models are tried first (still scans full catalog)."""
@@ -1158,8 +1138,6 @@ class HikvisionScraper:
                 self._log_unknown_catalog_entry(entry, 'unresolved product code')
                 continue
 
-            download_allowed = self.model_eligible_for_download(model)
-
             firmware_key = f"{model}_{hw_version}_{version}"
             filename = url.split('/')[-1].split('?')[0]
 
@@ -1190,9 +1168,6 @@ class HikvisionScraper:
                         if fw.get('model') == model and fw.get('version') == version:
                             fw['changes'] = changes
                             break
-                continue
-
-            if not download_allowed:
                 continue
 
             github_release_url = self.get_github_release_url_for_filename(filename)
@@ -1434,12 +1409,7 @@ class HikvisionScraper:
                                     if not model:
                                         logger.warning(f"    Could not extract model from: {model_text}")
                                         continue
-                                    if not self.model_eligible_for_download(model):
-                                        logger.info(
-                                            f"    ⊘ Skipping model (download allowlist): {model}"
-                                        )
-                                        continue
-
+                                    
                                     # Get target_id before clicking
                                     target_id = title_element.get_attribute('data-target') or ''
                                     logger.info(f"    Processing model {i}: {model} (data-target: {target_id})")
@@ -2862,12 +2832,6 @@ class HikvisionScraper:
             logger.info(f"📥 Download limit: {MAX_FIRMWARES_TO_DOWNLOAD} firmware file(s)")
         else:
             logger.info("📥 Download limit: Unlimited")
-        if DOWNLOAD_MODEL_PREFIXES:
-            logger.info(
-                f"📥 Download allowlist: {', '.join(DOWNLOAD_MODEL_PREFIXES)} only"
-            )
-        else:
-            logger.info("📥 Download allowlist: all models")
         if USE_HTTP_SCRAPER:
             logger.info("Mode: HTTP catalog (no browser)")
         else:

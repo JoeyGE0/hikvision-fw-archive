@@ -12,7 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-      DOWNLOAD_MODEL_PREFIXES: DS-2CD
     permissions:
       contents: write
     outputs:
