@@ -136,11 +136,11 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 | | |
 |--|--|
 | **Status** | ⚠️ NO_NEW_FIRMWARES |
-| **Last run** | 2026-06-03 09:11:17 UTC |
+| **Last run** | 2026-06-03 20:01:01 UTC |
 | **Scraper** | HTTP |
 | **Catalog fetch** | playwright |
-| **Catalog rows parsed** | 866 |
-| **Firmware records** | 423 |
+| **Catalog rows parsed** | 860 |
+| **Firmware records** | 427 |
 | **New last run** | 0 |
 | **Test mode** | Disabled |
 
@@ -152,7 +152,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 Collapsible sections per model and hardware line (newest firmware first within each section).
 
-Total: 423
+Total: 427
 
 
 
@@ -519,10 +519,11 @@ Total: 423
 
 
 <details>
-<summary><h2>DS-2CD2043G2-LIZ(2U)Y - IPC_G0 (1 firmwares)</h2></summary>
+<summary><h2>DS-2CD2043G2-LIZ(2U)Y - IPC_G0 (2 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.32 | Applied to: [DS-2CD2043G2-LIZ(2U)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779320667/Firmware__V5.8.32_260330_S3000710893.zip)Y, [DS-2CD2043G2-LIZY(2.8/4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779320667/Firmware__V5.8.32_260330_S3000710893.zip), [[DS-2CD2043G2-LIZ2UY(2.8/4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779320667/Firmware__V5.8.32_260330_S3000710893.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779320667/Firmware__V5.8.32_260330_S3000710893.zip), DS-2CD2043G2-LIZ2UY(2.8/4MM)/O-STD/BLACK, [DS-2CD2043G2-LIZ2UY/S(L)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779320667/Firmware__V5.8.32_260330_S3000710893.zip)(RB), [DS-2CD2043G2-LIZ2UY/SRB(2.8/4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779320667/Firmware__V5.8.32_260330_S3000710893.zip), [DS-2CD2043G2-LIZ2UY/SRB(2.8/4)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779320667/Firmware__V5.8.32_260330_S3000710893.zip)O-STDBLACK, [DS-2CD2043G2-LIZ2UY/SL(2.8/4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779320667/Firmware__V5.8.32_260330_S3000710893.zip) | 2026-03-30 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779320667/Firmware__V5.8.32_260330_S3000710893.zip) | New PT33 AI-ISP Camera Series · a) PTZ control is supported in the preview interface, with 16 preset points; patrol function and · motion tracking are available; one-click self-test is supported. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.32_SP1_260330_Release_Note-H13U.pdf) |
 | 5.8.30 | Applied to: [DS-2CD2043G2-LIZ(2U)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1777592712/Firmware__V5.8.30_251210_S3000691330.zip)Y, [DS-2CD2043G2-LIZY(2.8/4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1777592712/Firmware__V5.8.30_251210_S3000691330.zip), [[DS-2CD2043G2-LIZ2UY(2.8/4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1777592712/Firmware__V5.8.30_251210_S3000691330.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1777592712/Firmware__V5.8.30_251210_S3000691330.zip), DS-2CD2043G2-LIZ2UY(2.8/4MM)/O-STD/BLACK, [DS-2CD2043G2-LIZ2UY/S(L)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1777592712/Firmware__V5.8.30_251210_S3000691330.zip)(RB), [DS-2CD2043G2-LIZ2UY/SRB(2.8/4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1777592712/Firmware__V5.8.30_251210_S3000691330.zip), [DS-2CD2043G2-LIZ2UY/SRB(2.8/4)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1777592712/Firmware__V5.8.30_251210_S3000691330.zip)O-STDBLACK, [DS-2CD2043G2-LIZ2UY/SL(2.8/4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1777592712/Firmware__V5.8.30_251210_S3000691330.zip) | 2025-12-10 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1777592712/Firmware__V5.8.30_251210_S3000691330.zip) | 1. New products: · 2,3 series fixed point-to-point zoom PTR camera, 2143G2, 2146G3, 3143G2. · 2 series 4MP PTRZ camera, 2X46G3, 2X47G3. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-H13U.pdf) |
 
 </details>
@@ -574,6 +575,16 @@ Total: 423
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.6.820 | Applied to: [DS-2CD2085G1-I](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1771663989/f18aceb7-b896-4c7d-ad2e-8f0d2a91bcc3.zip), [[DS-2CD2085G1-I(2.8MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1771663989/f18aceb7-b896-4c7d-ad2e-8f0d2a91bcc3.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1771663989/f18aceb7-b896-4c7d-ad2e-8f0d2a91bcc3.zip)(BLACK), [[DS-2CD2085G1-I(4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1771663989/f18aceb7-b896-4c7d-ad2e-8f0d2a91bcc3.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1771663989/f18aceb7-b896-4c7d-ad2e-8f0d2a91bcc3.zip)(BLACK), DS-2CD2085G1-I(2.8MM), DS-2CD2085G1-I(4MM), [DS-2CD2085G1-I(6MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1771663989/f18aceb7-b896-4c7d-ad2e-8f0d2a91bcc3.zip), [DS-2CD2125FHWD-I(S)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1771663989/f18aceb7-b896-4c7d-ad2e-8f0d2a91bcc3.zip), [DS-2CD2125FHWD-I(2.8MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1771663989/f18aceb7-b896-4c7d-ad2e-8f0d2a91bcc3.zip) |  | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1771663989/f18aceb7-b896-4c7d-ad2e-8f0d2a91bcc3.zip) | Improved Features · Fixed some known bugs for ONVIF. · [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202301/Network%20Camera%20V5.6.820%20Release%20Note%20--G1.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD2087G2-L(U) - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.23 | Applied to: [DS-2CD2087G2-L(U)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1778212177/Firmware__V5.7.23_260114_S3000702187.zip), [DS-2CD2087G2-LU(2.8MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1778212177/Firmware__V5.7.23_260114_S3000702187.zip)(C), [DS-2CD2087G2-LU(4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1778212177/Firmware__V5.7.23_260114_S3000702187.zip)(C), [DS-2CD2087G2-LU(6MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1778212177/Firmware__V5.7.23_260114_S3000702187.zip)(C), [DS-2CD2087G2-L(2.8MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1778212177/Firmware__V5.7.23_260114_S3000702187.zip)(C), [DS-2CD2087G2-L(4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1778212177/Firmware__V5.7.23_260114_S3000702187.zip)(C), [DS-2CD2087G2-L(6MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1778212177/Firmware__V5.7.23_260114_S3000702187.zip)(C), [DS-2CD2526G2-IS](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1778212177/Firmware__V5.7.23_260114_S3000702187.zip) | 2026-01-14 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1778212177/Firmware__V5.7.23_260114_S3000702187.zip) | Associated camera model updates. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CNetwork_Camera-V5.7.23_260114_Release_Note.pdf) |
 
 </details>
 
@@ -910,6 +921,16 @@ Total: 423
 
 
 <details>
+<summary><h2>DS-2CD2543G2-LI(W)Z(S)(2U)Y - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.30 | Applied to: [DS-2CD2543G2-LI(W)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1777592712/Firmware__V5.8.30_251210_S3000691330.zip)Z(S)(2U)Y, [[DS-2CD2543G2-LIZS2UY(2.8/4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1777592712/Firmware__V5.8.30_251210_S3000691330.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1777592712/Firmware__V5.8.30_251210_S3000691330.zip)/O-STDBLACK, [DS-2CD2543G2-LIZ2UY(2.8/4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1777592712/Firmware__V5.8.30_251210_S3000691330.zip), DS-2CD2543G2-LIZS2UY(2.8/4MM) | 2025-12-10 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1777592712/Firmware__V5.8.30_251210_S3000691330.zip) | 1. New products: · 2,3 series fixed point-to-point zoom PTR camera, 2143G2, 2146G3, 3143G2. · 2 series 4MP PTRZ camera, 2X46G3, 2X47G3. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-H13U.pdf) |
+
+</details>
+
+
+<details>
 <summary><h2>DS-2CD2545FWD-I(W)(S) - IPC_G1 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
@@ -930,12 +951,13 @@ Total: 423
 
 
 <details>
-<summary><h2>DS-2CD2623G2-IZS - IPC_G0 (2 firmwares)</h2></summary>
+<summary><h2>DS-2CD2623G2-IZS - IPC_G0 (3 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.7.23 | Applied to: [DS-2CD2623G2-IZS](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1770925789/Firmware__V5.7.13_230403_S3000490228.zip), [[[DS-2CD2623G2-IZS(2.8-12MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1770925789/Firmware__V5.7.13_230403_S3000490228.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1770925789/Firmware__V5.7.13_230403_S3000490228.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1770925789/Firmware__V5.7.13_230403_S3000490228.zip), DS-2CD2623G2-IZS(2.8-12MM) /D, DS-2CD2623G2-IZS(2.8-12MM)(D) | 2026-01-14 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1770925789/Firmware__V5.7.13_230403_S3000490228.zip) | Associated camera model updates. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CNetwork_Camera-V5.7.23_260114_Release_Note.pdf) |
 | 5.7.0 | Applied to: [DS-2CD2623G2-IZS(2.8-12mm)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780096165/Firmware__V5.7.0_230221_S3000488889.zip)(US Branch) | 2024-10-23 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780096165/Firmware__V5.7.0_230221_S3000488889.zip) | 1. New Products: 2 series Fixed-focus dual-light cameras: 2xx8G2. · 2. Motion Detection alarm of HC reflects human and vehicle attributes. · 1. 2/3 Series: Change the name of face capture in VCA Resource from Face Recognition to Face · [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CNetwork_Camera-V5.7.13_Release_Note-G5.pdf) |
+| 5.7.13 | Applied to: [DS-2CD2623G2-IZS](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1770925789/Firmware__V5.7.13_230403_S3000490228.zip), [[[DS-2CD2623G2-IZS(2.8-12MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1770925789/Firmware__V5.7.13_230403_S3000490228.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1770925789/Firmware__V5.7.13_230403_S3000490228.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1770925789/Firmware__V5.7.13_230403_S3000490228.zip), DS-2CD2623G2-IZS(2.8-12MM) /D, DS-2CD2623G2-IZS(2.8-12MM)(D) | 2023-04-03 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1770925789/Firmware__V5.7.13_230403_S3000490228.zip) | 1. New Products: 2 series Fixed-focus dual-light cameras: 2xx8G2. · 2. Motion Detection alarm of HC reflects human and vehicle attributes. · 1. 2/3 Series: Change the name of face capture in VCA Resource from Face Recognition to Face · [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CNetwork_Camera-V5.7.13_Release_Note-G5.pdf) |
 
 </details>
 

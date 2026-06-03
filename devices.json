@@ -1662,5 +1662,13 @@
   "101908": {
     "model": "DS-2CD1047G3H-LIU(F)(/SL)(/SRB)",
     "hardware_version": "IPC_G0"
+  },
+  "101909": {
+    "model": "DS-2CD2087G2-L(U)",
+    "hardware_version": "IPC_G0"
+  },
+  "101910": {
+    "model": "DS-2CD2543G2-LI(W)Z(S)(2U)Y",
+    "hardware_version": "IPC_G0"
   }
 }
