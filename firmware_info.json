@@ -314,5 +314,9 @@
   "https://assets.hikvision.com/prd/public/all/files/202207/Network%20Camera%20V5.5.83%20Release%20Note%20--G1.pdf": {
     "changes": "Improve Features",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5C【Release_Note】Mobile_People_Counting_IPC_V4.2.2.pdf": {
+    "changes": "Support the counting of special vehicles (bicycle, baby stroller, wheelchair). · Support device cloning.",
+    "source": "pdf"
   }
 }

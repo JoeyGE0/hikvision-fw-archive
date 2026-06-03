@@ -1670,5 +1670,41 @@
   "101910": {
     "model": "DS-2CD2543G2-LI(W)Z(S)(2U)Y",
     "hardware_version": "IPC_G0"
+  },
+  "101911": {
+    "model": "DS-K1T673DBWFX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101912": {
+    "model": "DS-2TD4538-25A4/W",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101913": {
+    "model": "DS-KH6110-WE1",
+    "hardware_version": "UNKNOWN"
+  },
+  "101914": {
+    "model": "DS-KH8380-TE1",
+    "hardware_version": "UNKNOWN"
+  },
+  "101915": {
+    "model": "HM-TD5528T-10/W",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101916": {
+    "model": "DS-2TD4228-10/S2",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101917": {
+    "model": "DS-2TD4137-25/WY",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101918": {
+    "model": "DS-2XM6825G1/C-IV(S)(M)(/ND)",
+    "hardware_version": "IPC_V4"
+  },
+  "101919": {
+    "model": "DS-K3B530X",
+    "hardware_version": "UNKNOWN"
   }
 }
