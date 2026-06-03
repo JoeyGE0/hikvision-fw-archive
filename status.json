@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-06-02T19:55:36.494723",
+  "last_run": "2026-06-03T09:11:17.798999",
   "status": "no_new_firmwares",
   "scraper_mode": "http",
   "post_merge_verified": "2026-05-19T13:00:29.926000",
@@ -9,7 +9,7 @@
   "errors": [],
   "test_mode": false,
   "catalog_fetch": "playwright",
-  "catalog_entries": 862,
+  "catalog_entries": 866,
   "priority_models": [
     "DS-2CD2387G3-LIS2UY",
     "DS-2CD1383G2P-LIUF",

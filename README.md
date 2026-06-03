@@ -136,10 +136,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 | | |
 |--|--|
 | **Status** | ⚠️ NO_NEW_FIRMWARES |
-| **Last run** | 2026-06-02 19:55:36 UTC |
+| **Last run** | 2026-06-03 09:11:17 UTC |
 | **Scraper** | HTTP |
 | **Catalog fetch** | playwright |
-| **Catalog rows parsed** | 862 |
+| **Catalog rows parsed** | 866 |
 | **Firmware records** | 423 |
 | **New last run** | 0 |
 | **Test mode** | Disabled |
