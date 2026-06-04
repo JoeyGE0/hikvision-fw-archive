@@ -1706,5 +1706,41 @@
   "101919": {
     "model": "DS-K3B530X",
     "hardware_version": "UNKNOWN"
+  },
+  "101920": {
+    "model": "DS-K1T343EFWX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101921": {
+    "model": "DS-TP50-16R",
+    "hardware_version": "UNKNOWN"
+  },
+  "101922": {
+    "model": "DS-KH6000-E1",
+    "hardware_version": "UNKNOWN"
+  },
+  "101923": {
+    "model": "DS-2CD1023G3-LIU(F)(/SX)",
+    "hardware_version": "IPC_G0"
+  },
+  "101924": {
+    "model": "IPC-B120HAA-LU(F)(/SX)",
+    "hardware_version": "UNKNOWN"
+  },
+  "101925": {
+    "model": "DS-3T1506HP-EI-UPS",
+    "hardware_version": "UNKNOWN"
+  },
+  "101926": {
+    "model": "DS-2SF8C442MXS-DLW(14F1)(P3)",
+    "hardware_version": "UNKNOWN"
+  },
+  "101927": {
+    "model": "IDS-TCC446-HI",
+    "hardware_version": "UNKNOWN"
+  },
+  "101928": {
+    "model": "DS-3WR12C-E",
+    "hardware_version": "UNKNOWN"
   }
 }

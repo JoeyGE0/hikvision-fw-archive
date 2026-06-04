@@ -318,5 +318,13 @@
   "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5C【Release_Note】Mobile_People_Counting_IPC_V4.2.2.pdf": {
     "changes": "Support the counting of special vehicles (bicycle, baby stroller, wheelchair). · Support device cloning.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.0_260515_Release_IPCE_LZ_H8.pdf": {
+    "changes": "SP version",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5CNetwork_Camera-V5.9.15_260508_Release_IPCE_E_E15.pdf": {
+    "changes": "Animal detection is newly supported, with detection targets including large animals (horses, sheep, · cattle, etc.), small animals (cats, dogs), and poultry (birds). By default, it is not selected and needs to · be manually enabled. It supports SMART events such as intrusion detection. · The 1XX3 and 3XX1G3(E) series products are newly added.",
+    "source": "pdf"
   }
 }
