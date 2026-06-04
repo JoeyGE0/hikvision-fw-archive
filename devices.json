@@ -1742,5 +1742,45 @@
   "101928": {
     "model": "DS-3WR12C-E",
     "hardware_version": "UNKNOWN"
+  },
+  "101929": {
+    "model": "DS-KH6320-LE1(B)/WHITE",
+    "hardware_version": "UNKNOWN"
+  },
+  "101930": {
+    "model": "DS-KH6320-TDE1",
+    "hardware_version": "UNKNOWN"
+  },
+  "101931": {
+    "model": "DS-K1T343EFWX-B",
+    "hardware_version": "UNKNOWN"
+  },
+  "101932": {
+    "model": "DS-2CD33167G3P-LIHSUY/SL",
+    "hardware_version": "IPC_G0"
+  },
+  "101933": {
+    "model": "IDS-TCD403-BI",
+    "hardware_version": "UNKNOWN"
+  },
+  "101934": {
+    "model": "IDS-TCM403-B",
+    "hardware_version": "UNKNOWN"
+  },
+  "101935": {
+    "model": "IDS-TCV500-HE",
+    "hardware_version": "UNKNOWN"
+  },
+  "101936": {
+    "model": "IDS-TCV900-HE",
+    "hardware_version": "UNKNOWN"
+  },
+  "101937": {
+    "model": "IDS-TCVC00-HE",
+    "hardware_version": "UNKNOWN"
+  },
+  "101938": {
+    "model": "IDS-TCVK00-HE",
+    "hardware_version": "UNKNOWN"
   }
 }
