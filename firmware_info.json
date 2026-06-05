@@ -326,5 +326,25 @@
   "https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5CNetwork_Camera-V5.9.15_260508_Release_IPCE_E_E15.pdf": {
     "changes": "Animal detection is newly supported, with detection targets including large animals (horses, sheep, · cattle, etc.), small animals (cats, dogs), and poultry (birds). By default, it is not selected and needs to · be manually enabled. It supports SMART events such as intrusion detection. · The 1XX3 and 3XX1G3(E) series products are newly added.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CV5.9.5_260416_Release_Note.pdf": {
+    "changes": "Algorithm optimization and updates. 2. Fix some bugs.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.7.25_260401_Release_Note-E8.pdf": {
+    "changes": "Fixed some bugs to enhance system stability.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.41_SP1_Release_Note-E9.pdf": {
+    "changes": "Fixed some bugs to enhance system stability.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.41_260401_Release_Note-E9.pdf": {
+    "changes": "Fixed some bugs to enhance system stability.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.9.14_260401_Release_Note-E15.pdf": {
+    "changes": "Fixed some bugs to enhance system stability.",
+    "source": "pdf"
   }
 }

@@ -1854,5 +1854,37 @@
   "101956": {
     "model": "IDS-2CD7A46G2/V-XZHS(Y)",
     "hardware_version": "IPC_G0"
+  },
+  "101957": {
+    "model": "PTZ-N2404I-DE3",
+    "hardware_version": "UNKNOWN"
+  },
+  "101958": {
+    "model": "DS-2CD1023G0-IUF",
+    "hardware_version": "IPC_G0"
+  },
+  "101959": {
+    "model": "DS-2CD1023G2-LIU(F)",
+    "hardware_version": "IPC_G0"
+  },
+  "101960": {
+    "model": "DS-2CD1023G2-LIUF/SL",
+    "hardware_version": "IPC_G0"
+  },
+  "101961": {
+    "model": "DS-2CD1027G3-LIU(F)(/SL)(/SRB)",
+    "hardware_version": "IPC_G0"
+  },
+  "101962": {
+    "model": "DS-2CD1043G2-I(UF)",
+    "hardware_version": "IPC_G0"
+  },
+  "101963": {
+    "model": "DS-2CD1063G2-LIU(F)",
+    "hardware_version": "IPC_G0"
+  },
+  "101964": {
+    "model": "DS-2CD6924G0-IHS(C)",
+    "hardware_version": "IPC_G0"
   }
 }
