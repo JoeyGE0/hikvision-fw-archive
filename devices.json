@@ -1782,5 +1782,41 @@
   "101938": {
     "model": "IDS-TCVK00-HE",
     "hardware_version": "UNKNOWN"
+  },
+  "101939": {
+    "model": "DS-6920UDI-U(D)",
+    "hardware_version": "UNKNOWN"
+  },
+  "101940": {
+    "model": "DS-2DP7A410MCG1-LEF/416",
+    "hardware_version": "UNKNOWN"
+  },
+  "101941": {
+    "model": "DS-2DF3C400SCG-D(/4G)(/WL15 WL40)(F1)",
+    "hardware_version": "IPC_G0"
+  },
+  "101942": {
+    "model": "ISD-CA6040S-C",
+    "hardware_version": "UNKNOWN"
+  },
+  "101943": {
+    "model": "DS-2CD1023G2-LIDUF/4G/SL",
+    "hardware_version": "IPC_G0"
+  },
+  "101944": {
+    "model": "DS-2CD1043G2-LIDUF/4G/SL",
+    "hardware_version": "IPC_G0"
+  },
+  "101945": {
+    "model": "DS-2CD3046G2-IU/SL",
+    "hardware_version": "IPC_G0"
+  },
+  "101946": {
+    "model": "DS-2CD3956G2-IS(U)",
+    "hardware_version": "IPC_G0"
+  },
+  "101947": {
+    "model": "DS-2CFW04(/EU)",
+    "hardware_version": "UNKNOWN"
   }
 }
