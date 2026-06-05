@@ -1818,5 +1818,41 @@
   "101947": {
     "model": "DS-2CFW04(/EU)",
     "hardware_version": "UNKNOWN"
+  },
+  "101948": {
+    "model": "DS-2DP8A440IXG1-LEF/416(F0)",
+    "hardware_version": "UNKNOWN"
+  },
+  "101949": {
+    "model": "IKS-2044BPH-PH/W",
+    "hardware_version": "UNKNOWN"
+  },
+  "101950": {
+    "model": "DS-2CD6365G1-IVS",
+    "hardware_version": "IPC_G0"
+  },
+  "101951": {
+    "model": "DS-2DE3204W-DE(T5)",
+    "hardware_version": "IPC_G0"
+  },
+  "101952": {
+    "model": "DS-2DE4215IW-DE(T5)",
+    "hardware_version": "IPC_G0"
+  },
+  "101953": {
+    "model": "DS-2DE4432WG-E3",
+    "hardware_version": "IPC_G0"
+  },
+  "101954": {
+    "model": "DS-2DYH2A0IXS-D(T2)",
+    "hardware_version": "UNKNOWN"
+  },
+  "101955": {
+    "model": "DS-2SF7C420MXG0-EL(W)(Y)/2C",
+    "hardware_version": "UNKNOWN"
+  },
+  "101956": {
+    "model": "IDS-2CD7A46G2/V-XZHS(Y)",
+    "hardware_version": "IPC_G0"
   }
 }
