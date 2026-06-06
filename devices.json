@@ -1926,5 +1926,45 @@
   "101974": {
     "model": "IPC-B120HA-LUF/SL",
     "hardware_version": "UNKNOWN"
+  },
+  "101975": {
+    "model": "IPC-B140HA",
+    "hardware_version": "UNKNOWN"
+  },
+  "101976": {
+    "model": "IPC-B140HA-LUF/SL",
+    "hardware_version": "UNKNOWN"
+  },
+  "101977": {
+    "model": "IPC-B640H-Z",
+    "hardware_version": "UNKNOWN"
+  },
+  "101978": {
+    "model": "DS-2CD6B55G0-PL(/T1)",
+    "hardware_version": "IPC_G0"
+  },
+  "101979": {
+    "model": "DS-2DF6A225IWG1-EL",
+    "hardware_version": "IPC_G0"
+  },
+  "101980": {
+    "model": "DS-2DY9C260LXG-LWY/12",
+    "hardware_version": "UNKNOWN"
+  },
+  "101981": {
+    "model": "DS-2XV6646G0-LIZH(R)S",
+    "hardware_version": "UNKNOWN"
+  },
+  "101982": {
+    "model": "DS-2CD2023G0-I",
+    "hardware_version": "IPC_G0"
+  },
+  "101983": {
+    "model": "DS-2SF8C425MXG-ELW/26",
+    "hardware_version": "UNKNOWN"
+  },
+  "101984": {
+    "model": "IDS-2CD8447G0/B-RS",
+    "hardware_version": "IPC_G0"
   }
 }
