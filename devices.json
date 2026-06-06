@@ -1886,5 +1886,45 @@
   "101964": {
     "model": "DS-2CD6924G0-IHS(C)",
     "hardware_version": "IPC_G0"
+  },
+  "101965": {
+    "model": "DS-K1T342DWX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101966": {
+    "model": "DS-3WR12GC-E",
+    "hardware_version": "UNKNOWN"
+  },
+  "101967": {
+    "model": "DS-2CD6982G0-WU/4G",
+    "hardware_version": "IPC_G0"
+  },
+  "101968": {
+    "model": "DS-2DF7C432MXG1-WRP/4G",
+    "hardware_version": "IPC_G0"
+  },
+  "101969": {
+    "model": "DS-2DP0818ZIXS-DE/440(F0)(P4)",
+    "hardware_version": "UNKNOWN"
+  },
+  "101970": {
+    "model": "DS-K3G411CX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101971": {
+    "model": "HM-TX2840-10/G1/T3",
+    "hardware_version": "THERMAL_G0"
+  },
+  "101972": {
+    "model": "IK-4142TH-MH/P",
+    "hardware_version": "IPC_E3S"
+  },
+  "101973": {
+    "model": "IPC-B120HA",
+    "hardware_version": "UNKNOWN"
+  },
+  "101974": {
+    "model": "IPC-B120HA-LUF/SL",
+    "hardware_version": "UNKNOWN"
   }
 }

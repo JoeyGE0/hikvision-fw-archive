@@ -346,5 +346,13 @@
   "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.9.14_260401_Release_Note-E15.pdf": {
     "changes": "Fixed some bugs to enhance system stability.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5C【Release_Note】G40Pro_V4.7.5.pdf": {
+    "changes": "Fixed an issue where APN parameters could not be configured successfully when Card 2 was inserted with an APN card while Card 1 was not inserted.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CIPC_E3S_5.5.84_Release_Note--External.pdf": {
+    "changes": "Mic, support the Third Stream of 720P 1fps, HLC, Line Crossing Detection, Intrusion Detection; · Support reset password via E-mail on SADP , iVMS4200 and Hik-Connect, set the reserved · E-mail address when active camera; · External",
+    "source": "pdf"
   }
 }
