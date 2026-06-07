@@ -1966,5 +1966,45 @@
   "101984": {
     "model": "IDS-2CD8447G0/B-RS",
     "hardware_version": "IPC_G0"
+  },
+  "101985": {
+    "model": "IDS-2CD8A46G0-IZ/UH",
+    "hardware_version": "IPC_G0"
+  },
+  "101986": {
+    "model": "IDS-2CD8A46G2-XZHS(Y)",
+    "hardware_version": "IPC_G0"
+  },
+  "101987": {
+    "model": "IDS-2CD8A48G2-XZHS(Y)",
+    "hardware_version": "IPC_G0"
+  },
+  "101988": {
+    "model": "IPC-CFW06-P",
+    "hardware_version": "UNKNOWN"
+  },
+  "101989": {
+    "model": "DS-K1T105AE",
+    "hardware_version": "UNKNOWN"
+  },
+  "101990": {
+    "model": "PTZ-N4215I-DE",
+    "hardware_version": "UNKNOWN"
+  },
+  "101991": {
+    "model": "DS-2CD3A46G2T-IZHS",
+    "hardware_version": "IPC_G0"
+  },
+  "101992": {
+    "model": "DS-K1T8003EF",
+    "hardware_version": "UNKNOWN"
+  },
+  "101993": {
+    "model": "DS-K1T804AEF",
+    "hardware_version": "UNKNOWN"
+  },
+  "101994": {
+    "model": "AE-DC2022-V200",
+    "hardware_version": "UNKNOWN"
   }
 }
