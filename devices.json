@@ -2006,5 +2006,41 @@
   "101994": {
     "model": "AE-DC2022-V200",
     "hardware_version": "UNKNOWN"
+  },
+  "101995": {
+    "model": "DS-K3B411BX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101996": {
+    "model": "DS-K6B961TX",
+    "hardware_version": "UNKNOWN"
+  },
+  "101997": {
+    "model": "DS-2CD2955G0-IS(U)",
+    "hardware_version": "IPC_G0"
+  },
+  "101998": {
+    "model": "DS-2CD2D45G2-U",
+    "hardware_version": "IPC_G0"
+  },
+  "101999": {
+    "model": "DS-2CD3646G2T-LIDZSU/4G/SL(256G)(1T)",
+    "hardware_version": "IPC_G0"
+  },
+  "102000": {
+    "model": "DS-2CD6B25G0-PLWC03",
+    "hardware_version": "IPC_G0"
+  },
+  "102001": {
+    "model": "DS-2CD6D42G2-IS",
+    "hardware_version": "IPC_G0"
+  },
+  "102002": {
+    "model": "DS-2CD6D54G2-IZHS(/NFC)",
+    "hardware_version": "IPC_G0"
+  },
+  "102003": {
+    "model": "DS-2DB4223I-CX(T5/316L)",
+    "hardware_version": "UNKNOWN"
   }
 }
