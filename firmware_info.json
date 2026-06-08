@@ -358,5 +358,9 @@
   "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera_V5.9.22_Release_Note_--H9.pdf": {
     "changes": "GPS function optimization · Fix some known bugs and improve system stability.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CWildlife_Network_Camera_V5.7.21_260326_Release_Note.pdf": {
+    "changes": "Modified Features",
+    "source": "pdf"
   }
 }

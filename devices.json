@@ -2042,5 +2042,45 @@
   "102003": {
     "model": "DS-2DB4223I-CX(T5/316L)",
     "hardware_version": "UNKNOWN"
+  },
+  "102004": {
+    "model": "DS-2DE7A425IWG-EB/SL",
+    "hardware_version": "IPC_G0"
+  },
+  "102005": {
+    "model": "DS-2DE7A632IWG-EB",
+    "hardware_version": "IPC_G0"
+  },
+  "102006": {
+    "model": "DS-2DP7D425IXG1-LEF(Y)/416",
+    "hardware_version": "UNKNOWN"
+  },
+  "102007": {
+    "model": "DS-2DV6C425MXG-ELW",
+    "hardware_version": "UNKNOWN"
+  },
+  "102008": {
+    "model": "DS-2DY5A432MWG-ELW",
+    "hardware_version": "UNKNOWN"
+  },
+  "102009": {
+    "model": "DS-2ST5C425MWG-E(W)/26(PA)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102010": {
+    "model": "DS-2ST5C432MWG-EW/4G/14(PA)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102011": {
+    "model": "DS-2XC6646G0/P-IZH(R)S",
+    "hardware_version": "UNKNOWN"
+  },
+  "102012": {
+    "model": "DS-2XS3Q47G1-LD/4G",
+    "hardware_version": "UNKNOWN"
+  },
+  "102013": {
+    "model": "DS-2XS6F45G1-IC1(/C2)/4G",
+    "hardware_version": "UNKNOWN"
   }
 }
