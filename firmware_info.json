@@ -362,5 +362,13 @@
   "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CWildlife_Network_Camera_V5.7.21_260326_Release_Note.pdf": {
     "changes": "Modified Features",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.3_260325_Release_IPCE_H_G9.pdf": {
+    "changes": "Fixed some bugs to enhance system stability.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.8.2_SP1_260325_Release_Note.pdf": {
+    "changes": "Fixed the focus speed issue with motorized lens models, resolving slower zoom speed. · Fixed the initialization error in the driving method of the first-generation motorized lens ICR. · Fixed some bugs to enhance system stability.",
+    "source": "pdf"
   }
 }

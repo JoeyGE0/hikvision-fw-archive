@@ -2082,5 +2082,45 @@
   "102013": {
     "model": "DS-2XS6F45G1-IC1(/C2)/4G",
     "hardware_version": "UNKNOWN"
+  },
+  "102014": {
+    "model": "DS-2CD6825G0/C-I(S)(B)",
+    "hardware_version": "IPC_G0"
+  },
+  "102015": {
+    "model": "DS-2CD2083G2-I(U)",
+    "hardware_version": "IPC_G0"
+  },
+  "102016": {
+    "model": "DS-3WR60X",
+    "hardware_version": "UNKNOWN"
+  },
+  "102017": {
+    "model": "IDS-2CD72325G0/E",
+    "hardware_version": "IPC_G0"
+  },
+  "102018": {
+    "model": "IDS-2VS435-F840-EY(T5)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102019": {
+    "model": "DS-2CD1067G2H-LIUF/S(L)(RB)",
+    "hardware_version": "IPC_G0"
+  },
+  "102020": {
+    "model": "DS-2CD30167G3-LIU(Y)",
+    "hardware_version": "IPC_G0"
+  },
+  "102021": {
+    "model": "DS-2CD3046G2-IS",
+    "hardware_version": "IPC_G0"
+  },
+  "102022": {
+    "model": "DS-2CD6395G1E-IVS",
+    "hardware_version": "IPC_G0"
+  },
+  "102023": {
+    "model": "DS-2CD6984G1/VR-U/NFC",
+    "hardware_version": "IPC_G0"
   }
 }
