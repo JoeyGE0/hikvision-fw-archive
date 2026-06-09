@@ -2162,5 +2162,45 @@
   "102033": {
     "model": "DS-2XE6A46G0-D(A)LIZHRS(316L)",
     "hardware_version": "UNKNOWN"
+  },
+  "102034": {
+    "model": "DS-2XS2T41G1-ID/4G",
+    "hardware_version": "UNKNOWN"
+  },
+  "102035": {
+    "model": "DVR-216Q-M2",
+    "hardware_version": "DVR_G0"
+  },
+  "102036": {
+    "model": "IDS-2CD5347G2-XS",
+    "hardware_version": "IPC_G0"
+  },
+  "102037": {
+    "model": "IPC-B169HA-LUF/S(L)(RB)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102038": {
+    "model": "DS-2DE7A225IW-AEB(T5)",
+    "hardware_version": "IPC_G0"
+  },
+  "102039": {
+    "model": "DS-2SE7C425MW-AEB(14F1)(P3)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102040": {
+    "model": "DS-3E1510P-EI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102041": {
+    "model": "DS-2CD3047G2-LS",
+    "hardware_version": "IPC_G0"
+  },
+  "102042": {
+    "model": "ISD-SMG908L-S(C)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102043": {
+    "model": "DS-2CFS04/4G",
+    "hardware_version": "UNKNOWN"
   }
 }
