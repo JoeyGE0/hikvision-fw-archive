@@ -2122,5 +2122,45 @@
   "102023": {
     "model": "DS-2CD6984G1/VR-U/NFC",
     "hardware_version": "IPC_G0"
+  },
+  "102024": {
+    "model": "DS-2DE2C200IWG-K/4G/C05S10",
+    "hardware_version": "IPC_G0"
+  },
+  "102025": {
+    "model": "DS-2DE2C400IWG-K/4G/C05S10",
+    "hardware_version": "IPC_G0"
+  },
+  "102026": {
+    "model": "DS-2DE5425IWG-4G",
+    "hardware_version": "IPC_G0"
+  },
+  "102027": {
+    "model": "DS-2DF8C835MHS-DEL",
+    "hardware_version": "IPC_G0"
+  },
+  "102028": {
+    "model": "DS-2DT8C442MXG-LWT",
+    "hardware_version": "IPC_G0"
+  },
+  "102029": {
+    "model": "DS-2DY4425MXG0-WEX(ADC)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102030": {
+    "model": "DS-2SE4C215MWG-E/12(F0)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102031": {
+    "model": "DS-2XC6243G0-L(R)(D/Y)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102032": {
+    "model": "DS-2XE6046G0-LIS(316L)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102033": {
+    "model": "DS-2XE6A46G0-D(A)LIZHRS(316L)",
+    "hardware_version": "UNKNOWN"
   }
 }
