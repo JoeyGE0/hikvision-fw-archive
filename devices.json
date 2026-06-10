@@ -2238,5 +2238,37 @@
   "102052": {
     "model": "DS-K1T802E",
     "hardware_version": "UNKNOWN"
+  },
+  "102053": {
+    "model": "DS-KH6320-TE1(B)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102054": {
+    "model": "IDS-MI3704-H",
+    "hardware_version": "UNKNOWN"
+  },
+  "102055": {
+    "model": "DS-K1T8005EFWX",
+    "hardware_version": "UNKNOWN"
+  },
+  "102056": {
+    "model": "DS-K1T805EBFWX",
+    "hardware_version": "UNKNOWN"
+  },
+  "102057": {
+    "model": "DS-K1T808EFWX",
+    "hardware_version": "UNKNOWN"
+  },
+  "102058": {
+    "model": "DS-K3B220LX",
+    "hardware_version": "UNKNOWN"
+  },
+  "102059": {
+    "model": "DS-K1109DKFB",
+    "hardware_version": "UNKNOWN"
+  },
+  "102060": {
+    "model": "NVR-104MH-C",
+    "hardware_version": "NVR_V4"
   }
 }
