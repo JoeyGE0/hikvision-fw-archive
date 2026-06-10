@@ -2202,5 +2202,41 @@
   "102043": {
     "model": "DS-2CFS04/4G",
     "hardware_version": "UNKNOWN"
+  },
+  "102044": {
+    "model": "DS-2CFSP4/4G(COLD PROOF)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102045": {
+    "model": "DS-2CFSP8-D/4G(COLD PROOF)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102046": {
+    "model": "DS-3E1310HP-EI (B)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102047": {
+    "model": "DS-3E1318P-EI (B)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102048": {
+    "model": "DS-2XM63C5G1-IV(S)(M)(/ND)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102049": {
+    "model": "DS-3E1105P-EI/M V2",
+    "hardware_version": "UNKNOWN"
+  },
+  "102050": {
+    "model": "DS-3E1106P-EI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102051": {
+    "model": "AE-DC8013-D6",
+    "hardware_version": "UNKNOWN"
+  },
+  "102052": {
+    "model": "DS-K1T802E",
+    "hardware_version": "UNKNOWN"
   }
 }
