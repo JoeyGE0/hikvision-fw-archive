@@ -2302,5 +2302,33 @@
   "102068": {
     "model": "DS-3WR15X-H",
     "hardware_version": "UNKNOWN"
+  },
+  "102069": {
+    "model": "DS-K3B211LX",
+    "hardware_version": "UNKNOWN"
+  },
+  "102070": {
+    "model": "NVR-104MH-D",
+    "hardware_version": "NVR_V4"
+  },
+  "102071": {
+    "model": "DS-K1T680DF-E1",
+    "hardware_version": "UNKNOWN"
+  },
+  "102072": {
+    "model": "DVR-116G-M1",
+    "hardware_version": "DVR_V4"
+  },
+  "102073": {
+    "model": "DS-KAD-E2/E1",
+    "hardware_version": "UNKNOWN"
+  },
+  "102074": {
+    "model": "DS-1600KI(B)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102075": {
+    "model": "DS-K1T502DBFWX-CE1",
+    "hardware_version": "UNKNOWN"
   }
 }

@@ -374,5 +374,13 @@
   "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CNetwork_Camera-V5.9.20_260319_Release_Note.pdf": {
     "changes": "Supports motion status diagnostic information; · Dual-light models remove full-color night vision; · Supports 4G bitrate adaptation; · Supports tracking function.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202406/1717196484333/releasenote%5CK20B2_V4.76.100_build240415_ReleaseNotes.pdf": {
+    "changes": "Optimize the boot interface · The local GUI and web interface support the SADP protocol to search cameras in batches, · and all IPCs in the LAN need to be displayed through the SADP list · HC stream taking optimization",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202603/releasenote%5CDS-K1T680_Series_MinMoe_Terminal_Release_Note_V3.7.80_build251218.pdf": {
+    "changes": "Update the driver to be compatible with the new fingerprint module; · Optimize the platform data synchronization logic; · Fixed break out/in opposite status issue. · Device Model:",
+    "source": "pdf"
   }
 }
