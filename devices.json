@@ -2270,5 +2270,37 @@
   "102060": {
     "model": "NVR-104MH-C",
     "hardware_version": "NVR_V4"
+  },
+  "102061": {
+    "model": "DS-6901UDI(C)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102062": {
+    "model": "DS-7204HQHI-S1/XT",
+    "hardware_version": "DVR_G0"
+  },
+  "102063": {
+    "model": "DS-7204HUHI-S1/XT",
+    "hardware_version": "DVR_G0"
+  },
+  "102064": {
+    "model": "DS-7208HUHI-S1/XT",
+    "hardware_version": "DVR_G0"
+  },
+  "102065": {
+    "model": "ISD-SMW1701S-C",
+    "hardware_version": "UNKNOWN"
+  },
+  "102066": {
+    "model": "DS-2TD8167-150ZC4F/W",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102067": {
+    "model": "DS-3WF0FA-5AC/O",
+    "hardware_version": "UNKNOWN"
+  },
+  "102068": {
+    "model": "DS-3WR15X-H",
+    "hardware_version": "UNKNOWN"
   }
 }
