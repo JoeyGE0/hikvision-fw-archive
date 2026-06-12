@@ -2374,5 +2374,45 @@
   "102086": {
     "model": "DS-KB2412T-IM(B)",
     "hardware_version": "UNKNOWN"
+  },
+  "102087": {
+    "model": "DS-KB2422T-IM",
+    "hardware_version": "UNKNOWN"
+  },
+  "102088": {
+    "model": "DS-KH2230T(B)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102089": {
+    "model": "AE-DC2018-K2",
+    "hardware_version": "UNKNOWN"
+  },
+  "102090": {
+    "model": "DS-PEA103-CK1",
+    "hardware_version": "UNKNOWN"
+  },
+  "102091": {
+    "model": "IDS-TCM803-H",
+    "hardware_version": "UNKNOWN"
+  },
+  "102092": {
+    "model": "DS-K3Y411BLX",
+    "hardware_version": "UNKNOWN"
+  },
+  "102093": {
+    "model": "DS-3E1510P-SI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102094": {
+    "model": "DS-D5022F2-1V2",
+    "hardware_version": "UNKNOWN"
+  },
+  "102095": {
+    "model": "DS-9664NXI-S8",
+    "hardware_version": "UNKNOWN"
+  },
+  "102096": {
+    "model": "DS-K1109DB",
+    "hardware_version": "UNKNOWN"
   }
 }
