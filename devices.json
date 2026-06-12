@@ -2330,5 +2330,49 @@
   "102075": {
     "model": "DS-K1T502DBFWX-CE1",
     "hardware_version": "UNKNOWN"
+  },
+  "102076": {
+    "model": "DS-2CD2367G2P-LSU/SL",
+    "hardware_version": "IPC_G0"
+  },
+  "102077": {
+    "model": "DS-2TD2137-10/PY",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102078": {
+    "model": "DS-KIS902-S",
+    "hardware_version": "UNKNOWN"
+  },
+  "102079": {
+    "model": "AE-DC8322-G2PRO",
+    "hardware_version": "UNKNOWN"
+  },
+  "102080": {
+    "model": "DS-3WRM12C/2",
+    "hardware_version": "UNKNOWN"
+  },
+  "102081": {
+    "model": "DS-3WRM12GC/2",
+    "hardware_version": "UNKNOWN"
+  },
+  "102082": {
+    "model": "DS-K3H4210X-120",
+    "hardware_version": "UNKNOWN"
+  },
+  "102083": {
+    "model": "IDS-TCV991-HER",
+    "hardware_version": "UNKNOWN"
+  },
+  "102084": {
+    "model": "DS-KD-E/AC",
+    "hardware_version": "UNKNOWN"
+  },
+  "102085": {
+    "model": "DS-3T1512-SI-8T4F",
+    "hardware_version": "UNKNOWN"
+  },
+  "102086": {
+    "model": "DS-KB2412T-IM(B)",
+    "hardware_version": "UNKNOWN"
   }
 }

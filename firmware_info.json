@@ -382,5 +382,9 @@
   "https://assets.hikvision.com/prd/normal/all/files/202603/releasenote%5CDS-K1T680_Series_MinMoe_Terminal_Release_Note_V3.7.80_build251218.pdf": {
     "changes": "Update the driver to be compatible with the new fingerprint module; · Optimize the platform data synchronization logic; · Fixed break out/in opposite status issue. · Device Model:",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202602/releasenote%5CKV9_Villa_Door_Station_V2.3.13_build251203_Release_Note.pdf": {
+    "changes": "Support 8 KHz & 16 KHz audio sampling rate, add EQ algorithm to improve the audio quality and · support more audio format: G.711u, G.711a, Opus, AAC-LD, AAC-LC, G.726, G.722.1 · (2024-09-13) · Optimized firmware for factory testing processes.",
+    "source": "pdf"
   }
 }
