@@ -2414,5 +2414,41 @@
   "102096": {
     "model": "DS-K1109DB",
     "hardware_version": "UNKNOWN"
+  },
+  "102097": {
+    "model": "DS-C80K-01HI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102098": {
+    "model": "DS-3E1520P-EI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102099": {
+    "model": "DS-D5224F3-1V0SV/D",
+    "hardware_version": "UNKNOWN"
+  },
+  "102100": {
+    "model": "DS-KD8003Y-IME2",
+    "hardware_version": "UNKNOWN"
+  },
+  "102101": {
+    "model": "DS-KIS603-P(C)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102102": {
+    "model": "DS-KIS610-P",
+    "hardware_version": "UNKNOWN"
+  },
+  "102103": {
+    "model": "VI-K43P",
+    "hardware_version": "UNKNOWN"
+  },
+  "102104": {
+    "model": "DS-K3B530X/MODULAR",
+    "hardware_version": "UNKNOWN"
+  },
+  "102105": {
+    "model": "DS-K3G225X",
+    "hardware_version": "UNKNOWN"
   }
 }

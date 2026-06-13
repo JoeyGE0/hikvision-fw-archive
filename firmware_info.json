@@ -394,5 +394,21 @@
   "https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CDS-K1109_Series_Card_Reader_V1.1.2_build251015_Release_Note.pdf": {
     "changes": "Add NFC log retrieval function to the card reader; · Disable button triggering for 700ms after swiping card to prevent accidental touch · Optimized Features · Optimize beep response for touch button",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CKD8003B_Main_Module_Release_Note_V3.7.1_build250929.pdf": {
+    "changes": "Optimize lock mechanisms, such as personnel PIN, door station public passwords, and indoor · station private passwords. · New logic: · If input incorrect password 3 times consecutively within 5 minutes, it will be locked for 5 minutes. If",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CVersion_C_Villa_Door_Stations_Release_Note_V3.7.0_250929.pdf": {
+    "changes": "Optimize lock mechanisms, such as personnel PIN, door station public passwords, and indoor · station private passwords. · New logic: · If input incorrect password 3 times consecutively within 5 minutes, it will be locked for 5 minutes. If",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202511/releasenote%5CF1Plus_Villa_Door_Station_Firmware_V3.9.0_build250929_Release_Note.pdf": {
+    "changes": "Optimize lock mechanisms, such as personnel PIN, door station public passwords, and indoor · station private passwords. · New logic: · If input incorrect password 3 times consecutively within 5 minutes, it will be locked for 5 minutes. If",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CR0_Indoor_Station_Firmware_V2.2.108_build250718_Release_Note.pdf": {
+    "changes": "Update the Hik-Connect SDK to optimize the time required to receive call notifications. · The Auto Unlock Door setting has been moved from the Featured Function to the Local · Configuration under Configuration · Device Model",
+    "source": "pdf"
   }
 }
