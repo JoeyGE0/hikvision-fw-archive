@@ -2450,5 +2450,37 @@
   "102105": {
     "model": "DS-K3G225X",
     "hardware_version": "UNKNOWN"
+  },
+  "102106": {
+    "model": "DS-K6B653X",
+    "hardware_version": "UNKNOWN"
+  },
+  "102107": {
+    "model": "DS-6701HTHI-4K(B)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102108": {
+    "model": "DS-6920UDI-U(C)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102109": {
+    "model": "DS-K3Y501SX",
+    "hardware_version": "UNKNOWN"
+  },
+  "102110": {
+    "model": "DS-K7R83X",
+    "hardware_version": "UNKNOWN"
+  },
+  "102111": {
+    "model": "DS-2TD6267-50H4L/W",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102112": {
+    "model": "DS-PD201PC10-WE",
+    "hardware_version": "UNKNOWN"
+  },
+  "102113": {
+    "model": "DS-K6301X-DT",
+    "hardware_version": "UNKNOWN"
   }
 }

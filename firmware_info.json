@@ -410,5 +410,9 @@
   "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CR0_Indoor_Station_Firmware_V2.2.108_build250718_Release_Note.pdf": {
     "changes": "Update the Hik-Connect SDK to optimize the time required to receive call notifications. · The Auto Unlock Door setting has been moved from the Featured Function to the Local · Configuration under Configuration · Device Model",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CThermal_Network_PTZ_Camera_V5.5.139_build250924_Release_Note.pdf": {
+    "changes": "Cooled Thermal PTZ · Support smart noise reduction function. The function is disabled by default. · 110~1100mm thermal lens will be EOL, replacing one is 50~1100mm thermal lens. · Area Recognition support two channel live view",
+    "source": "pdf"
   }
 }
