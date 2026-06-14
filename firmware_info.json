@@ -426,5 +426,13 @@
   "https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5CB3Pro_Indoor_Station_Firmware_V2.2.114_build260427_Release_Note.pdf": {
     "changes": "Add local logs for activation, upgrade, password reset, and IPC configuration. · Resolve the issue of Daylight Saving Time (DST) being disabled after connecting to hik-connect. · Fix the hikcentral professional time synchronization problem during DST, where each · synchronization adds 1 hour.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202511/releasenote%5C2_Wire_HD_Video_Intercom_V1.3.0_build250920_Release_Note.pdf": {
+    "changes": "Door station: · call main station from KD7003, live view, intercom and unlock KD7003 from main station · After linking the converter, if unlocking from door station or indoor station, we can call elevator · controller and release the relay",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202509/releasenote%5CTurbo_HD_DVR_V4.83.612build250905_Release_Notes.pdf": {
+    "changes": "improve product performance, and will take effect automatically after upgrading from previous versions.",
+    "source": "pdf"
   }
 }

@@ -2514,5 +2514,49 @@
   "102121": {
     "model": "DS-7116HGHI-M1/T",
     "hardware_version": "DVR_V4"
+  },
+  "102122": {
+    "model": "DS-K1T8003F",
+    "hardware_version": "UNKNOWN"
+  },
+  "102123": {
+    "model": "DS-KD8003-IME1(B)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102124": {
+    "model": "DS-3WF03C-5AC/O",
+    "hardware_version": "UNKNOWN"
+  },
+  "102125": {
+    "model": "DS-KD7000EY-ME2/ALUMINUM",
+    "hardware_version": "UNKNOWN"
+  },
+  "102126": {
+    "model": "DS-KH7100EY-E2",
+    "hardware_version": "UNKNOWN"
+  },
+  "102127": {
+    "model": "DS-KH7300EY-TE2",
+    "hardware_version": "UNKNOWN"
+  },
+  "102128": {
+    "model": "DS-KEB801X-C",
+    "hardware_version": "UNKNOWN"
+  },
+  "102129": {
+    "model": "DS-PEAP-CV1(B)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102130": {
+    "model": "PTZ-T4215-D3",
+    "hardware_version": "UNKNOWN"
+  },
+  "102131": {
+    "model": "DVR-108G-M1/T",
+    "hardware_version": "DVR_V4"
+  },
+  "102132": {
+    "model": "RSC-2100-B",
+    "hardware_version": "UNKNOWN"
   }
 }
