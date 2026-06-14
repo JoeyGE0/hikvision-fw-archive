@@ -414,5 +414,17 @@
   "https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CThermal_Network_PTZ_Camera_V5.5.139_build250924_Release_Note.pdf": {
     "changes": "Cooled Thermal PTZ · Support smart noise reduction function. The function is disabled by default. · 110~1100mm thermal lens will be EOL, replacing one is 50~1100mm thermal lens. · Area Recognition support two channel live view",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5CB1Pro_Indoor_Station_Firmware_V2.2.114_build260427_Release_Note.pdf": {
+    "changes": "Add local logs for activation, upgrade, password reset, and IPC configuration. · Resolve the issue of Daylight Saving Time (DST) being disabled after connecting to hik-connect. · Fix the hikcentral professional time synchronization problem durin g DST, where each · synchronization adds 1 hour.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5CR0_Indoor_Station_Firmware_V2.2.114_build260427_Release_Note.pdf": {
+    "changes": "Add local logs for activation, upgrade, password reset, and IPC configuration. · Resolve the issue of Daylight Saving Time (DST) being disabled after connecting to hik-connect. · Fix the hikcentral professional time synchronization problem during DST, where each · synchronization adds 1 hour.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5CB3Pro_Indoor_Station_Firmware_V2.2.114_build260427_Release_Note.pdf": {
+    "changes": "Add local logs for activation, upgrade, password reset, and IPC configuration. · Resolve the issue of Daylight Saving Time (DST) being disabled after connecting to hik-connect. · Fix the hikcentral professional time synchronization problem during DST, where each · synchronization adds 1 hour.",
+    "source": "pdf"
   }
 }

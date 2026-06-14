@@ -2482,5 +2482,37 @@
   "102113": {
     "model": "DS-K6301X-DT",
     "hardware_version": "UNKNOWN"
+  },
+  "102114": {
+    "model": "HM-TD2168T-5/G1/T3Y",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102115": {
+    "model": "DS-3WAP5112-EI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102116": {
+    "model": "DS-3WAP5212E-EI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102117": {
+    "model": "DS-3WAP6118-EI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102118": {
+    "model": "DS-3WG1505-EI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102119": {
+    "model": "DS-3WG2505-EI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102120": {
+    "model": "IDS-7116HQHI-M1/T",
+    "hardware_version": "DVR_V4"
+  },
+  "102121": {
+    "model": "DS-7116HGHI-M1/T",
+    "hardware_version": "DVR_V4"
   }
 }
