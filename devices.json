@@ -2558,5 +2558,45 @@
   "102132": {
     "model": "RSC-2100-B",
     "hardware_version": "UNKNOWN"
+  },
+  "102133": {
+    "model": "IDS-7108HUHI-M1/S",
+    "hardware_version": "DVR_V4"
+  },
+  "102134": {
+    "model": "IDS-2CD7126G0-IZS",
+    "hardware_version": "IPC_G0"
+  },
+  "102135": {
+    "model": "DS-3WR12C",
+    "hardware_version": "UNKNOWN"
+  },
+  "102136": {
+    "model": "DS-3WR12GC",
+    "hardware_version": "UNKNOWN"
+  },
+  "102137": {
+    "model": "DS-K6B411TX/MODULAR",
+    "hardware_version": "UNKNOWN"
+  },
+  "102138": {
+    "model": "STS-BG24X-L3/P",
+    "hardware_version": "UNKNOWN"
+  },
+  "102139": {
+    "model": "DS-KD9203-E6",
+    "hardware_version": "UNKNOWN"
+  },
+  "102140": {
+    "model": "DS-K1T323EBFWX-E1",
+    "hardware_version": "UNKNOWN"
+  },
+  "102141": {
+    "model": "DS-KH6352-WTDE6",
+    "hardware_version": "UNKNOWN"
+  },
+  "102142": {
+    "model": "DS-7104NI-S1/W",
+    "hardware_version": "UNKNOWN"
   }
 }
