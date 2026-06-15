@@ -2598,5 +2598,49 @@
   "102142": {
     "model": "DS-7104NI-S1/W",
     "hardware_version": "UNKNOWN"
+  },
+  "102143": {
+    "model": "DS-K1T201AEF",
+    "hardware_version": "UNKNOWN"
+  },
+  "102144": {
+    "model": "DS-K1T804AF",
+    "hardware_version": "UNKNOWN"
+  },
+  "102145": {
+    "model": "DS-3E1518P-EI/M(O-STD)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102146": {
+    "model": "AE-DC8222-C8PRO(3.5K)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102147": {
+    "model": "DS-2DE2A204IW-DE3/W(S6)",
+    "hardware_version": "IPC_G0"
+  },
+  "102148": {
+    "model": "IDS-7104HQHI-M1/T",
+    "hardware_version": "DVR_V4"
+  },
+  "102149": {
+    "model": "IDS-TSV300-H",
+    "hardware_version": "UNKNOWN"
+  },
+  "102150": {
+    "model": "AE-DC8222-C8PRO(4K)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102151": {
+    "model": "YJP7681-188-NR",
+    "hardware_version": "UNKNOWN"
+  },
+  "102152": {
+    "model": "DS-3E1518P-SI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102153": {
+    "model": "DS-K2210",
+    "hardware_version": "UNKNOWN"
   }
 }

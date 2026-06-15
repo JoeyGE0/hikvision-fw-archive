@@ -446,5 +446,33 @@
   "https://assets.hikvision.com/prd/normal/all/files/202511/releasenote%5CDS-K1T323-K1T510_Series_Terminal_V4.23.40_build250816_Release_Note.pdf": {
     "changes": "New appearance: The metal narrow strip and circle indicator light design are more applicable in · different scenarios. · Users: 1000, Max.1000 faces capacity, Max.1000 fingerprints capacity (model with F) , and · Max.1000 cards",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5CNetwork_Camera-V5.8.41_260401_Release_Note-E9.pdf": {
+    "changes": "Fixed some bugs to enhance system stability.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5CNetwork_Camera-V5.9.14_260401_Release_Note-E15.pdf": {
+    "changes": "Fixed some bugs to enhance system stability.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5CNetwork_Camera-V5.8.41_260401_Release_Note-E10.pdf": {
+    "changes": "Fixed some bugs to enhance system stability.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5CNetwork_Camera-V5.8.41_260401_Release_Note-G6.pdf": {
+    "changes": "Fixed some bugs to enhance system stability.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5CTurbo_HD_DVR_V4.75.021_build250325_Release_Notes.pdf": {
+    "changes": "Fix known issues Customer Impact and Recommended Action This new firmware upgrade is to improve product performance, and will take effect automatically after upgrading from previous versions.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CB1Pro_Indoor_Station_Firmware_V2.2.108_build250718_Release_Note.pdf": {
+    "changes": "Update the Hik-Connect SDK to optimize the time required to receive call notifications. · The Auto Unlock Door setting has been moved from the Featured Function to the Local · Configuration under Configuration · Device Model",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202511/releasenote%5CV5.7.30_250729_Release_Note.pdf": {
+    "changes": "Algorithm optimization and updates. 2. Fix some bugs.",
+    "source": "pdf"
   }
 }
