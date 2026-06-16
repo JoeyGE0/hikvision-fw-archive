@@ -486,5 +486,13 @@
   "https://assets.hikvision.com/prd/normal/all/files/202507/releasenote%5CV5.7.62_250709_Release_Note.pdf": {
     "changes": "Algorithm optimization and updates. 2. Fix some bugs.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202509/releasenote%5CTurbo_HD_DVR_V4.83.802build250708_Release_Notes.pdf": {
+    "changes": "Fix known issues Customer Impact and Recommended Action This new firmware upgrade is to improve product performance, and will take effect automatically after upgrading from previous versions.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202508/releasenote%5CKH6_4.3_Inch_Indoor_Station_V2.2.110_build250701_Release_Note.pdf": {
+    "changes": "Update the Hik-Connect SDK to optimize the time required to receive call notifications. · Optimize the audio qu ality with NetEQ algorithm and add 16KHz sampling rate (only support · 8KHz before), supports more audio formats (auto-negotiation), including G.711u, G.711a, G.722.1 · Support switching between main and sub stream (HD and Basic) when live view the door station",
+    "source": "pdf"
   }
 }

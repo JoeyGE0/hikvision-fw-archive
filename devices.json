@@ -2670,5 +2670,45 @@
   "102160": {
     "model": "DS-2XC6027G0-L(S) (PA)",
     "hardware_version": "UNKNOWN"
+  },
+  "102161": {
+    "model": "AE-DC8312-C6S",
+    "hardware_version": "UNKNOWN"
+  },
+  "102162": {
+    "model": "IDS-7204HUHI-M1/X",
+    "hardware_version": "DVR_V4"
+  },
+  "102163": {
+    "model": "IDS-7208HUHI-M1/X",
+    "hardware_version": "DVR_V4"
+  },
+  "102164": {
+    "model": "DS-3WF0FA-2N/O",
+    "hardware_version": "UNKNOWN"
+  },
+  "102165": {
+    "model": "DS-3WF0FC-2N/O",
+    "hardware_version": "UNKNOWN"
+  },
+  "102166": {
+    "model": "IDS-TCS802-HS",
+    "hardware_version": "UNKNOWN"
+  },
+  "102167": {
+    "model": "DS-K2601-G",
+    "hardware_version": "UNKNOWN"
+  },
+  "102168": {
+    "model": "DS-K2802",
+    "hardware_version": "UNKNOWN"
+  },
+  "102169": {
+    "model": "DS-K2811",
+    "hardware_version": "UNKNOWN"
+  },
+  "102170": {
+    "model": "DS-D5224F2-1V1S/B",
+    "hardware_version": "UNKNOWN"
   }
 }
