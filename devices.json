@@ -2642,5 +2642,33 @@
   "102153": {
     "model": "DS-K2210",
     "hardware_version": "UNKNOWN"
+  },
+  "102154": {
+    "model": "DS-K2220X",
+    "hardware_version": "UNKNOWN"
+  },
+  "102155": {
+    "model": "VI-K23P",
+    "hardware_version": "UNKNOWN"
+  },
+  "102156": {
+    "model": "DS-PEA4H-20",
+    "hardware_version": "UNKNOWN"
+  },
+  "102157": {
+    "model": "DS-K1T680DFG",
+    "hardware_version": "UNKNOWN"
+  },
+  "102158": {
+    "model": "DS-K1T680DG",
+    "hardware_version": "UNKNOWN"
+  },
+  "102159": {
+    "model": "DS-KH7000EY-E2",
+    "hardware_version": "UNKNOWN"
+  },
+  "102160": {
+    "model": "DS-2XC6027G0-L(S) (PA)",
+    "hardware_version": "UNKNOWN"
   }
 }

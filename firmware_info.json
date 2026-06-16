@@ -474,5 +474,17 @@
   "https://assets.hikvision.com/prd/normal/all/files/202511/releasenote%5CV5.7.30_250729_Release_Note.pdf": {
     "changes": "Algorithm optimization and updates. 2. Fix some bugs.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202508/releasenote%5CB3Pro_Indoor_Station_Firmware_V2.2.108_build250718_Release_Note.pdf": {
+    "changes": "Update the Hik-Connect SDK to optimize the time required to receive call notifications. · The Auto Unlock Door setting has been moved from the Featured Function to the Local · Configuration under Configuration · Added an automatic door opening status icon to the status bar on the main page. There are three",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202511/releasenote%5CDS-K1T680_Series_MinMoe_Terminal_Release_Note_V3.7.60_build250714.pdf": {
+    "changes": "Update the driver to be compatible with the new fingerprint module; · Optimize the platform data synchronization logic; · Fixed break out/in opposite status issue. · Device Model:",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202507/releasenote%5CV5.7.62_250709_Release_Note.pdf": {
+    "changes": "Algorithm optimization and updates. 2. Fix some bugs.",
+    "source": "pdf"
   }
 }
