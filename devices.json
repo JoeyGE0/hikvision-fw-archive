@@ -2710,5 +2710,45 @@
   "102170": {
     "model": "DS-D5224F2-1V1S/B",
     "hardware_version": "UNKNOWN"
+  },
+  "102171": {
+    "model": "DS-K1T331W",
+    "hardware_version": "UNKNOWN"
+  },
+  "102172": {
+    "model": "DS-K1T642E",
+    "hardware_version": "UNKNOWN"
+  },
+  "102173": {
+    "model": "DS-K1T671TMFW",
+    "hardware_version": "UNKNOWN"
+  },
+  "102174": {
+    "model": "DS-K1T672M",
+    "hardware_version": "UNKNOWN"
+  },
+  "102175": {
+    "model": "AE-VD2501A-A/I",
+    "hardware_version": "UNKNOWN"
+  },
+  "102176": {
+    "model": "THC-B129-LPTS",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102177": {
+    "model": "DS-K2M0016A",
+    "hardware_version": "UNKNOWN"
+  },
+  "102178": {
+    "model": "DS-KD-TDE",
+    "hardware_version": "UNKNOWN"
+  },
+  "102179": {
+    "model": "DS-7102NI-S1/W",
+    "hardware_version": "UNKNOWN"
+  },
+  "102180": {
+    "model": "NVR-102H-S/W",
+    "hardware_version": "NVR_G0"
   }
 }

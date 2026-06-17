@@ -134,11 +134,11 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 | | |
 |--|--|
 | **Status** | ✅ SUCCESS |
-| **Last run** | 2026-06-16 20:04:15 UTC |
+| **Last run** | 2026-06-17 09:23:32 UTC |
 | **Scraper** | HTTP |
 | **Catalog fetch** | playwright |
 | **Catalog rows parsed** | 1103 |
-| **Firmware records** | 722 |
+| **Firmware records** | 732 |
 | **New last run** | 10 |
 | **Test mode** | Disabled |
 
@@ -150,7 +150,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 Collapsible sections per model and hardware line (newest firmware first within each section).
 
-Total: 722
+Total: 732
 
 
 
@@ -281,6 +281,16 @@ Total: 722
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 4.3.3 | Applied to: [AE-VC3B2I-ISF](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781080358/Firmware__V4.3.3_260316_S3000709979.zip), [AE-VC3B2I-ISF(RJ45)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781080358/Firmware__V4.3.3_260316_S3000709979.zip)(6MM), [AE-VC3B2I-ISF(M12)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781080358/Firmware__V4.3.3_260316_S3000709979.zip)(6MM) | 2026-03-11 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781080358/Firmware__V4.3.3_260316_S3000709979.zip) | — |
+
+</details>
+
+
+<details>
+<summary><h2>AE-VD2501A-A/I - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 4.7.1 | Applied to: [AE-VD2501A-A/I](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V4.7.1_250611_S3000654163.zip), [AE-VD2501A-A/I(7&#34;/ATC/4-CH/B)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V4.7.1_250611_S3000654163.zip) | 2025-06-11 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V4.7.1_250611_S3000654163.zip) | — |
 
 </details>
 
@@ -4199,7 +4209,7 @@ Total: 722
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 1.2.2 | Applied to: [DS-3WF0FA-2N/O](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.2.2_250701_S3000664191.zip) | 2025-07-01 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.2.2_250701_S3000664191.zip) | — |
+| 1.2.2 | Applied to: [DS-3WF0FA-2N/O](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.2.2_250701_S3000664191.zip) | 2025-07-01 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.2.2_250701_S3000664191.zip) | — |
 
 </details>
 
@@ -4219,7 +4229,7 @@ Total: 722
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 1.2.2 | Applied to: [DS-3WF0FC-2N/O](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.2.2_250701_S3000664192.zip) | 2025-07-01 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.2.2_250701_S3000664192.zip) | — |
+| 1.2.2 | Applied to: [DS-3WF0FC-2N/O](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.2.2_250701_S3000664192.zip) | 2025-07-01 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.2.2_250701_S3000664192.zip) | — |
 
 </details>
 
@@ -4470,6 +4480,16 @@ Total: 722
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 1.0.0 | Applied to: [DS-6920UDI-U(D)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781520992/Firmware__V1.0.0build250819_S3000667942.zip), [DS-6924UDI-U(D)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781520992/Firmware__V1.0.0build250819_S3000667942.zip), [DS-6932UDI-U(D)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781520992/Firmware__V1.0.0build250819_S3000667942.zip) | 2026-04-17 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781520992/Firmware__V1.0.0build250819_S3000667942.zip) | — |
+
+</details>
+
+
+<details>
+<summary><h2>DS-7102NI-S1/W - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 4.32.204 | Applied to: [DS-7102NI-S1/W](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware_En_V4.32.204_250514_S3000648571.zip) | 2025-05-14 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware_En_V4.32.204_250514_S3000648571.zip) | Fix known issues and optimize product performance. · [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202506/releasenote%5Cwifi_NVS_V4.32.204_build250514Release_Notes.pdf) |
 
 </details>
 
@@ -4780,7 +4800,7 @@ Total: 722
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 1.2.6 | Applied to: [DS-D5224F2-1V1S/B](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.2.6_250613_S3000660960.zip), [DS-D5224F2-1V1S/B(EU)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.2.6_250613_S3000660960.zip), [DS-D5224F2-1V1S/B(UK)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.2.6_250613_S3000660960.zip) | 2025-06-13 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.2.6_250613_S3000660960.zip) | — |
+| 1.2.6 | Applied to: [DS-D5224F2-1V1S/B](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.2.6_250613_S3000660960.zip), [DS-D5224F2-1V1S/B(EU)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.2.6_250613_S3000660960.zip), [DS-D5224F2-1V1S/B(UK)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.2.6_250613_S3000660960.zip) | 2025-06-13 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.2.6_250613_S3000660960.zip) | — |
 
 </details>
 
@@ -4810,7 +4830,7 @@ Total: 722
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 1.0.2 | Applied to: [DS-K1105EDB](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781337976/Firmware__V1.1.0_251010_S3000680923.zip), [DS-K1105EDKB](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781337976/Firmware__V1.1.0_251010_S3000680923.zip), [DS-K1105EDKB-QR](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781337976/Firmware__V1.1.0_251010_S3000680923.zip), [DS-K1105EMB](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781337976/Firmware__V1.1.0_251010_S3000680923.zip), [DS-K1105EMKB](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781337976/Firmware__V1.1.0_251010_S3000680923.zip), [DS-K1105EMKB-QR](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781337976/Firmware__V1.1.0_251010_S3000680923.zip) | 2026-04-14 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781337976/Firmware__V1.1.0_251010_S3000680923.zip) | — |
+| 1.0.2 | Applied to: [DS-K1105EDB](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.0.2_250624_S3000659512.zip), [DS-K1105EDKB](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.0.2_250624_S3000659512.zip), [DS-K1105EDKB-QR](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.0.2_250624_S3000659512.zip), [DS-K1105EMB](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.0.2_250624_S3000659512.zip), [DS-K1105EMKB](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.0.2_250624_S3000659512.zip), [DS-K1105EMKB-QR](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.0.2_250624_S3000659512.zip) | 2026-04-14 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.0.2_250624_S3000659512.zip) | — |
 
 </details>
 
@@ -4886,6 +4906,16 @@ Total: 722
 
 
 <details>
+<summary><h2>DS-K1T331W - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 3.7.60 | Applied to: [DS-K1T331W](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V3.7.60_250613_S3000659623.zip) | 2025-06-13 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V3.7.60_250613_S3000659623.zip) | — |
+
+</details>
+
+
+<details>
 <summary><h2>DS-K1T341CM - UNKNOWN (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
@@ -4946,6 +4976,16 @@ Total: 722
 
 
 <details>
+<summary><h2>DS-K1T642E - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 3.7.60 | Applied to: [DS-K1T642E](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V3.7.60_250613_S3000659599.zip), [DS-K1T642EF](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V3.7.60_250613_S3000659599.zip), [DS-K1T642EW](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V3.7.60_250613_S3000659599.zip), [DS-K1T642MW](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V3.7.60_250613_S3000659599.zip) | 2025-06-13 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V3.7.60_250613_S3000659599.zip) | Fixed known security vulnerabilities · For details, please refer: · https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-vulnerability · in-some-hikvision-access-control-intercom/ · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202511/releasenote%5CDS-K1T341A_Series_MinMoe_Terminal_Release_Notes_V3.7.60_build250613.pdf) |
+
+</details>
+
+
+<details>
 <summary><h2>DS-K1T642EFW - UNKNOWN (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
@@ -4961,6 +5001,26 @@ Total: 722
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 4.48.20 | Applied to: [DS-K1T670MFWX](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780531020/Firmware__V4.48.20_260515_S3000722841.zip), [DS-K1T670MWX-QR](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780531020/Firmware__V4.48.20_260515_S3000722841.zip), [DS-K1T670MWX-WBQR](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780531020/Firmware__V4.48.20_260515_S3000722841.zip), [DS-K1T670MWX-WEQR](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780531020/Firmware__V4.48.20_260515_S3000722841.zip), [DS-K1T670MX](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780531020/Firmware__V4.48.20_260515_S3000722841.zip), [DS-K1T670MX-QR](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780531020/Firmware__V4.48.20_260515_S3000722841.zip), [DS-K1T670MX-WB](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780531020/Firmware__V4.48.20_260515_S3000722841.zip), [DS-K1T670MX-WE](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780531020/Firmware__V4.48.20_260515_S3000722841.zip) | 2026-04-27 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780531020/Firmware__V4.48.20_260515_S3000722841.zip) | — |
+
+</details>
+
+
+<details>
+<summary><h2>DS-K1T671TMFW - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 3.7.60 | Applied to: [DS-K1T671TMFW](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V3.7.60_250613_S3000659603.zip), [DS-K5671-ZH](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V3.7.60_250613_S3000659603.zip), [DS-K5671-ZU](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V3.7.60_250613_S3000659603.zip), [DS-K5671-ZV](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V3.7.60_250613_S3000659603.zip) | 2025-06-13 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V3.7.60_250613_S3000659603.zip) | Modify the issue of unrecognized resident ID card. · Device Model: · Naming Rule: · D for Desfire, Felica and M1 card · [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202311/releasenote%5CDS-K1T671TM-3XF_Temperature_Measuring_Terminal_V3.2.35_build230804_Release_Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-K1T672M - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 3.7.60 | Applied to: [DS-K1T672M](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V3.7.60_250613_S3000659614.zip), [DS-K1T672MW](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V3.7.60_250613_S3000659614.zip) | 2025-06-13 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V3.7.60_250613_S3000659614.zip) | — |
 
 </details>
 
@@ -5120,7 +5180,7 @@ Total: 722
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 1.1.3 | Applied to: [DS-K2601-G](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.3_250625_S3000659510.zip), [DS-K2601T](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.3_250625_S3000659510.zip) (MAIN BOARD), [DS-K2601TMAIN](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.3_250625_S3000659510.zip) BOARD, [DS-K2602-G](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.3_250625_S3000659510.zip), [DS-K2604-G](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.3_250625_S3000659510.zip), [[DS-K2604T](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.3_250625_S3000659510.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.3_250625_S3000659510.zip) (MAIN BOARD), DS-K2604T MAIN BOARD | 2025-06-25 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.3_250625_S3000659510.zip) | — |
+| 1.1.3 | Applied to: [DS-K2601-G](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.1.3_250625_S3000659510.zip), [DS-K2601T](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.1.3_250625_S3000659510.zip) (MAIN BOARD), [DS-K2601TMAIN](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.1.3_250625_S3000659510.zip) BOARD, [DS-K2602-G](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.1.3_250625_S3000659510.zip), [DS-K2604-G](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.1.3_250625_S3000659510.zip), [[DS-K2604T](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.1.3_250625_S3000659510.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.1.3_250625_S3000659510.zip) (MAIN BOARD), DS-K2604T MAIN BOARD | 2025-06-25 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.1.3_250625_S3000659510.zip) | — |
 
 </details>
 
@@ -5130,7 +5190,7 @@ Total: 722
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 1.1.3 | Applied to: [[DS-K2602T](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780043044/Firmware__V1.1.3_251120_S3000687367.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780043044/Firmware__V1.1.3_251120_S3000687367.zip), DS-K2602T (MAIN BOARD), [DS-K2602TMAIN](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780043044/Firmware__V1.1.3_251120_S3000687367.zip) BOARD | 2025-11-20 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780043044/Firmware__V1.1.3_251120_S3000687367.zip) | — |
+| 1.1.3 | Applied to: [[DS-K2602T](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.1.3_250625_S3000659510.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.1.3_250625_S3000659510.zip), DS-K2602T (MAIN BOARD), [DS-K2602TMAIN](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.1.3_250625_S3000659510.zip) BOARD | 2025-11-20 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.1.3_250625_S3000659510.zip) | — |
 
 </details>
 
@@ -5140,7 +5200,7 @@ Total: 722
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 2.0.8 | Applied to: [DS-K2802](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V2.0.8_250625_S3000665509.zip), [DS-K2801](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V2.0.8_250625_S3000665509.zip) | 2025-06-25 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V2.0.8_250625_S3000665509.zip) | — |
+| 2.0.8 | Applied to: [DS-K2802](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V2.0.8_250625_S3000665509.zip), [DS-K2801](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V2.0.8_250625_S3000665509.zip) | 2025-06-25 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V2.0.8_250625_S3000665509.zip) | — |
 
 </details>
 
@@ -5150,7 +5210,17 @@ Total: 722
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 1.0.2 | Applied to: [DS-K2811](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.0.2_250624_S3000659512.zip), [DS-K2812](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.0.2_250624_S3000659512.zip), [DS-K2814](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.0.2_250624_S3000659512.zip) | 2025-06-24 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.0.2_250624_S3000659512.zip) | — |
+| 1.0.2 | Applied to: [DS-K2811](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.0.2_250624_S3000659512.zip), [DS-K2812](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.0.2_250624_S3000659512.zip), [DS-K2814](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.0.2_250624_S3000659512.zip) | 2025-06-24 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.0.2_250624_S3000659512.zip) | — |
+
+</details>
+
+
+<details>
+<summary><h2>DS-K2M0016A - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 1.0.2 | Applied to: [DS-K2M0016A](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.0.2_250530_S3000659514.zip) | 2025-05-30 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.0.2_250530_S3000659514.zip) | — |
 
 </details>
 
@@ -5470,7 +5540,7 @@ Total: 722
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 1.0.2 | Applied to: [[DS-KAD-E2/E1](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781337976/Firmware__V1.1.0_251010_S3000680923.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781337976/Firmware__V1.1.0_251010_S3000680923.zip), DS-KAD-E2/E1 O-STD | 2025-12-09 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781337976/Firmware__V1.1.0_251010_S3000680923.zip) | ⚠️ Beta firmware. Door station: · Fixed a rare issue where the elevator could not be called after a device restart · Optimized the web page UI and fixed some display issue · Optimized the M1 card encryption function · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5C2_Wire_HD_Video_Intercom_V1.3.0_build251210_Release_Note.pdf) |
+| 1.0.2 | Applied to: [[DS-KAD-E2/E1](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.0.2_250624_S3000659512.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.0.2_250624_S3000659512.zip), DS-KAD-E2/E1 O-STD | 2025-12-09 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.0.2_250624_S3000659512.zip) | ⚠️ Beta firmware. Door station: · Fixed a rare issue where the elevator could not be called after a device restart · Optimized the web page UI and fixed some display issue · Optimized the M1 card encryption function · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5C2_Wire_HD_Video_Intercom_V1.3.0_build251210_Release_Note.pdf) |
 
 </details>
 
@@ -5501,6 +5571,16 @@ Total: 722
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 2.0.0 | Applied to: [DS-KD-E/AC](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781254537/Firmware__V2.0.0_251121_S3000691978.zip) | 2025-11-21 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781254537/Firmware__V2.0.0_251121_S3000691978.zip) | — |
+
+</details>
+
+
+<details>
+<summary><h2>DS-KD-TDE - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 1.0.3 | Applied to: [DS-KD-TDE](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.0.3_250519_S3000649576.zip), [DS-KD-TDM](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.0.3_250519_S3000649576.zip), [DS-KD7003EY-S2](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.0.3_250519_S3000649576.zip) | 2025-05-19 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.0.3_250519_S3000649576.zip) | ⚠️ Beta firmware. Door Station · KD7003 support trade button (automatically unlock door after receive call) function. · For example, if you set same schedule as below pictures, the door will unlock · automatically after receive the call from button1 between Monday to Friday 8:00-18:00 · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202507/releasenote%5C2_Wire_HD_Video_Intercom_V1.2.0_build250519_Release_Note.pdf) |
 
 </details>
 
@@ -5601,7 +5681,7 @@ Total: 722
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 2.2.116 | Applied to: [DS-KH6110-WE1](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780563030/Firmware__V2.2.116_260519_S3000724104.zip), [DS-KH6110-WE1/WHITE](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780563030/Firmware__V2.2.116_260519_S3000724104.zip), [DS-KIS606-P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780563030/Firmware__V2.2.116_260519_S3000724104.zip) | 2026-04-27 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780563030/Firmware__V2.2.116_260519_S3000724104.zip) | — |
-| 2.2.110 | Applied to: [DS-KH6110-WE1](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V2.2.110_250701_S3000663589.zip), [DS-KH6110-WE1/WHITE](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V2.2.110_250701_S3000663589.zip), [DS-KIS606-P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V2.2.110_250701_S3000663589.zip) | 2025-07-01 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V2.2.110_250701_S3000663589.zip) | Update the Hik-Connect SDK to optimize the time required to receive call notifications. · Optimize the audio qu ality with NetEQ algorithm and add 16KHz sampling rate (only support · 8KHz before), supports more audio formats (auto-negotiation), including G.711u, G.711a, G.722.1 · Support switching between main and sub stream (HD and Basic) when live view the door station · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202508/releasenote%5CKH6_4.3_Inch_Indoor_Station_V2.2.110_build250701_Release_Note.pdf) |
+| 2.2.110 | Applied to: [DS-KH6110-WE1](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V2.2.110_250701_S3000663589.zip), [DS-KH6110-WE1/WHITE](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V2.2.110_250701_S3000663589.zip), [DS-KIS606-P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V2.2.110_250701_S3000663589.zip) | 2025-07-01 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V2.2.110_250701_S3000663589.zip) | Update the Hik-Connect SDK to optimize the time required to receive call notifications. · Optimize the audio qu ality with NetEQ algorithm and add 16KHz sampling rate (only support · 8KHz before), supports more audio formats (auto-negotiation), including G.711u, G.711a, G.722.1 · Support switching between main and sub stream (HD and Basic) when live view the door station · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202508/releasenote%5CKH6_4.3_Inch_Indoor_Station_V2.2.110_build250701_Release_Note.pdf) |
 
 </details>
 
@@ -6448,7 +6528,7 @@ Total: 722
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 4.83.802 | Applied to: [IDS-7204HUHI-M1/X](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware_Asia_V4.83.802_250708_S3000663436.zip), [IDS-7204HUHI-M2/X](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware_Asia_V4.83.802_250708_S3000663436.zip) | 2025-07-08 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware_Asia_V4.83.802_250708_S3000663436.zip) | Fix known issues Customer Impact and Recommended Action This new firmware upgrade is to improve product performance, and will take effect automatically after upgrading from previous versions. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202509/releasenote%5CTurbo_HD_DVR_V4.83.802build250708_Release_Notes.pdf) |
+| 4.83.802 | Applied to: [IDS-7204HUHI-M1/X](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware_Asia_V4.83.802_250708_S3000663436.zip), [IDS-7204HUHI-M2/X](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware_Asia_V4.83.802_250708_S3000663436.zip) | 2025-07-08 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware_Asia_V4.83.802_250708_S3000663436.zip) | Fix known issues Customer Impact and Recommended Action This new firmware upgrade is to improve product performance, and will take effect automatically after upgrading from previous versions. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202509/releasenote%5CTurbo_HD_DVR_V4.83.802build250708_Release_Notes.pdf) |
 
 </details>
 
@@ -6458,7 +6538,7 @@ Total: 722
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 4.83.802 | Applied to: [IDS-7208HUHI-M1/X](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware_Asia_V4.83.802_250707_S3000663480.zip), [IDS-7208HUHI-M2/X](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware_Asia_V4.83.802_250707_S3000663480.zip) | 2025-07-07 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware_Asia_V4.83.802_250707_S3000663480.zip) | Fix known issues Customer Impact and Recommended Action This new firmware upgrade is to improve product performance, and will take effect automatically after upgrading from previous versions. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202509/releasenote%5CTurbo_HD_DVR_V4.83.802build250708_Release_Notes.pdf) |
+| 4.83.802 | Applied to: [IDS-7208HUHI-M1/X](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware_Asia_V4.83.802_250707_S3000663480.zip), [IDS-7208HUHI-M2/X](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware_Asia_V4.83.802_250707_S3000663480.zip) | 2025-07-07 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware_Asia_V4.83.802_250707_S3000663480.zip) | Fix known issues Customer Impact and Recommended Action This new firmware upgrade is to improve product performance, and will take effect automatically after upgrading from previous versions. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202509/releasenote%5CTurbo_HD_DVR_V4.83.802build250708_Release_Notes.pdf) |
 
 </details>
 
@@ -6519,7 +6599,7 @@ Total: 722
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 5.4.0 | Applied to: [IDS-TCS802-HS](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.4.0_250627_S3000660371.zip), [IDS-TCS802-HS/350M/12](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.4.0_250627_S3000660371.zip) | 2025-06-27 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.4.0_250627_S3000660371.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202507/releasenote%5C【Release_note】Capture_Camera_iDS-TCV5(9)00(7)-B(E)(I)(F)(H)_V5.4.0_250627.pdf) |
+| 5.4.0 | Applied to: [IDS-TCS802-HS](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V5.4.0_250627_S3000660371.zip), [IDS-TCS802-HS/350M/12](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V5.4.0_250627_S3000660371.zip) | 2025-06-27 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V5.4.0_250627_S3000660371.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202507/releasenote%5C【Release_note】Capture_Camera_iDS-TCV5(9)00(7)-B(E)(I)(F)(H)_V5.4.0_250627.pdf) |
 
 </details>
 
@@ -6529,7 +6609,7 @@ Total: 722
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 5.4.0 | Applied to: [IDS-TCS900-HI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781254537/Firmware__V5.4.0_251122_S3000687012.zip), [IDS-TCS900-HI/1140/H1(AF)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781254537/Firmware__V5.4.0_251122_S3000687012.zip)(24V), [IDS-TCS907-HIR](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781254537/Firmware__V5.4.0_251122_S3000687012.zip) | 2025-10-23 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781254537/Firmware__V5.4.0_251122_S3000687012.zip) | — |
+| 5.4.0 | Applied to: [IDS-TCS900-HI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V5.4.0_250627_S3000660371.zip), [IDS-TCS900-HI/1140/H1(AF)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V5.4.0_250627_S3000660371.zip)(24V), [IDS-TCS907-HIR](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V5.4.0_250627_S3000660371.zip) | 2025-10-23 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V5.4.0_250627_S3000660371.zip) | — |
 
 </details>
 
@@ -6559,7 +6639,7 @@ Total: 722
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 5.4.0 | Applied to: [IDS-TCV991-HER](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781254537/Firmware__V5.4.0_251122_S3000687012.zip), [IDS-TCV991-HER/25/PT50](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781254537/Firmware__V5.4.0_251122_S3000687012.zip), [IDS-TCV991-HIR](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781254537/Firmware__V5.4.0_251122_S3000687012.zip), [IDS-TCV991-HIR/25/PT50](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781254537/Firmware__V5.4.0_251122_S3000687012.zip) | 2025-11-22 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781254537/Firmware__V5.4.0_251122_S3000687012.zip) | — |
+| 5.4.0 | Applied to: [IDS-TCV991-HER](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V5.4.0_250627_S3000660371.zip), [IDS-TCV991-HER/25/PT50](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V5.4.0_250627_S3000660371.zip), [IDS-TCV991-HIR](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V5.4.0_250627_S3000660371.zip), [IDS-TCV991-HIR/25/PT50](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V5.4.0_250627_S3000660371.zip) | 2025-11-22 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V5.4.0_250627_S3000660371.zip) | — |
 
 </details>
 
@@ -6799,6 +6879,16 @@ Total: 722
 
 
 <details>
+<summary><h2>NVR-102H-S/W - NVR_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 4.32.204 | Applied to: NVR-102H-S/W | 2025-05-14 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware_En_V4.32.204_250514_S3000648590.zip) | — |
+
+</details>
+
+
+<details>
 <summary><h2>NVR-104MH-C - NVR_V4 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
@@ -6944,6 +7034,16 @@ Total: 722
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 1.09.01 | Applied to: THC-B123-M, THC-B123-M(2.8MM)(HILOOK STD), THC-B123-M(3.6MM)(HILOOK STD), THC-B223-M, THC-B223-M(2.8MM)(HILOOK STD), THC-B223-M(3.6MM)(HILOOK STD), THC-B223-M(6MM)(HILOOK STD), THC-T123-M | 2026-01-07 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779782863/Firmware__V1.09.01_260107_S3000700979.zip) | — |
+
+</details>
+
+
+<details>
+<summary><h2>THC-B129-LPTS - THERMAL_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 1.04.01 | Applied to: THC-B129-LPTS, THC-B129-LPTS(2.8MM)(HILOOKSTD), THC-B129-LPTS(3.6MM)(HILOOKSTD), THC-B129-LTS, THC-B129-LTS(2.8MM)(HILOOKSTD), THC-B129-LTS(3.6MM)(HILOOKSTD), THC-T229-LPTS, THC-T229-LPTS(2.8MM)(HILOOKSTD) | 2025-06-07 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.04.01_250607_S3000653166.zip) | — |
 
 </details>
 

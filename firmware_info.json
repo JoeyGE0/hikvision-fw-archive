@@ -494,5 +494,21 @@
   "https://assets.hikvision.com/prd/normal/all/files/202508/releasenote%5CKH6_4.3_Inch_Indoor_Station_V2.2.110_build250701_Release_Note.pdf": {
     "changes": "Update the Hik-Connect SDK to optimize the time required to receive call notifications. · Optimize the audio qu ality with NetEQ algorithm and add 16KHz sampling rate (only support · 8KHz before), supports more audio formats (auto-negotiation), including G.711u, G.711a, G.722.1 · Support switching between main and sub stream (HD and Basic) when live view the door station",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202511/releasenote%5CDS-K1T341A_Series_MinMoe_Terminal_Release_Notes_V3.7.60_build250613.pdf": {
+    "changes": "Fixed known security vulnerabilities · For details, please refer: · https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-vulnerability · in-some-hikvision-access-control-intercom/",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202311/releasenote%5CDS-K1T671TM-3XF_Temperature_Measuring_Terminal_V3.2.35_build230804_Release_Note.pdf": {
+    "changes": "Modify the issue of unrecognized resident ID card. · Device Model: · Naming Rule: · D for Desfire, Felica and M1 card",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202507/releasenote%5C2_Wire_HD_Video_Intercom_V1.2.0_build250519_Release_Note.pdf": {
+    "changes": "Door Station · KD7003 support trade button (automatically unlock door after receive call) function. · For example, if you set same schedule as below pictures, the door will unlock · automatically after receive the call from button1 between Monday to Friday 8:00-18:00",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202506/releasenote%5Cwifi_NVS_V4.32.204_build250514Release_Notes.pdf": {
+    "changes": "Fix known issues and optimize product performance.",
+    "source": "pdf"
   }
 }
