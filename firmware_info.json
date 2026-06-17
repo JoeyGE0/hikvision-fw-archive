@@ -510,5 +510,13 @@
   "https://assets.hikvision.com/prd/public/all/files/202506/releasenote%5Cwifi_NVS_V4.32.204_build250514Release_Notes.pdf": {
     "changes": "Fix known issues and optimize product performance.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CDS-K1T341A_Series_MinMoe_Terminal_Release_Notes_V3.7.0_build231019.pdf": {
+    "changes": "Add security issues and secure email (overseas) password retrieval function. · 2、Add web network packet capture function. · Device Model: · Naming Rule:",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202505/releasenote%5CTurbo_HD_DVR_V4.75.030_build250508_Release_Notes.pdf": {
+    "changes": "improve product performance, and will take effect automatically after upgrading from previous versions.",
+    "source": "pdf"
   }
 }

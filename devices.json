@@ -2750,5 +2750,57 @@
   "102180": {
     "model": "NVR-102H-S/W",
     "hardware_version": "NVR_G0"
+  },
+  "102181": {
+    "model": "NK842WBH",
+    "hardware_version": "NVR_V4"
+  },
+  "102182": {
+    "model": "DS-K1T680D-E1",
+    "hardware_version": "UNKNOWN"
+  },
+  "102183": {
+    "model": "DS-K1T341AMF",
+    "hardware_version": "UNKNOWN"
+  },
+  "102184": {
+    "model": "DS-K1T671M",
+    "hardware_version": "UNKNOWN"
+  },
+  "102185": {
+    "model": "DS-K5033MW",
+    "hardware_version": "UNKNOWN"
+  },
+  "102186": {
+    "model": "DS-KD-MFB/S",
+    "hardware_version": "UNKNOWN"
+  },
+  "102187": {
+    "model": "DS-3T1506HP-SI-4P2F",
+    "hardware_version": "UNKNOWN"
+  },
+  "102188": {
+    "model": "DS-D5043U3-1V0S",
+    "hardware_version": "UNKNOWN"
+  },
+  "102189": {
+    "model": "DS-E04HGHI-XD",
+    "hardware_version": "DVR_V4"
+  },
+  "102190": {
+    "model": "DS-E08HGHI-XB",
+    "hardware_version": "DVR_V4"
+  },
+  "102191": {
+    "model": "DS-E16HGHI-XB",
+    "hardware_version": "DVR_V4"
+  },
+  "102192": {
+    "model": "IDS-E04HQHI-XD",
+    "hardware_version": "DVR_V4"
+  },
+  "102193": {
+    "model": "IDS-E04HUHI-XD",
+    "hardware_version": "DVR_V4"
   }
 }
