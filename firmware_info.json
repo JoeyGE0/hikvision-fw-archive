@@ -518,5 +518,21 @@
   "https://assets.hikvision.com/prd/public/all/files/202505/releasenote%5CTurbo_HD_DVR_V4.75.030_build250508_Release_Notes.pdf": {
     "changes": "improve product performance, and will take effect automatically after upgrading from previous versions.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5CDS-K1T342_Series_MinMoe_Terminal_Release_Note_V4.48.40_build260522.pdf": {
+    "changes": "Support elevator control · Optimizations · Support to be managed by platform via SDK and ISAPI · Device Model:",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5CDS-K1T343_Series_MinMoe_Terminal_Release_Note_V4.48.40_build260522.pdf": {
+    "changes": "Support elevator control · Optimizations · Optimize SDK and ISAPI related function and stability · Device Model:",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5CDS-K1T673_Series_MinMoe_Terminal_4.48.20_build260515_Release_Note.pdf": {
+    "changes": "Support turnstiles card readers K7CR01 & K7CR02 · Support QR code scanner Q340 via RS485 · Device Model: · Modules (optional):",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5CDS-K1T670_Series_MinMoe_Terminal_V4.48.20_build260427_Release_Note.pdf": {
+    "changes": "Support turnstiles card readers K7CR01 & K7CR02 · Support QR code scanner Q340 via RS485 · Support to read text from identification card through RS485 readers · Optimizations",
+    "source": "pdf"
   }
 }

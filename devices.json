@@ -2802,5 +2802,61 @@
   "102193": {
     "model": "IDS-E04HUHI-XD",
     "hardware_version": "DVR_V4"
+  },
+  "102194": {
+    "model": "DS-2CD6W65G1-IVS",
+    "hardware_version": "IPC_G0"
+  },
+  "102195": {
+    "model": "DS-2CD1147G3H-LIU(F)(/SL)(/SRB)",
+    "hardware_version": "IPC_G0"
+  },
+  "102196": {
+    "model": "DS-K2601T (MAIN BOARD)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102197": {
+    "model": "DS-K1109EB",
+    "hardware_version": "UNKNOWN"
+  },
+  "102198": {
+    "model": "AE-DC2032-V300",
+    "hardware_version": "UNKNOWN"
+  },
+  "102199": {
+    "model": "DS-7716NXI-K4(D)",
+    "hardware_version": "NVR_G0"
+  },
+  "102200": {
+    "model": "DS-K1T670MWX-WBQR",
+    "hardware_version": "UNKNOWN"
+  },
+  "102201": {
+    "model": "IDS-TCM441-FIR",
+    "hardware_version": "UNKNOWN"
+  },
+  "102202": {
+    "model": "DS-K1T690M-E1",
+    "hardware_version": "UNKNOWN"
+  },
+  "102203": {
+    "model": "TLD-2022-N",
+    "hardware_version": "UNKNOWN"
+  },
+  "102204": {
+    "model": "DS-D5232F2-1V1S",
+    "hardware_version": "UNKNOWN"
+  },
+  "102205": {
+    "model": "DS-3E1309P-EI(B)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102206": {
+    "model": "DVR-216U-M2",
+    "hardware_version": "DVR_V4"
+  },
+  "102207": {
+    "model": "DS-K1T809EWX",
+    "hardware_version": "UNKNOWN"
   }
 }
