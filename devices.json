@@ -2858,5 +2858,41 @@
   "102207": {
     "model": "DS-K1T809EWX",
     "hardware_version": "UNKNOWN"
+  },
+  "102208": {
+    "model": "DS-K3G301X",
+    "hardware_version": "UNKNOWN"
+  },
+  "102209": {
+    "model": "DS-K3G411BX",
+    "hardware_version": "UNKNOWN"
+  },
+  "102210": {
+    "model": "DVR-208U-M1",
+    "hardware_version": "DVR_V4"
+  },
+  "102211": {
+    "model": "IDS-TCV500-H(I)(E)/IM",
+    "hardware_version": "UNKNOWN"
+  },
+  "102212": {
+    "model": "DS-K3G301BX",
+    "hardware_version": "UNKNOWN"
+  },
+  "102213": {
+    "model": "DS-K3Y411X",
+    "hardware_version": "UNKNOWN"
+  },
+  "102214": {
+    "model": "DS-3WF0BC-2NT",
+    "hardware_version": "UNKNOWN"
+  },
+  "102215": {
+    "model": "DS-3WF0EC-5ACT",
+    "hardware_version": "UNKNOWN"
+  },
+  "102216": {
+    "model": "DS-KIS613-S",
+    "hardware_version": "UNKNOWN"
   }
 }

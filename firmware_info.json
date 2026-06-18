@@ -534,5 +534,13 @@
   "https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5CDS-K1T670_Series_MinMoe_Terminal_V4.48.20_build260427_Release_Note.pdf": {
     "changes": "Support turnstiles card readers K7CR01 & K7CR02 · Support QR code scanner Q340 via RS485 · Support to read text from identification card through RS485 readers · Optimizations",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202502/releasenote%5CTurbo_HD_DVR_V4.75.020_build250109_Release_Notes.pdf": {
+    "changes": "improve product performance, and will take effect automatically after upgrading from previous versions.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202502/releasenote%5CB3Pro_Indoor_Station_Firmware_V2.2.100_build250114_Release_Note.pdf": {
+    "changes": "Optimized the wizard UI",
+    "source": "pdf"
   }
 }
