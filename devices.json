@@ -2938,5 +2938,45 @@
   "102227": {
     "model": "DS-PA201PG-KIT-16WE",
     "hardware_version": "UNKNOWN"
+  },
+  "102228": {
+    "model": "AE-DI2032-G40(OVERSEAS)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102229": {
+    "model": "DS-PD201MC-WA",
+    "hardware_version": "UNKNOWN"
+  },
+  "102230": {
+    "model": "DS-PS201-WE",
+    "hardware_version": "UNKNOWN"
+  },
+  "102231": {
+    "model": "DS-2TD4238-10/S2",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102232": {
+    "model": "THC-B157-LPTS",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102233": {
+    "model": "THC-T157-PTLTS",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102234": {
+    "model": "DS-2XM6122G1-I(D)(M)(/ND)",
+    "hardware_version": "IPC_V4"
+  },
+  "102235": {
+    "model": "DS-2XM6522G1-I(D)(M)(/ND)",
+    "hardware_version": "IPC_V4"
+  },
+  "102236": {
+    "model": "DS-2XM6746G1-I(D)(M)(/ND)",
+    "hardware_version": "IPC_V4"
+  },
+  "102237": {
+    "model": "DS-2XS6F45G0-I(/4G)",
+    "hardware_version": "UNKNOWN"
   }
 }

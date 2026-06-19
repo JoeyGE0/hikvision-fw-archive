@@ -1,15 +1,12 @@
 {
-  "last_run": "2026-06-19T09:36:11.946649",
-  "status": "error",
+  "last_run": "2026-06-19T18:18:06.330983",
+  "status": "success",
   "scraper_mode": "http",
   "post_merge_verified": "2026-05-19T13:00:29.926000",
   "catalog_urls_parsed": 4568,
-  "firmwares_found": 788,
+  "firmwares_found": 801,
   "new_firmwares": 10,
-  "errors": [
-    "Download failed DS-K3B220X v2.0.0: ('Connection broken: IncompleteRead(52085231 bytes read, 367413682 more expected)', IncompleteRead(52085231 bytes read, 367413682 more expected))",
-    "Download failed DS-K3B530X v2.2.0: ('Connection broken: IncompleteRead(142606336 bytes read, 276892818 more expected)', IncompleteRead(142606336 bytes read, 276892818 more expected))"
-  ],
+  "errors": [],
   "test_mode": false,
   "catalog_fetch": "playwright",
   "catalog_entries": 1094,
