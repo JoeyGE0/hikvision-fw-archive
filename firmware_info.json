@@ -542,5 +542,13 @@
   "https://assets.hikvision.com/prd/public/all/files/202502/releasenote%5CB3Pro_Indoor_Station_Firmware_V2.2.100_build250114_Release_Note.pdf": {
     "changes": "Optimized the wizard UI",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5CKH6_4.3_Inch_Indoor_Station_V2.2.116_Release_Note.pdf": {
+    "changes": "Add local logs for activation, upgrade, password reset, and IPC configuration. · Resolve the issue of Daylight Saving Time (DST) being disabled after connecting to hik-connect. · Update the Hik-Connect SDK to optimize the time required to receive call notifications. · Optimize the audio qu ality with NetEQ algorithm and add 16KHz sampling rate (only support",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5CNetwork_Camera-V5.8.110_Release_Note-G9.pdf": {
+    "changes": "Support Dynamic Stitching, default ON. · For 8MP and 12MP cameras, when Dynamic Stitching is ON, the frame rate is automatically reduced to 12.5/15fps. · After this function is OFF, the frame rate will be restored without reboot. · And after this function is ON, due to platform performance limitations, only 3 streams live view is supported.",
+    "source": "pdf"
   }
 }

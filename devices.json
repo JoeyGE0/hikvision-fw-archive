@@ -2894,5 +2894,49 @@
   "102216": {
     "model": "DS-KIS613-S",
     "hardware_version": "UNKNOWN"
+  },
+  "102217": {
+    "model": "DS-7616NXI-K2/16P(D)",
+    "hardware_version": "NVR_V4"
+  },
+  "102218": {
+    "model": "NKS4223WBTH",
+    "hardware_version": "UNKNOWN"
+  },
+  "102219": {
+    "model": "DS-E04HGHI-XE",
+    "hardware_version": "DVR_V4"
+  },
+  "102220": {
+    "model": "DS-E08HGHI-XD",
+    "hardware_version": "DVR_V4"
+  },
+  "102221": {
+    "model": "DS-3T1512HP-SI-8P4F",
+    "hardware_version": "UNKNOWN"
+  },
+  "102222": {
+    "model": "DS-B31-04H08H",
+    "hardware_version": "UNKNOWN"
+  },
+  "102223": {
+    "model": "IDS-7204HTHI-M1/S",
+    "hardware_version": "DVR_V4"
+  },
+  "102224": {
+    "model": "DS-K3B801BX",
+    "hardware_version": "UNKNOWN"
+  },
+  "102225": {
+    "model": "DS-K3G411X",
+    "hardware_version": "UNKNOWN"
+  },
+  "102226": {
+    "model": "DS-K3Y220X",
+    "hardware_version": "UNKNOWN"
+  },
+  "102227": {
+    "model": "DS-PA201PG-KIT-16WE",
+    "hardware_version": "UNKNOWN"
   }
 }
