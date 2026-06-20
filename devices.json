@@ -2998,5 +2998,45 @@
   "102242": {
     "model": "DS-2XS6A25G0-I/CH20S40(NO BATTERY)",
     "hardware_version": "UNKNOWN"
+  },
+  "102243": {
+    "model": "AE-MH0408(RJ45)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102244": {
+    "model": "THC-T127-PTLTS",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102245": {
+    "model": "DS-KIS702EY",
+    "hardware_version": "UNKNOWN"
+  },
+  "102246": {
+    "model": "PTZ-N2C400C-D/4G",
+    "hardware_version": "UNKNOWN"
+  },
+  "102247": {
+    "model": "THC-B127-LPTS",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102248": {
+    "model": "DS-K1T671TM-3XF",
+    "hardware_version": "UNKNOWN"
+  },
+  "102249": {
+    "model": "DS-D5022F2-1P2",
+    "hardware_version": "UNKNOWN"
+  },
+  "102250": {
+    "model": "HI-D22F2P2F",
+    "hardware_version": "UNKNOWN"
+  },
+  "102251": {
+    "model": "DS-KA-RL1E2",
+    "hardware_version": "UNKNOWN"
+  },
+  "102252": {
+    "model": "DS-2TD6237-75C4L/W",
+    "hardware_version": "THERMAL_G0"
   }
 }

@@ -562,5 +562,13 @@
   "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5C【Release_Note】Mobile_IPC_V4.3.1.pdf": {
     "changes": "Support NAS recording. · Support PPPOE, 802.1X, WebS ocket, TLS1.3 services . · Support to set encoder level. · Support scheduled -switch of image parameters.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202411/releasenote%5CR0_Indoor_Station_Firmware_V2.2.96_build241111_Release_Note.pdf": {
+    "changes": "The internal interaction logic between the device and the Hik-Connect server has been optimized. · (2024-11-01) · Adjust the audio gain adjustment and optimized the anti-echo effect · Device Model",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202411/releasenote%5C2_Wire_HD_Video_Intercom_Relay_Module_V1.0.0_build241012_Release_Note.pdf": {
+    "changes": "Support controlling the relay to trigger the lock and lightings. · Manual settings with rotary switch · Use the rotary switch to set the relay’s device mode according to actual scenarios. The indoor station can add · the relay module automatically via dial code. Then the relay module can be configured to accept door",
+    "source": "pdf"
   }
 }
