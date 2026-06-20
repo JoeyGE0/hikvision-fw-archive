@@ -2978,5 +2978,25 @@
   "102237": {
     "model": "DS-2XS6F45G0-I(/4G)",
     "hardware_version": "UNKNOWN"
+  },
+  "102238": {
+    "model": "DS-7608NXI-K2(E)",
+    "hardware_version": "NVR_V4"
+  },
+  "102239": {
+    "model": "DS-D5022F2-1V2S",
+    "hardware_version": "UNKNOWN"
+  },
+  "102240": {
+    "model": "DS-7604NXI-K1(E)",
+    "hardware_version": "NVR_G0"
+  },
+  "102241": {
+    "model": "DS-K5671-ZH",
+    "hardware_version": "UNKNOWN"
+  },
+  "102242": {
+    "model": "DS-2XS6A25G0-I/CH20S40(NO BATTERY)",
+    "hardware_version": "UNKNOWN"
   }
 }
