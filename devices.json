@@ -3038,5 +3038,61 @@
   "102252": {
     "model": "DS-2TD6237-75C4L/W",
     "hardware_version": "THERMAL_G0"
+  },
+  "102253": {
+    "model": "IDS-7204HTHI-M2/XT",
+    "hardware_version": "DVR_V4"
+  },
+  "102254": {
+    "model": "DS-K6B961X",
+    "hardware_version": "UNKNOWN"
+  },
+  "102255": {
+    "model": "DS-KH6220-LE1(B)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102256": {
+    "model": "DS-2TD4137-25/W",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102257": {
+    "model": "IDS-E08HQHI-B",
+    "hardware_version": "DVR_V4"
+  },
+  "102258": {
+    "model": "DS-K6B630TX",
+    "hardware_version": "UNKNOWN"
+  },
+  "102259": {
+    "model": "DS-2DY9240IX-A(T5)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102260": {
+    "model": "IDS-7208HQHI-M1/E",
+    "hardware_version": "DVR_V4"
+  },
+  "102261": {
+    "model": "DS-PEA12-P",
+    "hardware_version": "UNKNOWN"
+  },
+  "102262": {
+    "model": "DS-E16HGHI-B",
+    "hardware_version": "DVR_V4"
+  },
+  "102263": {
+    "model": "DVR-204U-M1",
+    "hardware_version": "DVR_V4"
+  },
+  "102264": {
+    "model": "IDS-7104HUHI-M1/S",
+    "hardware_version": "DVR_V4"
+  },
+  "102265": {
+    "model": "IDS-7204HTHI-M2/S",
+    "hardware_version": "DVR_V4"
+  },
+  "102266": {
+    "model": "IDS-7204HUHI-M1/P",
+    "hardware_version": "DVR_V4"
   }
 }
