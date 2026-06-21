@@ -3094,5 +3094,41 @@
   "102266": {
     "model": "IDS-7204HUHI-M1/P",
     "hardware_version": "DVR_V4"
+  },
+  "102267": {
+    "model": "DS-B30-S11",
+    "hardware_version": "UNKNOWN"
+  },
+  "102268": {
+    "model": "DS-K3B530LX",
+    "hardware_version": "UNKNOWN"
+  },
+  "102269": {
+    "model": "THC-B110-M",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102270": {
+    "model": "DS-D5043F3-1V0S",
+    "hardware_version": "UNKNOWN"
+  },
+  "102271": {
+    "model": "DS-D5050U3-1V0S",
+    "hardware_version": "UNKNOWN"
+  },
+  "102272": {
+    "model": "DS-2XS3Q47G1-LDW(H)/C18S40",
+    "hardware_version": "UNKNOWN"
+  },
+  "102273": {
+    "model": "IDS-2VS445-F835H-MEY(T5)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102274": {
+    "model": "DS-2TD2528T-10/Q",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102275": {
+    "model": "DS-3WRE12C",
+    "hardware_version": "UNKNOWN"
   }
 }
