@@ -3130,5 +3130,25 @@
   "102275": {
     "model": "DS-3WRE12C",
     "hardware_version": "UNKNOWN"
+  },
+  "102276": {
+    "model": "DS-3T1306P-SI/HS",
+    "hardware_version": "UNKNOWN"
+  },
+  "102277": {
+    "model": "DS-E04HGHI-B",
+    "hardware_version": "DVR_V4"
+  },
+  "102278": {
+    "model": "DS-E04HQHI-B",
+    "hardware_version": "DVR_V4"
+  },
+  "102279": {
+    "model": "DS-E08HGHI-B",
+    "hardware_version": "DVR_V4"
+  },
+  "102280": {
+    "model": "DVR-E04G-E",
+    "hardware_version": "DVR_V4"
   }
 }
