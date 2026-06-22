@@ -277,9 +277,15 @@ def github_release_page_url(download_url: str | None) -> str | None:
 
 
 def index_models_for_firmware(firmware: Dict[str, Any]) -> List[str]:
-    """Return normalized model keys that should resolve to this firmware row."""
+    """Return normalized model keys that should resolve to this firmware row.
+
+    Only ``model`` and models parsed from ``applied_to`` are indexed. The catalog
+    ``supported_models`` list is often broader than the release-note ``applied_to``
+    line and has caused wrong packages (e.g. DS-2CD1383G2 on a DS-2CD1063G2 build).
+    """
     models: List[str] = []
     seen: set[str] = set()
+    applied_models: set[str] = set()
 
     def add(raw: str) -> None:
         key = normalize_product_model(raw)
@@ -288,12 +294,19 @@ def index_models_for_firmware(firmware: Dict[str, Any]) -> List[str]:
         seen.add(key)
         models.append(key)
 
-    add(firmware.get('model', ''))
     applied_to = firmware.get('applied_to', '') or ''
     for match in re.findall(HIKVISION_MODEL_PATTERN, applied_to, re.IGNORECASE):
+        applied_models.add(normalize_product_model(match))
+
+    add(firmware.get('model', ''))
+    for match in applied_models:
         add(match)
-    for supported in firmware.get('supported_models') or []:
-        add(str(supported))
+
+    # Fallback when Hikvision omits applied_to (manual rows, legacy scrapes).
+    if not applied_models:
+        for supported in firmware.get('supported_models') or []:
+            add(str(supported))
+
     return models
 
 
