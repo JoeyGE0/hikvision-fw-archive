@@ -578,5 +578,13 @@
   "https://assets.hikvision.com/prd/public/all/files/202410/releasenote%5CThermal_Network_Bullet_Camera_and_Turret_Camera_QA_QY_series_V5.5.98_Release_notes0930.pdf": {
     "changes": "fixed temperature range display issue for 2608 camera.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202407/1719874996537/releasenote%5C%E3%80%90Release_Note%E3%80%91DSM-IPC_V3.0.2_0613.pdf": {
+    "changes": "Modified functions · Delete function: face compare and face picture library. The DSM camera can only · do the driving behavior analysis now. · Related product list",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CIPDZLF_G5H8_V5.8.20_Release_Note.pdf": {
+    "changes": "Supported smart pan-tilt correction · Upgraded intelligent traffic algorithm",
+    "source": "pdf"
   }
 }

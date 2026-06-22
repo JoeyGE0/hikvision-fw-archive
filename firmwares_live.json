@@ -3806,7 +3806,7 @@
     "version": "5.8.2",
     "date": "2026-04-08",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781773948/Firmware__V1.5.8_250423_S3000644932.zip",
-    "filename": "Firmware__V1.5.8_250423_S3000644932.zip",
+    "filename": "Firmware__V5.8.20_240605_S3000579977.zip",
     "supported_models": [
       "DS-2DY5225IX-AE(T5)",
       "DS-2DY5225IX-DM(T5)",
@@ -3830,7 +3830,7 @@
     "version": "5.8.2",
     "date": "2026-04-08",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781773948/Firmware__V1.5.8_250423_S3000644932.zip",
-    "filename": "Firmware__V1.5.8_250423_S3000644932.zip",
+    "filename": "Firmware__V5.8.20_240605_S3000579977.zip",
     "supported_models": [
       "DS-2DY7432IXG-XY",
       "DS-2DY7436IXG-CXLWF(316L)",
@@ -4211,7 +4211,7 @@
     "version": "5.8.2",
     "date": "2026-04-04",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781773948/Firmware__V1.5.8_250423_S3000644932.zip",
-    "filename": "Firmware__V1.5.8_250423_S3000644932.zip",
+    "filename": "Firmware__V5.8.20_240605_S3000579977.zip",
     "supported_models": [
       "IDS-2CD7347G0-XS",
       "IDS-2CD7347G0-XS(2.8MM)",
@@ -4375,7 +4375,7 @@
     "version": "5.8.20",
     "date": "2026-04-02",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780769282/Firmware__V5.8.20_260330_S3000711486.zip",
-    "filename": "Firmware__V5.8.20_260330_S3000711486.zip",
+    "filename": "Firmware__V5.8.20_240605_S3000579977.zip",
     "supported_models": [
       "DS-2CD6425G2-C1",
       "DS-2CD6425G2-C2",
@@ -5046,7 +5046,7 @@
     "hardware_version": "IPC_G0",
     "version": "5.10.0",
     "date": "2026-04-23",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779753206/Firmware__V5.10.0_260423_S3000718071.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782124406/Firmware__V5.10.0_260519_S3000724899.zip",
     "filename": "Firmware__V5.10.0_260519_S3000724899.zip",
     "supported_models": [
       "IDS-2CD8V446G0/X2-XZHS(Y)",
@@ -6919,7 +6919,7 @@
     "version": "5.8.2",
     "date": "2026-03-25",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781773948/Firmware__V1.5.8_250423_S3000644932.zip",
-    "filename": "Firmware__V1.5.8_250423_S3000644932.zip",
+    "filename": "Firmware__V5.8.20_240605_S3000579977.zip",
     "supported_models": [
       "DS-2SE4C225MWG-E/26(F0)",
       "DS-2SE4C225MWG-E/26"
@@ -8977,7 +8977,7 @@
     "version": "5.8.2",
     "date": "2026-03-24",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781773948/Firmware__V1.5.8_250423_S3000644932.zip",
-    "filename": "Firmware__V1.5.8_250423_S3000644932.zip",
+    "filename": "Firmware__V5.8.20_240605_S3000579977.zip",
     "supported_models": [
       "DS-2SE7C425MWG-EB/26(F0)",
       "DS-2SE7C432MWG-EB/26(F0)",
@@ -11744,7 +11744,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.0.0",
     "date": "2025-12-15",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781978513/Firmware__V1.0.0_241012_S3000606826.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782124406/Firmware__V1.0.0_240627_S3000584380.zip",
     "filename": "Firmware__V1.0.0_240627_S3000584380.zip",
     "supported_models": [
       "DS-K3G200BX",
@@ -13356,7 +13356,7 @@
     "version": "5.1.2",
     "date": "2025-10-24",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781978513/Firmware__V1.5.1_241021_S3000608072.zip",
-    "filename": "Firmware__V1.5.1_241021_S3000608072.zip",
+    "filename": "Firmware__V5.1.2_240530_S3000578151.zip",
     "supported_models": [
       "DS-1100KI(C)",
       "DS-1100KI"
@@ -13374,7 +13374,7 @@
     "version": "5.1.2",
     "date": "2025-10-24",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781978513/Firmware__V1.5.1_241021_S3000608072.zip",
-    "filename": "Firmware__V1.5.1_241021_S3000608072.zip",
+    "filename": "Firmware__V5.1.2_240530_S3000578151.zip",
     "supported_models": [
       "DS-1105KI",
       "DS-1105KI(B)"
@@ -13820,7 +13820,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.0.0",
     "date": "2025-10-23",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781978513/Firmware__V1.0.0_241012_S3000606826.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782124406/Firmware__V1.0.0_240627_S3000584380.zip",
     "filename": "Firmware__V1.0.0_240627_S3000584380.zip",
     "supported_models": [
       "DS-K6B411TX",
@@ -17702,7 +17702,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.0.0",
     "date": "2026-04-17",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781978513/Firmware__V1.0.0_241012_S3000606826.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782124406/Firmware__V1.0.0_240627_S3000584380.zip",
     "filename": "Firmware__V1.0.0_240627_S3000584380.zip",
     "supported_models": [
       "DS-6920UDI-U(D)",
@@ -19991,7 +19991,7 @@
     "version": "5.8.2",
     "date": "2026-03-31",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781773948/Firmware__V1.5.8_250423_S3000644932.zip",
-    "filename": "Firmware__V1.5.8_250423_S3000644932.zip",
+    "filename": "Firmware__V5.8.20_240605_S3000579977.zip",
     "supported_models": [
       "DS-2DY9C260LXG-LWY/12",
       "DS-2DY9C260LXG-LWY/12(F2)",
@@ -20280,7 +20280,7 @@
     "version": "5.8.20",
     "date": "2026-03-30",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780769282/Firmware__V5.8.20_260330_S3000711486.zip",
-    "filename": "Firmware__V5.8.20_260330_S3000711486.zip",
+    "filename": "Firmware__V5.8.20_240605_S3000579977.zip",
     "supported_models": [
       "DS-2SF8C425MXG-ELW/26",
       "DS-2SF8C425MXG-ELW/26(F0)",
@@ -21415,7 +21415,7 @@
     "version": "5.8.2",
     "date": "2026-03-25",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781773948/Firmware__V1.5.8_250423_S3000644932.zip",
-    "filename": "Firmware__V1.5.8_250423_S3000644932.zip",
+    "filename": "Firmware__V5.8.20_240605_S3000579977.zip",
     "supported_models": [
       "DS-2CD3046G2-IU/SL",
       "DS-2CD3046G2-IU/SL(2.8MM)(H)",
@@ -21569,7 +21569,7 @@
     "version": "5.8.2",
     "date": "2026-03-25",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781773948/Firmware__V1.5.8_250423_S3000644932.zip",
-    "filename": "Firmware__V1.5.8_250423_S3000644932.zip",
+    "filename": "Firmware__V5.8.20_240605_S3000579977.zip",
     "supported_models": [
       "DS-2CD3066G2-IS",
       "DS-2CD3066G2-IS(2.8MM)(H)",
@@ -22007,7 +22007,7 @@
     "version": "5.8.2",
     "date": "2026-03-25",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781773948/Firmware__V1.5.8_250423_S3000644932.zip",
-    "filename": "Firmware__V1.5.8_250423_S3000644932.zip",
+    "filename": "Firmware__V5.8.20_240605_S3000579977.zip",
     "supported_models": [
       "DS-2CD3046G2-IS",
       "DS-2CD3046G2-IS(2.8MM)(H)",
@@ -22372,7 +22372,7 @@
     "version": "5.8.2",
     "date": "2026-03-25",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781773948/Firmware__V1.5.8_250423_S3000644932.zip",
-    "filename": "Firmware__V1.5.8_250423_S3000644932.zip",
+    "filename": "Firmware__V5.8.20_240605_S3000579977.zip",
     "supported_models": [
       "DS-2CD6984G1/VR-U/NFC",
       "DS-2CD6984G1/VR-U/NFC(2MM)"
@@ -22522,7 +22522,7 @@
     "version": "5.8.2",
     "date": "2026-03-25",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781773948/Firmware__V1.5.8_250423_S3000644932.zip",
-    "filename": "Firmware__V1.5.8_250423_S3000644932.zip",
+    "filename": "Firmware__V5.8.20_240605_S3000579977.zip",
     "supported_models": [
       "DS-2SE4C215MWG-E/12(F0)",
       "DS-2SE4C215MWG-E(12F0)",
@@ -22866,7 +22866,7 @@
     "version": "5.8.2",
     "date": "2026-03-24",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781773948/Firmware__V1.5.8_250423_S3000644932.zip",
-    "filename": "Firmware__V1.5.8_250423_S3000644932.zip",
+    "filename": "Firmware__V5.8.20_240605_S3000579977.zip",
     "supported_models": [
       "DS-2SE7C425MW-AEB(14F1)(P3)",
       "DS-2SE7C432MW-AEB(14F1)(P3)",
@@ -23150,7 +23150,7 @@
     "hardware_version": "UNKNOWN",
     "version": "0.0.2",
     "date": "2026-03-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782065321/Firmware__V3.0.0_240906_S3000600314.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782124406/Firmware__V1.0.0_240627_S3000584380.zip",
     "filename": "Firmware__V1.0.0_240627_S3000584380.zip",
     "supported_models": [
       "AE-DC8013-D6"
@@ -24228,7 +24228,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.0.0",
     "date": "2025-11-24",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781978513/Firmware__V1.0.0_241012_S3000606826.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782124406/Firmware__V1.0.0_240627_S3000584380.zip",
     "filename": "Firmware__V1.0.0_240627_S3000584380.zip",
     "supported_models": [
       "DS-K3H4210X-120",
@@ -24304,7 +24304,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.0.0",
     "date": "2025-11-14",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781978513/Firmware__V1.0.0_241012_S3000606826.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782124406/Firmware__V1.0.0_240627_S3000584380.zip",
     "filename": "Firmware__V1.0.0_240627_S3000584380.zip",
     "supported_models": [
       "DS-KB2412T-IM(B)",
@@ -24326,7 +24326,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.0.0",
     "date": "2025-11-14",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781978513/Firmware__V1.0.0_241012_S3000606826.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782124406/Firmware__V1.0.0_240627_S3000584380.zip",
     "filename": "Firmware__V1.0.0_240627_S3000584380.zip",
     "supported_models": [
       "DS-KB2422T-IM",
@@ -24348,7 +24348,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.0.0",
     "date": "2025-11-14",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781978513/Firmware__V1.0.0_241012_S3000606826.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782124406/Firmware__V1.0.0_240627_S3000584380.zip",
     "filename": "Firmware__V1.0.0_240627_S3000584380.zip",
     "supported_models": [
       "DS-KH2230T(B)",
@@ -25024,7 +25024,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.0.0",
     "date": "2025-09-25",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781978513/Firmware__V1.0.0_241012_S3000606826.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782124406/Firmware__V1.0.0_240627_S3000584380.zip",
     "filename": "Firmware__V1.0.0_240627_S3000584380.zip",
     "supported_models": [
       "DS-K7R83X"
@@ -25925,7 +25925,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.0.0",
     "date": "2025-08-19",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781978513/Firmware__V1.0.0_241012_S3000606826.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782124406/Firmware__V1.0.0_240627_S3000584380.zip",
     "filename": "Firmware__V1.0.0_240627_S3000584380.zip",
     "supported_models": [
       "STS-BG24X-L3/P",
@@ -26337,7 +26337,7 @@
     "version": "5.1.2",
     "date": "2025-08-04",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781978513/Firmware__V1.5.1_241021_S3000608072.zip",
-    "filename": "Firmware__V1.5.1_241021_S3000608072.zip",
+    "filename": "Firmware__V5.1.2_240530_S3000578151.zip",
     "supported_models": [
       "YJP7681-188-NR",
       "YJP7681-188-R(L)",
@@ -26677,7 +26677,7 @@
     "version": "1.2.2",
     "date": "2025-07-01",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.2.2_250701_S3000664191.zip",
-    "filename": "Firmware__V1.2.2_250701_S3000664191.zip",
+    "filename": "Firmware__V5.1.2_240530_S3000578151.zip",
     "supported_models": [
       "DS-3WF0FA-2N/O"
     ],
@@ -26694,7 +26694,7 @@
     "version": "1.2.2",
     "date": "2025-07-01",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781640256/Firmware__V1.2.2_250701_S3000664192.zip",
-    "filename": "Firmware__V1.2.2_250701_S3000664192.zip",
+    "filename": "Firmware__V5.1.2_240530_S3000578151.zip",
     "supported_models": [
       "DS-3WF0FC-2N/O"
     ],
@@ -27652,7 +27652,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.0.0",
     "date": "2025-03-20",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781978513/Firmware__V1.0.0_241012_S3000606826.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782124406/Firmware__V1.0.0_240627_S3000584380.zip",
     "filename": "Firmware__V1.0.0_240627_S3000584380.zip",
     "supported_models": [
       "DS-K3G200X",
@@ -28505,7 +28505,7 @@
     "version": "5.1.2",
     "date": "2025-01-02",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781978513/Firmware__V1.5.1_241021_S3000608072.zip",
-    "filename": "Firmware__V1.5.1_241021_S3000608072.zip",
+    "filename": "Firmware__V5.1.2_240530_S3000578151.zip",
     "supported_models": [
       "AE-DI2032-G40(OVERSEAS)",
       "AE-DI2032-G40(B)(EU)",
@@ -29313,7 +29313,7 @@
     "version": "1.04.00",
     "date": "2024-11-20",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781978513/Firmware__V1.04.00_241120_S3000623268.zip",
-    "filename": "Firmware__V1.04.00_241120_S3000623268.zip",
+    "filename": "Firmware__V1.04.00_240613_S3000581700.zip",
     "supported_models": [
       "THC-T127-PTLTS",
       "THC-T127-PTLTS(2.8MM)(HILOOKSTD)",
@@ -29613,7 +29613,7 @@
     "version": "1.04.00",
     "date": "2024-10-29",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781978513/Firmware__V1.04.00_241029_S3000611772.zip",
-    "filename": "Firmware__V1.04.00_241029_S3000611772.zip",
+    "filename": "Firmware__V1.04.00_240613_S3000581700.zip",
     "supported_models": [
       "THC-B127-LPTS",
       "THC-B127-LPTS(2.8MM)(HILOOKSTD)",
@@ -29730,7 +29730,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.0.0",
     "date": "2024-10-12",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781978513/Firmware__V1.0.0_241012_S3000606826.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782124406/Firmware__V1.0.0_240627_S3000584380.zip",
     "filename": "Firmware__V1.0.0_240627_S3000584380.zip",
     "supported_models": [
       "DS-KA-RL1E2"
@@ -30560,7 +30560,10 @@
       "DS-2XS3Q47G1-LDW/C18S40(4MM)",
       "DS-2XS3Q47G1-LDW/C18S40(6MM)",
       "DS-2XS3Q47G1-LDW/C18S40(2.8MM)",
-      "DS-2XS3Q47G1-LDW/C18S40"
+      "DS-2XS3Q47G1-LDW/C18S40",
+      "DS-2XS3Q47G1-LDWH/C18S40(4MM)",
+      "DS-2XS3Q47G1-LDWH/C18S40(6MM)",
+      "DS-2XS3Q47G1-LDWH/C18S40(2.8MM)/O-STD/EU"
     ],
     "applied_to": "Applied to: DS-2XS3Q47G1-LDW(H)/C18S40, DS-2XS3Q47G1-LDW/C18S40(4MM), DS-2XS3Q47G1-LDW/C18S40(6MM), DS-2XS3Q47G1-LDW/C18S40(2.8MM)",
     "changes": "",
@@ -30615,7 +30618,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.0.0",
     "date": "2024-07-18",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782124406/Firmware__V1.0.0_240627_S3000584380.zip",
     "filename": "Firmware__V1.0.0_240627_S3000584380.zip",
     "supported_models": [
       "DS-3WRE12C"
@@ -30632,7 +30635,7 @@
     "hardware_version": "IPC_G0",
     "version": "5.10.0",
     "date": "2026-05-19",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782124406/Firmware__V5.10.0_260519_S3000724899.zip",
     "filename": "Firmware__V5.10.0_260519_S3000724899.zip",
     "supported_models": [
       "DS-2DF6A436XG1-EL(Y)",
@@ -30713,7 +30716,7 @@
     "hardware_version": "UNKNOWN",
     "version": "3.0.5",
     "date": "2024-07-04",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782124406/Firmware__V3.0.5_240704_S3000585179.zip",
     "filename": "Firmware__V3.0.5_240704_S3000585179.zip",
     "supported_models": [
       "DS-3T1306P-SI/HS"
@@ -30730,7 +30733,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.0.0",
     "date": "2024-06-27",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782124406/Firmware__V1.0.0_240627_S3000584380.zip",
     "filename": "Firmware__V1.0.0_240627_S3000584380.zip",
     "supported_models": [
       "DS-K3G301BX",
@@ -30757,8 +30760,8 @@
     "hardware_version": "DVR_V4",
     "version": "4.75.011",
     "date": "2024-06-25",
-    "download_url": "",
-    "filename": "Firmware_Asia_V4.75.011_240625_S3000582840.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782124406/Firmware_Asia_V4.75.011_240625_S3000582840.zip",
+    "filename": "Firmware_Europe_V4.75.011_240620_S3000583023.zip",
     "supported_models": [
       "DVR-204U-M1",
       "DVR-204U-M1(STD(C)",
@@ -30782,8 +30785,8 @@
     "hardware_version": "DVR_V4",
     "version": "4.75.011",
     "date": "2024-06-25",
-    "download_url": "",
-    "filename": "Firmware__V4.75.011_240625_S3000582857.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782124406/Firmware__V4.75.011_240625_S3000582857.zip",
+    "filename": "Firmware_Europe_V4.75.011_240620_S3000583023.zip",
     "supported_models": [
       "IDS-7104HUHI-M1/S",
       "IDS-7104HUHI-M1/S(C)",
@@ -30806,8 +30809,8 @@
     "hardware_version": "DVR_V4",
     "version": "4.75.011",
     "date": "2024-06-20",
-    "download_url": "",
-    "filename": "Firmware_Europe_V4.75.011_240620_S3000583054.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782124406/Firmware_Europe_V4.75.011_240620_S3000583054.zip",
+    "filename": "Firmware_Europe_V4.75.011_240620_S3000583023.zip",
     "supported_models": [
       "DS-E04HGHI-B",
       "DS-E04HGHI-D",
@@ -30826,8 +30829,8 @@
     "hardware_version": "DVR_V4",
     "version": "4.75.011",
     "date": "2024-06-20",
-    "download_url": "",
-    "filename": "Firmware_Europe_V4.75.011_240620_S3000582893.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782124406/Firmware_Europe_V4.75.011_240620_S3000582893.zip",
+    "filename": "Firmware_Europe_V4.75.011_240620_S3000583023.zip",
     "supported_models": [
       "DS-E04HQHI-B",
       "DS-E04HQHI-B(B)",
@@ -30847,8 +30850,8 @@
     "hardware_version": "DVR_V4",
     "version": "4.75.011",
     "date": "2024-06-20",
-    "download_url": "",
-    "filename": "Firmware_Europe_V4.75.011_240620_S3000582892.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782124406/Firmware_Europe_V4.75.011_240620_S3000582892.zip",
+    "filename": "Firmware_Europe_V4.75.011_240620_S3000583023.zip",
     "supported_models": [
       "DS-E08HGHI-B",
       "DS-E08HGHI-B(B)",
@@ -30866,8 +30869,8 @@
     "hardware_version": "DVR_V4",
     "version": "4.75.011",
     "date": "2024-06-20",
-    "download_url": "",
-    "filename": "Firmware_Asia_V4.75.011_240620_S3000583105.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782124406/Firmware_Asia_V4.75.011_240620_S3000583105.zip",
+    "filename": "Firmware_Europe_V4.75.011_240620_S3000583023.zip",
     "supported_models": [
       "DVR-204Q-M1",
       "DVR-204Q-M1(C)",
@@ -30885,14 +30888,284 @@
     "hardware_version": "DVR_V4",
     "version": "4.75.011",
     "date": "2024-06-20",
-    "download_url": "",
-    "filename": "Firmware_Asia_V4.75.011_240620_S3000582883.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782124406/Firmware_Asia_V4.75.011_240620_S3000582883.zip",
+    "filename": "Firmware_Europe_V4.75.011_240620_S3000583023.zip",
     "supported_models": [
       "DVR-E04G-E"
     ],
     "applied_to": "Applied to: DVR-E04G-E",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/public/all/files/202407/1719874990896/releasenote%5CTurbo_HD_DVR_V4.75.011_build_240620_Release_Notes.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "IDS-7108HQHI-M1/S_DVR_V4_4.75.011": {
+    "device_id": 101814,
+    "model": "IDS-7108HQHI-M1/S",
+    "hardware_version": "DVR_V4",
+    "version": "4.75.011",
+    "date": "2024-06-20",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782032039/Firmware_Asia_V4.84.011_251217_S3000693361.zip",
+    "filename": "Firmware_Europe_V4.75.011_240620_S3000583023.zip",
+    "supported_models": [
+      "IDS-7108HQHI-M1/S",
+      "IDS-7108HQHI-M1/S(C)",
+      "IDS-7108HQHI-M1/S(E)",
+      "IDS-7208HQHI-M1/E",
+      "IDS-7208HQHI-M1/E(E)"
+    ],
+    "applied_to": "Applied to: IDS-7108HQHI-M1/S, IDS-7108HQHI-M1/S(C), IDS-7108HQHI-M1/S(E), IDS-7208HQHI-M1/E, IDS-7208HQHI-M1/E(E)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202407/1719874945624/releasenote%5CTurbo_HD_DVR_V4.75.011_build_240620_Release_Notes.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "AE-VC1B1I-ISF_IPC_V3_3.0.2": {
+    "device_id": 102281,
+    "model": "AE-VC1B1I-ISF",
+    "hardware_version": "IPC_V3",
+    "version": "3.0.2",
+    "date": "2024-06-13",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1769018069/Firmware__V3.0.2_240613_S3000580999.zip",
+    "filename": "Firmware__V3.0.2_240613_S3000580999.zip",
+    "supported_models": [
+      "AE-VC1B1I-ISF",
+      "AE-VC1B1I-ISF(RJ45)(6MM)",
+      "AE-VC1B1I-ISF(M12)(6MM)"
+    ],
+    "applied_to": "Applied to: AE-VC1B1I-ISF, AE-VC1B1I-ISF(RJ45)(6MM), AE-VC1B1I-ISF(M12)(6MM)",
+    "changes": "Modified functions · Delete function: face compare and face picture library. The DSM camera can only · do the driving behavior analysis now. · Related product list",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202407/1719874996537/releasenote%5C%E3%80%90Release_Note%E3%80%91DSM-IPC_V3.0.2_0613.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-K1T690M-T_UNKNOWN_1.5.6": {
+    "device_id": 102282,
+    "model": "DS-K1T690M-T",
+    "hardware_version": "UNKNOWN",
+    "version": "1.5.6",
+    "date": "2024-10-16",
+    "download_url": "",
+    "filename": "Firmware__V1.5.6_241016_S3000605916.zip",
+    "supported_models": [
+      "DS-K1T690M-T"
+    ],
+    "applied_to": "Applied to: DS-K1T690M-T",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DVR-E04Q-D_DVR_V4_4.75.011": {
+    "device_id": 102283,
+    "model": "DVR-E04Q-D",
+    "hardware_version": "DVR_V4",
+    "version": "4.75.011",
+    "date": "2024-06-20",
+    "download_url": "",
+    "filename": "Firmware_Asia_V4.75.011_240620_S3000582849.zip",
+    "supported_models": [
+      "DVR-E04Q-D"
+    ],
+    "applied_to": "Applied to: DVR-E04Q-D",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202407/1719874933132/releasenote%5CTurbo_HD_DVR_V4.75.011_build_240620_Release_Notes.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DVR-E08G-D_DVR_V4_4.75.011": {
+    "device_id": 102284,
+    "model": "DVR-E08G-D",
+    "hardware_version": "DVR_V4",
+    "version": "4.75.011",
+    "date": "2024-06-20",
+    "download_url": "",
+    "filename": "Firmware_Europe_V4.75.011_240620_S3000582916.zip",
+    "supported_models": [
+      "DVR-E08G-D"
+    ],
+    "applied_to": "Applied to: DVR-E08G-D",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202407/1719874989634/releasenote%5CTurbo_HD_DVR_V4.75.011_build_240620_Release_Notes.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DVR-E08Q-B_DVR_V4_4.75.011": {
+    "device_id": 102285,
+    "model": "DVR-E08Q-B",
+    "hardware_version": "DVR_V4",
+    "version": "4.75.011",
+    "date": "2024-06-20",
+    "download_url": "",
+    "filename": "Firmware_Europe_V4.75.011_240620_S3000583023.zip",
+    "supported_models": [
+      "DVR-E08Q-B"
+    ],
+    "applied_to": "Applied to: DVR-E08Q-B",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202407/1719874902266/releasenote%5CTurbo_HD_DVR_V4.75.011_build_240620_Release_Notes.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DVR-E16G-B_DVR_V4_4.75.011": {
+    "device_id": 102286,
+    "model": "DVR-E16G-B",
+    "hardware_version": "DVR_V4",
+    "version": "4.75.011",
+    "date": "2024-06-20",
+    "download_url": "",
+    "filename": "Firmware_Asia_V4.75.011_240620_S3000583051.zip",
+    "supported_models": [
+      "DVR-E16G-B"
+    ],
+    "applied_to": "Applied to: DVR-E16G-B",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202407/1719874881259/releasenote%5CTurbo_HD_DVR_V4.75.011_build_240620_Release_Notes.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "IDS-7108HUHI-M1/S_DVR_V4_4.75.011": {
+    "device_id": 102133,
+    "model": "IDS-7108HUHI-M1/S",
+    "hardware_version": "DVR_V4",
+    "version": "4.75.011",
+    "date": "2024-06-20",
+    "download_url": "",
+    "filename": "Firmware_Asia_V4.75.011_240620_S3000583084.zip",
+    "supported_models": [
+      "IDS-7108HUHI-M1/S",
+      "IDS-7108HUHI-M1/S(C)",
+      "IDS-7108HUHI-M1/S(E)",
+      "IDS-7208HUHI-M1/S",
+      "IDS-7208HUHI-M1/S(C)",
+      "IDS-7208HUHI-M2/S",
+      "IDS-7208HUHI-M2/S(C)",
+      "IDS-7216HQHI-M1/S",
+      "IDS-7216HQHI-M1/S(C)",
+      "IDS-7216HQHI-M2/S",
+      "IDS-7216HQHI-M2/S(C)",
+      "IDS-7216HUHI-M2/S",
+      "IDS-7216HUHI-M2/S(E)",
+      "IDS-7232HQHI-M2/S",
+      "IDS-7232HQHI-M2/S(E)",
+      "IDS-7116HQHI-M1/S",
+      "IDS-7116HQHI-M1/S(E)",
+      "IDS-7116HQHI-M1/S(F)"
+    ],
+    "applied_to": "Applied to: IDS-7108HUHI-M1/S, IDS-7108HUHI-M1/S(C), IDS-7108HUHI-M1/S(E), IDS-7208HUHI-M1/S, IDS-7208HUHI-M1/S(C), IDS-7208HUHI-M2/S, IDS-7208HUHI-M2/S(C), IDS-7216HQHI-M1/S",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202407/1719874888405/releasenote%5CTurbo_HD_DVR_V4.75.011_build_240620_Release_Notes.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "THC-B157-LMS_THERMAL_G0_1.04.00": {
+    "device_id": 102287,
+    "model": "THC-B157-LMS",
+    "hardware_version": "THERMAL_G0",
+    "version": "1.04.00",
+    "date": "2024-06-13",
+    "download_url": "",
+    "filename": "Firmware__V1.04.00_240613_S3000581700.zip",
+    "supported_models": [
+      "THC-B157-LMS",
+      "THC-B157-LMS(2.8MM)(HILOOK STD)",
+      "THC-B157-LMS(3.6MM)(HILOOK STD)",
+      "THC-B157-LPS",
+      "THC-B157-LPS(2.8MM)(HILOOK STD)",
+      "THC-B157-LPS(3.6MM)(HILOOK STD)",
+      "THC-B257-LMS",
+      "THC-B257-LMS(2.8MM)(HILOOK STD)",
+      "THC-B257-LMS(3.6MM)(HILOOK STD)",
+      "THC-B257-LMS(6MM)(HILOOK STD)",
+      "THC-T157-LMS",
+      "THC-T157-LMS(2.8MM)(HILOOK STD)",
+      "THC-T157-LMS(3.6MM)(HILOOK STD)",
+      "THC-T157-LPS",
+      "THC-T157-LPS(2.8MM)(HILOOK STD)",
+      "THC-T157-LPS(3.6MM)(HILOOK STD)",
+      "THC-T257-LMS",
+      "THC-T257-LMS(2.8MM)(HILOOK STD)",
+      "THC-T257-LMS(3.6MM)(HILOOK STD)",
+      "THC-B157-LMS(HILOOK",
+      "THC-B157-LPS(HILOOK",
+      "THC-B257-LMS(HILOOK"
+    ],
+    "applied_to": "Applied to: THC-B157-LMS, THC-B157-LMS(2.8MM)(HILOOK STD), THC-B157-LMS(3.6MM)(HILOOK STD), THC-B157-LPS, THC-B157-LPS(2.8MM)(HILOOK STD), THC-B157-LPS(3.6MM)(HILOOK STD), THC-B257-LMS, THC-B257-LMS(2.8MM)(HILOOK STD)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "THC-B159-LMS_THERMAL_G0_1.04.00": {
+    "device_id": 102288,
+    "model": "THC-B159-LMS",
+    "hardware_version": "THERMAL_G0",
+    "version": "1.04.00",
+    "date": "2024-06-13",
+    "download_url": "",
+    "filename": "Firmware__V1.04.00_240613_S3000581699.zip",
+    "supported_models": [
+      "THC-B159-LMS",
+      "THC-B159-LMS(2.8MM)(HILOOKSTD)",
+      "THC-B159-LMS(3.6MM)(HILOOKSTD)",
+      "THC-B159-LPS",
+      "THC-B159-LPS(2.8MM)(HILOOKSTD)",
+      "THC-B159-LPS(3.6MM)(HILOOKSTD)",
+      "THC-B259-LMS",
+      "THC-B259-LMS(2.8MM)(HILOOKSTD)",
+      "THC-B259-LMS(3.6MM)(HILOOKSTD)",
+      "THC-T159-LMS",
+      "THC-T159-LMS(2.8MM)(HILOOKSTD)",
+      "THC-T159-LMS(3.6MM)(HILOOKSTD)",
+      "THC-T159-LPS",
+      "THC-T159-LPS(2.8MM)(HILOOKSTD)",
+      "THC-T159-LPS(3.6MM)(HILOOKSTD)",
+      "THC-T259-LS",
+      "THC-T259-LS(2.8MM)(HILOOKSTD)",
+      "THC-T259-LS(3.6MM)(HILOOKSTD)"
+    ],
+    "applied_to": "Applied to: THC-B159-LMS, THC-B159-LMS(2.8MM)(HILOOKSTD), THC-B159-LMS(3.6MM)(HILOOKSTD), THC-B159-LPS, THC-B159-LPS(2.8MM)(HILOOKSTD), THC-B159-LPS(3.6MM)(HILOOKSTD), THC-B259-LMS, THC-B259-LMS(2.8MM)(HILOOKSTD)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2SF8C425MXS-DL(14F1)(P3)_UNKNOWN_5.8.20": {
+    "device_id": 102289,
+    "model": "DS-2SF8C425MXS-DL(14F1)(P3)",
+    "hardware_version": "UNKNOWN",
+    "version": "5.8.20",
+    "date": "2024-06-05",
+    "download_url": "",
+    "filename": "Firmware__V5.8.20_240605_S3000579977.zip",
+    "supported_models": [
+      "DS-2SF8C425MXS-DL(14F1)(P3)",
+      "DS-2SF8C425MXS-DLW(14F1)(P3)",
+      "DS-2SF8C442MXS-DL(14F1)(P3)",
+      "DS-2SF8C425MXS-DL",
+      "DS-2SF8C425MXS-DLW",
+      "DS-2SF8C442MXS-DL"
+    ],
+    "applied_to": "Applied to: DS-2SF8C425MXS-DL(14F1)(P3), DS-2SF8C425MXS-DLW(14F1)(P3), DS-2SF8C442MXS-DL(14F1)(P3)",
+    "changes": "Supported smart pan-tilt correction · Upgraded intelligent traffic algorithm",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CIPDZLF_G5H8_V5.8.20_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-TDSB00-EKH/POE/2M_UNKNOWN_5.1.2": {
+    "device_id": 102290,
+    "model": "DS-TDSB00-EKH/POE/2M",
+    "hardware_version": "UNKNOWN",
+    "version": "5.1.2",
+    "date": "2024-05-30",
+    "download_url": "",
+    "filename": "Firmware__V5.1.2_240530_S3000578151.zip",
+    "supported_models": [
+      "DS-TDSB00-EKH/POE/2M"
+    ],
+    "applied_to": "Applied to: DS-TDSB00-EKH/POE/2M",
+    "changes": "",
+    "notes": "",
     "is_beta": false,
     "source": "live"
   }

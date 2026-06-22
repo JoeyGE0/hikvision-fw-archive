@@ -3150,5 +3150,45 @@
   "102280": {
     "model": "DVR-E04G-E",
     "hardware_version": "DVR_V4"
+  },
+  "102281": {
+    "model": "AE-VC1B1I-ISF",
+    "hardware_version": "IPC_V3"
+  },
+  "102282": {
+    "model": "DS-K1T690M-T",
+    "hardware_version": "UNKNOWN"
+  },
+  "102283": {
+    "model": "DVR-E04Q-D",
+    "hardware_version": "DVR_V4"
+  },
+  "102284": {
+    "model": "DVR-E08G-D",
+    "hardware_version": "DVR_V4"
+  },
+  "102285": {
+    "model": "DVR-E08Q-B",
+    "hardware_version": "DVR_V4"
+  },
+  "102286": {
+    "model": "DVR-E16G-B",
+    "hardware_version": "DVR_V4"
+  },
+  "102287": {
+    "model": "THC-B157-LMS",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102288": {
+    "model": "THC-B159-LMS",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102289": {
+    "model": "DS-2SF8C425MXS-DL(14F1)(P3)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102290": {
+    "model": "DS-TDSB00-EKH/POE/2M",
+    "hardware_version": "UNKNOWN"
   }
 }
