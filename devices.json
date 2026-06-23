@@ -3226,5 +3226,45 @@
   "102299": {
     "model": "DS-3E7803M",
     "hardware_version": "UNKNOWN"
+  },
+  "102300": {
+    "model": "DS-D5222F2-1V1S",
+    "hardware_version": "UNKNOWN"
+  },
+  "102301": {
+    "model": "DS-D5224F2-1V1S",
+    "hardware_version": "UNKNOWN"
+  },
+  "102302": {
+    "model": "DS-7616NI-K2/4G",
+    "hardware_version": "NVR_K21B2"
+  },
+  "102303": {
+    "model": "NVR-104H-D/4P",
+    "hardware_version": "NVR_G0"
+  },
+  "102304": {
+    "model": "DS-PEA4H-10",
+    "hardware_version": "UNKNOWN"
+  },
+  "102305": {
+    "model": "DS-K1A802AEF",
+    "hardware_version": "UNKNOWN"
+  },
+  "102306": {
+    "model": "DS-K1A8503EF",
+    "hardware_version": "UNKNOWN"
+  },
+  "102307": {
+    "model": "IDS-9632NXI-M8/AI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102308": {
+    "model": "DS-2XS2T41G0-ID/4G/C04S05",
+    "hardware_version": "UNKNOWN"
+  },
+  "102309": {
+    "model": "IDS-TCW403-BI",
+    "hardware_version": "UNKNOWN"
   }
 }

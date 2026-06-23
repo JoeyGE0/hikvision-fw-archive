@@ -598,5 +598,17 @@
   "https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5Cwifi_NVR_K75_V4.30.101_build240520_Release_Notes.pdf": {
     "changes": "improve product performance, and will take effect automatically after upgrading from previous versions.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202405/1714518083225/releasenote%5C4G_NVR_K21B2_V4.31.530_build240113_Release_Notes.pdf": {
+    "changes": "One click diagnostic function · Traffic monitoring and detailed display, and optimization of cellular network operation status · Dialing supports auto and 4G switching · Support motion2.0 function",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CK75__V4.30.091build220919_release_note.pdf": {
+    "changes": "【SADP module is added to search and modify the camera · IP by multicast】 · SADP module is added to search and modify the camera IP by multicast. · Related product list:",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CK21B1_V4.61.100_240305_ReleaseNotes.pdf": {
+    "changes": "Modified functions · Related product list: · iDS-9632NXI-M8/AI · iDS-6708NXI-M1/AI",
+    "source": "pdf"
   }
 }
