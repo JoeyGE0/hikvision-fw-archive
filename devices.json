@@ -3190,5 +3190,41 @@
   "102290": {
     "model": "DS-TDSB00-EKH/POE/2M",
     "hardware_version": "UNKNOWN"
+  },
+  "102291": {
+    "model": "AE-DC4328-K5",
+    "hardware_version": "UNKNOWN"
+  },
+  "102292": {
+    "model": "DVR-116G-M1/T",
+    "hardware_version": "DVR_V4"
+  },
+  "102293": {
+    "model": "DS-TDSB00-EKT/POE/4M",
+    "hardware_version": "UNKNOWN"
+  },
+  "102294": {
+    "model": "DS-2TD2137T-4/P",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102295": {
+    "model": "DS-K5671-3XF/ZU",
+    "hardware_version": "UNKNOWN"
+  },
+  "102296": {
+    "model": "DS-7608NI-L1/W",
+    "hardware_version": "NVR_K20B2"
+  },
+  "102297": {
+    "model": "DS-2TD1217T-3/PA",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102298": {
+    "model": "DS-7104NI-K1/W/M",
+    "hardware_version": "NVR_K75"
+  },
+  "102299": {
+    "model": "DS-3E7803M",
+    "hardware_version": "UNKNOWN"
   }
 }

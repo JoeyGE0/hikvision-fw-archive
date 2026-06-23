@@ -586,5 +586,17 @@
   "https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CIPDZLF_G5H8_V5.8.20_Release_Note.pdf": {
     "changes": "Supported smart pan-tilt correction · Upgraded intelligent traffic algorithm",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202409/releasenote%5CThermal_Network_Bullet_Camera_and_Turret_Camera_PAPY_series_V5.5.98_Release_notes_0614.pdf": {
+    "changes": "Support Perimeter Protection Combined Event Alarm. · Setup line crossing as conditions of intrusion rules, the line crossing is triggered first, · then intrusion is activated and triggered with alarm interval, then intrusion alarm · triggered.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202406/1717455650620/releasenote%5CLCD-wifi_NVR_K20B2_V4.32.126_build240522_Release_Notes.pdf": {
+    "changes": "improve product performance, and will take effect automatically after upgrading from previous versions.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5Cwifi_NVR_K75_V4.30.101_build240520_Release_Notes.pdf": {
+    "changes": "improve product performance, and will take effect automatically after upgrading from previous versions.",
+    "source": "pdf"
   }
 }
