@@ -158,7 +158,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 Collapsible sections per model and hardware line (newest firmware first within each section).
 
-Total: 873
+Total: 876
 
 
 
@@ -581,6 +581,26 @@ Total: 873
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.7.19 | Applied to: [DS-2CD1383G0-I](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1770537966/Firmware__V5.7.19_241207_S3000618481.zip), [DS-2CD1383G0-I(2.8MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1770537966/Firmware__V5.7.19_241207_S3000618481.zip), [DS-2CD1383G0-I(4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1770537966/Firmware__V5.7.19_241207_S3000618481.zip) | 2024-12-07 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1770537966/Firmware__V5.7.19_241207_S3000618481.zip) | 1. Change of capture mode for 6/8 MP camera：P system delet e 3200x180025, only reserved · 3840x216025, The N system remains unchanged. · 2. Newly Add 38 boxes camera: DS-2CD3843G2-AP2. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CNetwork_Camera-V5.7.19_241207_Release_Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD1383G2-LIUF - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.41 | Applied to: [DS-2CD1383G2-LIUF(2.8MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780683636/Firmware__V5.8.41_260401_S3000712595.zip), [DS-2CD1383G2-LIUF(4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780683636/Firmware__V5.8.41_260401_S3000712595.zip) | 2026-04-01 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780683636/Firmware__V5.8.41_260401_S3000712595.zip) | Fixed some bugs to enhance system stability. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5CNetwork_Camera-V5.8.41_260401_Release_Note-G6.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD1383G2-LIUF/SL - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.41 | Applied to: [DS-2CD1383G2-LIUF/SL(2.8MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780683636/Firmware__V5.8.41_260401_S3000712595.zip), [DS-2CD1383G2-LIUF/SL(4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780683636/Firmware__V5.8.41_260401_S3000712595.zip) | 2026-04-01 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780683636/Firmware__V5.8.41_260401_S3000712595.zip) | Fixed some bugs to enhance system stability. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5CNetwork_Camera-V5.8.41_260401_Release_Note-G6.pdf) |
 
 </details>
 
@@ -1128,6 +1148,16 @@ Total: 873
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.7.20 | Applied to: [DS-2CD2387G2P-LSU/SL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781893087/Firmware__V5.7.20_241126_S3000616429.zip), [DS-2CD2387G2P-LSU/SL(4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781893087/Firmware__V5.7.20_241126_S3000616429.zip)(C)/O-STD/BLACK, [DS-2CD2T87G2P-LSU/SL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781893087/Firmware__V5.7.20_241126_S3000616429.zip), [DS-2CD2T87G2P-LSU/SL(4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781893087/Firmware__V5.7.20_241126_S3000616429.zip)(C)/O-STD/BLACK, [DS-2CD3T87G2P-LSU/SL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781893087/Firmware__V5.7.20_241126_S3000616429.zip), [DS-2CD3T87G2P-LSU/SL(4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781893087/Firmware__V5.7.20_241126_S3000616429.zip)(C) | 2026-03-20 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781893087/Firmware__V5.7.20_241126_S3000616429.zip) | — |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD2387G3-LIS2UY/S(L)(RB) - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.32 | Applied to: [DS-2CD2387G3-LIS2UY/SL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781943036/Firmware__V5.8.32_260525_S3000732541.zip), [DS-2CD2387G3-LIS2UY/SRB](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781943036/Firmware__V5.8.32_260525_S3000732541.zip), [[DS-2CD2387G3-LIS2UY/SRB(2.8MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781943036/Firmware__V5.8.32_260525_S3000732541.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781943036/Firmware__V5.8.32_260525_S3000732541.zip), [DS-2CD2387G3-LIS2UY/SRB(4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781943036/Firmware__V5.8.32_260525_S3000732541.zip), DS-2CD2387G3-LIS2UY/SRB(2.8MM)O-STDBLACK, [[DS-2CD2387G3-LIS2UY/SL(2.8MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781943036/Firmware__V5.8.32_260525_S3000732541.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781943036/Firmware__V5.8.32_260525_S3000732541.zip), [DS-2CD2387G3-LIS2UY/SL(4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781943036/Firmware__V5.8.32_260525_S3000732541.zip), DS-2CD2387G3-LIS2UY/SL(2.8MM)O-STD/BLACK | 2026-05-25 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781943036/Firmware__V5.8.32_260525_S3000732541.zip) | Fixed some bugs to enhance system stability. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5CNetwork_Camera-V5.8.32_260525_Release_Note-H13.pdf) |
 
 </details>
 

@@ -152,79 +152,48 @@ class TestIndexModelsForFirmware(unittest.TestCase):
 
 
 class TestUserCameraArchive(unittest.TestCase):
-    USER_MODEL = "DS-2CD1383G2-LIUF"
-    INSTALLED = "5.8.41"
+    """Regression: manual rows for user SKUs must index and offer safe updates."""
 
-    @unittest.skipUnless(os.path.exists("firmwares_live.json"), "needs firmwares_live.json")
-    def test_no_exact_liuf_firmware_rows(self):
-        with open("firmwares_live.json", encoding="utf-8") as f:
-            live = json.load(f)
-        hits = []
-        for key, row in live.items():
-            if not isinstance(row, dict):
-                continue
-            blob = json.dumps(row)
-            if self.USER_MODEL in blob or row.get("model") == self.USER_MODEL:
-                hits.append(
-                    (key, row.get("model"), row.get("version"), row.get("filename"))
-                )
-        self.assertEqual(
-            hits,
-            [],
-            f"expected no archive rows for {self.USER_MODEL}, got {hits}",
-        )
+    USER_CAMERAS = [
+        ("DS-2CD2387G3-LIS2UY/SL", "5.8.10", "5.8.32", "S3000732541"),
+        ("DS-2CD2387G3-LIS2UY/SRB", "5.8.10", "5.8.32", "S3000732541"),
+        ("DS-2CD1383G2-LIUF", "5.8.5", "5.8.41", "S3000712595"),
+        ("DS-2CD1383G2-LIUF/SL", "5.8.5", "5.8.41", "S3000712595"),
+    ]
 
-    @unittest.skipUnless(os.path.exists("firmwares_live.json"), "needs firmwares_live.json")
-    def test_closest_variant_is_g2p_not_liuf(self):
-        with open("firmwares_live.json", encoding="utf-8") as f:
-            live = json.load(f)
-        p_rows = [
-            (k, v.get("version"))
-            for k, v in live.items()
-            if isinstance(v, dict) and v.get("model") == "DS-2CD1383G2P-LIUF"
-        ]
-        self.assertTrue(p_rows, "DS-2CD1383G2P-LIUF should exist in archive")
-        versions = {v for _, v in p_rows}
-        self.assertIn("5.8.11", versions)
-        self.assertNotIn(self.INSTALLED, versions)
-
-    @unittest.skipUnless(os.path.exists("firmwares_live.json"), "needs firmwares_live.json")
-    def test_5841_exists_for_other_models_not_user_sku(self):
-        with open("firmwares_live.json", encoding="utf-8") as f:
-            live = json.load(f)
-        v41 = [
-            (v.get("model"), v.get("version"))
-            for v in live.values()
-            if isinstance(v, dict) and v.get("version") == "5.8.41"
-        ]
-        self.assertTrue(v41, "5.8.41 should exist somewhere in archive")
-        for model, _ in v41:
-            self.assertNotEqual(
-                normalize_model(model),
-                normalize_model(self.USER_MODEL),
-                "5.8.41 should not be keyed to user's exact SKU yet",
-            )
+    @unittest.skipUnless(os.path.exists("firmwares_manual.json"), "needs firmwares_manual.json")
+    def test_manual_rows_present(self):
+        with open("firmwares_manual.json", encoding="utf-8") as f:
+            manual = json.load(f)
+        models = {v.get("model") for v in manual.values() if isinstance(v, dict)}
+        self.assertIn("DS-2CD1383G2-LIUF", models)
+        self.assertIn("DS-2CD1383G2-LIUF/SL", models)
+        self.assertIn("DS-2CD2387G3-LIS2UY/S(L)(RB)", models)
 
     @unittest.skipUnless(os.path.exists("firmware_index.json"), "needs firmware_index.json")
-    def test_index_has_no_liuf_key(self):
+    def test_index_has_user_model_keys(self):
         with open("firmware_index.json", encoding="utf-8") as f:
             index = json.load(f)
         models = index.get("models") or {}
-        self.assertNotIn(normalize_model(self.USER_MODEL), models)
-        self.assertNotIn(normalize_model("DS-2CD1383G2-LIUF/SL"), models)
+        for device_model, _, _, _ in self.USER_CAMERAS:
+            self.assertIn(normalize_model(device_model), models)
 
-    def test_ha_shows_up_to_date_not_update_available(self):
-        state = simulate_ha_coordinator(self.USER_MODEL, self.INSTALLED)
-        self.assertTrue(state["matched"], "should fuzzy-match DS-2CD1383G2P-LIUF")
-        self.assertEqual(state["archive_latest"], "5.8.11")
-        self.assertFalse(state["available"])
-        self.assertTrue(state["ha_shows_up_to_date"])
-        self.assertTrue(state["ahead_of_archive"])
+    def test_ha_offers_verified_updates(self):
+        for device_model, installed, expected_version, expected_zip in self.USER_CAMERAS:
+            state = simulate_ha_coordinator(device_model, installed)
+            self.assertTrue(state["matched"], device_model)
+            self.assertEqual(state["archive_latest"], expected_version, device_model)
+            self.assertTrue(state["available"], device_model)
+            self.assertIn(expected_zip, state["download_url"] or "")
 
-    def test_install_would_be_blocked_as_downgrade(self):
-        state = simulate_ha_coordinator(self.USER_MODEL, self.INSTALLED)
-        archive = state["archive_latest"]
-        self.assertFalse(compare_versions(self.INSTALLED, archive))
+    @unittest.skipUnless(os.path.exists("firmwares_live.json"), "needs firmwares_live.json")
+    def test_1063_bulk_not_used_for_1383(self):
+        with open("firmwares_live.json", encoding="utf-8") as f:
+            live = json.load(f)
+        bulk = live.get("DS-2CD1063G2-LIU(F)_IPC_G0_5.8.41", {})
+        self.assertEqual(bulk.get("filename"), "Firmware__V5.8.41_260401_S3000712568.zip")
+        state = simulate_ha_coordinator("DS-2CD1383G2-LIUF/SL", "5.8.5")
+        self.assertNotIn("S3000712568", state["download_url"] or "")
 
 
 class TestWorkflowFilterRemoved(unittest.TestCase):

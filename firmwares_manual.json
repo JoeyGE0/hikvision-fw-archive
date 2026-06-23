@@ -1,1 +1,65 @@
-{}
+{
+  "DS-2CD1383G2-LIUF_IPC_G0_5.8.41": {
+    "device_id": 900138301,
+    "model": "DS-2CD1383G2-LIUF",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.41",
+    "date": "2026-04-01",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780683636/Firmware__V5.8.41_260401_S3000712595.zip",
+    "filename": "Firmware__V5.8.41_260401_S3000712595.zip",
+    "supported_models": [
+      "DS-2CD1383G2-LIUF",
+      "DS-2CD1383G2-LIUF(2.8MM)",
+      "DS-2CD1383G2-LIUF(4MM)"
+    ],
+    "applied_to": "Applied to: DS-2CD1383G2-LIUF(2.8MM), DS-2CD1383G2-LIUF(4MM)",
+    "changes": "Fixed some bugs to enhance system stability.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5CNetwork_Camera-V5.8.41_260401_Release_Note-G6.pdf",
+    "is_beta": false,
+    "source": "manual"
+  },
+  "DS-2CD1383G2-LIUF/SL_IPC_G0_5.8.41": {
+    "device_id": 900138302,
+    "model": "DS-2CD1383G2-LIUF/SL",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.41",
+    "date": "2026-04-01",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780683636/Firmware__V5.8.41_260401_S3000712595.zip",
+    "filename": "Firmware__V5.8.41_260401_S3000712595.zip",
+    "supported_models": [
+      "DS-2CD1383G2-LIUF/SL",
+      "DS-2CD1383G2-LIUF/SL(2.8MM)",
+      "DS-2CD1383G2-LIUF/SL(4MM)"
+    ],
+    "applied_to": "Applied to: DS-2CD1383G2-LIUF/SL(2.8MM), DS-2CD1383G2-LIUF/SL(4MM)",
+    "changes": "Fixed some bugs to enhance system stability.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5CNetwork_Camera-V5.8.41_260401_Release_Note-G6.pdf",
+    "is_beta": false,
+    "source": "manual"
+  },
+  "DS-2CD2387G3-LIS2UY-S-L--RB-_IPC_G0_5.8.32": {
+    "device_id": 900238701,
+    "model": "DS-2CD2387G3-LIS2UY/S(L)(RB)",
+    "hardware_version": "IPC_G0",
+    "version": "5.8.32",
+    "date": "2026-05-25",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781943036/Firmware__V5.8.32_260525_S3000732541.zip",
+    "filename": "Firmware__V5.8.32_260525_S3000732541.zip",
+    "supported_models": [
+      "DS-2CD2387G3-LIS2UY/S(L)(RB)",
+      "DS-2CD2387G3-LIS2UY/SL",
+      "DS-2CD2387G3-LIS2UY/SRB",
+      "DS-2CD2387G3-LIS2UY/SRB(2.8MM)",
+      "DS-2CD2387G3-LIS2UY/SRB(4MM)",
+      "DS-2CD2387G3-LIS2UY/SRB(2.8MM)O-STDBLACK",
+      "DS-2CD2387G3-LIS2UY/SL(2.8MM)",
+      "DS-2CD2387G3-LIS2UY/SL(4MM)",
+      "DS-2CD2387G3-LIS2UY/SL(2.8MM)O-STD/BLACK"
+    ],
+    "applied_to": "Applied to: DS-2CD2387G3-LIS2UY/SL, DS-2CD2387G3-LIS2UY/SRB, DS-2CD2387G3-LIS2UY/SRB(2.8MM), DS-2CD2387G3-LIS2UY/SRB(4MM), DS-2CD2387G3-LIS2UY/SRB(2.8MM)O-STDBLACK, DS-2CD2387G3-LIS2UY/SL(2.8MM), DS-2CD2387G3-LIS2UY/SL(4MM), DS-2CD2387G3-LIS2UY/SL(2.8MM)O-STD/BLACK",
+    "changes": "Fixed some bugs to enhance system stability.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5CNetwork_Camera-V5.8.32_260525_Release_Note-H13.pdf",
+    "is_beta": false,
+    "source": "manual"
+  }
+}
