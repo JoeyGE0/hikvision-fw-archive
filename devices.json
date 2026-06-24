@@ -3266,5 +3266,37 @@
   "102309": {
     "model": "IDS-TCW403-BI",
     "hardware_version": "UNKNOWN"
+  },
+  "102310": {
+    "model": "DS-K3B961TX",
+    "hardware_version": "UNKNOWN"
+  },
+  "102311": {
+    "model": "AE-DI5042-G4",
+    "hardware_version": "UNKNOWN"
+  },
+  "102312": {
+    "model": "DS-3E1508-EI(C)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102313": {
+    "model": "DS-7608NI-I2",
+    "hardware_version": "NVR_G0"
+  },
+  "102314": {
+    "model": "DS-7608NXI-I2/8P/S",
+    "hardware_version": "NVR_G0"
+  },
+  "102315": {
+    "model": "IDS-6708NXI-I/FA",
+    "hardware_version": "UNKNOWN"
+  },
+  "102316": {
+    "model": "IDS-6716NXI-I/S",
+    "hardware_version": "UNKNOWN"
+  },
+  "102317": {
+    "model": "AE-VE242A-A",
+    "hardware_version": "UNKNOWN"
   }
 }

@@ -610,5 +610,9 @@
   "https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CK21B1_V4.61.100_240305_ReleaseNotes.pdf": {
     "changes": "Modified functions · Related product list: · iDS-9632NXI-M8/AI · iDS-6708NXI-M1/AI",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CK51_V4.62.225_240123_ReleaseNotes.pdf": {
+    "changes": "Modified functions · Related product list:",
+    "source": "pdf"
   }
 }
