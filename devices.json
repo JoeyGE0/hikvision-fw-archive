@@ -3298,5 +3298,49 @@
   "102317": {
     "model": "AE-VE242A-A",
     "hardware_version": "UNKNOWN"
+  },
+  "102318": {
+    "model": "DS-K3GL606WX-WB",
+    "hardware_version": "UNKNOWN"
+  },
+  "102319": {
+    "model": "DS-E04HGHI-D",
+    "hardware_version": "DVR_V4"
+  },
+  "102320": {
+    "model": "DS-KD8023-E6",
+    "hardware_version": "UNKNOWN"
+  },
+  "102321": {
+    "model": "VI-K46P",
+    "hardware_version": "UNKNOWN"
+  },
+  "102322": {
+    "model": "IDS-2CD8A46G0-XZ(H)S(Y)",
+    "hardware_version": "IPC_G0"
+  },
+  "102323": {
+    "model": "DS-6701HUHI",
+    "hardware_version": "DVR_V3"
+  },
+  "102324": {
+    "model": "DS-K1A340FWX",
+    "hardware_version": "UNKNOWN"
+  },
+  "102325": {
+    "model": "THC-T223-M",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102326": {
+    "model": "THC-B120-PIC",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102327": {
+    "model": "DS-2TD2138-15/QY",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102328": {
+    "model": "IDS-96064NXI-I16",
+    "hardware_version": "UNKNOWN"
   }
 }

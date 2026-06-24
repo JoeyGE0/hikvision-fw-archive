@@ -614,5 +614,29 @@
   "https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CK51_V4.62.225_240123_ReleaseNotes.pdf": {
     "changes": "Modified functions · Related product list:",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202404/1714345285653/releasenote%5C3.5_inch_LED_Door_Station_Firmware_Release_Note_V2.2.32_build240116.pdf": {
+    "changes": "Modified the default resolution of sub-stream to 720P · (2023-01-10) · 1、 Solve the very small probability of activation failure. · (2022-12-20)",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202402/releasenote%5CKH6_4.3_Inch_Indoor_Station_V2.2.42_build240116_Release_Note.pdf": {
+    "changes": "Solve the problem that the doorbell alarm trigger cannot take effect until the device is not activated · Fixed: When using some brand standard SIP servers, there is no video when the door station calls · the indoor station through standard SIP · Fixed the issue that there is a small probability that the wifi hotspot cannot be scanned",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202504/releasenote%5CNetwork_Camera_V5.8.0_Release_Note_--H8G5.pdf": {
+    "changes": "Newly support Web5.0 UI. · Newly support Face Mosaic Mask and Human Body Mosaic Mask on Face Capture, Face · Picture Comparison and Multi-Target-Type Detection mode. Support overlay mosaic · mask for faces or human bodies in videos.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CTurbo_HD_DVR_V3.5.361build240103_Release_Notes.pdf": {
+    "changes": "improve product performance, and will take effect automatically after upgrading from previous versions.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CDS-K1A340_Series_MinMoe_Terminal_V1.2.7_build230609_Release_Note.pdf": {
+    "changes": "When the device is added to HPP and the platform enables cloud attendance function, there is · a probability of repeated restarts. · Device Model: · Naming Rule:",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CX50_V4.62.225_231201_ReleaseNotes.pdf": {
+    "changes": "Modified functions · Related product list: · iDS-96256NXI-I24(标配)(C) · iDS-96128NXI-I24(标配)(C)",
+    "source": "pdf"
   }
 }
