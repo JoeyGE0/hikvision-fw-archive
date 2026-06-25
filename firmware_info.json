@@ -638,5 +638,25 @@
   "https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CX50_V4.62.225_231201_ReleaseNotes.pdf": {
     "changes": "Modified functions · Related product list: · iDS-96256NXI-I24(标配)(C) · iDS-96128NXI-I24(标配)(C)",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CNetwork_Camera-V5.5.820_Release_Note-G6.pdf": {
+    "changes": "Version maintenance of HC library permission authentication issues.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5C12_Key_Nametag_Module_V1.0.1_build231115_Release_Note.pdf": {
+    "changes": "· Nametag module of modular door station · · 12 nametag buttons calling design for easier calls · We can write floor No. and Room No, if you want to write person name, we recommend to use DS -KD-KK, · which has bigger space.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202404/1712790061055/releasenote%5C%E3%80%90Release_Note%E3%80%91Mobile_IPC_V3.2.2.pdf": {
+    "changes": "Modified functions · Fixed some minor bugs. · Related product list",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202404/1712790066963/releasenote%5CIPC_E6_5.5.821_Release_Note.pdf": {
+    "changes": "Optimization · Fixed the bug of EZVIZ. · Internal",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202404/1712790057405/releasenote%5CIPC_E6_5.5.821_Release_Note.pdf": {
+    "changes": "Optimization · Fixed the bug of EZVIZ. · Internal",
+    "source": "pdf"
   }
 }
