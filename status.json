@@ -1,13 +1,12 @@
 {
-  "last_run": "2026-06-25T08:03:33.818320",
+  "last_run": "2026-06-25T18:42:46.150737",
   "status": "error",
   "scraper_mode": "http",
   "post_merge_verified": "2026-05-19T13:00:29.926000",
   "catalog_urls_parsed": 4568,
-  "firmwares_found": 940,
+  "firmwares_found": 955,
   "new_firmwares": 10,
   "errors": [
-    "Download failed DS-D5022F2-5V2 v1.5.1: Download too small (3217 bytes)",
     "Download failed DS-D5022F2-6V2 v1.5.1: Download too small (3217 bytes)",
     "Download failed DS-D5024F2-BV2 v1.5.1: Download too small (3109 bytes)",
     "Download failed HI-D22F2P2F v1.5.1: Download too small (3167 bytes)",
@@ -15,11 +14,13 @@
     "Download failed HI-D22F2P2F v1.5.1: Download too small (3195 bytes)",
     "Download failed HI-D22F2V2F v1.5.1: Download too small (3206 bytes)",
     "Download failed HI-D22F2V2F v1.5.1: Download too small (3209 bytes)",
-    "Download failed HI-D22F2V2F v1.5.1: Download too small (3209 bytes)"
+    "Download failed HI-D22F2V2F v1.5.1: Download too small (3209 bytes)",
+    "Download failed IDS-9632NXI-I8/X-AI v4.61.001: ('Connection broken: IncompleteRead(239550464 bytes read, 5004180 more expected)', IncompleteRead(239550464 bytes read, 5004180 more expected))",
+    "Download failed DS-2SF8C425MXS-DL(24F0)(P3) v5.8.1: ('Connection broken: IncompleteRead(218103808 bytes read, 492147466 more expected)', IncompleteRead(218103808 bytes read, 492147466 more expected))"
   ],
   "test_mode": false,
   "catalog_fetch": "playwright",
-  "catalog_entries": 1039,
+  "catalog_entries": 1062,
   "priority_models": [
     "DS-2CD2387G3-LIS2UY",
     "DS-2CD1383G2P-LIUF",

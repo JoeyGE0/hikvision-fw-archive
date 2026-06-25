@@ -3402,5 +3402,49 @@
   "102343": {
     "model": "THC-B127-LMC",
     "hardware_version": "THERMAL_G0"
+  },
+  "102344": {
+    "model": "AE-DC5013-F6PRO",
+    "hardware_version": "UNKNOWN"
+  },
+  "102345": {
+    "model": "DS-1006KI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102346": {
+    "model": "DS-1200KI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102347": {
+    "model": "AE-VD2501A-A",
+    "hardware_version": "UNKNOWN"
+  },
+  "102348": {
+    "model": "THC-B127-LMS",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102349": {
+    "model": "IDS-7316HQHI-M4/S",
+    "hardware_version": "DVR_V4"
+  },
+  "102350": {
+    "model": "DS-3E1106HP-EI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102351": {
+    "model": "DS-3E1310HP-EI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102352": {
+    "model": "DS-2DP8A440IXG-LEF/624(F0)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102353": {
+    "model": "DS-3WR4G12C",
+    "hardware_version": "UNKNOWN"
+  },
+  "102354": {
+    "model": "DS-K3B601-BASE",
+    "hardware_version": "UNKNOWN"
   }
 }
