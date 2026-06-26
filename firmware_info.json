@@ -658,5 +658,13 @@
   "https://assets.hikvision.com/prd/public/all/files/202404/1712790057405/releasenote%5CIPC_E6_5.5.821_Release_Note.pdf": {
     "changes": "Optimization · Fixed the bug of EZVIZ. · Internal",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CIPDZLF_G5H8_V5.8.1_Release_Note.pdf": {
+    "changes": "Fixed bugs",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CDS-KIS703Y-P_Video_Intercom_Kit_Release_Note.pdf": {
+    "changes": "Wizard simplification. 3 seconds of booting time to realize the intercom between the indoor station and the · door station. · Supporting indoor station restore to default and synchronizing the door station to the default. · The Hik-Connect function will be enabled automatically when choosing to connect to the WIFI.",
+    "source": "pdf"
   }
 }

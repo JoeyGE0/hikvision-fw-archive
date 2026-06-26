@@ -3446,5 +3446,37 @@
   "102354": {
     "model": "DS-K3B601-BASE",
     "hardware_version": "UNKNOWN"
+  },
+  "102355": {
+    "model": "DS-2SF8C425MXS-DL(24F0)(P3)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102356": {
+    "model": "THC-B129-LPS",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102357": {
+    "model": "DS-KIS703Y-P",
+    "hardware_version": "UNKNOWN"
+  },
+  "102358": {
+    "model": "NVR-104MH-D/4P",
+    "hardware_version": "NVR_V4"
+  },
+  "102359": {
+    "model": "THC-B127-MS",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102360": {
+    "model": "THC-B127-P",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102361": {
+    "model": "DS-KDM9403-FKP",
+    "hardware_version": "UNKNOWN"
+  },
+  "102362": {
+    "model": "DS-KDM9633-FKP",
+    "hardware_version": "UNKNOWN"
   }
 }
