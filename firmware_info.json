@@ -666,5 +666,9 @@
   "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CDS-KIS703Y-P_Video_Intercom_Kit_Release_Note.pdf": {
     "changes": "Wizard simplification. 3 seconds of booting time to realize the intercom between the indoor station and the · door station. · Supporting indoor station restore to default and synchronizing the door station to the default. · The Hik-Connect function will be enabled automatically when choosing to connect to the WIFI.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202306/Value%20Indoor%20Station%20Firmware%20V1.4.64_230523%20Release%20Note.pdf": {
+    "changes": "Fixed known security vulnerabilities · For details, please refer: · https://www.hikvision.com/en/support/cybersecurity/security-advisory/security · vulnerability-in-some-hikvision-access-control-intercom/",
+    "source": "pdf"
   }
 }

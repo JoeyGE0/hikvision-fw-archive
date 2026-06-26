@@ -3478,5 +3478,37 @@
   "102362": {
     "model": "DS-KDM9633-FKP",
     "hardware_version": "UNKNOWN"
+  },
+  "102363": {
+    "model": "IDS-9632NXI-I8/X",
+    "hardware_version": "UNKNOWN"
+  },
+  "102364": {
+    "model": "DS-KD-M",
+    "hardware_version": "UNKNOWN"
+  },
+  "102365": {
+    "model": "DS-K3G501SX",
+    "hardware_version": "UNKNOWN"
+  },
+  "102366": {
+    "model": "DS-KH6220-LE1",
+    "hardware_version": "UNKNOWN"
+  },
+  "102367": {
+    "model": "DS-2TD8167-150ZE2F/W",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102368": {
+    "model": "DS-KH1200",
+    "hardware_version": "UNKNOWN"
+  },
+  "102369": {
+    "model": "THC-B150-M",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102370": {
+    "model": "DS-2TD3017T-2/V",
+    "hardware_version": "THERMAL_G0"
   }
 }
