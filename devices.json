@@ -3554,5 +3554,61 @@
   "102381": {
     "model": "DS-K1A802EF-B",
     "hardware_version": "UNKNOWN"
+  },
+  "102382": {
+    "model": "IDS-9632NXI-I8/X-AI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102383": {
+    "model": "NVR-104H-D",
+    "hardware_version": "NVR_G0"
+  },
+  "102384": {
+    "model": "IDS-7608NXI-I2/8P/X",
+    "hardware_version": "UNKNOWN"
+  },
+  "102385": {
+    "model": "DS-KD9613-FE6",
+    "hardware_version": "UNKNOWN"
+  },
+  "102386": {
+    "model": "AE-DC5313-C6",
+    "hardware_version": "UNKNOWN"
+  },
+  "102387": {
+    "model": "PTZ-N4225I-DE",
+    "hardware_version": "UNKNOWN"
+  },
+  "102388": {
+    "model": "IDS-9616NXI-I8/S",
+    "hardware_version": "UNKNOWN"
+  },
+  "102389": {
+    "model": "DS-3E1310P-SI(O-STD)V2",
+    "hardware_version": "UNKNOWN"
+  },
+  "102390": {
+    "model": "THC-B129-MS",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102391": {
+    "model": "AE-DC5013-F6",
+    "hardware_version": "UNKNOWN"
+  },
+  "102392": {
+    "model": "DS-2TD2637-10/P",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102393": {
+    "model": "THC-B159-MS",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102394": {
+    "model": "DS-KD-PMR",
+    "hardware_version": "UNKNOWN"
+  },
+  "102395": {
+    "model": "THC-B120-MS",
+    "hardware_version": "THERMAL_G0"
   }
 }

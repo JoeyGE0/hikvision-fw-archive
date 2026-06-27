@@ -690,5 +690,9 @@
   "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CKB8113_Firmware_V2.2.51_230109_Release_Note.pdf": {
     "changes": "When adding K B8113 to Hik-Connect directly, it supports capture and uploading picture to hik · connect when the call button is pressed (there was no picture before). · Modified Feature · Optimize exit button detection logic and increase button detection sensitivity",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CX50_V4.61.001_build230908_ReleaseNotes.pdf": {
+    "changes": "Modified functions · Related product list: · iDS-6708NXI-I/X-AI(C) · iDS-9632NXI-I8/X-AI(C)",
+    "source": "pdf"
   }
 }
