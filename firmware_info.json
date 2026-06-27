@@ -670,5 +670,25 @@
   "https://assets.hikvision.com/prd/public/all/files/202306/Value%20Indoor%20Station%20Firmware%20V1.4.64_230523%20Release%20Note.pdf": {
     "changes": "Fixed known security vulnerabilities · For details, please refer: · https://www.hikvision.com/en/support/cybersecurity/security-advisory/security · vulnerability-in-some-hikvision-access-control-intercom/",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5C%E3%80%90Release_Note%E3%80%91AE-VC215I-ISF_V3.0.2.pdf": {
+    "changes": "Support preview in Chrome, Firefox, and Edge with plug-in; · For detailed features and functions, please refer to the user manual and datasheet. · Modified functions · Related product list",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5C%E3%80%90Release_Note%E3%80%91ANPR-IPC_V3.0.1.pdf": {
+    "changes": "Support no plate vehicles recognition. · Support Blocklist & Allowlist. · Support alarm output · Support smart display",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5C%E3%80%90Release_Note%E3%80%91Mobile_Video_Recorder_V5.4.1.pdf": {
+    "changes": "improve product performance, and will take effect automatically after upgrading from previous versions.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CModular_Firmware_V2.2.62_230204_Release_Note.pdf": {
+    "changes": "Add sub module backlight control: 4 modes (close, open, auto and custom), · Close: always OFF · Open: always ON · Auto: ON and OFF according to the ambient light brightness",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CKB8113_Firmware_V2.2.51_230109_Release_Note.pdf": {
+    "changes": "When adding K B8113 to Hik-Connect directly, it supports capture and uploading picture to hik · connect when the call button is pressed (there was no picture before). · Modified Feature · Optimize exit button detection logic and increase button detection sensitivity",
+    "source": "pdf"
   }
 }

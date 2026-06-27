@@ -1,10 +1,10 @@
 {
-  "last_run": "2026-06-26T18:18:27.155750",
+  "last_run": "2026-06-27T07:37:44.573294",
   "status": "error",
   "scraper_mode": "http",
   "post_merge_verified": "2026-05-19T13:00:29.926000",
   "catalog_urls_parsed": 4568,
-  "firmwares_found": 978,
+  "firmwares_found": 991,
   "new_firmwares": 10,
   "errors": [
     "Download failed DS-D5022F2-5V2 v1.5.1: Download too small (3217 bytes)",
@@ -15,8 +15,7 @@
     "Download failed HI-D22F2P2F v1.5.1: Download too small (3195 bytes)",
     "Download failed HI-D22F2V2F v1.5.1: Download too small (3206 bytes)",
     "Download failed HI-D22F2V2F v1.5.1: Download too small (3209 bytes)",
-    "Download failed HI-D22F2V2F v1.5.1: Download too small (3209 bytes)",
-    "Download failed NVR-104MH-C v4.72.110: ('Connection broken: IncompleteRead(24117248 bytes read, 8319379 more expected)', IncompleteRead(24117248 bytes read, 8319379 more expected))"
+    "Download failed HI-D22F2V2F v1.5.1: Download too small (3209 bytes)"
   ],
   "test_mode": false,
   "catalog_fetch": "playwright",

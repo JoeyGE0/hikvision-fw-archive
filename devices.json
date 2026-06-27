@@ -3510,5 +3510,49 @@
   "102370": {
     "model": "DS-2TD3017T-2/V",
     "hardware_version": "THERMAL_G0"
+  },
+  "102371": {
+    "model": "AE-VC215I-ISF",
+    "hardware_version": "UNKNOWN"
+  },
+  "102372": {
+    "model": "AE-VC583I-ISF",
+    "hardware_version": "IPC_V3"
+  },
+  "102373": {
+    "model": "DS-MP7608",
+    "hardware_version": "UNKNOWN"
+  },
+  "102374": {
+    "model": "DS-KD8003-IME1",
+    "hardware_version": "UNKNOWN"
+  },
+  "102375": {
+    "model": "DS-3E1309P-EI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102376": {
+    "model": "DS-KB8113-IME1",
+    "hardware_version": "UNKNOWN"
+  },
+  "102377": {
+    "model": "DS-KD-AL8",
+    "hardware_version": "UNKNOWN"
+  },
+  "102378": {
+    "model": "DS-KD9613-E6",
+    "hardware_version": "UNKNOWN"
+  },
+  "102379": {
+    "model": "DS-3E2510P-H",
+    "hardware_version": "UNKNOWN"
+  },
+  "102380": {
+    "model": "DS-3E1524-EI V2(O-STD)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102381": {
+    "model": "DS-K1A802EF-B",
+    "hardware_version": "UNKNOWN"
   }
 }
