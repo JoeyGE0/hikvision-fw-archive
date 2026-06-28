@@ -3610,5 +3610,49 @@
   "102395": {
     "model": "THC-B120-MS",
     "hardware_version": "THERMAL_G0"
+  },
+  "102396": {
+    "model": "DS-2DE3A404IW-DE(S6)",
+    "hardware_version": "IPC_G0"
+  },
+  "102397": {
+    "model": "DS-2DE7225IW-AE(S6)",
+    "hardware_version": "IPC_G0"
+  },
+  "102398": {
+    "model": "DS-2TD5537T-7/W",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102399": {
+    "model": "AE-AC1130-A",
+    "hardware_version": "UNKNOWN"
+  },
+  "102400": {
+    "model": "IK-4142BH-MH/P",
+    "hardware_version": "IPC_E3S"
+  },
+  "102401": {
+    "model": "NK42E0H-1T(WD)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102402": {
+    "model": "DS-9000AI-S16-D",
+    "hardware_version": "UNKNOWN"
+  },
+  "102403": {
+    "model": "DS-K3G411LX",
+    "hardware_version": "UNKNOWN"
+  },
+  "102404": {
+    "model": "DS-K3G501LX",
+    "hardware_version": "UNKNOWN"
+  },
+  "102405": {
+    "model": "DS-KV8213-WME1(B)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102406": {
+    "model": "DS-KD8003-IME1/NS",
+    "hardware_version": "UNKNOWN"
   }
 }
