@@ -714,5 +714,25 @@
   "https://assets.hikvision.com/prd/public/all/files/202208/Modular%20Firmware%20V2.2.56_220713%20Release%20Note.pdf": {
     "changes": "Fixed the problem that the actual lock time is more than the set duration of 1 second.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202208/P&PA%20series%20V5.5.58%20Release%20notes.pdf": {
+    "changes": "Newly add Forklift Filter Level to adjust the filter sensitivity. Default settings Low · is suitable for most cases. The higher the grade, the better the filter effect. · Figure 1 · Support Auto mode to adjust Temperature Range for Thermographic Network",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CTurbo_HD_DVR_V4.30.122_build_201107.pdf": {
+    "changes": "improve product performance, and will take effect automatically after upgrading from previous versions.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202207/PTZ%20V5.5.823%20Release%20Note--EN.pdf": {
+    "changes": "Security patches",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CKV(-B)_Firmware_V2.2.53_220602_Release_Note.pdf": {
+    "changes": "Fixed an issue with main card authentication failure.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CNetwork_Camera_V5.5.821_Release_Note_--H7.pdf": {
+    "changes": "Improved Features · Fixed some bugs.",
+    "source": "pdf"
   }
 }

@@ -3654,5 +3654,57 @@
   "102406": {
     "model": "DS-KD8003-IME1/NS",
     "hardware_version": "UNKNOWN"
+  },
+  "102407": {
+    "model": "IDS-7716NXI-I4/S",
+    "hardware_version": "UNKNOWN"
+  },
+  "102408": {
+    "model": "DS-KV8113-WME1(B)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102409": {
+    "model": "DS-KD8003-IME1/FLUSH",
+    "hardware_version": "UNKNOWN"
+  },
+  "102410": {
+    "model": "DS-2TD2167-15/P",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102411": {
+    "model": "THC-T120-PC",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102412": {
+    "model": "DVR-204U-K1",
+    "hardware_version": "DVR_V4"
+  },
+  "102413": {
+    "model": "DS-2TD1217T-2/PA",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102414": {
+    "model": "DS-2DE7A245IX-AE/S1",
+    "hardware_version": "IPC_G0"
+  },
+  "102415": {
+    "model": "THC-B129-M",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102416": {
+    "model": "DS-KV6103-PE1(B)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102417": {
+    "model": "IDS-2SK7184MXS-D",
+    "hardware_version": "UNKNOWN"
+  },
+  "102418": {
+    "model": "IDS-2SK8144IXS-D/J",
+    "hardware_version": "UNKNOWN"
+  },
+  "102419": {
+    "model": "IDS-2CD70C5G0-AP",
+    "hardware_version": "IPC_H7"
   }
 }
