@@ -3754,5 +3754,53 @@
   "102431": {
     "model": "DS-9604LNI-V/B02",
     "hardware_version": "UNKNOWN"
+  },
+  "102432": {
+    "model": "DS-3WR30X-V",
+    "hardware_version": "UNKNOWN"
+  },
+  "102433": {
+    "model": "DS-KV6113-PE1(B)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102434": {
+    "model": "DS-2CE16D0T-VFIR3F",
+    "hardware_version": "UNKNOWN"
+  },
+  "102435": {
+    "model": "AE-DC5313-C6PRO",
+    "hardware_version": "UNKNOWN"
+  },
+  "102436": {
+    "model": "DS-2CV2Q21FD-IW",
+    "hardware_version": "IPC_E6"
+  },
+  "102437": {
+    "model": "DS-2DE4215IW-DE(S6)",
+    "hardware_version": "IPC_G0"
+  },
+  "102438": {
+    "model": "DS-KDM9403-KP",
+    "hardware_version": "UNKNOWN"
+  },
+  "102439": {
+    "model": "DS-2XM6825G0/C-IV(S)(M)(/ND) (C)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102440": {
+    "model": "DS-2TX3742-10A/P",
+    "hardware_version": "UNKNOWN"
+  },
+  "102441": {
+    "model": "DS-KD-DIS",
+    "hardware_version": "UNKNOWN"
+  },
+  "102442": {
+    "model": "DS-2XE6825G0-(I)(L)Z(H)(S)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102443": {
+    "model": "IPC-B620H-Z/-V",
+    "hardware_version": "UNKNOWN"
   }
 }

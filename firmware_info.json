@@ -742,5 +742,13 @@
   "https://assets.hikvision.com/prd/public/all/files/202208/Thermal%20Network%20PTZ%20Camera%20H5%20V5.5.45%20build220402%20Release%20Note.pdf": {
     "changes": "improves the security.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5C%E3%80%90Release_Note%E3%80%91Mobile_People_Counting_Camera__V5.5.580_211125.pdf": {
+    "changes": "improve product performance, and will take effect automatically after upgrading from previous versions.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/7aa3f742-d538-47f1-84e9-5c876f7b1077.pdf": {
+    "changes": "Improved Features  Fix security issue in ISAPI",
+    "source": "pdf"
   }
 }
