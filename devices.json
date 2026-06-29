@@ -3706,5 +3706,53 @@
   "102419": {
     "model": "IDS-2CD70C5G0-AP",
     "hardware_version": "IPC_H7"
+  },
+  "102420": {
+    "model": "DS-2DE5232IW-AE(S5)",
+    "hardware_version": "IPC_G0"
+  },
+  "102421": {
+    "model": "AE-DC2015-B1",
+    "hardware_version": "UNKNOWN"
+  },
+  "102422": {
+    "model": "DS-2DE7S225MW-AEB(F1)(S5)",
+    "hardware_version": "IPC_G0"
+  },
+  "102423": {
+    "model": "ISD-SMG111",
+    "hardware_version": "UNKNOWN"
+  },
+  "102424": {
+    "model": "DS-3E1318P-EI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102425": {
+    "model": "DS-3E1318P-SI(O-STD)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102426": {
+    "model": "DS-2DF9C245IHS-DLW(T2)",
+    "hardware_version": "IPC_G0"
+  },
+  "102427": {
+    "model": "DS-2DF8225IH-AEL(W)",
+    "hardware_version": "IPC_G0"
+  },
+  "102428": {
+    "model": "DS-2TA03-15SVI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102429": {
+    "model": "DS-2TD4137T-25/W",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102430": {
+    "model": "DS-2TX3742-10A/Q",
+    "hardware_version": "UNKNOWN"
+  },
+  "102431": {
+    "model": "DS-9604LNI-V/B02",
+    "hardware_version": "UNKNOWN"
   }
 }
