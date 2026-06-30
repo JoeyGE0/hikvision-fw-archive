@@ -3802,5 +3802,49 @@
   "102443": {
     "model": "IPC-B620H-Z/-V",
     "hardware_version": "UNKNOWN"
+  },
+  "102444": {
+    "model": "DS-2CV2021G2-IDW",
+    "hardware_version": "IPC_E6"
+  },
+  "102445": {
+    "model": "DS-2CV2141G2-IDW",
+    "hardware_version": "UNKNOWN"
+  },
+  "102446": {
+    "model": "DS-K1107AE",
+    "hardware_version": "UNKNOWN"
+  },
+  "102447": {
+    "model": "DS-2DF5225X-AE3(T3)",
+    "hardware_version": "IPC_G0"
+  },
+  "102448": {
+    "model": "DS-2DF6A836XS-AEL(T2)",
+    "hardware_version": "IPC_G0"
+  },
+  "102449": {
+    "model": "DS-2DF8C260I5XS-AELW(T2)",
+    "hardware_version": "IPC_G0"
+  },
+  "102450": {
+    "model": "DS-2DY9236I8X-A(T3)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102451": {
+    "model": "DS-8608NI-K8",
+    "hardware_version": "NVR_V4"
+  },
+  "102452": {
+    "model": "DS-2TA21-2AVF",
+    "hardware_version": "UNKNOWN"
+  },
+  "102453": {
+    "model": "DS-3E1526P-SI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102454": {
+    "model": "IK-4142B-MH/W",
+    "hardware_version": "UNKNOWN"
   }
 }

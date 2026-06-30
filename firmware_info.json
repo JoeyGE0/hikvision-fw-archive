@@ -750,5 +750,29 @@
   "https://assets.hikvision.com/prd/public/all/files/7aa3f742-d538-47f1-84e9-5c876f7b1077.pdf": {
     "changes": "Improved Features  Fix security issue in ISAPI",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/fe30e75d-6042-4669-8dd3-36b38b954de7.pdf": {
+    "changes": "Built-in EM/Mifare card reading module · Optical keypad module · Communication protocol: RS485/Wiegand(set via DIP switch), connect to access control terminal · or access controller.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/dc17395f-4963-4057-9bbc-11b22eff739c.pdf": {
+    "changes": "Improved Features · Fix security issue in ISAPI · Leftover Issues",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/e8f5c605-711c-4090-86c5-045e7a0394f9.pdf": {
+    "changes": "Improved Features · Fix security issue in ISAPI · Leftover Issues",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/53d23b67-caee-4a0b-a6ad-030860af3ad7.pdf": {
+    "changes": "Improved Features · Fix security issue in ISAPI · Leftover Issues",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/15548d67-41b2-491c-bb40-f9dd41f9c273.pdf": {
+    "changes": "Improved Features · Fix security issue in ISAPI · Leftover Issues",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CNVR_V4.51.025_build210927_Release_Notes.pdf": {
+    "changes": "【Support uploading alarm videos to cloud for back-up (HPC)】 · Support uploading alarm videos to cloud storage. · Support configuring Ezviz verification code. · Support bandwidth query.",
+    "source": "pdf"
   }
 }
