@@ -3846,5 +3846,45 @@
   "102454": {
     "model": "IK-4142B-MH/W",
     "hardware_version": "UNKNOWN"
+  },
+  "102455": {
+    "model": "DS-2XE6746G0-LIZHS(304)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102456": {
+    "model": "IPC-B149H",
+    "hardware_version": "UNKNOWN"
+  },
+  "102457": {
+    "model": "IPC-T229H",
+    "hardware_version": "UNKNOWN"
+  },
+  "102458": {
+    "model": "THC-B120-M",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102459": {
+    "model": "IDS-2CD7026G0/EP-IHSY",
+    "hardware_version": "IPC_G0"
+  },
+  "102460": {
+    "model": "DS-2TD1117-2/P",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102461": {
+    "model": "DS-2TD2136-10/VP",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102462": {
+    "model": "DS-2TD1217-2/V1",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102463": {
+    "model": "DS-2TD2117-3/V1",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102464": {
+    "model": "DS-2TD2136-10/V1",
+    "hardware_version": "THERMAL_G0"
   }
 }

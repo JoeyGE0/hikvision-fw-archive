@@ -774,5 +774,17 @@
   "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CNVR_V4.51.025_build210927_Release_Notes.pdf": {
     "changes": "【Support uploading alarm videos to cloud for back-up (HPC)】 · Support uploading alarm videos to cloud storage. · Support configuring Ezviz verification code. · Support bandwidth query.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202208/Thermal%20Network%20Bullet%20Camera%20&Turret%20Camera%20V5.5.42%20Release%20Notes.pdf": {
+    "changes": "New Models · Optimized Features · VCA Optimization · Update animal model in the algorithm to reduce animal false alarms.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202205/bc49f58b-7915-4954-ae35-6a20312c2214.pdf": {
+    "changes": "Added ONVIF capabilities of Intrusion and Line Crossing · Add the new feature: ONVIF capabilities of Intrusion and Line Crossing. · Fixed the issue · SAMBA server for NAS mont and format successed but test failed. The bug has been fixed.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202205/efe806bd-5189-402b-aa7f-0e7c7dfc1667.pdf": {
+    "changes": "Added ONVIF capabilities of Intrusion and Line Crossing · Add the new feature: ONVIF capabilities of Intrusion and Line Crossing. · Fixed the issue · SAMBA server for NAS mont and format successed but test failed. The bug has been fixed.",
+    "source": "pdf"
   }
 }

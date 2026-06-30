@@ -1,10 +1,10 @@
 {
-  "last_run": "2026-06-30T08:19:53.203691",
+  "last_run": "2026-06-30T18:34:58.351726",
   "status": "error",
   "scraper_mode": "http",
   "post_merge_verified": "2026-05-19T13:00:29.926000",
   "catalog_urls_parsed": 4568,
-  "firmwares_found": 1085,
+  "firmwares_found": 1096,
   "new_firmwares": 10,
   "errors": [
     "Download failed DS-D5022F2-5V2 v1.5.1: Download too small (3217 bytes)",
@@ -20,7 +20,7 @@
   ],
   "test_mode": false,
   "catalog_fetch": "playwright",
-  "catalog_entries": 1058,
+  "catalog_entries": 1059,
   "priority_models": [
     "DS-2CD2387G3-LIS2UY",
     "DS-2CD1383G2P-LIUF",
