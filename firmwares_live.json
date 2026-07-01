@@ -3816,7 +3816,7 @@
     "version": "5.8.2",
     "date": "2026-04-08",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782159039/Firmware__V5.8.20_240605_S3000579977.zip",
-    "filename": "Firmware__V5.8.20_240605_S3000579977.zip",
+    "filename": "Firmware__V5.5.8_210702_S3000375680.zip",
     "supported_models": [
       "DS-2DY5225IX-AE(T5)",
       "DS-2DY5225IX-DM(T5)",
@@ -3840,7 +3840,7 @@
     "version": "5.8.2",
     "date": "2026-04-08",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782159039/Firmware__V5.8.20_240605_S3000579977.zip",
-    "filename": "Firmware__V5.8.20_240605_S3000579977.zip",
+    "filename": "Firmware__V5.5.8_210702_S3000375680.zip",
     "supported_models": [
       "DS-2DY7432IXG-XY",
       "DS-2DY7436IXG-CXLWF(316L)",
@@ -4204,7 +4204,7 @@
     "version": "5.8.0",
     "date": "2026-04-04",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782325984/Firmware__V5.8.0_240115_S3000553438.zip",
-    "filename": "Firmware__V5.8.0_240115_S3000553438.zip",
+    "filename": "Firmware__V5.8.0_260428_S3000720876.zip",
     "supported_models": [
       "DS-2DE3A400BW-DE(T5)",
       "DS-2DE3A400BW-DE(F1)(T5)",
@@ -4229,7 +4229,7 @@
     "version": "5.8.2",
     "date": "2026-04-04",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782159039/Firmware__V5.8.20_240605_S3000579977.zip",
-    "filename": "Firmware__V5.8.20_240605_S3000579977.zip",
+    "filename": "Firmware__V5.5.8_210702_S3000375680.zip",
     "supported_models": [
       "IDS-2CD7347G0-XS",
       "IDS-2CD7347G0-XS(2.8MM)",
@@ -5064,7 +5064,7 @@
     "hardware_version": "IPC_G0",
     "version": "5.10.0",
     "date": "2026-04-23",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782124406/Firmware__V5.10.0_260519_S3000724899.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782844498/Firmware__V5.10.0_260416_S3000717709.zip",
     "filename": "Firmware__V5.10.0_260416_S3000717709.zip",
     "supported_models": [
       "IDS-2CD8V446G0/X2-XZHS(Y)",
@@ -5215,7 +5215,7 @@
     "version": "5.8.21",
     "date": "2026-04-02",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781169180/Firmware__V5.8.21_260331_S3000714563.zip",
-    "filename": "Firmware__V5.8.21_260331_S3000714563.zip",
+    "filename": "Firmware__V5.5.8_210702_S3000375680.zip",
     "supported_models": [
       "DS-2CD6D42G0-IS",
       "DS-2CD6D42G0-IS(4MM)",
@@ -6677,7 +6677,7 @@
     "version": "5.8.0",
     "date": "2026-03-26",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782325984/Firmware__V5.8.0_240115_S3000553438.zip",
-    "filename": "Firmware__V5.8.0_240115_S3000553438.zip",
+    "filename": "Firmware__V5.8.0_260428_S3000720876.zip",
     "supported_models": [
       "DS-2DP3D404IWG1-E/36",
       "DS-2DP3D404IWG1-E/36(F5)"
@@ -6937,7 +6937,7 @@
     "version": "5.8.2",
     "date": "2026-03-25",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782159039/Firmware__V5.8.20_240605_S3000579977.zip",
-    "filename": "Firmware__V5.8.20_240605_S3000579977.zip",
+    "filename": "Firmware__V5.5.8_210702_S3000375680.zip",
     "supported_models": [
       "DS-2SE4C225MWG-E/26(F0)",
       "DS-2SE4C225MWG-E/26"
@@ -8995,7 +8995,7 @@
     "version": "5.8.2",
     "date": "2026-03-24",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782159039/Firmware__V5.8.20_240605_S3000579977.zip",
-    "filename": "Firmware__V5.8.20_240605_S3000579977.zip",
+    "filename": "Firmware__V5.5.8_210702_S3000375680.zip",
     "supported_models": [
       "DS-2SE7C425MWG-EB/26(F0)",
       "DS-2SE7C432MWG-EB/26(F0)",
@@ -17222,7 +17222,7 @@
     "version": "5.8.0",
     "date": "2026-05-15",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782325984/Firmware__V5.8.0_240115_S3000553438.zip",
-    "filename": "Firmware__V5.8.0_240115_S3000553438.zip",
+    "filename": "Firmware__V5.8.0_260428_S3000720876.zip",
     "supported_models": [
       "DS-2CD3A26G2T-IZS",
       "DS-2CD3A26G2T-IZS(4.7-71MM)"
@@ -17861,7 +17861,7 @@
     "version": "5.8.0",
     "date": "2026-04-07",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782325984/Firmware__V5.8.0_240115_S3000553438.zip",
-    "filename": "Firmware__V5.8.0_240115_S3000553438.zip",
+    "filename": "Firmware__V5.8.0_260428_S3000720876.zip",
     "supported_models": [
       "ISD-CA6040S-C",
       "ISD-CA6040S-C(220V)",
@@ -18315,7 +18315,7 @@
     "version": "5.8.0",
     "date": "2026-04-02",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782325984/Firmware__V5.8.0_240115_S3000553438.zip",
-    "filename": "Firmware__V5.8.0_240115_S3000553438.zip",
+    "filename": "Firmware__V5.8.0_260428_S3000720876.zip",
     "supported_models": [
       "DS-2DE4432WG-E3",
       "DS-2DE4825WG-E3"
@@ -18376,7 +18376,7 @@
     "version": "5.8.0",
     "date": "2026-04-02",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782325984/Firmware__V5.8.0_240115_S3000553438.zip",
-    "filename": "Firmware__V5.8.0_240115_S3000553438.zip",
+    "filename": "Firmware__V5.8.0_260428_S3000720876.zip",
     "supported_models": [
       "IDS-2CD7A46G2/V-XZHS(Y)",
       "IDS-2CD7A46G2/V-XZHSY(2.8-12MM)",
@@ -20075,7 +20075,7 @@
     "version": "5.8.2",
     "date": "2026-03-31",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782159039/Firmware__V5.8.20_240605_S3000579977.zip",
-    "filename": "Firmware__V5.8.20_240605_S3000579977.zip",
+    "filename": "Firmware__V5.5.8_210702_S3000375680.zip",
     "supported_models": [
       "DS-2DY9C260LXG-LWY/12",
       "DS-2DY9C260LXG-LWY/12(F2)",
@@ -20556,7 +20556,7 @@
     "version": "5.8.0",
     "date": "2026-03-27",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782325984/Firmware__V5.8.0_240115_S3000553438.zip",
-    "filename": "Firmware__V5.8.0_240115_S3000553438.zip",
+    "filename": "Firmware__V5.8.0_260428_S3000720876.zip",
     "supported_models": [
       "DS-2CD3A46G2T-IZHS",
       "DS-2CD3A46G2T-IZHS(6-60MM)"
@@ -21360,7 +21360,7 @@
     "version": "5.8.0",
     "date": "2026-03-26",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782325984/Firmware__V5.8.0_240115_S3000553438.zip",
-    "filename": "Firmware__V5.8.0_240115_S3000553438.zip",
+    "filename": "Firmware__V5.8.0_260428_S3000720876.zip",
     "supported_models": [
       "DS-2DY5A432MWG-ELW"
     ],
@@ -21515,7 +21515,7 @@
     "version": "5.8.2",
     "date": "2026-03-25",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782159039/Firmware__V5.8.20_240605_S3000579977.zip",
-    "filename": "Firmware__V5.8.20_240605_S3000579977.zip",
+    "filename": "Firmware__V5.5.8_210702_S3000375680.zip",
     "supported_models": [
       "DS-2CD3046G2-IU/SL",
       "DS-2CD3046G2-IU/SL(2.8MM)(H)",
@@ -21669,7 +21669,7 @@
     "version": "5.8.2",
     "date": "2026-03-25",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782159039/Firmware__V5.8.20_240605_S3000579977.zip",
-    "filename": "Firmware__V5.8.20_240605_S3000579977.zip",
+    "filename": "Firmware__V5.5.8_210702_S3000375680.zip",
     "supported_models": [
       "DS-2CD3066G2-IS",
       "DS-2CD3066G2-IS(2.8MM)(H)",
@@ -22107,7 +22107,7 @@
     "version": "5.8.2",
     "date": "2026-03-25",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782159039/Firmware__V5.8.20_240605_S3000579977.zip",
-    "filename": "Firmware__V5.8.20_240605_S3000579977.zip",
+    "filename": "Firmware__V5.5.8_210702_S3000375680.zip",
     "supported_models": [
       "DS-2CD3046G2-IS",
       "DS-2CD3046G2-IS(2.8MM)(H)",
@@ -22472,7 +22472,7 @@
     "version": "5.8.2",
     "date": "2026-03-25",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782159039/Firmware__V5.8.20_240605_S3000579977.zip",
-    "filename": "Firmware__V5.8.20_240605_S3000579977.zip",
+    "filename": "Firmware__V5.5.8_210702_S3000375680.zip",
     "supported_models": [
       "DS-2CD6984G1/VR-U/NFC",
       "DS-2CD6984G1/VR-U/NFC(2MM)"
@@ -22490,7 +22490,7 @@
     "version": "5.8.0",
     "date": "2026-03-25",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782325984/Firmware__V5.8.0_240115_S3000553438.zip",
-    "filename": "Firmware__V5.8.0_240115_S3000553438.zip",
+    "filename": "Firmware__V5.8.0_260428_S3000720876.zip",
     "supported_models": [
       "DS-2DE2C200IWG-K/4G/C05S10",
       "DS-2DE2C200IWG-K/4G/C05S10(2.8MM)",
@@ -22513,7 +22513,7 @@
     "version": "5.8.0",
     "date": "2026-03-25",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782325984/Firmware__V5.8.0_240115_S3000553438.zip",
-    "filename": "Firmware__V5.8.0_240115_S3000553438.zip",
+    "filename": "Firmware__V5.8.0_260428_S3000720876.zip",
     "supported_models": [
       "DS-2DE2C400IWG-K/4G/C05S10",
       "DS-2DE2C400IWG-K/4G/C05S10(2.8MM)",
@@ -22622,7 +22622,7 @@
     "version": "5.8.2",
     "date": "2026-03-25",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782159039/Firmware__V5.8.20_240605_S3000579977.zip",
-    "filename": "Firmware__V5.8.20_240605_S3000579977.zip",
+    "filename": "Firmware__V5.5.8_210702_S3000375680.zip",
     "supported_models": [
       "DS-2SE4C215MWG-E/12(F0)",
       "DS-2SE4C215MWG-E(12F0)",
@@ -22966,7 +22966,7 @@
     "version": "5.8.2",
     "date": "2026-03-24",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782159039/Firmware__V5.8.20_240605_S3000579977.zip",
-    "filename": "Firmware__V5.8.20_240605_S3000579977.zip",
+    "filename": "Firmware__V5.5.8_210702_S3000375680.zip",
     "supported_models": [
       "DS-2SE7C425MW-AEB(14F1)(P3)",
       "DS-2SE7C432MW-AEB(14F1)(P3)",
@@ -23253,7 +23253,7 @@
     "hardware_version": "UNKNOWN",
     "version": "0.0.2",
     "date": "2026-03-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782634117/Firmware__V1.0.0_220822_S3000455173.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782844498/Firmware__V5.10.0_260416_S3000717709.zip",
     "filename": "Firmware__V5.10.0_260416_S3000717709.zip",
     "supported_models": [
       "AE-DC8013-D6"
@@ -23779,7 +23779,7 @@
     "version": "5.8.21",
     "date": "2026-03-31",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781169180/Firmware__V5.8.21_260331_S3000714563.zip",
-    "filename": "Firmware__V5.8.21_260331_S3000714563.zip",
+    "filename": "Firmware__V5.5.8_210702_S3000375680.zip",
     "supported_models": [
       "ISD-SMW1701S-C"
     ],
@@ -25145,7 +25145,7 @@
     "version": "5.8.0",
     "date": "2025-09-25",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782325984/Firmware__V5.8.0_240115_S3000553438.zip",
-    "filename": "Firmware__V5.8.0_240115_S3000553438.zip",
+    "filename": "Firmware__V5.8.0_260428_S3000720876.zip",
     "supported_models": [
       "IDS-TCC446-HI",
       "IDS-TCC446-HI/23"
@@ -30754,7 +30754,7 @@
     "hardware_version": "IPC_G0",
     "version": "5.10.0",
     "date": "2026-05-19",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782124406/Firmware__V5.10.0_260519_S3000724899.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782844498/Firmware__V5.10.0_260416_S3000717709.zip",
     "filename": "Firmware__V5.10.0_260416_S3000717709.zip",
     "supported_models": [
       "DS-2DF6A436XG1-EL(Y)",
@@ -32438,7 +32438,7 @@
     "version": "5.8.0",
     "date": "2026-05-18",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782325984/Firmware__V5.8.0_240115_S3000553438.zip",
-    "filename": "Firmware__V5.8.0_240115_S3000553438.zip",
+    "filename": "Firmware__V5.8.0_260428_S3000720876.zip",
     "supported_models": [
       "DS-2DE4215IWG1-E",
       "DS-2DE4215IWG1-E(B)",
@@ -32801,7 +32801,7 @@
     "version": "5.8.0",
     "date": "2024-01-15",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782325984/Firmware__V5.8.0_240115_S3000553438.zip",
-    "filename": "Firmware__V5.8.0_240115_S3000553438.zip",
+    "filename": "Firmware__V5.8.0_260428_S3000720876.zip",
     "supported_models": [
       "IDS-2CD8A46G0-XZ(H)S(Y)",
       "IDS-2CD8A46G0-XZS(0832/4)",
@@ -37191,7 +37191,7 @@
     "hardware_version": "UNKNOWN",
     "version": "5.10.0",
     "date": "2026-04-16",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782844498/Firmware__V5.10.0_260416_S3000717709.zip",
     "filename": "Firmware__V5.10.0_260416_S3000717709.zip",
     "supported_models": [
       "DS-2XE6746G0-LIZHS(304)",
@@ -37227,7 +37227,7 @@
     "hardware_version": "UNKNOWN",
     "version": "5.5.800",
     "date": "2021-08-16",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782844498/5b302a9d-df0a-4e8d-a954-f407ddd83cf3.zip",
     "filename": "5b302a9d-df0a-4e8d-a954-f407ddd83cf3.zip",
     "supported_models": [
       "IPC-B149H",
@@ -37262,7 +37262,7 @@
     "hardware_version": "UNKNOWN",
     "version": "5.5.800",
     "date": "2021-08-16",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782844498/8f2bd0ee-6379-4ffa-8b7c-f51ad91e05a5.zip",
     "filename": "8f2bd0ee-6379-4ffa-8b7c-f51ad91e05a5.zip",
     "supported_models": [
       "IPC-T229H",
@@ -37282,7 +37282,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "1.08.02",
     "date": "2021-08-03",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782844498/04cccd57-2b64-476b-9792-e84608caf8cd.zip",
     "filename": "04cccd57-2b64-476b-9792-e84608caf8cd.zip",
     "supported_models": [
       "THC-B120-M",
@@ -37330,7 +37330,7 @@
     "hardware_version": "IPC_G0",
     "version": "5.5.130",
     "date": "2021-07-26",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782844498/211cb8a4-023b-473c-81c4-c5f34ce1b0f9.zip",
     "filename": "211cb8a4-023b-473c-81c4-c5f34ce1b0f9.zip",
     "supported_models": [
       "IDS-2CD7026G0/EP-IHSY",
@@ -37357,7 +37357,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.42",
     "date": "2021-07-21",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782844498/Firmware__V5.5.42_210721_S3000378370.zip",
     "filename": "Firmware__V5.5.42_210721_S3000378370.zip",
     "supported_models": [
       "DS-2TD1117-2/P",
@@ -37423,7 +37423,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.6",
     "date": "2021-07-15",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782844498/040327f8-ddec-4fab-80a2-ffd4201998b6.zip",
     "filename": "040327f8-ddec-4fab-80a2-ffd4201998b6.zip",
     "supported_models": [
       "DS-2TD2136-10/VP",
@@ -37444,7 +37444,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.22",
     "date": "2021-07-02",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782844498/126ce13e-aaac-45e3-8690-d5cffdbe1991.zip",
     "filename": "126ce13e-aaac-45e3-8690-d5cffdbe1991.zip",
     "supported_models": [
       "DS-2TD1217-2/V1",
@@ -37468,7 +37468,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.22",
     "date": "2021-07-02",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782844498/6b65abab-5ba9-4d42-a9d8-72a37c30f27d.zip",
     "filename": "6b65abab-5ba9-4d42-a9d8-72a37c30f27d.zip",
     "supported_models": [
       "DS-2TD2117-3/V1",
@@ -37523,7 +37523,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.22",
     "date": "2021-07-02",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782844498/045fb09d-6426-4206-9d00-f718a0ff9d4e.zip",
     "filename": "045fb09d-6426-4206-9d00-f718a0ff9d4e.zip",
     "supported_models": [
       "DS-2TD2136-10/V1",
@@ -37553,6 +37553,233 @@
     "applied_to": "Applied to: DS-2TD2136-10/V1, DS-2TD2136-10/V1(HIK ITALY SRL), DS-2TD2136-25/V1, DS-2TD2136-25/V1(HIK ITALY SRL), DS-2TD2136-35/V1, DS-2TD2136-35/V1(TRINA SOLAR), DS-2TD2136-35/V1(HIK ITALY SRL), DS-2TD2136-7/V1",
     "changes": "Added ONVIF capabilities of Intrusion and Line Crossing · Add the new feature: ONVIF capabilities of Intrusion and Line Crossing. · Fixed the issue · SAMBA server for NAS mont and format successed but test failed. The bug has been fixed.",
     "notes": "https://assets.hikvision.com/prd/public/all/files/202205/efe806bd-5189-402b-aa7f-0e7c7dfc1667.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "IDS-2ZMN2509N(E)_UNKNOWN_5.8.0": {
+    "device_id": 102465,
+    "model": "IDS-2ZMN2509N(E)",
+    "hardware_version": "UNKNOWN",
+    "version": "5.8.0",
+    "date": "2026-04-28",
+    "download_url": "",
+    "filename": "Firmware__V5.8.0_260428_S3000720876.zip",
+    "supported_models": [
+      "IDS-2ZMN2509N(E)",
+      "IDS-2ZMN2509N"
+    ],
+    "applied_to": "Applied to: IDS-2ZMN2509N(E)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2TD2136-35/V1_THERMAL_G0_5.5.22": {
+    "device_id": 102466,
+    "model": "DS-2TD2136-35/V1",
+    "hardware_version": "THERMAL_G0",
+    "version": "5.5.22",
+    "date": "2021-07-02",
+    "download_url": "",
+    "filename": "1257dcda-2721-44f7-9444-3c3b292c0c7b.zip",
+    "supported_models": [
+      "DS-2TD2136-35/V1",
+      "DS-2TD2136-35/V1(TRINA SOLAR)",
+      "DS-2TD2136-35/V1(HIK ITALY SRL)",
+      "DS-2TD2136-35/V1(TRINA",
+      "DS-2TD2136-35/V1(HIK"
+    ],
+    "applied_to": "Applied to: DS-2TD2136-35/V1, DS-2TD2136-35/V1(TRINA SOLAR), DS-2TD2136-35/V1(HIK ITALY SRL)",
+    "changes": "Added ONVIF capabilities of Intrusion and Line Crossing · Add the new feature: ONVIF capabilities of Intrusion and Line Crossing. · Fixed the issue · SAMBA server for NAS mont and format successed but test failed. The bug has been fixed.",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202205/efe806bd-5189-402b-aa7f-0e7c7dfc1667.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2TD2136T-10_THERMAL_G0_5.5.8": {
+    "device_id": 102467,
+    "model": "DS-2TD2136T-10",
+    "hardware_version": "THERMAL_G0",
+    "version": "5.5.8",
+    "date": "2021-07-02",
+    "download_url": "",
+    "filename": "Firmware__V5.5.8_210702_S3000375680.zip",
+    "supported_models": [
+      "DS-2TD2136T-10",
+      "DS-2TD2136T-15",
+      "DS-2TD2136T-25",
+      "DS-2TD2166-7",
+      "DS-2TD2166T-15",
+      "DS-2TD2166T-25",
+      "DS-2TD2336-100",
+      "DS-2TD2336-50",
+      "DS-2TD2336-50(ACE)",
+      "DS-2TD2336-75",
+      "DS-2TD2366-100",
+      "DS-2TD2366-100(AVANT)",
+      "DS-2TD2366-50",
+      "DS-2TD2366-50(SENSOR)",
+      "DS-2TD2366-50(AVANT)",
+      "DS-2TD2366-75",
+      "DS-2TD2366-75(SENSOR)",
+      "DS-2TD2466-25Y",
+      "DS-2TD2466-9X",
+      "DS-2TD2466-50Y",
+      "DS-2TD2466T-25X",
+      "DS-2TD2466T-25X(HIK RUS)"
+    ],
+    "applied_to": "Applied to: DS-2TD2136T-10, DS-2TD2136T-15, DS-2TD2136T-25, DS-2TD2166-7, DS-2TD2166T-15, DS-2TD2166T-25, DS-2TD2336-100, DS-2TD2336-50",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2TD2137-10/V1_THERMAL_G0_5.5.22": {
+    "device_id": 102468,
+    "model": "DS-2TD2137-10/V1",
+    "hardware_version": "THERMAL_G0",
+    "version": "5.5.22",
+    "date": "2021-07-02",
+    "download_url": "",
+    "filename": "1e17e493-6543-469d-92bc-b6c7e1426714.zip",
+    "supported_models": [
+      "DS-2TD2137-10/V1",
+      "DS-2TD2137-10/V1(PG SECURITY)",
+      "DS-2TD2137-15/V1",
+      "DS-2TD2137-15/V1(ACE)",
+      "DS-2TD2137-15/V1(PG SECURITY)",
+      "DS-2TD2137-25/V1",
+      "DS-2TD2137-25/V1(PG SECURITY)",
+      "DS-2TD2137-10/V1(PG",
+      "DS-2TD2137-15/V1(PG",
+      "DS-2TD2137-25/V1(PG"
+    ],
+    "applied_to": "Applied to: DS-2TD2137-10/V1, DS-2TD2137-10/V1(PG SECURITY), DS-2TD2137-15/V1, DS-2TD2137-15/V1(ACE), DS-2TD2137-15/V1(PG SECURITY), DS-2TD2137-25/V1, DS-2TD2137-25/V1(PG SECURITY)",
+    "changes": "Added ONVIF capabilities of Intrusion and Line Crossing · Add the new feature: ONVIF capabilities of Intrusion and Line Crossing. · Fixed the issue · SAMBA server for NAS mont and format successed but test failed. The bug has been fixed.",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202205/efe806bd-5189-402b-aa7f-0e7c7dfc1667.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2TD2137-7/V1_THERMAL_G0_5.5.22": {
+    "device_id": 102469,
+    "model": "DS-2TD2137-7/V1",
+    "hardware_version": "THERMAL_G0",
+    "version": "5.5.22",
+    "date": "2021-07-02",
+    "download_url": "",
+    "filename": "decdceb5-fd50-40a7-ac8c-103f0b3386fc.zip",
+    "supported_models": [
+      "DS-2TD2137-7/V1",
+      "DS-2TD2137-7/V1(ADI)"
+    ],
+    "applied_to": "Applied to: DS-2TD2137-7/V1, DS-2TD2137-7/V1(ADI)",
+    "changes": "Added ONVIF capabilities of Intrusion and Line Crossing · Add the new feature: ONVIF capabilities of Intrusion and Line Crossing. · Fixed the issue · SAMBA server for NAS mont and format successed but test failed. The bug has been fixed.",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202205/efe806bd-5189-402b-aa7f-0e7c7dfc1667.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2TD2166-25/V1_THERMAL_G0_5.5.22": {
+    "device_id": 102470,
+    "model": "DS-2TD2166-25/V1",
+    "hardware_version": "THERMAL_G0",
+    "version": "5.5.22",
+    "date": "2021-07-02",
+    "download_url": "",
+    "filename": "8e2f0db7-3119-4532-9321-e4b88b855cac.zip",
+    "supported_models": [
+      "DS-2TD2166-25/V1",
+      "DS-2TD2166-25/V1(AVANT)",
+      "DS-2TD2166-25/V1(HIKVISION ITALY SRL)",
+      "DS-2TD2166-35/V1",
+      "DS-2TD2160-35/KM(ХИКВИЖН)",
+      "DS-2TD2166-35/V1(AVANT)",
+      "DS-2TD2166-35/V1(HIKVISION ITALY SRL)",
+      "DS-2TD2166-25/V1(HIKVISION",
+      "DS-2TD2160-35/KM(",
+      "DS-2TD2166-35/V1(HIKVISION"
+    ],
+    "applied_to": "Applied to: DS-2TD2166-25/V1, DS-2TD2166-25/V1(AVANT), DS-2TD2166-25/V1(HIKVISION ITALY SRL), DS-2TD2166-35/V1, DS-2TD2160-35/KM(ХИКВИЖН), DS-2TD2166-35/V1(AVANT), DS-2TD2166-35/V1(HIKVISION ITALY SRL)",
+    "changes": "Added ONVIF capabilities of Intrusion and Line Crossing · Add the new feature: ONVIF capabilities of Intrusion and Line Crossing. · Fixed the issue · SAMBA server for NAS mont and format successed but test failed. The bug has been fixed.",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202205/efe806bd-5189-402b-aa7f-0e7c7dfc1667.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2TD2166-35/V1_THERMAL_G0_5.5.22": {
+    "device_id": 102471,
+    "model": "DS-2TD2166-35/V1",
+    "hardware_version": "THERMAL_G0",
+    "version": "5.5.22",
+    "date": "2021-07-02",
+    "download_url": "",
+    "filename": "50dff4a0-01c4-4153-938a-25bbb7112bc6.zip",
+    "supported_models": [
+      "DS-2TD2166-35/V1",
+      "DS-2TD2160-35/KM(ХИКВИЖН)",
+      "DS-2TD2166-35/V1(AVANT)",
+      "DS-2TD2166-35/V1(HIKVISION ITALY SRL)",
+      "DS-2TD2160-35/KM(",
+      "DS-2TD2166-35/V1(HIKVISION"
+    ],
+    "applied_to": "Applied to: DS-2TD2166-35/V1, DS-2TD2160-35/KM(ХИКВИЖН), DS-2TD2166-35/V1(AVANT), DS-2TD2166-35/V1(HIKVISION ITALY SRL)",
+    "changes": "Added ONVIF capabilities of Intrusion and Line Crossing · Add the new feature: ONVIF capabilities of Intrusion and Line Crossing. · Fixed the issue · SAMBA server for NAS mont and format successed but test failed. The bug has been fixed.",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202205/efe806bd-5189-402b-aa7f-0e7c7dfc1667.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2TD2166-7/V1_THERMAL_G0_5.5.22": {
+    "device_id": 102472,
+    "model": "DS-2TD2166-7/V1",
+    "hardware_version": "THERMAL_G0",
+    "version": "5.5.22",
+    "date": "2021-07-02",
+    "download_url": "",
+    "filename": "1f01ad46-b94c-46a8-873b-e1eef585cd6d.zip",
+    "supported_models": [
+      "DS-2TD2166-7/V1",
+      "DS-2TD2166-7/V1(ADI)",
+      "DS-2TD2167-7/P(ITALY)",
+      "DS-2TD2167-7/P"
+    ],
+    "applied_to": "Applied to: DS-2TD2166-7/V1, DS-2TD2166-7/V1(ADI), DS-2TD2167-7/P(ITALY)",
+    "changes": "Added ONVIF capabilities of Intrusion and Line Crossing · Add the new feature: ONVIF capabilities of Intrusion and Line Crossing. · Fixed the issue · SAMBA server for NAS mont and format successed but test failed. The bug has been fixed.",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202205/efe806bd-5189-402b-aa7f-0e7c7dfc1667.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2TD2636-10_THERMAL_G0_5.5.22": {
+    "device_id": 102473,
+    "model": "DS-2TD2636-10",
+    "hardware_version": "THERMAL_G0",
+    "version": "5.5.22",
+    "date": "2021-07-02",
+    "download_url": "",
+    "filename": "cef0e8e4-f4c6-4e42-9f56-d2bc1ed4dc7d.zip",
+    "supported_models": [
+      "DS-2TD2636-10",
+      "DS-2TD2636-10(ADI GARDINER SAS)",
+      "DS-2TD2636-10(ADI"
+    ],
+    "applied_to": "Applied to: DS-2TD2636-10, DS-2TD2636-10(ADI GARDINER SAS)",
+    "changes": "Added ONVIF capabilities of Intrusion and Line Crossing · Add the new feature: ONVIF capabilities of Intrusion and Line Crossing. · Fixed the issue · SAMBA server for NAS mont and format successed but test failed. The bug has been fixed.",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202205/efe806bd-5189-402b-aa7f-0e7c7dfc1667.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2TD2637-10/P_THERMAL_G0_5.5.34": {
+    "device_id": 102392,
+    "model": "DS-2TD2637-10/P",
+    "hardware_version": "THERMAL_G0",
+    "version": "5.5.34",
+    "date": "2021-07-02",
+    "download_url": "",
+    "filename": "19662c5d-ef39-479c-b346-c86d3e57252f.zip",
+    "supported_models": [
+      "DS-2TD2637-10/P",
+      "DS-2TD2637-10/P(ADI GARDINER SAS)",
+      "DS-2TD2637-10/P(ADI"
+    ],
+    "applied_to": "Applied to: DS-2TD2637-10/P, DS-2TD2637-10/P(ADI GARDINER SAS)",
+    "changes": "",
+    "notes": "",
     "is_beta": false,
     "source": "live"
   }

@@ -3886,5 +3886,41 @@
   "102464": {
     "model": "DS-2TD2136-10/V1",
     "hardware_version": "THERMAL_G0"
+  },
+  "102465": {
+    "model": "IDS-2ZMN2509N(E)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102466": {
+    "model": "DS-2TD2136-35/V1",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102467": {
+    "model": "DS-2TD2136T-10",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102468": {
+    "model": "DS-2TD2137-10/V1",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102469": {
+    "model": "DS-2TD2137-7/V1",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102470": {
+    "model": "DS-2TD2166-25/V1",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102471": {
+    "model": "DS-2TD2166-35/V1",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102472": {
+    "model": "DS-2TD2166-7/V1",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102473": {
+    "model": "DS-2TD2636-10",
+    "hardware_version": "THERMAL_G0"
   }
 }
