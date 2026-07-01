@@ -786,5 +786,21 @@
   "https://assets.hikvision.com/prd/public/all/files/202205/efe806bd-5189-402b-aa7f-0e7c7dfc1667.pdf": {
     "changes": "Added ONVIF capabilities of Intrusion and Line Crossing · Add the new feature: ONVIF capabilities of Intrusion and Line Crossing. · Fixed the issue · SAMBA server for NAS mont and format successed but test failed. The bug has been fixed.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202205/0b411665-3ab5-4413-b226-fd617a8f9588.pdf": {
+    "changes": "150ZE2F/V2. · After the device has completed the focus calibration at the farthest distance, the device can · calculate the theoretically clear minimum focus range based on the calibration result (set the · focus range to “short”). This function speeds up the focusing speed and improves the service",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202207/Network%20Camera%20V5.5.800%20Release%20Note%20--G1.pdf": {
+    "changes": "Improve Features",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/4cdf7c64-e179-4c02-a3ae-ec999c2710e9.pdf": {
+    "changes": "Improved Features · Fix security issue · Leftover Issues",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/adcae41d-8d99-4c5a-9b86-0e1da2c37175.pdf": {
+    "changes": "【Support Connecting with Hik-ProConnect】 · Support upgrading NVR on Hik-ProConnect. · Support downloading videos on Hik-ProConnect. · Support video playback on Hik-ProConnect.",
+    "source": "pdf"
   }
 }

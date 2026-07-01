@@ -3922,5 +3922,49 @@
   "102473": {
     "model": "DS-2TD2636-10",
     "hardware_version": "THERMAL_G0"
+  },
+  "102474": {
+    "model": "DS-2DE4215IW-DE(S5)",
+    "hardware_version": "IPC_G0"
+  },
+  "102475": {
+    "model": "DS-2DE4A204IW-DE(2.8-12MM)",
+    "hardware_version": "IPC_G0"
+  },
+  "102476": {
+    "model": "DS-2TD2637-15/PY",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102477": {
+    "model": "DS-2TD4136-25/V2",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102478": {
+    "model": "DS-2TD4166-50/V2",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102479": {
+    "model": "DS-2TD6236-75C2L/V2",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102480": {
+    "model": "DS-2PT3306IZ",
+    "hardware_version": "UNKNOWN"
+  },
+  "102481": {
+    "model": "DS-9608NI-I8",
+    "hardware_version": "NVR_V4"
+  },
+  "102482": {
+    "model": "DS-2DY3220IW-DE4",
+    "hardware_version": "UNKNOWN"
+  },
+  "102483": {
+    "model": "DS-2XC6224G0-L",
+    "hardware_version": "UNKNOWN"
+  },
+  "102484": {
+    "model": "IPC-B150H(-M)",
+    "hardware_version": "UNKNOWN"
   }
 }
