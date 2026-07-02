@@ -802,5 +802,13 @@
   "https://assets.hikvision.com/prd/public/all/files/adcae41d-8d99-4c5a-9b86-0e1da2c37175.pdf": {
     "changes": "【Support Connecting with Hik-ProConnect】 · Support upgrading NVR on Hik-ProConnect. · Support downloading videos on Hik-ProConnect. · Support video playback on Hik-ProConnect.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/412d1ec4-7962-4fc3-bedb-9886bca0f6e5.pdf": {
+    "changes": "K1102A&K1108A Series: · K1108AD/ADK card reader supports DESFire card content · K1108AD/ADK card reader supports Felica card number · Function Optimization：",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/6010a816-f497-47c3-bcdd-d3ae5d6985c6.pdf": {
+    "changes": "K1102A&K1108A Series: · K1108AD/ADK card reader supports DESFire card content · K1108AD/ADK card reader supports Felica card number · Function Optimization：",
+    "source": "pdf"
   }
 }

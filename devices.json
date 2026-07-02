@@ -3966,5 +3966,45 @@
   "102484": {
     "model": "IPC-B150H(-M)",
     "hardware_version": "UNKNOWN"
+  },
+  "102485": {
+    "model": "DS-2CD37C7G3T-LIZSU(Y)",
+    "hardware_version": "IPC_G0"
+  },
+  "102486": {
+    "model": "DS-2DE4215W-DE",
+    "hardware_version": "IPC_G0"
+  },
+  "102487": {
+    "model": "IDS-TCM881-H",
+    "hardware_version": "UNKNOWN"
+  },
+  "102488": {
+    "model": "DS-PEA1-21",
+    "hardware_version": "UNKNOWN"
+  },
+  "102489": {
+    "model": "DVR-208U-K1",
+    "hardware_version": "DVR_G0"
+  },
+  "102490": {
+    "model": "NVR-104MH-C/4P",
+    "hardware_version": "NVR_G0"
+  },
+  "102491": {
+    "model": "DS-2DY5223IW-AE",
+    "hardware_version": "UNKNOWN"
+  },
+  "102492": {
+    "model": "DS-KIS101-P/FLUSH",
+    "hardware_version": "UNKNOWN"
+  },
+  "102493": {
+    "model": "DS-K1101",
+    "hardware_version": "UNKNOWN"
+  },
+  "102494": {
+    "model": "DS-K1108",
+    "hardware_version": "UNKNOWN"
   }
 }
