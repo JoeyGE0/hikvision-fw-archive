@@ -4006,5 +4006,37 @@
   "102494": {
     "model": "DS-K1108",
     "hardware_version": "UNKNOWN"
+  },
+  "102495": {
+    "model": "DS-2CE16H0T-ITF",
+    "hardware_version": "UNKNOWN"
+  },
+  "102496": {
+    "model": "DS-MP3516-RH",
+    "hardware_version": "UNKNOWN"
+  },
+  "102497": {
+    "model": "IDS-7204HUHI-M1/S",
+    "hardware_version": "DVR_G0"
+  },
+  "102498": {
+    "model": "DS-2DF8425IX-AELW(T3)",
+    "hardware_version": "DVR_V4"
+  },
+  "102499": {
+    "model": "DS-3E3728-H",
+    "hardware_version": "UNKNOWN"
+  },
+  "102500": {
+    "model": "DS-K5032-3XFD",
+    "hardware_version": "UNKNOWN"
+  },
+  "102501": {
+    "model": "DS-K7R01-868",
+    "hardware_version": "UNKNOWN"
+  },
+  "102502": {
+    "model": "DS-2XM6365G0-IV(S)(M)(/ND) (C)",
+    "hardware_version": "IPC_V5"
   }
 }

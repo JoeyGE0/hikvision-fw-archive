@@ -810,5 +810,17 @@
   "https://assets.hikvision.com/prd/public/all/files/6010a816-f497-47c3-bcdd-d3ae5d6985c6.pdf": {
     "changes": "K1102A&K1108A Series: · K1108AD/ADK card reader supports DESFire card content · K1108AD/ADK card reader supports Felica card number · Function Optimization：",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CMobile_Video_Recoder_V5.3.0_Release_Note.pdf": {
+    "changes": "Extension of Device Compatibility · Support RTSP server function；(By default) · Support Corridor mode of Mirror Function (Only for Mobile NVR) ； · Support corridor mode configuration of IPC both on Local GUI and WEB client;",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202303/Turbo%20HD%20DVR%20V4.26.011%20build201109%20Release%20Notes.pdf": {
+    "changes": "improve product performance, and will take effect automatically after upgrading from previous versions.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5C%E3%80%90Release_Note%E3%80%91Mobile_IPC_V5.5.75_200512.pdf": {
+    "changes": "improve product performance, and will take effect automatically after upgrading from previous versions.",
+    "source": "pdf"
   }
 }
