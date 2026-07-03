@@ -4038,5 +4038,57 @@
   "102502": {
     "model": "DS-2XM6365G0-IV(S)(M)(/ND) (C)",
     "hardware_version": "IPC_V5"
+  },
+  "102503": {
+    "model": "DS-2CE56D0T-VFIR3E",
+    "hardware_version": "UNKNOWN"
+  },
+  "102504": {
+    "model": "DS-2CE56D0T-VFIRE",
+    "hardware_version": "UNKNOWN"
+  },
+  "102505": {
+    "model": "DS-2DE5432IW-AE",
+    "hardware_version": "IPC_G0"
+  },
+  "102506": {
+    "model": "DS-2CE11D0T-PIRLO",
+    "hardware_version": "UNKNOWN"
+  },
+  "102507": {
+    "model": "DS-2CE56D0T-VFIR3F",
+    "hardware_version": "UNKNOWN"
+  },
+  "102508": {
+    "model": "DS-PEA3M-21H",
+    "hardware_version": "UNKNOWN"
+  },
+  "102509": {
+    "model": "DS-K1T804EF",
+    "hardware_version": "UNKNOWN"
+  },
+  "102510": {
+    "model": "IDS-6716NXI-I/16S(B)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102511": {
+    "model": "DS-KD-IN",
+    "hardware_version": "UNKNOWN"
+  },
+  "102512": {
+    "model": "DS-7716NI-I4(B)",
+    "hardware_version": "NVR_G0"
+  },
+  "102513": {
+    "model": "DS-2DF9C435IH-DLW",
+    "hardware_version": "IPC_G0"
+  },
+  "102514": {
+    "model": "DS-2DY9250IAX-A",
+    "hardware_version": "UNKNOWN"
+  },
+  "102515": {
+    "model": "DS-2DY3220IW-DE",
+    "hardware_version": "UNKNOWN"
   }
 }
