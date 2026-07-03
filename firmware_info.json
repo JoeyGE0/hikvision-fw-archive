@@ -826,5 +826,13 @@
   "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CNetwork_Camera_V5.6.6_Release_Note_--G1.pdf": {
     "changes": "Fixed the issue that the main stream of the 2645FWD, 2745FWD and 2H45FWD model does not support 1280*720 resolution.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CNetwork_Camera-V5.8.32_SP3_Release_Note-H13U.pdf": {
+    "changes": "Animal and others detection in smart event are both default off. · Fix the issue where all convex privacy masks disappear when the camera is connected to NVR/HC/NVS after · configuring convex privacy masks through the camera web. · Fix the issue that configure human and vehicle options of smart event through NVR, human option can not be",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CNetwork_Camera-V5.8.32_SP3_Release_Note-H13.pdf": {
+    "changes": "Animal and others detection in smart event are both default off. · Fix the issue where all convex privacy masks disappear when the camera is connected to NVR/HC/NVS after · configuring convex privacy masks through the camera web. · Fix the issue that configure human and vehicle options of smart event through NVR, human option can not be",
+    "source": "pdf"
   }
 }

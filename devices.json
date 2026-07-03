@@ -4090,5 +4090,37 @@
   "102515": {
     "model": "DS-2DY3220IW-DE",
     "hardware_version": "UNKNOWN"
+  },
+  "102516": {
+    "model": "DS-2CE56D0T-VPIR3F",
+    "hardware_version": "UNKNOWN"
+  },
+  "102517": {
+    "model": "PTZ-N4215-DE3",
+    "hardware_version": "UNKNOWN"
+  },
+  "102518": {
+    "model": "DS-2DF8236I5X-AELW",
+    "hardware_version": "IPC_G0"
+  },
+  "102519": {
+    "model": "THC-B120-MPIRL",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102520": {
+    "model": "DVR-216U-K2",
+    "hardware_version": "DVR_V4"
+  },
+  "102521": {
+    "model": "DS-2DF6223-CX (W316L)",
+    "hardware_version": "IPC_G0"
+  },
+  "102522": {
+    "model": "DS-2DF6A225X-AEL",
+    "hardware_version": "IPC_G0"
+  },
+  "102523": {
+    "model": "THC-B210",
+    "hardware_version": "THERMAL_G0"
   }
 }
