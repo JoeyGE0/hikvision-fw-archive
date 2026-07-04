@@ -4158,5 +4158,49 @@
   "102532": {
     "model": "DS-2DF5225X-AEL",
     "hardware_version": "IPC_G0"
+  },
+  "102533": {
+    "model": "DS-2CE16C0T-IRP",
+    "hardware_version": "UNKNOWN"
+  },
+  "102534": {
+    "model": "DS-1005KI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102535": {
+    "model": "DS-7604NI-K1/W",
+    "hardware_version": "NVR_G0"
+  },
+  "102536": {
+    "model": "DS-2TD2166T-15",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102537": {
+    "model": "DS-2TD2366-50",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102538": {
+    "model": "DS-2TD2466-25Y",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102539": {
+    "model": "THC-B140-M",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102540": {
+    "model": "NVR-108-B/8P",
+    "hardware_version": "NVR_G0"
+  },
+  "102541": {
+    "model": "DS-K1T804MF",
+    "hardware_version": "UNKNOWN"
+  },
+  "102542": {
+    "model": "DS-6701HFHI/V",
+    "hardware_version": "UNKNOWN"
+  },
+  "102543": {
+    "model": "DS-3E2510P",
+    "hardware_version": "UNKNOWN"
   }
 }
