@@ -1980,8 +1980,8 @@
       "DS-7232HGHI-M2/T-2K"
     ],
     "applied_to": "Applied to: DS-7232HGHI-M2/T-2K",
-    "changes": "",
-    "notes": "",
+    "changes": "Fix known issue and optimize the user experience.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CTurbo_HD_DVR_V4.84.101build260518_Release_Notes.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -16480,7 +16480,10 @@
       "DS-2CD2423G0-IW",
       "DS-2CD2443G0-I",
       "DS-2CD2443G0-IW",
-      "AE-4DEE-9DBD-A67988B4B16B.ZIP"
+      "AE-4DEE-9DBD-A67988B4B16B.ZIP",
+      "DS-2CD2423G0-I(2.8MM)",
+      "DS-2CD2443G0-I(2.8MM)",
+      "DS-2CD2443G0-I(4MM)"
     ],
     "applied_to": "Applied to: DS-2CD2423G0-I(W), DS-2CD2423G0-IW(2.8MM), DS-2CD2443G0-I(W), DS-2CD2443G0-IW(2.8MM)",
     "changes": "Improve Features",
@@ -23768,8 +23771,8 @@
       "DS-7204HQHI-S1/XT"
     ],
     "applied_to": "Applied to: DS-7204HQHI-S1/XT",
-    "changes": "",
-    "notes": "",
+    "changes": ". The four post -intelligence features are: Motion 2.0, Perimeter Protection, Face Recognition, and AcuSearch.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CTurbo_HD_DVR_V4.84.100build260518_Release_Notes.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -23788,8 +23791,8 @@
       "DS-7208HQHI-S2/XT"
     ],
     "applied_to": "Applied to: DS-7204HUHI-S1/XT, DS-7204HUHI-S2/XT, DS-7208HQHI-S1/XT, DS-7208HQHI-S2/XT",
-    "changes": "",
-    "notes": "",
+    "changes": ". The four post -intelligence features are: Motion 2.0, Perimeter Protection, Face Recognition, and AcuSearch.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CTurbo_HD_DVR_V4.84.100build260518_Release_Notes.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -23809,8 +23812,8 @@
       "DS-7216HUHI-S2/XT"
     ],
     "applied_to": "Applied to: DS-7208HUHI-S1/XT, DS-7208HUHI-S2/XT, DS-7216HQHI-S1/XT, DS-7216HQHI-S2/XT, DS-7216HUHI-S2/XT",
-    "changes": "",
-    "notes": "",
+    "changes": ". The four post -intelligence features are: Motion 2.0, Perimeter Protection, Face Recognition, and AcuSearch.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CTurbo_HD_DVR_V4.84.100build260518_Release_Notes.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -27021,7 +27024,8 @@
       "DS-K5671-ZH",
       "DS-K5671-ZU",
       "DS-K5671-ZV",
-      "DS-K1T671TM-3XF"
+      "DS-K1T671TM-3XF",
+      "DS-K1T671TMW"
     ],
     "applied_to": "Applied to: DS-K1T671TMFW, DS-K5671-ZH, DS-K5671-ZU, DS-K5671-ZV",
     "changes": "Modify the issue of unrecognized resident ID card. · Device Model: · Naming Rule: · D for Desfire, Felica and M1 card",
@@ -32504,8 +32508,8 @@
       "DS-2DE5432WG1-E"
     ],
     "applied_to": "Applied to: DS-2DE4215IWG1-E, DS-2DE4215IWG1-E(B), DS-2DE4225IWG1-E, DS-2DE4225IWG1-E(B), DS-2DE4225WG1-E3(B), DS-2DE4225WG1-E3, DS-2DE4415IWG1-E, DS-2DE4415IWG1-E(B)",
-    "changes": "",
-    "notes": "",
+    "changes": "Support AI Encoding(GuanLan Encoding) · Support Smart Event、Face Capture、People Management、AI Open Platfrom、Auto-Tracking · Optimized Features · Algorithm optimization and updates.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CV5.8.0_260518_Release_Note.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -36674,8 +36678,8 @@
       "DS-2DE4425W-DE3"
     ],
     "applied_to": "Applied to: DS-2DE4215IW-DE(S6), DS-2DE4225IW-DE(S6), DS-2DE4225W-DE(S6), DS-2DE4225W-DE3(S6), DS-2DE4415IW-DE(S6), DS-2DE4425IW-DE(S6), DS-2DE4425W-DE(S6), DS-2DE4425W-DE3(S6)",
-    "changes": "",
-    "notes": "",
+    "changes": "Algorithm optimization and updates. 2. Fix some bugs.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CV5.7.30_260529_Release_Note.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -39337,7 +39341,7 @@
     "hardware_version": "UNKNOWN",
     "version": "5.6.14",
     "date": "2019-08-26",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783101953/9d02bf2e-de0f-45cc-986f-de75afecf058.zip",
     "filename": "9d02bf2e-de0f-45cc-986f-de75afecf058.zip",
     "supported_models": [
       "PTZ-N4215-DE3",
@@ -39357,7 +39361,7 @@
     "hardware_version": "IPC_G0",
     "version": "5.6.0",
     "date": "2019-07-24",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783101953/6821430e-5587-49a3-9963-7a8c5a7b6638.zip",
     "filename": "6821430e-5587-49a3-9963-7a8c5a7b6638.zip",
     "supported_models": [
       "DS-2DF8236I5X-AELW",
@@ -39375,7 +39379,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "1.03.00",
     "date": "2019-06-04",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783101953/404aede5-56d0-4f64-a53b-4d6738716f1d.zip",
     "filename": "404aede5-56d0-4f64-a53b-4d6738716f1d.zip",
     "supported_models": [
       "THC-B120-MPIRL",
@@ -39394,7 +39398,7 @@
     "hardware_version": "DVR_V4",
     "version": "4.30.001",
     "date": "2019-06-03",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783101953/7a8fb303-4723-4aa6-ae1b-0744447c6e8b.zip",
     "filename": "7a8fb303-4723-4aa6-ae1b-0744447c6e8b.zip",
     "supported_models": [
       "DVR-204U-K1",
@@ -39414,7 +39418,7 @@
     "hardware_version": "DVR_V4",
     "version": "4.30.001",
     "date": "2019-06-03",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783101953/803c9fab-be6a-41ad-9274-97480fc76a42.zip",
     "filename": "803c9fab-be6a-41ad-9274-97480fc76a42.zip",
     "supported_models": [
       "DVR-216U-K2",
@@ -39433,7 +39437,7 @@
     "hardware_version": "IPC_G0",
     "version": "5.6.0",
     "date": "2019-05-07",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783101953/448b7152-9522-41ca-bf5b-7e703f4b6a79.zip",
     "filename": "448b7152-9522-41ca-bf5b-7e703f4b6a79.zip",
     "supported_models": [
       "DS-2DE4225W-DE3",
@@ -39455,7 +39459,7 @@
     "hardware_version": "IPC_G0",
     "version": "5.6.0",
     "date": "2019-05-07",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783101953/a0423deb-2cc3-4203-a682-7f2a5bd1eb7a.zip",
     "filename": "a0423deb-2cc3-4203-a682-7f2a5bd1eb7a.zip",
     "supported_models": [
       "DS-2DF6223-CX (W316L)",
@@ -39475,7 +39479,7 @@
     "hardware_version": "UNKNOWN",
     "version": "5.6.11",
     "date": "2019-04-26",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783101953/Firmware__V5.6.11_190426_S3000274949.zip",
     "filename": "Firmware__V5.6.11_190426_S3000274949.zip",
     "supported_models": [
       "PTZ-N2204I-DE3",
@@ -39494,7 +39498,7 @@
     "hardware_version": "IPC_G0",
     "version": "5.6.0",
     "date": "2019-03-20",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783101953/94de10dc-c2c2-4528-93be-331e74a65747.zip",
     "filename": "94de10dc-c2c2-4528-93be-331e74a65747.zip",
     "supported_models": [
       "DS-2DF6A225X-AEL",
@@ -39544,7 +39548,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "1.05.00",
     "date": "2019-03-11",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783101953/814bfcb3-7a47-43e0-aba6-67f28ffa3d89.zip",
     "filename": "814bfcb3-7a47-43e0-aba6-67f28ffa3d89.zip",
     "supported_models": [
       "THC-B210",
@@ -39558,6 +39562,297 @@
       "THC-T310-VF(HILOOK"
     ],
     "applied_to": "Applied to: THC-B210, THC-B210(3.6MM)(HILOOK STD), THC-D310-VF, THC-D310-VF(2.8-12MM)(HILOOK STD), THC-T310-VF, THC-T310-VF(2.8-12MM)(HILOOK STD)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-K1T671TM-3XF_UNKNOWN_1.0.3": {
+    "device_id": 102248,
+    "model": "DS-K1T671TM-3XF",
+    "hardware_version": "UNKNOWN",
+    "version": "1.0.3",
+    "date": "2023-06-27",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782461450/Firmware__V1.0.3_230627_S3000535148.zip",
+    "filename": "Firmware__V1.0.3_230627_S3000535148.zip",
+    "supported_models": [
+      "DS-K1T671TM-3XF",
+      "DS-K1T671TMFW",
+      "DS-K1T671TMW",
+      "DS-K1TA70MI-T",
+      "DS-K5604A-3XF/V",
+      "DS-K5671-3XF/ZU",
+      "DS-K5671-ZH",
+      "DS-K5671-ZU",
+      "DS-K5671-ZU(2.8MM)",
+      "DS-K5671-ZV"
+    ],
+    "applied_to": "Applied to: DS-K1T671TM-3XF, DS-K1T671TMFW, DS-K1T671TMW, DS-K1TA70MI-T, DS-K5604A-3XF/V, DS-K5671-3XF/ZU, DS-K5671-ZH, DS-K5671-ZU",
+    "changes": "Modify the issue of unrecognized resident ID card. · Device Model: · Naming Rule: · D for Desfire, Felica and M1 card",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202311/releasenote%5CDS-K1T671TM-3XF_Temperature_Measuring_Terminal_V3.2.35_build230804_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2DE4A225IW-DE_IPC_G0_5.6.0": {
+    "device_id": 100754,
+    "model": "DS-2DE4A225IW-DE",
+    "hardware_version": "IPC_G0",
+    "version": "5.6.0",
+    "date": "2019-01-28",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1773226381/10aa0b1e-cc23-4cbd-8165-f40e222950e7.zip",
+    "filename": "10aa0b1e-cc23-4cbd-8165-f40e222950e7.zip",
+    "supported_models": [
+      "DS-2DE4A225IW-DE",
+      "DS-2DE4A225IW-DE(B)",
+      "DS-2DE7225IW-AE",
+      "DS-2DE7225IW-AE(B)",
+      "DS-2DE7232IW-AE",
+      "DS-2DE7232IW-AE(B)"
+    ],
+    "applied_to": "Applied to: DS-2DE4A225IW-DE, DS-2DE4A225IW-DE(B), DS-2DE7225IW-AE, DS-2DE7225IW-AE(B), DS-2DE7232IW-AE, DS-2DE7232IW-AE(B)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CPTZ_Camera_V5.6.0_Release_Note_--R7.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CV2U32G1-IW_UNKNOWN_5.4.71": {
+    "device_id": 102524,
+    "model": "DS-2CV2U32G1-IW",
+    "hardware_version": "UNKNOWN",
+    "version": "5.4.71",
+    "date": "2018-11-29",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1772754001/Firmware__V5.4.71_181129_S3000260066.zip",
+    "filename": "Firmware__V5.4.71_181129_S3000260066.zip",
+    "supported_models": [
+      "DS-2CV2U32G1-IW",
+      "DS-2CV2U32G1-IDW(1.68MM)",
+      "DS-2CV2U32G1-IDW"
+    ],
+    "applied_to": "Applied to: DS-2CV2U32G1-IW, DS-2CV2U32G1-IDW(1.68MM)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-K1T801E_UNKNOWN_2.0.2": {
+    "device_id": 102525,
+    "model": "DS-K1T801E",
+    "hardware_version": "UNKNOWN",
+    "version": "2.0.2",
+    "date": "2019-03-01",
+    "download_url": "",
+    "filename": "ee23aa9e-9609-4205-9656-ecd75c7ea35e.zip",
+    "supported_models": [
+      "DS-K1T801E",
+      "DS-K1T801M"
+    ],
+    "applied_to": "Applied to: DS-K1T801E, DS-K1T801M",
+    "changes": "s, fix bugs, enhance products quality and meet customers’ requirements. Bugs Fix 1. Fixed open timeout logic error defect after configure door open timeout 255s;",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202207/Access%20Control%20Terminal%20K1T801%20V2.0.2_build190301%20Release%20Notes.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-KAD706_UNKNOWN_1.0.0": {
+    "device_id": 102526,
+    "model": "DS-KAD706",
+    "hardware_version": "UNKNOWN",
+    "version": "1.0.0",
+    "date": "2019-02-25",
+    "download_url": "",
+    "filename": "5ee8382c-be8d-40e8-a9c3-9ec2a88c7cb6.zip",
+    "supported_models": [
+      "DS-KAD706",
+      "DS-KAD706-P"
+    ],
+    "applied_to": "Applied to: DS-KAD706, DS-KAD706-P",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2DF5225X-AE3_IPC_G0_5.6.0": {
+    "device_id": 102527,
+    "model": "DS-2DF5225X-AE3",
+    "hardware_version": "IPC_G0",
+    "version": "5.6.0",
+    "date": "2019-01-30",
+    "download_url": "",
+    "filename": "cb247af5-10c6-4897-ae21-85e4fc81729a.zip",
+    "supported_models": [
+      "DS-2DF5225X-AE3",
+      "DS-2DF5225X-AE3(D)",
+      "DS-2DF5232X-AEL",
+      "DS-2DF5232X-AEL(B)",
+      "DS-2DF5232X-AEL(D)",
+      "DS-2DF6225X-AEL",
+      "DS-2DF6225X-AEL(B)",
+      "DS-2DF7232IX-AELW",
+      "DS-2DF7232IX-AELW(D)"
+    ],
+    "applied_to": "Applied to: DS-2DF5225X-AE3, DS-2DF5225X-AE3(D), DS-2DF5232X-AEL, DS-2DF5232X-AEL(B), DS-2DF5232X-AEL(D), DS-2DF6225X-AEL, DS-2DF6225X-AEL(B), DS-2DF7232IX-AELW",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CPTZ_Camera_V5.6.0_Release_Note_--H3.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "IPC-B140H(-M)_UNKNOWN_5.5.82": {
+    "device_id": 102528,
+    "model": "IPC-B140H(-M)",
+    "hardware_version": "UNKNOWN",
+    "version": "5.5.82",
+    "date": "2019-01-30",
+    "download_url": "",
+    "filename": "98719b53-4df6-4087-8177-b79438793342.zip",
+    "supported_models": [
+      "IPC-B140H(-M)",
+      "IPC-B140H(2.8MM)(HILOOKSTD)",
+      "IPC-B140H(4MM)(HILOOKSTD)",
+      "IPC-B140H-M(2.8MM)(HILOOKSTD)",
+      "IPC-B140H(2.8MM)(C)(HILOOKSTD)",
+      "IPC-B140H(4MM)(C)(HILOOKSTD)",
+      "IPC-D140H(-M)",
+      "IPC-D140H(2.8MM)(HILOOKSTD)",
+      "IPC-D140H(4MM)(C)(HILOOKSTD)",
+      "IPC-D140H(2.8MM)(C)(HILOOKSTD)",
+      "IPC-B140H",
+      "IPC-B140H-M",
+      "IPC-D140H"
+    ],
+    "applied_to": "Applied to: IPC-B140H(-M), IPC-B140H(2.8MM)(HILOOKSTD), IPC-B140H(4MM)(HILOOKSTD), IPC-B140H-M(2.8MM)(HILOOKSTD), IPC-B140H(2.8MM)(C)(HILOOKSTD), IPC-B140H(4MM)(C)(HILOOKSTD), IPC-D140H(-M), IPC-D140H(2.8MM)(HILOOKSTD)",
+    "changes": "Fixed some bugs to enhance system stability.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.7.25_260401_Release_Note-E8.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2DY3220IW-DE_UNKNOWN_5.6.0": {
+    "device_id": 102515,
+    "model": "DS-2DY3220IW-DE",
+    "hardware_version": "UNKNOWN",
+    "version": "5.6.0",
+    "date": "2019-01-28",
+    "download_url": "",
+    "filename": "fd4f7a1f-0f79-49ed-b703-3604ec1348cf.zip",
+    "supported_models": [
+      "DS-2DY3220IW-DE",
+      "DS-2DY3220IW-DE(B)",
+      "DS-2DY3220IW-DE4",
+      "DS-2DY3220IW-DE4(B)",
+      "DS-2DY3320IW-DE",
+      "DS-2DY3320IW-DE(B)",
+      "DS-2DY3320IW-DE4",
+      "DS-2DY3320IW-DE4(B)"
+    ],
+    "applied_to": "Applied to: DS-2DY3220IW-DE, DS-2DY3220IW-DE(B), DS-2DY3220IW-DE4, DS-2DY3220IW-DE4(B), DS-2DY3320IW-DE, DS-2DY3320IW-DE(B), DS-2DY3320IW-DE4, DS-2DY3320IW-DE4(B)",
+    "changes": "1. Algorithm optimization and updates. 2. Fix some bugs.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202507/releasenote%5CRelease_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "IVMS-BLAZER PRO/128/16H_UNKNOWN_3.6.23": {
+    "device_id": 102529,
+    "model": "IVMS-BLAZER PRO/128/16H",
+    "hardware_version": "UNKNOWN",
+    "version": "3.6.23",
+    "date": "2018-11-04",
+    "download_url": "",
+    "filename": "d856e383-a9f6-4241-b1fa-c22c5b98a8b8.zip",
+    "supported_models": [
+      "IVMS-BLAZER PRO/128/16H",
+      "BLAZER PRO/128/16H",
+      "IVMS-BLAZER"
+    ],
+    "applied_to": "Applied to: IVMS-BLAZER PRO/128/16H, BLAZER PRO/128/16H",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-K1802_UNKNOWN_2.0.1": {
+    "device_id": 102530,
+    "model": "DS-K1802",
+    "hardware_version": "UNKNOWN",
+    "version": "2.0.1",
+    "date": "2018-09-29",
+    "download_url": "",
+    "filename": "49beee1e-7fa2-4f1d-8284-c71d30af4b69.zip",
+    "supported_models": [
+      "DS-K1802",
+      "DS-K1802MK",
+      "DS-K1802M"
+    ],
+    "applied_to": "Applied to: DS-K1802, DS-K1802MK, DS-K1802M",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-K1102_UNKNOWN_2.0.2": {
+    "device_id": 102531,
+    "model": "DS-K1102",
+    "hardware_version": "UNKNOWN",
+    "version": "2.0.2",
+    "date": "2018-09-28",
+    "download_url": "",
+    "filename": "1e65622e-208e-45a5-b20e-a39ef9449aff.zip",
+    "supported_models": [
+      "DS-K1102",
+      "DS-K1102MK"
+    ],
+    "applied_to": "Applied to: DS-K1102, DS-K1102MK",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2DF5225X-AEL_IPC_G0_5.5.8": {
+    "device_id": 102532,
+    "model": "DS-2DF5225X-AEL",
+    "hardware_version": "IPC_G0",
+    "version": "5.5.8",
+    "date": "2018-09-07",
+    "download_url": "",
+    "filename": "ac3a42ac-b86b-411e-adec-449562cf1ae3.zip",
+    "supported_models": [
+      "DS-2DF5225X-AEL",
+      "DS-2DF5225X-AEL(B)",
+      "DS-2DF5232X-AEL",
+      "DS-2DF5232X-AEL(B)",
+      "DS-2DF5232X-AEL(D)",
+      "DS-2DF7225IX-AEL",
+      "DS-2DF7225IX-AEL(B)",
+      "DS-2DF7232IX-AEL",
+      "DS-2DF7232IX-AEL(B)",
+      "DS-2DF8250I5X-AEL(W)",
+      "DS-2DF8250I5X-AEL(B)(DJ)",
+      "DS-2DF8250I5X-AELW(B)(DJ)",
+      "DS-2DF8425IX-AEL(W)",
+      "DS-2DF8425IX-AEL(B)",
+      "DS-2DF8425IX-AEL(C)",
+      "DS-2DF8425IX-AELW(C)",
+      "DS-2DF8436IX-AEL(W)",
+      "DS-2DF8436IX-AEL(B)",
+      "DS-2DF8436IX-AELW(B)"
+    ],
+    "applied_to": "Applied to: DS-2DF5225X-AEL, DS-2DF5225X-AEL(B), DS-2DF5232X-AEL, DS-2DF5232X-AEL(B), DS-2DF5232X-AEL(D), DS-2DF7225IX-AEL, DS-2DF7225IX-AEL(B), DS-2DF7232IX-AEL",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2DY9250IAX-A_UNKNOWN_5.5.7": {
+    "device_id": 102514,
+    "model": "DS-2DY9250IAX-A",
+    "hardware_version": "UNKNOWN",
+    "version": "5.5.7",
+    "date": "2018-07-06",
+    "download_url": "",
+    "filename": "b087431a-e068-40f9-b6e8-3f3ab518a732.zip",
+    "supported_models": [
+      "DS-2DY9250IAX-A",
+      "DS-2DY9250IAX-A(B)",
+      "DS-2DY9250IAX-A(D)"
+    ],
+    "applied_to": "Applied to: DS-2DY9250IAX-A, DS-2DY9250IAX-A(B), DS-2DY9250IAX-A(D)",
     "changes": "",
     "notes": "",
     "is_beta": false,

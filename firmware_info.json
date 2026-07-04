@@ -834,5 +834,25 @@
   "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CNetwork_Camera-V5.8.32_SP3_Release_Note-H13.pdf": {
     "changes": "Animal and others detection in smart event are both default off. · Fix the issue where all convex privacy masks disappear when the camera is connected to NVR/HC/NVS after · configuring convex privacy masks through the camera web. · Fix the issue that configure human and vehicle options of smart event through NVR, human option can not be",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CV5.7.30_260529_Release_Note.pdf": {
+    "changes": "Algorithm optimization and updates. 2. Fix some bugs.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CV5.8.0_260518_Release_Note.pdf": {
+    "changes": "Support AI Encoding(GuanLan Encoding) · Support Smart Event、Face Capture、People Management、AI Open Platfrom、Auto-Tracking · Optimized Features · Algorithm optimization and updates.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CTurbo_HD_DVR_V4.84.100build260518_Release_Notes.pdf": {
+    "changes": ". The four post -intelligence features are: Motion 2.0, Perimeter Protection, Face Recognition, and AcuSearch.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CTurbo_HD_DVR_V4.84.101build260518_Release_Notes.pdf": {
+    "changes": "Fix known issue and optimize the user experience.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202207/Access%20Control%20Terminal%20K1T801%20V2.0.2_build190301%20Release%20Notes.pdf": {
+    "changes": "s, fix bugs, enhance products quality and meet customers’ requirements. Bugs Fix 1. Fixed open timeout logic error defect after configure door open timeout 255s;",
+    "source": "pdf"
   }
 }

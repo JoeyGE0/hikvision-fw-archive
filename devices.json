@@ -4122,5 +4122,41 @@
   "102523": {
     "model": "THC-B210",
     "hardware_version": "THERMAL_G0"
+  },
+  "102524": {
+    "model": "DS-2CV2U32G1-IW",
+    "hardware_version": "UNKNOWN"
+  },
+  "102525": {
+    "model": "DS-K1T801E",
+    "hardware_version": "UNKNOWN"
+  },
+  "102526": {
+    "model": "DS-KAD706",
+    "hardware_version": "UNKNOWN"
+  },
+  "102527": {
+    "model": "DS-2DF5225X-AE3",
+    "hardware_version": "IPC_G0"
+  },
+  "102528": {
+    "model": "IPC-B140H(-M)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102529": {
+    "model": "IVMS-BLAZER PRO/128/16H",
+    "hardware_version": "UNKNOWN"
+  },
+  "102530": {
+    "model": "DS-K1802",
+    "hardware_version": "UNKNOWN"
+  },
+  "102531": {
+    "model": "DS-K1102",
+    "hardware_version": "UNKNOWN"
+  },
+  "102532": {
+    "model": "DS-2DF5225X-AEL",
+    "hardware_version": "IPC_G0"
   }
 }
