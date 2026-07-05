@@ -10735,7 +10735,7 @@
     "hardware_version": "UNKNOWN",
     "version": "2.2.0",
     "date": "2026-01-14",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783187039/Firmware__V2.2.0D_115745_S3000641570.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783238000/Firmware__V2.2.0F_110638_S3000641589.zip",
     "filename": "Firmware__V2.2.0F_110638_S3000641589.zip",
     "supported_models": [
       "DS-K6BC402LX",
@@ -24947,7 +24947,7 @@
     "hardware_version": "UNKNOWN",
     "version": "2.2.0",
     "date": "2025-09-28",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783187039/Firmware__V2.2.0D_115745_S3000641570.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783238000/Firmware__V2.2.0F_110638_S3000641589.zip",
     "filename": "Firmware__V2.2.0F_110638_S3000641589.zip",
     "supported_models": [
       "DS-K3B530X/MODULAR",
@@ -25141,7 +25141,7 @@
     "hardware_version": "UNKNOWN",
     "version": "2.2.0",
     "date": "2025-09-25",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783187039/Firmware__V2.2.0D_115745_S3000641570.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783238000/Firmware__V2.2.0F_110638_S3000641589.zip",
     "filename": "Firmware__V2.2.0F_110638_S3000641589.zip",
     "supported_models": [
       "DS-K3Y501SX",
@@ -28600,7 +28600,7 @@
     "hardware_version": "UNKNOWN",
     "version": "2.2.0",
     "date": "2025-01-06",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783187039/Firmware__V2.2.0D_115745_S3000641570.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783238000/Firmware__V2.2.0F_110638_S3000641589.zip",
     "filename": "Firmware__V2.2.0F_110638_S3000641589.zip",
     "supported_models": [
       "DS-K3B530X",
@@ -39237,7 +39237,7 @@
     "hardware_version": "UNKNOWN",
     "version": "2.2.0",
     "date": "2019-12-03",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783187039/Firmware__V2.2.0D_115745_S3000641570.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783238000/Firmware__V2.2.0F_110638_S3000641589.zip",
     "filename": "Firmware__V2.2.0F_110638_S3000641589.zip",
     "supported_models": [
       "DS-K1T671TMFW",
@@ -39675,7 +39675,7 @@
     "hardware_version": "UNKNOWN",
     "version": "2.0.2",
     "date": "2019-03-01",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783150251/ee23aa9e-9609-4205-9656-ecd75c7ea35e.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783238000/Firmware__V2.0.2H_095254_S3000641569.zip",
     "filename": "Firmware__V2.0.2H_095254_S3000641569.zip",
     "supported_models": [
       "DS-K1T801E",
@@ -39827,7 +39827,7 @@
     "hardware_version": "UNKNOWN",
     "version": "2.0.2",
     "date": "2018-09-28",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783150251/1e65622e-208e-45a5-b20e-a39ef9449aff.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783238000/Firmware__V2.0.2H_095254_S3000641569.zip",
     "filename": "Firmware__V2.0.2H_095254_S3000641569.zip",
     "supported_models": [
       "DS-K1102",
@@ -40165,7 +40165,7 @@
     "hardware_version": "UNKNOWN",
     "version": "2.2.0",
     "date": "",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783187039/Firmware__V2.2.0D_115745_S3000641570.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783238000/Firmware__V2.2.0F_110638_S3000641589.zip",
     "filename": "Firmware__V2.2.0F_110638_S3000641589.zip",
     "supported_models": [
       "DS-3E2510P",
@@ -40183,7 +40183,7 @@
     "hardware_version": "UNKNOWN",
     "version": "2.2.0",
     "date": "",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783238000/Firmware__V2.2.0D_115745_S3000641572.zip",
     "filename": "Firmware__V2.2.0D_115745_S3000641572.zip",
     "supported_models": [
       "DS-3E2528",
@@ -40201,7 +40201,7 @@
     "hardware_version": "UNKNOWN",
     "version": "2.2.0",
     "date": "",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783238000/Firmware__V2.2.0F_110638_S3000641589.zip",
     "filename": "Firmware__V2.2.0F_110638_S3000641589.zip",
     "supported_models": [
       "DS-3E3730"
@@ -40218,7 +40218,7 @@
     "hardware_version": "UNKNOWN",
     "version": "2.2.0",
     "date": "",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783238000/Firmware__V2.2.0F_110638_S3000641590.zip",
     "filename": "Firmware__V2.2.0F_110638_S3000641590.zip",
     "supported_models": [
       "DS-3E3754TF"
@@ -40235,7 +40235,7 @@
     "hardware_version": "UNKNOWN",
     "version": "2.0.2",
     "date": "",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783238000/Firmware__V2.0.2H_095254_S3000641569.zip",
     "filename": "Firmware__V2.0.2H_095254_S3000641569.zip",
     "supported_models": [
       "DS-3T3512P"
