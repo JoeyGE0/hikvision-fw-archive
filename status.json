@@ -1,11 +1,11 @@
 {
-  "last_run": "2026-07-04T17:43:58.908559",
+  "last_run": "2026-07-05T07:53:19.797715",
   "status": "error",
   "scraper_mode": "http",
   "post_merge_verified": "2026-05-19T13:00:29.926000",
   "catalog_urls_parsed": 4568,
-  "firmwares_found": 1205,
-  "new_firmwares": 10,
+  "firmwares_found": 1209,
+  "new_firmwares": 4,
   "errors": [
     "Download failed HI-D22F2V2F v1.5.1: Download too small (3209 bytes)",
     "Download failed DS-IF1032-03U/X(07) v3.3.10: Download too small (65 bytes)",

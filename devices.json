@@ -4202,5 +4202,21 @@
   "102543": {
     "model": "DS-3E2510P",
     "hardware_version": "UNKNOWN"
+  },
+  "102544": {
+    "model": "DS-3E2528",
+    "hardware_version": "UNKNOWN"
+  },
+  "102545": {
+    "model": "DS-3E3730",
+    "hardware_version": "UNKNOWN"
+  },
+  "102546": {
+    "model": "DS-3E3754TF",
+    "hardware_version": "UNKNOWN"
+  },
+  "102547": {
+    "model": "DS-3T3512P",
+    "hardware_version": "UNKNOWN"
   }
 }
