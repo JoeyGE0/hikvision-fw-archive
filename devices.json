@@ -4218,5 +4218,13 @@
   "102547": {
     "model": "DS-3T3512P",
     "hardware_version": "UNKNOWN"
+  },
+  "102548": {
+    "model": "DS-2DE2A404IWG1-E",
+    "hardware_version": "IPC_G0"
+  },
+  "102549": {
+    "model": "DS-KH6320-TE1",
+    "hardware_version": "UNKNOWN"
   }
 }

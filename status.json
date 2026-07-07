@@ -1,10 +1,10 @@
 {
-  "last_run": "2026-07-06T18:30:09.062401",
+  "last_run": "2026-07-07T08:02:19.129715",
   "status": "error",
   "scraper_mode": "http",
   "post_merge_verified": "2026-05-19T13:00:29.926000",
   "catalog_urls_parsed": 4568,
-  "firmwares_found": 1209,
+  "firmwares_found": 1211,
   "new_firmwares": 0,
   "errors": [
     "Download failed HI-D22F2V2F v1.5.1: Download too small (3209 bytes)",
@@ -20,7 +20,7 @@
   ],
   "test_mode": false,
   "catalog_fetch": "playwright",
-  "catalog_entries": 1045,
+  "catalog_entries": 1031,
   "priority_models": [
     "DS-2CD2387G3-LIS2UY",
     "DS-2CD1383G2P-LIUF",

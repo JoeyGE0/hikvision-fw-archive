@@ -40245,5 +40245,50 @@
     "notes": "",
     "is_beta": false,
     "source": "live"
+  },
+  "DS-2DE2A404IWG1-E_IPC_G0_5.9.5": {
+    "device_id": 102548,
+    "model": "DS-2DE2A404IWG1-E",
+    "hardware_version": "IPC_G0",
+    "version": "5.9.5",
+    "date": "2026-04-20",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779753206/Firmware__V5.9.5_260420_S3000717076.zip",
+    "filename": "Firmware__V5.9.5_260420_S3000717076.zip",
+    "supported_models": [
+      "DS-2DE2A404IWG1-E",
+      "DS-2DE2A604IWG1-E"
+    ],
+    "applied_to": "Applied to: DS-2DE2A404IWG1-E, DS-2DE2A604IWG1-E",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-KH6320-TE1_UNKNOWN_2.2.108": {
+    "device_id": 102549,
+    "model": "DS-KH6320-TE1",
+    "hardware_version": "UNKNOWN",
+    "version": "2.2.108",
+    "date": "2025-07-18",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781603488/Firmware__V2.2.108_250718_S3000663595.zip",
+    "filename": "Firmware__V2.2.108_250718_S3000663595.zip",
+    "supported_models": [
+      "DS-KH6320-TE1",
+      "DS-KH6320-WTE1",
+      "DS-KIS602",
+      "DS-KIS602(B)",
+      "DS-KIS603-P(C)",
+      "DS-KIS604-P(C)",
+      "DS-KIS604-S(C)",
+      "DS-KIS603-P",
+      "DS-KIS604-P",
+      "DS-KIS604-S",
+      "IK-CONNECT"
+    ],
+    "applied_to": "Applied to: DS-KH6320-TE1, DS-KH6320-WTE1, DS-KIS602, DS-KIS602(B), DS-KIS603-P(C), DS-KIS604-P(C), DS-KIS604-S(C)",
+    "changes": "Update the Hik-Connect SDK to optimize the time required to receive call notifications. · The Auto Unlock Door setting has been moved from the Featured Function to the Local · Configuration under Configuration · Device Model",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CR0_Indoor_Station_Firmware_V2.2.108_build250718_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
   }
 }
