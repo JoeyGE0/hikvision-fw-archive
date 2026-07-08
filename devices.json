@@ -4226,5 +4226,9 @@
   "102549": {
     "model": "DS-KH6320-TE1",
     "hardware_version": "UNKNOWN"
+  },
+  "102550": {
+    "model": "IDS-2CD5146G2/V-XZ(H)S(Y)",
+    "hardware_version": "IPC_G0"
   }
 }
