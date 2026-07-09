@@ -4230,5 +4230,9 @@
   "102550": {
     "model": "IDS-2CD5146G2/V-XZ(H)S(Y)",
     "hardware_version": "IPC_G0"
+  },
+  "102551": {
+    "model": "DS-3WF3000-SI-5ACG/2P",
+    "hardware_version": "UNKNOWN"
   }
 }

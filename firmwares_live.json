@@ -23399,7 +23399,9 @@
       "DS-KIS602",
       "DS-KIS603-P",
       "DS-KIS604-P",
-      "DS-KIS604-S"
+      "DS-KIS604-S",
+      "DS-KH6320-TE1(B)/WHITE",
+      "DS-KH6320-WTE1(B)/WHITE"
     ],
     "applied_to": "Applied to: DS-KH6320-TE1(B), DS-KH6320-WTE1(B), DS-KIS602(C), DS-KIS603-P(D), DS-KIS604-P(D), DS-KIS604-S(D)",
     "changes": "",
@@ -40391,6 +40393,26 @@
       "DS-2CD2367G3P-LIS2UY/SRB(180"
     ],
     "applied_to": "Applied to: DS-2CD2347G3P-LIS2UY/S(L)(RB), DS-2CD2347G3P-LIS2UY/SRB(180°), DS-2CD2347G3P-LIS2UY/SRB(180°)O-STDBLACK, DS-2CD2347G3P-LIS2UY/SL(180°), DS-2CD2347G3P-LIS2UY/SL(180°)/O-STDBLACK, DS-2CD2367G3P-LIS2UY/S(L)(RB), DS-2CD2367G3P-LIS2UY/SRB(180°), DS-2CD2367G3P-LIS2UY/SRB(180°)O-STDBLACK",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-3WF3000-SI-5ACG/2P_UNKNOWN_1.3.0": {
+    "device_id": 102551,
+    "model": "DS-3WF3000-SI-5ACG/2P",
+    "hardware_version": "UNKNOWN",
+    "version": "1.3.0",
+    "date": "2026-01-09",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779782863/Firmware__V1.3.0_260109_S3000702492.zip",
+    "filename": "Firmware__V1.3.0_260109_S3000702492.zip",
+    "supported_models": [
+      "DS-3WF3000-SI-5ACG/2P",
+      "DS-3WF3000S-SI-5ACG/2P",
+      "DS-3WF5000-SI-5ACG/2P",
+      "DS-3WF5000S-SI-5ACG/2P"
+    ],
+    "applied_to": "Applied to: DS-3WF3000-SI-5ACG/2P, DS-3WF3000S-SI-5ACG/2P, DS-3WF5000-SI-5ACG/2P, DS-3WF5000S-SI-5ACG/2P",
     "changes": "",
     "notes": "",
     "is_beta": false,
