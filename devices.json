@@ -4234,5 +4234,41 @@
   "102551": {
     "model": "DS-3WF3000-SI-5ACG/2P",
     "hardware_version": "UNKNOWN"
+  },
+  "102552": {
+    "model": "IDS-2CD7A46G2-IZHS(Y)(1T)(/5G)",
+    "hardware_version": "IPC_G0"
+  },
+  "102553": {
+    "model": "IDS-2CD8A46G0/SC-XZY",
+    "hardware_version": "IPC_G0"
+  },
+  "102554": {
+    "model": "DS-7608NI-M2/8P",
+    "hardware_version": "NVR_G0"
+  },
+  "102555": {
+    "model": "IDS-2CD7146G0-IZS",
+    "hardware_version": "IPC_G0"
+  },
+  "102556": {
+    "model": "DS-K6B221TMX",
+    "hardware_version": "UNKNOWN"
+  },
+  "102557": {
+    "model": "STI-DSIR30-H2EG-B",
+    "hardware_version": "UNKNOWN"
+  },
+  "102558": {
+    "model": "STI-DSIR50-H2CG-T",
+    "hardware_version": "UNKNOWN"
+  },
+  "102559": {
+    "model": "STI-DLMR30-H1AG-3T150A03CW-1A",
+    "hardware_version": "UNKNOWN"
+  },
+  "102560": {
+    "model": "STI-DLMR30-H1AG-3T150A25F-1E",
+    "hardware_version": "UNKNOWN"
   }
 }
