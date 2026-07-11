@@ -134,7 +134,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 | | |
 |--|--|
 | **Status** | ❌ ERROR |
-| **Last run** | 2026-07-11 06:41:14 UTC |
+| **Last run** | 2026-07-11 17:33:46 UTC |
 | **Scraper** | HTTP |
 | **Catalog fetch** | playwright |
 | **Catalog rows parsed** | 1035 |
