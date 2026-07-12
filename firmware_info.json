@@ -866,5 +866,9 @@
   "https://assets.hikvision.com/prd/normal/all/files/202510/releasenote%5CDeepinView_Camera_V5.8.61_Release_Note.pdf": {
     "changes": "ANPR algorithm updates: · Fix the issue that manual capture of motorcycle license plates reports \"unknown\". · Optimization for Belgian and Hungarian license plates recognition · Fix issue where ANPR city separator settings do not take effect after restart",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CV5.9.62_260615_Release_Note.pdf": {
+    "changes": "Algorithm optimization and updates. 2. Fix some bugs.",
+    "source": "pdf"
   }
 }

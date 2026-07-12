@@ -134,10 +134,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 | | |
 |--|--|
 | **Status** | ❌ ERROR |
-| **Last run** | 2026-07-12 07:12:25 UTC |
+| **Last run** | 2026-07-12 17:36:48 UTC |
 | **Scraper** | HTTP |
 | **Catalog fetch** | playwright |
-| **Catalog rows parsed** | 1035 |
+| **Catalog rows parsed** | 1031 |
 | **Firmware records** | 1224 |
 | **New last run** | 0 |
 | **Test mode** | Disabled |
@@ -3779,7 +3779,7 @@ Total: 1227
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 5.9.62 | Applied to: [[DS-2ST4C420MWG-E/14(PA)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779174169/Firmware__V5.9.62_260416_S3000716213.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779174169/Firmware__V5.9.62_260416_S3000716213.zip), DS-2ST4C420MWG-E/14(PA)(F1) | 2026-04-16 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779174169/Firmware__V5.9.62_260416_S3000716213.zip) | — |
+| 5.9.62 | Applied to: [[DS-2ST4C420MWG-E/14(PA)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779174169/Firmware__V5.9.62_260416_S3000716213.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779174169/Firmware__V5.9.62_260416_S3000716213.zip), DS-2ST4C420MWG-E/14(PA)(F1) | 2026-04-16 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779174169/Firmware__V5.9.62_260416_S3000716213.zip) | Algorithm optimization and updates. 2. Fix some bugs. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CV5.9.62_260615_Release_Note.pdf) |
 
 </details>
 

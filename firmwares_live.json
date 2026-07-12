@@ -3323,8 +3323,8 @@
       "DS-2ST4C420MWG-E/14"
     ],
     "applied_to": "Applied to: DS-2ST4C420MWG-E/14(PA), DS-2ST4C420MWG-E/14(PA)(F1)",
-    "changes": "",
-    "notes": "",
+    "changes": "Algorithm optimization and updates. 2. Fix some bugs.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CV5.9.62_260615_Release_Note.pdf",
     "is_beta": false,
     "source": "live"
   },
