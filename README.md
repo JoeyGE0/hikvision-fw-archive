@@ -134,12 +134,12 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 | | |
 |--|--|
 | **Status** | ❌ ERROR |
-| **Last run** | 2026-07-14 17:43:42 UTC |
+| **Last run** | 2026-07-15 06:39:38 UTC |
 | **Scraper** | HTTP |
 | **Catalog fetch** | playwright |
-| **Catalog rows parsed** | 1025 |
-| **Firmware records** | 1224 |
-| **New last run** | 0 |
+| **Catalog rows parsed** | 1032 |
+| **Firmware records** | 1225 |
+| **New last run** | 1 |
 | **Test mode** | Disabled |
 
 
@@ -158,7 +158,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 Collapsible sections per model and hardware line (newest firmware first within each section).
 
-Total: 1227
+Total: 1228
 
 
 
@@ -7551,13 +7551,14 @@ Total: 1227
 
 
 <details>
-<summary><h2>DS-K3B631TX - UNKNOWN (3 firmwares)</h2></summary>
+<summary><h2>DS-K3B631TX - UNKNOWN (4 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 2.0.7 | Applied to: [DS-K3B631TX](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783707087/Firmware__V2.0.7_260420_S3000733798.zip), [DS-K3B631TX-L/MPIQL-DP65](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783707087/Firmware__V2.0.7_260420_S3000733798.zip), [DS-K3B631TX-M/MPIQL-DP65](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783707087/Firmware__V2.0.7_260420_S3000733798.zip), [DS-K3B631TX-R/MPIQL-DP65](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783707087/Firmware__V2.0.7_260420_S3000733798.zip), [DS-K3B631TX-L/DPIQL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783707087/Firmware__V2.0.7_260420_S3000733798.zip), [DS-K3B631TX-M/DPIQL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783707087/Firmware__V2.0.7_260420_S3000733798.zip), [DS-K3B631TX-R/DPIQL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783707087/Firmware__V2.0.7_260420_S3000733798.zip), [DS-K3B631TX-L/DPIL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783707087/Firmware__V2.0.7_260420_S3000733798.zip) | 2026-04-01 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783707087/Firmware__V2.0.7_260420_S3000733798.zip) | — |
 | 1.1.0 | Applied to: [DS-K3B631TX](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782725379/Firmware__V1.1.0_251126_S3000690205.zip), [DS-K3B631TX-L/MPIQL-DP65](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782725379/Firmware__V1.1.0_251126_S3000690205.zip), [DS-K3B631TX-M/MPIQL-DP65](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782725379/Firmware__V1.1.0_251126_S3000690205.zip), [DS-K3B631TX-R/MPIQL-DP65](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782725379/Firmware__V1.1.0_251126_S3000690205.zip), [DS-K3B631TX-L/DPIQL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782725379/Firmware__V1.1.0_251126_S3000690205.zip), [DS-K3B631TX-M/DPIQL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782725379/Firmware__V1.1.0_251126_S3000690205.zip), [DS-K3B631TX-R/DPIQL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782725379/Firmware__V1.1.0_251126_S3000690205.zip), [DS-K3B631TX-L/DPIL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782725379/Firmware__V1.1.0_251126_S3000690205.zip) | 2026-01-19 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782725379/Firmware__V1.1.0_251126_S3000690205.zip) | — |
 | 1.3.0 | Applied to: [DS-K3B631TX](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782979518/DashCam_AE_DC5013_F6_CN_STD_V1.3.0_build210123.zip), [DS-K3B631TX-L/MPIQL-DP65](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782979518/DashCam_AE_DC5013_F6_CN_STD_V1.3.0_build210123.zip), [DS-K3B631TX-M/MPIQL-DP65](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782979518/DashCam_AE_DC5013_F6_CN_STD_V1.3.0_build210123.zip), [DS-K3B631TX-R/MPIQL-DP65](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782979518/DashCam_AE_DC5013_F6_CN_STD_V1.3.0_build210123.zip), [DS-K3B631TX-L/DPIQL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782979518/DashCam_AE_DC5013_F6_CN_STD_V1.3.0_build210123.zip), [DS-K3B631TX-M/DPIQL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782979518/DashCam_AE_DC5013_F6_CN_STD_V1.3.0_build210123.zip), [DS-K3B631TX-R/DPIQL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782979518/DashCam_AE_DC5013_F6_CN_STD_V1.3.0_build210123.zip), [DS-K3B631TX-L/DPIL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782979518/DashCam_AE_DC5013_F6_CN_STD_V1.3.0_build210123.zip) | 2025-10-22 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782979518/DashCam_AE_DC5013_F6_CN_STD_V1.3.0_build210123.zip) | — |
+| 1.0.0 | Applied to: [DS-K3B631TX](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/870267c0-29cc-475e-ab15-cc748ad65594.zip), [DS-K3B631TX-L/MPIQL-DP65](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/870267c0-29cc-475e-ab15-cc748ad65594.zip), [DS-K3B631TX-M/MPIQL-DP65](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/870267c0-29cc-475e-ab15-cc748ad65594.zip), [DS-K3B631TX-R/MPIQL-DP65](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/870267c0-29cc-475e-ab15-cc748ad65594.zip), [DS-K3B631TX-L/DPIQL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/870267c0-29cc-475e-ab15-cc748ad65594.zip), [DS-K3B631TX-M/DPIQL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/870267c0-29cc-475e-ab15-cc748ad65594.zip), [DS-K3B631TX-R/DPIQL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/870267c0-29cc-475e-ab15-cc748ad65594.zip), [DS-K3B631TX-L/DPIL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/870267c0-29cc-475e-ab15-cc748ad65594.zip) | 2020-07-23 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/870267c0-29cc-475e-ab15-cc748ad65594.zip) | — |
 
 </details>
 
