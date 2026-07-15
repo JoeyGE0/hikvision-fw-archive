@@ -40800,7 +40800,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.0.0",
     "date": "2020-07-23",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784097578/870267c0-29cc-475e-ab15-cc748ad65594.zip",
     "filename": "870267c0-29cc-475e-ab15-cc748ad65594.zip",
     "supported_models": [
       "DS-K3B631TX",
