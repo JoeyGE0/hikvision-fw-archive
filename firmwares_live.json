@@ -8834,7 +8834,9 @@
       "DS-2CD2T83G2-4LI(2.8MM)(T)",
       "DS-2CD2T83G2-4LI(4MM)(T)",
       "DS-2CD2T83G2-2LI2U(2.8MM)(T)",
-      "DS-2CD2T83G2-2LI2U(4MM)(T)"
+      "DS-2CD2T83G2-2LI2U(4MM)(T)",
+      "DS-2CD2186G2-IMS",
+      "DS-2CD2186G2-IMS(2.8MM)"
     ],
     "applied_to": "Applied to: DS-2CD1183G0-I, DS-2CD1183G0-I(2.8MM), DS-2CD1183G0-I(4MM), DS-2CD2026G2-I(U), DS-2CD2026G2-I(2.8MM), DS-2CD2026G2-I(4MM), DS-2CD2026G2-I(2.8MM)(D), DS-2CD2026G2-I(4MM)(D)",
     "changes": "1. PTRZ product shading hood motor motion logic optimization: · 1) After the movement in the P and T directions comes to a complete stop, the sunshade motor lifts · the ball cover on top again . When starting to move, the sunshade motor will retract first, and only",
