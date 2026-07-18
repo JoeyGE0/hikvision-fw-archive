@@ -4229,8 +4229,8 @@
       "DS-2DE3A400BW-DE"
     ],
     "applied_to": "Applied to: DS-2DE3A400BW-DE(T5), DS-2DE3A400BW-DE(F1)(T5), DS-2DE3A404IWG-E/W, DS-2DE4225WG-E3, DS-2DE4A225IWG-E, DS-2DE7A220MCG-EB, DS-2DE7A412MCG-EB, DS-2DE7A812MCG-EB",
-    "changes": "",
-    "notes": "",
+    "changes": "Algorithm optimization and updates. 2. Fix some bugs.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CV5.8.0_260404_Release_Notet.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -6972,8 +6972,8 @@
       "DS-2SE3C404MWG-4G/14(2.8MM)(LA)"
     ],
     "applied_to": "Applied to: DS-2SE3C204MWG-4G/12, DS-2SE3C204MWG-4G/12(2.8MM)(EU), DS-2SE3C204MWG-E/12, DS-2SE3C204MWG-E/12(2.8MM), DS-2SE3C210MWG-E/12, DS-2SE3C210MWG-E/12(2.8MM), DS-2SE3C404MWG-4G/14, DS-2SE3C404MWG-4G/14(2.8MM)(EU)",
-    "changes": "",
-    "notes": "",
+    "changes": "Algorithm optimization and updates. 2. Fix some bugs.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CV5.8.11_260325_Release_Notet.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -6990,8 +6990,8 @@
       "DS-2SE4C225MWG-E/26"
     ],
     "applied_to": "Applied to: DS-2SE4C225MWG-E/26(F0)",
-    "changes": "",
-    "notes": "",
+    "changes": "Algorithm optimization and updates. 2. Fix some bugs.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CV5.8.2_260325_Release_Notet.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -9052,8 +9052,8 @@
       "DS-2SE7C432MWG-EB/26"
     ],
     "applied_to": "Applied to: DS-2SE7C425MWG-EB/26(F0), DS-2SE7C432MWG-EB/26(F0)",
-    "changes": "",
-    "notes": "",
+    "changes": "Algorithm optimization and updates. 2. Fix some bugs.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CV5.8.2_260324_Release_Notet.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -18397,8 +18397,8 @@
       "DS-2DE4415IW-DE"
     ],
     "applied_to": "Applied to: DS-2DE4215IW-DE(T5), DS-2DE4215IWG-E, DS-2DE4215IWG-E(B), DS-2DE4225IW-DE(T5), DS-2DE4225IWG-E, DS-2DE4225IWG-E(B), DS-2DE4415IW-DE(T5), DS-2DE4415IWG-E",
-    "changes": "",
-    "notes": "",
+    "changes": "Algorithm optimization and updates. 2. Fix some bugs.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CV5.8.13_260402_Release_Notet.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -18415,8 +18415,8 @@
       "DS-2DE4825WG-E3"
     ],
     "applied_to": "Applied to: DS-2DE4432WG-E3, DS-2DE4825WG-E3",
-    "changes": "",
-    "notes": "",
+    "changes": "Algorithm optimization and updates. 2. Fix some bugs.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CV5.8.0_260402_Release_Notet.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -18482,7 +18482,7 @@
       "IDS-2CD7A86G2/V-XZHSY"
     ],
     "applied_to": "Applied to: IDS-2CD7A46G2/V-XZHS(Y), IDS-2CD7A46G2/V-XZHSY(2.8-12MM), IDS-2CD7A86G2/V-XZHS(Y), IDS-2CD7A86G2/V-XZHSY(2.8-12MM)",
-    "changes": "",
+    "changes": "Algorithm optimization and updates. 2. Fix some bugs.",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5C5.8.0_Release_Note.pdf",
     "is_beta": false,
     "source": "live"
@@ -22641,8 +22641,8 @@
       "DS-2DE5425IWG-K/4G(LA)"
     ],
     "applied_to": "Applied to: DS-2DE5425IWG-4G, DS-2DE5425IWG-4G(US), DS-2DE5425IWG-4G(LA), DS-2DE5425IWG-4G(JP), DS-2DE5425IWG-K/4G, DS-2DE5425IWG-K/4G(US), DS-2DE5425IWG-K/4G(LA)",
-    "changes": "",
-    "notes": "",
+    "changes": "Algorithm optimization and updates. 2. Fix some bugs.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CV5.7.30_260325_Release_Notet.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -22741,8 +22741,8 @@
       "DS-2SE4C415MWG-E/14"
     ],
     "applied_to": "Applied to: DS-2SE4C215MWG-E/12(F0), DS-2SE4C215MWG-E(12F0), DS-2SE4C225MWG-E/12, DS-2SE4C225MWG-E/12(F0), DS-2SE4C225MWG-E(12F0), DS-2SE4C225MWG-E/RB/12, DS-2SE4C225MWG-E/RB/12(F0), DS-2SE4C415MWG-E/14(F0)",
-    "changes": "",
-    "notes": "",
+    "changes": "Algorithm optimization and updates. 2. Fix some bugs.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CV5.8.2_260325_Release_Notet.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -23048,8 +23048,8 @@
       "DS-2DE7A825IW-AEB"
     ],
     "applied_to": "Applied to: DS-2DE7A225IW-AEB(T5), DS-2DE7A232IW-AEB(T5), DS-2DE7A425IW-AEB(T5), DS-2DE7A432IW-AEB(T5), DS-2DE7A825IW-AEB(T5)",
-    "changes": "",
-    "notes": "",
+    "changes": "Algorithm optimization and updates. 2. Fix some bugs.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CV5.8.13_260324_Release_Notet.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -23068,8 +23068,8 @@
       "DS-2SE7C432MW-AEB"
     ],
     "applied_to": "Applied to: DS-2SE7C425MW-AEB(14F1)(P3), DS-2SE7C432MW-AEB(14F1)(P3)",
-    "changes": "",
-    "notes": "",
+    "changes": "Algorithm optimization and updates. 2. Fix some bugs.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CV5.8.2_260324_Release_Notet.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -40276,7 +40276,10 @@
     "filename": "Firmware__V5.9.5_260420_S3000717076.zip",
     "supported_models": [
       "DS-2DE2A404IWG1-E",
-      "DS-2DE2A604IWG1-E"
+      "DS-2DE2A604IWG1-E",
+      "DS-2DE3C204MWG1-E",
+      "DS-2DE3C404MWG1-E",
+      "DS-2DE3C804MWG1-E"
     ],
     "applied_to": "Applied to: DS-2DE2A404IWG1-E, DS-2DE2A604IWG1-E",
     "changes": "",
