@@ -1054,7 +1054,8 @@
       "DS-2DE5425IWG1-E(B)",
       "DS-2DE5425WG1-E(B)",
       "DS-2DE5432IWG1-E(B)",
-      "DS-2DE5432WG1-E(B)"
+      "DS-2DE5432WG1-E(B)",
+      "DS-2DE4825IWG1-E(B)"
     ],
     "applied_to": "Applied to: DS-2DE4215IWG1-E",
     "changes": "1. Add Tracking function to the 4 series 4MP PTZ camera.  Modify Features 1. Cybersecurity Compliance Remediation. 2. Update the SDK and PHY network interface controller.",
