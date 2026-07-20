@@ -134,12 +134,12 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 | | |
 |--|--|
 | **Status** | ❌ ERROR |
-| **Last run** | 2026-07-20 07:44:57 UTC |
+| **Last run** | 2026-07-20 18:31:15 UTC |
 | **Scraper** | HTTP |
 | **Catalog fetch** | playwright |
-| **Catalog rows parsed** | 1007 |
-| **Firmware records** | 1229 |
-| **New last run** | 1 |
+| **Catalog rows parsed** | 996 |
+| **Firmware records** | 1230 |
+| **New last run** | 0 |
 | **Test mode** | Disabled |
 
 
@@ -158,7 +158,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 Collapsible sections per model and hardware line (newest firmware first within each section).
 
-Total: 1232
+Total: 1233
 
 
 
@@ -5273,7 +5273,7 @@ Total: 1232
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 3.4.2 | Applied to: [DS-3E1506P-EI/M-4P1T1F](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781553787/Firmware__V3.4.2_260522_S3000727766.zip) | 2026-04-07 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781553787/Firmware__V3.4.2_260522_S3000727766.zip) | — |
+| 3.4.2 | Applied to: [DS-3E1506P-EI/M-4P1T1F](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784533498/TSC_300_CN_STD_V3.3.4_211223.zip) | 2026-04-07 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784533498/TSC_300_CN_STD_V3.3.4_211223.zip) | — |
 
 </details>
 
@@ -5324,7 +5324,7 @@ Total: 1232
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 3.3.4 | Applied to: [[[DS-3E1516-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781553787/Firmware__V3.3.4_260527_S3000732494.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781553787/Firmware__V3.3.4_260527_S3000732494.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781553787/Firmware__V3.3.4_260527_S3000732494.zip) V2(O-STD), DS-3E1516-EI V2, DS-3E1516-EI, [DS-3E1518P-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781553787/Firmware__V3.3.4_260527_S3000732494.zip), [[[DS-3E1524-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781553787/Firmware__V3.3.4_260527_S3000732494.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781553787/Firmware__V3.3.4_260527_S3000732494.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781553787/Firmware__V3.3.4_260527_S3000732494.zip) V2(O-STD), DS-3E1524-EI V2, DS-3E1524-EI | 2026-05-27 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781553787/Firmware__V3.3.4_260527_S3000732494.zip) | — |
+| 3.3.4 | Applied to: [[[DS-3E1516-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784533498/TSC_300_CN_STD_V3.3.4_211223.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784533498/TSC_300_CN_STD_V3.3.4_211223.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784533498/TSC_300_CN_STD_V3.3.4_211223.zip) V2(O-STD), DS-3E1516-EI V2, DS-3E1516-EI, [DS-3E1518P-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784533498/TSC_300_CN_STD_V3.3.4_211223.zip), [[[DS-3E1524-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784533498/TSC_300_CN_STD_V3.3.4_211223.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784533498/TSC_300_CN_STD_V3.3.4_211223.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784533498/TSC_300_CN_STD_V3.3.4_211223.zip) V2(O-STD), DS-3E1524-EI V2, DS-3E1524-EI | 2026-05-27 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784533498/TSC_300_CN_STD_V3.3.4_211223.zip) | — |
 | 3.3.0 | Applied to: [[[DS-3E1516-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781337976/Firmware__V3.3.0_251010_S3000677950.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781337976/Firmware__V3.3.0_251010_S3000677950.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781337976/Firmware__V3.3.0_251010_S3000677950.zip) V2(O-STD), DS-3E1516-EI V2, DS-3E1516-EI, [DS-3E1518P-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781337976/Firmware__V3.3.0_251010_S3000677950.zip), [[DS-3E1518P-EI/M](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781337976/Firmware__V3.3.0_251010_S3000677950.zip)(O-STD)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781337976/Firmware__V3.3.0_251010_S3000677950.zip), DS-3E1518P-EI/M, [[DS-3E1524-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781337976/Firmware__V3.3.0_251010_S3000677950.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781337976/Firmware__V3.3.0_251010_S3000677950.zip) V2(O-STD), DS-3E1524-EI V2 | 2026-01-14 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781337976/Firmware__V3.3.0_251010_S3000677950.zip) | — |
 | 2.0.3 | Applied to: [[[DS-3E1516-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782545864/Firmware__V2.0.3_221214_S3000479934.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782545864/Firmware__V2.0.3_221214_S3000479934.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782545864/Firmware__V2.0.3_221214_S3000479934.zip) V2(O-STD), DS-3E1516-EI V2, DS-3E1516-EI | 2022-12-14 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782545864/Firmware__V2.0.3_221214_S3000479934.zip) | — |
 
@@ -5356,7 +5356,7 @@ Total: 1232
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 3.4.2 | Applied to: [DS-3E1520P-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781553787/Firmware__V3.4.2_260522_S3000727767.zip), [DS-3E1520P-EI/M](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781553787/Firmware__V3.4.2_260522_S3000727767.zip), [DS-3E1528P-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781553787/Firmware__V3.4.2_260522_S3000727767.zip), [DS-3E1528P-EI/M](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781553787/Firmware__V3.4.2_260522_S3000727767.zip) | 2026-05-22 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781553787/Firmware__V3.4.2_260522_S3000727767.zip) | — |
+| 3.4.2 | Applied to: [DS-3E1520P-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784533498/TSC_300_CN_STD_V3.3.4_211223.zip), [DS-3E1520P-EI/M](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784533498/TSC_300_CN_STD_V3.3.4_211223.zip), [DS-3E1528P-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784533498/TSC_300_CN_STD_V3.3.4_211223.zip), [DS-3E1528P-EI/M](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784533498/TSC_300_CN_STD_V3.3.4_211223.zip) | 2026-05-22 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784533498/TSC_300_CN_STD_V3.3.4_211223.zip) | — |
 | 3.3.0 | Applied to: [DS-3E1520P-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781337976/Firmware__V3.3.0_251010_S3000677950.zip), [DS-3E1520P-EI/M](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781337976/Firmware__V3.3.0_251010_S3000677950.zip), [DS-3E1528P-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781337976/Firmware__V3.3.0_251010_S3000677950.zip), [DS-3E1528P-EI/M](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781337976/Firmware__V3.3.0_251010_S3000677950.zip) | 2025-10-10 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781337976/Firmware__V3.3.0_251010_S3000677950.zip) | — |
 
 </details>
@@ -5397,7 +5397,7 @@ Total: 1232
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 3.4.2 | Applied to: [DS-3E1710HP-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781553787/Firmware__V3.4.2_260522_S3000727766.zip), [DS-3E1710HP-SI-8P2X](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781553787/Firmware__V3.4.2_260522_S3000727766.zip), [DS-3E1726-SI-16F8T2X](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781553787/Firmware__V3.4.2_260522_S3000727766.zip), [DS-3E1726HP-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781553787/Firmware__V3.4.2_260522_S3000727766.zip), [DS-3E1726HP-SI-24P2X](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781553787/Firmware__V3.4.2_260522_S3000727766.zip) | 2026-05-22 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781553787/Firmware__V3.4.2_260522_S3000727766.zip) | — |
+| 3.4.2 | Applied to: [DS-3E1710HP-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784533498/TSC_300_CN_STD_V3.3.4_211223.zip), [DS-3E1710HP-SI-8P2X](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784533498/TSC_300_CN_STD_V3.3.4_211223.zip), [DS-3E1726-SI-16F8T2X](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784533498/TSC_300_CN_STD_V3.3.4_211223.zip), [DS-3E1726HP-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784533498/TSC_300_CN_STD_V3.3.4_211223.zip), [DS-3E1726HP-SI-24P2X](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784533498/TSC_300_CN_STD_V3.3.4_211223.zip) | 2026-05-22 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784533498/TSC_300_CN_STD_V3.3.4_211223.zip) | — |
 | 3.3.2 | Applied to: [DS-3E1710HP-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781169180/Firmware__V3.3.3_260527_S3000726782.zip), [DS-3E1726HP-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781169180/Firmware__V3.3.3_260527_S3000726782.zip) | 2025-10-31 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781169180/Firmware__V3.3.3_260527_S3000726782.zip) | — |
 
 </details>
@@ -5558,7 +5558,7 @@ Total: 1232
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 3.3.4 | Applied to: [DS-3T1512-SI-8T4F](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781553787/Firmware__V3.3.4_260527_S3000732494.zip), [DS-3T1516-SI-8T8F](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781553787/Firmware__V3.3.4_260527_S3000732494.zip) | 2025-11-18 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781553787/Firmware__V3.3.4_260527_S3000732494.zip) | — |
+| 3.3.4 | Applied to: [DS-3T1512-SI-8T4F](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784533498/TSC_300_CN_STD_V3.3.4_211223.zip), [DS-3T1516-SI-8T8F](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784533498/TSC_300_CN_STD_V3.3.4_211223.zip) | 2025-11-18 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784533498/TSC_300_CN_STD_V3.3.4_211223.zip) | — |
 
 </details>
 
@@ -7202,10 +7202,11 @@ Total: 1232
 
 
 <details>
-<summary><h2>DS-K1T680D-E1 - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-K1T680D-E1 - UNKNOWN (2 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
+| 3.7.80 | Applied to: [DS-K1T680D-E1](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781205771/Firmware__V3.7.80_251218_S3000701514.zip), [DS-K1T680DF-E1](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781205771/Firmware__V3.7.80_251218_S3000701514.zip), [DS-K1T680DFW](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781205771/Firmware__V3.7.80_251218_S3000701514.zip) | 2025-12-18 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781205771/Firmware__V3.7.80_251218_S3000701514.zip) | Update the driver to be compatible with the new fingerprint module; · Optimize the platform data synchronization logic; · Fixed break out/in opposite status issue. · Device Model: · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202603/releasenote%5CDS-K1T680_Series_MinMoe_Terminal_Release_Note_V3.7.80_build251218.pdf) |
 | 3.7.60 | Applied to: [DS-K1T680D-E1](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782412966/Firmware__V3.7.60_251220_S3000720675.zip), [DS-K1T680DFG](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782412966/Firmware__V3.7.60_251220_S3000720675.zip), [DS-K1T680DFG1](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782412966/Firmware__V3.7.60_251220_S3000720675.zip), [DS-K1T680DG](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782412966/Firmware__V3.7.60_251220_S3000720675.zip), [DS-K1T680DG1](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782412966/Firmware__V3.7.60_251220_S3000720675.zip), [DS-K1T680DW](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782412966/Firmware__V3.7.60_251220_S3000720675.zip) | 2025-07-14 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782412966/Firmware__V3.7.60_251220_S3000720675.zip) | Update the driver to be compatible with the new fingerprint module; · Optimize the platform data synchronization logic; · Fixed break out/in opposite status issue. · Device Model: · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202511/releasenote%5CDS-K1T680_Series_MinMoe_Terminal_Release_Note_V3.7.60_build250714.pdf) |
 
 </details>
@@ -8823,7 +8824,7 @@ Total: 1232
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 3.3.4 | Applied to: [DS-TSC300-44H](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/TSC_300_CN_STD_V3.3.4_211223.zip) | 2021-12-23 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/TSC_300_CN_STD_V3.3.4_211223.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202207/%E3%80%90Release%20note%E3%80%91Traffic%20Signal%20Controller(TSC300-44H)_V3.3.4_211223.pdf) |
+| 3.3.4 | Applied to: [DS-TSC300-44H](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784533498/TSC_300_CN_STD_V3.3.4_211223.zip) | 2021-12-23 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784533498/TSC_300_CN_STD_V3.3.4_211223.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202207/%E3%80%90Release%20note%E3%80%91Traffic%20Signal%20Controller(TSC300-44H)_V3.3.4_211223.pdf) |
 
 </details>
 
