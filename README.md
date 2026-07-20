@@ -134,12 +134,12 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 | | |
 |--|--|
 | **Status** | ❌ ERROR |
-| **Last run** | 2026-07-19 17:35:16 UTC |
+| **Last run** | 2026-07-20 07:44:57 UTC |
 | **Scraper** | HTTP |
 | **Catalog fetch** | playwright |
 | **Catalog rows parsed** | 1007 |
-| **Firmware records** | 1225 |
-| **New last run** | 0 |
+| **Firmware records** | 1229 |
+| **New last run** | 1 |
 | **Test mode** | Disabled |
 
 
@@ -158,7 +158,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 Collapsible sections per model and hardware line (newest firmware first within each section).
 
-Total: 1228
+Total: 1232
 
 
 
@@ -1709,6 +1709,16 @@ Total: 1228
 
 
 <details>
+<summary><h2>DS-2CD3121G2E-LIU(/AB) - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.41 | Applied to: [DS-2CD3121G2E-LIU(/AB)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780683636/Firmware__V5.8.41_260401_S3000712799.zip), [DS-2CD3121G2E-LIU(4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780683636/Firmware__V5.8.41_260401_S3000712799.zip) | 2026-04-01 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780683636/Firmware__V5.8.41_260401_S3000712799.zip) | Fixed some bugs to enhance system stability. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5CNetwork_Camera-V5.8.41_260401_Release_Note-E9.pdf) |
+
+</details>
+
+
+<details>
 <summary><h2>DS-2CD3186G3-LISU - IPC_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
@@ -2551,6 +2561,16 @@ Total: 1228
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.8.0 | Applied to: [DS-2DE2C200IWG-K/4G/C05S10](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782895720/Firmware__V5.8.0_260428_S3000720876.zip), [[[DS-2DE2C200IWG-K/4G/C05S10(2.8MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782895720/Firmware__V5.8.0_260428_S3000720876.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782895720/Firmware__V5.8.0_260428_S3000720876.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782895720/Firmware__V5.8.0_260428_S3000720876.zip), DS-2DE2C200IWG-K/4G/C05S10(2.8MM)O-STDLA, DS-2DE2C200IWG-K/4G/C05S10(2.8MM)O-STDUS, [DS-2DE2C200IWG-K/4G/C05S10(4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782895720/Firmware__V5.8.0_260428_S3000720876.zip) | 2026-03-25 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782895720/Firmware__V5.8.0_260428_S3000720876.zip) | — |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2DE2C200MW-DE(S7) - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.25 | Applied to: [DS-2DE2C200MW-DE(S7)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780683636/Firmware__V5.7.25_260401_S3000715094.zip), [DS-2DE2C200MW-DE(F0)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780683636/Firmware__V5.7.25_260401_S3000715094.zip)(S7), [DS-2DE2C200MW-DE(F1)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780683636/Firmware__V5.7.25_260401_S3000715094.zip)(S7), [DS-2DE2C400MW-DE(S7)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780683636/Firmware__V5.7.25_260401_S3000715094.zip), [DS-2DE2C400MW-DE(F0)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780683636/Firmware__V5.7.25_260401_S3000715094.zip)(S7), [DS-2DE2C400MW-DE(F1)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780683636/Firmware__V5.7.25_260401_S3000715094.zip)(S7), NK42E1H-1T(WD), [DS-J142I/NK42E1H-1T(WD)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780683636/Firmware__V5.7.25_260401_S3000715094.zip)(C) | 2026-04-01 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780683636/Firmware__V5.7.25_260401_S3000715094.zip) | Fixed some bugs to enhance system stability. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.7.25_260401_Release_Note-E8.pdf) |
 
 </details>
 
@@ -8799,6 +8819,16 @@ Total: 1228
 
 
 <details>
+<summary><h2>DS-TSC300-44H - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 3.3.4 | Applied to: [DS-TSC300-44H](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/TSC_300_CN_STD_V3.3.4_211223.zip) | 2021-12-23 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/TSC_300_CN_STD_V3.3.4_211223.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202207/%E3%80%90Release%20note%E3%80%91Traffic%20Signal%20Controller(TSC300-44H)_V3.3.4_211223.pdf) |
+
+</details>
+
+
+<details>
 <summary><h2>DVR-104G-M1/T - DVR_V4 (2 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
@@ -10429,6 +10459,16 @@ Total: 1228
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 4.85.001 | Applied to: NK842WBH, [DS-J142I](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779956347/Firmware__V4.85.001_251211_S3000693149.zip), NK844WBH, NK844WDH | 2025-12-11 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779956347/Firmware__V4.85.001_251211_S3000693149.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CEUI_NVR_V4.85.001_251211_ReleaseNote.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>NK844WBH - NVR_V4 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.23 | Applied to: NK844WBH, [DS-J142I](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780617965/Firmware__V5.8.23_260403_S3000712856.zip), NK844WDH, NKS4245WBTH, NKS424WBH, NKS424WBPH | 2026-04-03 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780617965/Firmware__V5.8.23_260403_S3000712856.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CEUI_NVR_V4.85.001_251211_ReleaseNote.pdf) |
 
 </details>
 

@@ -4270,5 +4270,21 @@
   "102560": {
     "model": "STI-DLMR30-H1AG-3T150A25F-1E",
     "hardware_version": "UNKNOWN"
+  },
+  "102561": {
+    "model": "NK844WBH",
+    "hardware_version": "NVR_V4"
+  },
+  "102562": {
+    "model": "DS-2CD3121G2E-LIU(/AB)",
+    "hardware_version": "IPC_G0"
+  },
+  "102563": {
+    "model": "DS-2DE2C200MW-DE(S7)",
+    "hardware_version": "IPC_G0"
+  },
+  "102564": {
+    "model": "DS-TSC300-44H",
+    "hardware_version": "UNKNOWN"
   }
 }
