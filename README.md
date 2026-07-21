@@ -134,10 +134,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 | | |
 |--|--|
 | **Status** | ❌ ERROR |
-| **Last run** | 2026-07-20 18:31:15 UTC |
+| **Last run** | 2026-07-21 06:51:35 UTC |
 | **Scraper** | HTTP |
 | **Catalog fetch** | playwright |
-| **Catalog rows parsed** | 996 |
+| **Catalog rows parsed** | 1007 |
 | **Firmware records** | 1230 |
 | **New last run** | 0 |
 | **Test mode** | Disabled |
