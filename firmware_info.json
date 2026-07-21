@@ -906,5 +906,17 @@
   "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CV5.8.2_260324_Release_Notet.pdf": {
     "changes": "Algorithm optimization and updates. 2. Fix some bugs.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CNetwork_Camera-V5.11.0_260701_Release_IPCE_H13U.pdf": {
+    "changes": "Release 3XX3 / 2XX3 AI-ISP cameras · Support animal classification for motion detection · Support wall installation for PRTZ cameras · Support AI encoding",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CK21B1_V5.04.085_build260630_ReleaseNotes.pdf": {
+    "changes": "Modified functions",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CDeepinView_Camera_V5.10.0_release_note.pdf": {
+    "changes": "V5.10.0_260618: Fix some known bugs.",
+    "source": "pdf"
   }
 }

@@ -4286,5 +4286,25 @@
   "102564": {
     "model": "DS-TSC300-44H",
     "hardware_version": "UNKNOWN"
+  },
+  "102565": {
+    "model": "DS-D5022F2-5V2",
+    "hardware_version": "UNKNOWN"
+  },
+  "102566": {
+    "model": "DS-2CD2047G3-LI(2U)Y",
+    "hardware_version": "IPC_G0"
+  },
+  "102567": {
+    "model": "DS-2CD3683G3-LIZSUY",
+    "hardware_version": "IPC_G0"
+  },
+  "102568": {
+    "model": "DS-D5032F3-1V0S",
+    "hardware_version": "UNKNOWN"
+  },
+  "102569": {
+    "model": "DS-D5024F3-2P3",
+    "hardware_version": "UNKNOWN"
   }
 }
