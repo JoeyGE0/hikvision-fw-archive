@@ -4306,5 +4306,25 @@
   "102569": {
     "model": "DS-D5024F3-2P3",
     "hardware_version": "UNKNOWN"
+  },
+  "102570": {
+    "model": "DS-K1T341AM",
+    "hardware_version": "UNKNOWN"
+  },
+  "102571": {
+    "model": "DS-2CD2366G2-I(U)",
+    "hardware_version": "NVR_V4"
+  },
+  "102572": {
+    "model": "DS-2DV6805JXB/PLD-RSG",
+    "hardware_version": "UNKNOWN"
+  },
+  "102573": {
+    "model": "ISD-SC5030S-H2CVL",
+    "hardware_version": "UNKNOWN"
+  },
+  "102574": {
+    "model": "DS-2CD1323G0E-I",
+    "hardware_version": "DVR_V4"
   }
 }
