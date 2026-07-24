@@ -4326,5 +4326,41 @@
   "102574": {
     "model": "DS-2CD1323G0E-I",
     "hardware_version": "DVR_V4"
+  },
+  "102575": {
+    "model": "DS-2CD3063G3-LIU(Y)",
+    "hardware_version": "IPC_G0"
+  },
+  "102576": {
+    "model": "IPC-D129HAA-LU(F)(/SL)(/SRB)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102577": {
+    "model": "DS-2CD1347G3H-LIU(F)(/SL)(/SRB)",
+    "hardware_version": "IPC_G0"
+  },
+  "102578": {
+    "model": "DS-2TD6567T-25H4LX/W",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102579": {
+    "model": "DS-K1T672MW",
+    "hardware_version": "UNKNOWN"
+  },
+  "102580": {
+    "model": "IDS-96128NXI-H16R",
+    "hardware_version": "UNKNOWN"
+  },
+  "102581": {
+    "model": "ISD-ST204D-DHV",
+    "hardware_version": "UNKNOWN"
+  },
+  "102582": {
+    "model": "THC-T120-PIC",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102583": {
+    "model": "AE-DC4015-F5",
+    "hardware_version": "UNKNOWN"
   }
 }
