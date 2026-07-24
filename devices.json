@@ -4362,5 +4362,17 @@
   "102583": {
     "model": "AE-DC4015-F5",
     "hardware_version": "UNKNOWN"
+  },
+  "102584": {
+    "model": "DS-2TD4237-10/V2",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102585": {
+    "model": "DS-2CE12DFT-PIRXOF",
+    "hardware_version": "UNKNOWN"
+  },
+  "102586": {
+    "model": "THC-B323-Z",
+    "hardware_version": "THERMAL_G0"
   }
 }
