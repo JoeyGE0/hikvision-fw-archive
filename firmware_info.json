@@ -922,5 +922,21 @@
   "https://assets.hikvision.com/prd/public/all/files/202301/V5.7.12%20Release%20Note--E7.pdf": {
     "changes": "The new OSD mechanism is imported to prevent frequent Flash wiping by an external third · party using the OSD user-defined characters; · HIK CGI protocol support is removed from O-STD products; · Supports online EZVIZ upgrade, which solved the problem of incomplete memory release of",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CNetwork_Camera-V5.8.40_260701_Release_IPCE_G_H13.pdf": {
+    "changes": "Support animal classification for motion detection · Support wall installation for PRTZ cameras · Support AI encoding · Animal classification is not enable by default in perimeter detection and motion detection",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CV5.9.60_260626_Release_Note.pdf": {
+    "changes": "Algorithm optimization and updates. 2. Fix some bugs.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CV5.11.0_260624_Release_Note.pdf": {
+    "changes": "Support perimeter Lite 2. Support Privacy masking 3. Support main stream image capture 4. Reduce noise during motion zoom process for Product with mic 5. Algorithm optimization and updates. 6. Fix some bugs.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CNetwork_Camera-V5.8.2_260618_Release_IPCE_H_G5.pdf": {
+    "changes": "Fixed the issue where the silicone reset action was not executed during the second power-on · of the PTRZ camera, causing light leakage; ensured the lens cover function works properly · when the device starts up. · Fixed the issue of missing local output formats for the HDMI camera; added support for",
+    "source": "pdf"
   }
 }

@@ -133,23 +133,15 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 | | |
 |--|--|
-| **Status** | ❌ ERROR |
-| **Last run** | 2026-07-25 06:45:07 UTC |
+| **Status** | ✅ SUCCESS |
+| **Last run** | 2026-07-25 18:04:43 UTC |
 | **Scraper** | HTTP |
 | **Catalog fetch** | playwright |
-| **Catalog rows parsed** | 1014 |
-| **Firmware records** | 1267 |
-| **New last run** | 0 |
+| **Catalog rows parsed** | 1031 |
+| **Firmware records** | 1277 |
+| **New last run** | 10 |
 | **Test mode** | Disabled |
 
-
-
-**Recent Errors:**
-- ⚠️ Download failed IDS-7608NXI-I2/8F v4.1.62: Download too small (66 bytes)
-- ⚠️ Download failed IDS-8104AHQXLI-E4 v3.4.84: Download too small (66 bytes)
-- ⚠️ Download failed DS-2TD2336-50 v5.5.8: Download too small (66 bytes)
-- ⚠️ Download failed DS-2TD2466T-25X v5.5.8: Download too small (66 bytes)
-- ⚠️ Download failed DS-2TD2336-100 v4.2.6: Download too small (66 bytes)
 
 
 ---
@@ -158,7 +150,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 Collapsible sections per model and hardware line (newest firmware first within each section).
 
-Total: 1270
+Total: 1280
 
 
 
@@ -1063,10 +1055,11 @@ Total: 1270
 
 
 <details>
-<summary><h2>DS-2CD2067G3-LI(2U)Y - IPC_G0 (2 firmwares)</h2></summary>
+<summary><h2>DS-2CD2067G3-LI(2U)Y - IPC_G0 (3 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.40 | Applied to: [DS-2CD2067G3-LI(2U)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.40_260701_S3000737666.zip)Y, [[DS-2CD2067G3-LI2UY(2.8MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.40_260701_S3000737666.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.40_260701_S3000737666.zip), [DS-2CD2067G3-LI2UY(4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.40_260701_S3000737666.zip), DS-2CD2067G3-LI2UY(2.8MM)(BLACK), [DS-2CD2067G3-LIY(2.8MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.40_260701_S3000737666.zip), [DS-2CD2067G3-LIY(4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.40_260701_S3000737666.zip), [DS-2CD2067G3-LI2UY/S(L)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.40_260701_S3000737666.zip)(RB), [DS-2CD2067G3-LI2UY/SL(2.8MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.40_260701_S3000737666.zip) | 2026-07-01 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.40_260701_S3000737666.zip) | Support animal classification for motion detection · Support wall installation for PRTZ cameras · Support AI encoding · Animal classification is not enable by default in perimeter detection and motion detection · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CNetwork_Camera-V5.8.40_260701_Release_IPCE_G_H13.pdf) |
 | 5.8.32 | Applied to: [DS-2CD2067G3-LI(2U)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784877375/Firmware__V5.8.32_260525_S3000732550.zip)Y, [[DS-2CD2067G3-LI2UY(2.8MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784877375/Firmware__V5.8.32_260525_S3000732550.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784877375/Firmware__V5.8.32_260525_S3000732550.zip), [DS-2CD2067G3-LI2UY(4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784877375/Firmware__V5.8.32_260525_S3000732550.zip), DS-2CD2067G3-LI2UY(2.8MM)(BLACK), [DS-2CD2067G3-LIY(2.8MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784877375/Firmware__V5.8.32_260525_S3000732550.zip), [DS-2CD2067G3-LIY(4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784877375/Firmware__V5.8.32_260525_S3000732550.zip), [DS-2CD2067G3-LI2UY/S(L)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784877375/Firmware__V5.8.32_260525_S3000732550.zip)(RB), [DS-2CD2067G3-LI2UY/SL(2.8MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784877375/Firmware__V5.8.32_260525_S3000732550.zip) | 2026-05-25 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784877375/Firmware__V5.8.32_260525_S3000732550.zip) | Animal and others detection in smart event are both default off. · Fix the issue where all convex privacy masks disappear when the camera is connected to NVR/HC/NVS after · configuring convex privacy masks through the camera web. · Fix the issue that configure human and vehicle options of smart event through NVR, human option can not be · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CNetwork_Camera-V5.8.32_SP3_Release_Note-H13.pdf) |
 | 5.8.30 | Applied to: [DS-2CD2067G3-LI(2U)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1772836007/Firmware__V5.8.30_251210_S3000691342.zip)Y, [[DS-2CD2067G3-LI2UY(2.8MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1772836007/Firmware__V5.8.30_251210_S3000691342.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1772836007/Firmware__V5.8.30_251210_S3000691342.zip), [DS-2CD2067G3-LI2UY(4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1772836007/Firmware__V5.8.30_251210_S3000691342.zip), DS-2CD2067G3-LI2UY(2.8MM)(BLACK), [DS-2CD2067G3-LIY(2.8MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1772836007/Firmware__V5.8.30_251210_S3000691342.zip), [DS-2CD2067G3-LIY(4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1772836007/Firmware__V5.8.30_251210_S3000691342.zip), [DS-2CD2067G3-LI2UY/S(L)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1772836007/Firmware__V5.8.30_251210_S3000691342.zip)(RB), [DS-2CD2067G3-LI2UY/SL(2.8MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1772836007/Firmware__V5.8.30_251210_S3000691342.zip) | 2025-12-10 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1772836007/Firmware__V5.8.30_251210_S3000691342.zip) | 1. New products: 3 series PTRZ camera, 3X6(8)6G3(PTRZ), 3X6(8)7G3(PTRZ). · (1) Support independent or combined movement in P/T/R directions, supports speed adjustment in gears 1 -7, · and maintains consistent position before and after restart and upgrade. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CNetwork_Camera-V5.8.30_Release_Note-H13.pdf) |
 
@@ -1777,6 +1770,16 @@ Total: 1270
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.8.41 | Applied to: [DS-2CD3121G2E-LIU(/AB)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780683636/Firmware__V5.8.41_260401_S3000712799.zip), [DS-2CD3121G2E-LIU(4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780683636/Firmware__V5.8.41_260401_S3000712799.zip) | 2026-04-01 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780683636/Firmware__V5.8.41_260401_S3000712799.zip) | Fixed some bugs to enhance system stability. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5CNetwork_Camera-V5.8.41_260401_Release_Note-E9.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD3146G2-IMS - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.2 | Applied to: [DS-2CD3146G2-IMS](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.2_260618_S3000735893.zip), [DS-2CD3146G2-IMS(2.8MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.2_260618_S3000735893.zip), [DS-2CD3146G2-IMS(4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.2_260618_S3000735893.zip), [DS-2CD3186G2-IMS](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.2_260618_S3000735893.zip), [DS-2CD3186G2-IMS(2.8MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.2_260618_S3000735893.zip), [DS-2CD3186G2-IMS(4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.2_260618_S3000735893.zip), [DS-2CD3746G2H-LIZSU/SL(Y)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.2_260618_S3000735893.zip)(PTRZ), [DS-2CD3746G2H-LIZSU/SLPTRZ(27135)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.2_260618_S3000735893.zip)EFO-STD | 2026-06-18 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.2_260618_S3000735893.zip) | Fixed the issue where the silicone reset action was not executed during the second power-on · of the PTRZ camera, causing light leakage; ensured the lens cover function works properly · when the device starts up. · Fixed the issue of missing local output formats for the HDMI camera; added support for · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CNetwork_Camera-V5.8.2_260618_Release_IPCE_H_G5.pdf) |
 
 </details>
 
@@ -2601,10 +2604,11 @@ Total: 1270
 
 
 <details>
-<summary><h2>DS-2DE2A204IWG1-E - IPC_G0 (1 firmwares)</h2></summary>
+<summary><h2>DS-2DE2A204IWG1-E - IPC_G0 (2 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
+| 5.11.0 | Applied to: [DS-2DE2A204IWG1-E](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.11.0_260624_S3000736239.zip) | 2026-06-24 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.11.0_260624_S3000736239.zip) | Support perimeter Lite 2. Support Privacy masking 3. Support main stream image capture 4. Reduce noise during motion zoom process for Product with mic 5. Algorithm optimization and updates. 6. Fix some bugs. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CV5.11.0_260624_Release_Note.pdf) |
 | 5.9.5 | Applied to: [DS-2DE2A204IWG1-E](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780649800/Firmware__V5.9.51_260403_S3000712992.zip), [DS-2DE2A404IWG1-E](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780649800/Firmware__V5.9.51_260403_S3000712992.zip), [DS-2DE2A604IWG1-E](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780649800/Firmware__V5.9.51_260403_S3000712992.zip) | 2026-04-20 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780649800/Firmware__V5.9.51_260403_S3000712992.zip) | — |
 
 </details>
@@ -3306,10 +3310,11 @@ Total: 1270
 
 
 <details>
-<summary><h2>DS-2DF6A225IWG1-EL - IPC_G0 (1 firmwares)</h2></summary>
+<summary><h2>DS-2DF6A225IWG1-EL - IPC_G0 (2 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
+| 5.9.72 | Applied to: [DS-2DF6A225IWG1-EL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.72_260713_S3000739737.zip), [DS-2DF6A425IWG1-EL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.72_260713_S3000739737.zip), [DS-2DF6A445IWG1-EL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.72_260713_S3000739737.zip), [DS-2DF6A632IWG1-EL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.72_260713_S3000739737.zip), [DS-2DF6A825IXG1-EL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.72_260713_S3000739737.zip), [[DS-2DF6C225IWG1-EL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.72_260713_S3000739737.zip)(W)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.72_260713_S3000739737.zip), DS-2DF6C225IWG1-EL, [DS-2DF6C225IWG1-ELW](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.72_260713_S3000739737.zip) | 2026-07-13 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.72_260713_S3000739737.zip) | — |
 | 5.9.71 | Applied to: [DS-2DF6A225IWG1-EL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.71_260326_S3000713856.zip), [DS-2DF6A425IWG1-EL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.71_260326_S3000713856.zip), [DS-2DF6A632IWG1-EL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.71_260326_S3000713856.zip), [DS-2DF6A825IXG1-EL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.71_260326_S3000713856.zip), [[DS-2DF6C225IWG1-EL](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.71_260326_S3000713856.zip)(W)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.71_260326_S3000713856.zip), [DS-2DF6C225IWG1-ELW](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.71_260326_S3000713856.zip), DS-2DF6C225IWG1-EL, [DS-2DF6C425IWG1-EL(W)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.71_260326_S3000713856.zip) | 2026-03-31 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.71_260326_S3000713856.zip) | — |
 
 </details>
@@ -3508,10 +3513,11 @@ Total: 1270
 
 
 <details>
-<summary><h2>DS-2DP7A410MCG1-LEF/416 - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2DP7A410MCG1-LEF/416 - UNKNOWN (2 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
+| 5.9.61 | Applied to: [DS-2DP7A410MCG1-LEF/416](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.61_260623_S3000737513.zip), [DS-2DP7A410MCG1-LEF/416(F0)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.61_260623_S3000737513.zip), [DS-2DP7A410MCG1-LEF/624](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.61_260623_S3000737513.zip), [DS-2DP7A410MCG1-LEF/624(F0)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.61_260623_S3000737513.zip), [DS-2DP7A410MCG1-LEF/832](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.61_260623_S3000737513.zip), [DS-2DP7A410MCG1-LEF/832(F0)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.61_260623_S3000737513.zip), [DS-2DP7A420MCG1-LEF/416](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.61_260623_S3000737513.zip), [DS-2DP7A420MCG1-LEF/416(F0)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.61_260623_S3000737513.zip) | 2026-06-23 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.61_260623_S3000737513.zip) | — |
 | 5.9.60 | Applied to: [DS-2DP7A410MCG1-LEF/416](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.60_260326_S3000711770.zip), [DS-2DP7A410MCG1-LEF/416(F0)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.60_260326_S3000711770.zip), [DS-2DP7A410MCG1-LEF/624](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.60_260326_S3000711770.zip), [DS-2DP7A410MCG1-LEF/624(F0)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.60_260326_S3000711770.zip), [DS-2DP7A410MCG1-LEF/832](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.60_260326_S3000711770.zip), [DS-2DP7A410MCG1-LEF/832(F0)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.60_260326_S3000711770.zip), [DS-2DP7A420MCG1-LEF/416](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.60_260326_S3000711770.zip), [DS-2DP7A420MCG1-LEF/416(F0)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.60_260326_S3000711770.zip) | 2026-04-08 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.60_260326_S3000711770.zip) | — |
 
 </details>
@@ -3890,6 +3896,16 @@ Total: 1270
 
 
 <details>
+<summary><h2>DS-2SK8C440MXG1-LWF/28(25X25X) - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.9.32 | Applied to: [DS-2SK8C440MXG1-LWF/28(25X25X)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.32_260617_S3000735053.zip) | 2026-06-17 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.32_260617_S3000735053.zip) | — |
+
+</details>
+
+
+<details>
 <summary><h2>DS-2ST4C420MWG-E/14(PA) - UNKNOWN (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
@@ -3904,7 +3920,7 @@ Total: 1270
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 5.9.60 | Applied to: [DS-2ST5C425MWG-E(W)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.60_260326_S3000711712.zip)/26(PA), [DS-2ST5C425MWG-EW/26(PA)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.60_260326_S3000711712.zip)(F0), [DS-2ST5C432MWG-E(W)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.60_260326_S3000711712.zip)/26(PA), [DS-2ST5C432MWG-EW/26(PA)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.60_260326_S3000711712.zip)(F0), [[DS-2ST5C432MWG-EW/4G/14(PA)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.60_260326_S3000711712.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.60_260326_S3000711712.zip), DS-2ST5C432MWG-EW/4G/14(PA)(F1) | 2026-03-26 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.60_260326_S3000711712.zip) | — |
+| 5.9.60 | Applied to: [DS-2ST5C425MWG-E(W)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.60_260326_S3000711712.zip)/26(PA), [DS-2ST5C425MWG-EW/26(PA)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.60_260326_S3000711712.zip)(F0), [DS-2ST5C432MWG-E(W)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.60_260326_S3000711712.zip)/26(PA), [DS-2ST5C432MWG-EW/26(PA)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.60_260326_S3000711712.zip)(F0), [[DS-2ST5C432MWG-EW/4G/14(PA)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.60_260326_S3000711712.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.60_260326_S3000711712.zip), DS-2ST5C432MWG-EW/4G/14(PA)(F1) | 2026-03-26 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780911390/Firmware__V5.9.60_260326_S3000711712.zip) | Algorithm optimization and updates. 2. Fix some bugs. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CV5.9.60_260626_Release_Note.pdf) |
 
 </details>
 
@@ -5753,20 +5769,22 @@ Total: 1270
 
 
 <details>
-<summary><h2>DS-3WAP621E-SI - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-3WAP621E-SI - UNKNOWN (2 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
+| 1.1.6602 | Applied to: [DS-3WAP621E-SI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.6602_260526_S3000739296.zip) | 2026-05-26 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.6602_260526_S3000739296.zip) | — |
 | 1.1.6601 | Applied to: [DS-3WAP621E-SI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779821021/Firmware__V1.1.6601_251223_S3000698255.zip) | 2025-12-23 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779821021/Firmware__V1.1.6601_251223_S3000698255.zip) | — |
 
 </details>
 
 
 <details>
-<summary><h2>DS-3WAP622E-SI - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-3WAP622E-SI - UNKNOWN (2 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
+| 1.1.6602 | Applied to: [DS-3WAP622E-SI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.6602_260526_S3000739301.zip) | 2026-05-26 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.6602_260526_S3000739301.zip) | — |
 | 1.1.6601 | Applied to: [DS-3WAP622E-SI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779821021/Firmware__V1.1.6601_251223_S3000698254.zip) | 2025-12-23 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779821021/Firmware__V1.1.6601_251223_S3000698254.zip) | — |
 
 </details>
@@ -8983,10 +9001,11 @@ Total: 1270
 
 
 <details>
-<summary><h2>DS-TP50-16R - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-TP50-16R - UNKNOWN (2 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
+| 5.6.0 | Applied to: [DS-TP50-16R](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.6.0_260710_S3000738875.zip), [DS-TP50-16R/4T](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.6.0_260710_S3000738875.zip) | 2026-07-10 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.6.0_260710_S3000738875.zip) | — |
 | 5.5.14 | Applied to: [DS-TP50-16R](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781426682/Firmware__V5.5.14_260302_S3000706410.zip), [DS-TP50-16R/4T](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781426682/Firmware__V5.5.14_260302_S3000706410.zip) | 2026-05-20 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781426682/Firmware__V5.5.14_260302_S3000706410.zip) | — |
 
 </details>
@@ -9348,6 +9367,16 @@ Total: 1270
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.5.141 | Applied to: HM-TD5528T-10/W, HM-TD5528T-15/W, HM-TD5537T-15/W, HM-TD5537T-25/W, HM-TD5537T-7/W, HM-TD5567T-15/W, HM-TD5567T-25/W, HM-TD5567T-7/W | 2026-04-16 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780531020/Firmware__V5.5.141_260416_S3000716151.zip) | 1.1 Issues fixes： 1) Fixed known software issues. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CGeneral_Firmware_Update_Release_notes.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>HM-TD6338-50C4L/G0/T2Y - THERMAL_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.11 | Applied to: HM-TD6338-50C4L/G0/T2Y, HM-TD6338-75C4L/G0/T2Y, HM-TD6368-100C4L/G0/T2Y, HM-TD6368-130ZC4L/G0/T2Y, HM-TD6368-50C4L/G0/T2Y, HM-TD6368-75C4L/G0/T2Y | 2026-07-16 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.11_260716_S3000740058.zip) | — |
 
 </details>
 

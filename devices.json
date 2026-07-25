@@ -4374,5 +4374,17 @@
   "102586": {
     "model": "THC-B323-Z",
     "hardware_version": "THERMAL_G0"
+  },
+  "102587": {
+    "model": "HM-TD6338-50C4L/G0/T2Y",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102588": {
+    "model": "DS-2CD3146G2-IMS",
+    "hardware_version": "IPC_G0"
+  },
+  "102589": {
+    "model": "DS-2SK8C440MXG1-LWF/28(25X25X)",
+    "hardware_version": "UNKNOWN"
   }
 }
