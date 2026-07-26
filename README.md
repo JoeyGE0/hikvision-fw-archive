@@ -134,12 +134,12 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 | | |
 |--|--|
 | **Status** | ❌ ERROR |
-| **Last run** | 2026-07-26 07:16:20 UTC |
+| **Last run** | 2026-07-26 17:40:54 UTC |
 | **Scraper** | HTTP |
 | **Catalog fetch** | playwright |
 | **Catalog rows parsed** | 1031 |
 | **Firmware records** | 1279 |
-| **New last run** | 2 |
+| **New last run** | 0 |
 | **Test mode** | Disabled |
 
 
@@ -285,7 +285,7 @@ Total: 1282
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 1.2.4 | Applied to: [[AE-DC5313-C6](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1768972519/Firmware__V1.2.4_221209_S3000475000.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1768972519/Firmware__V1.2.4_221209_S3000475000.zip), [AE-DC5313-C6(ITALY SRL)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1768972519/Firmware__V1.2.4_221209_S3000475000.zip)(CE&AMP;FCC), [AE-DC5313-C6(POLAND SP)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1768972519/Firmware__V1.2.4_221209_S3000475000.zip)(CE&AMP;FCC), [AE-DC5313-C6(COLOMBIA S A S)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1768972519/Firmware__V1.2.4_221209_S3000475000.zip)(CE&AMP;FCC), AE-DC5313-C6ООО ХИКВИЖН)(CE&AMP;FCC), [AE-DC5313-C6PRO](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1768972519/Firmware__V1.2.4_221209_S3000475000.zip), [AE-DC5313-C6PRO/BG](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1768972519/Firmware__V1.2.4_221209_S3000475000.zip), [AE-DC5313-C6PRO-V(VIE)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1768972519/Firmware__V1.2.4_221209_S3000475000.zip)(GPS)(CE&AMP;FCC) | 2022-12-09 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1768972519/Firmware__V1.2.4_221209_S3000475000.zip) | — |
-| 1.1.6 | Applied to: [[AE-DC5313-C6](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785002683/Firmware__V1.1.6602_260526_S3000739296.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785002683/Firmware__V1.1.6602_260526_S3000739296.zip), [AE-DC5313-C6(ITALY SRL)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785002683/Firmware__V1.1.6602_260526_S3000739296.zip)(CE&AMP;FCC), [AE-DC5313-C6(POLAND SP)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785002683/Firmware__V1.1.6602_260526_S3000739296.zip)(CE&AMP;FCC), [AE-DC5313-C6(COLOMBIA S A S)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785002683/Firmware__V1.1.6602_260526_S3000739296.zip)(CE&AMP;FCC), AE-DC5313-C6ООО ХИКВИЖН)(CE&AMP;FCC) | 2022-09-20 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785002683/Firmware__V1.1.6602_260526_S3000739296.zip) | — |
+| 1.1.6 | Applied to: [[AE-DC5313-C6](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip), [AE-DC5313-C6(ITALY SRL)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip)(CE&AMP;FCC), [AE-DC5313-C6(POLAND SP)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip)(CE&AMP;FCC), [AE-DC5313-C6(COLOMBIA S A S)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip)(CE&AMP;FCC), AE-DC5313-C6ООО ХИКВИЖН)(CE&AMP;FCC) | 2022-09-20 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip) | — |
 | 1.1.10 | Applied to: [[AE-DC5313-C6](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1768972519/DashCam_AE_DC5313_C6_CN_STD_V1.1.10_build220223.zip)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1768972519/DashCam_AE_DC5313_C6_CN_STD_V1.1.10_build220223.zip), [AE-DC5313-C6(ITALY SRL)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1768972519/DashCam_AE_DC5313_C6_CN_STD_V1.1.10_build220223.zip)(CE&AMP;FCC), [AE-DC5313-C6(POLAND SP)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1768972519/DashCam_AE_DC5313_C6_CN_STD_V1.1.10_build220223.zip)(CE&AMP;FCC), [AE-DC5313-C6(COLOMBIA S A S)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1768972519/DashCam_AE_DC5313_C6_CN_STD_V1.1.10_build220223.zip)(CE&AMP;FCC), AE-DC5313-C6ООО ХИКВИЖН)(CE&AMP;FCC) | 2022-02-23 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1768972519/DashCam_AE_DC5313_C6_CN_STD_V1.1.10_build220223.zip) | — |
 
 </details>
@@ -296,7 +296,7 @@ Total: 1282
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 1.1.6 | Applied to: [AE-DC5313-C6PRO](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785002683/Firmware__V1.1.6602_260526_S3000739296.zip), [AE-DC5313-C6PRO/BG](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785002683/Firmware__V1.1.6602_260526_S3000739296.zip), [AE-DC5313-C6PRO-V(VIE)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785002683/Firmware__V1.1.6602_260526_S3000739296.zip)(GPS)(CE&AMP;FCC), [AE-DC5313-C6PRO(POLAND)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785002683/Firmware__V1.1.6602_260526_S3000739296.zip)(GPS)(CE&AMP;FCC), [AE-DC5313-C6PRO(GPS)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785002683/Firmware__V1.1.6602_260526_S3000739296.zip)(CE&AMP;FCC), [AE-DC5313-C6PRO(ITALY SRL)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785002683/Firmware__V1.1.6602_260526_S3000739296.zip)GPS CE&AMP;FCC, [AE-DC5313-C6PRO(COLOMBIA SAS)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785002683/Firmware__V1.1.6602_260526_S3000739296.zip)GPS(CE&AMP;FCC) | 2021-10-28 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785002683/Firmware__V1.1.6602_260526_S3000739296.zip) | — |
+| 1.1.6 | Applied to: [AE-DC5313-C6PRO](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip), [AE-DC5313-C6PRO/BG](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip), [AE-DC5313-C6PRO-V(VIE)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip)(GPS)(CE&AMP;FCC), [AE-DC5313-C6PRO(POLAND)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip)(GPS)(CE&AMP;FCC), [AE-DC5313-C6PRO(GPS)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip)(CE&AMP;FCC), [AE-DC5313-C6PRO(ITALY SRL)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip)GPS CE&AMP;FCC, [AE-DC5313-C6PRO(COLOMBIA SAS)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip)GPS(CE&AMP;FCC) | 2021-10-28 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip) | — |
 | 1.1.3 | Applied to: [AE-DC5313-C6PRO](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1768972519/DashCam_AE_DC5313_C6_CN_STD_V1.1.3_build201023.zip), [AE-DC5313-C6PRO/BG](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1768972519/DashCam_AE_DC5313_C6_CN_STD_V1.1.3_build201023.zip), [AE-DC5313-C6PRO-V(VIE)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1768972519/DashCam_AE_DC5313_C6_CN_STD_V1.1.3_build201023.zip)(GPS)(CE&AMP;FCC), [AE-DC5313-C6PRO(POLAND)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1768972519/DashCam_AE_DC5313_C6_CN_STD_V1.1.3_build201023.zip)(GPS)(CE&AMP;FCC), [AE-DC5313-C6PRO(GPS)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1768972519/DashCam_AE_DC5313_C6_CN_STD_V1.1.3_build201023.zip)(CE&AMP;FCC), [AE-DC5313-C6PRO(ITALY SRL)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1768972519/DashCam_AE_DC5313_C6_CN_STD_V1.1.3_build201023.zip)GPS CE&AMP;FCC, [AE-DC5313-C6PRO(COLOMBIA SAS)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1768972519/DashCam_AE_DC5313_C6_CN_STD_V1.1.3_build201023.zip)GPS(CE&AMP;FCC) | 2020-10-23 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1768972519/DashCam_AE_DC5313_C6_CN_STD_V1.1.3_build201023.zip) | — |
 
 </details>
@@ -5759,7 +5759,7 @@ Total: 1282
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 1.1.6602 | Applied to: [DS-3WAP522-SI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785002683/Firmware__V1.1.6602_260526_S3000739296.zip) | 2026-05-26 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785002683/Firmware__V1.1.6602_260526_S3000739296.zip) | — |
+| 1.1.6602 | Applied to: [DS-3WAP522-SI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip) | 2026-05-26 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip) | — |
 | 1.1.6601 | Applied to: [DS-3WAP522-SI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779821021/Firmware__V1.1.6601_251223_S3000698255.zip) | 2025-12-23 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779821021/Firmware__V1.1.6601_251223_S3000698255.zip) | — |
 
 </details>
@@ -5781,7 +5781,7 @@ Total: 1282
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 1.1.6602 | Applied to: [DS-3WAP621E-SI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785002683/Firmware__V1.1.6602_260526_S3000739296.zip) | 2026-05-26 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785002683/Firmware__V1.1.6602_260526_S3000739296.zip) | — |
+| 1.1.6602 | Applied to: [DS-3WAP621E-SI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip) | 2026-05-26 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip) | — |
 | 1.1.6601 | Applied to: [DS-3WAP621E-SI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779821021/Firmware__V1.1.6601_251223_S3000698255.zip) | 2025-12-23 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779821021/Firmware__V1.1.6601_251223_S3000698255.zip) | — |
 
 </details>
@@ -5792,7 +5792,7 @@ Total: 1282
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 1.1.6602 | Applied to: [DS-3WAP622E-SI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785002683/Firmware__V1.1.6602_260526_S3000739301.zip) | 2026-05-26 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785002683/Firmware__V1.1.6602_260526_S3000739301.zip) | — |
+| 1.1.6602 | Applied to: [DS-3WAP622E-SI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip) | 2026-05-26 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip) | — |
 | 1.1.6601 | Applied to: [DS-3WAP622E-SI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779821021/Firmware__V1.1.6601_251223_S3000698254.zip) | 2025-12-23 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779821021/Firmware__V1.1.6601_251223_S3000698254.zip) | — |
 
 </details>
@@ -5803,7 +5803,7 @@ Total: 1282
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 1.1.6602 | Applied to: [DS-3WAP622G-SI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.6602_260526_S3000739299.zip) | 2026-05-26 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.6602_260526_S3000739299.zip) | — |
+| 1.1.6602 | Applied to: [DS-3WAP622G-SI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip) | 2026-05-26 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip) | — |
 | 1.1.6601 | Applied to: [DS-3WAP622G-SI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779821021/Firmware__V1.1.6601_251223_S3000698255.zip) | 2025-12-23 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779821021/Firmware__V1.1.6601_251223_S3000698255.zip) | — |
 
 </details>
@@ -5814,7 +5814,7 @@ Total: 1282
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 1.1.6602 | Applied to: [DS-3WAP623E-SI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.6602_260526_S3000739294.zip) | 2026-05-26 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.1.6602_260526_S3000739294.zip) | — |
+| 1.1.6602 | Applied to: [DS-3WAP623E-SI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739294.zip) | 2026-05-26 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739294.zip) | — |
 | 1.1.6601 | Applied to: [DS-3WAP623E-SI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779821021/Firmware__V1.1.6601_251223_S3000698256.zip) | 2025-12-23 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779821021/Firmware__V1.1.6601_251223_S3000698256.zip) | — |
 
 </details>
@@ -6814,7 +6814,7 @@ Total: 1282
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 1.1.6 | Applied to: [DS-D5043F3-1V0S](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785002683/Firmware__V1.1.6602_260526_S3000739296.zip), [DS-D5043F3-1V0S(EU)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785002683/Firmware__V1.1.6602_260526_S3000739296.zip) | 2024-08-16 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785002683/Firmware__V1.1.6602_260526_S3000739296.zip) | — |
+| 1.1.6 | Applied to: [DS-D5043F3-1V0S](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip), [DS-D5043F3-1V0S(EU)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip) | 2024-08-16 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip) | — |
 
 </details>
 

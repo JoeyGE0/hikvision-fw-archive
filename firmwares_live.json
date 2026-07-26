@@ -31074,7 +31074,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.1.6",
     "date": "2024-08-16",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785002683/Firmware__V1.1.6602_260526_S3000739296.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip",
     "filename": "Firmware__V1.1.6602_260526_S3000739299.zip",
     "supported_models": [
       "DS-D5043F3-1V0S",
@@ -35567,7 +35567,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.1.6",
     "date": "2022-09-20",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785002683/Firmware__V1.1.6602_260526_S3000739296.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip",
     "filename": "Firmware__V1.1.6602_260526_S3000739299.zip",
     "supported_models": [
       "AE-DC5313-C6",
@@ -37009,7 +37009,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.1.6",
     "date": "2021-10-28",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785002683/Firmware__V1.1.6602_260526_S3000739296.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip",
     "filename": "Firmware__V1.1.6602_260526_S3000739299.zip",
     "supported_models": [
       "AE-DC5313-C6PRO",
@@ -42190,7 +42190,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.1.6602",
     "date": "2026-05-26",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785002683/Firmware__V1.1.6602_260526_S3000739296.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip",
     "filename": "Firmware__V1.1.6602_260526_S3000739299.zip",
     "supported_models": [
       "DS-3WAP522-SI"
@@ -42898,7 +42898,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.1.6602",
     "date": "2026-05-26",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785002683/Firmware__V1.1.6602_260526_S3000739296.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip",
     "filename": "Firmware__V1.1.6602_260526_S3000739299.zip",
     "supported_models": [
       "DS-3WAP621E-SI"
@@ -42915,7 +42915,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.1.6602",
     "date": "2026-05-26",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785002683/Firmware__V1.1.6602_260526_S3000739301.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip",
     "filename": "Firmware__V1.1.6602_260526_S3000739299.zip",
     "supported_models": [
       "DS-3WAP622E-SI"
@@ -42932,7 +42932,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.1.6602",
     "date": "2026-05-26",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739299.zip",
     "filename": "Firmware__V1.1.6602_260526_S3000739299.zip",
     "supported_models": [
       "DS-3WAP622G-SI"
@@ -42949,7 +42949,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.1.6602",
     "date": "2026-05-26",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785050180/Firmware__V1.1.6602_260526_S3000739294.zip",
     "filename": "Firmware__V1.1.6602_260526_S3000739294.zip",
     "supported_models": [
       "DS-3WAP623E-SI"
