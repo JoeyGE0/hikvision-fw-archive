@@ -4394,5 +4394,213 @@
   "102591": {
     "model": "HM-TD8168-150E4F/G0/T2",
     "hardware_version": "THERMAL_G0"
+  },
+  "102592": {
+    "model": "DS-2DE4225W-DE(S6)",
+    "hardware_version": "IPC_G0"
+  },
+  "102593": {
+    "model": "DS-3E1518P-EI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102594": {
+    "model": "DS-2CD2187G3-LI(S2U)Y",
+    "hardware_version": "IPC_G0"
+  },
+  "102595": {
+    "model": "DS-2DP3236ZIXS-D/440(F0)(P5)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102596": {
+    "model": "DS-2DF8C842IXG1-EL(W)(Y)",
+    "hardware_version": "IPC_G0"
+  },
+  "102597": {
+    "model": "DS-2TD2137-4/PY",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102598": {
+    "model": "DS-2TD2367-75/PY",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102599": {
+    "model": "DS-2TD4228T-10/S2",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102600": {
+    "model": "DS-2DF6C431-CX(T5/316L)",
+    "hardware_version": "IPC_G0"
+  },
+  "102601": {
+    "model": "DS-2CV1043G2-LIDW(F)(B)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102602": {
+    "model": "DS-2CD2D25G1/M-D/NF",
+    "hardware_version": "IPC_G0"
+  },
+  "102603": {
+    "model": "DS-2DE3404W-DE(T5)",
+    "hardware_version": "IPC_G0"
+  },
+  "102604": {
+    "model": "DS-2DE5225W-AE(T5)",
+    "hardware_version": "IPC_G0"
+  },
+  "102605": {
+    "model": "DS-2DE2C400MWG-E",
+    "hardware_version": "IPC_G0"
+  },
+  "102606": {
+    "model": "DS-2DP1618ZIXS-DE/440(F0)(P4)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102607": {
+    "model": "EKI-K164T412C(B VERSION)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102608": {
+    "model": "EKI-K82T46C",
+    "hardware_version": "UNKNOWN"
+  },
+  "102609": {
+    "model": "IK-4144TH-MH/P",
+    "hardware_version": "UNKNOWN"
+  },
+  "102610": {
+    "model": "IK-4248TH-MH/PL",
+    "hardware_version": "NVR_V4"
+  },
+  "102611": {
+    "model": "IK-4284TH-MH/PH/P",
+    "hardware_version": "NVR_V4"
+  },
+  "102612": {
+    "model": "DS-2DF5232X-AE3(T5)",
+    "hardware_version": "IPC_G0"
+  },
+  "102613": {
+    "model": "DS-2SF8C442MXG-ELW/26",
+    "hardware_version": "UNKNOWN"
+  },
+  "102614": {
+    "model": "DS-2DE2A404IW-DE3(S6)",
+    "hardware_version": "IPC_G0"
+  },
+  "102615": {
+    "model": "DS-2XE6825G0-IZHS(B)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102616": {
+    "model": "DS-2CD3346G2H-LISU/SL",
+    "hardware_version": "IPC_G0"
+  },
+  "102617": {
+    "model": "DS-2SE3C404MWG-E/14(2.8MM)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102618": {
+    "model": "DS-2SE4C225MWG-E/12(F0)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102619": {
+    "model": "DS-2SE4C425MWG-E/26(F0)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102620": {
+    "model": "HM-TD1017-1/QW-HS111",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102621": {
+    "model": "DS-2DE7A432IW-AEB(T5)",
+    "hardware_version": "IPC_G0"
+  },
+  "102622": {
+    "model": "DS-2SE7C432MW-AEB(14F1)(P3)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102623": {
+    "model": "DS-2SE7C432MWG-EB/26(F0)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102624": {
+    "model": "DS-2XC6047G0-L(S) (PA)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102625": {
+    "model": "DS-2CD2043G2-I(U)",
+    "hardware_version": "IPC_G0"
+  },
+  "102626": {
+    "model": "DS-2CD3D46G2T-IZMSU",
+    "hardware_version": "IPC_G0"
+  },
+  "102627": {
+    "model": "DS-3E1506P-EI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102628": {
+    "model": "DS-K1T805MBWX",
+    "hardware_version": "UNKNOWN"
+  },
+  "102629": {
+    "model": "EKI-K164T412L",
+    "hardware_version": "NVR_V4"
+  },
+  "102630": {
+    "model": "IK-4248TH-MH/P#CA",
+    "hardware_version": "NVR_V4"
+  },
+  "102631": {
+    "model": "DS-3E1552P-SI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102632": {
+    "model": "DS-3E1526P-EI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102633": {
+    "model": "DS-3WF3000-EI-5AC/P",
+    "hardware_version": "UNKNOWN"
+  },
+  "102634": {
+    "model": "DS-96128NI-H24R",
+    "hardware_version": "UNKNOWN"
+  },
+  "102635": {
+    "model": "DS-2CD2147G3-LI(S2U)Y",
+    "hardware_version": "IPC_G0"
+  },
+  "102636": {
+    "model": "DS-QAE1A80G1-VB",
+    "hardware_version": "UNKNOWN"
+  },
+  "102637": {
+    "model": "DS-QAZ1206G1-BE",
+    "hardware_version": "UNKNOWN"
+  },
+  "102638": {
+    "model": "ISD-SMG318LT-D",
+    "hardware_version": "UNKNOWN"
+  },
+  "102639": {
+    "model": "DS-2CD63C5G0-IS(B)",
+    "hardware_version": "IPC_G0"
+  },
+  "102640": {
+    "model": "DS-2CD63C5G0E(-S)/RC",
+    "hardware_version": "IPC_G0"
+  },
+  "102641": {
+    "model": "ECI-D14F2",
+    "hardware_version": "UNKNOWN"
+  },
+  "102642": {
+    "model": "IDS-2CD7A46G0/P-IZHS(Y)",
+    "hardware_version": "IPC_G0"
+  },
+  "102643": {
+    "model": "PCI-B15Z2S",
+    "hardware_version": "UNKNOWN"
   }
 }

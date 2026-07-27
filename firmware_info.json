@@ -938,5 +938,9 @@
   "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CNetwork_Camera-V5.8.2_260618_Release_IPCE_H_G5.pdf": {
     "changes": "Fixed the issue where the silicone reset action was not executed during the second power-on · of the PTRZ camera, causing light leakage; ensured the lens cover function works properly · when the device starts up. · Fixed the issue of missing local output formats for the HDMI camera; added support for",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CK9B2_V4.75.207build240604_ReleaseNotes.pdf": {
+    "changes": "Modified functions · Compatible with Toshiba disks · HIKVISION DS20HKVS-VH1 · HIKVISION DS40HKVS-VH1",
+    "source": "pdf"
   }
 }
