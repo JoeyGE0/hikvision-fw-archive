@@ -4602,5 +4602,81 @@
   "102643": {
     "model": "PCI-B15Z2S",
     "hardware_version": "UNKNOWN"
+  },
+  "102644": {
+    "model": "IDS-2CD7146G2-IZ(H)S(Y)(1T)",
+    "hardware_version": "IPC_G0"
+  },
+  "102645": {
+    "model": "DS-2CD2067G3-LI2UY/SL",
+    "hardware_version": "IPC_G0"
+  },
+  "102646": {
+    "model": "DS-7608NI-M2/8P#AUS",
+    "hardware_version": "NVR_G0"
+  },
+  "102647": {
+    "model": "IDS-2CD5387G2/V-XS",
+    "hardware_version": "IPC_G0"
+  },
+  "102648": {
+    "model": "DS-KH7300EY-WTE2/WHITE",
+    "hardware_version": "UNKNOWN"
+  },
+  "102649": {
+    "model": "DS-2DE4425W-DE3(S6)",
+    "hardware_version": "IPC_G0"
+  },
+  "102650": {
+    "model": "DS-KIS602(C)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102651": {
+    "model": "DS-2DF8442IXG1-EL(W)(Y)",
+    "hardware_version": "IPC_G0"
+  },
+  "102652": {
+    "model": "DS-2TD2167-15/PY",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102653": {
+    "model": "DS-2CD2387G3P-LIS2UY/SL",
+    "hardware_version": "IPC_G0"
+  },
+  "102654": {
+    "model": "HM-TD2638-10/G0/T1Y",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102655": {
+    "model": "DS-7616NI-M2/16P",
+    "hardware_version": "NVR_G0"
+  },
+  "102656": {
+    "model": "DS-2CD6825G0/C-IV(S)(B)",
+    "hardware_version": "IPC_G0"
+  },
+  "102657": {
+    "model": "DS-2ST5C432MWG-E(W)/26(PA)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102658": {
+    "model": "DS-KH6320-LE1(B)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102659": {
+    "model": "DS-KH6320-WTDE1",
+    "hardware_version": "UNKNOWN"
+  },
+  "102660": {
+    "model": "DS-KH8381-WTE1",
+    "hardware_version": "UNKNOWN"
+  },
+  "102661": {
+    "model": "DS-D2049UL-0A",
+    "hardware_version": "UNKNOWN"
+  },
+  "102662": {
+    "model": "DS-MCW409",
+    "hardware_version": "UNKNOWN"
   }
 }
