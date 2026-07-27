@@ -4386,5 +4386,13 @@
   "102589": {
     "model": "DS-2SK8C440MXG1-LWF/28(25X25X)",
     "hardware_version": "UNKNOWN"
+  },
+  "102590": {
+    "model": "DS-2CD3023G3-LIU(Y)",
+    "hardware_version": "IPC_G0"
+  },
+  "102591": {
+    "model": "HM-TD8168-150E4F/G0/T2",
+    "hardware_version": "THERMAL_G0"
   }
 }
