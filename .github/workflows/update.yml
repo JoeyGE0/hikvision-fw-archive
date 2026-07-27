@@ -5,6 +5,11 @@ on:
     # Run twice daily at 4:20 AM and PM UTC
     - cron: "20 4,16 * * *"
   workflow_dispatch: # Allow manual triggering
+    inputs:
+      firmware_region:
+        description: "Force catalog region (en, us-en, ca-en, au-en, uk-en, eu-en). Leave blank to rotate."
+        required: false
+        default: ""
 
 jobs:
   auto-update:
@@ -12,6 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+      FIRMWARE_REGION: ${{ github.event.inputs.firmware_region || '' }}
     permissions:
       contents: write
     outputs:
@@ -54,10 +60,10 @@ jobs:
 
           # Show download summary from logs
           echo "=== Download Summary ==="
-          echo "$SCRAPER_OUTPUT" | grep -E "(Fetching firmware catalog|Parsed [0-9]+ firmware|Download limit|Download Summary|NEW firmware|Caught up|Catalog only|\[PRIORITY\]|Priority-first|Healed|Updated archived)" || echo "No download messages found"
+          echo "$SCRAPER_OUTPUT" | grep -E "(Catalog region|Fetching firmware catalog|Parsed [0-9]+ firmware|Download limit|Download Summary|NEW firmware|Caught up|Catalog only|\[PRIORITY\]|Priority-first|Healed|Updated archived)" || echo "No download messages found"
           echo ""
           echo "=== Catalog / Status ==="
-          python3 -c "import json; s=json.load(open('status.json')); print('catalog_fetch:', s.get('catalog_fetch')); print('catalog_entries:', s.get('catalog_entries')); print('new_firmwares:', s.get('new_firmwares')); print('status:', s.get('status'))" 2>/dev/null || true
+          python3 -c "import json; s=json.load(open('status.json')); print('catalog_region:', s.get('catalog_region')); print('catalog_fetch:', s.get('catalog_fetch')); print('catalog_entries:', s.get('catalog_entries')); print('new_firmwares:', s.get('new_firmwares')); print('status:', s.get('status')); print('errors:', s.get('errors', [])[:3])" 2>/dev/null || true
           echo "========================"
 
           # Default to 0 if output is empty or not a number

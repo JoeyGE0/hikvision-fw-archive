@@ -50,7 +50,37 @@ if 'GITHUB_ACTIONS' in os.environ:
     logger.addHandler(handler)
 
 BASE_URL = "https://www.hikvision.com"
-FIRMWARE_URL = f"{BASE_URL}/en/support/download/firmware/"
+
+# Regional firmware catalogs differ (US vs CA vs AU, etc.). Cron rotates one region
+# per run; override with FIRMWARE_REGION=ca-en or FIRMWARE_REGIONS=en,ca-en,au-en.
+DEFAULT_FIRMWARE_REGIONS = (
+    'en',
+    'us-en',
+    'ca-en',
+    'au-en',
+    'uk-en',
+    'eu-en',
+)
+
+
+def firmware_regions() -> List[str]:
+    """Ordered region codes to rotate through."""
+    raw = os.environ.get('FIRMWARE_REGIONS', '').strip()
+    if raw:
+        return [part.strip().lower() for part in raw.split(',') if part.strip()]
+    return list(DEFAULT_FIRMWARE_REGIONS)
+
+
+def catalog_url_for_region(region: str) -> str:
+    return f"{BASE_URL}/{region.strip().strip('/')}/support/download/firmware/"
+
+
+def home_url_for_region(region: str) -> str:
+    return f"{BASE_URL}/{region.strip().strip('/')}/"
+
+
+# Back-compat default (updated per-run on the scraper instance).
+FIRMWARE_URL = catalog_url_for_region('en')
 
 HTTP_USER_AGENT = (
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
@@ -113,6 +143,9 @@ class HikvisionScraper:
         self.errors = []
         self._catalog_fetch_method = 'unknown'
         self._catalog_entry_count = 0
+        self._catalog_region = 'en'
+        self.firmware_url = catalog_url_for_region(self._catalog_region)
+        self.home_url = home_url_for_region(self._catalog_region)
         self._priority_patterns: List[str] = []
         self._priority_one_shot = False
         self._release_filename_urls: Dict[str, str] = {}
@@ -124,6 +157,51 @@ class HikvisionScraper:
             'errors': [],
             'test_mode': TEST_MODE
         }
+
+    def apply_catalog_region(self, region: str) -> str:
+        """Set active regional catalog URLs for this run."""
+        region = (region or 'en').strip().lower().strip('/')
+        self._catalog_region = region
+        self.firmware_url = catalog_url_for_region(region)
+        self.home_url = home_url_for_region(region)
+        return region
+
+    def select_catalog_region(self) -> str:
+        """Pick region for this run: FIRMWARE_REGION override, else round-robin."""
+        regions = firmware_regions()
+        if not regions:
+            regions = list(DEFAULT_FIRMWARE_REGIONS)
+
+        forced = os.environ.get('FIRMWARE_REGION', '').strip().lower().strip('/')
+        if forced:
+            if forced not in regions:
+                logger.warning(
+                    '  ⚠ FIRMWARE_REGION=%s is not in FIRMWARE_REGIONS=%s — using it anyway',
+                    forced,
+                    ','.join(regions),
+                )
+            logger.info('  → Catalog region forced: %s', forced)
+            return self.apply_catalog_region(forced)
+
+        last = ''
+        try:
+            previous = load_json('status.json') or {}
+            last = str(previous.get('catalog_region') or '').strip().lower().strip('/')
+        except Exception:
+            last = ''
+
+        if last in regions:
+            next_region = regions[(regions.index(last) + 1) % len(regions)]
+        else:
+            next_region = regions[0]
+
+        logger.info(
+            '  → Catalog region rotate: last=%s → %s (pool: %s)',
+            last or '(none)',
+            next_region,
+            ','.join(regions),
+        )
+        return self.apply_catalog_region(next_region)
         
     def extract_model(self, text: str) -> Optional[str]:
         """Extract model from text."""
@@ -800,16 +878,21 @@ class HikvisionScraper:
             return None
         session = requests.Session()
         last_size = 0
+        home_url = self.home_url
+        firmware_url = self.firmware_url
         for attempt in range(1, 4):
-            logger.info(f'  → Fetching firmware catalog page (HTTP, attempt {attempt}/3)...')
+            logger.info(
+                f'  → Fetching firmware catalog page [{self._catalog_region}] '
+                f'(HTTP, attempt {attempt}/3)...'
+            )
             t0 = time.time()
             try:
                 session.headers.update(HTTP_HEADERS)
-                session.get(f'{BASE_URL}/en/', timeout=60)
+                session.get(home_url, timeout=60)
                 time.sleep(0.5)
-                session.headers['Referer'] = f'{BASE_URL}/en/'
+                session.headers['Referer'] = home_url
                 session.headers['Sec-Fetch-Site'] = 'same-origin'
-                response = session.get(FIRMWARE_URL, timeout=120)
+                response = session.get(firmware_url, timeout=120)
                 response.raise_for_status()
                 html = response.text
                 last_size = len(response.content)
@@ -836,24 +919,29 @@ class HikvisionScraper:
                 'Catalog page blocked over HTTP and Playwright is not installed. '
                 'pip install playwright && playwright install chromium'
             )
-        logger.info('  → Fetching firmware catalog (Playwright API request)...')
+        home_url = self.home_url
+        firmware_url = self.firmware_url
+        logger.info(
+            f'  → Fetching firmware catalog [{self._catalog_region}] '
+            f'(Playwright API request)...'
+        )
         t0 = time.time()
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
             try:
                 context = browser.new_context(user_agent=HTTP_USER_AGENT)
                 page = context.new_page()
-                page.goto(f'{BASE_URL}/en/', wait_until='domcontentloaded', timeout=60_000)
+                page.goto(home_url, wait_until='domcontentloaded', timeout=60_000)
                 page.wait_for_timeout(800)
-                page.goto(FIRMWARE_URL, wait_until='domcontentloaded', timeout=120_000)
+                page.goto(firmware_url, wait_until='domcontentloaded', timeout=120_000)
                 page.wait_for_timeout(1500)
                 self.dismiss_page_overlays(page)
                 page.wait_for_timeout(500)
 
-                # Full ~13MB SSR HTML (page.content() is only partial DOM).
-                req_headers = {**HTTP_HEADERS, 'Referer': FIRMWARE_URL}
+                # Full ~13MB SSR HTML (page.content() is often only partial DOM).
+                req_headers = {**HTTP_HEADERS, 'Referer': firmware_url}
                 response = context.request.get(
-                    FIRMWARE_URL,
+                    firmware_url,
                     headers=req_headers,
                     timeout=120_000,
                 )
@@ -1295,7 +1383,7 @@ class HikvisionScraper:
                 page = context.new_page()
                 
                 logger.info("Loading firmware page...")
-                page.goto(FIRMWARE_URL, wait_until='networkidle', timeout=60000)
+                page.goto(self.firmware_url, wait_until='networkidle', timeout=60000)
                 time.sleep(5)
                 overlay_count = self.dismiss_page_overlays(page)
                 time.sleep(1)
@@ -1827,7 +1915,7 @@ class HikvisionScraper:
                                                         if actual_download_url.startswith('/'):
                                                             actual_download_url = urljoin(BASE_URL, actual_download_url)
                                                         elif not actual_download_url.startswith('http'):
-                                                            actual_download_url = urljoin(FIRMWARE_URL, actual_download_url)
+                                                            actual_download_url = urljoin(self.firmware_url, actual_download_url)
                                                         
                                                         # Version/model already extracted earlier, reuse them
                                                         if not version:
@@ -2797,6 +2885,7 @@ class HikvisionScraper:
             'last_run': datetime.now().isoformat(),
             'firmwares_found': len(self.firmwares_live),
             'new_firmwares': 0,
+            'catalog_region': self._catalog_region,
             'errors': self.errors[-10:],
             'test_mode': TEST_MODE,
         }
@@ -2812,6 +2901,7 @@ class HikvisionScraper:
         self.status['scraper_mode'] = 'http'
         self.status['catalog_fetch'] = self._catalog_fetch_method
         self.status['catalog_entries'] = self._catalog_entry_count
+        self.status['catalog_region'] = self._catalog_region
         if self._priority_patterns:
             self.status['priority_models'] = self._priority_patterns
         self.status['errors'] = self.errors[-10:]  # Keep last 10 errors
@@ -2836,6 +2926,8 @@ class HikvisionScraper:
             logger.info("Mode: HTTP catalog (no browser)")
         else:
             logger.info("Mode: Playwright browser (USE_PLAYWRIGHT=1)")
+        region = self.select_catalog_region()
+        logger.info(f"Catalog region: {region} → {self.firmware_url}")
         logger.info("Starting Hikvision firmware scrape...")
         logger.info("=" * 60)
         

@@ -42,7 +42,7 @@ GitHub Actions runs **twice daily** (04:20 and 16:20 UTC) and can be started man
 
 Each run:
 
-1. **Fetches the firmware catalog** — usually one HTTP request to Hikvision’s SSR page; on GitHub’s network, **Playwright** is used when plain HTTP is blocked
+1. **Fetches one regional firmware catalog** — rotates through `en` → `us-en` → `ca-en` → `au-en` → `uk-en` → `eu-en` (region catalogs differ). Override with workflow input / `FIRMWARE_REGION`. On GitHub’s network, **Playwright** is used when plain HTTP is blocked
 2. **Parses thousands of download URLs** from the HTML (`data-href` / panel structure), not by clicking every model in a browser
 3. **Downloads up to 10 new firmware files** per run (20 per day at most) to avoid hammering Hikvision and GitHub
 4. **Updates JSON** (`devices.json`, `firmwares_live.json`, etc.) and **heals metadata** (fills missing `applied_to`, fixes many `UNKNOWN` labels from titles and release notes)
