@@ -566,6 +566,83 @@ def generate_release_body(firmware_files: List[str]) -> str:
     return body
 
 
+def generate_search_data(index: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
+    """Compact model → firmware map for the GitHub Pages search UI."""
+    if index is None:
+        index = generate_firmware_index()
+    models_out: Dict[str, Any] = {}
+    for model_key, entry in (index.get('models') or {}).items():
+        if not isinstance(entry, dict):
+            continue
+        by_hw = entry.get('by_hardware_version') or {}
+        all_versions = entry.get('all_versions') or []
+        hw_map: Dict[str, List[Dict[str, str]]] = {}
+
+        if isinstance(by_hw, dict) and by_hw:
+            for hw, latest in by_hw.items():
+                builds = [
+                    rec
+                    for rec in all_versions
+                    if (rec.get('hardware_version') or 'UNKNOWN').upper() == str(hw).upper()
+                ]
+                if not builds and isinstance(latest, dict):
+                    builds = [latest]
+                # Deduplicate by version+filename while keeping newest-first order
+                seen: set[tuple] = set()
+                compact: List[Dict[str, str]] = []
+                for rec in builds:
+                    key = (
+                        (rec.get('version') or '').strip(),
+                        (rec.get('filename') or '').strip(),
+                        (rec.get('download_url') or '').strip(),
+                    )
+                    if not key[0] or key in seen:
+                        continue
+                    seen.add(key)
+                    compact.append(
+                        {
+                            'v': key[0],
+                            'd': (rec.get('date') or '').strip(),
+                            'f': key[1],
+                            'u': key[2],
+                        }
+                    )
+                if compact:
+                    hw_map[str(hw).upper()] = compact
+        elif all_versions:
+            hw = (all_versions[0].get('hardware_version') or 'UNKNOWN').upper()
+            compact = []
+            seen = set()
+            for rec in all_versions:
+                key = (
+                    (rec.get('version') or '').strip(),
+                    (rec.get('filename') or '').strip(),
+                    (rec.get('download_url') or '').strip(),
+                )
+                if not key[0] or key in seen:
+                    continue
+                seen.add(key)
+                compact.append(
+                    {
+                        'v': key[0],
+                        'd': (rec.get('date') or '').strip(),
+                        'f': key[1],
+                        'u': key[2],
+                    }
+                )
+            if compact:
+                hw_map[hw] = compact
+
+        if hw_map:
+            models_out[model_key] = {'hw': hw_map}
+
+    return {
+        'generated_at': index.get('generated_at')
+        or datetime.now(timezone.utc).isoformat(),
+        'models': models_out,
+    }
+
+
 def main():
     """Generate README and integration index files."""
     logger.info("Generating README...")
@@ -581,6 +658,21 @@ def main():
     logger.info(
         "firmware_index.json generated (%s models)",
         len(index.get('models', {})),
+    )
+
+    logger.info("Generating docs/search-data.json for firmware search UI...")
+    search_data = generate_search_data(index)
+    docs_dir = Path('docs')
+    docs_dir.mkdir(exist_ok=True)
+    search_path = docs_dir / 'search-data.json'
+    search_path.write_text(
+        json.dumps(search_data, ensure_ascii=False, separators=(',', ':')),
+        encoding='utf-8',
+    )
+    logger.info(
+        "search-data.json generated (%s models, %.1f MB)",
+        len(search_data.get('models', {})),
+        search_path.stat().st_size / (1024 * 1024),
     )
 
     # Count total firmwares

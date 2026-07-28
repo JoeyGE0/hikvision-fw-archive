@@ -13,6 +13,8 @@ Unofficial archive of **Hikvision** IP camera, NVR/DVR, door station, and relate
 - [Automation status](#automation-status)
 - [Firmware list](#firmware-list)
 
+**Search UI:** [joeyge0.github.io/hikvision-fw-archive](https://joeyge0.github.io/hikvision-fw-archive/) — type a model number, pick hardware, download.
+
 ## About
 
 Hikvision publishes firmware through a large web catalog ([firmware download center](https://www.hikvision.com/en/support/download/firmware/)). The catalog mixes many models and revisions; over time, older packages are hard to match to a specific device.
