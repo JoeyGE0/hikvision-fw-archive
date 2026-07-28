@@ -182,6 +182,30 @@ def normalize_product_model(text: str) -> str:
     return ' '.join((text or '').split()).upper()
 
 
+def format_applied_to_list(models: List[str]) -> str:
+    """Build a full ``Applied to:`` line from model codes (no truncation)."""
+    cleaned = [
+        str(m).strip()
+        for m in models
+        if str(m).strip() and str(m).strip().upper() != 'UNKNOWN'
+    ]
+    if not cleaned:
+        return ''
+    if len(cleaned) == 1:
+        return f'Applied to: {cleaned[0]}'
+    return 'Applied to: ' + ', '.join(cleaned)
+
+
+def models_from_applied_to(applied_to: str) -> List[str]:
+    """Parse normalized model codes from an ``Applied to:`` string."""
+    if not applied_to:
+        return []
+    return [
+        normalize_product_model(match)
+        for match in re.findall(HIKVISION_MODEL_PATTERN, applied_to, re.IGNORECASE)
+    ]
+
+
 def extract_models(text: str) -> List[str]:
     """Extract all Hikvision model numbers from text.
     

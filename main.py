@@ -28,6 +28,7 @@ from common import (
     extract_applied_to,
     extract_models,
     extract_release_notes_url,
+    format_applied_to_list,
     format_date,
     get_device_id,
     HIKVISION_MODEL_PATTERN,
@@ -427,11 +428,8 @@ class HikvisionScraper:
         if panel_models:
             supported_models = list(dict.fromkeys(panel_models + list(supported_models)))
             if not applied_to:
-                applied_to = (
-                    f'Applied to: {supported_models[0]}'
-                    if len(supported_models) == 1
-                    else 'Applied to: ' + ', '.join(supported_models[:8])
-                )
+                # Use the catalog panel list in full — never truncate.
+                applied_to = format_applied_to_list(panel_models)
         if resolved_model and resolved_model != 'UNKNOWN':
             model = resolved_model
         elif model == 'UNKNOWN' and supported_models:
@@ -541,11 +539,7 @@ class HikvisionScraper:
                     if str(m).strip().upper() not in ('', 'UNKNOWN')
                 ]
                 if supported:
-                    fw['applied_to'] = (
-                        f'Applied to: {supported[0]}'
-                        if len(supported) == 1
-                        else 'Applied to: ' + ', '.join(supported[:8])
-                    )
+                    fw['applied_to'] = format_applied_to_list(supported)
                     applied_to = fw['applied_to']
                     changed = True
 

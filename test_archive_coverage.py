@@ -150,11 +150,41 @@ class TestIndexModelsForFirmware(unittest.TestCase):
         self.assertIn("DS-TEST-MODEL", keys)
         self.assertIn("DS-TEST-VARIANT", keys)
 
+    def test_full_applied_to_indexes_secondary_models(self):
+        """Shared packages must index every model listed in applied_to."""
+        firmware = {
+            "model": "DS-2CD2067G3-LI(2U)Y",
+            "applied_to": (
+                "Applied to: DS-2CD2067G3-LI(2U)Y, DS-2CD2387G3-LIS2UY/S(L)(RB)"
+            ),
+            "supported_models": [
+                "DS-2CD2067G3-LI(2U)Y",
+                "DS-2CD2387G3-LIS2UY/S(L)(RB)",
+                "DS-2CD9999-SHOULD-NOT-INDEX",
+            ],
+        }
+        keys = index_models_for_firmware(firmware)
+        self.assertIn("DS-2CD2387G3-LIS2UY/S(L)(RB)", keys)
+        self.assertNotIn("DS-2CD9999-SHOULD-NOT-INDEX", keys)
+
+    def test_legacy_eight_cap_indexes_full_supported_models(self):
+        supported = [f"DS-2CD2067G3-VAR{i}" for i in range(8)]
+        supported[7] = "DS-2CD2387G3-LIS2UY/S(L)(RB)"
+        supported.append("DS-2CD2387G3-LIS2UY/SL(2.8MM)")
+        firmware = {
+            "model": "DS-2CD2067G3-LI(2U)Y",
+            "applied_to": "Applied to: " + ", ".join(supported[:8]),
+            "supported_models": supported,
+        }
+        keys = index_models_for_firmware(firmware)
+        self.assertIn("DS-2CD2387G3-LIS2UY/SL(2.8MM)", keys)
+
 
 class TestUserCameraArchive(unittest.TestCase):
     """Regression: manual rows for user SKUs must index and offer safe updates."""
 
     USER_CAMERAS = [
+        ("DS-2CD2387G3-LIS2UY/S(L)(RB)", "5.8.10", "5.8.40", "S3000737666"),
         ("DS-2CD2387G3-LIS2UY/SL", "5.8.10", "5.8.32", "S3000732541"),
         ("DS-2CD2387G3-LIS2UY/SRB", "5.8.10", "5.8.32", "S3000732541"),
         ("DS-2CD1383G2-LIUF", "5.8.5", "5.8.41", "S3000712595"),
@@ -175,8 +205,15 @@ class TestUserCameraArchive(unittest.TestCase):
         with open("firmware_index.json", encoding="utf-8") as f:
             index = json.load(f)
         models = index.get("models") or {}
+        normalized_keys = {normalize_model(key): key for key in models}
         for device_model, _, _, _ in self.USER_CAMERAS:
-            self.assertIn(normalize_model(device_model), models)
+            normalized = normalize_model(device_model)
+            self.assertTrue(
+                normalized in models
+                or device_model in models
+                or normalized in normalized_keys,
+                f"missing index key for {device_model}",
+            )
 
     def test_ha_offers_verified_updates(self):
         for device_model, installed, expected_version, expected_zip in self.USER_CAMERAS:

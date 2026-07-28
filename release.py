@@ -21,6 +21,8 @@ from common import (
 GITHUB_REPO = 'JoeyGE0/hikvision-fw-archive'
 ARCHIVE_RELEASES_URL = f'https://github.com/{GITHUB_REPO}/releases'
 LICENSE_URL = 'https://www.hikvision.com/en/policies/materials-license-agreement/'
+# Keep README table cells readable; full applied_to stays in JSON for indexing.
+_README_APPLIED_TO_DISPLAY_LIMIT = 8
 
 logging.basicConfig(
     level=logging.INFO,
@@ -69,6 +71,46 @@ def generate_readme() -> str:
         device_id_int = int(device_id) if device_id.isdigit() else None
         if device_id_int and device_id_int not in device_info_map:
             device_info_map[device_id_int] = device_info
+
+    # Shared H13 (etc.) packages are stored under one primary model. Fold those
+    # rows into existing README sections whose model appears in applied_to, so
+    # secondary SKUs (e.g. DS-2CD2387G3…) show the same versions as the index.
+    indexed_by_model: Dict[str, List[Dict[str, Any]]] = defaultdict(list)
+    for firmware_data in all_firmwares.values():
+        if not isinstance(firmware_data, dict):
+            continue
+        if not firmware_data.get('version') or not firmware_data.get('download_url'):
+            continue
+        for model_key in index_models_for_firmware(firmware_data):
+            indexed_by_model[model_key].append(firmware_data)
+
+    for device_id, firmwares in list(device_firmwares.items()):
+        section_model = normalize_product_model(
+            (device_info_map.get(device_id) or {}).get('model', '')
+        )
+        if not section_model:
+            continue
+        extras = indexed_by_model.get(section_model) or []
+        if not extras:
+            continue
+        seen = {
+            (
+                (fw.get('version') or '').strip(),
+                (fw.get('filename') or '').strip(),
+                (fw.get('download_url') or '').strip(),
+            )
+            for fw in firmwares
+        }
+        for fw in extras:
+            key = (
+                (fw.get('version') or '').strip(),
+                (fw.get('filename') or '').strip(),
+                (fw.get('download_url') or '').strip(),
+            )
+            if key in seen:
+                continue
+            firmwares.append(fw)
+            seen.add(key)
     
     # Load readme header
     readme_header = Path('readme_header.md').read_text(encoding='utf-8')
@@ -196,25 +238,32 @@ def generate_readme() -> str:
             if applied_to and firmware_download_url:
                 # Extract model names from "Applied to:" text and make them links
                 # Pattern: "Applied to: DS-1200KI(B)" or "Applied to: DS-2CD2047G2-LU/SL(2.8mm)(C)"
-                import re
-                # Find all model patterns (DS-xxx, AE-xxx, IDS-xxx)
-                model_pattern = r'(DS-[0-9A-Z-]+(?:[/-][A-Z0-9]+)*(?:\([^)]+\))?|AE-[0-9A-Z-]+(?:[/-][A-Z0-9]+)*(?:\([^)]+\))?|IDS-[0-9A-Z-]+(?:[/-][A-Z0-9]+)*(?:\([^)]+\))?)'
-                models_found = re.findall(model_pattern, applied_to, re.IGNORECASE)
+                models_found = re.findall(HIKVISION_MODEL_PATTERN, applied_to, re.IGNORECASE)
                 
                 if models_found:
-                    # Replace each model name with a clickable link
-                    models_text = applied_to
-                    for model_name in models_found:
-                        # Create link: [model_name](download_url)
-                        linked_model = f"[{model_name}]({firmware_download_url})"
-                        # Replace the model name with the linked version
-                        models_text = models_text.replace(model_name, linked_model, 1)
+                    display_models = models_found[:_README_APPLIED_TO_DISPLAY_LIMIT]
+                    models_text = 'Applied to: '
+                    linked_parts = []
+                    for model_name in display_models:
+                        linked_parts.append(f"[{model_name}]({firmware_download_url})")
+                    models_text += ', '.join(linked_parts)
+                    remaining = len(models_found) - len(display_models)
+                    if remaining > 0:
+                        models_text += f', and {remaining} more'
                 else:
                     # No models found, use text as-is
                     models_text = applied_to
             elif applied_to:
                 # Have "Applied to:" text but no download URL yet
-                models_text = applied_to
+                models_found = re.findall(HIKVISION_MODEL_PATTERN, applied_to, re.IGNORECASE)
+                if len(models_found) > _README_APPLIED_TO_DISPLAY_LIMIT:
+                    shown = ', '.join(models_found[:_README_APPLIED_TO_DISPLAY_LIMIT])
+                    models_text = (
+                        f'Applied to: {shown}, and '
+                        f'{len(models_found) - _README_APPLIED_TO_DISPLAY_LIMIT} more'
+                    )
+                else:
+                    models_text = applied_to
             elif supported_models and len(supported_models) > 0:
                 # Show up to 3 models, then "and X more" if there are more
                 if firmware_download_url:
@@ -279,13 +328,19 @@ def github_release_page_url(download_url: str | None) -> str | None:
 def index_models_for_firmware(firmware: Dict[str, Any]) -> List[str]:
     """Return normalized model keys that should resolve to this firmware row.
 
-    Only ``model`` and models parsed from ``applied_to`` are indexed. The catalog
-    ``supported_models`` list is often broader than the release-note ``applied_to``
-    line and has caused wrong packages (e.g. DS-2CD1383G2 on a DS-2CD1063G2 build).
+    Prefer ``model`` + models parsed from ``applied_to``. The catalog
+    ``supported_models`` list is often broader than a real release-note line and
+    has caused wrong packages (e.g. DS-2CD1383G2 on a DS-2CD1063G2 build).
+
+    Exception: legacy scrapes synthesized ``applied_to`` with a hard cap of 8
+    models (``supported_models[:8]``). Those rows still carry the full shared
+    package list in ``supported_models``; index that full list so secondary SKUs
+    resolve. ``generate_firmware_index`` prefers a closer primary model when
+    versions tie, so a dedicated row still wins over a bulk sibling package.
     """
     models: List[str] = []
     seen: set[str] = set()
-    applied_models: set[str] = set()
+    applied_models: List[str] = []
 
     def add(raw: str) -> None:
         key = normalize_product_model(raw)
@@ -296,16 +351,26 @@ def index_models_for_firmware(firmware: Dict[str, Any]) -> List[str]:
 
     applied_to = firmware.get('applied_to', '') or ''
     for match in re.findall(HIKVISION_MODEL_PATTERN, applied_to, re.IGNORECASE):
-        applied_models.add(normalize_product_model(match))
+        applied_models.append(normalize_product_model(match))
 
     add(firmware.get('model', ''))
     for match in applied_models:
         add(match)
 
-    # Fallback when Hikvision omits applied_to (manual rows, legacy scrapes).
-    if not applied_models:
-        for supported in firmware.get('supported_models') or []:
-            add(str(supported))
+    supported_norm = [
+        normalize_product_model(str(supported))
+        for supported in firmware.get('supported_models') or []
+        if str(supported).strip()
+    ]
+
+    legacy_truncated = (
+        len(applied_models) == 8
+        and len(supported_norm) > 8
+        and applied_models == supported_norm[:8]
+    )
+    if legacy_truncated or not applied_models:
+        for supported in supported_norm:
+            add(supported)
 
     return models
 
@@ -333,6 +398,26 @@ def ha_firmware_record(firmware: Dict[str, Any]) -> Dict[str, Any]:
     }
 
 
+def _model_series_token(model: str) -> str:
+    parts = (model or '').upper().split('-')
+    return parts[1] if len(parts) >= 2 else (model or '').upper()
+
+
+def model_match_score(device: str, candidate: str) -> int:
+    """Higher score = closer match between an index key and a row's primary model."""
+    device = normalize_product_model(device)
+    candidate = normalize_product_model(candidate)
+    if not device or not candidate:
+        return 0
+    if device == candidate:
+        return 10_000
+    if device.startswith(candidate) or candidate.startswith(device):
+        return 5_000 + min(len(device), len(candidate))
+    if _model_series_token(device) != _model_series_token(candidate):
+        return 0
+    return 1_000 + min(len(device), len(candidate))
+
+
 def generate_firmware_index() -> Dict[str, Any]:
     """Build model → best firmware metadata index for integrations (e.g. Home Assistant)."""
     firmwares_live = load_json('firmwares_live.json')
@@ -352,13 +437,26 @@ def generate_firmware_index() -> Dict[str, Any]:
 
     models_index: Dict[str, Any] = {}
     for model_key, records in by_model.items():
-        records.sort(key=lambda r: parse_version(r.get('version', '0')), reverse=True)
+        records.sort(
+            key=lambda r: (
+                parse_version(r.get('version', '0')),
+                model_match_score(model_key, r.get('model', '')),
+            ),
+            reverse=True,
+        )
         by_hw: Dict[str, List[Dict[str, Any]]] = defaultdict(list)
         for record in records:
             hw = (record.get('hardware_version') or 'UNKNOWN').upper()
             by_hw[hw].append(record)
         hw_latest = {
-            hw: sorted(rows, key=lambda r: parse_version(r.get('version', '0')), reverse=True)[0]
+            hw: sorted(
+                rows,
+                key=lambda r: (
+                    parse_version(r.get('version', '0')),
+                    model_match_score(model_key, r.get('model', '')),
+                ),
+                reverse=True,
+            )[0]
             for hw, rows in by_hw.items()
         }
         models_index[model_key] = {
