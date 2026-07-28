@@ -33,9 +33,10 @@
   }
 
   function tokens(s) {
-    return String(s || "")
+    // Keep useful chunks only (drop lone "2" from DS-2CD… noise).
+    return (String(s || "")
       .toUpperCase()
-      .match(/[A-Z]+|\d+/g) || [];
+      .match(/[A-Z]+\d+[A-Z0-9]*|\d{2,}|[A-Z]{2,}/g) || []);
   }
 
   function latestForEntry(entry) {
