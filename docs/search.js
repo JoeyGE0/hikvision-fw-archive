@@ -333,9 +333,47 @@
       var date = document.createElement("td");
       date.textContent = b.d || "—";
 
-      var file = document.createElement("td");
-      file.className = "file";
-      file.textContent = b.f || "—";
+      var notes = document.createElement("td");
+      notes.className = "notes-cell";
+      if (b.c) {
+        var summary = document.createElement("div");
+        summary.className = "notes-summary";
+        summary.textContent = b.c;
+        notes.appendChild(summary);
+      }
+      var links = document.createElement("div");
+      links.className = "notes-links";
+      if (b.n) {
+        var pdf = document.createElement("a");
+        pdf.href = b.n;
+        pdf.target = "_blank";
+        pdf.rel = "noopener";
+        pdf.textContent = "Release notes PDF";
+        links.appendChild(pdf);
+      }
+      if (b.r) {
+        if (links.childNodes.length) {
+          links.appendChild(document.createTextNode(" · "));
+        }
+        var rel = document.createElement("a");
+        rel.href = b.r;
+        rel.target = "_blank";
+        rel.rel = "noopener";
+        rel.textContent = "GitHub release";
+        links.appendChild(rel);
+      }
+      if (b.f) {
+        if (links.childNodes.length) {
+          links.appendChild(document.createTextNode(" · "));
+        }
+        var file = document.createElement("span");
+        file.className = "file-inline";
+        file.textContent = b.f;
+        file.title = b.f;
+        links.appendChild(file);
+      }
+      if (links.childNodes.length) notes.appendChild(links);
+      if (!notes.childNodes.length) notes.textContent = "—";
 
       var action = document.createElement("td");
       if (b.u) {
@@ -351,7 +389,7 @@
 
       tr.appendChild(ver);
       tr.appendChild(date);
-      tr.appendChild(file);
+      tr.appendChild(notes);
       tr.appendChild(action);
       rows.appendChild(tr);
     });

@@ -372,6 +372,33 @@ tr.latest td { background: var(--green-bg); }
   word-break: break-all;
 }
 
+.notes-cell {
+  max-width: 28rem;
+}
+
+.notes-summary {
+  color: #334455;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 0.35rem;
+}
+
+.notes-links {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.notes-links a {
+  font-weight: 600;
+}
+
+.file-inline {
+  font-family: ui-monospace, "SF Mono", Consolas, monospace;
+  font-size: 0.75rem;
+  color: #708090;
+  word-break: break-all;
+}
+
 .dl {
   display: inline-block;
   border-radius: 8px;
@@ -429,7 +456,9 @@ tr.latest td { background: var(--green-bg); }
   }
 
   th:nth-child(3),
-  td:nth-child(3) { display: none; }
+  td:nth-child(3) {
+    max-width: 12rem;
+  }
 
   .hit {
     grid-template-columns: 1fr;

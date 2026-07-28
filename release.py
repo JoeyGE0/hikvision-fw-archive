@@ -566,6 +566,32 @@ def generate_release_body(firmware_files: List[str]) -> str:
     return body
 
 
+def _search_build_record(rec: Dict[str, Any]) -> Dict[str, str]:
+    """One compact firmware row for the Pages search UI."""
+    changes = (rec.get('changes') or '').strip()
+    if len(changes) > 280:
+        changes = changes[:277].rstrip() + '…'
+    notes_pdf = (rec.get('notes_pdf_url') or '').strip()
+    if not notes_pdf:
+        notes = (rec.get('notes') or '').strip()
+        if notes.startswith('http'):
+            notes_pdf = notes
+    out = {
+        'v': (rec.get('version') or '').strip(),
+        'd': (rec.get('date') or '').strip(),
+        'f': (rec.get('filename') or '').strip(),
+        'u': (rec.get('download_url') or '').strip(),
+    }
+    if changes:
+        out['c'] = changes
+    if notes_pdf:
+        out['n'] = notes_pdf
+    release_page = (rec.get('release_page_url') or '').strip()
+    if release_page:
+        out['r'] = release_page
+    return out
+
+
 def generate_search_data(index: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
     """Compact model → firmware map for the GitHub Pages search UI."""
     if index is None:
@@ -599,14 +625,7 @@ def generate_search_data(index: Optional[Dict[str, Any]] = None) -> Dict[str, An
                     if not key[0] or key in seen:
                         continue
                     seen.add(key)
-                    compact.append(
-                        {
-                            'v': key[0],
-                            'd': (rec.get('date') or '').strip(),
-                            'f': key[1],
-                            'u': key[2],
-                        }
-                    )
+                    compact.append(_search_build_record(rec))
                 if compact:
                     hw_map[str(hw).upper()] = compact
         elif all_versions:
@@ -622,14 +641,7 @@ def generate_search_data(index: Optional[Dict[str, Any]] = None) -> Dict[str, An
                 if not key[0] or key in seen:
                     continue
                 seen.add(key)
-                compact.append(
-                    {
-                        'v': key[0],
-                        'd': (rec.get('date') or '').strip(),
-                        'f': key[1],
-                        'u': key[2],
-                    }
-                )
+                compact.append(_search_build_record(rec))
             if compact:
                 hw_map[hw] = compact
 
