@@ -88,10 +88,11 @@ python -m unittest test_metadata_and_priority.py  # sanity checks
 
 ## Finding and downloading firmware
 
-1. **Search this page** (Ctrl+F) for your exact model, e.g. `DS-2CD2387G3-LIS2UY`
-2. Open the collapsible section for your **hardware version** (`IPC_G0`, `DVR_V4`, etc.)
-3. Pick the **version / date** you need (newest listed first)
-4. Use the **Download** link — usually our GitHub Release mirror
+1. **Use the [search page](https://joeyge0.github.io/hikvision-fw-archive/)** — type your model, pick hardware, download
+2. Or **search this README** (Ctrl+F) for your exact model, e.g. `DS-2CD2387G3-LIS2UY`
+3. Open the collapsible section for your **hardware version** (`IPC_G0`, `DVR_V4`, etc.)
+4. Pick the **version / date** you need (newest listed first)
+5. Use the **Download** link — usually our GitHub Release mirror
 
 ### Model prefixes (common)
 
