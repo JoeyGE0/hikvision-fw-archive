@@ -4798,5 +4798,77 @@
   "102692": {
     "model": "DS-D2055HU-Y",
     "hardware_version": "UNKNOWN"
+  },
+  "102693": {
+    "model": "DS-9632NI-I16",
+    "hardware_version": "UNKNOWN"
+  },
+  "102694": {
+    "model": "DS-6704HUHI",
+    "hardware_version": "DVR_V3"
+  },
+  "102695": {
+    "model": "DS-2CD2086G2-I(U)",
+    "hardware_version": "IPC_G0"
+  },
+  "102696": {
+    "model": "DS-KDM9633-KP",
+    "hardware_version": "UNKNOWN"
+  },
+  "102697": {
+    "model": "DS-2TD8167-190ZE2F/W",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102698": {
+    "model": "DS-3E1516-EI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102699": {
+    "model": "DS-3E1524-EI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102700": {
+    "model": "THC-B259-MS",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102701": {
+    "model": "DS-6700NI-S",
+    "hardware_version": "UNKNOWN"
+  },
+  "102702": {
+    "model": "DS-2CE5AD3T-AVPIT3ZFB",
+    "hardware_version": "UNKNOWN"
+  },
+  "102703": {
+    "model": "DS-KB8113-IME1(B)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102704": {
+    "model": "DS-D2046LU-Y",
+    "hardware_version": "UNKNOWN"
+  },
+  "102705": {
+    "model": "DS-1100KI(B)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102706": {
+    "model": "DS-7616NXI-I2/16P/S",
+    "hardware_version": "NVR_G0"
+  },
+  "102707": {
+    "model": "PCI-D14Z8HS",
+    "hardware_version": "UNKNOWN"
+  },
+  "102708": {
+    "model": "DS-3E2528P-H",
+    "hardware_version": "UNKNOWN"
+  },
+  "102709": {
+    "model": "DS-MP5604",
+    "hardware_version": "UNKNOWN"
+  },
+  "102710": {
+    "model": "DS-UAC-S1",
+    "hardware_version": "UNKNOWN"
   }
 }
