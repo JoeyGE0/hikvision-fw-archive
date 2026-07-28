@@ -4870,5 +4870,233 @@
   "102710": {
     "model": "DS-UAC-S1",
     "hardware_version": "UNKNOWN"
+  },
+  "102711": {
+    "model": "DS-2DF6231-CX(T5/316L)",
+    "hardware_version": "IPC_G0"
+  },
+  "102712": {
+    "model": "DS-2TD4228T-10/W",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102713": {
+    "model": "DS-2TXS2628-10P/QA/GLT/CH36S80",
+    "hardware_version": "UNKNOWN"
+  },
+  "102714": {
+    "model": "DS-2DY5225IX-DM(T5)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102715": {
+    "model": "DS-2DY9236I-CWX(T5/316L)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102716": {
+    "model": "DS-2DP8A845IXG1-LF/864(F0)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102717": {
+    "model": "IPC-T240H-MU",
+    "hardware_version": "UNKNOWN"
+  },
+  "102718": {
+    "model": "IPC-T381H-MU",
+    "hardware_version": "UNKNOWN"
+  },
+  "102719": {
+    "model": "DS-2CD6365G1-S/RC",
+    "hardware_version": "IPC_G0"
+  },
+  "102720": {
+    "model": "DS-2DE4425IW-DE(T5)",
+    "hardware_version": "IPC_G0"
+  },
+  "102721": {
+    "model": "DS-2DP8A440IXG-LEF/624(F0)(B)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102722": {
+    "model": "HM-TX3840-10/G0/T1",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102723": {
+    "model": "IK-2146TH-MM/P",
+    "hardware_version": "UNKNOWN"
+  },
+  "102724": {
+    "model": "IDS-2CD7A45G0/P-IZHS(Y)",
+    "hardware_version": "IPC_G0"
+  },
+  "102725": {
+    "model": "PTZ-N3404LIU/SL",
+    "hardware_version": "UNKNOWN"
+  },
+  "102726": {
+    "model": "PTZ-ND4404/SL#AUS",
+    "hardware_version": "UNKNOWN"
+  },
+  "102727": {
+    "model": "DS-2DF8442IXS-AELWY(T5)",
+    "hardware_version": "IPC_G0"
+  },
+  "102728": {
+    "model": "DS-2DF8C260I5XG-ELW",
+    "hardware_version": "IPC_G0"
+  },
+  "102729": {
+    "model": "IDS-TCE907-BR",
+    "hardware_version": "UNKNOWN"
+  },
+  "102730": {
+    "model": "IDS-2CD8A47G0/SC-ZY",
+    "hardware_version": "IPC_G0"
+  },
+  "102731": {
+    "model": "DS-2CD3667G3-LIZSU(Y)/SL",
+    "hardware_version": "IPC_G0"
+  },
+  "102732": {
+    "model": "DS-2CD6D55G2-IZHS(/NFC)",
+    "hardware_version": "IPC_G0"
+  },
+  "102733": {
+    "model": "DS-2DP7D836IXG1-LEF(Y)/432",
+    "hardware_version": "UNKNOWN"
+  },
+  "102734": {
+    "model": "DS-2XE6845G0-IZHS(B)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102735": {
+    "model": "DS-2CD36167G3-LIZSU/SL(Y)",
+    "hardware_version": "IPC_G0"
+  },
+  "102736": {
+    "model": "DS-2CD3666G2HT-LIZS(Y)",
+    "hardware_version": "IPC_G0"
+  },
+  "102737": {
+    "model": "DS-2DF8C435MHS-DEL",
+    "hardware_version": "IPC_G0"
+  },
+  "102738": {
+    "model": "DS-2SE3C404MWG-E/14",
+    "hardware_version": "UNKNOWN"
+  },
+  "102739": {
+    "model": "DS-2SE4C425MWG-E/14",
+    "hardware_version": "UNKNOWN"
+  },
+  "102740": {
+    "model": "DS-2CD20126G3-I(U)Y",
+    "hardware_version": "IPC_G0"
+  },
+  "102741": {
+    "model": "DS-2CD2047G2-LU/SL",
+    "hardware_version": "IPC_G0"
+  },
+  "102742": {
+    "model": "DS-2CD2346G2P-ISU/SL",
+    "hardware_version": "IPC_G0"
+  },
+  "102743": {
+    "model": "DS-3E1105P-EI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102744": {
+    "model": "DS-K1108A",
+    "hardware_version": "UNKNOWN"
+  },
+  "102745": {
+    "model": "DS-K1T341CMFW",
+    "hardware_version": "UNKNOWN"
+  },
+  "102746": {
+    "model": "DS-96128NXI-S16R",
+    "hardware_version": "UNKNOWN"
+  },
+  "102747": {
+    "model": "NVR-104H-D/4P",
+    "hardware_version": "NVR_V4"
+  },
+  "102748": {
+    "model": "DS-K5671-ZU",
+    "hardware_version": "UNKNOWN"
+  },
+  "102749": {
+    "model": "DS-KD7003EY-IME2",
+    "hardware_version": "UNKNOWN"
+  },
+  "102750": {
+    "model": "DS-KIS707EY",
+    "hardware_version": "UNKNOWN"
+  },
+  "102751": {
+    "model": "DS-K1T502DBWX",
+    "hardware_version": "UNKNOWN"
+  },
+  "102752": {
+    "model": "DS-K1T502DBWX-CQRE1",
+    "hardware_version": "UNKNOWN"
+  },
+  "102753": {
+    "model": "DS-KIS212",
+    "hardware_version": "UNKNOWN"
+  },
+  "102754": {
+    "model": "DS-TDSB0G-FK/120M",
+    "hardware_version": "UNKNOWN"
+  },
+  "102755": {
+    "model": "DS-2XC6245G0-L(3-9MM)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102756": {
+    "model": "DS-KV6114-MWBE1",
+    "hardware_version": "UNKNOWN"
+  },
+  "102757": {
+    "model": "DS-2DE2A404IW-DE3/W(S6)",
+    "hardware_version": "IPC_G0"
+  },
+  "102758": {
+    "model": "DS-K2220X(P)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102759": {
+    "model": "DS-KD-MFB",
+    "hardware_version": "UNKNOWN"
+  },
+  "102760": {
+    "model": "DS-MDS001(B)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102761": {
+    "model": "DS-MDS004",
+    "hardware_version": "UNKNOWN"
+  },
+  "102762": {
+    "model": "DS-MCC216",
+    "hardware_version": "UNKNOWN"
+  },
+  "102763": {
+    "model": "DS-7604NI-M1/4P#AUS",
+    "hardware_version": "NVR_G0"
+  },
+  "102764": {
+    "model": "IDS-TCM403-BI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102765": {
+    "model": "NVR-104MH-K/4P",
+    "hardware_version": "NVR_G0"
+  },
+  "102766": {
+    "model": "DS-D2065UL-0AU",
+    "hardware_version": "UNKNOWN"
+  },
+  "102767": {
+    "model": "DS-D2055UL-0A",
+    "hardware_version": "UNKNOWN"
   }
 }
