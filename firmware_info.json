@@ -942,5 +942,17 @@
   "https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CK9B2_V4.75.207build240604_ReleaseNotes.pdf": {
     "changes": "Modified functions · Compatible with Toshiba disks · HIKVISION DS20HKVS-VH1 · HIKVISION DS40HKVS-VH1",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202501/releasenote%5CV4.83.013_build241227_ReleaseNotes.pdf": {
+    "changes": "POE hardware switching · Don’t support POE NVR downgrading to versions before the factory version. · Modified functions",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202410/releasenote%5CNetwork_Camera-V5.7.18_SP1_Release_Note-G5.pdf": {
+    "changes": "Optimize AY6F focuses on failed issue. · PTRZ DFX requirement: Adjust the default position of T direction to 0 °. · PTRZ function interface optimization, unsupported function configuration will prompt: function · not supported. Such as windshield wipers, 3D positioning, ETC.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202410/releasenote%5CNetwork_Camera-V5.7.18_240924_Release_Note-G5.pdf": {
+    "changes": "PTRZ product shading hood motor motion logic optimization: · After the movement in the P and T directions comes to a complete stop, the sunshade motor lifts · the ball cover on top again . When starting to move, the sunshade motor will retract first, and only · then will the movement in the P and T directions begin.",
+    "source": "pdf"
   }
 }

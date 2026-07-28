@@ -4678,5 +4678,125 @@
   "102662": {
     "model": "DS-MCW409",
     "hardware_version": "UNKNOWN"
+  },
+  "102663": {
+    "model": "EKI-K82T46B",
+    "hardware_version": "UNKNOWN"
+  },
+  "102664": {
+    "model": "IDS-7716NXI-M4/16P/X",
+    "hardware_version": "UNKNOWN"
+  },
+  "102665": {
+    "model": "DS-K1T502DBWX-C",
+    "hardware_version": "UNKNOWN"
+  },
+  "102666": {
+    "model": "DS-KV9503-WBE1",
+    "hardware_version": "UNKNOWN"
+  },
+  "102667": {
+    "model": "EKI-K41T44L",
+    "hardware_version": "NVR_V4"
+  },
+  "102668": {
+    "model": "DS-PA201PS-32WA",
+    "hardware_version": "UNKNOWN"
+  },
+  "102669": {
+    "model": "DS-PD201PC10-WA",
+    "hardware_version": "UNKNOWN"
+  },
+  "102670": {
+    "model": "NKS424W02H",
+    "hardware_version": "UNKNOWN"
+  },
+  "102671": {
+    "model": "DS-TCP440-B",
+    "hardware_version": "UNKNOWN"
+  },
+  "102672": {
+    "model": "DS-KH6320-WTE1",
+    "hardware_version": "UNKNOWN"
+  },
+  "102673": {
+    "model": "DS-PD201P10-WA",
+    "hardware_version": "UNKNOWN"
+  },
+  "102674": {
+    "model": "DS-KD-TDM",
+    "hardware_version": "UNKNOWN"
+  },
+  "102675": {
+    "model": "DS-K1T341BMWI-T",
+    "hardware_version": "UNKNOWN"
+  },
+  "102676": {
+    "model": "DS-PA201PS-KIT-32WA",
+    "hardware_version": "UNKNOWN"
+  },
+  "102677": {
+    "model": "DS-7608NXI-K2/8P",
+    "hardware_version": "NVR_V4"
+  },
+  "102678": {
+    "model": "PCI-B18Z2HS",
+    "hardware_version": "UNKNOWN"
+  },
+  "102679": {
+    "model": "DS-D2055HE-G",
+    "hardware_version": "UNKNOWN"
+  },
+  "102680": {
+    "model": "DS-2TD8167-230ZG2F/WY",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102681": {
+    "model": "PCI-D14Z2HS",
+    "hardware_version": "UNKNOWN"
+  },
+  "102682": {
+    "model": "DS-2TD6267-100C4L/W",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102683": {
+    "model": "DS-2TD2367-50/PY",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102684": {
+    "model": "DS-2TD2637T-15/P",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102685": {
+    "model": "PCI-B14Z2HS",
+    "hardware_version": "UNKNOWN"
+  },
+  "102686": {
+    "model": "IDS-7204HUHI-M1/S",
+    "hardware_version": "DVR_V4"
+  },
+  "102687": {
+    "model": "IDS-7208HUHI-M2/S",
+    "hardware_version": "DVR_V4"
+  },
+  "102688": {
+    "model": "PCI-B14Z8HS",
+    "hardware_version": "UNKNOWN"
+  },
+  "102689": {
+    "model": "DS-K1T670MWX-WBQR#CANADA",
+    "hardware_version": "UNKNOWN"
+  },
+  "102690": {
+    "model": "DS-7604NI-Q1/4P",
+    "hardware_version": "NVR_G0"
+  },
+  "102691": {
+    "model": "EKI-K164D412",
+    "hardware_version": "UNKNOWN"
+  },
+  "102692": {
+    "model": "DS-D2055HU-Y",
+    "hardware_version": "UNKNOWN"
   }
 }
