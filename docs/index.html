@@ -3,90 +3,116 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hikvision firmware search</title>
-  <meta name="description" content="Search archived Hikvision camera and NVR firmware by model and hardware version.">
+  <title>Firmware Download — Hikvision Archive</title>
+  <meta name="description" content="Search Hikvision camera and NVR firmware by model. Partial matches welcome.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="top">
-    <div class="wrap top-inner">
-      <a class="brand" href="./">Firmware archive</a>
-      <nav class="top-nav">
+  <header class="site-header">
+    <div class="shell header-row">
+      <a class="logo" href="./">
+        <span class="logo-mark">FW</span>
+        <span class="logo-text">Firmware Archive</span>
+      </a>
+      <nav class="nav">
         <a href="https://github.com/JoeyGE0/hikvision-fw-archive">GitHub</a>
         <a href="https://github.com/JoeyGE0/hikvision-fw-archive/releases">Releases</a>
-        <a href="https://www.hikvision.com/en/support/download/firmware/">Official catalog</a>
+        <a href="https://www.hikvision.com/en/support/download/firmware/">Hikvision catalog</a>
       </nav>
     </div>
   </header>
 
-  <main class="wrap">
-    <section class="hero">
-      <h1>Find firmware</h1>
-      <p class="lede">
-        Type your device model (same idea as Hikvision / Reolink download centers).
-        Match the <strong>hardware version</strong> from the camera before you flash anything.
+  <section class="search-hero">
+    <div class="shell">
+      <p class="eyebrow">Download Center</p>
+      <h1>Search firmware</h1>
+      <p class="sub">
+        Same idea as Hikvision’s catalog — start typing any part of the model
+        (<code>2387</code>, <code>2CD2387G3</code>, <code>LIS2UY</code>…).
       </p>
-    </section>
 
-    <section class="panel search-panel">
-      <label class="field-label" for="q">Model number</label>
-      <div class="search-row">
+      <div class="search-box" id="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M10.5 3a7.5 7.5 0 0 1 5.95 12.1l3.72 3.73-1.41 1.41-3.73-3.72A7.5 7.5 0 1 1 10.5 3zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z"/>
+        </svg>
         <input
           id="q"
           type="search"
           autocomplete="off"
           spellcheck="false"
-          placeholder="e.g. DS-2CD2387G3-LIS2UY"
-          aria-autocomplete="list"
-          aria-controls="suggestions"
+          placeholder="Enter product model"
+          aria-label="Search product model"
         >
-        <button type="button" id="clear" class="btn ghost" hidden>Clear</button>
+        <button type="button" id="clear" class="clear-btn" hidden aria-label="Clear search">✕</button>
       </div>
-      <ul id="suggestions" class="suggestions" role="listbox" hidden></ul>
       <p id="status" class="status">Loading index…</p>
+    </div>
+  </section>
+
+  <main class="shell main">
+    <section id="hits" class="hits" hidden>
+      <div class="hits-head">
+        <h2 id="hits-title">Matching products</h2>
+        <span id="hits-count" class="hits-count"></span>
+      </div>
+      <div id="hit-list" class="hit-list"></div>
     </section>
 
-    <section id="result" class="panel result-panel" hidden>
-      <div class="result-head">
-        <h2 id="result-model"></h2>
-        <p id="result-meta" class="muted"></p>
-      </div>
-
-      <div class="hw-row">
-        <label for="hw">Hardware</label>
-        <select id="hw"></select>
-      </div>
-
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Version</th>
-              <th>Date</th>
-              <th>File</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody id="rows"></tbody>
-        </table>
+    <section id="detail" class="detail" hidden>
+      <button type="button" id="back" class="back-btn">← Back to results</button>
+      <div class="detail-card">
+        <div class="detail-top">
+          <div>
+            <h2 id="detail-model"></h2>
+            <p id="detail-meta" class="detail-meta"></p>
+          </div>
+          <label class="hw-picker">
+            <span>Hardware version</span>
+            <select id="hw"></select>
+          </label>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Version</th>
+                <th>Release date</th>
+                <th>Filename</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="rows"></tbody>
+          </table>
+        </div>
       </div>
     </section>
 
-    <section class="notes">
-      <h2>Before you upgrade</h2>
-      <ul>
-        <li>Confirm model + hardware on the device (<em>Configuration → System → Device Information</em>).</li>
-        <li>Wrong hardware + firmware combinations can brick a unit.</li>
-        <li>Files here are mirrored for convenience. Downloads are still under the
-          <a href="https://www.hikvision.com/en/policies/materials-license-agreement/">Hikvision Materials License Agreement</a>.
-        </li>
-        <li>This site is not affiliated with Hikvision.</li>
-      </ul>
+    <section id="empty-hint" class="empty-hint">
+      <div class="hint-grid">
+        <article>
+          <h3>Partial matches</h3>
+          <p>Type <strong>2387</strong> or <strong>1383G2</strong> — you don’t need the full SKU.</p>
+        </article>
+        <article>
+          <h3>Check hardware</h3>
+          <p>On the camera: System → Device Information. Hardware must match (e.g. <code>IPC_G0</code>).</p>
+        </article>
+        <article>
+          <h3>License</h3>
+          <p>Mirrored files still fall under the
+            <a href="https://www.hikvision.com/en/policies/materials-license-agreement/">Hikvision Materials License</a>.
+            Unofficial archive — not affiliated with Hikvision.
+          </p>
+        </article>
+      </div>
     </section>
   </main>
 
-  <footer class="foot">
-    <div class="wrap">
+  <footer class="site-footer">
+    <div class="shell footer-row">
       <span id="foot-meta">JoeyGE0/hikvision-fw-archive</span>
     </div>
   </footer>
