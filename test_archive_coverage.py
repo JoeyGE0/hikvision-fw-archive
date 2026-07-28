@@ -57,7 +57,10 @@ def simulate_ha_coordinator(
             return 0
         return 1_000 + min(len(device), len(candidate))
 
-    model_entry = models.get(normalized_model)
+    # Prefer the raw model string before paren-stripping. Stripping
+    # DS-2CD2387G3-LIS2UY/S(L)(RB) → …/S can hit a weaker sibling key.
+    raw_model = " ".join((device_model or "").split()).upper()
+    model_entry = models.get(raw_model) or models.get(normalized_model)
     matched_via = "exact"
     if not model_entry:
         best_score = 0
@@ -83,6 +86,10 @@ def simulate_ha_coordinator(
                     model_entry = entry
                     matched_via = f"prefix:{key}"
                     break
+    elif models.get(raw_model):
+        matched_via = "exact"
+    else:
+        matched_via = "normalized"
 
     if not isinstance(model_entry, dict):
         return {"matched": False, "available": False, "ahead_of_archive": False}
