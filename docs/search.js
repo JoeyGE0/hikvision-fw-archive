@@ -39,6 +39,10 @@
       .match(/[A-Z]+\d+[A-Z0-9]*|\d{2,}|[A-Z]{2,}/g) || []);
   }
 
+  function digitRuns(s) {
+    return String(s || "").toUpperCase().match(/\d{2,}/g) || [];
+  }
+
   function latestForEntry(entry) {
     var hw = entry.hw || {};
     var best = null;
@@ -108,9 +112,9 @@
         var hit = false;
 
         if (isDigits) {
-          for (var j = 0; j < nameTokens.length; j++) {
-            var nt = nameTokens[j];
-            if (!/^\d+$/.test(nt)) continue;
+          var runs = digitRuns(item.name);
+          for (var j = 0; j < runs.length; j++) {
+            var nt = runs[j];
             if (
               nt === t ||
               nt.indexOf(t) === 0 ||
