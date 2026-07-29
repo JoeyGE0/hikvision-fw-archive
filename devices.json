@@ -5098,5 +5098,13 @@
   "102767": {
     "model": "DS-D2055UL-0A",
     "hardware_version": "UNKNOWN"
+  },
+  "102768": {
+    "model": "DS-7604NI-K1/4K",
+    "hardware_version": "NVR_G0"
+  },
+  "102769": {
+    "model": "DS-3WF15KS-SI-5ACG/H",
+    "hardware_version": "UNKNOWN"
   }
 }

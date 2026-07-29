@@ -962,5 +962,13 @@
   "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CNetwork_Camera-V5.7.13_SP1_Release_Note-G5.pdf": {
     "changes": "Repair the problem of the previous version: the speaker over power damage of /SL model. · Fix the smart supplement light issue of V5.7.13. · Problem Phenomenon: when enable WDR and Smart at the same time, after the alarm is over, · the picture is still in color (should be black and white normally). Trigger the alarm again, and the",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CNetwork_Camera-V5.11.0_260629_Release_IPCE_E_E15.pdf": {
+    "changes": "Fixed some potential bugs and improved system stability.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CNetwork_Camera-V5.11.0_260629_Release_IPCE_P_E11.pdf": {
+    "changes": "Fixed some potential bugs and improved system stability.",
+    "source": "pdf"
   }
 }

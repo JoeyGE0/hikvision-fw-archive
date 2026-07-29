@@ -1,21 +1,19 @@
 {
-  "last_run": "2026-07-29T01:27:20.312490",
-  "status": "error",
+  "last_run": "2026-07-29T07:23:16.621703",
+  "status": "success",
   "scraper_mode": "http",
   "post_merge_verified": "2026-05-19T13:00:29.926000",
   "catalog_urls_parsed": 4568,
-  "firmwares_found": 1482,
-  "new_firmwares": 0,
-  "errors": [
-    "Scraping failed: Playwright catalog still invalid (522 bytes) — may be blocked"
-  ],
+  "firmwares_found": 1496,
+  "new_firmwares": 10,
+  "errors": [],
   "test_mode": false,
   "catalog_fetch": "playwright",
-  "catalog_entries": 0,
+  "catalog_entries": 1063,
   "priority_models": [
     "DS-2CD2387G3-LIS2UY",
     "DS-2CD1383G2P-LIUF",
     "DS-2CD1383G2-LIUF"
   ],
-  "catalog_region": "eu-en"
+  "catalog_region": "en"
 }
