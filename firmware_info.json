@@ -970,5 +970,13 @@
   "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CNetwork_Camera-V5.11.0_260629_Release_IPCE_P_E11.pdf": {
     "changes": "Fixed some potential bugs and improved system stability.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202408/releasenote%5CIPD_H8__V5.8.6_Release_Note.pdf": {
+    "changes": "Supported Vehicle Traffic Counting · 4MP Products supported new resolution 2688*1520 · Supported Blacklist and Whitelist Detection in Road Traffic Events",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CIPCH_H8_V5.8.2_241202_Release_Note.pdf": {
+    "changes": "Algorithm optimization and updates. 2. Fix some bugs.",
+    "source": "pdf"
   }
 }

@@ -5106,5 +5106,133 @@
   "102769": {
     "model": "DS-3WF15KS-SI-5ACG/H",
     "hardware_version": "UNKNOWN"
+  },
+  "102770": {
+    "model": "EKI-K41B44W",
+    "hardware_version": "NVR_K75"
+  },
+  "102771": {
+    "model": "DS-7732NI-M4",
+    "hardware_version": "NVR_G0"
+  },
+  "102772": {
+    "model": "DS-2CD6825G0/C-IVS",
+    "hardware_version": "IPC_G0"
+  },
+  "102773": {
+    "model": "IDS-2CD7146G0-IZHSY",
+    "hardware_version": "IPC_G0"
+  },
+  "102774": {
+    "model": "DS-2TD2667-35/PY",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102775": {
+    "model": "DS-2SF8C442MXS-DLW (14F1)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102776": {
+    "model": "DS-2TD1228-2/QA",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102777": {
+    "model": "DS-2CD6D52G0-IHS",
+    "hardware_version": "IPC_G0"
+  },
+  "102778": {
+    "model": "DS-2DE3A400BW-DE",
+    "hardware_version": "IPC_G0"
+  },
+  "102779": {
+    "model": "DS-2DP3236ZIXS-D/440(F0)(P4)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102780": {
+    "model": "DS-2DF5232X-AE3",
+    "hardware_version": "IPC_G0"
+  },
+  "102781": {
+    "model": "DS-2DF8C435MHS-DELW",
+    "hardware_version": "IPC_G0"
+  },
+  "102782": {
+    "model": "DS-2XE6885G0-IZHS(B)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102783": {
+    "model": "DS-2SE4C425MWG-E (14F0)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102784": {
+    "model": "DS-2XC6142FWD-IS",
+    "hardware_version": "UNKNOWN"
+  },
+  "102785": {
+    "model": "DS-2DE7A432IW-AEB",
+    "hardware_version": "IPC_G0"
+  },
+  "102786": {
+    "model": "DS-2SE7C432MW-AEB (14F1)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102787": {
+    "model": "DS-2CD2043G2-IU",
+    "hardware_version": "IPC_G0"
+  },
+  "102788": {
+    "model": "DS-2CD2347G2P-LSU/SL",
+    "hardware_version": "IPC_G0"
+  },
+  "102789": {
+    "model": "DS-96128NI-M16/R",
+    "hardware_version": "UNKNOWN"
+  },
+  "102790": {
+    "model": "ECI-B14F",
+    "hardware_version": "UNKNOWN"
+  },
+  "102791": {
+    "model": "EKI-K164T412C",
+    "hardware_version": "UNKNOWN"
+  },
+  "102792": {
+    "model": "IDS-2CD7547G0/P-XZHSY",
+    "hardware_version": "IPC_G0"
+  },
+  "102793": {
+    "model": "DS-2CD1143G2-IUF",
+    "hardware_version": "IPC_G0"
+  },
+  "102794": {
+    "model": "DS-2CD6425G1-20/E (3.7MM)",
+    "hardware_version": "IPC_G0"
+  },
+  "102795": {
+    "model": "DS-2DE3404W-DE",
+    "hardware_version": "IPC_G0"
+  },
+  "102796": {
+    "model": "DS-2CD3646G2T-IZS(Y) [LPR/ANPR CAMERA]",
+    "hardware_version": "IPC_G0"
+  },
+  "102797": {
+    "model": "DS-2XS6A87G1-LS/C36S80",
+    "hardware_version": "UNKNOWN"
+  },
+  "102798": {
+    "model": "ECI-B64Z2",
+    "hardware_version": "UNKNOWN"
+  },
+  "102799": {
+    "model": "ECI-D64Z2",
+    "hardware_version": "UNKNOWN"
+  },
+  "102800": {
+    "model": "IDS-2CD7546G0-IZHSY",
+    "hardware_version": "IPC_G0"
+  },
+  "102801": {
+    "model": "IDS-2CD7A45G0-IZHSY",
+    "hardware_version": "IPC_G0"
   }
 }
