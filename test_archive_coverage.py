@@ -172,7 +172,21 @@ class TestIndexModelsForFirmware(unittest.TestCase):
         }
         keys = index_models_for_firmware(firmware)
         self.assertIn("DS-2CD2387G3-LIS2UY/S(L)(RB)", keys)
+        self.assertIn("DS-2CD2387G3-LIS2UY/SL", keys)
+        self.assertIn("DS-2CD2387G3-LIS2UY/SRB", keys)
         self.assertNotIn("DS-2CD9999-SHOULD-NOT-INDEX", keys)
+
+    def test_lens_suffix_aliases_bare_sku(self):
+        firmware = {
+            "model": "DS-2CD2187G3-LI(S2U)Y",
+            "applied_to": (
+                "Applied to: DS-2CD2387G3-LIS2UY/SL(2.8MM), "
+                "DS-2CD2387G3-LIS2UY/SRB(2.8MM)"
+            ),
+        }
+        keys = index_models_for_firmware(firmware)
+        self.assertIn("DS-2CD2387G3-LIS2UY/SL", keys)
+        self.assertIn("DS-2CD2387G3-LIS2UY/SRB", keys)
 
     def test_legacy_eight_cap_indexes_full_supported_models(self):
         supported = [f"DS-2CD2067G3-VAR{i}" for i in range(8)]
@@ -192,8 +206,8 @@ class TestUserCameraArchive(unittest.TestCase):
 
     USER_CAMERAS = [
         ("DS-2CD2387G3-LIS2UY/S(L)(RB)", "5.8.10", "5.8.40", "S3000737666"),
-        ("DS-2CD2387G3-LIS2UY/SL", "5.8.10", "5.8.32", "S3000732541"),
-        ("DS-2CD2387G3-LIS2UY/SRB", "5.8.10", "5.8.32", "S3000732541"),
+        ("DS-2CD2387G3-LIS2UY/SL", "5.8.10", "5.8.40", "S3000737666"),
+        ("DS-2CD2387G3-LIS2UY/SRB", "5.8.10", "5.8.40", "S3000737666"),
         ("DS-2CD1383G2-LIUF", "5.8.5", "5.8.41", "S3000712595"),
         ("DS-2CD1383G2-LIUF/SL", "5.8.5", "5.8.41", "S3000712595"),
     ]
