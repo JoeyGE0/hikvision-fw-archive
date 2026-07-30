@@ -978,5 +978,17 @@
   "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CIPCH_H8_V5.8.2_241202_Release_Note.pdf": {
     "changes": "Algorithm optimization and updates. 2. Fix some bugs.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CDS-K1T342_Series_MinMoe_Terminal_Release_Note_V4.48.40_build260629.pdf": {
+    "changes": "improvement and will take effect automatically after the Date of Change.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CDS-K1T670_Series_MinMoe_Terminal_V4.48.20_build260625_Release_Note.pdf": {
+    "changes": "improvement and will take effect automatically after the Date of Change.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202206/Turbo%20HD%20DVR_V4.30.303%20build%20220623.pdf": {
+    "changes": "improve the user experience.",
+    "source": "pdf"
   }
 }
