@@ -5306,5 +5306,53 @@
   "102819": {
     "model": "DS-2XC6625G0",
     "hardware_version": "UNKNOWN"
+  },
+  "102820": {
+    "model": "IDS-7608NXI-M2/8P/X",
+    "hardware_version": "UNKNOWN"
+  },
+  "102821": {
+    "model": "DS-2XM6222G1-I(D)(M)(/ND)",
+    "hardware_version": "IPC_V4"
+  },
+  "102822": {
+    "model": "DS-2XM6756G1-I(D)(M)(/ND)",
+    "hardware_version": "IPC_V4"
+  },
+  "102823": {
+    "model": "IDS-2CD7347G0/P-XS",
+    "hardware_version": "IPC_G0"
+  },
+  "102824": {
+    "model": "DS-7608NXI-I2/8P/VPRO",
+    "hardware_version": "NVR_G0"
+  },
+  "102825": {
+    "model": "DS-K1T673DWX",
+    "hardware_version": "UNKNOWN"
+  },
+  "102826": {
+    "model": "DS-2DE2A404IWG1-E/W",
+    "hardware_version": "IPC_G0"
+  },
+  "102827": {
+    "model": "NVR-208MH-C/8P",
+    "hardware_version": "NVR_G0"
+  },
+  "102828": {
+    "model": "IPC-T289H-MU/SL",
+    "hardware_version": "UNKNOWN"
+  },
+  "102829": {
+    "model": "IPC-T361H-MU#AUS",
+    "hardware_version": "UNKNOWN"
+  },
+  "102830": {
+    "model": "IDS-2CD7547G0/P-XZHS(Y)",
+    "hardware_version": "IPC_G0"
+  },
+  "102831": {
+    "model": "AE-MD5043",
+    "hardware_version": "UNKNOWN"
   }
 }
