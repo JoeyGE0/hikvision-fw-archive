@@ -182,6 +182,57 @@ def normalize_product_model(text: str) -> str:
     return ' '.join((text or '').split()).upper()
 
 
+def strip_model_parentheses(text: str) -> str:
+    """Remove Hikvision parenthetical lens/region tags, e.g. SL(2.8MM) → SL."""
+    stripped = normalize_product_model(text)
+    while True:
+        nxt = re.sub(r'\([^)]*\)', '', stripped)
+        nxt = ' '.join(nxt.split())
+        if nxt == stripped:
+            return nxt
+        stripped = nxt
+
+
+def index_alias_keys(text: str) -> List[str]:
+    """Return index keys for a catalog SKU, including bare-camera aliases.
+
+    Release notes often list ``DS-2CD2387G3-LIS2UY/SL(2.8MM)`` or
+    ``.../S(L)(RB)`` while cameras report ``.../SL`` / ``.../SRB``. Index both
+    the raw catalog spelling and the paren-stripped / optional-group expansions
+    so Home Assistant can resolve the package.
+    """
+    raw = normalize_product_model(text)
+    keys: List[str] = []
+
+    def push(value: str) -> None:
+        key = normalize_product_model(value)
+        if key and key != 'UNKNOWN' and key not in keys:
+            keys.append(key)
+
+    push(raw)
+
+    # /S(L)(RB) → /SL and /SRB (camera deviceInfo never includes the groups)
+    expanded = re.sub(
+        r'/S\(L\)\(RB\)',
+        '/SL',
+        raw,
+        flags=re.IGNORECASE,
+    )
+    if expanded != raw:
+        push(expanded)
+        push(re.sub(r'/S\(L\)\(RB\)', '/SRB', raw, flags=re.IGNORECASE))
+        push(re.sub(r'/S\(L\)\(RB\)', '/S', raw, flags=re.IGNORECASE))
+
+    push(strip_model_parentheses(raw))
+    # After stripping, leftover /S from /S(L)(RB) still needs /SL and /SRB
+    bare = strip_model_parentheses(raw)
+    if re.search(r'/S$', bare) and re.search(r'/S\(L\)\(RB\)', raw, re.IGNORECASE):
+        push(bare + 'L')
+        push(bare[:-1] + 'RB')
+
+    return keys
+
+
 def format_applied_to_list(models: List[str]) -> str:
     """Build a full ``Applied to:`` line from model codes (no truncation)."""
     cleaned = [

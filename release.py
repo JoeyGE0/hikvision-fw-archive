@@ -12,6 +12,7 @@ from typing import Any, Dict, List, Optional
 
 from common import (
     HIKVISION_MODEL_PATTERN,
+    index_alias_keys,
     load_json,
     normalize_product_model,
     parse_version,
@@ -343,11 +344,11 @@ def index_models_for_firmware(firmware: Dict[str, Any]) -> List[str]:
     applied_models: List[str] = []
 
     def add(raw: str) -> None:
-        key = normalize_product_model(raw)
-        if not key or key == 'UNKNOWN' or key in seen:
-            return
-        seen.add(key)
-        models.append(key)
+        for key in index_alias_keys(raw):
+            if not key or key == 'UNKNOWN' or key in seen:
+                continue
+            seen.add(key)
+            models.append(key)
 
     applied_to = firmware.get('applied_to', '') or ''
     for match in re.findall(HIKVISION_MODEL_PATTERN, applied_to, re.IGNORECASE):
