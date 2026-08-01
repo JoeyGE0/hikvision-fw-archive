@@ -5378,5 +5378,57 @@
   "102837": {
     "model": "DS-K1T331",
     "hardware_version": "UNKNOWN"
+  },
+  "102838": {
+    "model": "PCI-B18Z2S",
+    "hardware_version": "UNKNOWN"
+  },
+  "102839": {
+    "model": "EKI-K82T46B(C)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102840": {
+    "model": "DS-K1T502DBWX-C/BACKBOX",
+    "hardware_version": "UNKNOWN"
+  },
+  "102841": {
+    "model": "DS-KIS600",
+    "hardware_version": "UNKNOWN"
+  },
+  "102842": {
+    "model": "DS-KH8350-WTE1",
+    "hardware_version": "UNKNOWN"
+  },
+  "102843": {
+    "model": "IDS-7208HUHI-M2/P",
+    "hardware_version": "DVR_V4"
+  },
+  "102844": {
+    "model": "DS-K1T673DWX-BQR",
+    "hardware_version": "UNKNOWN"
+  },
+  "102845": {
+    "model": "IDS-6704HUHI-M",
+    "hardware_version": "DVR_V4"
+  },
+  "102846": {
+    "model": "IDS-6708HUHI-M",
+    "hardware_version": "DVR_V4"
+  },
+  "102847": {
+    "model": "IDS-6716HUHI-M",
+    "hardware_version": "DVR_V4"
+  },
+  "102848": {
+    "model": "IDS-2CD8A86G0-XZHSY 1050/4",
+    "hardware_version": "IPC_G0"
+  },
+  "102849": {
+    "model": "EKT-SSD424",
+    "hardware_version": "DVR_V4"
+  },
+  "102850": {
+    "model": "EKI-K164T812A",
+    "hardware_version": "UNKNOWN"
   }
 }

@@ -1014,5 +1014,17 @@
   "https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CDS-K1T672_Series_MinMoe_Terminal_Release_Notes_V3.7.0_build231207.pdf": {
     "changes": "Production testing optimization without affecting customer usage. · Reason of Upgrade · Device Model: · Naming Rule:",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202511/releasenote%5CDS-K1T673_Series_MinMoe_Terminal_4.41.80_build251027_Release_Note.pdf": {
+    "changes": "Add new alcohol detection sequence, “permission authentication before alcohol detection” · and “alcohol detection before permission authentication”. They are configurable in · Device Model: · Modules (optional):",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202502/releasenote%5CTurbo_HD_DVR_V4.70.115build250122Release_Notes.pdf": {
+    "changes": "Fix known issues.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202502/releasenote%5CTurbo_HD_DVR_V4.70.114build250122Release_Notes.pdf": {
+    "changes": "Fix known issues.",
+    "source": "pdf"
   }
 }
