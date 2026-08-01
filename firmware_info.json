@@ -994,5 +994,25 @@
   "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CDS-K1T673_Series_MinMoe_Terminal_4.48.20_build260625_Release_Note.pdf": {
     "changes": "improvement and will take effect automatically after the Date of Change.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CTurbo_HD_DVR_V4.84.102build260716_Release_Notes.pdf": {
+    "changes": "improve product performance, and will take effect automatically after upgrading from previous versions.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CDS-K1T343_Series_MinMoe_Terminal_Release_Note_V4.48.40_build260629.pdf": {
+    "changes": "improvement and will take effect automatically after the Date of Change.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CNetwork_Camera-V5.8.11_260409Release_IPDE_E9.pdf": {
+    "changes": "Fixed some bugs to enhance system stability.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202603/releasenote%5CDS-K1T331_Series_MinMoe_Terminal_V3.7.80_build251218_Release_Note.pdf": {
+    "changes": "Fix bugs, enhance products quality to meet customers’ requirements.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5CDS-K1T672_Series_MinMoe_Terminal_Release_Notes_V3.7.0_build231207.pdf": {
+    "changes": "Production testing optimization without affecting customer usage. · Reason of Upgrade · Device Model: · Naming Rule:",
+    "source": "pdf"
   }
 }

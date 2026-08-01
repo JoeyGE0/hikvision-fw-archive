@@ -5354,5 +5354,29 @@
   "102831": {
     "model": "AE-MD5043",
     "hardware_version": "UNKNOWN"
+  },
+  "102832": {
+    "model": "DS-7632NXI-I2/16P/S",
+    "hardware_version": "NVR_G0"
+  },
+  "102833": {
+    "model": "DS-K1T671MF",
+    "hardware_version": "UNKNOWN"
+  },
+  "102834": {
+    "model": "DS-K1T672E",
+    "hardware_version": "UNKNOWN"
+  },
+  "102835": {
+    "model": "DS-7208HUHI-S1/XT",
+    "hardware_version": "DVR_V4"
+  },
+  "102836": {
+    "model": "IDS-2CD7A47G2H/P-XZHSY",
+    "hardware_version": "IPC_G0"
+  },
+  "102837": {
+    "model": "DS-K1T331",
+    "hardware_version": "UNKNOWN"
   }
 }
