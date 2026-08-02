@@ -1026,5 +1026,21 @@
   "https://assets.hikvision.com/prd/public/all/files/202502/releasenote%5CTurbo_HD_DVR_V4.70.114build250122Release_Notes.pdf": {
     "changes": "Fix known issues.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202208/%E3%80%90Release%20Note%E3%80%91Mobile%20IPC%20V1.4.1.pdf": {
+    "changes": "Optimizing OSD superposition function; · Modified functions · Related product list · series IPC",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5C%E3%80%90Release_Note%E3%80%91Mobile_IPC_V1.4.1.pdf": {
+    "changes": "Optimizing OSD superposition function; · Modified functions · Related product list · series IPC",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202207/IPC%20V5.5.75%20build%20211013%20Release%20Note.pdf": {
+    "changes": "Fixed some known problems.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202206/DVR_V4.20_002%20build210705_Release%20Notes.pdf": {
+    "changes": "Rebuild All Data in Webpage · This new firmware add a new feature that support repairing database in webpage, you can repair the · database remotely now. · Upgrade Feature",
+    "source": "pdf"
   }
 }

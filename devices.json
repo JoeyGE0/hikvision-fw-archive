@@ -5430,5 +5430,101 @@
   "102850": {
     "model": "EKI-K164T812A",
     "hardware_version": "UNKNOWN"
+  },
+  "102851": {
+    "model": "DS-9616NI-M8",
+    "hardware_version": "UNKNOWN"
+  },
+  "102852": {
+    "model": "DS-KV6113-WPE1(C)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102853": {
+    "model": "DS-2CD2085FWD-I",
+    "hardware_version": "IPC_V5"
+  },
+  "102854": {
+    "model": "DS-2TD4137T-9/W",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102855": {
+    "model": "DS-2TX3742-35A/P",
+    "hardware_version": "UNKNOWN"
+  },
+  "102856": {
+    "model": "DS-K1107AM",
+    "hardware_version": "UNKNOWN"
+  },
+  "102857": {
+    "model": "DS-2CD2346G2-I(U)",
+    "hardware_version": "IPC_G0"
+  },
+  "102858": {
+    "model": "DS-2DY9236IX-A(T3)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102859": {
+    "model": "ECT-T12F",
+    "hardware_version": "UNKNOWN"
+  },
+  "102860": {
+    "model": "DS-2TD1217-2/PA",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102861": {
+    "model": "DS-2TD2836-50/V1",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102862": {
+    "model": "DS-2TD8166-150ZE2F/V2",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102863": {
+    "model": "DS-2PT3326IZ",
+    "hardware_version": "UNKNOWN"
+  },
+  "102864": {
+    "model": "DS-2CD2027G1-L",
+    "hardware_version": "IPC_G0"
+  },
+  "102865": {
+    "model": "DS-2CD2047G1-L",
+    "hardware_version": "IPC_G0"
+  },
+  "102866": {
+    "model": "DS-2XC6122FWD-IS",
+    "hardware_version": "UNKNOWN"
+  },
+  "102867": {
+    "model": "DS-2XM6222G0-I(AE)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102868": {
+    "model": "DS-2XM6726G0-I(D)(M)(/ND)(AE)",
+    "hardware_version": "IPC_V1"
+  },
+  "102869": {
+    "model": "DS-2CD6W45G0-IVS",
+    "hardware_version": "IPC_G0"
+  },
+  "102870": {
+    "model": "DS-2CE57D3T-VPITFB",
+    "hardware_version": "UNKNOWN"
+  },
+  "102871": {
+    "model": "DS-7332HUI-K4#USA",
+    "hardware_version": "DVR_V4"
+  },
+  "102872": {
+    "model": "DS-9016HUHI-K8",
+    "hardware_version": "DVR_V4"
+  },
+  "102873": {
+    "model": "DS-2DE3A400BW-DE(F1)(S5)",
+    "hardware_version": "IPC_G0"
+  },
+  "102874": {
+    "model": "DS-2XM6522G0-I(D)(M)(/ND)(C)",
+    "hardware_version": "IPC_V5"
   }
 }
