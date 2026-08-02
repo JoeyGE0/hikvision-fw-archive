@@ -5526,5 +5526,69 @@
   "102874": {
     "model": "DS-2XM6522G0-I(D)(M)(/ND)(C)",
     "hardware_version": "IPC_V5"
+  },
+  "102875": {
+    "model": "DS-D2055EH-0B",
+    "hardware_version": "UNKNOWN"
+  },
+  "102876": {
+    "model": "DS-2CD2766G2T-IZS#AU",
+    "hardware_version": "IPC_G0"
+  },
+  "102877": {
+    "model": "AE-VC1B11-ISF",
+    "hardware_version": "IPC_V3"
+  },
+  "102878": {
+    "model": "THC-T257-LMS",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102879": {
+    "model": "DS-2TD2167T-7/P",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102880": {
+    "model": "DS-2TD2137T-7/P",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102881": {
+    "model": "NK42W0H-1T(E)",
+    "hardware_version": "NVR_K75"
+  },
+  "102882": {
+    "model": "AE-MN5043(M12)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102883": {
+    "model": "AE-MN5083(M12)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102884": {
+    "model": "AE-MN7083(RJ45)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102885": {
+    "model": "DS-D2046EL-0A",
+    "hardware_version": "UNKNOWN"
+  },
+  "102886": {
+    "model": "DS-D2065LU-Y",
+    "hardware_version": "UNKNOWN"
+  },
+  "102887": {
+    "model": "DS-D2046TL-1B",
+    "hardware_version": "UNKNOWN"
+  },
+  "102888": {
+    "model": "NVR-108MH-C/8P#AU",
+    "hardware_version": "NVR_G0"
+  },
+  "102889": {
+    "model": "IPC-T262H-MU#AU",
+    "hardware_version": "UNKNOWN"
+  },
+  "102890": {
+    "model": "NVR-104MH-D/W(C)",
+    "hardware_version": "NVR_G0"
   }
 }
