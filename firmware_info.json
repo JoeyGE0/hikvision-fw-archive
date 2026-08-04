@@ -1042,5 +1042,9 @@
   "https://assets.hikvision.com/prd/public/all/files/202206/DVR_V4.20_002%20build210705_Release%20Notes.pdf": {
     "changes": "Rebuild All Data in Webpage · This new firmware add a new feature that support repairing database in webpage, you can repair the · database remotely now. · Upgrade Feature",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202208/%5BPublic%5DThermal%20Network%20Bullet%20and%20Turret%20Camera%20V5.5.34%20Release%20Notes%20.pdf": {
+    "changes": "Alarm Interval Editable · Added Alarm Interval for temperature measurement, fire detection, and smoke · detection. · You can set the Alarm Interval to reduce the alarms when fire/temperature",
+    "source": "pdf"
   }
 }

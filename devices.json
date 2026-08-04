@@ -5598,5 +5598,65 @@
   "102892": {
     "model": "DS-E04NI-Q1/4P",
     "hardware_version": "UNKNOWN"
+  },
+  "102893": {
+    "model": "PCI-D15F2S",
+    "hardware_version": "UNKNOWN"
+  },
+  "102894": {
+    "model": "DS-7616NI-I2/16P",
+    "hardware_version": "NVR_G0"
+  },
+  "102895": {
+    "model": "DS-2CE76D3T-ITMFB",
+    "hardware_version": "UNKNOWN"
+  },
+  "102896": {
+    "model": "T7208U2TA6",
+    "hardware_version": "DVR_V4"
+  },
+  "102897": {
+    "model": "DS-6901UDI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102898": {
+    "model": "DS-2CD6984G0-IH(S)(AC)(/NFC)#USA",
+    "hardware_version": "IPC_G0"
+  },
+  "102899": {
+    "model": "PCI-B15F",
+    "hardware_version": "UNKNOWN"
+  },
+  "102900": {
+    "model": "IDS-2CD7AC5G0-IZHSYR",
+    "hardware_version": "IPC_H7"
+  },
+  "102901": {
+    "model": "DS-C30S-04HO",
+    "hardware_version": "UNKNOWN"
+  },
+  "102902": {
+    "model": "EKT-K82T26",
+    "hardware_version": "UNKNOWN"
+  },
+  "102903": {
+    "model": "DS-2TP31B-3AUF",
+    "hardware_version": "UNKNOWN"
+  },
+  "102904": {
+    "model": "EKT-K41T24",
+    "hardware_version": "UNKNOWN"
+  },
+  "102905": {
+    "model": "ECI-T22F2",
+    "hardware_version": "UNKNOWN"
+  },
+  "102906": {
+    "model": "EKI-K82B86",
+    "hardware_version": "UNKNOWN"
+  },
+  "102907": {
+    "model": "DS-2TD2636B-13/P",
+    "hardware_version": "THERMAL_G0"
   }
 }
