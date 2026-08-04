@@ -5590,5 +5590,13 @@
   "102890": {
     "model": "NVR-104MH-D/W(C)",
     "hardware_version": "NVR_G0"
+  },
+  "102891": {
+    "model": "DS-2DE3C210MWG1-E",
+    "hardware_version": "IPC_G0"
+  },
+  "102892": {
+    "model": "DS-E04NI-Q1/4P",
+    "hardware_version": "UNKNOWN"
   }
 }
