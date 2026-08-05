@@ -1046,5 +1046,13 @@
   "https://assets.hikvision.com/prd/public/all/files/202208/%5BPublic%5DThermal%20Network%20Bullet%20and%20Turret%20Camera%20V5.5.34%20Release%20Notes%20.pdf": {
     "changes": "Alarm Interval Editable · Added Alarm Interval for temperature measurement, fire detection, and smoke · detection. · You can set the Alarm Interval to reduce the alarms when fire/temperature",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CIPC_H3_5.6.12_200729_release_notes.pdf": {
+    "changes": "HTTP preview fetching stream: Now the models of this firmware included which support MJPEG now can · support ISAPI/Streaming/channels//httppreview. · Solve the problem of abnormal data reporting in negative time zone (such as UTC-8 in West 8). · Lens change:",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5C%E3%80%90Release_Note%E3%80%91Mobile_IPC_V5.6.2_190701.pdf": {
+    "changes": "improve product performance, and will take effect automatically after upgrading from previous versions.",
+    "source": "pdf"
   }
 }

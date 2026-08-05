@@ -5658,5 +5658,61 @@
   "102907": {
     "model": "DS-2TD2636B-13/P",
     "hardware_version": "THERMAL_G0"
+  },
+  "102908": {
+    "model": "NVR-104MH-C/4P",
+    "hardware_version": "NVR_V4"
+  },
+  "102909": {
+    "model": "DS-K1104",
+    "hardware_version": "UNKNOWN"
+  },
+  "102910": {
+    "model": "DS-KD-KK",
+    "hardware_version": "UNKNOWN"
+  },
+  "102911": {
+    "model": "AE-DC5113-F6S",
+    "hardware_version": "IPC_V5"
+  },
+  "102912": {
+    "model": "DS-2CD2146G1-I(S)",
+    "hardware_version": "IPC_G0"
+  },
+  "102913": {
+    "model": "DS-2DF6A436X-AEL",
+    "hardware_version": "IPC_G0"
+  },
+  "102914": {
+    "model": "DS-KV8113-WME1",
+    "hardware_version": "UNKNOWN"
+  },
+  "102915": {
+    "model": "DS-7104NI-K1/W/M",
+    "hardware_version": "UNKNOWN"
+  },
+  "102916": {
+    "model": "DS-2CD5085G0-(AP)",
+    "hardware_version": "IPC_G0"
+  },
+  "102917": {
+    "model": "DS-K2604-G",
+    "hardware_version": "UNKNOWN"
+  },
+  "102918": {
+    "model": "DS-2CD5026G0-(AP)",
+    "hardware_version": "IPC_H3"
+  },
+  "102919": {
+    "model": "DS-KD8003-IME2(C)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102920": {
+    "model": "DS-6708HUHI-K",
+    "hardware_version": "UNKNOWN"
+  },
+  "102921": {
+    "model": "DS-7316HQI-K4#USA",
+    "hardware_version": "UNKNOWN"
   }
 }
