@@ -1054,5 +1054,13 @@
   "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5C%E3%80%90Release_Note%E3%80%91Mobile_IPC_V5.6.2_190701.pdf": {
     "changes": "improve product performance, and will take effect automatically after upgrading from previous versions.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202304/AU_NVR_V4.60.005%20build230307_Release%20Notes.pdf": {
+    "changes": "Fix several bugs and optimize product performance Bugs are listed as below 1, It may fail to do live view via Hik-Connect APP sometimes.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202403/releasenote%5C%E3%80%90Release_Note%E3%80%91ANPR-IPC_V3.0.2.pdf": {
+    "changes": "Supports picture resolution and capture quality settings. · Support to upload license plate pictures via ftp. · Support to set mirror function for horizontally mounted cameras suffix with –IS/P(H). · Support to set the same lane /snap interval and timeout",
+    "source": "pdf"
   }
 }

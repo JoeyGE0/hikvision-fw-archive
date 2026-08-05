@@ -5714,5 +5714,49 @@
   "102921": {
     "model": "DS-7316HQI-K4#USA",
     "hardware_version": "UNKNOWN"
+  },
+  "102922": {
+    "model": "DS-2TD6267-75C4L/WY",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102923": {
+    "model": "DS-KD3003-E6",
+    "hardware_version": "UNKNOWN"
+  },
+  "102924": {
+    "model": "DS-2CV2046G0-IDW",
+    "hardware_version": "UNKNOWN"
+  },
+  "102925": {
+    "model": "DS-2CD2046G2-IU/SL",
+    "hardware_version": "IPC_G0"
+  },
+  "102926": {
+    "model": "DS-KD-E",
+    "hardware_version": "UNKNOWN"
+  },
+  "102927": {
+    "model": "IPC-T282H-MU#AU",
+    "hardware_version": "UNKNOWN"
+  },
+  "102928": {
+    "model": "AE-VC583I-IS/P(V)/(H)",
+    "hardware_version": "IPC_V3"
+  },
+  "102929": {
+    "model": "NVR-104MH-K /4P(B)#AUS",
+    "hardware_version": "NVR_G0"
+  },
+  "102930": {
+    "model": "DS-K3B601SX",
+    "hardware_version": "UNKNOWN"
+  },
+  "102931": {
+    "model": "DVR-204Q-K1",
+    "hardware_version": "DVR_G0"
+  },
+  "102932": {
+    "model": "DS-7608NI-I2/8P",
+    "hardware_version": "NVR_V4"
   }
 }
