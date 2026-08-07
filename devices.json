@@ -5595,10 +5595,6 @@
     "model": "DS-2DE3C210MWG1-E",
     "hardware_version": "IPC_G0"
   },
-  "102892": {
-    "model": "DS-E04NI-Q1/4P",
-    "hardware_version": "UNKNOWN"
-  },
   "102893": {
     "model": "PCI-D15F2S",
     "hardware_version": "UNKNOWN"
@@ -5758,5 +5754,37 @@
   "102932": {
     "model": "DS-7608NI-I2/8P",
     "hardware_version": "NVR_V4"
+  },
+  "102933": {
+    "model": "DS-96128NI-H24R/LCD",
+    "hardware_version": "UNKNOWN"
+  },
+  "102934": {
+    "model": "DS-KIS711",
+    "hardware_version": "UNKNOWN"
+  },
+  "102935": {
+    "model": "AE-DI2032-G40 S2",
+    "hardware_version": "UNKNOWN"
+  },
+  "102936": {
+    "model": "DS-7604NXI-K1/4P/VPRO",
+    "hardware_version": "NVR_V4"
+  },
+  "102937": {
+    "model": "DS-7104NI-Q1",
+    "hardware_version": "UNKNOWN"
+  },
+  "102938": {
+    "model": "NVR-104MH-C(E)",
+    "hardware_version": "NVR_K21B2"
+  },
+  "102939": {
+    "model": "DS-2DP8S845IXG1/LM-L5WF/832(F3)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102940": {
+    "model": "DS-2DF6C445IWG1-EL(W)",
+    "hardware_version": "IPC_G0"
   }
 }
