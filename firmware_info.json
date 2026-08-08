@@ -1074,5 +1074,9 @@
   "https://assets.hikvision.com/prd/normal/all/files/202608/releasenote%5C2_Wire_HD_Indoor_Station_V2.2.118_build260608_Release_Note.pdf": {
     "changes": "Fixed known issue for indoor station: · Improved audio behavior when the screen is off. Resolved an occasional unusual sound from · the indoor station while it is idle with the screen dimmed. The display now stays quiet when · entering standby mode.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/3c9ab5f6-2ec5-41e7-a220-f74ad40f762c.pdf": {
+    "changes": "improve DVR performance.",
+    "source": "pdf"
   }
 }

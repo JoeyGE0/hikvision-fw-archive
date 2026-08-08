@@ -5786,5 +5786,77 @@
   "102940": {
     "model": "DS-2DF6C445IWG1-EL(W)",
     "hardware_version": "IPC_G0"
+  },
+  "102941": {
+    "model": "DS-2CD2386G2-I",
+    "hardware_version": "IPC_G0"
+  },
+  "102942": {
+    "model": "DS-2CD6D54G1-IZS",
+    "hardware_version": "IPC_G0"
+  },
+  "102943": {
+    "model": "ECT-T32V2",
+    "hardware_version": "UNKNOWN"
+  },
+  "102944": {
+    "model": "DS-2CD2D21G0-D/NF",
+    "hardware_version": "IPC_G0"
+  },
+  "102945": {
+    "model": "DS-2CD2125FHWD-I(S)",
+    "hardware_version": "IPC_G0"
+  },
+  "102946": {
+    "model": "DS-2XM6222FWD-I(M)",
+    "hardware_version": "IPC_V5"
+  },
+  "102947": {
+    "model": "DS-2DE2204IW-DE3",
+    "hardware_version": "IPC_G0"
+  },
+  "102948": {
+    "model": "DS-2DE2204IW-DE3/W",
+    "hardware_version": "IPC_G0"
+  },
+  "102949": {
+    "model": "DS-KD-KK/S",
+    "hardware_version": "UNKNOWN"
+  },
+  "102950": {
+    "model": "DS-KC001",
+    "hardware_version": "UNKNOWN"
+  },
+  "102951": {
+    "model": "DS-2CD7A85G0-IZ(H)S",
+    "hardware_version": "IPC_G0"
+  },
+  "102952": {
+    "model": "DS-7204HUHI-K1",
+    "hardware_version": "DVR_V4"
+  },
+  "102953": {
+    "model": "DS-2CC52D9T-AITZE",
+    "hardware_version": "UNKNOWN"
+  },
+  "102954": {
+    "model": "DS-2CD7046G0-(AP)",
+    "hardware_version": "IPC_H3"
+  },
+  "102955": {
+    "model": "DS-7316HTHI-K4",
+    "hardware_version": "UNKNOWN"
+  },
+  "102956": {
+    "model": "DS-2DY9236I-CWX(W/316L)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102957": {
+    "model": "DS-6704HUHI-K",
+    "hardware_version": "UNKNOWN"
+  },
+  "102958": {
+    "model": "DS-7316HUI-K4#USA",
+    "hardware_version": "UNKNOWN"
   }
 }
