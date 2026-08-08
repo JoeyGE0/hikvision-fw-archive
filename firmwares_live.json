@@ -50783,8 +50783,8 @@
       "IDS-9664NXI-M8/X"
     ],
     "applied_to": "Applied to: IDS-7716NXI-M4/16P/X, IDS-9632NXI-M8/X, IDS-9664NXI-M8/X",
-    "changes": "",
-    "notes": "",
+    "changes": "Modified functions",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202608/releasenote%5C5.04.052_build260709_ReleaseNotes.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -50988,7 +50988,9 @@
       "IDS-2CD7A47G0-XZHS",
       "IDS-2CD7A47G0-XZHSY",
       "IDS-2CD7A87G0-XZHS",
-      "IDS-2CD7A87G0-XZHSY"
+      "IDS-2CD7A87G0-XZHSY",
+      "IDS-2CD8A46G0/SC-XZY",
+      "IDS-2CD8A46G0/SC-XZY(2.8-12MM)"
     ],
     "applied_to": "Applied to: IDS-2CD7046G0(-AP)(/F11), IDS-2CD7046G0-AP(C), IDS-2CD7146G0-IZ(H)S(Y), IDS-2CD7146G0-IZS(2.8-12MM)(D), IDS-2CD7146G0-IZS(8-32MM)(D), IDS-2CD7146G0-IZHSY(2.8-12MM)(D), IDS-2CD7186G0-IZ(H)S(Y), IDS-2CD7186G0-IZS(2.8-12MM)(D), IDS-2CD7547G0-XZHS(Y), IDS-2CD7547G0-XZHSY(2.8-12MM), IDS-2CD7547G0/P-XZHS(Y), IDS-2CD7547G0/P-XZHSY(2.8-12MM), IDS-2CD7586G0-IZHS(Y)(R), IDS-2CD7586G0-IZHSY(2.8-12MM)(C), IDS-2CD7587G0-XZHS(Y), IDS-2CD7587G0-XZHSY(2.8-12MM), IDS-2CD7A46G0-IZHS(Y)(R), IDS-2CD7A46G0-IZHSY(8-32MM)(C), IDS-2CD7A46G0-IZHSY(2.8-12MM)(C), IDS-2CD7A47G0-XZHS(Y), IDS-2CD7A47G0-XZHSY(2.8-12MM), IDS-2CD7A86G0-IZHSY, IDS-2CD7A86G0-IZHSY(2.8-12MM)(C), IDS-2CD7A86G0-IZHSY(8-32MM)(C), IDS-2CD7A87G0-XZHS(Y), IDS-2CD7A87G0-XZHSY(2.8-12MM)",
     "changes": "V5.10.0_260618: Fix some known bugs.",
@@ -55440,7 +55442,7 @@
     "hardware_version": "UNKNOWN",
     "version": "2.1.9",
     "date": "2021-06-17",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786166608/4615b57a-0216-4880-822d-4aaf422cb196.zip",
     "filename": "4615b57a-0216-4880-822d-4aaf422cb196.zip",
     "supported_models": [
       "DS-KC001"
@@ -55457,7 +55459,7 @@
     "hardware_version": "IPC_G0",
     "version": "5.6.12",
     "date": "2020-12-15",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786166608/f6fb6a3b-58e9-4f06-b728-35f5ec127a08.zip",
     "filename": "f6fb6a3b-58e9-4f06-b728-35f5ec127a08.zip",
     "supported_models": [
       "DS-2CD7A85G0-IZ(H)S",
@@ -55477,7 +55479,7 @@
     "hardware_version": "DVR_V4",
     "version": "4.25.001",
     "date": "2020-11-07",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786166608/1a2a78cf-8e6d-4f7d-b272-a5c624ffb92d.zip",
     "filename": "1a2a78cf-8e6d-4f7d-b272-a5c624ffb92d.zip",
     "supported_models": [
       "DS-7204HUHI-K1",
@@ -55495,7 +55497,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.06.00",
     "date": "2020-09-09",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786166608/112ada4d-fb7a-4051-939a-2eda913c5658.zip",
     "filename": "112ada4d-fb7a-4051-939a-2eda913c5658.zip",
     "supported_models": [
       "DS-2CC52D9T-AITZE",
@@ -55515,7 +55517,7 @@
     "hardware_version": "IPC_H3",
     "version": "5.6.12",
     "date": "2020-07-29",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786166608/0b607da2-9d08-488f-85b9-9a414dce005e.zip",
     "filename": "0b607da2-9d08-488f-85b9-9a414dce005e.zip",
     "supported_models": [
       "DS-2CD7046G0-(AP)",
@@ -55544,7 +55546,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "4.2.20",
     "date": "2020-02-25",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786166608/ff62c4ce-962b-42f2-93e1-c81358d4560a.zip",
     "filename": "ff62c4ce-962b-42f2-93e1-c81358d4560a.zip",
     "supported_models": [
       "DS-2TD2636B-13/P",
@@ -55562,7 +55564,7 @@
     "hardware_version": "UNKNOWN",
     "version": "4.20.100",
     "date": "2019-09-23",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786166608/edc2ffaf-5533-4305-aac9-be63da0ac479.zip",
     "filename": "edc2ffaf-5533-4305-aac9-be63da0ac479.zip",
     "supported_models": [
       "DS-7316HTHI-K4",
@@ -55580,7 +55582,7 @@
     "hardware_version": "UNKNOWN",
     "version": "5.6.11",
     "date": "2019-04-26",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786166608/fdd96a66-d07f-4641-b307-edecfc99373c.zip",
     "filename": "fdd96a66-d07f-4641-b307-edecfc99373c.zip",
     "supported_models": [
       "DS-2DY9236I-CWX(W/316L)",
@@ -55598,7 +55600,7 @@
     "hardware_version": "UNKNOWN",
     "version": "3.5.371",
     "date": "2018-12-20",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786166608/0288dbe5-ccca-4311-8b08-184314c9bf33.zip",
     "filename": "0288dbe5-ccca-4311-8b08-184314c9bf33.zip",
     "supported_models": [
       "DS-6704HUHI-K"
@@ -55615,13 +55617,58 @@
     "hardware_version": "UNKNOWN",
     "version": "3.5.371",
     "date": "2018-12-20",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786166608/8249a812-fe05-4fa8-987e-c3d24aa93245.zip",
     "filename": "8249a812-fe05-4fa8-987e-c3d24aa93245.zip",
     "supported_models": [
       "DS-7316HUI-K4#USA",
-      "DS-7316HUI-K4"
+      "DS-7316HUI-K4",
+      "DS-7316HUI-K4-4T"
     ],
     "applied_to": "Applied to: DS-7316HUI-K4#USA, DS-7316HUI-K4",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "IK-4248TH-MH/P#CA_NVR_K21B2_4.83.108": {
+    "device_id": 102959,
+    "model": "IK-4248TH-MH/P#CA",
+    "hardware_version": "NVR_K21B2",
+    "version": "4.83.108",
+    "date": "2026-07-13",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786125916/Firmware__V4.83.108_260713_S3000743614.zip",
+    "filename": "Firmware__V4.83.108_260713_S3000743614.zip",
+    "supported_models": [
+      "IK-4248TH-MH/P#CA",
+      "IK-4248TH-MH/P",
+      "IK-4248TH-MH/PL",
+      "DS-J142I",
+      "IK-4284TH-MH/PH/P",
+      "IK-4284TH-MH/P",
+      "IK-6284TH-MH/P",
+      "IK-6288TH-MH/P#CA",
+      "IK-6288TH-MH/P",
+      "IK-6288TH-MH/PL"
+    ],
+    "applied_to": "Applied to: IK-4248TH-MH/P#CA, IK-4248TH-MH/P, IK-4248TH-MH/PL, DS-J142I, IK-4284TH-MH/PH/P, IK-4284TH-MH/P, IK-6284TH-MH/P, IK-6288TH-MH/P#CA, IK-6288TH-MH/P, IK-6288TH-MH/PL",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202608/releasenote%5CNVR_K21B2_V4.83.108_260713_ReleaseNote.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-7332HQI-K4#USA_UNKNOWN_3.5.40": {
+    "device_id": 102960,
+    "model": "DS-7332HQI-K4#USA",
+    "hardware_version": "UNKNOWN",
+    "version": "3.5.40",
+    "date": "2018-11-13",
+    "download_url": "",
+    "filename": "277f30df-bf25-466f-879f-65ae0eacc5f9.zip",
+    "supported_models": [
+      "DS-7332HQI-K4#USA",
+      "DS-7332HQI-K4"
+    ],
+    "applied_to": "Applied to: DS-7332HQI-K4#USA, DS-7332HQI-K4",
     "changes": "",
     "notes": "",
     "is_beta": false,

@@ -5858,5 +5858,13 @@
   "102958": {
     "model": "DS-7316HUI-K4#USA",
     "hardware_version": "UNKNOWN"
+  },
+  "102959": {
+    "model": "IK-4248TH-MH/P#CA",
+    "hardware_version": "NVR_K21B2"
+  },
+  "102960": {
+    "model": "DS-7332HQI-K4#USA",
+    "hardware_version": "UNKNOWN"
   }
 }
