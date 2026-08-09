@@ -4599,10 +4599,6 @@
     "model": "IDS-2CD7A46G0/P-IZHS(Y)",
     "hardware_version": "IPC_G0"
   },
-  "102643": {
-    "model": "PCI-B15Z2S",
-    "hardware_version": "UNKNOWN"
-  },
   "102644": {
     "model": "IDS-2CD7146G2-IZ(H)S(Y)(1T)",
     "hardware_version": "IPC_G0"
@@ -4677,10 +4673,6 @@
   },
   "102662": {
     "model": "DS-MCW409",
-    "hardware_version": "UNKNOWN"
-  },
-  "102663": {
-    "model": "EKI-K82T46B",
     "hardware_version": "UNKNOWN"
   },
   "102664": {
@@ -5295,16 +5287,8 @@
     "model": "DS-6904UDI(B)",
     "hardware_version": "UNKNOWN"
   },
-  "102817": {
-    "model": "PCI-D12F",
-    "hardware_version": "UNKNOWN"
-  },
   "102818": {
     "model": "PCI-LB12F",
-    "hardware_version": "UNKNOWN"
-  },
-  "102819": {
-    "model": "DS-2XC6625G0",
     "hardware_version": "UNKNOWN"
   },
   "102820": {
@@ -5377,14 +5361,6 @@
   },
   "102837": {
     "model": "DS-K1T331",
-    "hardware_version": "UNKNOWN"
-  },
-  "102838": {
-    "model": "PCI-B18Z2S",
-    "hardware_version": "UNKNOWN"
-  },
-  "102839": {
-    "model": "EKI-K82T46B(C)",
     "hardware_version": "UNKNOWN"
   },
   "102840": {
@@ -5595,10 +5571,6 @@
     "model": "DS-2DE3C210MWG1-E",
     "hardware_version": "IPC_G0"
   },
-  "102893": {
-    "model": "PCI-D15F2S",
-    "hardware_version": "UNKNOWN"
-  },
   "102894": {
     "model": "DS-7616NI-I2/16P",
     "hardware_version": "NVR_G0"
@@ -5641,10 +5613,6 @@
   },
   "102904": {
     "model": "EKT-K41T24",
-    "hardware_version": "UNKNOWN"
-  },
-  "102905": {
-    "model": "ECI-T22F2",
     "hardware_version": "UNKNOWN"
   },
   "102906": {
@@ -5729,10 +5697,6 @@
   },
   "102926": {
     "model": "DS-KD-E",
-    "hardware_version": "UNKNOWN"
-  },
-  "102927": {
-    "model": "IPC-T282H-MU#AU",
     "hardware_version": "UNKNOWN"
   },
   "102928": {
@@ -5865,6 +5829,110 @@
   },
   "102960": {
     "model": "DS-7332HQI-K4#USA",
+    "hardware_version": "UNKNOWN"
+  },
+  "102961": {
+    "model": "HM-TX3840-10/G1/T3",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102962": {
+    "model": "IDS-TCV900-BI",
+    "hardware_version": "UNKNOWN"
+  },
+  "102963": {
+    "model": "DS-2DF6225X-AEL(T3)",
+    "hardware_version": "IPC_G0"
+  },
+  "102964": {
+    "model": "DS-2CD6D54G1-(I)(Z)(S)(/RC)",
+    "hardware_version": "IPC_G0"
+  },
+  "102965": {
+    "model": "NK42W0H-1T(WD)(D)",
+    "hardware_version": "NVR_K75"
+  },
+  "102966": {
+    "model": "DS-2TD1217-6/P",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102967": {
+    "model": "NK44W1H-1T(WD)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102968": {
+    "model": "DS-2CD5126G0-IZS",
+    "hardware_version": "IPC_H3"
+  },
+  "102969": {
+    "model": "DS-K7R01-433",
+    "hardware_version": "UNKNOWN"
+  },
+  "102970": {
+    "model": "PCI-B15Z2S",
+    "hardware_version": "IPC_G5"
+  },
+  "102971": {
+    "model": "EKI-K82T46B",
+    "hardware_version": "IPC_G5"
+  },
+  "102972": {
+    "model": "PCI-D12F",
+    "hardware_version": "IPC_G5"
+  },
+  "102973": {
+    "model": "DS-2XC6625G0",
+    "hardware_version": "IPC_G5"
+  },
+  "102974": {
+    "model": "PCI-B18Z2S",
+    "hardware_version": "IPC_G5"
+  },
+  "102975": {
+    "model": "EKI-K82T46B(C)",
+    "hardware_version": "IPC_G5"
+  },
+  "102976": {
+    "model": "PCI-D15F2S",
+    "hardware_version": "IPC_G5"
+  },
+  "102977": {
+    "model": "ECI-T22F2",
+    "hardware_version": "IPC_G5"
+  },
+  "102978": {
+    "model": "IPC-T282H-MU#AU",
+    "hardware_version": "IPC_G5"
+  },
+  "102979": {
+    "model": "DS-9632NI-I8",
+    "hardware_version": "NVR_V4"
+  },
+  "102980": {
+    "model": "AE-VC211T-IRS",
+    "hardware_version": "IPC_V5"
+  },
+  "102981": {
+    "model": "DS-PR1-60V",
+    "hardware_version": "UNKNOWN"
+  },
+  "102982": {
+    "model": "DS-D4218FI-CWFH/Ⅲ",
+    "hardware_version": "UNKNOWN"
+  },
+  "102983": {
+    "model": "DVR-208Q-K1",
+    "hardware_version": "DVR_V4"
+  },
+  "102984": {
+    "model": "IPC-B261H-MU",
+    "hardware_version": "IPC_G5"
+  },
+  "102985": {
+    "model": "DS-D2049LU-Y",
+    "hardware_version": "UNKNOWN"
+  },
+  "102986": {
+    "model": "DS-PRP100",
     "hardware_version": "UNKNOWN"
   }
 }
