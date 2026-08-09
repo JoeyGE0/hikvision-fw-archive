@@ -137,18 +137,18 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 | | |
 |--|--|
 | **Status** | ❌ ERROR |
-| **Last run** | 2026-08-09 05:40:50 UTC |
+| **Last run** | 2026-08-09 17:01:08 UTC |
 | **Scraper** | HTTP |
 | **Catalog fetch** | playwright |
-| **Catalog rows parsed** | 307 |
+| **Catalog rows parsed** | 0 |
 | **Firmware records** | 1763 |
-| **New last run** | 10 |
+| **New last run** | 0 |
 | **Test mode** | Disabled |
 
 
 
 **Recent Errors:**
-- ⚠️ Download failed HM-TD2628-10/G1/T3A v5.5.349: ('Connection broken: IncompleteRead(188402004 bytes read, 785521657 more expected)', IncompleteRead(188402004 bytes read, 785521657 more expected))
+- ⚠️ Scraping failed: Playwright catalog still invalid (522 bytes) — may be blocked
 
 
 ---
