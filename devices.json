@@ -5934,5 +5934,33 @@
   "102986": {
     "model": "DS-PRP100",
     "hardware_version": "UNKNOWN"
+  },
+  "102987": {
+    "model": "DS-96128NXI-S16(LCD)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102988": {
+    "model": "HM-TD2628-10/G1/T3A",
+    "hardware_version": "THERMAL_G0"
+  },
+  "102989": {
+    "model": "DS-2CD2563G3-LIS2UY",
+    "hardware_version": "IPC_G0"
+  },
+  "102990": {
+    "model": "IDS-7216HUHI-M2/S",
+    "hardware_version": "DVR_V4"
+  },
+  "102991": {
+    "model": "DS-7632NI-I2/16P",
+    "hardware_version": "NVR_G0"
+  },
+  "102992": {
+    "model": "NVR-108H-D",
+    "hardware_version": "NVR_G0"
+  },
+  "102993": {
+    "model": "NVR-104MH-D/4P",
+    "hardware_version": "NVR_G0"
   }
 }
