@@ -5962,5 +5962,29 @@
   "102993": {
     "model": "NVR-104MH-D/4P",
     "hardware_version": "NVR_G0"
+  },
+  "102994": {
+    "model": "DS-2CD2386G2-I(U)",
+    "hardware_version": "IPC_G0"
+  },
+  "102995": {
+    "model": "DS-3E2510P(B)",
+    "hardware_version": "UNKNOWN"
+  },
+  "102996": {
+    "model": "DS-7204HTHI-K1",
+    "hardware_version": "DVR_G0"
+  },
+  "102997": {
+    "model": "DS-7216HUHI-K2/P",
+    "hardware_version": "DVR_G0"
+  },
+  "102998": {
+    "model": "DS-2CD6W32FWD-IVSD#US",
+    "hardware_version": "IPC_G0"
+  },
+  "102999": {
+    "model": "DS-3E2528P(B)",
+    "hardware_version": "UNKNOWN"
   }
 }
