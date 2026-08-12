@@ -136,19 +136,15 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 | | |
 |--|--|
-| **Status** | ❌ ERROR |
-| **Last run** | 2026-08-11 17:26:04 UTC |
+| **Status** | ✅ SUCCESS |
+| **Last run** | 2026-08-12 06:11:58 UTC |
 | **Scraper** | HTTP |
 | **Catalog fetch** | playwright |
-| **Catalog rows parsed** | 266 |
-| **Firmware records** | 1782 |
-| **New last run** | 0 |
+| **Catalog rows parsed** | 305 |
+| **Firmware records** | 1786 |
+| **New last run** | 2 |
 | **Test mode** | Disabled |
 
-
-
-**Recent Errors:**
-- ⚠️ Download failed DS-3E1508-EI v1.2.0: 403 Client Error: Forbidden for url: https://assets.hikvision.com/prd/public/all/files/9b0070aa-f3a3-46e9-9413-c9654faf96a0.zip
 
 
 ---
@@ -157,7 +153,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 Collapsible sections per model and hardware line (newest firmware first within each section).
 
-Total: 2455
+Total: 2460
 
 
 
@@ -7660,6 +7656,16 @@ Total: 2455
 
 
 <details>
+<summary><h2>DS-3E2528P - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 2.2.0 | Applied to: [DS-3E2528P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786426773/Firmware__V2.2.0D_115745_S3000641571.zip), [DS-3E2528P(B)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786426773/Firmware__V2.2.0D_115745_S3000641571.zip) |  | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786426773/Firmware__V2.2.0D_115745_S3000641571.zip) | — |
+
+</details>
+
+
+<details>
 <summary><h2>DS-3E2528P(B) - UNKNOWN (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
@@ -11315,6 +11321,17 @@ Total: 2455
 
 
 <details>
+<summary><h2>DS-KAD706-P - UNKNOWN (2 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 1.0.0 | Applied to: [DS-KAD706-P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783150251/5ee8382c-be8d-40e8-a9c3-9ec2a88c7cb6.zip) | 2019-02-25 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783150251/5ee8382c-be8d-40e8-a9c3-9ec2a88c7cb6.zip) | — |
+| 1.0.0 | Applied to: [DS-KAD706](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785223581/Firmware__V1.0.0_250326_S3000639582.zip), [DS-KAD706-P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785223581/Firmware__V1.0.0_250326_S3000639582.zip) | 2019-02-25 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785223581/Firmware__V1.0.0_250326_S3000639582.zip) | — |
+
+</details>
+
+
+<details>
 <summary><h2>DS-KB2412T-IM(B) - UNKNOWN (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
@@ -12607,6 +12624,16 @@ Total: 2455
 | ------- | ---------------- | ---- | -------- | ----- |
 | 4.83.614 | Applied to: [DVR-104G-M1/T](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782202309/Firmware_Asia_V4.83.614_251210_S3000691884.zip), [DVR-204G-M1/T](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782202309/Firmware_Asia_V4.83.614_251210_S3000691884.zip) | 2025-12-10 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782202309/Firmware_Asia_V4.83.614_251210_S3000691884.zip) | Fix known issues Customer Impact and Recommended Action This new firmware upgrade is to improve product performance, and will take effect automatically after upgrading from previous versions. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CTurbo_HD_DVR_V4.83.614build251210_Release_Notes.pdf) |
 | 4.83.613 | Applied to: [DVR-104G-M1/T](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780081037/Firmware_Asia_V4.83.613_251028_S3000681724.zip) | 2025-10-28 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780081037/Firmware_Asia_V4.83.613_251028_S3000681724.zip) | improve product performance, and will take effect automatically after upgrading from previous versions. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202511/releasenote%5CTurbo_HD_DVR_V4.83.613build251028_Release_Notes.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DVR-108G-F1 - DVR_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 4.30.101 | Applied to: [DVR-108G-F1](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/c87d3eaa-7b8e-4d1f-9c81-82891eef5b7c.zip), [DS-HILOOKI-DVR-108G-F1](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/c87d3eaa-7b8e-4d1f-9c81-82891eef5b7c.zip) | 2019-11-20 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/c87d3eaa-7b8e-4d1f-9c81-82891eef5b7c.zip) | — |
 
 </details>
 
@@ -13957,6 +13984,16 @@ Total: 2455
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 4.62.225 | Applied to: [IDS-6716NXI-I/S](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782289043/Firmware__V4.62.225_240122_S3000554102.zip), [IDS-6716NXI-I/S(C)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782289043/Firmware__V4.62.225_240122_S3000554102.zip) | 2024-01-22 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782289043/Firmware__V4.62.225_240122_S3000554102.zip) | — |
+
+</details>
+
+
+<details>
+<summary><h2>IDS-6716NXI-M1/AF - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.11.230 | Applied to: [IDS-6716NXI-M1/AF](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.11.230_260416_S3000717272.zip), [IDS-6716NXI-M1/AF(1](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.11.230_260416_S3000717272.zip), [IDS-6732NXI-M1/AF](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.11.230_260416_S3000717272.zip), [IDS-6732NXI-M1/AF(1](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.11.230_260416_S3000717272.zip), [IDS-9632NXI-M8/AF](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.11.230_260416_S3000717272.zip), [IDS-9664NXI-M8/AF](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.11.230_260416_S3000717272.zip) | 2026-04-16 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.11.230_260416_S3000717272.zip) | improve product performance, and will take effect automatically after upgrading from previous versions. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5CDeepinMind_Edge_Fusion_AI_V5.11.230_Release_Notes.pdf) |
 
 </details>
 

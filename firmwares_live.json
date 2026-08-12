@@ -56739,5 +56739,82 @@
     "notes": "",
     "is_beta": false,
     "source": "live"
+  },
+  "DS-KAD706-P_UNKNOWN_1.0.0": {
+    "device_id": 103000,
+    "model": "DS-KAD706-P",
+    "hardware_version": "UNKNOWN",
+    "version": "1.0.0",
+    "date": "2019-02-25",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1783150251/5ee8382c-be8d-40e8-a9c3-9ec2a88c7cb6.zip",
+    "filename": "5ee8382c-be8d-40e8-a9c3-9ec2a88c7cb6.zip",
+    "supported_models": [
+      "DS-KAD706-P"
+    ],
+    "applied_to": "Applied to: DS-KAD706-P",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-3E2528P_UNKNOWN_2.2.0": {
+    "device_id": 103001,
+    "model": "DS-3E2528P",
+    "hardware_version": "UNKNOWN",
+    "version": "2.2.0",
+    "date": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786426773/Firmware__V2.2.0D_115745_S3000641571.zip",
+    "filename": "Firmware__V2.2.0D_115745_S3000641571.zip",
+    "supported_models": [
+      "DS-3E2528P",
+      "DS-3E2528P(B)"
+    ],
+    "applied_to": "Applied to: DS-3E2528P, DS-3E2528P(B)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "IDS-6716NXI-M1/AF_UNKNOWN_5.11.230": {
+    "device_id": 103002,
+    "model": "IDS-6716NXI-M1/AF",
+    "hardware_version": "UNKNOWN",
+    "version": "5.11.230",
+    "date": "2026-04-16",
+    "download_url": "",
+    "filename": "Firmware__V5.11.230_260416_S3000717272.zip",
+    "supported_models": [
+      "IDS-6716NXI-M1/AF",
+      "IDS-6716NXI-M1/AF(1×2T)",
+      "IDS-6732NXI-M1/AF",
+      "IDS-6732NXI-M1/AF(1×2T)",
+      "IDS-9632NXI-M8/AF",
+      "IDS-9664NXI-M8/AF",
+      "IDS-6716NXI-M1/AF(1",
+      "IDS-6732NXI-M1/AF(1"
+    ],
+    "applied_to": "Applied to: IDS-6716NXI-M1/AF, IDS-6716NXI-M1/AF(1×2T), IDS-6732NXI-M1/AF, IDS-6732NXI-M1/AF(1×2T), IDS-9632NXI-M8/AF, IDS-9664NXI-M8/AF",
+    "changes": "improve product performance, and will take effect automatically after upgrading from previous versions.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5CDeepinMind_Edge_Fusion_AI_V5.11.230_Release_Notes.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DVR-108G-F1_DVR_G0_4.30.101": {
+    "device_id": 103003,
+    "model": "DVR-108G-F1",
+    "hardware_version": "DVR_G0",
+    "version": "4.30.101",
+    "date": "2019-11-20",
+    "download_url": "",
+    "filename": "c87d3eaa-7b8e-4d1f-9c81-82891eef5b7c.zip",
+    "supported_models": [
+      "DVR-108G-F1",
+      "DS-HILOOKI-DVR-108G-F1"
+    ],
+    "applied_to": "Applied to: DVR-108G-F1, DS-HILOOKI-DVR-108G-F1",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
   }
 }

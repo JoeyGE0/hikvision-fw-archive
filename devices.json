@@ -5986,5 +5986,21 @@
   "102999": {
     "model": "DS-3E2528P(B)",
     "hardware_version": "UNKNOWN"
+  },
+  "103000": {
+    "model": "DS-KAD706-P",
+    "hardware_version": "UNKNOWN"
+  },
+  "103001": {
+    "model": "DS-3E2528P",
+    "hardware_version": "UNKNOWN"
+  },
+  "103002": {
+    "model": "IDS-6716NXI-M1/AF",
+    "hardware_version": "UNKNOWN"
+  },
+  "103003": {
+    "model": "DVR-108G-F1",
+    "hardware_version": "DVR_G0"
   }
 }
