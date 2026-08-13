@@ -6002,5 +6002,25 @@
   "103003": {
     "model": "DVR-108G-F1",
     "hardware_version": "DVR_G0"
+  },
+  "103004": {
+    "model": "DS-2XC3746G0H-LIZ(S)(U) (PA)",
+    "hardware_version": "UNKNOWN"
+  },
+  "103005": {
+    "model": "DS-7604NI-Q1(E)",
+    "hardware_version": "NVR_K21B2"
+  },
+  "103006": {
+    "model": "DS-KC9570-WTE1/S",
+    "hardware_version": "UNKNOWN"
+  },
+  "103007": {
+    "model": "IDS-6716NXI-M1/AI(B)",
+    "hardware_version": "UNKNOWN"
+  },
+  "103008": {
+    "model": "IDS-67064NXI-M1/AI",
+    "hardware_version": "UNKNOWN"
   }
 }
