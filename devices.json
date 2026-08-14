@@ -6034,5 +6034,9 @@
   "103011": {
     "model": "PCI-D12Z2S",
     "hardware_version": "UNKNOWN"
+  },
+  "103012": {
+    "model": "EKI-K164T412L",
+    "hardware_version": "NVR_K21B2"
   }
 }

@@ -1,21 +1,21 @@
 {
-  "last_run": "2026-08-14T05:57:12.419939",
+  "last_run": "2026-08-14T17:29:34.007154",
   "status": "error",
   "scraper_mode": "http",
   "post_merge_verified": "2026-05-19T13:00:29.926000",
   "catalog_urls_parsed": 4568,
-  "firmwares_found": 1796,
-  "new_firmwares": 1,
+  "firmwares_found": 1799,
+  "new_firmwares": 2,
   "errors": [
-    "Download failed DS-2CD6332FWD-I(V)(S) v5.4.801: 403 Client Error: Forbidden for url: https://assets.hikvision.com/prd/public/all/files/020ef989-5921-4899-959f-63b81d5266cc.zip"
+    "Download failed DS-3E1508-EI v1.2.0: 403 Client Error: Forbidden for url: https://assets.hikvision.com/prd/public/all/files/9b0070aa-f3a3-46e9-9413-c9654faf96a0.zip"
   ],
   "test_mode": false,
   "catalog_fetch": "playwright",
-  "catalog_entries": 177,
+  "catalog_entries": 261,
   "priority_models": [
     "DS-2CD2387G3-LIS2UY",
     "DS-2CD1383G2P-LIUF",
     "DS-2CD1383G2-LIUF"
   ],
-  "catalog_region": "us-en"
+  "catalog_region": "ca-en"
 }
