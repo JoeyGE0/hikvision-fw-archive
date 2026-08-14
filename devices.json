@@ -6022,5 +6022,17 @@
   "103008": {
     "model": "IDS-67064NXI-M1/AI",
     "hardware_version": "UNKNOWN"
+  },
+  "103009": {
+    "model": "DS-2TD2637-15/QY",
+    "hardware_version": "THERMAL_G0"
+  },
+  "103010": {
+    "model": "ECT-T12F3",
+    "hardware_version": "UNKNOWN"
+  },
+  "103011": {
+    "model": "PCI-D12Z2S",
+    "hardware_version": "UNKNOWN"
   }
 }
