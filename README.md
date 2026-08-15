@@ -137,18 +137,18 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 | | |
 |--|--|
 | **Status** | ❌ ERROR |
-| **Last run** | 2026-08-15 05:23:38 UTC |
+| **Last run** | 2026-08-15 16:46:21 UTC |
 | **Scraper** | HTTP |
 | **Catalog fetch** | playwright |
-| **Catalog rows parsed** | 317 |
+| **Catalog rows parsed** | 0 |
 | **Firmware records** | 1805 |
-| **New last run** | 2 |
+| **New last run** | 0 |
 | **Test mode** | Disabled |
 
 
 
 **Recent Errors:**
-- ⚠️ Download failed IDS-67128NXI-M1/AI v5.01.021: ('Connection broken: IncompleteRead(1130364928 bytes read, 1131543130 more expected)', IncompleteRead(1130364928 bytes read, 1131543130 more expected))
+- ⚠️ Scraping failed: Playwright catalog still invalid (522 bytes) — may be blocked
 
 
 ---
