@@ -12798,7 +12798,7 @@
     "version": "2.7.1",
     "date": "2026-05-21",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780043044/Firmware__V2.7.1_260521_S3000724470.zip",
-    "filename": "Firmware__V2.7.1_260521_S3000724470.zip",
+    "filename": "Firmware__V2.7.1_260623_S3000741060.zip",
     "supported_models": [
       "DS-K3Y411BX",
       "DS-K3Y411BX-M/MPG-DP55",
@@ -22708,7 +22708,7 @@
     "hardware_version": "IPC_G0",
     "version": "5.7.6",
     "date": "2026-03-27",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781943036/Firmware__V5.7.61_241123_S3000614628.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786728576/Firmware__V5.7.64_260727_S3000743550.zip",
     "filename": "Firmware__V5.7.64_260727_S3000743550.zip",
     "supported_models": [
       "DS-2CD2083G2-I(U)",
@@ -44646,7 +44646,9 @@
       "IPC-D650H-Z(2.8-12MM)(C)(HILOOKSTD)",
       "IPC-T641H-Z(2.8-12MM)(C)(HILOOKSTD)",
       "IPC-T651H-Z",
-      "IPC-T651H-Z(2.8-12MM)(C)(HILOOKSTD)"
+      "IPC-T651H-Z(2.8-12MM)(C)(HILOOKSTD)",
+      "IPC-B650H-Z/-V",
+      "IPC-D650H-Z/-V"
     ],
     "applied_to": "Applied to: IPC-B640H-Z, IPC-B640H-Z(2.8-12MM)(C)(HILOOKSTD), IPC-T641H-Z, IPC-T641H-Z(2.8-12MM)(CA BRANCH)",
     "changes": "Fixed some bugs to enhance system stability.",
@@ -47326,7 +47328,11 @@
       "IK-2146TH-MM/P",
       "DS-J142I",
       "IK-4246TH-MM/P",
-      "IK-6486TH-MM/P"
+      "IK-6486TH-MM/P",
+      "IPC-T361H-MU#AUS",
+      "IPC-T361H-MU(2.8MM)(HIK AUS)(BLACK)",
+      "IPC-T361H-MU(2.8MM)(HIK AUS)",
+      "IPC-T361H-MU(4MM)(HIK AUS)"
     ],
     "applied_to": "Applied to: IK-2146TH-MM/P, DS-J142I, IK-4246TH-MM/P, IK-6486TH-MM/P",
     "changes": "",
@@ -47867,7 +47873,13 @@
       "DS-2CD2T166G3-2IY/4IY",
       "DS-2CD2T166G3-4I2UY",
       "DS-2CD2T166G3-4I2UY/EF/O-STDBLACK",
-      "DS-2CD2T166G3-IS2UY/SLEFO-STDBLACK"
+      "DS-2CD2T166G3-IS2UY/SLEFO-STDBLACK",
+      "DS-2CD20126G3-IUY/S(L)(RB)",
+      "DS-2CD20166G3-IUY/S(L)(RB)",
+      "DS-2CD23126G3-IS2UY/S(L)(RB)",
+      "DS-2CD23166G3-IS2UY/S(L)(RB)",
+      "DS-2CD2T126G3-IS2UY/S(L)(RB)",
+      "DS-2CD2T166G3-IS2UY/S(L)(RB)"
     ],
     "applied_to": "Applied to: DS-2CD20126G3-I(U)Y, DS-2CD20126G3-IUY(2.8MM)(EF), DS-2CD20126G3-IUY(4MM)(EF), DS-2CD20126G3-IUY(2.8MM)(EF)/O-STD/BLACK, DS-2CD20126G3-IUY/SL, DS-2CD20126G3-IUY/SL(2.8MM)(EF), DS-2CD20126G3-IUY/SL(4MM)(EF), DS-2CD20126G3-IUY/SL(2.8MM)/EFO-STDBLACK, DS-2CD20166G3-I(U)Y, DS-2CD20166G3-IUY(2.8MM)(EF), DS-2CD20166G3-IUY(4MM)(EF), DS-2CD20166G3-IUY(2.8MM)(EF)/O-STD/BLACK, DS-2CD20166G3-IUY/SL, DS-2CD20166G3-IUY/SL(2.8MM)(EF), DS-2CD20166G3-IUY/SL(4MM)(EF), DS-2CD20166G3-IUY/SL(2.8MM)/EFO-STDBLACK, DS-2CD23126G3-I(2U)Y, DS-2CD23126G3-I2UY(2.8MM)(EF), DS-2CD23126G3-I2UY(4MM)(EF), DS-2CD23126G3-I2UY(2.8MM)(EF)/O-STDBLACK, DS-2CD23126G3-IS2UY/SL, DS-2CD23126G3-IS2UY/SL(2.8MM)(EF), DS-2CD23126G3-IS2UY/SL(4MM)(EF), DS-2CD23126G3-IS2UY/SL(2.8)EFO-STDBLACK, DS-2CD23166G3-I(2U)Y, DS-2CD23166G3-I2UY(2.8MM)(EF), DS-2CD23166G3-I2UY(4MM)(EF), DS-2CD23166G3-I2UY(2.8MM)(EF)/O-STDBLACK, DS-2CD23166G3-IS2UY/SL, DS-2CD23166G3-IS2UY/SL(2.8MM)(EF), DS-2CD23166G3-IS2UY/SL(4MM)(EF), DS-2CD23166G3-IS2UY/SL(2.8)EFO-STDBLACK, DS-2CD2T126G3-2I(2U)Y/4I(2U)Y, DS-2CD2T126G3-4I2UY(2.8MM)(EF), DS-2CD2T126G3-4I2UY(4MM)(EF), DS-2CD2T126G3-4I2UY(2.8MM)/EF/O-STDBLACK, DS-2CD2T126G3-IS2UY/SL, DS-2CD2T126G3-IS2UY/SL(2.8MM)(EF), DS-2CD2T126G3-IS2UY/SL(4MM)(EF), DS-2CD2T126G3-IS2UY/SL(2.8)EFO-STDBLACK, DS-2CD2T166G3-2I(2U)Y/4I(2U)Y, DS-2CD2T166G3-4I2UY(2.8MM)(EF), DS-2CD2T166G3-4I2UY(4MM)(EF), DS-2CD2T166G3-4I2UY(2.8MM)/EF/O-STDBLACK, DS-2CD2T166G3-IS2UY/SL, DS-2CD2T166G3-IS2UY/SL(2.8MM)(EF), DS-2CD2T166G3-IS2UY/SL(4MM)(EF), DS-2CD2T166G3-IS2UY/SL(2.8)EFO-STDBLACK",
     "changes": "1. Fixed the issue of device IP modification failure under the SADPV3.1.1 version and resolved · network parameter configuration error. · 2. Fixed some bugs to enhance system stability.",
@@ -57181,13 +57193,18 @@
     "hardware_version": "UNKNOWN",
     "version": "5.7.64",
     "date": "2026-07-27",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786728576/Firmware__V5.7.64_260727_S3000743550.zip",
     "filename": "Firmware__V5.7.64_260727_S3000743550.zip",
     "supported_models": [
       "DS-2XC6047G0-L(S) (PA)",
       "DS-2XC6047G0-LS(2.8MM)(PA)",
       "DS-2XC6047G0-L",
-      "DS-2XC6047G0-LS"
+      "DS-2XC6047G0-LS",
+      "DS-2XC6047G0-LS(4MM)(PA)",
+      "DS-2XC6047G0-LS(6MM)(PA)",
+      "DS-2XT6685G0-LIZS/C25",
+      "DS-2XT6685G0-LIZS/C25(8-32MM)",
+      "DS-2XT6685G0-LIZS/C25(2.8-12MM)"
     ],
     "applied_to": "Applied to: DS-2XC6047G0-L(S) (PA), DS-2XC6047G0-LS(2.8MM)(PA)",
     "changes": "",
@@ -57201,7 +57218,7 @@
     "hardware_version": "UNKNOWN",
     "version": "5.7.64",
     "date": "2026-07-27",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786728576/Firmware__V5.7.64_260727_S3000743567.zip",
     "filename": "Firmware__V5.7.64_260727_S3000743567.zip",
     "supported_models": [
       "DS-2XC6142FWD-IS(C)",
@@ -57210,9 +57227,127 @@
       "DS-2XC6142FWD-IS(6MM)(C)",
       "DS-2XC6244G0-L",
       "DS-2XC6244G0-L(2.8-12MM)",
-      "DS-2XC6142FWD-IS"
+      "DS-2XC6142FWD-IS",
+      "DS-2XE6146F-HS (C)",
+      "DS-2XE6146F-HS(2.8MM)(C)",
+      "DS-2XE6242F-IS/316L(D)",
+      "DS-2XE6242F-IS(4MM)(D)"
     ],
     "applied_to": "Applied to: DS-2XC6142FWD-IS(C), DS-2XC6142FWD-IS(2.8MM)(C), DS-2XC6142FWD-IS(4MM)(C), DS-2XC6142FWD-IS(6MM)(C), DS-2XC6244G0-L, DS-2XC6244G0-L(2.8-12MM)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-KH9570-WTE1/S_UNKNOWN_4.1.0": {
+    "device_id": 103013,
+    "model": "DS-KH9570-WTE1/S",
+    "hardware_version": "UNKNOWN",
+    "version": "4.1.0",
+    "date": "2026-07-08",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786647390/Firmware__V4.1.0_260708_S3000739266.zip",
+    "filename": "Firmware__V4.1.0_260708_S3000739266.zip",
+    "supported_models": [
+      "DS-KH9570-WTE1/S",
+      "DS-KH9570-WTE1"
+    ],
+    "applied_to": "Applied to: DS-KH9570-WTE1/S, DS-KH9570-WTE1",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-KH9570-WTE1/S_UNKNOWN_4.0.4": {
+    "device_id": 103013,
+    "model": "DS-KH9570-WTE1/S",
+    "hardware_version": "UNKNOWN",
+    "version": "4.0.4",
+    "date": "2026-01-12",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786647390/Firmware__V4.0.4_260112_S3000698241.zip",
+    "filename": "Firmware__V4.0.4_260112_S3000698241.zip",
+    "supported_models": [
+      "DS-KH9570-WTE1/S",
+      "DS-KH9570-WTE1"
+    ],
+    "applied_to": "Applied to: DS-KH9570-WTE1/S, DS-KH9570-WTE1",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-KH9570-WTE1/S_UNKNOWN_4.0.2": {
+    "device_id": 103013,
+    "model": "DS-KH9570-WTE1/S",
+    "hardware_version": "UNKNOWN",
+    "version": "4.0.2",
+    "date": "2025-12-05",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786647390/Firmware__V4.0.2_251205_S3000690219.zip",
+    "filename": "Firmware__V4.0.2_251205_S3000690219.zip",
+    "supported_models": [
+      "DS-KH9570-WTE1/S",
+      "DS-KH9570-WTE1"
+    ],
+    "applied_to": "Applied to: DS-KH9570-WTE1/S, DS-KH9570-WTE1",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-K3B961TX_UNKNOWN_1.0.0": {
+    "device_id": 102310,
+    "model": "DS-K3B961TX",
+    "hardware_version": "UNKNOWN",
+    "version": "1.0.0",
+    "date": "2024-05-23",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1768881107/Firmware__V1.0.0_240523_S3000577702.zip",
+    "filename": "Firmware__V1.0.0_240523_S3000577702.zip",
+    "supported_models": [
+      "DS-K3B961TX",
+      "DS-K3B961TX-L/EDPIQL-DP65",
+      "DS-K3B961TX-R/EDPIQL-DP65"
+    ],
+    "applied_to": "Applied to: DS-K3B961TX, DS-K3B961TX-L/EDPIQL-DP65, DS-K3B961TX-R/EDPIQL-DP65",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "HM-TD1218-2/G0/T1A_THERMAL_G0_5.5.351": {
+    "device_id": 103014,
+    "model": "HM-TD1218-2/G0/T1A",
+    "hardware_version": "THERMAL_G0",
+    "version": "5.5.351",
+    "date": "2026-07-31",
+    "download_url": "",
+    "filename": "Firmware__V5.5.351_260731_S3000744519.zip",
+    "supported_models": [
+      "HM-TD1218-2/G0/T1A",
+      "HM-TD1218-3/G0/T1A",
+      "HM-TD1218-7/G0/T1A",
+      "HM-TD2618-10/G0/T1A",
+      "HM-TD2618-3/G0/T1A",
+      "HM-TD2618-7/G0/T1A"
+    ],
+    "applied_to": "Applied to: HM-TD1218-2/G0/T1A, HM-TD1218-3/G0/T1A, HM-TD1218-7/G0/T1A, HM-TD2618-10/G0/T1A, HM-TD2618-3/G0/T1A, HM-TD2618-7/G0/T1A",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-MCW409_UNKNOWN_2.7.1": {
+    "device_id": 102662,
+    "model": "DS-MCW409",
+    "hardware_version": "UNKNOWN",
+    "version": "2.7.1",
+    "date": "2026-06-23",
+    "download_url": "",
+    "filename": "Firmware__V2.7.1_260623_S3000741060.zip",
+    "supported_models": [
+      "DS-MCW409",
+      "DS-MCW409/64G/GLE(C)",
+      "DS-MCW409/64G/GLE"
+    ],
+    "applied_to": "Applied to: DS-MCW409, DS-MCW409/64G/GLE(C)",
     "changes": "",
     "notes": "",
     "is_beta": false,

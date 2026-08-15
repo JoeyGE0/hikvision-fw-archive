@@ -6038,5 +6038,13 @@
   "103012": {
     "model": "EKI-K164T412L",
     "hardware_version": "NVR_K21B2"
+  },
+  "103013": {
+    "model": "DS-KH9570-WTE1/S",
+    "hardware_version": "UNKNOWN"
+  },
+  "103014": {
+    "model": "HM-TD1218-2/G0/T1A",
+    "hardware_version": "THERMAL_G0"
   }
 }
