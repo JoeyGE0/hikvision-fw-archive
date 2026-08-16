@@ -6046,5 +6046,25 @@
   "103014": {
     "model": "HM-TD1218-2/G0/T1A",
     "hardware_version": "THERMAL_G0"
+  },
+  "103015": {
+    "model": "DS-KC9570-VWTE1/S",
+    "hardware_version": "UNKNOWN"
+  },
+  "103016": {
+    "model": "DS-K1T320EFWX-B",
+    "hardware_version": "UNKNOWN"
+  },
+  "103017": {
+    "model": "DS-2CD2523G0-I(W)(S)",
+    "hardware_version": "IPC_V5"
+  },
+  "103018": {
+    "model": "HM-TD81C8-150ZK4FL/G0/T2",
+    "hardware_version": "THERMAL_G0"
+  },
+  "103019": {
+    "model": "DS-2DY7436IXG-CXLWF(316L)(B)",
+    "hardware_version": "UNKNOWN"
   }
 }
