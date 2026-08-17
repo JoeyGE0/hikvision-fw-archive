@@ -6066,5 +6066,9 @@
   "103019": {
     "model": "DS-2DY7436IXG-CXLWF(316L)(B)",
     "hardware_version": "UNKNOWN"
+  },
+  "103020": {
+    "model": "HM-TD5537T-15/W",
+    "hardware_version": "THERMAL_G0"
   }
 }

@@ -17547,7 +17547,7 @@
     "version": "5.5.141",
     "date": "2026-05-12",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780531020/Firmware__V5.5.141_260512_S3000722086.zip",
-    "filename": "Firmware__V5.5.141_260512_S3000722086.zip",
+    "filename": "Firmware__V5.5.141_260626_S3000736491.zip",
     "supported_models": [
       "DS-2TD4538-25A4/W",
       "DS-2TD4538-35A4/W",
@@ -17616,7 +17616,7 @@
     "version": "5.5.141",
     "date": "2026-04-16",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780531020/Firmware__V5.5.141_260416_S3000716151.zip",
-    "filename": "Firmware__V5.5.141_260416_S3000716151.zip",
+    "filename": "Firmware__V5.5.141_260626_S3000736491.zip",
     "supported_models": [
       "HM-TD5528T-10/W",
       "HM-TD5528T-15/W",
@@ -17863,7 +17863,7 @@
     "version": "5.5.14",
     "date": "2026-05-20",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781426682/Firmware__V5.5.14_260302_S3000706410.zip",
-    "filename": "Firmware__V5.5.14_260302_S3000706410.zip",
+    "filename": "Firmware__V5.5.141_260626_S3000736491.zip",
     "supported_models": [
       "DS-TP50-16R",
       "DS-TP50-16R/4T"
@@ -26496,7 +26496,7 @@
     "version": "5.5.14",
     "date": "2026-03-02",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781426682/Firmware__V5.5.14_260302_S3000706410.zip",
-    "filename": "Firmware__V5.5.14_260302_S3000706410.zip",
+    "filename": "Firmware__V5.5.141_260626_S3000736491.zip",
     "supported_models": [
       "DS-TP50-08H",
       "DS-TP50-08H/4T"
@@ -57961,6 +57961,24 @@
       "DS-2DY8845IXG0-DCXLWF"
     ],
     "applied_to": "Applied to: DS-2DY7436IXG-CXLWF(316L)(B), DS-2DY7436IXG-CXLWF(316L)5M(B), DS-2DY7436IXG-CXLWF(316L)10M(B), DS-2DY7845IXG-CXLWF(316L)5M(B), DS-2DY7845IXG-CXLWF(316L)10M(B), DS-2DY7845IXG-CXLWF(316L)(B), DS-2DY8436IXG0-ACXLWF(316L), DS-2DY8436IXG0-DCXLWF(316L), DS-2DY8845IXG0-ACXLWF(316L), DS-2DY8845IXG0-DCXLWF(316L)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "HM-TD5537T-15/W_THERMAL_G0_5.5.141": {
+    "device_id": 103020,
+    "model": "HM-TD5537T-15/W",
+    "hardware_version": "THERMAL_G0",
+    "version": "5.5.141",
+    "date": "2026-06-26",
+    "download_url": "",
+    "filename": "Firmware__V5.5.141_260626_S3000736491.zip",
+    "supported_models": [
+      "HM-TD5537T-15/W",
+      "HM-TD5567T-25/W"
+    ],
+    "applied_to": "Applied to: HM-TD5537T-15/W, HM-TD5567T-25/W",
     "changes": "",
     "notes": "",
     "is_beta": false,
