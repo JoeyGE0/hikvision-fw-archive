@@ -9830,7 +9830,7 @@
     "version": "3.3.3",
     "date": "2026-01-19",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781169180/Firmware__V3.3.3_260527_S3000726782.zip",
-    "filename": "Firmware__V3.3.3_260527_S3000726782.zip",
+    "filename": "Firmware__V3.3.3_260707_S3000745139.zip",
     "supported_models": [
       "DS-3E1510P-SI-8P2F",
       "DS-3E1512HP-SI-8P2T2F",
@@ -9860,7 +9860,7 @@
     "version": "3.3.3",
     "date": "2026-01-19",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781169180/Firmware__V3.3.3_260527_S3000726782.zip",
-    "filename": "Firmware__V3.3.3_260527_S3000726782.zip",
+    "filename": "Firmware__V3.3.3_260707_S3000745139.zip",
     "supported_models": [
       "DS-3E1552-SI-48T4F",
       "DS-3E1552P-SI"
@@ -13752,7 +13752,7 @@
     "version": "3.3.2",
     "date": "2025-10-31",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784916322/Firmware__V1.3.3_230327_S3000488892.zip",
-    "filename": "Firmware__V1.3.3_230327_S3000488892.zip",
+    "filename": "Firmware__V3.3.3_260707_S3000745139.zip",
     "supported_models": [
       "DS-3E1710HP-EI",
       "DS-3E1726HP-EI"
@@ -17546,7 +17546,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.141",
     "date": "2026-05-12",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780531020/Firmware__V5.5.141_260512_S3000722086.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786986147/Firmware__V5.5.141_260626_S3000736491.zip",
     "filename": "Firmware__V5.5.141_260626_S3000736491.zip",
     "supported_models": [
       "DS-2TD4538-25A4/W",
@@ -17615,7 +17615,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.141",
     "date": "2026-04-16",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780531020/Firmware__V5.5.141_260416_S3000716151.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786986147/Firmware__V5.5.141_260626_S3000736491.zip",
     "filename": "Firmware__V5.5.141_260626_S3000736491.zip",
     "supported_models": [
       "HM-TD5528T-10/W",
@@ -17862,7 +17862,7 @@
     "hardware_version": "UNKNOWN",
     "version": "5.5.14",
     "date": "2026-05-20",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781426682/Firmware__V5.5.14_260302_S3000706410.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786986147/Firmware__V5.5.141_260626_S3000736491.zip",
     "filename": "Firmware__V5.5.141_260626_S3000736491.zip",
     "supported_models": [
       "DS-TP50-16R",
@@ -18075,7 +18075,7 @@
     "version": "3.3.2",
     "date": "2026-05-07",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784916322/Firmware__V1.3.3_230327_S3000488892.zip",
-    "filename": "Firmware__V1.3.3_230327_S3000488892.zip",
+    "filename": "Firmware__V3.3.3_260707_S3000745139.zip",
     "supported_models": [
       "DS-3T1506HP-EI-UPS"
     ],
@@ -24772,7 +24772,7 @@
     "version": "3.3.3",
     "date": "2026-05-27",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781169180/Firmware__V3.3.3_260527_S3000726782.zip",
-    "filename": "Firmware__V3.3.3_260527_S3000726782.zip",
+    "filename": "Firmware__V3.3.3_260707_S3000745139.zip",
     "supported_models": [
       "DS-6901UDI(C)",
       "DS-6904UDI(C)",
@@ -26495,7 +26495,7 @@
     "hardware_version": "UNKNOWN",
     "version": "5.5.14",
     "date": "2026-03-02",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781426682/Firmware__V5.5.14_260302_S3000706410.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786986147/Firmware__V5.5.141_260626_S3000736491.zip",
     "filename": "Firmware__V5.5.141_260626_S3000736491.zip",
     "supported_models": [
       "DS-TP50-08H",
@@ -45334,7 +45334,7 @@
     "version": "3.3.3",
     "date": "2026-01-19",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779758234/Firmware__V3.3.3_260119_S3000703087.zip",
-    "filename": "Firmware__V3.3.3_260119_S3000703087.zip",
+    "filename": "Firmware__V3.3.3_260707_S3000745139.zip",
     "supported_models": [
       "DS-3E1552P-SI"
     ],
@@ -48412,7 +48412,7 @@
     "version": "3.3.3",
     "date": "2026-01-19",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779758234/Firmware__V3.3.3_260119_S3000703088.zip",
-    "filename": "Firmware__V3.3.3_260119_S3000703088.zip",
+    "filename": "Firmware__V3.3.3_260707_S3000745139.zip",
     "supported_models": [
       "DS-3T1512HP-SI-8P4F",
       "DS-3T1528HP-SI-24P4F"
@@ -57972,13 +57972,49 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.141",
     "date": "2026-06-26",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786986147/Firmware__V5.5.141_260626_S3000736491.zip",
     "filename": "Firmware__V5.5.141_260626_S3000736491.zip",
     "supported_models": [
       "HM-TD5537T-15/W",
       "HM-TD5567T-25/W"
     ],
     "applied_to": "Applied to: HM-TD5537T-15/W, HM-TD5567T-25/W",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "IDS-67128NXI-M1/AI_UNKNOWN_5.01.021": {
+    "device_id": 103021,
+    "model": "IDS-67128NXI-M1/AI",
+    "hardware_version": "UNKNOWN",
+    "version": "5.01.021",
+    "date": "2025-12-01",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786771420/Firmware__V5.01.021_251201_S3000701181.zip",
+    "filename": "Firmware__V5.01.021_251201_S3000701181.zip",
+    "supported_models": [
+      "IDS-67128NXI-M1/AI",
+      "IDS-67128NXI-M1/AI(1×8T)",
+      "IDS-67128NXI-M1/AI(1"
+    ],
+    "applied_to": "Applied to: IDS-67128NXI-M1/AI, IDS-67128NXI-M1/AI(1×8T)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-3T1506HP-EI-UPS_UNKNOWN_3.3.3": {
+    "device_id": 101925,
+    "model": "DS-3T1506HP-EI-UPS",
+    "hardware_version": "UNKNOWN",
+    "version": "3.3.3",
+    "date": "2026-07-07",
+    "download_url": "",
+    "filename": "Firmware__V3.3.3_260707_S3000745139.zip",
+    "supported_models": [
+      "DS-3T1506HP-EI-UPS"
+    ],
+    "applied_to": "Applied to: DS-3T1506HP-EI-UPS",
     "changes": "",
     "notes": "",
     "is_beta": false,

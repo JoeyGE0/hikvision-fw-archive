@@ -6070,5 +6070,9 @@
   "103020": {
     "model": "HM-TD5537T-15/W",
     "hardware_version": "THERMAL_G0"
+  },
+  "103021": {
+    "model": "IDS-67128NXI-M1/AI",
+    "hardware_version": "UNKNOWN"
   }
 }
