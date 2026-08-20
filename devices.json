@@ -6074,5 +6074,37 @@
   "103021": {
     "model": "IDS-67128NXI-M1/AI",
     "hardware_version": "UNKNOWN"
+  },
+  "103022": {
+    "model": "DS-2XE6046G0-LIS(304)",
+    "hardware_version": "UNKNOWN"
+  },
+  "103023": {
+    "model": "DS-2CD3147G3-LISU(Y)",
+    "hardware_version": "IPC_G0"
+  },
+  "103024": {
+    "model": "ISD-SG5030S-CVL",
+    "hardware_version": "UNKNOWN"
+  },
+  "103025": {
+    "model": "DS-2CD1343G0-I(UF)",
+    "hardware_version": "IPC_E7S"
+  },
+  "103026": {
+    "model": "DS-2CD2021G1-IDW",
+    "hardware_version": "IPC_G0"
+  },
+  "103027": {
+    "model": "DS-2CD1153G0-I",
+    "hardware_version": "IPC_G0"
+  },
+  "103028": {
+    "model": "DS-2CD4B45G0-IZS",
+    "hardware_version": "IPC_G0"
+  },
+  "103029": {
+    "model": "IPC-D140H(-M)",
+    "hardware_version": "UNKNOWN"
   }
 }
