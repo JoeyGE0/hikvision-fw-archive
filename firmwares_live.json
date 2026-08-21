@@ -1588,7 +1588,7 @@
     "hardware_version": "UNKNOWN",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TX3742-10A-Q"
@@ -1605,7 +1605,7 @@
     "hardware_version": "UNKNOWN",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TX3742-10P-Q"
@@ -1622,7 +1622,7 @@
     "hardware_version": "UNKNOWN",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TX3742-25A-Q"
@@ -1639,7 +1639,7 @@
     "hardware_version": "UNKNOWN",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TX3742-25P-Q"
@@ -1656,7 +1656,7 @@
     "hardware_version": "UNKNOWN",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TX3742-35A-Q"
@@ -1673,7 +1673,7 @@
     "hardware_version": "UNKNOWN",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TX3742-35P-Q"
@@ -2322,7 +2322,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD1217-2-QA"
@@ -2339,7 +2339,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD1217-3-QA"
@@ -2356,7 +2356,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD1217-6-QA"
@@ -2373,7 +2373,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD1228-2-QA"
@@ -2390,7 +2390,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD1228-3-QA"
@@ -2407,7 +2407,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD1228-7-QA"
@@ -2424,7 +2424,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD1228T-2-QA"
@@ -2441,7 +2441,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD1228T-2-QA-B-"
@@ -2458,7 +2458,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD1228T-3-QA"
@@ -2475,7 +2475,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD1228T-3-QA-B-"
@@ -2492,7 +2492,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2137T-4-QY0"
@@ -2509,7 +2509,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2137T-7-QY0"
@@ -2526,7 +2526,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2138-10-QY"
@@ -2543,7 +2543,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2138-13-QY"
@@ -2560,7 +2560,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2138-15-QY"
@@ -2577,7 +2577,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2138-25-QY"
@@ -2594,7 +2594,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2138-35-QY"
@@ -2611,7 +2611,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2138-4-QY"
@@ -2628,7 +2628,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2138-7-QY"
@@ -2645,7 +2645,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2608-1-QA"
@@ -2662,7 +2662,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2608-2-QA"
@@ -2679,7 +2679,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2617-10-QA"
@@ -2696,7 +2696,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2617-3-QA"
@@ -2713,7 +2713,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2617-6-QA"
@@ -2730,7 +2730,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2628-10-QA"
@@ -2747,7 +2747,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2628-3-QA"
@@ -2764,7 +2764,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2628-7-QA"
@@ -2781,7 +2781,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2628T-3-QA"
@@ -2798,7 +2798,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2628T-7-QA"
@@ -2815,7 +2815,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2637-10-QY"
@@ -2832,7 +2832,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2637-25-QY"
@@ -2849,7 +2849,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2637-35-QY-B-"
@@ -2866,7 +2866,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2637-7-QY"
@@ -2883,7 +2883,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2637T-10-QY"
@@ -2900,7 +2900,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2637T-15-QY"
@@ -2917,7 +2917,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2637T-7-QY"
@@ -2934,7 +2934,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2537T-15-Q-C-"
@@ -3019,7 +3019,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2528T-10-Q-C-"
@@ -3036,7 +3036,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2528T-3-Q-C-"
@@ -3053,7 +3053,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2528T-7-Q-C-"
@@ -3070,7 +3070,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2537T-10-Q-C-"
@@ -3087,7 +3087,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2537T-4-Q-C-"
@@ -3104,7 +3104,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2608-1-QA-FP"
@@ -3121,7 +3121,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2608-2-QA-FP"
@@ -3517,7 +3517,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.0.2",
     "date": "2026-04-14",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786647390/Firmware__V4.1.0_260708_S3000739266.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V4.61.0_260807_S3000745647.zip",
     "filename": "Firmware__V4.61.0_260807_S3000745647.zip",
     "supported_models": [
       "DS-K1105EDB",
@@ -3563,7 +3563,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD1217-2/QA",
@@ -17639,7 +17639,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.137",
     "date": "2026-04-15",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780531020/Firmware__V5.5.137_260415_S3000717670.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.137_260415_S3000746133.zip",
     "filename": "Firmware__V5.5.137_260415_S3000746133.zip",
     "supported_models": [
       "DS-2TD4228-10/S2",
@@ -17667,7 +17667,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.139",
     "date": "2026-04-09",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781374229/Firmware__V5.5.139_250924_S3000676577.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.139_260409_S3000746157.zip",
     "filename": "Firmware__V5.5.139_260409_S3000746157.zip",
     "supported_models": [
       "DS-2TD4137-25/WY",
@@ -24940,7 +24940,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.139",
     "date": "2026-01-15",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781374229/Firmware__V5.5.139_250924_S3000676577.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.139_260409_S3000746157.zip",
     "filename": "Firmware__V5.5.139_260409_S3000746157.zip",
     "supported_models": [
       "DS-2TD8167-150ZC4F/W",
@@ -25317,7 +25317,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.0.2",
     "date": "2025-12-09",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786647390/Firmware__V4.1.0_260708_S3000739266.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V4.61.0_260807_S3000745647.zip",
     "filename": "Firmware__V4.61.0_260807_S3000745647.zip",
     "supported_models": [
       "DS-KAD-E2/E1",
@@ -26352,7 +26352,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.139",
     "date": "2025-09-24",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781374229/Firmware__V5.5.139_250924_S3000676577.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.139_260409_S3000746157.zip",
     "filename": "Firmware__V5.5.139_260409_S3000746157.zip",
     "supported_models": [
       "DS-2TD6267-50H4L/W"
@@ -26422,7 +26422,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.349",
     "date": "2026-05-20",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786254053/Firmware__V5.5.349_260710_S3000738964.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.349_260810_S3000745329.zip",
     "filename": "Firmware__V5.5.349_260810_S3000745329.zip",
     "supported_models": [
       "HM-TD1228-2/G1/T3A",
@@ -26463,7 +26463,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.349",
     "date": "2026-05-20",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786254053/Firmware__V5.5.349_260710_S3000738964.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.349_260810_S3000745329.zip",
     "filename": "Firmware__V5.5.349_260810_S3000745329.zip",
     "supported_models": [
       "HM-TD2168-5/G0/T1Y",
@@ -28089,7 +28089,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.0.2",
     "date": "2025-06-24",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786647390/Firmware__V4.1.0_260708_S3000739266.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V4.61.0_260807_S3000745647.zip",
     "filename": "Firmware__V4.61.0_260807_S3000745647.zip",
     "supported_models": [
       "DS-K2811",
@@ -28252,7 +28252,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.0.2",
     "date": "2025-05-30",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786647390/Firmware__V4.1.0_260708_S3000739266.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V4.61.0_260807_S3000745647.zip",
     "filename": "Firmware__V4.61.0_260807_S3000745647.zip",
     "supported_models": [
       "DS-K2M0016A"
@@ -34643,7 +34643,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.0.2",
     "date": "2023-10-19",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786647390/Firmware__V4.1.0_260708_S3000739266.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V4.61.0_260807_S3000745647.zip",
     "filename": "Firmware__V4.61.0_260807_S3000745647.zip",
     "supported_models": [
       "DS-K1T642E",
@@ -34664,7 +34664,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.0.2",
     "date": "2023-10-19",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786647390/Firmware__V4.1.0_260708_S3000739266.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V4.61.0_260807_S3000745647.zip",
     "filename": "Firmware__V4.61.0_260807_S3000745647.zip",
     "supported_models": [
       "DS-K1T642MW",
@@ -34863,7 +34863,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.0.2",
     "date": "2023-10-19",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786647390/Firmware__V4.1.0_260708_S3000739266.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V4.61.0_260807_S3000745647.zip",
     "filename": "Firmware__V4.61.0_260807_S3000745647.zip",
     "supported_models": [
       "DS-K1T341AMF",
@@ -39062,7 +39062,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.34",
     "date": "2021-07-02",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786254053/Firmware__V5.5.349_260710_S3000738964.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.349_260810_S3000745329.zip",
     "filename": "Firmware__V5.5.349_260810_S3000745329.zip",
     "supported_models": [
       "DS-2TD2637-10/P",
@@ -39138,7 +39138,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.34",
     "date": "2021-07-02",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786254053/Firmware__V5.5.349_260710_S3000738964.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.349_260810_S3000745329.zip",
     "filename": "Firmware__V5.5.349_260810_S3000745329.zip",
     "supported_models": [
       "DS-2TD2637-15/PY(EET)",
@@ -42545,7 +42545,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.0.2",
     "date": "2023-10-19",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786647390/Firmware__V4.1.0_260708_S3000739266.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V4.61.0_260807_S3000745647.zip",
     "filename": "Firmware__V4.61.0_260807_S3000745647.zip",
     "supported_models": [
       "DS-K1T341AM",
@@ -44431,7 +44431,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.137",
     "date": "2026-04-15",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780531020/Firmware__V5.5.137_260415_S3000717670.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.137_260415_S3000746133.zip",
     "filename": "Firmware__V5.5.137_260415_S3000746133.zip",
     "supported_models": [
       "DS-2TD4228T-10/S2"
@@ -45351,7 +45351,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.139",
     "date": "2026-01-15",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781169180/Firmware__V5.5.139_260115_S3000698088.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.139_260409_S3000746157.zip",
     "filename": "Firmware__V5.5.139_260409_S3000746157.zip",
     "supported_models": [
       "DS-2TD8167-150ZE2F/W",
@@ -45960,7 +45960,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.349",
     "date": "2026-07-10",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786254053/Firmware__V5.5.349_260710_S3000738964.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.349_260810_S3000745329.zip",
     "filename": "Firmware__V5.5.349_260810_S3000745329.zip",
     "supported_models": [
       "HM-TD2638-10/G0/T1Y",
@@ -48836,7 +48836,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.0.2",
     "date": "2025-09-29",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786647390/Firmware__V4.1.0_260708_S3000739266.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V4.61.0_260807_S3000745647.zip",
     "filename": "Firmware__V4.61.0_260807_S3000745647.zip",
     "supported_models": [
       "DS-D2049UL-0A",
@@ -50248,7 +50248,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1779747633/Firmware__V5.5.338_260413_S3000716448.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD1228-2/QA",
@@ -51005,7 +51005,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.349",
     "date": "2026-07-10",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786254053/Firmware__V5.5.349_260710_S3000738964.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.349_260810_S3000745329.zip",
     "filename": "Firmware__V5.5.349_260810_S3000745329.zip",
     "supported_models": [
       "HM-TD2638-15/G0/T1Y",
@@ -54182,7 +54182,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.34",
     "date": "2021-10-12",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786254053/Firmware__V5.5.349_260710_S3000738964.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.349_260810_S3000745329.zip",
     "filename": "Firmware__V5.5.349_260810_S3000745329.zip",
     "supported_models": [
       "DS-2TD2636B-13/P",
@@ -56392,7 +56392,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.0.2",
     "date": "2021-03-09",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786647390/Firmware__V4.1.0_260708_S3000739266.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V4.61.0_260807_S3000745647.zip",
     "filename": "Firmware__V4.61.0_260807_S3000745647.zip",
     "supported_models": [
       "DS-D2049LU-Y",
@@ -56411,7 +56411,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.0.2",
     "date": "2020-05-22",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786647390/Firmware__V4.1.0_260708_S3000739266.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V4.61.0_260807_S3000745647.zip",
     "filename": "Firmware__V4.61.0_260807_S3000745647.zip",
     "supported_models": [
       "DS-PRP100"
@@ -56465,7 +56465,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.349",
     "date": "2026-07-10",
-    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786254053/Firmware__V5.5.349_260710_S3000738964.zip",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.349_260810_S3000745329.zip",
     "filename": "Firmware__V5.5.349_260810_S3000745329.zip",
     "supported_models": [
       "HM-TD2628-10/G1/T3A",
@@ -58399,7 +58399,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.349",
     "date": "2026-08-10",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.349_260810_S3000745329.zip",
     "filename": "Firmware__V5.5.349_260810_S3000745329.zip",
     "supported_models": [
       "DS-2TD2568T-15/G0/T1Y",
@@ -58433,7 +58433,7 @@
     "hardware_version": "UNKNOWN",
     "version": "4.61.0",
     "date": "2026-08-07",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V4.61.0_260807_S3000745647.zip",
     "filename": "Firmware__V4.61.0_260807_S3000745647.zip",
     "supported_models": [
       "DS-K1T320EFWX",
@@ -58459,7 +58459,7 @@
     "hardware_version": "UNKNOWN",
     "version": "4.61.0",
     "date": "2026-08-07",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V4.61.0_260807_S3000745648.zip",
     "filename": "Firmware__V4.61.0_260807_S3000745648.zip",
     "supported_models": [
       "DS-K1T321EFWX",
@@ -58486,7 +58486,7 @@
     "hardware_version": "UNKNOWN",
     "version": "5.10.1",
     "date": "2026-07-22",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.10.1_260722_S3000742763.zip",
     "filename": "Firmware__V5.10.1_260722_S3000742763.zip",
     "supported_models": [
       "DS-2XE6746G0-LIZHS(304)",
@@ -58526,7 +58526,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.137",
     "date": "2026-04-15",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.137_260415_S3000746133.zip",
     "filename": "Firmware__V5.5.137_260415_S3000746133.zip",
     "supported_models": [
       "DS-2TD4238-10/S2",
@@ -58550,7 +58550,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.338",
     "date": "2026-04-13",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
     "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
     "supported_models": [
       "DS-2TD2138-15/QY",
@@ -58577,7 +58577,7 @@
     "hardware_version": "THERMAL_G0",
     "version": "5.5.139",
     "date": "2026-04-09",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.139_260409_S3000746157.zip",
     "filename": "Firmware__V5.5.139_260409_S3000746157.zip",
     "supported_models": [
       "DS-2TD4137-25/W",
