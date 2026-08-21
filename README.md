@@ -137,10 +137,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 | | |
 |--|--|
 | **Status** | ❌ ERROR |
-| **Last run** | 2026-08-21 05:04:52 UTC |
+| **Last run** | 2026-08-21 17:06:58 UTC |
 | **Scraper** | HTTP |
 | **Catalog fetch** | playwright |
-| **Catalog rows parsed** | 177 |
+| **Catalog rows parsed** | 266 |
 | **Firmware records** | 1835 |
 | **New last run** | 0 |
 | **Test mode** | Disabled |
@@ -148,7 +148,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 
 **Recent Errors:**
-- ⚠️ Download failed DS-2CD6332FWD-I(V)(S) v5.4.801: 403 Client Error: Forbidden for url: https://assets.hikvision.com/prd/public/all/files/020ef989-5921-4899-959f-63b81d5266cc.zip
+- ⚠️ Download failed DS-3E1508-EI v1.2.0: 403 Client Error: Forbidden for url: https://assets.hikvision.com/prd/public/all/files/9b0070aa-f3a3-46e9-9413-c9654faf96a0.zip
 
 
 ---
