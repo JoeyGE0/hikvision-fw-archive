@@ -6106,5 +6106,29 @@
   "103029": {
     "model": "IPC-D140H(-M)",
     "hardware_version": "UNKNOWN"
+  },
+  "103030": {
+    "model": "DS-2CV2146G0-IDW",
+    "hardware_version": "UNKNOWN"
+  },
+  "103031": {
+    "model": "IDS-9632NXI-P16",
+    "hardware_version": "UNKNOWN"
+  },
+  "103032": {
+    "model": "DS-2XM6222G1-I(D)(M)(/ND)",
+    "hardware_version": "UNKNOWN"
+  },
+  "103033": {
+    "model": "DS-2XM6522G1-I(D)(M)(/ND)",
+    "hardware_version": "UNKNOWN"
+  },
+  "103034": {
+    "model": "DS-2XM6756G1-I(D)(M)(/ND)",
+    "hardware_version": "UNKNOWN"
+  },
+  "103035": {
+    "model": "DS-2SF7C442MXG2/LM-EL(W)(Y)/26",
+    "hardware_version": "UNKNOWN"
   }
 }

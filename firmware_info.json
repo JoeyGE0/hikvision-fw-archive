@@ -1094,5 +1094,9 @@
   "https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5CDeepinMind_Edge_Fusion_AI_V5.11.230_Release_Notes.pdf": {
     "changes": "improve product performance, and will take effect automatically after upgrading from previous versions.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202608/releasenote%5CV5.05.381_K22B1_KT5_ReleaseNotes.pdf": {
+    "changes": "Supports 8MP stitching camera access · . If the camera resolution is less than 4096*2160 total resolution, all NVRs support access · South Korea safety certification · Before the device is activated, after the region is selected as the Korean region, the password",
+    "source": "pdf"
   }
 }
