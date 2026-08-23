@@ -6130,5 +6130,53 @@
   "103035": {
     "model": "DS-2SF7C442MXG2/LM-EL(W)(Y)/26",
     "hardware_version": "UNKNOWN"
+  },
+  "103036": {
+    "model": "DS-2XM6122G1-I(D)(M)(/ND)",
+    "hardware_version": "IPC_V3"
+  },
+  "103037": {
+    "model": "DS-2XM6746G1-I(D)(M)(/ND)",
+    "hardware_version": "UNKNOWN"
+  },
+  "103038": {
+    "model": "DS-2XC6646G1-LIZHRS(316L)",
+    "hardware_version": "UNKNOWN"
+  },
+  "103039": {
+    "model": "HM-TD3118T-1/Q",
+    "hardware_version": "THERMAL_G0"
+  },
+  "103040": {
+    "model": "IDS-9616NXI-P8",
+    "hardware_version": "UNKNOWN"
+  },
+  "103041": {
+    "model": "DS-2CD3046G3/LM-LIUY",
+    "hardware_version": "IPC_G0"
+  },
+  "103042": {
+    "model": "HM-TD4138-25/G0/T2Y",
+    "hardware_version": "THERMAL_G0"
+  },
+  "103043": {
+    "model": "DS-2SF7C425MXG2/LM-EL(W)(Y)/14",
+    "hardware_version": "UNKNOWN"
+  },
+  "103044": {
+    "model": "DS-IE2016-SU/BA-K2",
+    "hardware_version": "UNKNOWN"
+  },
+  "103045": {
+    "model": "IDS-TDIC00-HI",
+    "hardware_version": "UNKNOWN"
+  },
+  "103046": {
+    "model": "IDS-TDICC0-H",
+    "hardware_version": "UNKNOWN"
+  },
+  "103047": {
+    "model": "DS-2DF7C425IXG2/LM-EL(W)(Y)",
+    "hardware_version": "IPC_G0"
   }
 }
