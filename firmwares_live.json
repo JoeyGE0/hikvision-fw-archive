@@ -46586,7 +46586,8 @@
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782202309/Firmware__V5.5.98_240528_S3000577496.zip",
     "filename": "Firmware__V5.5.98_240528_S3000577496.zip",
     "supported_models": [
-      "DS-2TD2367-50/PY"
+      "DS-2TD2367-50/PY",
+      "DS-2TD2637T-15/P"
     ],
     "applied_to": "Applied to: DS-2TD2367-50/PY",
     "changes": "Support Perimeter Protection Combined Event Alarm. · Setup line crossing as conditions of intrusion rules, the line crossing is triggered first, · then intrusion is activated and triggered with alarm interval, then intrusion alarm · triggered.",
@@ -51186,11 +51187,12 @@
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785195592/Firmware__V2.2.114_260618_S3000736769.zip",
     "filename": "Firmware__V2.2.114_260618_S3000736769.zip",
     "supported_models": [
-      "DS-KH6350-WTE1"
+      "DS-KH6350-WTE1",
+      "IK-CONNECT."
     ],
     "applied_to": "Applied to: DS-KH6350-WTE1",
-    "changes": "",
-    "notes": "",
+    "changes": "Optimized the functional testing process during factory production. · (2026-05-21) · Add local logs for activation, upgrade, password reset, and IPC configuration. · Resolve the issue of Daylight Saving Time (DST) being disabled after connecting to hik-connect.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202608/B1Pro_Indoor_Station_Firmware_V2.2.114_build260618_Release_Note.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -59523,6 +59525,48 @@
       "DS-2SE4C425MWG-E"
     ],
     "applied_to": "Applied to: DS-2SE4C425MWG-E (14F0), DS-2SE4C425MWG-E(14F0)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2SE4C225MWG-E/12(F0)_UNKNOWN_5.10.0": {
+    "device_id": 102618,
+    "model": "DS-2SE4C225MWG-E/12(F0)",
+    "hardware_version": "UNKNOWN",
+    "version": "5.10.0",
+    "date": "2026-06-24",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787380434/Firmware__V5.10.0_260624_S3000746681.zip",
+    "filename": "Firmware__V5.10.0_260624_S3000746681.zip",
+    "supported_models": [
+      "DS-2SE4C225MWG-E/12(F0)",
+      "DS-2SE4C225MWG-E(12F0)",
+      "DS-2SE4C425MWG-E(14F0)",
+      "DS-2SE4C225MWG-E/12",
+      "DS-2SE4C225MWG-E",
+      "DS-2SE4C425MWG-E"
+    ],
+    "applied_to": "Applied to: DS-2SE4C225MWG-E/12(F0), DS-2SE4C225MWG-E(12F0), DS-2SE4C425MWG-E(14F0)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD5A85G0-IZ(H)S_IPC_G0_5.6.12": {
+    "device_id": 103048,
+    "model": "DS-2CD5A85G0-IZ(H)S",
+    "hardware_version": "IPC_G0",
+    "version": "5.6.12",
+    "date": "2020-12-15",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785912974/292a827f-09b9-4e17-86ab-63f7b5d6bf70.zip",
+    "filename": "292a827f-09b9-4e17-86ab-63f7b5d6bf70.zip",
+    "supported_models": [
+      "DS-2CD5A85G0-IZ(H)S",
+      "DS-2CD5A85G0-IZHS(8-32MM)",
+      "DS-2CD5A85G0-IZS",
+      "DS-2CD5A85G0-IZHS"
+    ],
+    "applied_to": "Applied to: DS-2CD5A85G0-IZ(H)S, DS-2CD5A85G0-IZHS(8-32MM)",
     "changes": "",
     "notes": "",
     "is_beta": false,

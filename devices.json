@@ -6178,5 +6178,9 @@
   "103047": {
     "model": "DS-2DF7C425IXG2/LM-EL(W)(Y)",
     "hardware_version": "IPC_G0"
+  },
+  "103048": {
+    "model": "DS-2CD5A85G0-IZ(H)S",
+    "hardware_version": "IPC_G0"
   }
 }

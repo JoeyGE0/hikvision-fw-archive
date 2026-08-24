@@ -1106,5 +1106,9 @@
   "https://assets.hikvision.com/prd/normal/all/files/202608/B1Pro_Indoor_Station_Firmware_V2.3.2_build260803_Release_Note.pdf": {
     "changes": "button functions, adding more interaction options · Improved pairing and activation wizard: reduced unnecessary prompts (only shown when activated · door stations exist); optimized IP modification and login failure response during setup · Fixed an issue where failing to log in to an offline door station during wizard pairing could affect",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202608/B1Pro_Indoor_Station_Firmware_V2.2.114_build260618_Release_Note.pdf": {
+    "changes": "Optimized the functional testing process during factory production. · (2026-05-21) · Add local logs for activation, upgrade, password reset, and IPC configuration. · Resolve the issue of Daylight Saving Time (DST) being disabled after connecting to hik-connect.",
+    "source": "pdf"
   }
 }

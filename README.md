@@ -137,18 +137,18 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 | | |
 |--|--|
 | **Status** | ❌ ERROR |
-| **Last run** | 2026-08-24 05:13:11 UTC |
+| **Last run** | 2026-08-24 17:08:19 UTC |
 | **Scraper** | HTTP |
 | **Catalog fetch** | playwright |
-| **Catalog rows parsed** | 170 |
-| **Firmware records** | 1862 |
+| **Catalog rows parsed** | 261 |
+| **Firmware records** | 1864 |
 | **New last run** | 0 |
 | **Test mode** | Disabled |
 
 
 
 **Recent Errors:**
-- ⚠️ Download failed DS-2CD6332FWD-I(V)(S) v5.4.801: 403 Client Error: Forbidden for url: https://assets.hikvision.com/prd/public/all/files/020ef989-5921-4899-959f-63b81d5266cc.zip
+- ⚠️ Download failed DS-3E1508-EI v1.2.0: 403 Client Error: Forbidden for url: https://assets.hikvision.com/prd/public/all/files/9b0070aa-f3a3-46e9-9413-c9654faf96a0.zip
 
 
 ---
@@ -157,7 +157,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 Collapsible sections per model and hardware line (newest firmware first within each section).
 
-Total: 2578
+Total: 2580
 
 
 
@@ -2717,6 +2717,16 @@ Total: 2578
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.6.12 | Applied to: [DS-2CD5126G0-IZS](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785912974/195b3e5c-42db-486e-ae45-426ec014b6fd.zip), [DS-2CD5126G0-IZS(2.8-12MM)(B)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785912974/195b3e5c-42db-486e-ae45-426ec014b6fd.zip), [DS-2CD5146G0-IZS](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785912974/195b3e5c-42db-486e-ae45-426ec014b6fd.zip), [DS-2CD5146G0-IZS(2.8-12MM)(B)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785912974/195b3e5c-42db-486e-ae45-426ec014b6fd.zip) | 2020-07-29 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785912974/195b3e5c-42db-486e-ae45-426ec014b6fd.zip) | HTTP preview fetching stream: Now the models of this firmware included which support MJPEG now can · support ISAPI/Streaming/channels//httppreview. · Solve the problem of abnormal data reporting in negative time zone (such as UTC-8 in West 8). · Lens change: · [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CIPC_H3_5.6.12_200729_release_notes.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-2CD5A85G0-IZ(H)S - IPC_G0 (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.6.12 | Applied to: [DS-2CD5A85G0-IZ(H)S](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785912974/292a827f-09b9-4e17-86ab-63f7b5d6bf70.zip), [DS-2CD5A85G0-IZHS(8-32MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785912974/292a827f-09b9-4e17-86ab-63f7b5d6bf70.zip) | 2020-12-15 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785912974/292a827f-09b9-4e17-86ab-63f7b5d6bf70.zip) | — |
 
 </details>
 
@@ -5346,10 +5356,11 @@ Total: 2578
 
 
 <details>
-<summary><h2>DS-2SE4C225MWG-E/12(F0) - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>DS-2SE4C225MWG-E/12(F0) - UNKNOWN (2 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
+| 5.10.0 | Applied to: [DS-2SE4C225MWG-E/12(F0)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787380434/Firmware__V5.10.0_260624_S3000746681.zip), [DS-2SE4C225MWG-E(12F0)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787380434/Firmware__V5.10.0_260624_S3000746681.zip), [DS-2SE4C425MWG-E(14F0)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787380434/Firmware__V5.10.0_260624_S3000746681.zip) | 2026-06-24 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787380434/Firmware__V5.10.0_260624_S3000746681.zip) | — |
 | 5.8.2 | Applied to: [DS-2SE4C225MWG-E/12(F0)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785606442/Firmware__V5.8.2_241202_S3000616412.zip), [DS-2SE4C225MWG-E(12F0)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785606442/Firmware__V5.8.2_241202_S3000616412.zip), [DS-2SE4C425MWG-E(14F0)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785606442/Firmware__V5.8.2_241202_S3000616412.zip) | 2026-03-25 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785606442/Firmware__V5.8.2_241202_S3000616412.zip) | Algorithm optimization and updates. 2. Fix some bugs. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CV5.8.2_260325_Release_Notet.pdf) |
 
 </details>
@@ -12212,7 +12223,7 @@ Total: 2578
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 2.2.114 | Applied to: [DS-KH6350-WTE1](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785195592/Firmware__V2.2.114_260618_S3000736769.zip) | 2026-06-18 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785195592/Firmware__V2.2.114_260618_S3000736769.zip) | — |
+| 2.2.114 | Applied to: [DS-KH6350-WTE1](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785195592/Firmware__V2.2.114_260618_S3000736769.zip) | 2026-06-18 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785195592/Firmware__V2.2.114_260618_S3000736769.zip) | Optimized the functional testing process during factory production. · (2026-05-21) · Add local logs for activation, upgrade, password reset, and IPC configuration. · Resolve the issue of Daylight Saving Time (DST) being disabled after connecting to hik-connect. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202608/B1Pro_Indoor_Station_Firmware_V2.2.114_build260618_Release_Note.pdf) |
 
 </details>
 
