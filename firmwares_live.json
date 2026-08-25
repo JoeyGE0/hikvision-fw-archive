@@ -46074,11 +46074,12 @@
       "DS-KIS605-P(C)",
       "DS-KH6320-LE1",
       "DS-KH6320-LE1/WHITE",
-      "DS-KIS605-P"
+      "DS-KIS605-P",
+      "IK-CONNECT."
     ],
     "applied_to": "Applied to: DS-KH6320-LE1(B), DS-KH6320-LE1(B)/WHITE, DS-KH6350-WTE1, DS-KH6350-WTE1/WHITE, DS-KH6351-WTE1, DS-KIS605-P(C)",
-    "changes": "",
-    "notes": "",
+    "changes": "Optimized the functional testing process during factory production. · (2026-05-21) · Add local logs for activation, upgrade, password reset, and IPC configuration. · Resolve the issue of Daylight Saving Time (DST) being disabled after connecting to hik-connect.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202608/B1Pro_Indoor_Station_Firmware_V2.2.114_build260618_Release_Note.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -54837,8 +54838,8 @@
       "DS-7604NI-M1/4P"
     ],
     "applied_to": "Applied to: DS-7604NI-M1/4P#AUS, DS-7604NI-M1/4P",
-    "changes": "",
-    "notes": "",
+    "changes": "Modified functions",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202608/K21B1_K22B1_V5.04.087_build260727_ReleaseNotes.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -54861,8 +54862,8 @@
       "DS-9664NI-M8"
     ],
     "applied_to": "Applied to: DS-7616NI-M2/16P, DS-7716NI-M4/16P, DS-7732NI-M4/16P, DS-7732NI-M4/24P, DS-9632NI-M16, DS-9632NI-M8, DS-9664NI-M16, DS-9664NI-M8",
-    "changes": "",
-    "notes": "",
+    "changes": "Modified functions",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202608/K21B1_K22B1_V5.04.087_build260727_ReleaseNotes.pdf",
     "is_beta": false,
     "source": "live"
   },

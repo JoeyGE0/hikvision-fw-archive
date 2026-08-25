@@ -1110,5 +1110,9 @@
   "https://assets.hikvision.com/prd/normal/all/files/202608/B1Pro_Indoor_Station_Firmware_V2.2.114_build260618_Release_Note.pdf": {
     "changes": "Optimized the functional testing process during factory production. · (2026-05-21) · Add local logs for activation, upgrade, password reset, and IPC configuration. · Resolve the issue of Daylight Saving Time (DST) being disabled after connecting to hik-connect.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202608/K21B1_K22B1_V5.04.087_build260727_ReleaseNotes.pdf": {
+    "changes": "Modified functions",
+    "source": "pdf"
   }
 }
