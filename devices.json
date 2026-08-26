@@ -6182,5 +6182,29 @@
   "103048": {
     "model": "DS-2CD5A85G0-IZ(H)S",
     "hardware_version": "IPC_G0"
+  },
+  "103049": {
+    "model": "DS-KV8114-KWE1",
+    "hardware_version": "UNKNOWN"
+  },
+  "103050": {
+    "model": "IDS-2CD7146G2/LM-IZ(H)S(Y)",
+    "hardware_version": "IPC_G0"
+  },
+  "103051": {
+    "model": "DS-2CD3086G3-IU(Y)",
+    "hardware_version": "IPC_G0"
+  },
+  "103052": {
+    "model": "DS-2DF7C442MXG1-ELWYP",
+    "hardware_version": "IPC_G0"
+  },
+  "103053": {
+    "model": "IDS-6716NXI-P1",
+    "hardware_version": "UNKNOWN"
+  },
+  "103054": {
+    "model": "DS-2DE7A425MWG-EB",
+    "hardware_version": "IPC_G0"
   }
 }

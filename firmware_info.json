@@ -1114,5 +1114,9 @@
   "https://assets.hikvision.com/prd/normal/all/files/202608/K21B1_K22B1_V5.04.087_build260727_ReleaseNotes.pdf": {
     "changes": "Modified functions",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CV5.8.3_260328_Release_Note(O-STD).pdf": {
+    "changes": "Support HEOP · Support Perimeter Large Model(Smart Event)",
+    "source": "pdf"
   }
 }
