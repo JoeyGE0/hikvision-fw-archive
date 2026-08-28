@@ -6210,5 +6210,25 @@
   "103055": {
     "model": "IDS-9664NXI-I8/X",
     "hardware_version": "UNKNOWN"
+  },
+  "103056": {
+    "model": "DS-KH9570-WTE1/F",
+    "hardware_version": "UNKNOWN"
+  },
+  "103057": {
+    "model": "DS-KH8520#AU",
+    "hardware_version": "UNKNOWN"
+  },
+  "103058": {
+    "model": "DS-K1T341CMW",
+    "hardware_version": "UNKNOWN"
+  },
+  "103059": {
+    "model": "IDS-9616NXI-I8/X",
+    "hardware_version": "UNKNOWN"
+  },
+  "103060": {
+    "model": "DS-2SF8C442MXG1-EL(W)(Y)/26",
+    "hardware_version": "UNKNOWN"
   }
 }
