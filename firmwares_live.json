@@ -33869,7 +33869,7 @@
     "version": "4.62.225",
     "date": "2024-01-23",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782289043/Firmware__V4.62.225_240123_S3000554089.zip",
-    "filename": "Firmware__V4.62.225_240123_S3000554089.zip",
+    "filename": "Firmware__V4.62.225_240122_S3000554104.zip",
     "supported_models": [
       "DS-7608NXI-I2/8P/S",
       "DS-7608NXI-I2/8P/S(C)",
@@ -33937,7 +33937,7 @@
     "version": "4.62.225",
     "date": "2024-01-22",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782289043/Firmware__V4.62.225_240122_S3000554098.zip",
-    "filename": "Firmware__V4.62.225_240122_S3000554098.zip",
+    "filename": "Firmware__V4.62.225_240122_S3000554104.zip",
     "supported_models": [
       "IDS-6708NXI-I/FA",
       "IDS-6708NXI-I/FA(C)"
@@ -33955,7 +33955,7 @@
     "version": "4.62.225",
     "date": "2024-01-22",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782289043/Firmware__V4.62.225_240122_S3000554102.zip",
-    "filename": "Firmware__V4.62.225_240122_S3000554102.zip",
+    "filename": "Firmware__V4.62.225_240122_S3000554104.zip",
     "supported_models": [
       "IDS-6716NXI-I/S",
       "IDS-6716NXI-I/S(C)"
@@ -39593,7 +39593,7 @@
     "version": "2.2.1",
     "date": "2021-04-19",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785195592/Firmware__V2.2.114_260618_S3000736769.zip",
-    "filename": "Firmware__V2.2.114_260618_S3000736769.zip",
+    "filename": "Firmware__V2.2.124_260814_S3000747996.zip",
     "supported_models": [
       "DS-PEA1-21",
       "DS-PEA3M-21",
@@ -45486,7 +45486,7 @@
     "version": "1.6.4",
     "date": "2026-05-14",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785193815/Firmware__V1.6.4_260514_S3000732097.zip",
-    "filename": "Firmware__V1.6.4_260514_S3000732097.zip",
+    "filename": "Firmware__V1.6.4_260320_S3000710252.zip",
     "supported_models": [
       "DS-QAE1A80G1-VB"
     ],
@@ -59904,6 +59904,115 @@
     "applied_to": "Applied to: DS-2XM6122G1-I(D)(M)(/ND), DS-2XM6122G1-ID(2.8MM), DS-2XM6122G1-ID(4MM), DS-2XM6122G1-ID(6MM), DS-2XM6122G1-IDM(2.8MM), DS-2XM6122G1-IDM(4MM), DS-2XM6122G1-IDM(6MM), DS-2XM6122G1-IM/ND(2.8MM), DS-2XM6122G1-IM/ND(4MM), DS-2XM6122G1-IM/ND(6MM), DS-2XM6122G1-ID(2.8MM)/3.0",
     "changes": "Support adding to HCP platform with SDK protocol. · Modified functions · When you enable Motion or Video Tampering event, it will continue to upload alarms. · Fixed some minor bugs.",
     "notes": "https://assets.hikvision.com/prd/public/all/files/202401/releasenote%5C%E3%80%90Release_Note%E3%80%91Mobile_IPC_V3.1.3.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "IDS-9664NXI-I8/X_UNKNOWN_4.62.210": {
+    "device_id": 103055,
+    "model": "IDS-9664NXI-I8/X",
+    "hardware_version": "UNKNOWN",
+    "version": "4.62.210",
+    "date": "2023-06-19",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782497907/Firmware__V4.62.210_230619_S3000508425.zip",
+    "filename": "Firmware__V4.62.210_230619_S3000508425.zip",
+    "supported_models": [
+      "IDS-9664NXI-I8/X",
+      "IDS-9664NXI-I8/X(C)"
+    ],
+    "applied_to": "Applied to: IDS-9664NXI-I8/X, IDS-9664NXI-I8/X(C)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-KH6320-WTE1_UNKNOWN_2.2.124": {
+    "device_id": 102672,
+    "model": "DS-KH6320-WTE1",
+    "hardware_version": "UNKNOWN",
+    "version": "2.2.124",
+    "date": "2026-08-14",
+    "download_url": "",
+    "filename": "Firmware__V2.2.124_260814_S3000747996.zip",
+    "supported_models": [
+      "DS-KH6320-WTE1",
+      "DS-KH6320Y-WTE2",
+      "DS-KH8350-WTE1",
+      "DS-KIS702Y-P",
+      "IK-CONNECT"
+    ],
+    "applied_to": "Applied to: DS-KH6320-WTE1, DS-KH6320Y-WTE2, DS-KH8350-WTE1, DS-KIS702Y-P",
+    "changes": "Update the Hik-Connect SDK to optimize the time required to receive call notifications. · The Auto Unlock Door setting has been moved from the Featured Function to the Local · Configuration under Configuration · Device Model",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5CR0_Indoor_Station_Firmware_V2.2.108_build250718_Release_Note.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-96128NI-H24R_UNKNOWN_5.03.108": {
+    "device_id": 102634,
+    "model": "DS-96128NI-H24R",
+    "hardware_version": "UNKNOWN",
+    "version": "5.03.108",
+    "date": "2026-07-07",
+    "download_url": "",
+    "filename": "Firmware__V5.03.108_260707_S3000743443.zip",
+    "supported_models": [
+      "DS-96128NI-H24R",
+      "DS-96256NI-H24R"
+    ],
+    "applied_to": "Applied to: DS-96128NI-H24R, DS-96256NI-H24R",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-K2220X_UNKNOWN_1.6.4": {
+    "device_id": 102154,
+    "model": "DS-K2220X",
+    "hardware_version": "UNKNOWN",
+    "version": "1.6.4",
+    "date": "2026-03-20",
+    "download_url": "",
+    "filename": "Firmware__V1.6.4_260320_S3000710252.zip",
+    "supported_models": [
+      "DS-K2220X"
+    ],
+    "applied_to": "Applied to: DS-K2220X",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-K2220X_UNKNOWN_1.6.3": {
+    "device_id": 102154,
+    "model": "DS-K2220X",
+    "hardware_version": "UNKNOWN",
+    "version": "1.6.3",
+    "date": "2025-12-10",
+    "download_url": "",
+    "filename": "Firmware__V1.6.3_251210_S3000691806.zip",
+    "supported_models": [
+      "DS-K2220X"
+    ],
+    "applied_to": "Applied to: DS-K2220X",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "IDS-9632NXI-I8/X_UNKNOWN_4.62.225": {
+    "device_id": 102363,
+    "model": "IDS-9632NXI-I8/X",
+    "hardware_version": "UNKNOWN",
+    "version": "4.62.225",
+    "date": "2024-01-22",
+    "download_url": "",
+    "filename": "Firmware__V4.62.225_240122_S3000554104.zip",
+    "supported_models": [
+      "IDS-9632NXI-I8/X",
+      "IDS-9632NXI-I8/X(C)"
+    ],
+    "applied_to": "Applied to: IDS-9632NXI-I8/X, IDS-9632NXI-I8/X(C)",
+    "changes": "",
+    "notes": "",
     "is_beta": false,
     "source": "live"
   }

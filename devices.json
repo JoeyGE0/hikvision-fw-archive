@@ -6206,5 +6206,9 @@
   "103054": {
     "model": "DS-2DE7A425MWG-EB",
     "hardware_version": "IPC_G0"
+  },
+  "103055": {
+    "model": "IDS-9664NXI-I8/X",
+    "hardware_version": "UNKNOWN"
   }
 }
