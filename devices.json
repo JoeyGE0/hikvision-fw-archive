@@ -6278,5 +6278,17 @@
   "103072": {
     "model": "IDS-7716NXI-I4/16P/X(B)",
     "hardware_version": "UNKNOWN"
+  },
+  "103073": {
+    "model": "DS-2CD2086G2-I",
+    "hardware_version": "IPC_G0"
+  },
+  "103074": {
+    "model": "DS-2CD5185G0-IZS",
+    "hardware_version": "IPC_G0"
+  },
+  "103075": {
+    "model": "DS-2CD7126G0-IZS",
+    "hardware_version": "IPC_H3"
   }
 }
