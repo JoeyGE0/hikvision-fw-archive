@@ -6230,5 +6230,53 @@
   "103060": {
     "model": "DS-2SF8C442MXG1-EL(W)(Y)/26",
     "hardware_version": "UNKNOWN"
+  },
+  "103061": {
+    "model": "DS-2SF8C425MXG1-EL(W)(Y)/14",
+    "hardware_version": "UNKNOWN"
+  },
+  "103062": {
+    "model": "DS-7108NI-Q1",
+    "hardware_version": "UNKNOWN"
+  },
+  "103063": {
+    "model": "IDS-7616NXI-I2/16P/X",
+    "hardware_version": "UNKNOWN"
+  },
+  "103064": {
+    "model": "DS-8616NI-K8",
+    "hardware_version": "NVR_V4"
+  },
+  "103065": {
+    "model": "DS-2CE12D0T-PIRLO",
+    "hardware_version": "UNKNOWN"
+  },
+  "103066": {
+    "model": "DS-2CE56C0T-IRP",
+    "hardware_version": "UNKNOWN"
+  },
+  "103067": {
+    "model": "THC-T140-P",
+    "hardware_version": "THERMAL_G0"
+  },
+  "103068": {
+    "model": "IDS-2CD8V446G0/X4-XZHS(Y)",
+    "hardware_version": "IPC_G0"
+  },
+  "103069": {
+    "model": "DS-KA01-ZX-NC01",
+    "hardware_version": "UNKNOWN"
+  },
+  "103070": {
+    "model": "DS-K4DC210",
+    "hardware_version": "UNKNOWN"
+  },
+  "103071": {
+    "model": "IDS-96128NXI-I16/AI",
+    "hardware_version": "UNKNOWN"
+  },
+  "103072": {
+    "model": "IDS-7716NXI-I4/16P/X(B)",
+    "hardware_version": "UNKNOWN"
   }
 }

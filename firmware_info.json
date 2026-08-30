@@ -1118,5 +1118,9 @@
   "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CV5.8.3_260328_Release_Note(O-STD).pdf": {
     "changes": "Support HEOP · Support Perimeter Large Model(Smart Event)",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CV2.3.11_build260112_Bedhead_Call_Button_Release_Note.pdf": {
+    "changes": "Add support for Nurse on duty button and Code Blue alarm button to Bedhead call button. The · connection method is Alarm input, with a short press to trigger and a long press of 3s to cancel. The · Code Blue trigger depends on the Nurse on duty button already being triggered； · The alarm button wiring instructions for the bedhead call button must follow the one -to-one",
+    "source": "pdf"
   }
 }
