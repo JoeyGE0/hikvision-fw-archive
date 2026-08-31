@@ -1122,5 +1122,9 @@
   "https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CV2.3.11_build260112_Bedhead_Call_Button_Release_Note.pdf": {
     "changes": "Add support for Nurse on duty button and Code Blue alarm button to Bedhead call button. The · connection method is Alarm input, with a short press to trigger and a long press of 3s to cancel. The · Code Blue trigger depends on the Nurse on duty button already being triggered； · The alarm button wiring instructions for the bedhead call button must follow the one -to-one",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202608/releasenote%5CR0_Indoor_Station_Firmware_V2.2.124_build260814_Release_Note.pdf": {
+    "changes": "Improved configuration wizard: · a. when multiple door stations are selected but none are activated, the potentially misleading · password consistency prompt is no longer shown · b. Improved configuration wizard: when a door station unreachable from the indoor station is",
+    "source": "pdf"
   }
 }
