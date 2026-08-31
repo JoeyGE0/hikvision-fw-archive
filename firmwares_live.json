@@ -25109,7 +25109,7 @@
     "version": "2.0.1",
     "date": "2025-12-19",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787380434/Firmware__V2.0.1_230804_S3000515859.zip",
-    "filename": "Firmware__V2.0.1_230804_S3000515859.zip",
+    "filename": "Firmware__V2.0.1_260608_S3000735340.zip",
     "supported_models": [
       "DS-K3Y411BX",
       "DS-K3Y411BX-M/MPG-DP55",
@@ -25768,7 +25768,7 @@
     "version": "2.0.1",
     "date": "2025-10-22",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787380434/Firmware__V2.0.1_230804_S3000515859.zip",
-    "filename": "Firmware__V2.0.1_230804_S3000515859.zip",
+    "filename": "Firmware__V2.0.1_260608_S3000735340.zip",
     "supported_models": [
       "DS-K3Y411BLX",
       "DS-K3Y411BLX-L/PG-DP55",
@@ -29348,7 +29348,7 @@
     "version": "2.0.1",
     "date": "2025-01-13",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787380434/Firmware__V2.0.1_230804_S3000515859.zip",
-    "filename": "Firmware__V2.0.1_230804_S3000515859.zip",
+    "filename": "Firmware__V2.0.1_260608_S3000735340.zip",
     "supported_models": [
       "DS-B31-04H08H",
       "DS-B31-12H24H",
@@ -34008,7 +34008,7 @@
     "version": "2.0.1",
     "date": "2024-01-18",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787380434/Firmware__V2.0.1_230804_S3000515859.zip",
-    "filename": "Firmware__V2.0.1_230804_S3000515859.zip",
+    "filename": "Firmware__V2.0.1_260608_S3000735340.zip",
     "supported_models": [
       "AE-VE242A-A",
       "AE-VE242A-A(A/4-CH)"
@@ -34763,7 +34763,7 @@
     "version": "2.0.1",
     "date": "2023-10-16",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787380434/Firmware__V2.0.1_230804_S3000515859.zip",
-    "filename": "Firmware__V2.0.1_230804_S3000515859.zip",
+    "filename": "Firmware__V2.0.1_260608_S3000735340.zip",
     "supported_models": [
       "DS-K3B801BX",
       "DS-K3B801BX-L/M-DP65",
@@ -41084,7 +41084,7 @@
     "version": "2.0.1",
     "date": "2018-09-29",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787380434/Firmware__V2.0.1_230804_S3000515859.zip",
-    "filename": "Firmware__V2.0.1_230804_S3000515859.zip",
+    "filename": "Firmware__V2.0.1_260608_S3000735340.zip",
     "supported_models": [
       "DS-K1802",
       "DS-K1802MK",
@@ -56891,7 +56891,7 @@
     "version": "2.0.1",
     "date": "2026-05-12",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787380434/Firmware__V2.0.1_230804_S3000515859.zip",
-    "filename": "Firmware__V2.0.1_230804_S3000515859.zip",
+    "filename": "Firmware__V2.0.1_260608_S3000735340.zip",
     "supported_models": [
       "DS-D5232F2-1V1S",
       "DS-D5232F2-1V1S(US)"
@@ -58972,7 +58972,7 @@
     "version": "2.0.1",
     "date": "2023-08-04",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787380434/Firmware__V2.0.1_230804_S3000515859.zip",
-    "filename": "Firmware__V2.0.1_230804_S3000515859.zip",
+    "filename": "Firmware__V2.0.1_260608_S3000735340.zip",
     "supported_models": [
       "DS-2XM6756G1-I(D)(M)(/ND)",
       "DS-2XM6756G1-ID(2MM)",
@@ -60083,11 +60083,12 @@
       "DS-KIS702Y-P",
       "DS-KIS603-P",
       "DS-KIS604-P",
-      "DS-KIS604-S"
+      "DS-KIS604-S",
+      "DS-KH8520#AU"
     ],
     "applied_to": "Applied to: DS-KH6320-WTDE1, DS-KH6320-WTE1, DS-KH6320Y-WTE2, DS-KH8520-WTE1, DS-KH8520-WTE1（O-STD）, DS-KIS602, DS-KIS602(B), DS-KIS603-P(C), DS-KIS604-P(C), DS-KIS604-S(C), DS-KIS702Y-P",
-    "changes": "",
-    "notes": "",
+    "changes": "Improved configuration wizard: · a. when multiple door stations are selected but none are activated, the potentially misleading · password consistency prompt is no longer shown · b. Improved configuration wizard: when a door station unreachable from the indoor station is",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202608/releasenote%5CR0_Indoor_Station_Firmware_V2.2.124_build260814_Release_Note.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -60803,6 +60804,24 @@
     "applied_to": "Applied to: DS-2CD7126G0-IZS, DS-2CD7126G0-IZS(8-32MM), DS-2CD7A26G0-IZ(H)S, DS-2CD7A26G0-IZHS(8-32MM), DS-2CD7A46G0-IZ(H)S, DS-2CD7A46G0-IZHS(8-32MM)",
     "changes": "HTTP preview fetching stream: Now the models of this firmware included which support MJPEG now can · support ISAPI/Streaming/channels//httppreview. · Solve the problem of abnormal data reporting in negative time zone (such as UTC-8 in West 8). · Lens change:",
     "notes": "https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CIPC_H3_5.6.12_200729_release_notes.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-D5043F3-1V0S_UNKNOWN_2.0.1": {
+    "device_id": 102270,
+    "model": "DS-D5043F3-1V0S",
+    "hardware_version": "UNKNOWN",
+    "version": "2.0.1",
+    "date": "2026-06-08",
+    "download_url": "",
+    "filename": "Firmware__V2.0.1_260608_S3000735340.zip",
+    "supported_models": [
+      "DS-D5043F3-1V0S",
+      "DS-D5043F3-1V0S(EU)"
+    ],
+    "applied_to": "Applied to: DS-D5043F3-1V0S, DS-D5043F3-1V0S(EU)",
+    "changes": "",
+    "notes": "",
     "is_beta": false,
     "source": "live"
   }
