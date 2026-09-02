@@ -1126,5 +1126,21 @@
   "https://assets.hikvision.com/prd/normal/all/files/202608/releasenote%5CR0_Indoor_Station_Firmware_V2.2.124_build260814_Release_Note.pdf": {
     "changes": "Improved configuration wizard: · a. when multiple door stations are selected but none are activated, the potentially misleading · password consistency prompt is no longer shown · b. Improved configuration wizard: when a door station unreachable from the indoor station is",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CDS-KV8114_V3.11.0_build260819_Release_Note.pdf": {
+    "changes": "Card reading : supports M1 card, the KV8114T series triple -lens models additionally support Desfire · encrypted cards · Mobile opening: supports door unlock via Hik-Connect, as well as Bluetooth permission-based unlocking · Visitor QR code : QR module integration supports visitor QR code 2.0 and 3.0 scanning and",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CNetwork_Camera-V5.11.0_260813_Release_IPCE_H13U.pdf": {
+    "changes": "Support AI encoding for 3-Series 4/6/8 MP camera · Fix for the abnormal Lens Shade Issue in PTR (Z) Products",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202608/releasenote%5CDeepinView_Camera_V5.9.23_release_note.pdf": {
+    "changes": "V5.9.23_260810: Fix some known bugs.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202608/releasenote%5CDS-K1109_Series_Card_Reader_V1.1.2_build260130_Release_Note.pdf": {
+    "changes": "Add NFC log retrieval function to the card reader; · Disable button triggering for 700ms after swiping card to prevent accidental touch · Optimized Features · Optimize beep response for touch button",
+    "source": "pdf"
   }
 }

@@ -5735,10 +5735,6 @@
     "model": "DS-7604NXI-K1/4P/VPRO",
     "hardware_version": "NVR_V4"
   },
-  "102937": {
-    "model": "DS-7104NI-Q1",
-    "hardware_version": "UNKNOWN"
-  },
   "102938": {
     "model": "NVR-104MH-C(E)",
     "hardware_version": "NVR_K21B2"
@@ -6290,5 +6286,9 @@
   "103075": {
     "model": "DS-2CD7126G0-IZS",
     "hardware_version": "IPC_H3"
+  },
+  "103076": {
+    "model": "DS-2CD2525FWD-I(W)(S)",
+    "hardware_version": "IPC_V5"
   }
 }
