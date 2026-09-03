@@ -6290,5 +6290,13 @@
   "103076": {
     "model": "DS-2CD2525FWD-I(W)(S)",
     "hardware_version": "IPC_V5"
+  },
+  "103077": {
+    "model": "IPC-T263H-MU",
+    "hardware_version": "UNKNOWN"
+  },
+  "103078": {
+    "model": "IPC-T283H-MU",
+    "hardware_version": "UNKNOWN"
   }
 }

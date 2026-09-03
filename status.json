@@ -1,21 +1,19 @@
 {
-  "last_run": "2026-09-03T09:05:53.945663",
-  "status": "error",
+  "last_run": "2026-09-03T19:27:02.166990",
+  "status": "success",
   "scraper_mode": "http",
   "post_merge_verified": "2026-05-19T13:00:29.926000",
   "catalog_urls_parsed": 4568,
-  "firmwares_found": 1916,
-  "new_firmwares": 0,
-  "errors": [
-    "Download failed DS-3E1508-EI v1.2.0: 403 Client Error: Forbidden for url: https://assets.hikvision.com/prd/public/all/files/9b0070aa-f3a3-46e9-9413-c9654faf96a0.zip"
-  ],
+  "firmwares_found": 1918,
+  "new_firmwares": 2,
+  "errors": [],
   "test_mode": false,
   "catalog_fetch": "playwright",
-  "catalog_entries": 267,
+  "catalog_entries": 318,
   "priority_models": [
     "DS-2CD2387G3-LIS2UY",
     "DS-2CD1383G2P-LIUF",
     "DS-2CD1383G2-LIUF"
   ],
-  "catalog_region": "ca-en"
+  "catalog_region": "au-en"
 }

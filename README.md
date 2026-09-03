@@ -136,19 +136,15 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 | | |
 |--|--|
-| **Status** | ❌ ERROR |
-| **Last run** | 2026-09-03 09:05:53 UTC |
+| **Status** | ✅ SUCCESS |
+| **Last run** | 2026-09-03 19:27:02 UTC |
 | **Scraper** | HTTP |
 | **Catalog fetch** | playwright |
-| **Catalog rows parsed** | 267 |
-| **Firmware records** | 1916 |
-| **New last run** | 0 |
+| **Catalog rows parsed** | 318 |
+| **Firmware records** | 1918 |
+| **New last run** | 2 |
 | **Test mode** | Disabled |
 
-
-
-**Recent Errors:**
-- ⚠️ Download failed DS-3E1508-EI v1.2.0: 403 Client Error: Forbidden for url: https://assets.hikvision.com/prd/public/all/files/9b0070aa-f3a3-46e9-9413-c9654faf96a0.zip
 
 
 ---
@@ -157,7 +153,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 Collapsible sections per model and hardware line (newest firmware first within each section).
 
-Total: 2655
+Total: 2657
 
 
 
@@ -15795,11 +15791,31 @@ Total: 2655
 
 
 <details>
+<summary><h2>IPC-T263H-MU - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.0 | Applied to: [IPC-T263H-MU](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.0_241209_S3000618381.zip), [IPC-T263H-MU(2.8MM)(HIK](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.0_241209_S3000618381.zip), [IPC-T263H-MU(4MM)(HIK](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.0_241209_S3000618381.zip), [IPC-T263H-MU(2.8MM)(HIK](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.0_241209_S3000618381.zip) | 2024-12-09 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.0_241209_S3000618381.zip) | — |
+
+</details>
+
+
+<details>
 <summary><h2>IPC-T282H-MU#AU - IPC_G5 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.7.1 | Applied to: [IPC-T282H-MU](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787513624/Firmware__V5.7.18_260730_S3000743355.zip), [IPC-T282H-MU(2.8MM)(HIK](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787513624/Firmware__V5.7.18_260730_S3000743355.zip), [IPC-T282H-MU(4MM)(HIK](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787513624/Firmware__V5.7.18_260730_S3000743355.zip), [IPC-T282H-MU(2.8MM)(HIK](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787513624/Firmware__V5.7.18_260730_S3000743355.zip) | 2024-03-06 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787513624/Firmware__V5.7.18_260730_S3000743355.zip) | — |
+
+</details>
+
+
+<details>
+<summary><h2>IPC-T283H-MU - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.0 | Applied to: [IPC-T283H-MU](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.0_241209_S3000618332.zip), [IPC-T283H-MU(2.8MM)(HIK](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.0_241209_S3000618332.zip), [IPC-T283H-MU(4MM)(HIK](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.0_241209_S3000618332.zip) | 2024-12-09 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.7.0_241209_S3000618332.zip) | — |
 
 </details>
 
@@ -16074,7 +16090,7 @@ Total: 2655
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 4.76.109 | Applied to: [NVR-104H-D/4P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786125916/Firmware_Europe_V4.76.109_260713_S3000743714.zip), [NVR-104H-D/4P(D)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786125916/Firmware_Europe_V4.76.109_260713_S3000743714.zip), [NVR-108H-D/8P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786125916/Firmware_Europe_V4.76.109_260713_S3000743714.zip), [NVR-108H-D/8P(D)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786125916/Firmware_Europe_V4.76.109_260713_S3000743714.zip) | 2026-07-13 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786125916/Firmware_Europe_V4.76.109_260713_S3000743714.zip) | — |
+| 4.76.109 | Applied to: [NVR-104H-D/4P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786125916/Firmware_Europe_V4.76.109_260713_S3000743714.zip), [NVR-104H-D/4P(D)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786125916/Firmware_Europe_V4.76.109_260713_S3000743714.zip), [NVR-108H-D/8P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786125916/Firmware_Europe_V4.76.109_260713_S3000743714.zip), [NVR-108H-D/8P(D)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786125916/Firmware_Europe_V4.76.109_260713_S3000743714.zip) | 2026-07-13 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786125916/Firmware_Europe_V4.76.109_260713_S3000743714.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CNVR_V4.76.109_260713_ReleaseNote.pdf) |
 | 4.76.108 | Applied to: [NVR-104H-D/4P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781205771/Firmware__V4.76.108_251219_S3000692756.zip), [NVR-104H-D/4P(D)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781205771/Firmware__V4.76.108_251219_S3000692756.zip), [NVR-108H-D/8P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781205771/Firmware__V4.76.108_251219_S3000692756.zip), [NVR-108H-D/8P(D)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781205771/Firmware__V4.76.108_251219_S3000692756.zip) | 2025-12-19 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781205771/Firmware__V4.76.108_251219_S3000692756.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CEUI_NVR_V4.76.108_251219_ReleaseNote.pdf) |
 | 4.76.100 | Applied to: [NVR-104H-D/4P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782461450/Firmware_Asia_V4.76.100_240415_S3000568898.zip), [DS-HILOOKI-NVR-104H-D/4P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782461450/Firmware_Asia_V4.76.100_240415_S3000568898.zip), [NVR-104H-D/4P(C)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782461450/Firmware_Asia_V4.76.100_240415_S3000568898.zip), [NVR-104MH-D](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782461450/Firmware_Asia_V4.76.100_240415_S3000568898.zip), [NVR-104MH-D(C)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782461450/Firmware_Asia_V4.76.100_240415_S3000568898.zip), [NVR-104MH-D(D)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782461450/Firmware_Asia_V4.76.100_240415_S3000568898.zip), [NVR-108MH-D/8P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782461450/Firmware_Asia_V4.76.100_240415_S3000568898.zip), [NVR-108MH-D/8P(C)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782461450/Firmware_Asia_V4.76.100_240415_S3000568898.zip) | 2024-04-15 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782461450/Firmware_Asia_V4.76.100_240415_S3000568898.zip) | 【SADP module is added to search and modify the camera · IP by multicast】 · SADP module is added to search and modify the camera IP by multicast. · Related product list: · [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CK75__V4.30.091build220919_release_note.pdf) |
 | 4.30.091 | Applied to: [NVR-104H-D/4P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782634117/Firmware_Europe_V4.30.091_220919_S3000455696.zip), [DS-HILOOKI-NVR-104H-D/4P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782634117/Firmware_Europe_V4.30.091_220919_S3000455696.zip), [NVR-104H-D/4P(C)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782634117/Firmware_Europe_V4.30.091_220919_S3000455696.zip), [NVR-104MH-D](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782634117/Firmware_Europe_V4.30.091_220919_S3000455696.zip), [NVR-104MH-D(C)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782634117/Firmware_Europe_V4.30.091_220919_S3000455696.zip), [NVR-104MH-D(D)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782634117/Firmware_Europe_V4.30.091_220919_S3000455696.zip), [NVR-108MH-D/8P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782634117/Firmware_Europe_V4.30.091_220919_S3000455696.zip), [NVR-108MH-D/8P(C)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782634117/Firmware_Europe_V4.30.091_220919_S3000455696.zip) | 2022-09-19 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782634117/Firmware_Europe_V4.30.091_220919_S3000455696.zip) | 【SADP module is added to search and modify the camera · IP by multicast】 · SADP module is added to search and modify the camera IP by multicast. · Related product list: · [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CK75__V4.30.091build220919_release_note.pdf) |
@@ -16089,7 +16105,7 @@ Total: 2655
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 4.76.109 | Applied to: [NVR-104H-D/4P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786125916/Firmware_Europe_V4.76.109_260713_S3000743714.zip), [NVR-104H-D/4P(D)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786125916/Firmware_Europe_V4.76.109_260713_S3000743714.zip), [NVR-108H-D/8P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786125916/Firmware_Europe_V4.76.109_260713_S3000743714.zip), [NVR-108H-D/8P(D)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786125916/Firmware_Europe_V4.76.109_260713_S3000743714.zip) | 2026-07-13 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786125916/Firmware_Europe_V4.76.109_260713_S3000743714.zip) | — |
+| 4.76.109 | Applied to: [NVR-104H-D/4P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786125916/Firmware_Europe_V4.76.109_260713_S3000743714.zip), [NVR-104H-D/4P(D)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786125916/Firmware_Europe_V4.76.109_260713_S3000743714.zip), [NVR-108H-D/8P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786125916/Firmware_Europe_V4.76.109_260713_S3000743714.zip), [NVR-108H-D/8P(D)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786125916/Firmware_Europe_V4.76.109_260713_S3000743714.zip) | 2026-07-13 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786125916/Firmware_Europe_V4.76.109_260713_S3000743714.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CNVR_V4.76.109_260713_ReleaseNote.pdf) |
 | 4.76.108 | Applied to: [NVR-104H-D/4P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781205771/Firmware__V4.76.108_251219_S3000692756.zip), [NVR-104H-D/4P(D)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781205771/Firmware__V4.76.108_251219_S3000692756.zip), [NVR-108H-D/8P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781205771/Firmware__V4.76.108_251219_S3000692756.zip), [NVR-108H-D/8P(D)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781205771/Firmware__V4.76.108_251219_S3000692756.zip) | 2025-12-19 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781205771/Firmware__V4.76.108_251219_S3000692756.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202601/releasenote%5CEUI_NVR_V4.76.108_251219_ReleaseNote.pdf) |
 | 4.76.100 | Applied to: [NVR-104H-D/4P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782461450/Firmware_Asia_V4.76.100_240415_S3000568898.zip), [DS-HILOOKI-NVR-104H-D/4P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782461450/Firmware_Asia_V4.76.100_240415_S3000568898.zip), [NVR-104H-D/4P(C)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782461450/Firmware_Asia_V4.76.100_240415_S3000568898.zip), [NVR-104MH-D](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782461450/Firmware_Asia_V4.76.100_240415_S3000568898.zip), [NVR-104MH-D(C)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782461450/Firmware_Asia_V4.76.100_240415_S3000568898.zip), [NVR-104MH-D(D)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782461450/Firmware_Asia_V4.76.100_240415_S3000568898.zip), [NVR-108MH-D/8P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782461450/Firmware_Asia_V4.76.100_240415_S3000568898.zip), [NVR-108MH-D/8P(C)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782461450/Firmware_Asia_V4.76.100_240415_S3000568898.zip) | 2024-04-15 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782461450/Firmware_Asia_V4.76.100_240415_S3000568898.zip) | 【SADP module is added to search and modify the camera · IP by multicast】 · SADP module is added to search and modify the camera IP by multicast. · Related product list: · [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CK75__V4.30.091build220919_release_note.pdf) |
 | 4.30.091 | Applied to: [NVR-104H-D/4P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782634117/Firmware_Europe_V4.30.091_220919_S3000455696.zip), [DS-HILOOKI-NVR-104H-D/4P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782634117/Firmware_Europe_V4.30.091_220919_S3000455696.zip), [NVR-104H-D/4P(C)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782634117/Firmware_Europe_V4.30.091_220919_S3000455696.zip), [NVR-104MH-D](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782634117/Firmware_Europe_V4.30.091_220919_S3000455696.zip), [NVR-104MH-D(C)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782634117/Firmware_Europe_V4.30.091_220919_S3000455696.zip), [NVR-104MH-D(D)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782634117/Firmware_Europe_V4.30.091_220919_S3000455696.zip), [NVR-108MH-D/8P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782634117/Firmware_Europe_V4.30.091_220919_S3000455696.zip), [NVR-108MH-D/8P(C)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782634117/Firmware_Europe_V4.30.091_220919_S3000455696.zip) | 2022-09-19 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782634117/Firmware_Europe_V4.30.091_220919_S3000455696.zip) | 【SADP module is added to search and modify the camera · IP by multicast】 · SADP module is added to search and modify the camera IP by multicast. · Related product list: · [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202312/releasenote%5CK75__V4.30.091build220919_release_note.pdf) |
