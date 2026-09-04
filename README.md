@@ -136,15 +136,19 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 | | |
 |--|--|
-| **Status** | ✅ SUCCESS |
-| **Last run** | 2026-09-03 19:27:02 UTC |
+| **Status** | ❌ ERROR |
+| **Last run** | 2026-09-04 08:55:42 UTC |
 | **Scraper** | HTTP |
 | **Catalog fetch** | playwright |
-| **Catalog rows parsed** | 318 |
+| **Catalog rows parsed** | 0 |
 | **Firmware records** | 1918 |
-| **New last run** | 2 |
+| **New last run** | 0 |
 | **Test mode** | Disabled |
 
+
+
+**Recent Errors:**
+- ⚠️ Scraping failed: Playwright catalog still invalid (522 bytes) — may be blocked
 
 
 ---
