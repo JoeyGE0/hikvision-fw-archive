@@ -6306,5 +6306,9 @@
   "103080": {
     "model": "IDS-2CD8V447G0E/X2-XZS",
     "hardware_version": "IPC_G0"
+  },
+  "103081": {
+    "model": "DS-2TD2637-35/QY",
+    "hardware_version": "THERMAL_G0"
   }
 }
