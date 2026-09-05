@@ -1142,5 +1142,17 @@
   "https://assets.hikvision.com/prd/normal/all/files/202608/releasenote%5CDS-K1109_Series_Card_Reader_V1.1.2_build260130_Release_Note.pdf": {
     "changes": "Add NFC log retrieval function to the card reader; · Disable button triggering for 700ms after swiping card to prevent accidental touch · Optimized Features · Optimize beep response for touch button",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CDS-K1T321_Series_MinMoe_Terminal_V4.61.0_build260828_Release_Note.pdf": {
+    "changes": "Support PushSDK · Support 1024 weekly schedules, 1024 holiday schedules and 1024 holiday schedule groups · Support to add face pictures from device web page · Device Model:",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CDS-K1T320_Series_MinMoe_Terminal_V4.61.0_build260818_Release_Note.pdf": {
+    "changes": "Support PushSDK · Device Model: · Naming Rule: · M for M1 card,",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CNetwork_Camera-V5.8.50_260624_Release_IPCE_HA_H13.pdf": {
+    "changes": "Supports AI coding in related 3 series products. · Motion Detection supports animals detection, animals detection is disabled by default. · Perimeter protection supports animals detection and humans on non-motor vehicles detection, · animals detection is disabled by default.",
+    "source": "pdf"
   }
 }

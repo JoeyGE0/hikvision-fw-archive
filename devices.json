@@ -6298,5 +6298,13 @@
   "103078": {
     "model": "IPC-T283H-MU",
     "hardware_version": "UNKNOWN"
+  },
+  "103079": {
+    "model": "DS-2CD2786G3-IPTRZSY",
+    "hardware_version": "IPC_G0"
+  },
+  "103080": {
+    "model": "IDS-2CD8V447G0E/X2-XZS",
+    "hardware_version": "IPC_G0"
   }
 }
