@@ -136,19 +136,15 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 | | |
 |--|--|
-| **Status** | ❌ ERROR |
-| **Last run** | 2026-09-06 08:49:27 UTC |
+| **Status** | ✅ SUCCESS |
+| **Last run** | 2026-09-06 18:33:09 UTC |
 | **Scraper** | HTTP |
 | **Catalog fetch** | playwright |
-| **Catalog rows parsed** | 263 |
-| **Firmware records** | 1921 |
-| **New last run** | 0 |
+| **Catalog rows parsed** | 318 |
+| **Firmware records** | 1922 |
+| **New last run** | 1 |
 | **Test mode** | Disabled |
 
-
-
-**Recent Errors:**
-- ⚠️ Download failed DS-3E1508-EI v1.2.0: 403 Client Error: Forbidden for url: https://assets.hikvision.com/prd/public/all/files/9b0070aa-f3a3-46e9-9413-c9654faf96a0.zip
 
 
 ---
@@ -157,7 +153,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 Collapsible sections per model and hardware line (newest firmware first within each section).
 
-Total: 2663
+Total: 2665
 
 
 
@@ -2608,6 +2604,17 @@ Total: 2663
 
 
 <details>
+<summary><h2>DS-2CD3767G3T-LIZSUY/SL(PTRZ) - IPC_G0 (2 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.8.30 | Applied to: [DS-2CD3767G3T-LIZSUY/SL(PTRZ)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.30_260821_S3000749790.zip), [DS-2CD3767G3T-LIZSUY/SL(PTRZ)(27135)OSTD](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.30_260821_S3000749790.zip), [DS-2CD3787G3T-LIZSUY/SL(PTRZ)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.30_260821_S3000749790.zip), [DS-2CD3787G3T-LIZSUY/SL(PTRZ)(27135)OSTD](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.30_260821_S3000749790.zip) | 2026-08-21 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.30_260821_S3000749790.zip) | — |
+| 5.8.30 | Applied to: [DS-2CD3046G3-IU(Y)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785435827/Firmware__V5.8.30_241224_S3000621431.zip), [DS-2CD3046G3-IUY(2.8MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785435827/Firmware__V5.8.30_241224_S3000621431.zip), [DS-2CD3046G3-IUY(4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785435827/Firmware__V5.8.30_241224_S3000621431.zip), [DS-2CD3046G3-IU/SL(Y)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785435827/Firmware__V5.8.30_241224_S3000621431.zip), [DS-2CD3046G3-IUY/SL(2.8MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785435827/Firmware__V5.8.30_241224_S3000621431.zip), [DS-2CD3046G3-IUY/SL(4MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785435827/Firmware__V5.8.30_241224_S3000621431.zip), [DS-2CD3046G3-IUY/SL(2.8MM)(BLACK)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785435827/Firmware__V5.8.30_241224_S3000621431.zip), [DS-2CD3046G3-LIU(Y)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785435827/Firmware__V5.8.30_241224_S3000621431.zip) | 2026-03-26 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785435827/Firmware__V5.8.30_241224_S3000621431.zip) | some bugs to enhance system stability. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera-V5.8.30_260326_Release_IPCE_H_H13.pdf) |
+
+</details>
+
+
+<details>
 <summary><h2>DS-2CD37C7G3T-LIZSU(Y) - IPC_G0 (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
@@ -4465,7 +4472,7 @@ Total: 2663
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 5.8.3 | Applied to: [DS-2DE7A425MWG-EB](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.3_260328_S3000710676.zip), [DS-2DE7A432MWG-EB](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.3_260328_S3000710676.zip) | 2026-03-28 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.3_260328_S3000710676.zip) | Support HEOP · Support Perimeter Large Model(Smart Event) · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CV5.8.3_260328_Release_Note(O-STD).pdf) |
+| 5.8.3 | Applied to: [DS-2DE7A425MWG-EB](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.30_260821_S3000749790.zip), [DS-2DE7A432MWG-EB](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.30_260821_S3000749790.zip) | 2026-03-28 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.8.30_260821_S3000749790.zip) | Support HEOP · Support Perimeter Large Model(Smart Event) · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202604/releasenote%5CV5.8.3_260328_Release_Note(O-STD).pdf) |
 
 </details>
 
