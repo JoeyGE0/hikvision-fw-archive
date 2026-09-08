@@ -50928,8 +50928,8 @@
       "DS-2DE3404W-DE (T5)"
     ],
     "applied_to": "Applied to: DS-2DE3404W-DE, DS-2DE3404W-DE(T5), DS-2DE3404W-DE (T5)",
-    "changes": "",
-    "notes": "",
+    "changes": "Bug fixed · Optimize and update the algorithm",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CH8_IPDE_C_V5.8.1_260709_Release_Note.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -59564,8 +59564,8 @@
       "DS-2SE4C425MWG-E"
     ],
     "applied_to": "Applied to: DS-2SE4C425MWG-E (14F0), DS-2SE4C425MWG-E(14F0)",
-    "changes": "",
-    "notes": "",
+    "changes": "Bug fixed · Optimize and update the algorithm",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CG5H8_IPDE_V5.10.0_260624_Release_Note.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -61218,7 +61218,7 @@
     "hardware_version": "UNKNOWN",
     "version": "2.2.5",
     "date": "2026-09-01",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788859963/Firmware__V2.2.5_260901_S3000750025.zip",
     "filename": "Firmware__V2.2.5_260901_S3000750025.zip",
     "supported_models": [
       "ISD-ST204D-DHV",
@@ -61236,7 +61236,7 @@
     "hardware_version": "UNKNOWN",
     "version": "4.45.20",
     "date": "2026-04-09",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788859963/Firmware__V4.45.20_260409_S3000717265.zip",
     "filename": "Firmware__V4.45.20_260409_S3000717265.zip",
     "supported_models": [
       "DS-K1T681DBWX",
@@ -61254,13 +61254,30 @@
     "hardware_version": "UNKNOWN",
     "version": "4.45.0",
     "date": "2025-09-02",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788859963/Firmware__V4.45.0_250902_S3000672083.zip",
     "filename": "Firmware__V4.45.0_250902_S3000672083.zip",
     "supported_models": [
       "DS-K1T681DBWX",
       "DS-K1T681DBX"
     ],
     "applied_to": "Applied to: DS-K1T681DBWX, DS-K1T681DBX",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2TD2637-15/QY_THERMAL_G0_5.5.338": {
+    "device_id": 103009,
+    "model": "DS-2TD2637-15/QY",
+    "hardware_version": "THERMAL_G0",
+    "version": "5.5.338",
+    "date": "2026-04-13",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787248096/Firmware__V5.5.338_260413_S3000746160.zip",
+    "filename": "Firmware__V5.5.338_260413_S3000746160.zip",
+    "supported_models": [
+      "DS-2TD2637-15/QY"
+    ],
+    "applied_to": "Applied to: DS-2TD2637-15/QY",
     "changes": "",
     "notes": "",
     "is_beta": false,
