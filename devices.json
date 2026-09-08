@@ -6314,5 +6314,21 @@
   "103082": {
     "model": "DS-2CD3767G3T-LIZSUY/SL(PTRZ)",
     "hardware_version": "IPC_G0"
+  },
+  "103083": {
+    "model": "DS-2CD2766G3-IPTRZS2UY/S(L)(RB)",
+    "hardware_version": "IPC_G0"
+  },
+  "103084": {
+    "model": "DS-2CD3747G3-LIZSUY/SL(PTRZ)",
+    "hardware_version": "IPC_G0"
+  },
+  "103085": {
+    "model": "IDS-9632NXI-I8/S",
+    "hardware_version": "UNKNOWN"
+  },
+  "103086": {
+    "model": "DS-K1T681DBWX",
+    "hardware_version": "UNKNOWN"
   }
 }
