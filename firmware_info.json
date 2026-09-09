@@ -1162,5 +1162,25 @@
   "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CG5H8_IPDE_V5.10.0_260624_Release_Note.pdf": {
     "changes": "Bug fixed · Optimize and update the algorithm",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CG5_IPCH_H_V5.7.64_260810_Release_Note.pdf": {
+    "changes": "Bug fixed · Optimize and update the algorithm",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CV5.201_K21B1_KT5_ReleaseNotes.pdf": {
+    "changes": "Second batch of multilingual versions and multilingual firmware name · optimization · （1）NVR_K21B1_KT5_X_ARABIC_BL_ML_STD----------- Arabic · （2）NVR_K21B1_KT5_X_VIETNAM_BL_ML_STD----------- Vietnam",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CIPDG_XSLF_H9H9_V5.9.13_Release_Note.pdf": {
+    "changes": "Supported Large-Scale model on Smart Event, AcuSeek and · People Density on panoramic channel · Supported Large-Scale model on Smart Event, AcuSeek, · Multi-Target-Type Detection, Multi-Target-Type",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CE13_IPDE_W_V5.11.0_260624_Release_Note.pdf": {
+    "changes": "Bug fixed · Optimize and update the algorithm",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CIPDG_XS_H11_V5.10.0_Release_Note.pdf": {
+    "changes": "Bug fixed",
+    "source": "pdf"
   }
 }

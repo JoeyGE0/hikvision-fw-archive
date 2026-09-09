@@ -6107,10 +6107,6 @@
     "model": "DS-2CV2146G0-IDW",
     "hardware_version": "UNKNOWN"
   },
-  "103031": {
-    "model": "IDS-9632NXI-P16",
-    "hardware_version": "UNKNOWN"
-  },
   "103032": {
     "model": "DS-2XM6222G1-I(D)(M)(/ND)",
     "hardware_version": "UNKNOWN"
@@ -6330,5 +6326,9 @@
   "103086": {
     "model": "DS-K1T681DBWX",
     "hardware_version": "UNKNOWN"
+  },
+  "103087": {
+    "model": "IDS-9632NXI-P16",
+    "hardware_version": "NVR_K21B1"
   }
 }
