@@ -1182,5 +1182,57 @@
   "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CIPDG_XS_H11_V5.10.0_Release_Note.pdf": {
     "changes": "Bug fixed",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CDS-K1T673_Series_MinMoe_Terminal_4.56.0_build260831_Release_Note.pdf": {
+    "changes": "Support face template on card/mobile solution · a) assign face template to HIK Desfire cards · Device Model: · Modules (optional):",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CNetwork_Camera-V5.8.40_260821_Release_IPCE_G_H13.pdf": {
+    "changes": "Fix the issue where the bitrate was incorrect after switching between H.264+ and H.265+ in the 2/3 · series 6/8MP cameras.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CNetwork_Camera-V5.8.30_260821_Release_IPCE_H_H13.pdf": {
+    "changes": "Fix the issue where the bitrate was incorrect after switching between H.264+ and H.265+ in the 2/3 · series 6/8MP cameras.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CDeepinView_Camera_V5.10.0_release_note.pdf": {
+    "changes": "V5.10.0_260819: Fix some known bugs.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CNetwork_Camera-V5.8.14_Release_Note-E13.pdf": {
+    "changes": "New Products: · Optimize the issue of color differences between channel 1 and channel 2 of dual -lens cameras in the same · background · Motion Detection supports continuous alarm, solving the problem of short recording time for Motion Detection.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CG5_IPCH_M_V5.7.64_260727_Release_Note.pdf": {
+    "changes": "Bug Fixed · Optimize and update the algorithm",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CH13_IPCH_V5.10.1_260722_Release_Note.pdf": {
+    "changes": "Bug Fixed · Optimize and update the algorithm",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CE13_IPDE_V5.11.0_260716_Release_Note.pdf": {
+    "changes": "Bug fixed · Optimize and update the algorithm",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CIPDG_XRNF_H13_V5.10.0_Release_Note.pdf": {
+    "changes": "Bug fixed",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CE8_IPCH_V5.7.8_260713_Release_Note.pdf": {
+    "changes": "Fix ICR switching issue · Optimize and update the algorithm",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CIPDG_NHS_H11H11_V5.9.32_Release_Note.pdf": {
+    "changes": "Bug fixed",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CIPDG_Y_E13_V5.9.62_Release_Note.pdf": {
+    "changes": "Bug fixed",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CIPDG_DP_H5H9_V5.9.70_Release_Note.pdf": {
+    "changes": "Bug fixed",
+    "source": "pdf"
   }
 }

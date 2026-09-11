@@ -6139,10 +6139,6 @@
     "model": "HM-TD3118T-1/Q",
     "hardware_version": "THERMAL_G0"
   },
-  "103040": {
-    "model": "IDS-9616NXI-P8",
-    "hardware_version": "UNKNOWN"
-  },
   "103041": {
     "model": "DS-2CD3046G3/LM-LIUY",
     "hardware_version": "IPC_G0"
@@ -6330,5 +6326,57 @@
   "103087": {
     "model": "IDS-9632NXI-P16",
     "hardware_version": "NVR_K21B1"
+  },
+  "103088": {
+    "model": "DS-2CD3166G3-ISU(Y)",
+    "hardware_version": "IPC_G0"
+  },
+  "103089": {
+    "model": "DS-2CD1047G3H-LIU(F)(/SX)",
+    "hardware_version": "IPC_G0"
+  },
+  "103090": {
+    "model": "DS-KAS321",
+    "hardware_version": "UNKNOWN"
+  },
+  "103091": {
+    "model": "DS-7104HGHI-M1/T-2K",
+    "hardware_version": "UNKNOWN"
+  },
+  "103092": {
+    "model": "DS-7108HGHI-M1/T-2K",
+    "hardware_version": "UNKNOWN"
+  },
+  "103093": {
+    "model": "AE-DI2022-E32",
+    "hardware_version": "UNKNOWN"
+  },
+  "103094": {
+    "model": "DS-KAB673-P",
+    "hardware_version": "UNKNOWN"
+  },
+  "103095": {
+    "model": "IDS-9616NXI-P8",
+    "hardware_version": "NVR_K21B1"
+  },
+  "103096": {
+    "model": "DS-2CFMP8-D/4G",
+    "hardware_version": "UNKNOWN"
+  },
+  "103097": {
+    "model": "DS-KAS342",
+    "hardware_version": "UNKNOWN"
+  },
+  "103098": {
+    "model": "DS-2XS6A46G1-LIZS/4G",
+    "hardware_version": "UNKNOWN"
+  },
+  "103099": {
+    "model": "DS-2CD6D44G3-IZHS",
+    "hardware_version": "IPC_G0"
+  },
+  "103100": {
+    "model": "DS-K1F600U-D6E",
+    "hardware_version": "UNKNOWN"
   }
 }
