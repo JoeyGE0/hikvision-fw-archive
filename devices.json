@@ -6378,5 +6378,9 @@
   "103100": {
     "model": "DS-K1F600U-D6E",
     "hardware_version": "UNKNOWN"
+  },
+  "103101": {
+    "model": "DS-2CD1143G2-LIU(F)",
+    "hardware_version": "IPC_G0"
   }
 }
