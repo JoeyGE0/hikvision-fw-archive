@@ -6382,5 +6382,9 @@
   "103101": {
     "model": "DS-2CD1143G2-LIU(F)",
     "hardware_version": "IPC_G0"
+  },
+  "103102": {
+    "model": "IK-4284TH-MH/PH/P",
+    "hardware_version": "NVR_K21B2"
   }
 }

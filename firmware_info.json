@@ -1234,5 +1234,9 @@
   "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CIPDG_DP_H5H9_V5.9.70_Release_Note.pdf": {
     "changes": "Bug fixed",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CNetwork_Camera-V5.7.26_Release_Note-E8.pdf": {
+    "changes": "WiFi Camera Vulnerability Fix: Due to insufficient interface permission validation, an authenticated low-privilege · user can obtain device WiFi configuration information through the interface.（CVE-2026-85543）. · Fix the issue where the camera cannot reconnect after going offline when accessing via the SDK protocol.",
+    "source": "pdf"
   }
 }
