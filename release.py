@@ -16,12 +16,16 @@ from common import (
     load_json,
     normalize_product_model,
     parse_version,
-    save_json,
 )
 
 GITHUB_REPO = 'JoeyGE0/hikvision-fw-archive'
 ARCHIVE_RELEASES_URL = f'https://github.com/{GITHUB_REPO}/releases'
 LICENSE_URL = 'https://www.hikvision.com/en/policies/materials-license-agreement/'
+# GitHub rejects any blob at 100 MiB. Leave headroom so the next scrape still pushes.
+GITHUB_MAX_BLOB_BYTES = 100 * 1024 * 1024
+INDEX_PUBLISH_BUDGET_BYTES = 90 * 1024 * 1024
+# Home Assistant rebuilds these from notes / download_url / its own constants.
+_DERIVED_INDEX_FIELDS = ('license_url', 'archive_url', 'notes_pdf_url', 'release_page_url')
 # Keep README table cells readable; full applied_to stays in JSON for indexing.
 _README_APPLIED_TO_DISPLAY_LIMIT = 8
 
@@ -656,6 +660,99 @@ def generate_search_data(index: Optional[Dict[str, Any]] = None) -> Dict[str, An
     }
 
 
+def _slim_index_record(record: Dict[str, Any]) -> Dict[str, Any]:
+    """Drop empty and derived fields. Callers still have version, URL, applied_to, notes."""
+    if not isinstance(record, dict):
+        return {}
+    slim: Dict[str, Any] = {}
+    for key, value in record.items():
+        if key in _DERIVED_INDEX_FIELDS or value is None or value == '':
+            continue
+        slim[key] = value
+    return slim
+
+
+def _firmware_row_id(record: Dict[str, Any]) -> tuple:
+    return (
+        str(record.get('version') or ''),
+        str(record.get('filename') or ''),
+        str(record.get('download_url') or ''),
+        str(record.get('hardware_version') or ''),
+    )
+
+
+def publishable_firmware_index(
+    index: Dict[str, Any],
+    *,
+    include_all_versions: bool = True,
+) -> Dict[str, Any]:
+    """Index JSON that stays under GitHub's file cap.
+
+    ``latest`` and ``by_hardware_version`` stay inline dicts so the current
+    Home Assistant integration can read them. Identical single-hardware copies
+    of ``latest`` are omitted. ``all_versions`` stays for newer matching, and
+    is dropped only when the file would otherwise get too close to 100 MiB.
+    """
+    models_out: Dict[str, Any] = {}
+    for model_key, entry in (index.get('models') or {}).items():
+        if not isinstance(entry, dict):
+            continue
+        latest = _slim_index_record(entry.get('latest') or {})
+        published: Dict[str, Any] = {'latest': latest}
+        by_hw_in = entry.get('by_hardware_version') or {}
+        by_hw: Dict[str, Any] = {}
+        if isinstance(by_hw_in, dict):
+            for hw, rec in by_hw_in.items():
+                slim = _slim_index_record(rec if isinstance(rec, dict) else {})
+                if len(by_hw_in) == 1 and _firmware_row_id(slim) == _firmware_row_id(latest):
+                    continue
+                by_hw[str(hw)] = slim
+        if by_hw:
+            published['by_hardware_version'] = by_hw
+        if include_all_versions:
+            seen: set[tuple] = set()
+            versions: List[Dict[str, Any]] = []
+            for rec in entry.get('all_versions') or []:
+                slim = _slim_index_record(rec if isinstance(rec, dict) else {})
+                row_id = _firmware_row_id(slim)
+                if not row_id[0] or row_id in seen:
+                    continue
+                seen.add(row_id)
+                versions.append(slim)
+            if versions:
+                published['all_versions'] = versions
+        models_out[model_key] = published
+    return {
+        'schema_version': 1,
+        'generated_at': index.get('generated_at') or datetime.now(timezone.utc).isoformat(),
+        'archive_releases_url': index.get('archive_releases_url') or ARCHIVE_RELEASES_URL,
+        'license_url': index.get('license_url') or LICENSE_URL,
+        'models': models_out,
+    }
+
+
+def dumps_firmware_index(
+    index: Dict[str, Any],
+    *,
+    budget_bytes: int = INDEX_PUBLISH_BUDGET_BYTES,
+) -> bytes:
+    """Compact UTF-8 JSON, dropping history rows if needed to stay pushable."""
+    published = publishable_firmware_index(index, include_all_versions=True)
+    raw = json.dumps(published, ensure_ascii=False, separators=(',', ':')).encode('utf-8')
+    if len(raw) >= budget_bytes:
+        published = publishable_firmware_index(index, include_all_versions=False)
+        raw = json.dumps(published, ensure_ascii=False, separators=(',', ':')).encode('utf-8')
+        logger.warning(
+            'firmware_index.json omitted all_versions to stay under GitHub 100 MiB (%.1f MiB)',
+            len(raw) / (1024 * 1024),
+        )
+    if len(raw) >= GITHUB_MAX_BLOB_BYTES:
+        raise RuntimeError(
+            f'firmware_index.json is {len(raw)} bytes, over GitHub\'s 100 MiB limit'
+        )
+    return raw
+
+
 def main():
     """Generate README and integration index files."""
     logger.info("Generating README...")
@@ -667,10 +764,12 @@ def main():
 
     logger.info("Generating firmware_index.json for integrations...")
     index = generate_firmware_index()
-    save_json('firmware_index.json', index)
+    index_bytes = dumps_firmware_index(index)
+    Path('firmware_index.json').write_bytes(index_bytes)
     logger.info(
-        "firmware_index.json generated (%s models)",
+        "firmware_index.json generated (%s models, %.1f MiB)",
         len(index.get('models', {})),
+        len(index_bytes) / (1024 * 1024),
     )
 
     logger.info("Generating docs/search-data.json for firmware search UI...")
