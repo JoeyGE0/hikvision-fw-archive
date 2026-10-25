@@ -1238,5 +1238,41 @@
   "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CNetwork_Camera-V5.7.26_Release_Note-E8.pdf": {
     "changes": "WiFi Camera Vulnerability Fix: Due to insufficient interface permission validation, an authenticated low-privilege · user can obtain device WiFi configuration information through the interface.（CVE-2026-85543）. · Fix the issue where the camera cannot reconnect after going offline when accessing via the SDK protocol.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CNetwork_Camera-V5.8.40_SP2_Release_Note-H13_2_Series.pdf": {
+    "changes": "Fix the issue of light flashing being linked to the supplement light for H13 platform cameras with live guard. · For example, the red and blue light flashing will actually flash the white supplement light. · Please note that this issue only occurs in scenarios where event linked light flashing is configured through NVR.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CDS-K3GL606WX_Gate_Opener_Release_Note_(2026-09-11).pdf": {
+    "changes": "Supports merging the main access board and lane controller upgrade packages. The V1.2 · upgrade package allows upgrading continuously without distinguishing between upgrade · packages. · Supports the function of Disable tamper buzzer, with 3 options:",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CDS-K1T673_Series_MinMoe_Terminal_4.56.0_build260910_Release_Note.pdf": {
+    "changes": "Support face template on card/mobile solution · a) restart device to take effect after enable “template on card” mode (web path: Access Control · Access Control Parameters -Privacy Settings -Template on Card Mode; local path: Menu · System-BIO Template Settings)",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202610/releasenote%5CE13_V5.11.0_260904_Release_Note.pdf": {
+    "changes": "Bug fixed",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CK21B1_K22B1_V5.04.088_build260903_ReleaseNotes.pdf": {
+    "changes": "Modified functions",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202610/releasenote%5CF1Plus_Villa_Door_Station_Firmware_V3.9.4_build260828_Release_Note.pdf": {
+    "changes": "Update internal SADP protocol version to V3.1.1 · Added the reporting of special sound detection events to Hik-Connect. · Fixed the issue that public password authentication could not be performed from the sub door · station under Wi-Fi networking.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CNetwork_Camera-V5.8.50_260821_Release_IPCE_HA_H13.pdf": {
+    "changes": "Fix the issue where the bitrate was incorrect after switching between H.264+ and H.265+ in the 2/3 · series 6/8MP cameras.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CNetwork_Camera-V5.8.110_Release_Note-G9_P.pdf": {
+    "changes": "Support Dynamic Stitching, default ON. · For 8MP and 12MP cameras, when Dynamic Stitching is ON, the frame rate is automatically reduced to 12.5/15fps. · After this function is OFF, the frame rate will be restored without reboot. · And after this function is ON, due to platform performance limitations, only 3 streams live view is supported.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202405/1717110078509/releasenote%5CSecure_Module_DS-K2M061_Release_Note_V1.0.2_build240506.pdf": {
+    "changes": "In order to further improve security, the one-to-one binding function is added · Compatible device: · KV6113-WME1(C)、KV8x13-WME1(C)--V2.2.77_240515 or later · KD8003(B)-IME1、KD8003Y-IME2--V2.2.76_240515 or later",
+    "source": "pdf"
   }
 }

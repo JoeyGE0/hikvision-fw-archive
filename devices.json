@@ -6386,5 +6386,113 @@
   "103102": {
     "model": "IK-4284TH-MH/PH/P",
     "hardware_version": "NVR_K21B2"
+  },
+  "103103": {
+    "model": "AE-VC216I-I",
+    "hardware_version": "UNKNOWN"
+  },
+  "103104": {
+    "model": "DS-2XM6825G1/C-IV(S)(M)(/ND)",
+    "hardware_version": "UNKNOWN"
+  },
+  "103105": {
+    "model": "DS-3WAP6218-EI",
+    "hardware_version": "UNKNOWN"
+  },
+  "103106": {
+    "model": "DS-7716NI-M4/16P",
+    "hardware_version": "NVR_G0"
+  },
+  "103107": {
+    "model": "DS-7732NI-M4/16P",
+    "hardware_version": "NVR_G0"
+  },
+  "103108": {
+    "model": "DS-KIS603-P(D)",
+    "hardware_version": "UNKNOWN"
+  },
+  "103109": {
+    "model": "DS-KV8114T-KWQE1",
+    "hardware_version": "UNKNOWN"
+  },
+  "103110": {
+    "model": "HA-KIT-IP1#AU",
+    "hardware_version": "UNKNOWN"
+  },
+  "103111": {
+    "model": "DS-2CD2167G3-LIS2UY",
+    "hardware_version": "IPC_G0"
+  },
+  "103112": {
+    "model": "DS-2CD3767G3T-LIZSU(Y)",
+    "hardware_version": "IPC_G0"
+  },
+  "103113": {
+    "model": "DS-DT60P-02HDI12NO/U",
+    "hardware_version": "UNKNOWN"
+  },
+  "103114": {
+    "model": "IPC-T240H#AUS",
+    "hardware_version": "UNKNOWN"
+  },
+  "103115": {
+    "model": "HA-KIT-IP2",
+    "hardware_version": "UNKNOWN"
+  },
+  "103116": {
+    "model": "DS-2CD6F82G0-WS",
+    "hardware_version": "IPC_G0"
+  },
+  "103117": {
+    "model": "DS-DT30P-01HI01NO",
+    "hardware_version": "UNKNOWN"
+  },
+  "103118": {
+    "model": "DS-3E1326P-EI",
+    "hardware_version": "UNKNOWN"
+  },
+  "103119": {
+    "model": "DS-DT90P-09HDPSI24NO/U",
+    "hardware_version": "UNKNOWN"
+  },
+  "103120": {
+    "model": "DS-K1T805MBFWX",
+    "hardware_version": "UNKNOWN"
+  },
+  "103121": {
+    "model": "DS-KIS212(B)",
+    "hardware_version": "UNKNOWN"
+  },
+  "103122": {
+    "model": "DS-K2M002X",
+    "hardware_version": "UNKNOWN"
+  },
+  "103123": {
+    "model": "HA-KIT-H1#AU",
+    "hardware_version": "UNKNOWN"
+  },
+  "103124": {
+    "model": "DS-K2M0012X",
+    "hardware_version": "UNKNOWN"
+  },
+  "103125": {
+    "model": "DS-K2M061",
+    "hardware_version": "UNKNOWN"
+  },
+  "103126": {
+    "model": "HA-KIT-A2#AUS",
+    "hardware_version": "UNKNOWN"
+  },
+  "103127": {
+    "model": "HA-KIT-PY2#AU",
+    "hardware_version": "UNKNOWN"
+  },
+  "103128": {
+    "model": "DS-1473ZJ-155",
+    "hardware_version": "DVR_V4"
+  },
+  "103129": {
+    "model": "DS-K1F820-F",
+    "hardware_version": "UNKNOWN"
   }
 }
