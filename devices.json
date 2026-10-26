@@ -6494,5 +6494,9 @@
   "103129": {
     "model": "DS-K1F820-F",
     "hardware_version": "UNKNOWN"
+  },
+  "103130": {
+    "model": "DS-2XM6726G1-IM/ND/X",
+    "hardware_version": "UNKNOWN"
   }
 }
