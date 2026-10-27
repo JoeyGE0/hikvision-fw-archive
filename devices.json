@@ -6510,5 +6510,9 @@
   "103133": {
     "model": "IDS-9632NXI-M8/X",
     "hardware_version": "UNKNOWN"
+  },
+  "103134": {
+    "model": "DS-2CD2387G3-LIS2UY/S(L)(RB)",
+    "hardware_version": "IPC_G0"
   }
 }

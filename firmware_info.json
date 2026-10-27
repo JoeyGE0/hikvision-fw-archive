@@ -1282,5 +1282,9 @@
   "https://assets.hikvision.com/prd/normal/all/files/202610/releasenote%5CNetwork_Camera-V5.11.10_Release_Note-E15.pdf": {
     "changes": "For 1 series and 3XX1 series vari -focal cameras, the priority of the vari -focal lens is higher than that of the · speaker, which means that when adjusting the lens focal length, there will be no audible alarm or two-way audio.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CNetwork_Camera-V5.11.1_Release_Note-H13U.pdf": {
+    "changes": "Fix the issue of missing configuration pages for False Alarm Filtering in smart event. · Fix the issue where when playback without plugins, first turn on playback, then turn on audio, and finally drag · the progress bar to prompt that the sound has failed to turn on. · Fix the issue of incorrect bitrate after switching between H.264+and H.265+for 2/3 series 6/8MP cameras.",
+    "source": "pdf"
   }
 }
