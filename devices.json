@@ -6498,5 +6498,17 @@
   "103130": {
     "model": "DS-2XM6726G1-IM/ND/X",
     "hardware_version": "UNKNOWN"
+  },
+  "103131": {
+    "model": "DS-2SE7C432MWG-EB/26 (F0)",
+    "hardware_version": "UNKNOWN"
+  },
+  "103132": {
+    "model": "DS-KIS702Y-P",
+    "hardware_version": "UNKNOWN"
+  },
+  "103133": {
+    "model": "IDS-9632NXI-M8/X",
+    "hardware_version": "UNKNOWN"
   }
 }
