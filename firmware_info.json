@@ -1286,5 +1286,9 @@
   "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CNetwork_Camera-V5.11.1_Release_Note-H13U.pdf": {
     "changes": "Fix the issue of missing configuration pages for False Alarm Filtering in smart event. · Fix the issue where when playback without plugins, first turn on playback, then turn on audio, and finally drag · the progress bar to prompt that the sound has failed to turn on. · Fix the issue of incorrect bitrate after switching between H.264+and H.265+for 2/3 series 6/8MP cameras.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CNetwork_Camera-V5.8.50_SP3_Release_Note-H13_3_Series.pdf": {
+    "changes": "Fix the issue of light flashing being linked to the supplement light for H13 platform cameras with live guard. · For example, the red and blue light flashing will actually flash the white supplement light. · Please note that this issue only occurs in scenarios where event linked light flashing is configured through NVR.",
+    "source": "pdf"
   }
 }

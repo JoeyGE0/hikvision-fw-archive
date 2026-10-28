@@ -1,22 +1,19 @@
 {
-  "last_run": "2026-10-27T21:13:41.862538",
-  "status": "error",
+  "last_run": "2026-10-28T10:57:26.446078",
+  "status": "success",
   "scraper_mode": "http",
   "post_merge_verified": "2026-05-19T13:00:29.926000",
   "catalog_urls_parsed": 4568,
-  "firmwares_found": 2031,
-  "new_firmwares": 2,
-  "errors": [
-    "Download failed DS-9632NXI-M8R/VPRO v5.04.050: ('Connection broken: IncompleteRead(1383836160 bytes read, 495648254 more expected)', IncompleteRead(1383836160 bytes read, 495648254 more expected))",
-    "Download failed DS-3E1508-EI v1.2.0: 403 Client Error: Forbidden for url: https://assets.hikvision.com/prd/public/all/files/9b0070aa-f3a3-46e9-9413-c9654faf96a0.zip"
-  ],
+  "firmwares_found": 2032,
+  "new_firmwares": 1,
+  "errors": [],
   "test_mode": false,
   "catalog_fetch": "playwright",
-  "catalog_entries": 261,
+  "catalog_entries": 339,
   "priority_models": [
     "DS-2CD2387G3-LIS2UY",
     "DS-2CD1383G2P-LIUF",
     "DS-2CD1383G2-LIUF"
   ],
-  "catalog_region": "ca-en"
+  "catalog_region": "au-en"
 }
