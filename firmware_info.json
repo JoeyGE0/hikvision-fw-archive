@@ -1290,5 +1290,17 @@
   "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CNetwork_Camera-V5.8.50_SP3_Release_Note-H13_3_Series.pdf": {
     "changes": "Fix the issue of light flashing being linked to the supplement light for H13 platform cameras with live guard. · For example, the red and blue light flashing will actually flash the white supplement light. · Please note that this issue only occurs in scenarios where event linked light flashing is configured through NVR.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202610/releasenote%5CNetwork_Camera-V5.7.6_261020_Release_IPCE_H8.pdf": {
+    "changes": "Bug fixed",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202610/releasenote%5CNetwork_Camera-V5.11.10_261012_Release_G11.pdf": {
+    "changes": "Newly added 1XX3G3, 1XX7G3, 3XX1G3, 2XX1G2, and 3XX7G3E series: For 6MP and 8MP · cameras, the encoding mode defaults to H.265. Supports GuanLan AI coding. For 6/8MP, · Perimeter Lite and rotation can be enabled simultaneously. · For 8MP camera, 20fps is supported when AI-ISP is off; when AI-ISP is turned on, the frame",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202610/releasenote%5CNetwork_Camera-V5.9.21_260921_Release_L1.pdf": {
+    "changes": "The PT34 model adds support for linking motion detection human/vehicle events to the red/blue · flashing light. · All models support the bitrate self-adaptive switch and can be configured in HC.",
+    "source": "pdf"
   }
 }

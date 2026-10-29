@@ -6514,5 +6514,33 @@
   "103134": {
     "model": "DS-2CD2387G3-LIS2UY/S(L)(RB)",
     "hardware_version": "IPC_G0"
+  },
+  "103135": {
+    "model": "DS-2CD2023G3-LI(2U)Y",
+    "hardware_version": "IPC_G0"
+  },
+  "103136": {
+    "model": "DS-K1F510-P",
+    "hardware_version": "UNKNOWN"
+  },
+  "103137": {
+    "model": "HM-TD6368-130ZC4L/G0/T2Y(B)",
+    "hardware_version": "THERMAL_G0"
+  },
+  "103138": {
+    "model": "DS-2DE3A204IWG1H-E",
+    "hardware_version": "IPC_G0"
+  },
+  "103139": {
+    "model": "DS-2SE3C204MWG1H-E/12",
+    "hardware_version": "UNKNOWN"
+  },
+  "103140": {
+    "model": "DS-2DY5425IXG1-ELW",
+    "hardware_version": "UNKNOWN"
+  },
+  "103141": {
+    "model": "DS-2XC6244G2-LIZRS",
+    "hardware_version": "UNKNOWN"
   }
 }
