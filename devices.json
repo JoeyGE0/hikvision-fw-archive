@@ -6542,5 +6542,9 @@
   "103141": {
     "model": "DS-2XC6244G2-LIZRS",
     "hardware_version": "UNKNOWN"
+  },
+  "103142": {
+    "model": "DS-9632NXI-M8R/VPRO",
+    "hardware_version": "UNKNOWN"
   }
 }

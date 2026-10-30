@@ -65002,5 +65002,23 @@
     "notes": "",
     "is_beta": false,
     "source": "live"
+  },
+  "DS-9632NXI-M8R/VPRO_UNKNOWN_5.04.050": {
+    "device_id": 103142,
+    "model": "DS-9632NXI-M8R/VPRO",
+    "hardware_version": "UNKNOWN",
+    "version": "5.04.050",
+    "date": "2025-01-24",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1793135623/Firmware__V5.04.050_250124_S3000628405.zip",
+    "filename": "Firmware__V5.04.050_250124_S3000628405.zip",
+    "supported_models": [
+      "DS-9632NXI-M8R/VPRO",
+      "DS-9664NXI-M8R/VPRO"
+    ],
+    "applied_to": "Applied to: DS-9632NXI-M8R/VPRO, DS-9664NXI-M8R/VPRO",
+    "changes": "Support Privacy Protection function for 7 & 8 series mosaic cameras; · Support Time Zone lock function on local GUI; · OTAP supports transparent transmission of ISAPI subscription, which is compatible with 2T47G1 · solar camera for OTAP access, and avoids failure to receive corresponding alarms;",
+    "notes": "https://assets.hikvision.com/prd/public/all/files/202502/releasenote%5CK21B1_K22B1_V5.04.050_build250124_ReleaseNotes.pdf",
+    "is_beta": false,
+    "source": "live"
   }
 }

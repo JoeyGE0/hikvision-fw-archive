@@ -1302,5 +1302,9 @@
   "https://assets.hikvision.com/prd/normal/all/files/202610/releasenote%5CNetwork_Camera-V5.9.21_260921_Release_L1.pdf": {
     "changes": "The PT34 model adds support for linking motion detection human/vehicle events to the red/blue · flashing light. · All models support the bitrate self-adaptive switch and can be configured in HC.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/public/all/files/202502/releasenote%5CK21B1_K22B1_V5.04.050_build250124_ReleaseNotes.pdf": {
+    "changes": "Support Privacy Protection function for 7 & 8 series mosaic cameras; · Support Time Zone lock function on local GUI; · OTAP supports transparent transmission of ISAPI subscription, which is compatible with 2T47G1 · solar camera for OTAP access, and avoids failure to receive corresponding alarms;",
+    "source": "pdf"
   }
 }

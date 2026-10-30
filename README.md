@@ -137,18 +137,18 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 | | |
 |--|--|
 | **Status** | ❌ ERROR |
-| **Last run** | 2026-10-30 11:11:24 UTC |
+| **Last run** | 2026-10-30 21:09:57 UTC |
 | **Scraper** | HTTP |
 | **Catalog fetch** | playwright |
-| **Catalog rows parsed** | 171 |
-| **Firmware records** | 2045 |
+| **Catalog rows parsed** | 261 |
+| **Firmware records** | 2046 |
 | **New last run** | 0 |
 | **Test mode** | Disabled |
 
 
 
 **Recent Errors:**
-- ⚠️ Download failed DS-2CD6332FWD-I(V)(S) v5.4.801: 403 Client Error: Forbidden for url: https://assets.hikvision.com/prd/public/all/files/020ef989-5921-4899-959f-63b81d5266cc.zip
+- ⚠️ Download failed DS-3E1508-EI v1.2.0: 403 Client Error: Forbidden for url: https://assets.hikvision.com/prd/public/all/files/9b0070aa-f3a3-46e9-9413-c9654faf96a0.zip
 
 
 ---
@@ -157,7 +157,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 Collapsible sections per model and hardware line (newest firmware first within each section).
 
-Total: 2848
+Total: 2849
 
 
 
@@ -10117,6 +10117,16 @@ Total: 2848
 | ------- | ---------------- | ---- | -------- | ----- |
 | 4.60.005 | Applied to: [DS-9632NI-I8](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786254053/Firmware__V4.40.016_221008_S3000457108.zip) | 2023-03-07 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1786254053/Firmware__V4.40.016_221008_S3000457108.zip) | Fix several bugs and optimize product performance Bugs are listed as below 1, It may fail to do live view via Hik-Connect APP sometimes. · [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202304/AU_NVR_V4.60.005%20build230307_Release%20Notes.pdf) |
 | 4.60.005 | Applied to: [DS-7608NI-I2/8P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785953391/Firmware__V4.60.005_230307_S3000486086.zip), [DS-7616NI-I2/16P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785953391/Firmware__V4.60.005_230307_S3000486086.zip), [DS-7732NI-I4/24P](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785953391/Firmware__V4.60.005_230307_S3000486086.zip), [DS-9632NI-I16](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785953391/Firmware__V4.60.005_230307_S3000486086.zip), [DS-9632NI-I8](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785953391/Firmware__V4.60.005_230307_S3000486086.zip), [DS-9664NI-I16](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785953391/Firmware__V4.60.005_230307_S3000486086.zip), [DS-9664NI-I8](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785953391/Firmware__V4.60.005_230307_S3000486086.zip) | 2023-03-07 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785953391/Firmware__V4.60.005_230307_S3000486086.zip) | Fix several bugs and optimize product performance Bugs are listed as below 1, It may fail to do live view via Hik-Connect APP sometimes. · [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202304/AU_NVR_V4.60.005%20build230307_Release%20Notes.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>DS-9632NXI-M8R/VPRO - UNKNOWN (1 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.04.050 | Applied to: [DS-9632NXI-M8R/VPRO](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1793135623/Firmware__V5.04.050_250124_S3000628405.zip), [DS-9664NXI-M8R/VPRO](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1793135623/Firmware__V5.04.050_250124_S3000628405.zip) | 2025-01-24 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1793135623/Firmware__V5.04.050_250124_S3000628405.zip) | Support Privacy Protection function for 7 & 8 series mosaic cameras; · Support Time Zone lock function on local GUI; · OTAP supports transparent transmission of ISAPI subscription, which is compatible with 2T47G1 · solar camera for OTAP access, and avoids failure to receive corresponding alarms; · [📄 Release Notes](https://assets.hikvision.com/prd/public/all/files/202502/releasenote%5CK21B1_K22B1_V5.04.050_build250124_ReleaseNotes.pdf) |
 
 </details>
 
