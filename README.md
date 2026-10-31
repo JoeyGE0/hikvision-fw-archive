@@ -136,19 +136,15 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 | | |
 |--|--|
-| **Status** | ❌ ERROR |
-| **Last run** | 2026-10-30 21:09:57 UTC |
+| **Status** | ✅ SUCCESS |
+| **Last run** | 2026-10-31 10:50:52 UTC |
 | **Scraper** | HTTP |
 | **Catalog fetch** | playwright |
-| **Catalog rows parsed** | 261 |
-| **Firmware records** | 2046 |
-| **New last run** | 0 |
+| **Catalog rows parsed** | 338 |
+| **Firmware records** | 2047 |
+| **New last run** | 1 |
 | **Test mode** | Disabled |
 
-
-
-**Recent Errors:**
-- ⚠️ Download failed DS-3E1508-EI v1.2.0: 403 Client Error: Forbidden for url: https://assets.hikvision.com/prd/public/all/files/9b0070aa-f3a3-46e9-9413-c9654faf96a0.zip
 
 
 ---
@@ -157,7 +153,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 Collapsible sections per model and hardware line (newest firmware first within each section).
 
-Total: 2849
+Total: 2850
 
 
 
@@ -3010,10 +3006,11 @@ Total: 2849
 
 
 <details>
-<summary><h2>DS-2CD6425G2-C1 - IPC_G0 (1 firmwares)</h2></summary>
+<summary><h2>DS-2CD6425G2-C1 - IPC_G0 (2 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
+| 5.10.0 | Applied to: [DS-2CD6425G2-C1](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.10.0_261015_S3000759712.zip), [DS-2CD6425G2-C2](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.10.0_261015_S3000759712.zip) | 2026-10-15 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.10.0_261015_S3000759712.zip) | — |
 | 5.8.20 | Applied to: [DS-2CD6425G2-C1](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782159039/Firmware__V5.8.20_240605_S3000579977.zip), [DS-2CD6425G2-C2](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782159039/Firmware__V5.8.20_240605_S3000579977.zip), [DS-2CD6445G2-C1/HDMI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782159039/Firmware__V5.8.20_240605_S3000579977.zip) | 2026-04-02 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782159039/Firmware__V5.8.20_240605_S3000579977.zip) | — |
 
 </details>
