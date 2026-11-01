@@ -6546,5 +6546,25 @@
   "103142": {
     "model": "DS-9632NXI-M8R/VPRO",
     "hardware_version": "UNKNOWN"
+  },
+  "103143": {
+    "model": "DS-2CD2067G3-LI2UY/S(L)(RB)",
+    "hardware_version": "IPC_G0"
+  },
+  "103144": {
+    "model": "DS-2CD1F87G3HD-LIU(F)(/SX)",
+    "hardware_version": "IPC_G0"
+  },
+  "103145": {
+    "model": "DS-2CD3047G3-LIU(Y)/SL",
+    "hardware_version": "IPC_G0"
+  },
+  "103146": {
+    "model": "DS-3WAP6218-EI/H",
+    "hardware_version": "UNKNOWN"
+  },
+  "103147": {
+    "model": "DS-KD9434-E1",
+    "hardware_version": "UNKNOWN"
   }
 }

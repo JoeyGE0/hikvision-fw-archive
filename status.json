@@ -1,21 +1,22 @@
 {
-  "last_run": "2026-11-01T11:23:42.760135",
+  "last_run": "2026-11-01T21:22:46.230738",
   "status": "error",
   "scraper_mode": "http",
   "post_merge_verified": "2026-05-19T13:00:29.926000",
   "catalog_urls_parsed": 4568,
-  "firmwares_found": 2047,
-  "new_firmwares": 0,
+  "firmwares_found": 2060,
+  "new_firmwares": 10,
   "errors": [
-    "Scraping failed: Playwright catalog still invalid (522 bytes) — may be blocked"
+    "Download failed IDS-TCM803-H v5.5.2: ('Connection broken: IncompleteRead(685768704 bytes read, 87192200 more expected)', IncompleteRead(685768704 bytes read, 87192200 more expected))",
+    "Download failed DS-2CD6045G0/SC-IZRS v5.8.7: ('Connection broken: IncompleteRead(1475140624 bytes read, 15645951 more expected)', IncompleteRead(1475140624 bytes read, 15645951 more expected))"
   ],
   "test_mode": false,
   "catalog_fetch": "playwright",
-  "catalog_entries": 0,
+  "catalog_entries": 1101,
   "priority_models": [
     "DS-2CD2387G3-LIS2UY",
     "DS-2CD1383G2P-LIUF",
     "DS-2CD1383G2-LIUF"
   ],
-  "catalog_region": "eu-en"
+  "catalog_region": "en"
 }
