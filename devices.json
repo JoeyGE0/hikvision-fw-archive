@@ -6566,5 +6566,13 @@
   "103147": {
     "model": "DS-KD9434-E1",
     "hardware_version": "UNKNOWN"
+  },
+  "103148": {
+    "model": "DS-KV8113-WME1(C)",
+    "hardware_version": "UNKNOWN"
+  },
+  "103149": {
+    "model": "DS-KD8003-IME1(B)/SURFACE",
+    "hardware_version": "UNKNOWN"
   }
 }
