@@ -6574,5 +6574,29 @@
   "103149": {
     "model": "DS-KD8003-IME1(B)/SURFACE",
     "hardware_version": "UNKNOWN"
+  },
+  "103150": {
+    "model": "DS-2XM6365G1-IV(S)(M)(/ND)",
+    "hardware_version": "UNKNOWN"
+  },
+  "103151": {
+    "model": "DS-MCW409/N2",
+    "hardware_version": "UNKNOWN"
+  },
+  "103152": {
+    "model": "DS-2CD63165G2-IVS",
+    "hardware_version": "IPC_G0"
+  },
+  "103153": {
+    "model": "DS-KH8560-WTE1",
+    "hardware_version": "UNKNOWN"
+  },
+  "103154": {
+    "model": "DS-MCW409/K5",
+    "hardware_version": "UNKNOWN"
+  },
+  "103155": {
+    "model": "DS-2TD2528T-10/Q(D)",
+    "hardware_version": "THERMAL_G0"
   }
 }

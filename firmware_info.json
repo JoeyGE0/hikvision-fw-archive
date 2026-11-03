@@ -1318,5 +1318,9 @@
   "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CNetwork_Camera-V5.8.14_260909_Release_IPCE_DGL_E13.pdf": {
     "changes": "Fix the issue where PT34 camera has no stream occasionally under N system mode.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CFisheye_Camera_V5.9.0_260826_Release_Note.pdf": {
+    "changes": "Release 9MP/16MP fisheye model: · Optimizing ePTZ adjustment speed.",
+    "source": "pdf"
   }
 }
