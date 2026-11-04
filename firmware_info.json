@@ -1322,5 +1322,13 @@
   "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CFisheye_Camera_V5.9.0_260826_Release_Note.pdf": {
     "changes": "Release 9MP/16MP fisheye model: · Optimizing ePTZ adjustment speed.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202611/2_Wire_HD_Video_Intercom_V1.4.0_build260921_Release_Note.pdf": {
+    "changes": "Door station · Support public relay modules: relays can be added and are discoverable by all door stations and · indoor stations. Indoor stations can unlock the door station and the relay-controlled door with one · Naming Rule:",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CNetwork_Camera-V5.8.35_Release_Note-E9_E10_GL.pdf": {
+    "changes": "Fix the issue where the camera SDK protocol cannot be reconnected after offline connection.",
+    "source": "pdf"
   }
 }

@@ -6598,5 +6598,21 @@
   "103155": {
     "model": "DS-2TD2528T-10/Q(D)",
     "hardware_version": "THERMAL_G0"
+  },
+  "103156": {
+    "model": "DS-K1T321MFWX",
+    "hardware_version": "UNKNOWN"
+  },
+  "103157": {
+    "model": "DS-KIS621-S",
+    "hardware_version": "UNKNOWN"
+  },
+  "103158": {
+    "model": "IK-4142TH-MH/P",
+    "hardware_version": "NVR_V4"
+  },
+  "103159": {
+    "model": "DS-2SK6C425MWG1/LM-L/216(C5C5)",
+    "hardware_version": "UNKNOWN"
   }
 }
