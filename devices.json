@@ -6614,5 +6614,9 @@
   "103159": {
     "model": "DS-2SK6C425MWG1/LM-L/216(C5C5)",
     "hardware_version": "UNKNOWN"
+  },
+  "103160": {
+    "model": "IDS-2CD7A45G2/P-IZHS(Y)",
+    "hardware_version": "IPC_G0"
   }
 }

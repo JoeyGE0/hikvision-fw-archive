@@ -136,19 +136,15 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 | | |
 |--|--|
-| **Status** | ❌ ERROR |
-| **Last run** | 2026-11-05 22:11:32 UTC |
+| **Status** | ✅ SUCCESS |
+| **Last run** | 2026-11-06 12:27:18 UTC |
 | **Scraper** | HTTP |
 | **Catalog fetch** | playwright |
-| **Catalog rows parsed** | 261 |
-| **Firmware records** | 2100 |
-| **New last run** | 0 |
+| **Catalog rows parsed** | 351 |
+| **Firmware records** | 2102 |
+| **New last run** | 2 |
 | **Test mode** | Disabled |
 
-
-
-**Recent Errors:**
-- ⚠️ Download failed DS-3E1508-EI v1.2.0: 403 Client Error: Forbidden for url: https://assets.hikvision.com/prd/public/all/files/9b0070aa-f3a3-46e9-9413-c9654faf96a0.zip
 
 
 ---
@@ -157,7 +153,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 Collapsible sections per model and hardware line (newest firmware first within each section).
 
-Total: 2937
+Total: 2940
 
 
 
@@ -8691,10 +8687,11 @@ Total: 2937
 
 
 <details>
-<summary><h2>DS-3WAP6218-EI - UNKNOWN (3 firmwares)</h2></summary>
+<summary><h2>DS-3WAP6218-EI - UNKNOWN (4 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
+| 1.5.610 | Applied to: [DS-3WAP6218-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.5.610_261022_S3000761842.zip), [DS-3WAP6230-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.5.610_261022_S3000761842.zip) | 2026-10-22 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V1.5.610_261022_S3000761842.zip) | — |
 | 1.5.609 | Applied to: [DS-3WAP6218-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1793830975/Firmware__V1.5.609_260827_S3000755702.zip), [DS-3WAP6230-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1793830975/Firmware__V1.5.609_260827_S3000755702.zip) | 2026-09-09 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1793830975/Firmware__V1.5.609_260827_S3000755702.zip) | — |
 | 1.5.602 | Applied to: [DS-3WAP6118-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784830106/Firmware__V1.5.602_260611_S3000735570.zip), [DS-3WAP6130-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784830106/Firmware__V1.5.602_260611_S3000735570.zip), [DS-3WAP6218-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784830106/Firmware__V1.5.602_260611_S3000735570.zip), [DS-3WAP6230-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784830106/Firmware__V1.5.602_260611_S3000735570.zip), [DS-3WAP6618-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784830106/Firmware__V1.5.602_260611_S3000735570.zip), [DS-3WAP6630-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784830106/Firmware__V1.5.602_260611_S3000735570.zip) | 2026-06-01 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784830106/Firmware__V1.5.602_260611_S3000735570.zip) | — |
 | 1.5.600 | Applied to: [DS-3WAP6118-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781426682/Firmware__V1.5.600_251231_S3000698917.zip), [DS-3WAP6130-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781426682/Firmware__V1.5.600_251231_S3000698917.zip), [DS-3WAP6218-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781426682/Firmware__V1.5.600_251231_S3000698917.zip), [DS-3WAP6230-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781426682/Firmware__V1.5.600_251231_S3000698917.zip), [DS-3WAP6618-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781426682/Firmware__V1.5.600_251231_S3000698917.zip), [DS-3WAP6630-EI](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781426682/Firmware__V1.5.600_251231_S3000698917.zip) | 2025-12-31 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781426682/Firmware__V1.5.600_251231_S3000698917.zip) | — |
@@ -12755,7 +12752,7 @@ Total: 2937
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 1.4.0 | Applied to: [DS-KD7003EY-IME2](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1790635063/Firmware__V1.4.0_260921_S3000755799.zip), [DS-KD7003EY-S2](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1790635063/Firmware__V1.4.0_260921_S3000755799.zip) | 2026-09-21 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1790635063/Firmware__V1.4.0_260921_S3000755799.zip) | — |
+| 1.4.0 | Applied to: [DS-KD7003EY-IME2](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1790635063/Firmware__V1.4.0_260921_S3000755799.zip), [DS-KD7003EY-S2](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1790635063/Firmware__V1.4.0_260921_S3000755799.zip) | 2026-09-21 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1790635063/Firmware__V1.4.0_260921_S3000755799.zip) | Door station · Support public relay modules: relays can be added and are discoverable by all door stations and · indoor stations. Indoor stations can unlock the door station and the relay-controlled door with one · Naming Rule: · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202611/2_Wire_HD_Video_Intercom_V1.4.0_build260921_Release_Note.pdf) |
 | 1.3.0 | Applied to: [DS-KD7003EY-IME2](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780081037/Firmware__V1.3.0_251210_S3000691986.zip), [DS-KD7003EY-S2](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780081037/Firmware__V1.3.0_251210_S3000691986.zip) | 2025-12-10 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1780081037/Firmware__V1.3.0_251210_S3000691986.zip) | ⚠️ Beta firmware. Door station: · Fixed a rare issue where the elevator could not be called after a device restart · Optimized the web page UI and fixed some display issue · Optimized the M1 card encryption function · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5C2_Wire_HD_Video_Intercom_V1.3.0_build251210_Release_Note.pdf) |
 | 1.3.0 | Applied to: [DS-KD7000EY-ME2](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782979518/DashCam_AE_DC5013_F6_CN_STD_V1.3.0_build210123.zip), [DS-KD7003EY-IME2](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782979518/DashCam_AE_DC5013_F6_CN_STD_V1.3.0_build210123.zip), [DS-KD7003EY-IME2/ALUMINUM](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782979518/DashCam_AE_DC5013_F6_CN_STD_V1.3.0_build210123.zip), [DS-KD7003EY-S2](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782979518/DashCam_AE_DC5013_F6_CN_STD_V1.3.0_build210123.zip), [DS-KIS704EY](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782979518/DashCam_AE_DC5013_F6_CN_STD_V1.3.0_build210123.zip), [DS-KIS704EY/ALUMINUM](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782979518/DashCam_AE_DC5013_F6_CN_STD_V1.3.0_build210123.zip) | 2025-12-10 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1782979518/DashCam_AE_DC5013_F6_CN_STD_V1.3.0_build210123.zip) | ⚠️ Beta firmware. Door station: · Fixed a rare issue where the elevator could not be called after a device restart · Optimized the web page UI and fixed some display issue · Optimized the M1 card encryption function · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5C2_Wire_HD_Video_Intercom_V1.3.0_build251210_Release_Note.pdf) |
 
@@ -13169,7 +13166,7 @@ Total: 2937
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 2.2.122 | Applied to: [DS-KH7300EY-WTE2/WHITE](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1790635063/Firmware__V2.2.122_260916_S3000755858.zip) | 2026-09-16 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1790635063/Firmware__V2.2.122_260916_S3000755858.zip) | — |
+| 2.2.122 | Applied to: [DS-KH7300EY-WTE2/WHITE](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1790635063/Firmware__V2.2.122_260916_S3000755858.zip) | 2026-09-16 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1790635063/Firmware__V2.2.122_260916_S3000755858.zip) | Door station · Support public relay modules: relays can be added and are discoverable by all door stations and · indoor stations. Indoor stations can unlock the door station and the relay-controlled door with one · Naming Rule: · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202611/2_Wire_HD_Video_Intercom_V1.4.0_build260921_Release_Note.pdf) |
 | 2.2.118 | Applied to: [DS-KH7300EY-WTE2/WHITE](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784877375/Firmware__V2.2.118_260608_S3000733120.zip) | 2026-06-08 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1784877375/Firmware__V2.2.118_260608_S3000733120.zip) | Fixed known issue for indoor station: · Improved audio behavior when the screen is off. Resolved an occasional unusual sound from · the indoor station while it is idle with the screen dimmed. The display now stays quiet when · entering standby mode. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202608/releasenote%5C2_Wire_HD_Indoor_Station_V2.2.118_build260608_Release_Note.pdf) |
 | 2.2.66 | Applied to: [DS-KH7300EY-TE2](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781459806/Firmware__V2.2.66_250919_S3000677681.zip), [DS-KH7300EY-TE2/WHITE](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781459806/Firmware__V2.2.66_250919_S3000677681.zip), [DS-KH7300EY-THE2](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781459806/Firmware__V2.2.66_250919_S3000677681.zip), [DS-KH7300EY-TIE2](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781459806/Firmware__V2.2.66_250919_S3000677681.zip), [DS-KH7300EY-TIE2/WHITE](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781459806/Firmware__V2.2.66_250919_S3000677681.zip), [DS-KH7300EY-WTE2](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781459806/Firmware__V2.2.66_250919_S3000677681.zip), [DS-KH7300EY-WTE2/WHITE](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781459806/Firmware__V2.2.66_250919_S3000677681.zip), [DS-KH7300EY-WTHE2](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781459806/Firmware__V2.2.66_250919_S3000677681.zip) | 2025-09-19 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781459806/Firmware__V2.2.66_250919_S3000677681.zip) | ⚠️ Beta firmware. Door station: · Fixed a rare issue where the elevator could not be called after a device restart · Optimized the web page UI and fixed some display issue · Optimized the M1 card encryption function · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202512/releasenote%5C2_Wire_HD_Video_Intercom_V1.3.0_build251210_Release_Note.pdf) |
 
@@ -15205,6 +15202,17 @@ Total: 2937
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.8.50 | Applied to: [IDS-2CD7A45G0-IZ(H)S(Y)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1793568168/Firmware__V5.8.50_260911_S3000754045.zip), [IDS-2CD7A45G0-IZHSY(4.7-118MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1793568168/Firmware__V5.8.50_260911_S3000754045.zip), [IDS-2CD7A45G0-IZS(4.7-118MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1793568168/Firmware__V5.8.50_260911_S3000754045.zip), [IDS-2CD7A45G0/P-IZHS(Y)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1793568168/Firmware__V5.8.50_260911_S3000754045.zip), [IDS-2CD7A45G0/P-IZHS(4.7-118MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1793568168/Firmware__V5.8.50_260911_S3000754045.zip) | 2026-04-15 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1793568168/Firmware__V5.8.50_260911_S3000754045.zip) | NA 2. Modify Features Fix some known bugs and improve system stability. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CNetwork_Camera_V5.8.50_Release_Note_--H8.pdf) |
 | 5.8.30 | Applied to: [IDS-2CD7A45G0/P-IZHS(Y)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788719591/Firmware__V5.8.30_260821_S3000749790.zip), [IDS-2CD7A45G0/P-IZHSY(4.7-118MM)/HIK](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788719591/Firmware__V5.8.30_260821_S3000749790.zip) | 2026-03-31 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788719591/Firmware__V5.8.30_260821_S3000749790.zip) | — |
+
+</details>
+
+
+<details>
+<summary><h2>IDS-2CD7A45G2/P-IZHS(Y) - IPC_G0 (2 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.9.24 | Applied to: [IDS-2CD7A45G2/P-IZHS(Y)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.24_261016_S3000759570.zip), [IDS-2CD7A45G2/P-IZHSY(4.7-118MM)/HIK](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.24_261016_S3000759570.zip), [IDS-2CD7A46G2/P-IZHS(Y)(/5G)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.24_261016_S3000759570.zip), [IDS-2CD7A46G2/P-IZHSY(2.8-12MM)(HIK](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.24_261016_S3000759570.zip), [IDS-2CD7A46G2/P-IZHSY(8-32MM)(HIK](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.24_261016_S3000759570.zip) | 2026-10-16 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/latest/download/Firmware__V5.9.24_261016_S3000759570.zip) | — |
+| 5.9.23 | Applied to: [IDS-2CD7046G2/EP-IHSYR](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788085925/Firmware__V5.9.23_260810_S3000747603.zip), [IDS-2CD7046G2/EP-IHSYR(3.8-16MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788085925/Firmware__V5.9.23_260810_S3000747603.zip), [IDS-2CD7046G2/EP-IHSYR(11-40MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788085925/Firmware__V5.9.23_260810_S3000747603.zip), [IDS-2CD7086G2/EP-IHSYR](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788085925/Firmware__V5.9.23_260810_S3000747603.zip), [IDS-2CD7086G2/EP-IHSYR(11-40MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788085925/Firmware__V5.9.23_260810_S3000747603.zip), [IDS-2CD7086G2/EP-IHSYR(3.8-16MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788085925/Firmware__V5.9.23_260810_S3000747603.zip), [IDS-2CD7546G2/P-XZHS(Y)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788085925/Firmware__V5.9.23_260810_S3000747603.zip), [IDS-2CD7546G2/P-XZHSY(2.8-12MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788085925/Firmware__V5.9.23_260810_S3000747603.zip) | 2026-04-07 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788085925/Firmware__V5.9.23_260810_S3000747603.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CDeepinView_Camera_V5.9.23_Release_Note.pdf) |
 
 </details>
 

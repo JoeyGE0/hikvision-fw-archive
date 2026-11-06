@@ -3317,7 +3317,7 @@
     "version": "5.9.2",
     "date": "2026-04-16",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1793830975/Firmware__V5.9.20_260827_S3000751626.zip",
-    "filename": "Firmware__V5.9.20_260827_S3000751626.zip",
+    "filename": "Firmware__V5.9.24_261016_S3000759570.zip",
     "supported_models": [
       "DS-2DE2A204IWG1-E/W",
       "DS-2DE2A404IWG1-E/W",
@@ -32346,7 +32346,7 @@
     "version": "1.5.6",
     "date": "2024-10-16",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1793830975/Firmware__V1.5.609_260827_S3000755702.zip",
-    "filename": "Firmware__V1.5.609_260827_S3000755702.zip",
+    "filename": "Firmware__V1.5.610_261022_S3000761842.zip",
     "supported_models": [
       "DS-K1T690M-T"
     ],
@@ -44188,7 +44188,7 @@
     "version": "5.9.24",
     "date": "2026-07-02",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785569274/Firmware__V5.9.24_260702_S3000738114.zip",
-    "filename": "Firmware__V5.9.24_260702_S3000738114.zip",
+    "filename": "Firmware__V5.9.24_261016_S3000759570.zip",
     "supported_models": [
       "IDS-2CD70166G2-AP",
       "IDS-2CD70166G2/E-IHSYR",
@@ -45707,7 +45707,7 @@
     "version": "5.9.24",
     "date": "2026-07-02",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785569274/Firmware__V5.9.24_260702_S3000738114.zip",
-    "filename": "Firmware__V5.9.24_260702_S3000738114.zip",
+    "filename": "Firmware__V5.9.24_261016_S3000759570.zip",
     "supported_models": [
       "IDS-2CD7146G2-IZ(H)S(Y)(1T)",
       "IDS-2CD7146G2-IZS(8-32MM)",
@@ -52528,7 +52528,7 @@
     "version": "5.9.24",
     "date": "2026-07-02",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785569274/Firmware__V5.9.24_260702_S3000738114.zip",
-    "filename": "Firmware__V5.9.24_260702_S3000738114.zip",
+    "filename": "Firmware__V5.9.24_261016_S3000759570.zip",
     "supported_models": [
       "IDS-2CD7A47G2H/P-XZHSY",
       "IDS-2CD7A47G2H/P-XZHSY(10-50MM)",
@@ -59474,7 +59474,7 @@
     "version": "5.9.2",
     "date": "2026-06-30",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1793830975/Firmware__V5.9.20_260827_S3000751626.zip",
-    "filename": "Firmware__V5.9.20_260827_S3000751626.zip",
+    "filename": "Firmware__V5.9.24_261016_S3000759570.zip",
     "supported_models": [
       "DS-2DF7C425IXG2/LM-EL(W)(Y)",
       "DS-2DF7C425IXG2/LM-EL",
@@ -62070,7 +62070,7 @@
     "version": "5.9.24",
     "date": "2026-10-12",
     "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1792181766/Firmware__V5.9.24_261012_S3000758539.zip",
-    "filename": "Firmware__V5.9.24_261012_S3000758539.zip",
+    "filename": "Firmware__V5.9.24_261016_S3000759570.zip",
     "supported_models": [
       "IDS-2CD8A46G2-XZHS(Y)",
       "IDS-2CD8A46G2-XZHSY(0832/4)(HIK AUS)",
@@ -62216,8 +62216,8 @@
       "DS-KD7003EY-S2"
     ],
     "applied_to": "Applied to: DS-KD7003EY-IME2, DS-KD7003EY-S2",
-    "changes": "",
-    "notes": "",
+    "changes": "Door station · Support public relay modules: relays can be added and are discoverable by all door stations and · indoor stations. Indoor stations can unlock the door station and the relay-controlled door with one · Naming Rule:",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202611/2_Wire_HD_Video_Intercom_V1.4.0_build260921_Release_Note.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -62269,8 +62269,8 @@
       "DS-KH7300EY-WTE2/WHITE"
     ],
     "applied_to": "Applied to: DS-KH7300EY-WTE2/WHITE",
-    "changes": "",
-    "notes": "",
+    "changes": "Door station · Support public relay modules: relays can be added and are discoverable by all door stations and · indoor stations. Indoor stations can unlock the door station and the relay-controlled door with one · Naming Rule:",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202611/2_Wire_HD_Video_Intercom_V1.4.0_build260921_Release_Note.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -67382,6 +67382,49 @@
     "applied_to": "Applied to: IKS-2042BH-PH/W, DS-J142I, IKS-2042BPH-PH/W, IKS-2042BTH-PH/W, IPC-CFW02(/EU), IPC-CFW02(2.8MM)(HILOOKSTD)/EU, IPC-CFW02(4MM)(HILOOKSTD)/EU",
     "changes": "",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202509/releasenote%5CNVS_V4.32.205_250811__V4.32.401_250811_ReleaseNotes.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-3WAP6218-EI_UNKNOWN_1.5.610": {
+    "device_id": 103105,
+    "model": "DS-3WAP6218-EI",
+    "hardware_version": "UNKNOWN",
+    "version": "1.5.610",
+    "date": "2026-10-22",
+    "download_url": "",
+    "filename": "Firmware__V1.5.610_261022_S3000761842.zip",
+    "supported_models": [
+      "DS-3WAP6218-EI",
+      "DS-3WAP6230-EI"
+    ],
+    "applied_to": "Applied to: DS-3WAP6218-EI, DS-3WAP6230-EI",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "IDS-2CD7A45G2/P-IZHS(Y)_IPC_G0_5.9.24": {
+    "device_id": 103160,
+    "model": "IDS-2CD7A45G2/P-IZHS(Y)",
+    "hardware_version": "IPC_G0",
+    "version": "5.9.24",
+    "date": "2026-10-16",
+    "download_url": "",
+    "filename": "Firmware__V5.9.24_261016_S3000759570.zip",
+    "supported_models": [
+      "IDS-2CD7A45G2/P-IZHS(Y)",
+      "IDS-2CD7A45G2/P-IZHSY(4.7-118MM)/HIK AUS",
+      "IDS-2CD7A46G2/P-IZHS(Y)(/5G)",
+      "IDS-2CD7A46G2/P-IZHSY(2.8-12MM)(HIK AUS)",
+      "IDS-2CD7A46G2/P-IZHSY(8-32MM)(HIK AUS)",
+      "IDS-2CD7A45G2/P-IZHS",
+      "IDS-2CD7A45G2/P-IZHSY/HIK",
+      "IDS-2CD7A46G2/P-IZHS",
+      "IDS-2CD7A46G2/P-IZHSY(HIK"
+    ],
+    "applied_to": "Applied to: IDS-2CD7A45G2/P-IZHS(Y), IDS-2CD7A45G2/P-IZHSY(4.7-118MM)/HIK AUS, IDS-2CD7A46G2/P-IZHS(Y)(/5G), IDS-2CD7A46G2/P-IZHSY(2.8-12MM)(HIK AUS), IDS-2CD7A46G2/P-IZHSY(8-32MM)(HIK AUS)",
+    "changes": "",
+    "notes": "",
     "is_beta": false,
     "source": "live"
   }
