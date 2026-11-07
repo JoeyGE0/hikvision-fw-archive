@@ -6618,5 +6618,13 @@
   "103160": {
     "model": "IDS-2CD7A45G2/P-IZHS(Y)",
     "hardware_version": "IPC_G0"
+  },
+  "103161": {
+    "model": "AE-DI2032-E33",
+    "hardware_version": "UNKNOWN"
+  },
+  "103162": {
+    "model": "DS-3WAP5212-EI",
+    "hardware_version": "UNKNOWN"
   }
 }
