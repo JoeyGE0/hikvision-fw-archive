@@ -1330,5 +1330,9 @@
   "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CNetwork_Camera-V5.8.35_Release_Note-E9_E10_GL.pdf": {
     "changes": "Fix the issue where the camera SDK protocol cannot be reconnected after offline connection.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202611/DeepinView_Camera_V5.8.0_release_note.pdf": {
+    "changes": "V5.8.0_261020: Fix some known bugs.",
+    "source": "pdf"
   }
 }

@@ -6626,5 +6626,9 @@
   "103162": {
     "model": "DS-3WAP5212-EI",
     "hardware_version": "UNKNOWN"
+  },
+  "103163": {
+    "model": "IDS-2CD7A46G2/P-IZHS(Y)(/5G)",
+    "hardware_version": "IPC_G0"
   }
 }

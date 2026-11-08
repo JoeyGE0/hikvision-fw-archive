@@ -67791,5 +67791,26 @@
     "notes": "",
     "is_beta": false,
     "source": "live"
+  },
+  "IDS-2CD7A46G2/P-IZHS(Y)(/5G)_IPC_G0_5.9.24": {
+    "device_id": 103163,
+    "model": "IDS-2CD7A46G2/P-IZHS(Y)(/5G)",
+    "hardware_version": "IPC_G0",
+    "version": "5.9.24",
+    "date": "2026-09-01",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794083442/Firmware__V5.9.24_260901_S3000752805.zip",
+    "filename": "Firmware__V5.9.24_260901_S3000752805.zip",
+    "supported_models": [
+      "IDS-2CD7A46G2/P-IZHS(Y)(/5G)",
+      "IDS-2CD7A46G2/P-IZHSY(2.8-12MM)",
+      "IDS-2CD7A46G2/P-IZHSY(8-32MM)",
+      "IDS-2CD7A46G2/P-IZHS",
+      "IDS-2CD7A46G2/P-IZHSY"
+    ],
+    "applied_to": "Applied to: IDS-2CD7A46G2/P-IZHS(Y)(/5G), IDS-2CD7A46G2/P-IZHSY(2.8-12MM), IDS-2CD7A46G2/P-IZHSY(8-32MM)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CDeepinView_Camera_V5.9.24_release_note.pdf",
+    "is_beta": false,
+    "source": "live"
   }
 }

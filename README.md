@@ -137,18 +137,18 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 | | |
 |--|--|
 | **Status** | ❌ ERROR |
-| **Last run** | 2026-11-08 11:26:22 UTC |
+| **Last run** | 2026-11-08 20:42:49 UTC |
 | **Scraper** | HTTP |
 | **Catalog fetch** | playwright |
-| **Catalog rows parsed** | 174 |
-| **Firmware records** | 2113 |
+| **Catalog rows parsed** | 262 |
+| **Firmware records** | 2114 |
 | **New last run** | 0 |
 | **Test mode** | Disabled |
 
 
 
 **Recent Errors:**
-- ⚠️ Download failed DS-2CD6332FWD-I(V)(S) v5.4.801: 403 Client Error: Forbidden for url: https://assets.hikvision.com/prd/public/all/files/020ef989-5921-4899-959f-63b81d5266cc.zip
+- ⚠️ Download failed DS-3E1508-EI v1.2.0: 403 Client Error: Forbidden for url: https://assets.hikvision.com/prd/public/all/files/9b0070aa-f3a3-46e9-9413-c9654faf96a0.zip
 
 
 ---
@@ -157,7 +157,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 Collapsible sections per model and hardware line (newest firmware first within each section).
 
-Total: 2956
+Total: 2958
 
 
 
@@ -15285,6 +15285,17 @@ Total: 2956
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.9.24 | Applied to: [IDS-2CD70166G2-AP](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794083442/Firmware__V5.9.24_260901_S3000752805.zip), [IDS-2CD70166G2/E-IHSYR](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794083442/Firmware__V5.9.24_260901_S3000752805.zip), [IDS-2CD70166G2/E-IHSYR(3.8-16MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794083442/Firmware__V5.9.24_260901_S3000752805.zip), [IDS-2CD70166G2/E-IHSYR(11-40MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794083442/Firmware__V5.9.24_260901_S3000752805.zip), [IDS-2CD7046G2-AP](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794083442/Firmware__V5.9.24_260901_S3000752805.zip), [IDS-2CD7046G2/E-IHSYR](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794083442/Firmware__V5.9.24_260901_S3000752805.zip), [IDS-2CD7046G2/E-IHSYR(11-40MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794083442/Firmware__V5.9.24_260901_S3000752805.zip), [IDS-2CD7046G2/E-IHSYR(3.8-16MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794083442/Firmware__V5.9.24_260901_S3000752805.zip) | 2026-07-02 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794083442/Firmware__V5.9.24_260901_S3000752805.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CDeepinView_Camera_V5.9.24_release_note.pdf) |
 | 5.9.23 | Applied to: [IDS-2CD7A46G2-IZHS(Y)(1T)(/5G)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788085925/Firmware__V5.9.23_260810_S3000747603.zip), [IDS-2CD7A46G2-IZHSY/5G(2.8-12MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788085925/Firmware__V5.9.23_260810_S3000747603.zip), [IDS-2CD7A46G2-IZHSY/5G(8-32MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788085925/Firmware__V5.9.23_260810_S3000747603.zip), [IDS-2CD7A46G2-IZHS/5G(2.8-12MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788085925/Firmware__V5.9.23_260810_S3000747603.zip), [IDS-2CD7A46G2-IZHS/5G(8-32MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788085925/Firmware__V5.9.23_260810_S3000747603.zip), [IDS-2CD7A86G2-IZHS(Y)(/5G)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788085925/Firmware__V5.9.23_260810_S3000747603.zip), [IDS-2CD7A86G2-IZHSY/5G(2.8-12MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788085925/Firmware__V5.9.23_260810_S3000747603.zip), [IDS-2CD7A86G2-IZHSY/5G(8-32MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788085925/Firmware__V5.9.23_260810_S3000747603.zip) | 2026-04-07 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788085925/Firmware__V5.9.23_260810_S3000747603.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CDeepinView_Camera_V5.9.23_Release_Note.pdf) |
+
+</details>
+
+
+<details>
+<summary><h2>IDS-2CD7A46G2/P-IZHS(Y)(/5G) - IPC_G0 (2 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.9.24 | Applied to: [IDS-2CD7A46G2/P-IZHS(Y)(/5G)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794083442/Firmware__V5.9.24_260901_S3000752805.zip), [IDS-2CD7A46G2/P-IZHSY(2.8-12MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794083442/Firmware__V5.9.24_260901_S3000752805.zip), [IDS-2CD7A46G2/P-IZHSY(8-32MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794083442/Firmware__V5.9.24_260901_S3000752805.zip) | 2026-09-01 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794083442/Firmware__V5.9.24_260901_S3000752805.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CDeepinView_Camera_V5.9.24_release_note.pdf) |
+| 5.9.23 | Applied to: [IDS-2CD7046G2/EP-IHSYR](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788085925/Firmware__V5.9.23_260810_S3000747603.zip), [IDS-2CD7046G2/EP-IHSYR(3.8-16MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788085925/Firmware__V5.9.23_260810_S3000747603.zip), [IDS-2CD7046G2/EP-IHSYR(11-40MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788085925/Firmware__V5.9.23_260810_S3000747603.zip), [IDS-2CD7086G2/EP-IHSYR](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788085925/Firmware__V5.9.23_260810_S3000747603.zip), [IDS-2CD7086G2/EP-IHSYR(11-40MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788085925/Firmware__V5.9.23_260810_S3000747603.zip), [IDS-2CD7086G2/EP-IHSYR(3.8-16MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788085925/Firmware__V5.9.23_260810_S3000747603.zip), [IDS-2CD7546G2/P-XZHS(Y)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788085925/Firmware__V5.9.23_260810_S3000747603.zip), [IDS-2CD7546G2/P-XZHSY(2.8-12MM)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788085925/Firmware__V5.9.23_260810_S3000747603.zip) | 2026-04-07 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1788085925/Firmware__V5.9.23_260810_S3000747603.zip) | [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CDeepinView_Camera_V5.9.23_Release_Note.pdf) |
 
 </details>
 
