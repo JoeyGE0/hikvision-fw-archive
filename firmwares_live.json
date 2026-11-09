@@ -67812,5 +67812,23 @@
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CDeepinView_Camera_V5.9.24_release_note.pdf",
     "is_beta": false,
     "source": "live"
+  },
+  "DS-3T1512HP-SI-8P4F_UNKNOWN_3.5.0": {
+    "device_id": 102221,
+    "model": "DS-3T1512HP-SI-8P4F",
+    "hardware_version": "UNKNOWN",
+    "version": "3.5.0",
+    "date": "2026-10-28",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794083442/Firmware__V3.5.0_261028_S3000762163.zip",
+    "filename": "Firmware__V3.5.0_261028_S3000762163.zip",
+    "supported_models": [
+      "DS-3T1512HP-SI-8P4F",
+      "DS-3T1528HP-SI-24P4F"
+    ],
+    "applied_to": "Applied to: DS-3T1512HP-SI-8P4F, DS-3T1528HP-SI-24P4F",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
   }
 }

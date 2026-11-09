@@ -136,19 +136,15 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 | | |
 |--|--|
-| **Status** | ❌ ERROR |
-| **Last run** | 2026-11-08 20:42:49 UTC |
+| **Status** | ⚠️ NO_NEW_FIRMWARES |
+| **Last run** | 2026-11-09 13:09:43 UTC |
 | **Scraper** | HTTP |
 | **Catalog fetch** | playwright |
-| **Catalog rows parsed** | 262 |
-| **Firmware records** | 2114 |
+| **Catalog rows parsed** | 351 |
+| **Firmware records** | 2115 |
 | **New last run** | 0 |
 | **Test mode** | Disabled |
 
-
-
-**Recent Errors:**
-- ⚠️ Download failed DS-3E1508-EI v1.2.0: 403 Client Error: Forbidden for url: https://assets.hikvision.com/prd/public/all/files/9b0070aa-f3a3-46e9-9413-c9654faf96a0.zip
 
 
 ---
@@ -8631,7 +8627,7 @@ Total: 2958
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
-| 3.5.0 | Applied to: [DS-3E1510P-SI-8P2F](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794083442/Firmware__V3.5.0_261028_S3000762163.zip), [DS-3E1512HP-SI-8P2T2F](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794083442/Firmware__V3.5.0_261028_S3000762163.zip), [DS-3E1518P-SI-16P2F](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794083442/Firmware__V3.5.0_261028_S3000762163.zip), [DS-3E1520HP-SI-16P2T2F](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794083442/Firmware__V3.5.0_261028_S3000762163.zip), [DS-3E1524-SI-16F8T](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794083442/Firmware__V3.5.0_261028_S3000762163.zip), [DS-3E1526P-SI-24P2F](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794083442/Firmware__V3.5.0_261028_S3000762163.zip), [DS-3E1528-SI-24T4F](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794083442/Firmware__V3.5.0_261028_S3000762163.zip), [DS-3E1528HP-SI-24P2T2F](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794083442/Firmware__V3.5.0_261028_S3000762163.zip), and 7 more | 2026-10-28 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794083442/Firmware__V3.5.0_261028_S3000762163.zip) | — |
+| 3.5.0 | Applied to: [DS-3T1512HP-SI-8P4F](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794083442/Firmware__V3.5.0_261028_S3000762163.zip), [DS-3T1528HP-SI-24P4F](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794083442/Firmware__V3.5.0_261028_S3000762163.zip) | 2026-10-28 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794083442/Firmware__V3.5.0_261028_S3000762163.zip) | — |
 | 3.3.3 | Applied to: [DS-3T1512HP-SI-8P4F](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787029724/Firmware__V3.3.3_260707_S3000745139.zip), [DS-3T1528HP-SI-24P4F](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787029724/Firmware__V3.3.3_260707_S3000745139.zip) | 2026-01-19 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787029724/Firmware__V3.3.3_260707_S3000745139.zip) | — |
 | 3.1.8 | Applied to: [DS-3T1512HP-SI-8P4F](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781861772/Firmware__V3.1.8_250113_S3000631813.zip), [DS-3T1512HP-SI-8P4FKIT(75W)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781861772/Firmware__V3.1.8_250113_S3000631813.zip), [DS-3T1512HP-SI-8P4FKIT(240W)](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781861772/Firmware__V3.1.8_250113_S3000631813.zip) | 2025-01-13 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781861772/Firmware__V3.1.8_250113_S3000631813.zip) | — |
 
