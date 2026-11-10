@@ -6630,5 +6630,25 @@
   "103163": {
     "model": "IDS-2CD7A46G2/P-IZHS(Y)(/5G)",
     "hardware_version": "IPC_G0"
+  },
+  "103164": {
+    "model": "DS-2CD6445G3-C2(W)",
+    "hardware_version": "IPC_G0"
+  },
+  "103165": {
+    "model": "DS-2CD1087G3-LIU(F)(/SX)",
+    "hardware_version": "IPC_G0"
+  },
+  "103166": {
+    "model": "IPC-B189HAA-LU(F)(/SX)",
+    "hardware_version": "UNKNOWN"
+  },
+  "103167": {
+    "model": "DS-K3G411CX/MODULAR",
+    "hardware_version": "UNKNOWN"
+  },
+  "103168": {
+    "model": "DS-2CD2063G3-LI(2U)Y",
+    "hardware_version": "IPC_G0"
   }
 }
