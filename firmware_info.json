@@ -1346,5 +1346,25 @@
   "https://assets.hikvision.com/prd/normal/all/files/202611/64_Camera_V5.9.1_261021_Release_Note.pdf": {
     "changes": "Support gaze detection data scheduled reporting function, used in conjunction with HCP for · report creation.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202611/KD8003B_Main_Module_Release_Note_V3.7.3_build260915.pdf": {
+    "changes": "Added downgrade version check (only checking x and y, not z); for example, V3.9.4 with x.y.z · can upgrade to V3.9.4 or V3.9.0, but cannot upgrade to V3.8.4. · Update internal SADP protocol version to V3.1.1 · Fixed the issue where indoor station couldn't perform public password authentication under Wi",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202611/DS-KD9203_Door_Station_Release_Note_V3.5.2_build260915.pdf": {
+    "changes": "Added downgrade version check (only checking x and y, not z); for example, V3.9.4 with x.y.z · can upgrade to V3.9.4 or V3.9.0, but cannot upgrade to V3.8.4. · Update internal SADP protocol version to V3.1.1 · Fix the problem of character encoding errors in UI when displaying Arabic characters;",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202611/DS-KD8005_Main_Module_V3.10.1_build260828_Release_Note.pdf": {
+    "changes": "Added downgrade version check (only checking x and y, not z); for example, V3.9.4 with · x.y.z 3.9.4 can upgrade to V3.9.4 or V3.9.0, but cannot upgrade to V3.8.4. · Update internal SADP protocol version to V3.1.1 · Disabled main card functionality (CVE-2026-85544).",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202611/DS-KV8114_V3.11.1_build260828_Release_Note.pdf": {
+    "changes": "Disabled main card functionality (CVE-2026-85544). · (2026-08-28) · Device Model: · Naming Rule:",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202611/KV9_Villa_Door_Station_V2.3.13_build260828_Release_Note.pdf": {
+    "changes": "Added downgrade version check (only checking x and y, not z); for example, V3.9.4 with x.y.z · can upgrade to V3.9.4 or V3.9.0, but cannot upgrade to V3.8.4. · Update internal SADP protocol version to V3.1.1 · Fix the issue where the facial recognition distance did not take effect after restarting the device;",
+    "source": "pdf"
   }
 }
