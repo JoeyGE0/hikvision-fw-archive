@@ -6650,5 +6650,21 @@
   "103168": {
     "model": "DS-2CD2063G3-LI(2U)Y",
     "hardware_version": "IPC_G0"
+  },
+  "103169": {
+    "model": "DS-3E1510P-EI(C)",
+    "hardware_version": "UNKNOWN"
+  },
+  "103170": {
+    "model": "DS-2DE3C804MWG1-E",
+    "hardware_version": "IPC_G0"
+  },
+  "103171": {
+    "model": "DS-2DE3C204SCG1H-E",
+    "hardware_version": "IPC_G0"
+  },
+  "103172": {
+    "model": "DS-2DF4420-DX(304)(D)",
+    "hardware_version": "IPC_G0"
   }
 }
