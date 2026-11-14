@@ -56301,7 +56301,9 @@
     "supported_models": [
       "ECI-T22F2",
       "ECI-T22F2(2.8MM) (B)",
-      "ECI-T22F4(4MM) (B)"
+      "ECI-T22F4(4MM) (B)",
+      "ECI-T24F2#CA",
+      "ECI-T24F2(2.8MM)(BLACK)(CA BRANCH)(C)"
     ],
     "applied_to": "Applied to: ECI-T22F2, ECI-T22F2(2.8MM) (B), ECI-T22F4(4MM) (B)",
     "changes": "",
@@ -65740,8 +65742,8 @@
       "DS-KV8213-WME1"
     ],
     "applied_to": "Applied to: DS-KV8113-WME1(C), DS-KV8213-WME1(C)",
-    "changes": "",
-    "notes": "",
+    "changes": "Added downgrade version check (only checking x and y, not z); for example, V3.9.4 with x.y.z · can upgrade to V3.9.4 or V3.9.0, but cannot upgrade to V3.8.4. · Update internal SADP protocol version to V3.1.1 · Optimize the logic for switching between AP and WIFI modes",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202611/Version_C_Villa_Door_Stations_Release_Note_V3.7.2_260828.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -69043,7 +69045,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.2.1",
     "date": "2026-11-03",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794609135/Firmware__V1.2.1_261103_S3000763095.zip",
     "filename": "Firmware__V1.2.1_261103_S3000763095.zip",
     "supported_models": [
       "ISD-SMG908L-S(C)",
@@ -69061,7 +69063,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.2.1",
     "date": "2026-11-03",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794609135/Firmware__V1.2.1_261103_S3000763107.zip",
     "filename": "Firmware__V1.2.1_261103_S3000763107.zip",
     "supported_models": [
       "ISD-SMG924L-H(C)",
@@ -69079,7 +69081,7 @@
     "hardware_version": "IPC_G0",
     "version": "5.11.0",
     "date": "2026-10-30",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794609135/Firmware__V5.11.0_261030_S3000763495.zip",
     "filename": "Firmware__V5.11.0_261030_S3000763495.zip",
     "supported_models": [
       "DS-2DE3C804MWG1-E"
@@ -69096,7 +69098,7 @@
     "hardware_version": "IPC_G0",
     "version": "5.11.0",
     "date": "2026-09-16",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794609135/Firmware__V5.11.0_260916_S3000755180.zip",
     "filename": "Firmware__V5.11.0_260916_S3000755180.zip",
     "supported_models": [
       "DS-2DE3C204SCG1H-E",
@@ -69114,7 +69116,7 @@
     "hardware_version": "IPC_G0",
     "version": "5.8.3",
     "date": "2026-08-25",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794609135/Firmware__V5.8.3_260825_S3000751210.zip",
     "filename": "Firmware__V5.8.3_260825_S3000751210.zip",
     "supported_models": [
       "DS-2DF4420-DX(304)(D)",
@@ -69149,7 +69151,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.4.904",
     "date": "2026-08-25",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794609135/Firmware__V1.4.904_260825_S3000752479.zip",
     "filename": "Firmware__V1.4.904_260825_S3000752479.zip",
     "supported_models": [
       "DS-3E2510-SI-8T2F",
@@ -69169,7 +69171,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.4.904",
     "date": "2026-08-25",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794609135/Firmware__V1.4.904_260825_S3000752501.zip",
     "filename": "Firmware__V1.4.904_260825_S3000752501.zip",
     "supported_models": [
       "DS-3E3728-SI-24T4X",
@@ -69188,7 +69190,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.5.401",
     "date": "2026-08-25",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794609135/Firmware__V1.5.401_260825_S3000752480.zip",
     "filename": "Firmware__V1.5.401_260825_S3000752480.zip",
     "supported_models": [
       "DS-3E6600-16X-SA",
@@ -69209,7 +69211,7 @@
     "hardware_version": "UNKNOWN",
     "version": "5.5.0",
     "date": "2026-08-25",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794609135/Firmware__V5.5.0_260825_S3000758816.zip",
     "filename": "Firmware__V5.5.0_260825_S3000758816.zip",
     "supported_models": [
       "IDS-TCS802-HS",
@@ -69227,7 +69229,7 @@
     "hardware_version": "UNKNOWN",
     "version": "5.5.0",
     "date": "2026-08-25",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794609135/Firmware__V5.5.0_260825_S3000758796.zip",
     "filename": "Firmware__V5.5.0_260825_S3000758796.zip",
     "supported_models": [
       "IDS-TCS900-HI",

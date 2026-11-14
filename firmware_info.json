@@ -1366,5 +1366,9 @@
   "https://assets.hikvision.com/prd/normal/all/files/202611/KV9_Villa_Door_Station_V2.3.13_build260828_Release_Note.pdf": {
     "changes": "Added downgrade version check (only checking x and y, not z); for example, V3.9.4 with x.y.z · can upgrade to V3.9.4 or V3.9.0, but cannot upgrade to V3.8.4. · Update internal SADP protocol version to V3.1.1 · Fix the issue where the facial recognition distance did not take effect after restarting the device;",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202611/Version_C_Villa_Door_Stations_Release_Note_V3.7.2_260828.pdf": {
+    "changes": "Added downgrade version check (only checking x and y, not z); for example, V3.9.4 with x.y.z · can upgrade to V3.9.4 or V3.9.0, but cannot upgrade to V3.8.4. · Update internal SADP protocol version to V3.1.1 · Optimize the logic for switching between AP and WIFI modes",
+    "source": "pdf"
   }
 }
