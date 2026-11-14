@@ -2227,53 +2227,26 @@ class HikvisionScraper:
         # Remove entries that don't have files
         removed_count = 0
         keys_to_remove = []
+        # Never re-point an existing entry at a different local file by version
+        # substring: "5.8.3" matched "V5.8.35" and any new V5.5.0 zip hijacked
+        # every older 5.5.0 entry, leaving filename and download_url disagreeing.
+        # Entries whose file is already on a GitHub release are not "failed".
         for key, fw_data in self.firmwares_live.items():
-            # Check filename field first (most reliable)
-            filename = fw_data.get('filename', '')
+            model = fw_data.get('model', '')
+            filename = (fw_data.get('filename') or '').strip()
+            download_url = (fw_data.get('download_url') or '').strip()
             if filename:
-                if filename not in firmware_files:
-                    # Try to match by version in filename (files might have different names)
-                    version = fw_data.get('version', '')
-                    found = False
-                    if version:
-                        # Try to find file with matching version
-                        version_pattern = version.replace('.', '_')
-                        for fname in firmware_files:
-                            if version_pattern in fname.replace('.', '_') or f"V{version}" in fname:
-                                # Found matching file - update filename
-                                fw_data['filename'] = fname
-                                found = True
-                                logger.debug(f"  ✓ Matched file by version: {fname} -> {key}")
-                                break
-                    if not found:
-                        # Don't remove if it has a model (might be synced from elsewhere)
-                        model = fw_data.get('model', '')
-                        if model == 'UNKNOWN':
-                            keys_to_remove.append(key)
-                        else:
-                            logger.debug(f"  ⊘ Keeping entry without file (will sync): {key}")
+                if filename not in firmware_files and model == 'UNKNOWN':
+                    keys_to_remove.append(key)
                 continue
+            if download_url:
+                url_filename = download_url.split('/')[-1].split('?')[0]
+                if url_filename in firmware_files or 'github.com' in download_url:
+                    if url_filename:
+                        fw_data['filename'] = url_filename
+                    continue
+                keys_to_remove.append(key)
             else:
-                # Fallback: check download_url
-                download_url = fw_data.get('download_url', '')
-                if download_url:
-                    # Extract filename from URL
-                    url_filename = download_url.split('/')[-1].split('?')[0]
-                    if url_filename and url_filename not in firmware_files:
-                        # Check if file exists with different name pattern
-                        model = fw_data.get('model', '')
-                        version = fw_data.get('version', '')
-                        # Try to find file by model/version pattern
-                        found = False
-                        for fname in firmware_files:
-                            if version and (version.replace('.', '_') in fname.replace('.', '_') or f"V{version}" in fname):
-                                # Found matching file - update filename
-                                fw_data['filename'] = fname
-                                found = True
-                                break
-                        if not found:
-                            keys_to_remove.append(key)
-                else:
                     # No filename and no download_url - might be a ghost entry
                     # But don't remove if it has a model (might be synced from elsewhere)
                     model = fw_data.get('model', '')

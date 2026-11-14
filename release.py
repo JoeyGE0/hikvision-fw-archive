@@ -542,7 +542,13 @@ def generate_release_body(firmware_files: List[str]) -> str:
         
         # Prefer stable tag URL from JSON (latest/download 404s when file is on an older release)
         stored_url = (fw.get('download_url') or '').strip()
-        if stored_url and '/releases/download/' in stored_url and '/latest/download/' not in stored_url:
+        # ...but only when it actually points at this file.
+        if (
+            stored_url
+            and '/releases/download/' in stored_url
+            and '/latest/download/' not in stored_url
+            and (not filename or stored_url.split('?')[0].endswith('/' + filename))
+        ):
             download_url = stored_url
         elif filename:
             download_url = f"https://github.com/{github_repo}/releases/latest/download/{filename}"
