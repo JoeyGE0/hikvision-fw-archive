@@ -6666,5 +6666,9 @@
   "103172": {
     "model": "DS-2DF4420-DX(304)(D)",
     "hardware_version": "IPC_G0"
+  },
+  "103173": {
+    "model": "ECI-T24F2#CA",
+    "hardware_version": "UNKNOWN"
   }
 }

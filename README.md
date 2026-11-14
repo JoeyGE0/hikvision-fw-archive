@@ -137,18 +137,18 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 | | |
 |--|--|
 | **Status** | ❌ ERROR |
-| **Last run** | 2026-11-14 11:42:54 UTC |
+| **Last run** | 2026-11-14 20:53:55 UTC |
 | **Scraper** | HTTP |
 | **Catalog fetch** | playwright |
-| **Catalog rows parsed** | 174 |
-| **Firmware records** | 2140 |
+| **Catalog rows parsed** | 263 |
+| **Firmware records** | 2142 |
 | **New last run** | 0 |
 | **Test mode** | Disabled |
 
 
 
 **Recent Errors:**
-- ⚠️ Download failed DS-2CD6332FWD-I(V)(S) v5.4.801: 403 Client Error: Forbidden for url: https://assets.hikvision.com/prd/public/all/files/020ef989-5921-4899-959f-63b81d5266cc.zip
+- ⚠️ Download failed DS-3E1508-EI v1.2.0: 403 Client Error: Forbidden for url: https://assets.hikvision.com/prd/public/all/files/9b0070aa-f3a3-46e9-9413-c9654faf96a0.zip
 
 
 ---
@@ -157,7 +157,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 Collapsible sections per model and hardware line (newest firmware first within each section).
 
-Total: 2995
+Total: 2998
 
 
 
@@ -14483,6 +14483,17 @@ Total: 2995
 
 
 <details>
+<summary><h2>ECI-T24F2#CA - UNKNOWN (2 firmwares)</h2></summary>
+
+| Version | Supported Models | Date | Download | Notes |
+| ------- | ---------------- | ---- | -------- | ----- |
+| 5.7.1 | Applied to: ECI-T24F2#CA, ECI-T24F2(2.8MM)(BLACK)(CA BRANCH)(C) | 2022-06-09 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785867898/PJ14PC20220530226_IPCE_R_E8_EN_STD_5.7.1_220609.zip) | — |
+| 5.7.1 | Applied to: ECI-T22F2, ECI-T22F2(2.8MM) (B), ECI-T22F4(4MM) (B) | 2022-06-09 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1787513624/Firmware__V5.7.18_260730_S3000743355.zip) | — |
+
+</details>
+
+
+<details>
 <summary><h2>ECT-T12F - UNKNOWN (1 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
@@ -17082,11 +17093,12 @@ Total: 2995
 
 
 <details>
-<summary><h2>ISD-SMG318LT-D - UNKNOWN (1 firmwares)</h2></summary>
+<summary><h2>ISD-SMG318LT-D - UNKNOWN (2 firmwares)</h2></summary>
 
 | Version | Supported Models | Date | Download | Notes |
 | ------- | ---------------- | ---- | -------- | ----- |
 | 5.5.40 | Applied to: [ISD-SMG318LT-D](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785193815/Firmware__V5.5.40_260420_S3000718734.zip) | 2026-04-20 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785193815/Firmware__V5.5.40_260420_S3000718734.zip) | 1.1 Issues fixes： 1) Fixed known software issues. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CGeneral_Firmware_Update_Release_notes.pdf) |
+| 1.0.1 | Applied to: [ISD-SMG318LT-D](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785193815/Firmware__V5.5.40_260420_S3000718734.zip) | 2020-08-31 | [📥 Download](https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785193815/Firmware__V5.5.40_260420_S3000718734.zip) | 1.1 Issues fixes： 1) Fixed known software issues. · [📄 Release Notes](https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CGeneral_Firmware_Update_Release_notes.pdf) |
 
 </details>
 

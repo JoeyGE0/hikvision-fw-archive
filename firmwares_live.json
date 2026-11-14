@@ -69242,5 +69242,40 @@
     "notes": "",
     "is_beta": false,
     "source": "live"
+  },
+  "ECI-T24F2#CA_UNKNOWN_5.7.1": {
+    "device_id": 103173,
+    "model": "ECI-T24F2#CA",
+    "hardware_version": "UNKNOWN",
+    "version": "5.7.1",
+    "date": "2022-06-09",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785867898/PJ14PC20220530226_IPCE_R_E8_EN_STD_5.7.1_220609.zip",
+    "filename": "PJ14PC20220530226_IPCE_R_E8_EN_STD_5.7.1_220609.zip",
+    "supported_models": [
+      "ECI-T24F2#CA",
+      "ECI-T24F2(2.8MM)(BLACK)(CA BRANCH)(C)"
+    ],
+    "applied_to": "Applied to: ECI-T24F2#CA, ECI-T24F2(2.8MM)(BLACK)(CA BRANCH)(C)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "ISD-SMG318LT-D_UNKNOWN_1.0.1": {
+    "device_id": 102638,
+    "model": "ISD-SMG318LT-D",
+    "hardware_version": "UNKNOWN",
+    "version": "1.0.1",
+    "date": "2020-08-31",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785193815/Firmware__V5.5.40_260420_S3000718734.zip",
+    "filename": "Firmware__V5.5.40_260420_S3000718734.zip",
+    "supported_models": [
+      "ISD-SMG318LT-D"
+    ],
+    "applied_to": "Applied to: ISD-SMG318LT-D",
+    "changes": "1.1 Issues fixes： 1) Fixed known software issues.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202605/releasenote%5CGeneral_Firmware_Update_Release_notes.pdf",
+    "is_beta": false,
+    "source": "live"
   }
 }
