@@ -6339,14 +6339,6 @@
     "model": "DS-KAS321",
     "hardware_version": "UNKNOWN"
   },
-  "103091": {
-    "model": "DS-7104HGHI-M1/T-2K",
-    "hardware_version": "UNKNOWN"
-  },
-  "103092": {
-    "model": "DS-7108HGHI-M1/T-2K",
-    "hardware_version": "UNKNOWN"
-  },
   "103093": {
     "model": "AE-DI2022-E32",
     "hardware_version": "UNKNOWN"
@@ -6669,6 +6661,42 @@
   },
   "103173": {
     "model": "ECI-T24F2#CA",
+    "hardware_version": "UNKNOWN"
+  },
+  "103174": {
+    "model": "DS-2CD27126G3-IPTRZS2UY/S(L)(RB)",
+    "hardware_version": "IPC_G0"
+  },
+  "103175": {
+    "model": "DS-7116HGHI-M1/T-2K",
+    "hardware_version": "DVR_V4"
+  },
+  "103176": {
+    "model": "DS-3E1505P-EI(C)",
+    "hardware_version": "UNKNOWN"
+  },
+  "103177": {
+    "model": "DS-2SF7C442MXG1-WD(/4G)/14(F1)",
+    "hardware_version": "UNKNOWN"
+  },
+  "103178": {
+    "model": "IDS-TCD803-HI",
+    "hardware_version": "UNKNOWN"
+  },
+  "103179": {
+    "model": "DS-2XE6422FWD-IZHRS(D)",
+    "hardware_version": "UNKNOWN"
+  },
+  "103180": {
+    "model": "DS-7104HGHI-M1/T-2K",
+    "hardware_version": "DVR_V4"
+  },
+  "103181": {
+    "model": "DS-7108HGHI-M1/T-2K",
+    "hardware_version": "DVR_V4"
+  },
+  "103182": {
+    "model": "DS-D5065U3-1V0S",
     "hardware_version": "UNKNOWN"
   }
 }

@@ -1370,5 +1370,21 @@
   "https://assets.hikvision.com/prd/normal/all/files/202611/Version_C_Villa_Door_Stations_Release_Note_V3.7.2_260828.pdf": {
     "changes": "Added downgrade version check (only checking x and y, not z); for example, V3.9.4 with x.y.z · can upgrade to V3.9.4 or V3.9.0, but cannot upgrade to V3.8.4. · Update internal SADP protocol version to V3.1.1 · Optimize the logic for switching between AP and WIFI modes",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CNetwork_Camera-V5.8.3_SP2_Release_Note-G9.pdf": {
+    "changes": "Add braking mechanism to solve the problem of high electromotive force or abnormal current caused by · instantaneous reversal of PTRZ camera light shield.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CTurbo_HD_DVR_V4.84.300_build260821_Release_Notes.pdf": {
+    "changes": "improve product performance, and will take effect automatically after upgrading from previous versions.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CDeepinView_Camera_V5.9.0_release_note.pdf": {
+    "changes": "V5.9.0_260808: Fix some known bugs.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202610/releasenote%5CHIKMICRO_Fixed_Camera_V5.5.356_260807_-_Release_Notes.pdf": {
+    "changes": "Rapid Startup · Devices can now boot up in approximately 15 seconds. The IP address will be quickly detected, · allowing you to log into the web interface immediately to stream images and measure temperatures · without delay.",
+    "source": "pdf"
   }
 }
