@@ -1386,5 +1386,9 @@
   "https://assets.hikvision.com/prd/normal/all/files/202610/releasenote%5CHIKMICRO_Fixed_Camera_V5.5.356_260807_-_Release_Notes.pdf": {
     "changes": "Rapid Startup · Devices can now boot up in approximately 15 seconds. The IP address will be quickly detected, · allowing you to log into the web interface immediately to stream images and measure temperatures · without delay.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202611/Network_Speaker_(Amplifier)_V1.7.0_build261026_Release_Notes.pdf": {
+    "changes": "fix known issues.",
+    "source": "pdf"
   }
 }

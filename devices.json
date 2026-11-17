@@ -6698,5 +6698,13 @@
   "103182": {
     "model": "DS-D5065U3-1V0S",
     "hardware_version": "UNKNOWN"
+  },
+  "103183": {
+    "model": "DS-7608NXI-K2/8P(D)",
+    "hardware_version": "NVR_V4"
+  },
+  "103184": {
+    "model": "DS-QAZ1307G1T-E",
+    "hardware_version": "UNKNOWN"
   }
 }

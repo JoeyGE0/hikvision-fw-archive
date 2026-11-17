@@ -69635,5 +69635,104 @@
     "notes": "",
     "is_beta": false,
     "source": "live"
+  },
+  "DS-7608NXI-K2/8P(D)_NVR_V4_4.85.030": {
+    "device_id": 103183,
+    "model": "DS-7608NXI-K2/8P(D)",
+    "hardware_version": "NVR_V4",
+    "version": "4.85.030",
+    "date": "2026-06-12",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1781773948/Firmware__V4.85.030_260612_S3000733662.zip",
+    "filename": "Firmware__V4.85.030_260612_S3000733662.zip",
+    "supported_models": [
+      "DS-7608NXI-K2/8P(D)",
+      "DS-7616NXI-K2/16P(D)",
+      "DS-7608NXI-K2/8P",
+      "DS-7616NXI-K2/16P"
+    ],
+    "applied_to": "Applied to: DS-7608NXI-K2/8P(D), DS-7616NXI-K2/16P(D)",
+    "changes": "",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202606/releasenote%5CNVR_V4.85.030_260612_ReleaseNote.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-QAZ1307G1T-E_UNKNOWN_1.6.5": {
+    "device_id": 103184,
+    "model": "DS-QAZ1307G1T-E",
+    "hardware_version": "UNKNOWN",
+    "version": "1.6.5",
+    "date": "2026-05-14",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785193815/Firmware__V1.6.5_260514_S3000731989.zip",
+    "filename": "Firmware__V1.6.5_260514_S3000731989.zip",
+    "supported_models": [
+      "DS-QAZ1307G1T-E",
+      "DS-QAZ1325G1T"
+    ],
+    "applied_to": "Applied to: DS-QAZ1307G1T-E, DS-QAZ1325G1T",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-QAE1A80G1-VB_UNKNOWN_1.7.0": {
+    "device_id": 102636,
+    "model": "DS-QAE1A80G1-VB",
+    "hardware_version": "UNKNOWN",
+    "version": "1.7.0",
+    "date": "2026-10-26",
+    "download_url": "",
+    "filename": "Firmware__V1.7.0_261026_S3000762738.zip",
+    "supported_models": [
+      "DS-QAE1A80G1-VB"
+    ],
+    "applied_to": "Applied to: DS-QAE1A80G1-VB",
+    "changes": "fix known issues.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202611/Network_Speaker_(Amplifier)_V1.7.0_build261026_Release_Notes.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-QAZ1206G1-BE_UNKNOWN_1.7.0": {
+    "device_id": 102637,
+    "model": "DS-QAZ1206G1-BE",
+    "hardware_version": "UNKNOWN",
+    "version": "1.7.0",
+    "date": "2026-10-26",
+    "download_url": "",
+    "filename": "Firmware__V1.7.0_261026_S3000762765.zip",
+    "supported_models": [
+      "DS-QAZ1206G1-BE",
+      "DS-QAZ1307G1T-E(C)",
+      "DS-QAZ1310G1T-E(C)",
+      "DS-QAZ1325G1T(C)",
+      "DS-QAZ1530G1-BE",
+      "DS-QAZ1630G1-BE",
+      "DS-QAZ1307G1T-E",
+      "DS-QAZ1310G1T-E",
+      "DS-QAZ1325G1T"
+    ],
+    "applied_to": "Applied to: DS-QAZ1206G1-BE, DS-QAZ1307G1T-E(C), DS-QAZ1310G1T-E(C), DS-QAZ1325G1T(C), DS-QAZ1530G1-BE, DS-QAZ1630G1-BE",
+    "changes": "fix known issues.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202611/Network_Speaker_(Amplifier)_V1.7.0_build261026_Release_Notes.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2DF8C842IXG1-EL(W)(Y)_IPC_G0_5.11.0": {
+    "device_id": 102596,
+    "model": "DS-2DF8C842IXG1-EL(W)(Y)",
+    "hardware_version": "IPC_G0",
+    "version": "5.11.0",
+    "date": "2026-09-23",
+    "download_url": "",
+    "filename": "Firmware__V5.11.0_260923_S3000763019.zip",
+    "supported_models": [
+      "DS-2DF8C842IXG1-EL(W)(Y)",
+      "DS-2DF8C842IXG1-ELWY",
+      "DS-2DF8C842IXG1-EL"
+    ],
+    "applied_to": "Applied to: DS-2DF8C842IXG1-EL(W)(Y), DS-2DF8C842IXG1-ELWY",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
   }
 }
