@@ -1,26 +1,21 @@
 {
-  "last_run": "2026-11-17T02:02:04.781145",
+  "last_run": "2026-11-17T13:43:40.026337",
   "status": "error",
   "scraper_mode": "http",
   "post_merge_verified": "2026-05-19T13:00:29.926000",
   "catalog_urls_parsed": 4568,
   "firmwares_found": 2152,
-  "new_firmwares": 10,
+  "new_firmwares": 0,
   "errors": [
-    "Download failed IDS-9632NXI-M8/AI(B) v5.02.230: ('Connection broken: IncompleteRead(1005584384 bytes read, 1785680378 more expected)', IncompleteRead(1005584384 bytes read, 1785680378 more expected))",
-    "Download failed DS-2CD2D45G2-U v5.10.10: ('Connection broken: IncompleteRead(71303168 bytes read, 60455239 more expected)', IncompleteRead(71303168 bytes read, 60455239 more expected))",
-    "Download failed IDS-TCV500-HE v5.5.2: ('Connection broken: IncompleteRead(370147328 bytes read, 295258498 more expected)', IncompleteRead(370147328 bytes read, 295258498 more expected))",
-    "Download failed IDS-TCV900-HE v5.5.2: ('Connection broken: IncompleteRead(34603008 bytes read, 689285486 more expected)', IncompleteRead(34603008 bytes read, 689285486 more expected))",
-    "Download failed IDS-6708NXI-S v5.04.603: ('Connection broken: IncompleteRead(272629760 bytes read, 1663004310 more expected)', IncompleteRead(272629760 bytes read, 1663004310 more expected))",
-    "Download failed DS-2SF7C425MXG1-EL(W)(Y)/14 v5.10.0: ('Connection broken: IncompleteRead(517996544 bytes read, 877076107 more expected)', IncompleteRead(517996544 bytes read, 877076107 more expected))"
+    "Download failed DS-2CD6332FWD-I(V)(S) v5.4.801: 403 Client Error: Forbidden for url: https://assets.hikvision.com/prd/public/all/files/020ef989-5921-4899-959f-63b81d5266cc.zip"
   ],
   "test_mode": false,
   "catalog_fetch": "playwright",
-  "catalog_entries": 1124,
+  "catalog_entries": 173,
   "priority_models": [
     "DS-2CD2387G3-LIS2UY",
     "DS-2CD1383G2P-LIUF",
     "DS-2CD1383G2-LIUF"
   ],
-  "catalog_region": "en"
+  "catalog_region": "us-en"
 }
