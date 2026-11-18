@@ -6706,5 +6706,9 @@
   "103184": {
     "model": "DS-QAZ1307G1T-E",
     "hardware_version": "UNKNOWN"
+  },
+  "103185": {
+    "model": "DS-2DF7A425IXG-EL(Y)",
+    "hardware_version": "IPC_G0"
   }
 }

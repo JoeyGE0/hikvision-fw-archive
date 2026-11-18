@@ -1390,5 +1390,9 @@
   "https://assets.hikvision.com/prd/normal/all/files/202611/Network_Speaker_(Amplifier)_V1.7.0_build261026_Release_Notes.pdf": {
     "changes": "fix known issues.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202611/【Release_Note】Mobile_Video_Recorder_V5.9.6.pdf": {
+    "changes": "Supports access to the HAT-Cloud platform, with the platform fixed at the JT4. · Supports face library management on the HCP platform. · Supports integration of new DSM IPC and BSD IPC cameras. · Supports H-WATCH connectivity.",
+    "source": "pdf"
   }
 }

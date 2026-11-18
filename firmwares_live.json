@@ -58766,7 +58766,8 @@
       "DS-2TD2537T-4/Q",
       "DS-2TX3742-15A/Q",
       "DS-2TX3742-15P/Q",
-      "DS-2TD2528T-3/Q"
+      "DS-2TD2528T-3/Q",
+      "DS-2TD2637-15/QY"
     ],
     "applied_to": "Applied to: DS-2TD2528T-10/Q, DS-2TD2528T-3/Q(B), DS-2TD2528T-7/Q, DS-2TD2537T-10/Q, DS-2TD2537T-15/Q, DS-2TD2537T-4/Q, DS-2TX3742-15A/Q, DS-2TX3742-15P/Q",
     "changes": "",
@@ -62618,7 +62619,15 @@
       "DS-KIS603-P",
       "DS-KIS604-P",
       "DS-KIS604-S",
-      "DS-KIS605-P"
+      "DS-KIS605-P",
+      "DS-KV6113-PE1(C)",
+      "DS-KV6113-WPE1(C)",
+      "DS-KV8113-WME1(C)",
+      "DS-KV8113-WME1(C)/FLUSH",
+      "DS-KV8213-WME1(C)",
+      "DS-KV8213-WME1(C)/FLUSH",
+      "DS-KV8413-WME1(C)",
+      "DS-KV8413-WME1(C)/FLUSH"
     ],
     "applied_to": "Applied to: DS-KIS603-P(D), DS-KIS604-P(C), DS-KIS604-P(D), DS-KIS604-S(C), DS-KIS604-S(D), DS-KIS605-P(C), DS-KIS606-P, DS-KV6133-WME1/FLUSH, DS-KV6133-WME1",
     "changes": "button functions, adding more interaction options · Improved pairing and activation wizard: reduced unnecessary prompts (only shown when activated · door stations exist); optimized IP modification and login failure response during setup · Fixed an issue where failing to log in to an offline door station during wizard pairing could affect",
@@ -64471,7 +64480,9 @@
       "DS-KD8003-IME1/FLUSH",
       "DS-KD8003-IME1/NS",
       "DS-KD8003-IME1/S",
-      "DS-KIS602"
+      "DS-KIS602",
+      "DS-KD8003-IME1(B)/SURFACE",
+      "DS-KIS602(C)"
     ],
     "applied_to": "Applied to: DS-KD8003-IME1(B), DS-KD8003-IME1(B)/FLUSH, DS-KD8003-IME1(B)/NS, DS-KD8003-IME1(B)/S, DS-KD8003Y-IME2, DS-KD8003Y-IME2/NS, DS-KD8003Y-IME2/S, DS-KIS602(B), DS-KIS702EY, DS-KIS702Y, DS-KIS702Y-P",
     "changes": "Added downgrade version check (only checking x and y, not z); for example, V3.9.4 with x.y.z · can upgrade to V3.9.4 or V3.9.0, but cannot upgrade to V3.8.4. · Update internal SADP protocol version to V3.1.1 · Fixed the issue where indoor station couldn't perform public password authentication under Wi",
@@ -68981,8 +68992,8 @@
       "AE-MN5043"
     ],
     "applied_to": "Applied to: AE-MN5043(M12)",
-    "changes": "",
-    "notes": "",
+    "changes": "Supports access to the HAT-Cloud platform, with the platform fixed at the JT4. · Supports face library management on the HCP platform. · Supports integration of new DSM IPC and BSD IPC cameras. · Supports H-WATCH connectivity.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202611/【Release_Note】Mobile_Video_Recorder_V5.9.6.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -68999,8 +69010,8 @@
       "AE-MN5083"
     ],
     "applied_to": "Applied to: AE-MN5083(M12)",
-    "changes": "",
-    "notes": "",
+    "changes": "Supports access to the HAT-Cloud platform, with the platform fixed at the JT4. · Supports face library management on the HCP platform. · Supports integration of new DSM IPC and BSD IPC cameras. · Supports H-WATCH connectivity.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202611/【Release_Note】Mobile_Video_Recorder_V5.9.6.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -69680,7 +69691,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.7.0",
     "date": "2026-10-26",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794959524/Firmware__V1.7.0_261026_S3000762738.zip",
     "filename": "Firmware__V1.7.0_261026_S3000762738.zip",
     "supported_models": [
       "DS-QAE1A80G1-VB"
@@ -69697,7 +69708,7 @@
     "hardware_version": "UNKNOWN",
     "version": "1.7.0",
     "date": "2026-10-26",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794959524/Firmware__V1.7.0_261026_S3000762765.zip",
     "filename": "Firmware__V1.7.0_261026_S3000762765.zip",
     "supported_models": [
       "DS-QAZ1206G1-BE",
@@ -69722,7 +69733,7 @@
     "hardware_version": "IPC_G0",
     "version": "5.11.0",
     "date": "2026-09-23",
-    "download_url": "",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794959524/Firmware__V5.11.0_260923_S3000763019.zip",
     "filename": "Firmware__V5.11.0_260923_S3000763019.zip",
     "supported_models": [
       "DS-2DF8C842IXG1-EL(W)(Y)",
@@ -69730,6 +69741,102 @@
       "DS-2DF8C842IXG1-EL"
     ],
     "applied_to": "Applied to: DS-2DF8C842IXG1-EL(W)(Y), DS-2DF8C842IXG1-ELWY",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2DF8442IXG1-EL(W)(Y)_IPC_G0_5.11.0": {
+    "device_id": 102651,
+    "model": "DS-2DF8442IXG1-EL(W)(Y)",
+    "hardware_version": "IPC_G0",
+    "version": "5.11.0",
+    "date": "2026-09-23",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1794959524/Firmware__V5.11.0_260923_S3000763019.zip",
+    "filename": "Firmware__V5.11.0_260923_S3000763019.zip",
+    "supported_models": [
+      "DS-2DF8442IXG1-EL(W)(Y)",
+      "DS-2DF8442IXG1-ELY",
+      "DS-2DF8442IXG1-ELWY",
+      "DS-2DF8C260I5XG1-ELW",
+      "DS-2DF8C442IXG1-EL(W)(Y)",
+      "DS-2DF8C442IXG1-ELWY",
+      "DS-2DF8C442IXG1-ELW",
+      "DS-2DF8C842IXG1-EL(W)(Y)",
+      "DS-2DF8C842IXG1-ELW",
+      "DS-2DF8C842IXG1-ELWY",
+      "DS-2DF8442IXG1-EL",
+      "DS-2DF8C442IXG1-EL",
+      "DS-2DF8C842IXG1-EL"
+    ],
+    "applied_to": "Applied to: DS-2DF8442IXG1-EL(W)(Y), DS-2DF8442IXG1-ELY, DS-2DF8442IXG1-ELWY, DS-2DF8C260I5XG1-ELW, DS-2DF8C442IXG1-EL(W)(Y), DS-2DF8C442IXG1-ELWY, DS-2DF8C442IXG1-ELW, DS-2DF8C842IXG1-EL(W)(Y), DS-2DF8C842IXG1-ELW, DS-2DF8C842IXG1-ELWY",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2DF7A425IXG-EL(Y)_IPC_G0_5.11.0": {
+    "device_id": 103185,
+    "model": "DS-2DF7A425IXG-EL(Y)",
+    "hardware_version": "IPC_G0",
+    "version": "5.11.0",
+    "date": "2026-09-23",
+    "download_url": "",
+    "filename": "Firmware__V5.11.0_260923_S3000763040.zip",
+    "supported_models": [
+      "DS-2DF7A425IXG-EL(Y)",
+      "DS-2DF7A425IXG-ELY",
+      "DS-2DF7A436IXG-EL(Y)",
+      "DS-2DF7A436IXG-ELY",
+      "DS-2DF7A836IXG-EL(Y)",
+      "DS-2DF7A836IXG-ELY",
+      "DS-2DF7A425IXG-EL",
+      "DS-2DF7A436IXG-EL",
+      "DS-2DF7A836IXG-EL"
+    ],
+    "applied_to": "Applied to: DS-2DF7A425IXG-EL(Y), DS-2DF7A425IXG-ELY, DS-2DF7A436IXG-EL(Y), DS-2DF7A436IXG-ELY, DS-2DF7A836IXG-EL(Y), DS-2DF7A836IXG-ELY",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-D5032F3-1V0S_UNKNOWN_1.1.5": {
+    "device_id": 102568,
+    "model": "DS-D5032F3-1V0S",
+    "hardware_version": "UNKNOWN",
+    "version": "1.1.5",
+    "date": "2026-09-17",
+    "download_url": "",
+    "filename": "Firmware__V1.1.5_260917_S3000758403.zip",
+    "supported_models": [
+      "DS-D5032F3-1V0S",
+      "DS-D5032F3-1V0S(EUROPEAN STANDARD)",
+      "DS-D5032F3-1V0S(EUROPEAN"
+    ],
+    "applied_to": "Applied to: DS-D5032F3-1V0S, DS-D5032F3-1V0S(EUROPEAN STANDARD)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-D5022F2-1V2_UNKNOWN_1.1.5": {
+    "device_id": 102094,
+    "model": "DS-D5022F2-1V2",
+    "hardware_version": "UNKNOWN",
+    "version": "1.1.5",
+    "date": "2026-09-16",
+    "download_url": "",
+    "filename": "Firmware__V1.1.5_260916_S3000758404.zip",
+    "supported_models": [
+      "DS-D5022F2-1V2",
+      "DS-D5022F2-1V2(AUSTRALIAN)",
+      "DS-D5022F2-1V2S",
+      "DS-D5022F2-1V2S(AUSTRALIAN)",
+      "DS-D5022F2-1V2S(EUROPEAN)",
+      "DS-D5024F2-BV2S",
+      "DS-D5024F2-BV2S(EU)"
+    ],
+    "applied_to": "Applied to: DS-D5022F2-1V2, DS-D5022F2-1V2(AUSTRALIAN), DS-D5022F2-1V2S, DS-D5022F2-1V2S(AUSTRALIAN), DS-D5022F2-1V2S(EUROPEAN), DS-D5024F2-BV2S, DS-D5024F2-BV2S(EU)",
     "changes": "",
     "notes": "",
     "is_beta": false,
