@@ -1394,5 +1394,17 @@
   "https://assets.hikvision.com/prd/normal/all/files/202611/【Release_Note】Mobile_Video_Recorder_V5.9.6.pdf": {
     "changes": "Supports access to the HAT-Cloud platform, with the platform fixed at the JT4. · Supports face library management on the HCP platform. · Supports integration of new DSM IPC and BSD IPC cameras. · Supports H-WATCH connectivity.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CCovert_Camera_2Dxx_V5.10.10_260818_Release_Note.pdf": {
+    "changes": "Switch the emmc",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202611/【Release_Note】Mobile_IPC_V4.3.2.pdf": {
+    "changes": "Support the Guanlan encoding function.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CIPDG_XLF_H13H11_V5.10.0_Release_Note.pdf": {
+    "changes": "Supported Smart Event, and People Density on panoramic · Supported Smart Event, Multi-Target-Type Detection, Multi · Target-Type Comparison, Vehicle Arming, Person Arming, , · Road Traffic, AIOP and ITS on PTZ channel.",
+    "source": "pdf"
   }
 }

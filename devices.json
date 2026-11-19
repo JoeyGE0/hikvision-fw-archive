@@ -6127,10 +6127,6 @@
     "model": "DS-2XM6122G1-I(D)(M)(/ND)",
     "hardware_version": "IPC_V3"
   },
-  "103037": {
-    "model": "DS-2XM6746G1-I(D)(M)(/ND)",
-    "hardware_version": "UNKNOWN"
-  },
   "103038": {
     "model": "DS-2XC6646G1-LIZHRS(316L)",
     "hardware_version": "UNKNOWN"
@@ -6710,5 +6706,37 @@
   "103185": {
     "model": "DS-2DF7A425IXG-EL(Y)",
     "hardware_version": "IPC_G0"
+  },
+  "103186": {
+    "model": "IDS-9632NXI-M8/AI(B)",
+    "hardware_version": "UNKNOWN"
+  },
+  "103187": {
+    "model": "IDS-6708NXI-S",
+    "hardware_version": "UNKNOWN"
+  },
+  "103188": {
+    "model": "DS-2SF7C425MXG1-EL(W)(Y)/14",
+    "hardware_version": "UNKNOWN"
+  },
+  "103189": {
+    "model": "DS-2XS6F85G3-LIC1/4G",
+    "hardware_version": "UNKNOWN"
+  },
+  "103190": {
+    "model": "AE-AC1130-A/VE",
+    "hardware_version": "UNKNOWN"
+  },
+  "103191": {
+    "model": "DS-2CD2346G3-IZ(2U)Y",
+    "hardware_version": "IPC_G0"
+  },
+  "103192": {
+    "model": "DS-2XC3046G0H-LIS(PA)",
+    "hardware_version": "UNKNOWN"
+  },
+  "103193": {
+    "model": "DS-2SF9S404SXG-L/14(C7C2)",
+    "hardware_version": "UNKNOWN"
   }
 }
