@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-11-18T23:08:02.769215",
+  "last_run": "2026-11-19T13:32:42.056859",
   "status": "error",
   "scraper_mode": "http",
   "post_merge_verified": "2026-05-19T13:00:29.926000",
@@ -17,5 +17,5 @@
     "DS-2CD1383G2P-LIUF",
     "DS-2CD1383G2-LIUF"
   ],
-  "catalog_region": "uk-en"
+  "catalog_region": "eu-en"
 }
