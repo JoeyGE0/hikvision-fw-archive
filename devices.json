@@ -6107,14 +6107,6 @@
     "model": "DS-2CV2146G0-IDW",
     "hardware_version": "UNKNOWN"
   },
-  "103032": {
-    "model": "DS-2XM6222G1-I(D)(M)(/ND)",
-    "hardware_version": "UNKNOWN"
-  },
-  "103033": {
-    "model": "DS-2XM6522G1-I(D)(M)(/ND)",
-    "hardware_version": "UNKNOWN"
-  },
   "103034": {
     "model": "DS-2XM6756G1-I(D)(M)(/ND)",
     "hardware_version": "UNKNOWN"
@@ -6377,10 +6369,6 @@
   },
   "103103": {
     "model": "AE-VC216I-I",
-    "hardware_version": "UNKNOWN"
-  },
-  "103104": {
-    "model": "DS-2XM6825G1/C-IV(S)(M)(/ND)",
     "hardware_version": "UNKNOWN"
   },
   "103105": {
@@ -6738,5 +6726,13 @@
   "103193": {
     "model": "DS-2SF9S404SXG-L/14(C7C2)",
     "hardware_version": "UNKNOWN"
+  },
+  "103194": {
+    "model": "DS-9632NI-M8",
+    "hardware_version": "UNKNOWN"
+  },
+  "103195": {
+    "model": "AE-VC3B2I-ISF",
+    "hardware_version": "IPC_V4"
   }
 }

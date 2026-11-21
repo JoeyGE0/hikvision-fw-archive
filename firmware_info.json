@@ -1406,5 +1406,21 @@
   "https://assets.hikvision.com/prd/normal/all/files/202609/releasenote%5CIPDG_XLF_H13H11_V5.10.0_Release_Note.pdf": {
     "changes": "Supported Smart Event, and People Density on panoramic · Supported Smart Event, Multi-Target-Type Detection, Multi · Target-Type Comparison, Vehicle Arming, Person Arming, , · Road Traffic, AIOP and ITS on PTZ channel.",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202611/F1Plus_Villa_Door_Station_Firmware_V3.9.4_build261029_Release_Note.pdf": {
+    "changes": "way audio with the Hik-Connect App. · (2026-09-23) · Update internal SADP protocol version to V3.1.1 · Added the reporting of special sound detection events to Hik-Connect.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202611/Mobile_People_Counting_IPC_V4.2.4.pdf": {
+    "changes": "Support Guanlan AI encoding. · Modified functions · Fixed some minor bugs. · Related product list",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202611/DS-KD9664-KD9434_V3.12.0_build260909_Release_Note.pdf": {
+    "changes": "improvement and will take effect automatically after the Date of Change.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202611/【Release_Note】DSM_IPC_V4.3.4.pdf": {
+    "changes": "Support for A-pillar installation. · Support the Eating/Drinking/Setup Abnormality Detection . · Support custom configuration of alarm audio files. · Modified functions",
+    "source": "pdf"
   }
 }
