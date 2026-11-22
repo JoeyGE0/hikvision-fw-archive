@@ -6734,5 +6734,49 @@
   "103195": {
     "model": "AE-VC3B2I-ISF",
     "hardware_version": "IPC_V4"
+  },
+  "103196": {
+    "model": "DS-2CD1A23G0-IZU",
+    "hardware_version": "IPC_G0"
+  },
+  "103197": {
+    "model": "PTZ-N2C200C-DE",
+    "hardware_version": "UNKNOWN"
+  },
+  "103198": {
+    "model": "DS-K6Y220TX",
+    "hardware_version": "UNKNOWN"
+  },
+  "103199": {
+    "model": "DS-2CD1147G3H-LIU(F)(/SX)",
+    "hardware_version": "IPC_G0"
+  },
+  "103200": {
+    "model": "DS-D5055U3-1V0S",
+    "hardware_version": "UNKNOWN"
+  },
+  "103201": {
+    "model": "DS-2DE2C200SCG-E",
+    "hardware_version": "IPC_G0"
+  },
+  "103202": {
+    "model": "IDS-6716NXI-M1/X",
+    "hardware_version": "UNKNOWN"
+  },
+  "103203": {
+    "model": "DS-2DYH2A0LXG-LW/12",
+    "hardware_version": "UNKNOWN"
+  },
+  "103204": {
+    "model": "DS-K1T674MWX",
+    "hardware_version": "UNKNOWN"
+  },
+  "103205": {
+    "model": "DS-2XC6244G1-LIR",
+    "hardware_version": "UNKNOWN"
+  },
+  "103206": {
+    "model": "IDS-TCM441-HI",
+    "hardware_version": "UNKNOWN"
   }
 }

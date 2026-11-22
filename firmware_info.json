@@ -1422,5 +1422,21 @@
   "https://assets.hikvision.com/prd/normal/all/files/202611/【Release_Note】DSM_IPC_V4.3.4.pdf": {
     "changes": "Support for A-pillar installation. · Support the Eating/Drinking/Setup Abnormality Detection . · Support custom configuration of alarm audio files. · Modified functions",
     "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202611/B1Pro_Indoor_Station_Firmware_V2.3.2_build261110_Release_Note.pdf": {
+    "changes": "Indoor stations with a handset are now supported (model with -H). The handset can answer and · hang up calls, live view and talk to the door station · Optimized the indoor station UI layout: the Wi-Fi connection prompt is now centered, and the · keyboard refresh logic on the arming page, the UI refresh after switching between main and sub",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202611/Turbo_HD_DVR_V4.84.200_build261027_Release_Notes.pdf": {
+    "changes": "improve product performance, and will take effect automatically after upgrading from previous versions.",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202611/【Release_Note】Mobile_People_Counting_IPC_V4.2.4.pdf": {
+    "changes": "Support Guanlan AI encoding. · Modified functions · Fixed some minor bugs. · Related product list",
+    "source": "pdf"
+  },
+  "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CV5.8.2_260703_Release_Notet.pdf": {
+    "changes": "Algorithm optimization and updates. 2. Fix some bugs.",
+    "source": "pdf"
   }
 }

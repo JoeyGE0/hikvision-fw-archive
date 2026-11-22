@@ -6906,7 +6906,8 @@
       "DS-2CD3767G3-LIZSUY/SL(PTRZ)/27135/BOSTD",
       "DS-2CD3767G3T-LIZSUY/SL(PTRZ)27135/BOSTD",
       "DS-2CD3787G3-LIZSUY/SL(PTRZ)27135/B/OSTD",
-      "DS-2CD3787G3T-LIZSUY/SL(PTRZ)27135/BOSTD"
+      "DS-2CD3787G3T-LIZSUY/SL(PTRZ)27135/BOSTD",
+      "DS-2CD3586G3-ISY(2.8MM)(B)"
     ],
     "applied_to": "Applied to: DS-2CD3046G3-IU(Y), DS-2CD3046G3-IUY(2.8MM), DS-2CD3046G3-IUY(4MM), DS-2CD3046G3-IU/SL(Y), DS-2CD3046G3-IUY/SL(2.8MM), DS-2CD3046G3-IUY/SL(4MM), DS-2CD3046G3-IUY/SL(2.8MM)(BLACK), DS-2CD3046G3-LIU(Y)",
     "changes": "some bugs to enhance system stability.",
@@ -18220,7 +18221,11 @@
       "DS-KIS902-S",
       "DS-KH6320-LE1/WHITE",
       "DS-KIS605-P",
-      "IK-CONNECT."
+      "IK-CONNECT.",
+      "DS-KIS612-S",
+      "DS-KIS621-S",
+      "DS-KIS622-S",
+      "DS-KIS623-S"
     ],
     "applied_to": "Applied to: DS-KH6320-LE1(B)/WHITE, DS-KH6350-WTE1/WHITE, DS-KH6351-TE1, DS-KH6351-WTE1, DS-KIS605-P(C), DS-KIS607-S, DS-KIS608-P, DS-KIS610-P",
     "changes": "Add local logs for activation, upgrade, password reset, and IPC configuration. · Resolve the issue of Daylight Saving Time (DST) being disabled after connecting to hik-connect. · Fix the hikcentral professional time synchronization problem durin g DST, where each · synchronization adds 1 hour.",
@@ -56876,7 +56881,8 @@
       "HM-TD6368-100C4L/G0/T2Y(B)",
       "HM-TD6368-130ZC4L/G0/T2Y(B)",
       "HM-TD6368-75C4FLD/G0/T2Y",
-      "HM-TD6368-75C4L/G0/T2Y(B)"
+      "HM-TD6368-75C4L/G0/T2Y(B)",
+      "HM-TD6368-75C4FL/G0/T2Y(C)"
     ],
     "applied_to": "Applied to: HM-TD6338-50C4L/G0/T2Y, HM-TD6338-75C4L/G0/T2Y, HM-TD6368-100C4L/G0/T2Y, HM-TD6368-130ZC4L/G0/T2Y, HM-TD6368-50C4L/G0/T2Y, HM-TD6368-75C4L/G0/T2Y",
     "changes": "",
@@ -64707,7 +64713,8 @@
       "DS-2DE3A804IWG1H-E",
       "DS-2DE3C204MWG1H-E",
       "DS-2DE3C404MWG1H-E",
-      "DS-2DE3C804MWG1H-E"
+      "DS-2DE3C804MWG1H-E",
+      "DS-2DE3A210IWG1H-E"
     ],
     "applied_to": "Applied to: DS-2DE3A204IWG1H-E, DS-2DE3A404IWG1H-E, DS-2DE3A404IWG1H-E/W, DS-2DE3A804IWG1H-E, DS-2DE3C204MWG1H-E, DS-2DE3C404MWG1H-E, DS-2DE3C804MWG1H-E",
     "changes": "",
@@ -67402,8 +67409,8 @@
       "DS-7204HQHI-S1/XT"
     ],
     "applied_to": "Applied to: DS-7204HQHI-S1/XT",
-    "changes": "",
-    "notes": "",
+    "changes": "improve product performance, and will take effect automatically after upgrading from previous versions.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202611/Turbo_HD_DVR_V4.84.200_build261027_Release_Notes.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -67422,8 +67429,8 @@
       "DS-7208HQHI-S2/XT"
     ],
     "applied_to": "Applied to: DS-7204HUHI-S1/XT, DS-7204HUHI-S2/XT, DS-7208HQHI-S1/XT, DS-7208HQHI-S2/XT",
-    "changes": "",
-    "notes": "",
+    "changes": "improve product performance, and will take effect automatically after upgrading from previous versions.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202611/Turbo_HD_DVR_V4.84.200_build261027_Release_Notes.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -67444,8 +67451,8 @@
       "DS-7232HQHI-S2/XT"
     ],
     "applied_to": "Applied to: DS-7208HUHI-S1/XT, DS-7208HUHI-S2/XT, DS-7216HQHI-S1/XT, DS-7216HQHI-S2/XT, DS-7216HUHI-S2/XT, DS-7232HQHI-S2/XT",
-    "changes": "",
-    "notes": "",
+    "changes": "improve product performance, and will take effect automatically after upgrading from previous versions.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202611/Turbo_HD_DVR_V4.84.200_build261027_Release_Notes.pdf",
     "is_beta": false,
     "source": "live"
   },
@@ -70579,6 +70586,308 @@
     "applied_to": "Applied to: DS-2XM6756G1-I(D)(M)(/ND), DS-2XM6756G1-ID(2MM), DS-2XM6756G1-IM/ND(2MM), DS-2XM6756G1-ID(2MM)(ASHLEYGROUP)",
     "changes": "Support the Guanlan encoding function.",
     "notes": "https://assets.hikvision.com/prd/normal/all/files/202611/【Release_Note】Mobile_IPC_V4.3.2.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1A23G0-IZU_IPC_G0_5.7.25": {
+    "device_id": 103196,
+    "model": "DS-2CD1A23G0-IZU",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.25",
+    "date": "2026-07-14",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785195592/Firmware__V5.7.25_260714_S3000740094.zip",
+    "filename": "Firmware__V5.7.25_260714_S3000740094.zip",
+    "supported_models": [
+      "DS-2CD1A23G0-IZU",
+      "DS-2CD1A23G0-IZU(2.8-12MM)",
+      "DS-2CD1A43G0-IZU",
+      "DS-2CD1A43G0-IZU(2.8-12MM)"
+    ],
+    "applied_to": "Applied to: DS-2CD1A23G0-IZU, DS-2CD1A23G0-IZU(2.8-12MM), DS-2CD1A43G0-IZU, DS-2CD1A43G0-IZU(2.8-12MM)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "PTZ-N2C200C-DE_UNKNOWN_5.7.25": {
+    "device_id": 103197,
+    "model": "PTZ-N2C200C-DE",
+    "hardware_version": "UNKNOWN",
+    "version": "5.7.25",
+    "date": "2026-07-14",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785435827/Firmware__V5.7.25_260714_S3000740067.zip",
+    "filename": "Firmware__V5.7.25_260714_S3000740067.zip",
+    "supported_models": [
+      "PTZ-N2C200C-DE",
+      "PTZ-N2C200C-DE(F0)(HILOOKSTD)",
+      "PTZ-N2C200C-DE(F1)(HILOOKSTD)"
+    ],
+    "applied_to": "Applied to: PTZ-N2C200C-DE, PTZ-N2C200C-DE(F0)(HILOOKSTD), PTZ-N2C200C-DE(F1)(HILOOKSTD)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-K6Y220TX_UNKNOWN_3.0.0": {
+    "device_id": 103198,
+    "model": "DS-K6Y220TX",
+    "hardware_version": "UNKNOWN",
+    "version": "3.0.0",
+    "date": "2026-07-06",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785569274/Firmware__V3.0.0_260706_S3000737963.zip",
+    "filename": "Firmware__V3.0.0_260706_S3000737963.zip",
+    "supported_models": [
+      "DS-K6Y220TX",
+      "DS-K6Y220TDX-L/DP55",
+      "DS-K6Y220TDX-M/DP55",
+      "DS-K6Y220TDX-R/DP55",
+      "DS-K6Y220TEX-L/DP55",
+      "DS-K6Y220TEX-M/DP55",
+      "DS-K6Y220TEX-R/DP55"
+    ],
+    "applied_to": "Applied to: DS-K6Y220TX, DS-K6Y220TDX-L/DP55, DS-K6Y220TDX-M/DP55, DS-K6Y220TDX-R/DP55, DS-K6Y220TEX-L/DP55, DS-K6Y220TEX-M/DP55, DS-K6Y220TEX-R/DP55",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2CD1147G3H-LIU(F)(/SX)_IPC_G0_5.11.0": {
+    "device_id": 103199,
+    "model": "DS-2CD1147G3H-LIU(F)(/SX)",
+    "hardware_version": "IPC_G0",
+    "version": "5.11.0",
+    "date": "2026-07-01",
+    "download_url": "https://github.com/JoeyGE0/hikvision-fw-archive/releases/download/1785309798/Firmware__V5.11.0_260701_S3000737668.zip",
+    "filename": "Firmware__V5.11.0_260701_S3000737668.zip",
+    "supported_models": [
+      "DS-2CD1147G3H-LIU(F)(/SX)",
+      "DS-2CD1147G3H-LIUF(2.8MM)",
+      "DS-2CD1147G3H-LIUF(4MM)",
+      "DS-2CD1147G3H-LIU(2.8MM)",
+      "DS-2CD1147G3H-LIU(4MM)",
+      "DS-2CD1147G3H-LIUF(2.8MM)(BLACK)",
+      "DS-2CD1147G3H-LIU(2.8MM)(BLACK)",
+      "DS-2CD1B47G3H-LIU(F)(/SX)",
+      "DS-2CD1B47G3H-LIU(2.8MM)",
+      "DS-2CD1B47G3H-LIU(4MM)",
+      "DS-2CD1B47G3H-LIUF/SL(2.8MM)",
+      "DS-2CD1B47G3H-LIUF/SL(4MM)",
+      "DS-2CD1B47G3H-LIUF(2.8MM)",
+      "DS-2CD1B47G3H-LIUF(4MM)",
+      "DS-2CD1B47G3H-LIUF/SRB(2.8MM)",
+      "DS-2CD1B47G3H-LIUF/SRB(4MM)",
+      "DS-2CD1B47G3H-LIU/SL(2.8MM)",
+      "DS-2CD1B47G3H-LIU/SL(4MM)",
+      "DS-2CD1B47G3H-LIU/SRB(2.8MM)",
+      "DS-2CD1B47G3H-LIU/SRB(4MM)",
+      "DS-2CD1F47G3H-LIU(F)(/SX)",
+      "DS-2CD1F47G3H-LIUF(2.8MM)",
+      "DS-2CD1F47G3H-LIUF(4MM)",
+      "DS-2CD1F47G3H-LIU(2.8MM)",
+      "DS-2CD1F47G3H-LIU(4MM)",
+      "DS-2CD1F47G3H-LIU/SX(2.8MM)",
+      "DS-2CD1F47G3H-LIU/SX(4MM)",
+      "DS-2CD1F47G3H-LIUF/SX(2.8MM)",
+      "DS-2CD1F47G3H-LIUF/SX(4MM)",
+      "DS-2CD1147G3H-LIU",
+      "DS-2CD1147G3H-LIUF",
+      "DS-2CD1B47G3H-LIU",
+      "DS-2CD1B47G3H-LIUF/SL",
+      "DS-2CD1B47G3H-LIUF",
+      "DS-2CD1B47G3H-LIUF/SRB",
+      "DS-2CD1B47G3H-LIU/SL",
+      "DS-2CD1B47G3H-LIU/SRB",
+      "DS-2CD1F47G3H-LIU",
+      "DS-2CD1F47G3H-LIUF",
+      "DS-2CD1F47G3H-LIU/SX",
+      "DS-2CD1F47G3H-LIUF/SX"
+    ],
+    "applied_to": "Applied to: DS-2CD1147G3H-LIU(F)(/SX), DS-2CD1147G3H-LIUF(2.8MM), DS-2CD1147G3H-LIUF(4MM), DS-2CD1147G3H-LIU(2.8MM), DS-2CD1147G3H-LIU(4MM), DS-2CD1147G3H-LIUF(2.8MM)(BLACK), DS-2CD1147G3H-LIU(2.8MM)(BLACK), DS-2CD1B47G3H-LIU(F)(/SX), DS-2CD1B47G3H-LIU(2.8MM), DS-2CD1B47G3H-LIU(4MM), DS-2CD1B47G3H-LIUF/SL(2.8MM), DS-2CD1B47G3H-LIUF/SL(4MM), DS-2CD1B47G3H-LIUF(2.8MM), DS-2CD1B47G3H-LIUF(4MM), DS-2CD1B47G3H-LIUF/SRB(2.8MM), DS-2CD1B47G3H-LIUF/SRB(4MM), DS-2CD1B47G3H-LIU/SL(2.8MM), DS-2CD1B47G3H-LIU/SL(4MM), DS-2CD1B47G3H-LIU/SRB(2.8MM), DS-2CD1B47G3H-LIU/SRB(4MM), DS-2CD1F47G3H-LIU(F)(/SX), DS-2CD1F47G3H-LIUF(2.8MM), DS-2CD1F47G3H-LIUF(4MM), DS-2CD1F47G3H-LIU(2.8MM), DS-2CD1F47G3H-LIU(4MM), DS-2CD1F47G3H-LIU/SX(2.8MM), DS-2CD1F47G3H-LIU/SX(4MM), DS-2CD1F47G3H-LIUF/SX(2.8MM), DS-2CD1F47G3H-LIUF/SX(4MM)",
+    "changes": "Release 3XX3 / 2XX3 AI-ISP cameras · Support animal classification for motion detection · Support wall installation for PRTZ cameras · Support AI encoding",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CNetwork_Camera-V5.11.0_260701_Release_IPCE_H13U.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-D5055U3-1V0S_UNKNOWN_3.3.9": {
+    "device_id": 103200,
+    "model": "DS-D5055U3-1V0S",
+    "hardware_version": "UNKNOWN",
+    "version": "3.3.9",
+    "date": "2026-10-09",
+    "download_url": "",
+    "filename": "Firmware__V3.3.9_261009_S3000761574.zip",
+    "supported_models": [
+      "DS-D5055U3-1V0S"
+    ],
+    "applied_to": "Applied to: DS-D5055U3-1V0S",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-3WF03C-5AC/O_UNKNOWN_1.3.2": {
+    "device_id": 102124,
+    "model": "DS-3WF03C-5AC/O",
+    "hardware_version": "UNKNOWN",
+    "version": "1.3.2",
+    "date": "2026-07-15",
+    "download_url": "",
+    "filename": "Firmware__V1.3.2_260715_S3000753927.zip",
+    "supported_models": [
+      "DS-3WF03C-5AC/O"
+    ],
+    "applied_to": "Applied to: DS-3WF03C-5AC/O",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-3WFB-EI-5ACG_UNKNOWN_1.3.2": {
+    "device_id": 101786,
+    "model": "DS-3WFB-EI-5ACG",
+    "hardware_version": "UNKNOWN",
+    "version": "1.3.2",
+    "date": "2026-07-15",
+    "download_url": "",
+    "filename": "Firmware__V1.3.2_260715_S3000753930.zip",
+    "supported_models": [
+      "DS-3WFB-EI-5ACG"
+    ],
+    "applied_to": "Applied to: DS-3WFB-EI-5ACG",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2DE2C200SCG-E_IPC_G0_5.7.25": {
+    "device_id": 103201,
+    "model": "DS-2DE2C200SCG-E",
+    "hardware_version": "IPC_G0",
+    "version": "5.7.25",
+    "date": "2026-07-14",
+    "download_url": "",
+    "filename": "Firmware__V5.7.25_260714_S3000740097.zip",
+    "supported_models": [
+      "DS-2DE2C200SCG-E",
+      "DS-2DE2C200SCG-E(F0)",
+      "DS-2DE2C200SCG-E(F1)",
+      "DS-2DE2C400SCG-E",
+      "DS-2DE2C400SCG-E(F0)",
+      "DS-2DE2C400SCG-E(F1)"
+    ],
+    "applied_to": "Applied to: DS-2DE2C200SCG-E, DS-2DE2C200SCG-E(F0), DS-2DE2C200SCG-E(F1), DS-2DE2C400SCG-E, DS-2DE2C400SCG-E(F0), DS-2DE2C400SCG-E(F1)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "IDS-6716NXI-M1/X_UNKNOWN_5.04.052": {
+    "device_id": 103202,
+    "model": "IDS-6716NXI-M1/X",
+    "hardware_version": "UNKNOWN",
+    "version": "5.04.052",
+    "date": "2026-07-09",
+    "download_url": "",
+    "filename": "Firmware__V5.04.052_260920_S3000755584.zip",
+    "supported_models": [
+      "IDS-6716NXI-M1/X(1×8T)",
+      "IDS-6716NXI-M1/X",
+      "IDS-9632NXI-M8/X",
+      "IDS-6716NXI-M1/X(1"
+    ],
+    "applied_to": "Applied to: IDS-6716NXI-M1/X(1×8T), IDS-6716NXI-M1/X, IDS-9632NXI-M8/X",
+    "changes": "Modified functions",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202608/releasenote%5C5.04.052_build260709_ReleaseNotes.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-2DYH2A0LXG-LW/12_UNKNOWN_5.8.2": {
+    "device_id": 103203,
+    "model": "DS-2DYH2A0LXG-LW/12",
+    "hardware_version": "UNKNOWN",
+    "version": "5.8.2",
+    "date": "2026-07-03",
+    "download_url": "",
+    "filename": "Firmware__V5.8.2_260703_S3000739031.zip",
+    "supported_models": [
+      "DS-2DYH2A0LXG-LW/12",
+      "DS-2DYH2A0LXG-LW/12(F1)"
+    ],
+    "applied_to": "Applied to: DS-2DYH2A0LXG-LW/12, DS-2DYH2A0LXG-LW/12(F1)",
+    "changes": "Algorithm optimization and updates. 2. Fix some bugs.",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202607/releasenote%5CV5.8.2_260703_Release_Notet.pdf",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-K1T674MWX_UNKNOWN_4.52.0": {
+    "device_id": 103204,
+    "model": "DS-K1T674MWX",
+    "hardware_version": "UNKNOWN",
+    "version": "4.52.0",
+    "date": "2026-06-26",
+    "download_url": "",
+    "filename": "Firmware__V4.52.0_260626_S3000737519.zip",
+    "supported_models": [
+      "DS-K1T674MWX"
+    ],
+    "applied_to": "Applied to: DS-K1T674MWX",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "DS-KA-RL1E2_UNKNOWN_2.0.1": {
+    "device_id": 102251,
+    "model": "DS-KA-RL1E2",
+    "hardware_version": "UNKNOWN",
+    "version": "2.0.1",
+    "date": "2026-06-26",
+    "download_url": "",
+    "filename": "Firmware__V2.0.1_260626_S3000757065.zip",
+    "supported_models": [
+      "DS-KA-RL1E2"
+    ],
+    "applied_to": "Applied to: DS-KA-RL1E2",
+    "changes": "Door station · Support public relay modules: relays can be added and are discoverable by all door stations and · indoor stations. Indoor stations can unlock the door station and the relay-controlled door with one · Naming Rule:",
+    "notes": "https://assets.hikvision.com/prd/normal/all/files/202611/2_Wire_HD_Video_Intercom_V1.4.0_build260921_Release_Note.pdf",
+    "is_beta": true,
+    "source": "live"
+  },
+  "DS-2XC6244G1-LIR_UNKNOWN_5.10.0": {
+    "device_id": 103205,
+    "model": "DS-2XC6244G1-LIR",
+    "hardware_version": "UNKNOWN",
+    "version": "5.10.0",
+    "date": "2026-06-03",
+    "download_url": "",
+    "filename": "Firmware__V5.10.0_260603_S3000738402.zip",
+    "supported_models": [
+      "DS-2XC6244G1-LIR",
+      "DS-2XC6244G1-LIR(2.8MM)",
+      "DS-2XC6244G1-LIRY",
+      "DS-2XC6244G1-LIRY(2.8MM)"
+    ],
+    "applied_to": "Applied to: DS-2XC6244G1-LIR, DS-2XC6244G1-LIR(2.8MM), DS-2XC6244G1-LIRY, DS-2XC6244G1-LIRY(2.8MM)",
+    "changes": "",
+    "notes": "",
+    "is_beta": false,
+    "source": "live"
+  },
+  "IDS-TCM441-HI_UNKNOWN_5.5.0": {
+    "device_id": 103206,
+    "model": "IDS-TCM441-HI",
+    "hardware_version": "UNKNOWN",
+    "version": "5.5.0",
+    "date": "2026-06-01",
+    "download_url": "",
+    "filename": "Firmware__V5.5.0_260601_S3000728278.zip",
+    "supported_models": [
+      "IDS-TCM441-HI",
+      "IDS-TCM441-HI/PT0832/PT1050"
+    ],
+    "applied_to": "Applied to: IDS-TCM441-HI, IDS-TCM441-HI/PT0832/PT1050",
+    "changes": "",
+    "notes": "",
     "is_beta": false,
     "source": "live"
   }
