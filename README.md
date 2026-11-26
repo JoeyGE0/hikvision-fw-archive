@@ -137,7 +137,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 | | |
 |--|--|
 | **Status** | ❌ ERROR |
-| **Last run** | 2026-11-25 14:39:20 UTC |
+| **Last run** | 2026-11-26 00:32:42 UTC |
 | **Scraper** | HTTP |
 | **Catalog fetch** | playwright |
 | **Catalog rows parsed** | 0 |
@@ -148,7 +148,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 
 **Recent Errors:**
-- ⚠️ Scraping failed: Playwright catalog still invalid (24,875 bytes) — may be blocked
+- ⚠️ Scraping failed: Playwright catalog still invalid (24,876 bytes) — may be blocked
 
 
 ---
